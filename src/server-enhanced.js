@@ -10677,31 +10677,67 @@ console.log('[WebSocket] Extraction progress service initialized');
  * Exported for explicit control in cluster mode
  */
 async function startServer() {
+  console.error('[DEBUG-ENHANCED] ========================================');
+  console.error('[DEBUG-ENHANCED] startServer() FOI CHAMADO');
+  console.error('[DEBUG-ENHANCED] PID=' + process.pid);
+  console.error('[DEBUG-ENHANCED] PORT=' + PORT);
+  console.error('[DEBUG-ENHANCED] HOST=' + HOST);
+  console.error('[DEBUG-ENHANCED] ========================================');
+
   return new Promise((resolve, reject) => {
+    console.error('[DEBUG-ENHANCED] Criando Promise para startServer()');
+    console.error('[DEBUG-ENHANCED] Chamando httpServer.listen(' + PORT + ', ' + HOST + ')...');
+
     httpServer.listen(PORT, HOST, async () => {
+      console.error('[DEBUG-ENHANCED] ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★');
+      console.error('[DEBUG-ENHANCED] ★★★ LISTEN CALLBACK EXECUTANDO ★★★');
+      console.error('[DEBUG-ENHANCED] ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★');
+      console.error('[DEBUG-ENHANCED] PID=' + process.pid);
+
       try {
+        console.error('[DEBUG-ENHANCED] Try block iniciou');
+
   // Database já foi inicializado no início do arquivo (antes de criar session middleware)
   console.log(`✅ [SERVER] Servidor iniciado em ${HOST}:${PORT}`);
+  console.error('[DEBUG-ENHANCED] Log 1 executado (Servidor iniciado)');
+
   console.log(`✅ [SERVER] WebSocket server inicializado`);
+  console.error('[DEBUG-ENHANCED] Log 2 executado (WebSocket)');
+
   console.log('✅ [SERVER] Database já inicializado - session store configurado');
+  console.error('[DEBUG-ENHANCED] Log 3 executado (Database)');
 
   // ✅ FIX CRÍTICO: Resolve IMEDIATAMENTE para Render health check passar
   // Todo resto é inicializado em background (não-bloqueante)
+  console.error('[DEBUG-ENHANCED] PRESTES A CHAMAR resolve()...');
   resolve({ httpServer, io, port: PORT, host: HOST });
+  console.error('[DEBUG-ENHANCED] ★★★ resolve() CHAMADO COM SUCESSO ★★★');
+
   console.log('✅ [SERVER] Promise resolved - Health check disponível');
+  console.error('[DEBUG-ENHANCED] Log 4 executado (Promise resolved)');
 
   // ═══ INICIALIZAÇÃO EM BACKGROUND (não-bloqueante) ═══
+  console.error('[DEBUG-ENHANCED] Iniciando IIFE de background...');
   (async () => {
+    console.error('[DEBUG-ENHANCED] ★★★ IIFE BACKGROUND EXECUTANDO ★★★');
+    console.error('[DEBUG-ENHANCED] PID=' + process.pid);
+
     try {
+      console.error('[DEBUG-ENHANCED] Try block IIFE iniciou');
+
       // Configurar armazenamento persistente
+      console.error('[DEBUG-ENHANCED] Configurando storage...');
       logger.info('Configurando armazenamento persistente...');
       ensureStorageStructure();
       logger.info(`Armazenamento: ${STORAGE_INFO.environment} (${STORAGE_INFO.diskSize})`);
       logger.info(`Base: ${STORAGE_INFO.basePath}`);
+      console.error('[DEBUG-ENHANCED] Storage configurado');
 
       // Inicializar sistema de upload chunked
+      console.error('[DEBUG-ENHANCED] Inicializando chunkedUpload...');
       logger.info('Inicializando sistema de upload chunked...');
       await chunkedUpload.initialize();
+      console.error('[DEBUG-ENHANCED] chunkedUpload.initialize() completou');
   logger.info('Upload chunked ATIVO - Suporte para arquivos de qualquer tamanho');
 
   // Ativar sistema de auto-atualização e aprendizado
@@ -11007,21 +11043,40 @@ Acesse: https://iarom.com.br/kb-documents.html
   }
 
       // Pré-carregar modelos (última etapa do background init)
+      console.error('[DEBUG-ENHANCED] PRESTES A CHAMAR preloadModelos()...');
       await preloadModelos();
+      console.error('[DEBUG-ENHANCED] ★★★ preloadModelos() COMPLETOU ★★★');
 
       logger.info('✅ Background initialization completa');
+      console.error('[DEBUG-ENHANCED] ★★★ BACKGROUND INIT COMPLETA ★★★');
     } catch (error) {
+      console.error('[DEBUG-ENHANCED] ❌ ERRO no try block IIFE: ' + error.message);
+      console.error('[DEBUG-ENHANCED] Stack: ' + error.stack);
       logger.error('❌ Erro durante inicialização em background:', error);
     }
+    console.error('[DEBUG-ENHANCED] IIFE background finalizando');
   })(); // ← Fecha IIFE (Immediately Invoked Function Expression)
+
+  console.error('[DEBUG-ENHANCED] IIFE disparada (non-blocking), saindo do listen callback');
+
       } catch (error) {
+        console.error('[DEBUG-ENHANCED] ❌ ERRO no try block do listen: ' + error.message);
+        console.error('[DEBUG-ENHANCED] Stack: ' + error.stack);
         logger.error('Erro durante inicialização do servidor:', error);
         reject(error);
       }
     });
 
+    console.error('[DEBUG-ENHANCED] httpServer.listen() chamado, aguardando callback...');
+
+    console.error('[DEBUG-ENHANCED] Registrando error handler do httpServer');
+
     // Handle listen errors (EADDRINUSE, etc)
     httpServer.on('error', (error) => {
+      console.error('[DEBUG-ENHANCED] ❌ httpServer ERROR event disparado');
+      console.error('[DEBUG-ENHANCED] error.code=' + error.code);
+      console.error('[DEBUG-ENHANCED] error.message=' + error.message);
+
       if (error.code === 'EADDRINUSE') {
         logger.error(`Porta ${PORT} já está em uso!`);
         logger.error('Possíveis causas:');
@@ -11035,8 +11090,14 @@ Acesse: https://iarom.com.br/kb-documents.html
       } else {
         logger.error('Erro ao iniciar servidor:', error);
       }
+      console.error('[DEBUG-ENHANCED] Chamando reject() devido a erro');
       reject(error);
     });
+
+    console.error('[DEBUG-ENHANCED] Error handler registrado');
+    console.error('[DEBUG-ENHANCED] ========================================');
+    console.error('[DEBUG-ENHANCED] Retornando Promise de startServer()');
+    console.error('[DEBUG-ENHANCED] ========================================');
   });
 }
 
