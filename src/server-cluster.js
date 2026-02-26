@@ -16,8 +16,13 @@ const totalCPUs = os.cpus().length;
 
 // 🔧 LIMITE DE WORKERS baseado no ambiente
 const isRender = process.env.RENDER === 'true';
+const WEB_CONCURRENCY = parseInt(process.env.WEB_CONCURRENCY || '0', 10);
 const MAX_WORKERS_RENDER = 4; // Render Standard: máx 4 workers (2GB RAM / ~500MB por worker + documentos grandes)
-const numCPUs = isRender ? Math.min(totalCPUs, MAX_WORKERS_RENDER) : totalCPUs;
+
+// ✅ PRIORIDADE: WEB_CONCURRENCY > MAX_WORKERS_RENDER > totalCPUs
+const numCPUs = WEB_CONCURRENCY > 0
+  ? WEB_CONCURRENCY
+  : (isRender ? Math.min(totalCPUs, MAX_WORKERS_RENDER) : totalCPUs);
 
 if (isRender) {
   console.log(`⚙️  Ambiente RENDER detectado - Limitando workers para ${numCPUs} (RAM: 2GB)`);
@@ -107,11 +112,20 @@ if (cluster.isPrimary) {
   // Worker process - importa e executa o servidor MELHORADO
   const serverPath = path.join(__dirname, 'server-enhanced.js');
 
-  // Importa dinamicamente o servidor
-  import(serverPath).then(() => {
-    console.log(`[Worker ${process.pid}] ✅ Servidor ENHANCED iniciado e pronto para receber requisições`);
+  // Importa dinamicamente o servidor e chama startServer() explicitamente
+  import(serverPath).then(async (module) => {
+    try {
+      // Call the exported startServer function explicitly
+      const serverInfo = await module.startServer();
+      console.log(`[Worker ${process.pid}] ✅ Servidor ENHANCED iniciado em ${serverInfo.host}:${serverInfo.port}`);
+      console.log(`[Worker ${process.pid}] ✅ WebSocket server pronto para receber conexões`);
+    } catch (error) {
+      console.error(`[Worker ${process.pid}] ❌ Erro ao iniciar servidor:`, error.message);
+      // Don't exit immediately - let cluster manager handle worker restart
+      setTimeout(() => process.exit(1), 1000);
+    }
   }).catch(error => {
-    console.error(`[Worker ${process.pid}] ❌ Erro ao iniciar:`, error);
+    console.error(`[Worker ${process.pid}] ❌ Erro ao importar módulo:`, error);
     process.exit(1);
   });
 }
