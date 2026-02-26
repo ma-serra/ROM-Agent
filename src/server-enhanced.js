@@ -10685,15 +10685,23 @@ async function startServer() {
   console.log(`✅ [SERVER] WebSocket server inicializado`);
   console.log('✅ [SERVER] Database já inicializado - session store configurado');
 
-  // Configurar armazenamento persistente
-  logger.info('Configurando armazenamento persistente...');
-  ensureStorageStructure();
-  logger.info(`Armazenamento: ${STORAGE_INFO.environment} (${STORAGE_INFO.diskSize})`);
-  logger.info(`Base: ${STORAGE_INFO.basePath}`);
+  // ✅ FIX CRÍTICO: Resolve IMEDIATAMENTE para Render health check passar
+  // Todo resto é inicializado em background (não-bloqueante)
+  resolve({ httpServer, io, port: PORT, host: HOST });
+  console.log('✅ [SERVER] Promise resolved - Health check disponível');
 
-  // Inicializar sistema de upload chunked
-  logger.info('Inicializando sistema de upload chunked...');
-  await chunkedUpload.initialize();
+  // ═══ INICIALIZAÇÃO EM BACKGROUND (não-bloqueante) ═══
+  (async () => {
+    try {
+      // Configurar armazenamento persistente
+      logger.info('Configurando armazenamento persistente...');
+      ensureStorageStructure();
+      logger.info(`Armazenamento: ${STORAGE_INFO.environment} (${STORAGE_INFO.diskSize})`);
+      logger.info(`Base: ${STORAGE_INFO.basePath}`);
+
+      // Inicializar sistema de upload chunked
+      logger.info('Inicializando sistema de upload chunked...');
+      await chunkedUpload.initialize();
   logger.info('Upload chunked ATIVO - Suporte para arquivos de qualquer tamanho');
 
   // Ativar sistema de auto-atualização e aprendizado
@@ -10998,14 +11006,14 @@ Acesse: https://iarom.com.br/kb-documents.html
     logger.error('❌ Erro ao criar pasta de emergência:', error);
   }
 
-        // Resolve the promise with server info FIRST (open port immediately)
-        resolve({ httpServer, io, port: PORT, host: HOST });
+      // Pré-carregar modelos (última etapa do background init)
+      await preloadModelos();
 
-        // ✅ FIX: Pré-carregar modelos EM BACKGROUND (não-bloqueante)
-        // Isso permite servidor abrir porta antes de preload completar
-        preloadModelos().catch(err => {
-          logger.error('Erro ao pré-carregar modelos:', err);
-        });
+      logger.info('✅ Background initialization completa');
+    } catch (error) {
+      logger.error('❌ Erro durante inicialização em background:', error);
+    }
+  })(); // ← Fecha IIFE (Immediately Invoked Function Expression)
       } catch (error) {
         logger.error('Erro durante inicialização do servidor:', error);
         reject(error);
