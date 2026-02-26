@@ -10998,11 +10998,14 @@ Acesse: https://iarom.com.br/kb-documents.html
     logger.error('❌ Erro ao criar pasta de emergência:', error);
   }
 
-        // Pré-carregar modelos
-        await preloadModelos();
-
-        // Resolve the promise with server info
+        // Resolve the promise with server info FIRST (open port immediately)
         resolve({ httpServer, io, port: PORT, host: HOST });
+
+        // ✅ FIX: Pré-carregar modelos EM BACKGROUND (não-bloqueante)
+        // Isso permite servidor abrir porta antes de preload completar
+        preloadModelos().catch(err => {
+          logger.error('Erro ao pré-carregar modelos:', err);
+        });
       } catch (error) {
         logger.error('Erro durante inicialização do servidor:', error);
         reject(error);
