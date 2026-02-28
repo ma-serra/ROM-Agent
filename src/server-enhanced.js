@@ -4191,23 +4191,6 @@ function getGitCommit() {
   }
 }
 
-// ============================================================================
-// HEALTH CHECK SIMPLIFICADO para Render
-// ============================================================================
-// Este endpoint responde IMEDIATAMENTE (< 100ms) para que o Render considere
-// o deploy como sucesso SEM aguardar o preload de modelos (que pode levar 5-10s).
-//
-// O /api/info continua existindo para health checks completos, mas o Render
-// deve usar /health para validação de deploy.
-// ============================================================================
-app.get('/health', (req, res) => {
-  res.status(200).json({
-    status: 'ok',
-    timestamp: new Date().toISOString(),
-    uptime: Math.floor(process.uptime())
-  });
-});
-
 // API - Info do sistema com health check completo
 app.get('/api/info', async (req, res) => {
   try {
@@ -10377,19 +10360,17 @@ logger.info('✅ Pricing API endpoints configured');
 // PR#2: OBSERVABILITY ENDPOINTS
 // ============================================================================
 
-// Health check endpoint - ✅ FASE 3: Usar healthMonitor.getFullStatus()
-app.get('/health', async (req, res) => {
-  try {
-    const healthStatus = await healthMonitor.getFullStatus();
-    res.json(healthStatus);
-  } catch (error) {
-    logger.error('Erro no health check:', error);
-    res.status(500).json({
-      status: 'error',
-      timestamp: new Date(),
-      error: error.message
-    });
-  }
+// Health check endpoint - SIMPLIFICADO para Render deploy health check
+// Responde IMEDIATAMENTE (< 1ms) sem await para evitar timeout do Render
+// O Render precisa de resposta rápida durante deploy, health check completo
+// está disponível em /api/info para monitoramento detalhado
+app.get('/health', (req, res) => {
+  // Resposta imediata - sem async/await
+  res.status(200).json({
+    status: 'ok',
+    timestamp: new Date().toISOString(),
+    uptime: Math.floor(process.uptime())
+  });
 });
 
 // WebSocket health check endpoint
