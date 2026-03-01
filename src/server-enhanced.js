@@ -4479,6 +4479,9 @@ app.get('/api/metrics', async (req, res) => {
     // CPU usage (aproximado via process.cpuUsage())
     const cpuUsage = process.cpuUsage();
 
+    // Get database pool
+    const pgPool = getPostgresPool();
+
     // Database status
     let dbStatus = 'unknown';
     let dbLatency = null;
