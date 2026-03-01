@@ -31,16 +31,17 @@
         }
 
         :root {
-            --bg-0: #0E0E0E;
-            --bg-1: #171717;
-            --bg-2: #2F2F2F;
-            --bg-3: #3E3E3E;
-            --text-primary: #ECECEC;
-            --text-secondary: #9B9B9B;
-            --text-tertiary: #6B6B6B;
-            --border: #3E3E3E;
-            --accent: #AB7843;
-            --accent-hover: #C48854;
+            /* Paleta profissional com tons de cinza azulado suave */
+            --bg-0: #1A1D23;        /* Fundo principal - cinza azulado escuro mas não "chapado" */
+            --bg-1: #22262E;        /* Sidebar e containers - tom intermediário */
+            --bg-2: #2D3139;        /* Input boxes e cards - mais claro */
+            --bg-3: #383E4A;        /* Hover states e elementos elevados */
+            --text-primary: #E8EAED;    /* Texto principal - off-white suave */
+            --text-secondary: #A0A4A8;  /* Texto secundário - cinza médio */
+            --text-tertiary: #6E7278;   /* Texto terciário - cinza escuro */
+            --border: #3A3F4A;      /* Bordas visíveis mas sutis */
+            --accent: #C9975B;      /* Dourado suave profissional */
+            --accent-hover: #D4A76F; /* Hover do accent */
         }
 
         body {
@@ -304,13 +305,15 @@
         .welcome-icon {
             width: 64px;
             height: 64px;
-            background: var(--bg-2);
+            background: linear-gradient(135deg, var(--bg-2) 0%, var(--bg-3) 100%);  /* Gradiente sutil */
+            border: 1px solid var(--border);  /* Borda visível */
             border-radius: 16px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 32px;
             margin-bottom: 24px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);  /* Sombra para profundidade */
         }
 
         .welcome h1 {
@@ -339,16 +342,20 @@
             height: 32px;
             border-radius: 8px;
             background: var(--bg-2);
+            border: 1px solid var(--border);  /* Borda visível */
             display: flex;
             align-items: center;
             justify-content: center;
             flex-shrink: 0;
             font-size: 16px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);  /* Sombra sutil */
         }
 
         .message.assistant .message-avatar {
-            background: var(--accent);
-            color: #000;
+            background: linear-gradient(135deg, var(--accent) 0%, var(--accent-hover) 100%);  /* Gradiente dourado */
+            border: 1px solid rgba(201, 151, 91, 0.3);
+            color: #1A1D23;  /* Texto escuro para contraste */
+            box-shadow: 0 2px 6px rgba(201, 151, 91, 0.25);  /* Brilho dourado */
         }
 
         .message-content {
@@ -368,18 +375,29 @@
 
         .message-content code {
             background: var(--bg-2);
+            border: 1px solid rgba(201, 151, 91, 0.2);  /* Borda dourada sutil */
             padding: 2px 6px;
             border-radius: 4px;
             font-family: 'Monaco', 'Courier New', monospace;
             font-size: 13px;
+            color: var(--accent);  /* Texto dourado para código inline */
         }
 
         .message-content pre {
             background: var(--bg-2);
+            border: 1px solid var(--border);  /* Borda visível */
             padding: 16px;
             border-radius: 8px;
             overflow-x: auto;
             margin: 12px 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);  /* Sombra sutil */
+        }
+
+        .message-content pre code {
+            background: transparent;  /* Remover background duplicado */
+            border: none;
+            padding: 0;
+            color: var(--text-primary);  /* Texto normal dentro de pre */
         }
 
         /* Loading */
@@ -417,13 +435,15 @@
         .input-wrapper {
             position: relative;
             background: var(--bg-2);
-            border: 1px solid var(--border);
+            border: 1.5px solid var(--border);  /* Borda mais grossa e visível */
             border-radius: 12px;
-            transition: border-color 0.15s;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);  /* Sombra sutil */
         }
 
         .input-wrapper:focus-within {
-            border-color: var(--text-tertiary);
+            border-color: var(--accent);  /* Destaque dourado no foco */
+            box-shadow: 0 2px 12px rgba(201, 151, 91, 0.25);  /* Brilho dourado */
         }
 
         .input-box {
@@ -455,8 +475,9 @@
             border-radius: 8px;
             color: var(--text-secondary);
             cursor: pointer;
-            transition: all 0.15s;
+            transition: all 0.2s ease;
             font-size: 13px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);  /* Sombra sutil */
             /* Touch optimization */
             min-height: 44px;
             min-width: 44px;
@@ -468,8 +489,10 @@
 
         .action-btn:hover {
             background: var(--bg-3);
-            border-color: var(--text-tertiary);
+            border-color: var(--accent);  /* Destaque dourado no hover */
             color: var(--text-primary);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);  /* Sombra maior no hover */
+            transform: translateY(-1px);  /* Leve elevação */
         }
 
         .action-btn svg {
@@ -515,7 +538,8 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(16, 20, 28, 0.85);  /* Overlay mais suave e azulado */
+            backdrop-filter: blur(4px);  /* Desfoque sutil para profundidade */
             z-index: 1000;
             align-items: center;
             justify-content: center;
@@ -527,12 +551,15 @@
 
         .modal-content {
             background: var(--bg-1);
+            border: 1px solid var(--border);  /* Borda visível */
             border-radius: 12px;
             max-width: 600px;
             width: 90%;
             max-height: 80vh;
             overflow-y: auto;
             padding: 24px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4),  /* Sombra profunda */
+                        0 2px 8px rgba(0, 0, 0, 0.2);    /* Sombra sutil */
         }
 
         .modal-header {
