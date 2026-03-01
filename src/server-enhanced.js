@@ -4426,6 +4426,221 @@ app.get('/api/info', async (req, res) => {
   }
 });
 
+// ============================================================================
+// MONITORAMENTO E MÉTRICAS DETALHADAS
+// ============================================================================
+// Endpoint para monitoramento avançado com thresholds e alertas
+app.get('/api/metrics', async (req, res) => {
+  try {
+    const memoryUsage = process.memoryUsage();
+    const uptime = process.uptime();
+
+    // Métricas brutas
+    const rssBytes = memoryUsage.rss;
+    const heapUsedBytes = memoryUsage.heapUsed;
+    const heapTotalBytes = memoryUsage.heapTotal;
+
+    // Limites e thresholds (baseado no Render Pro: 4GB RAM)
+    const LIMITS = {
+      memory: {
+        total: 4 * 1024 * 1024 * 1024, // 4GB em bytes
+        warning: 2.5 * 1024 * 1024 * 1024, // 2.5GB warning
+        critical: 3.5 * 1024 * 1024 * 1024 // 3.5GB critical
+      },
+      heap: {
+        warning: 0.80, // 80% do heap total
+        critical: 0.90  // 90% do heap total
+      },
+      uptime: {
+        minimum: 3600 // 1 hora mínimo esperado
+      }
+    };
+
+    // Calcular percentuais
+    const memoryPercent = (rssBytes / LIMITS.memory.total) * 100;
+    const heapPercent = (heapUsedBytes / heapTotalBytes) * 100;
+
+    // Determinar status de memory
+    let memoryStatus = 'healthy';
+    if (rssBytes >= LIMITS.memory.critical) {
+      memoryStatus = 'critical';
+    } else if (rssBytes >= LIMITS.memory.warning) {
+      memoryStatus = 'warning';
+    }
+
+    // Determinar status de heap
+    let heapStatus = 'healthy';
+    if (heapPercent >= LIMITS.heap.critical * 100) {
+      heapStatus = 'critical';
+    } else if (heapPercent >= LIMITS.heap.warning * 100) {
+      heapStatus = 'warning';
+    }
+
+    // CPU usage (aproximado via process.cpuUsage())
+    const cpuUsage = process.cpuUsage();
+
+    // Database status
+    let dbStatus = 'unknown';
+    let dbLatency = null;
+    try {
+      const startDb = Date.now();
+      await pgPool.query('SELECT 1');
+      dbLatency = Date.now() - startDb;
+      dbStatus = dbLatency < 100 ? 'healthy' : (dbLatency < 500 ? 'warning' : 'critical');
+    } catch (error) {
+      dbStatus = 'error';
+    }
+
+    // Cache status
+    const cacheSize = agents.size;
+
+    // Construir objeto de métricas
+    const metrics = {
+      timestamp: new Date().toISOString(),
+      uptime: {
+        seconds: Math.floor(uptime),
+        formatted: `${Math.floor(uptime / 3600)}h ${Math.floor((uptime % 3600) / 60)}m`,
+        status: uptime >= LIMITS.uptime.minimum ? 'healthy' : 'warning'
+      },
+      memory: {
+        rss: {
+          bytes: rssBytes,
+          mb: Math.round(rssBytes / 1024 / 1024),
+          percent: Math.round(memoryPercent * 10) / 10,
+          status: memoryStatus
+        },
+        heap: {
+          used: {
+            bytes: heapUsedBytes,
+            mb: Math.round(heapUsedBytes / 1024 / 1024)
+          },
+          total: {
+            bytes: heapTotalBytes,
+            mb: Math.round(heapTotalBytes / 1024 / 1024)
+          },
+          percent: Math.round(heapPercent * 10) / 10,
+          status: heapStatus
+        },
+        limits: {
+          total_mb: Math.round(LIMITS.memory.total / 1024 / 1024),
+          warning_mb: Math.round(LIMITS.memory.warning / 1024 / 1024),
+          critical_mb: Math.round(LIMITS.memory.critical / 1024 / 1024)
+        }
+      },
+      cpu: {
+        user: cpuUsage.user,
+        system: cpuUsage.system,
+        note: 'Values in microseconds since process start'
+      },
+      database: {
+        status: dbStatus,
+        latency_ms: dbLatency,
+        pool: {
+          total: pgPool.totalCount,
+          idle: pgPool.idleCount,
+          waiting: pgPool.waitingCount
+        }
+      },
+      cache: {
+        active_sessions: cacheSize,
+        status: cacheSize < 100 ? 'healthy' : (cacheSize < 500 ? 'warning' : 'critical')
+      },
+      system: {
+        node_version: process.version,
+        platform: process.platform,
+        pid: process.pid,
+        git_commit: getGitCommit()
+      },
+      alerts: []
+    };
+
+    // Gerar alertas baseados em thresholds
+    if (memoryStatus === 'critical') {
+      metrics.alerts.push({
+        level: 'critical',
+        category: 'memory',
+        message: `Memory usage is at ${metrics.memory.rss.mb}MB (${metrics.memory.rss.percent}%) - CRITICAL THRESHOLD EXCEEDED`,
+        threshold: LIMITS.memory.critical,
+        current: rssBytes,
+        recommendation: 'Consider cluster mode or upgrade Render plan'
+      });
+    } else if (memoryStatus === 'warning') {
+      metrics.alerts.push({
+        level: 'warning',
+        category: 'memory',
+        message: `Memory usage is at ${metrics.memory.rss.mb}MB (${metrics.memory.rss.percent}%) - approaching warning threshold`,
+        threshold: LIMITS.memory.warning,
+        current: rssBytes,
+        recommendation: 'Monitor closely - consider optimizations'
+      });
+    }
+
+    if (heapStatus === 'critical') {
+      metrics.alerts.push({
+        level: 'critical',
+        category: 'heap',
+        message: `Heap usage is at ${metrics.memory.heap.percent}% - CRITICAL`,
+        threshold: LIMITS.heap.critical * 100,
+        current: heapPercent,
+        recommendation: 'Increase heap size or enable cluster mode'
+      });
+    } else if (heapStatus === 'warning') {
+      metrics.alerts.push({
+        level: 'warning',
+        category: 'heap',
+        message: `Heap usage is at ${metrics.memory.heap.percent}% - approaching limit`,
+        threshold: LIMITS.heap.warning * 100,
+        current: heapPercent,
+        recommendation: 'Monitor GC activity'
+      });
+    }
+
+    if (dbStatus === 'critical') {
+      metrics.alerts.push({
+        level: 'critical',
+        category: 'database',
+        message: `Database latency is ${dbLatency}ms - CRITICAL`,
+        threshold: 500,
+        current: dbLatency,
+        recommendation: 'Check database performance and connection pool'
+      });
+    } else if (dbStatus === 'warning') {
+      metrics.alerts.push({
+        level: 'warning',
+        category: 'database',
+        message: `Database latency is ${dbLatency}ms - slower than normal`,
+        threshold: 100,
+        current: dbLatency,
+        recommendation: 'Monitor database queries'
+      });
+    }
+
+    if (uptime < LIMITS.uptime.minimum) {
+      metrics.alerts.push({
+        level: 'info',
+        category: 'uptime',
+        message: `Server recently restarted (uptime: ${metrics.uptime.formatted})`,
+        recommendation: 'Normal after deployment'
+      });
+    }
+
+    // Status geral
+    const hasCritical = metrics.alerts.some(a => a.level === 'critical');
+    const hasWarning = metrics.alerts.some(a => a.level === 'warning');
+
+    metrics.overall_status = hasCritical ? 'critical' : (hasWarning ? 'warning' : 'healthy');
+
+    res.json(metrics);
+
+  } catch (error) {
+    console.error('Erro ao obter métricas:', error);
+    res.status(500).json({
+      success: false,
+      error: error.message
+    });
+  }
+});
+
 // API - Estatísticas de uso do sistema
 app.get('/api/stats', (req, res) => {
   try {

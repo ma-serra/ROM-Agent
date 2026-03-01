@@ -60,3 +60,4 @@ test-results/
 
 # Monitor scripts (temporary)
 monitor-*.sh
+.env.render-corrected

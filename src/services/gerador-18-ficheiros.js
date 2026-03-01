@@ -243,18 +243,29 @@ async function gerarResumos(textoNormalizado, entidades, estrutura, log) {
 
 /**
  * ANÁLISES ANALÍTICAS - Ficheiros 06-08
+ * OTIMIZADO: LLM calls em paralelo (analiseCompleta + analiseTemporal)
  */
 async function gerarAnalises(textoNormalizado, entidades, estrutura, log) {
   logger.info('🔬 Gerando análises analíticas...');
 
-  // 06_analise_completa.md (Sonnet - premium)
-  logger.info('📊 Gerando análise completa (Sonnet)...');
-  const analiseCompleta = await analiseJuridica.gerarAnaliseCompleta(
-    textoNormalizado,
-    entidades,
-    { modelo: CONFIG_MODELOS.analise_completa }
-  );
+  // ✅ OTIMIZAÇÃO: Gerar análises em paralelo (não dependem uma da outra)
+  logger.info('📊 Gerando análises completa e temporal em paralelo...');
+  const [analiseCompleta, analiseTemporal] = await Promise.all([
+    // 06_analise_completa.md (Sonnet - premium)
+    analiseJuridica.gerarAnaliseCompleta(
+      textoNormalizado,
+      entidades,
+      { modelo: CONFIG_MODELOS.analise_completa }
+    ),
+    // 08_analise_temporal.md (Haiku - mais barato)
+    analiseJuridica.gerarAnaliseTemporal(
+      textoNormalizado,
+      entidades,
+      { modelo: CONFIG_MODELOS.analise_temporal }
+    )
+  ]);
 
+  // Salvar arquivos
   const arquivo06 = path.join(estrutura.analises, '06_analise_completa.md');
   await fs.writeFile(arquivo06, analiseCompleta, 'utf-8');
   log.arquivos.push({ nome: '06_analise_completa.md' });
@@ -269,14 +280,6 @@ async function gerarAnalises(textoNormalizado, entidades, estrutura, log) {
   const arquivo07 = path.join(estrutura.analises, '07_analise_juridica.json');
   await fs.writeFile(arquivo07, JSON.stringify(analiseJuridicaJSON, null, 2), 'utf-8');
   log.arquivos.push({ nome: '07_analise_juridica.json' });
-
-  // 08_analise_temporal.md (Haiku - mais barato)
-  logger.info('⏱️ Gerando análise temporal...');
-  const analiseTemporal = await analiseJuridica.gerarAnaliseTemporal(
-    textoNormalizado,
-    entidades,
-    { modelo: CONFIG_MODELOS.analise_temporal }
-  );
 
   const arquivo08 = path.join(estrutura.analises, '08_analise_temporal.md');
   await fs.writeFile(arquivo08, analiseTemporal, 'utf-8');
@@ -545,16 +548,24 @@ export async function gerar18FicheirosCompletos(textoOriginal, opcoes = {}) {
     const entidades = await gerarEntidades(textoNormalizado, estrutura, log);
     log.etapas.push({ etapa: 'extrair_entidades', status: 'sucesso', timestamp: new Date().toISOString() });
 
-    // ETAPA 3: Análise Jurídica (13-15)
-    const { classificacao, analiseRisco } = await gerarAnaliseJuridica(textoNormalizado, entidades, estrutura, log);
+    // ✅ OTIMIZAÇÃO: ETAPAS 3, 4, 5 EM PARALELO
+    // Todas dependem de (textoNormalizado, entidades) mas não dependem umas das outras
+    logger.info('⚡ Executando análise jurídica, resumos e análises em paralelo...');
+    const [
+      { classificacao, analiseRisco },
+      resumos,
+      analises
+    ] = await Promise.all([
+      // ETAPA 3: Análise Jurídica (13-15)
+      gerarAnaliseJuridica(textoNormalizado, entidades, estrutura, log),
+      // ETAPA 4: Resumos (03-05)
+      gerarResumos(textoNormalizado, entidades, estrutura, log),
+      // ETAPA 5: Análises (06-08)
+      gerarAnalises(textoNormalizado, entidades, estrutura, log)
+    ]);
+
     log.etapas.push({ etapa: 'gerar_analise_juridica', status: 'sucesso', timestamp: new Date().toISOString() });
-
-    // ETAPA 4: Resumos (03-05)
-    const resumos = await gerarResumos(textoNormalizado, entidades, estrutura, log);
     log.etapas.push({ etapa: 'gerar_resumos', status: 'sucesso', timestamp: new Date().toISOString() });
-
-    // ETAPA 5: Análises (06-08)
-    const analises = await gerarAnalises(textoNormalizado, entidades, estrutura, log);
     log.etapas.push({ etapa: 'gerar_analises', status: 'sucesso', timestamp: new Date().toISOString() });
 
     // ETAPA 6: Metadados (16-18)
