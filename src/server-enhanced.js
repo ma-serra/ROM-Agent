@@ -6412,6 +6412,55 @@ app.delete('/api/kb/documents/user/:userId/all', requireAuth, generalLimiter, as
 });
 
 /**
+ * GET /api/kb/documents/search
+ * 🔍 Busca documento por nome (partial match)
+ */
+app.get('/api/kb/documents/search', requireAuth, generalLimiter, (req, res) => {
+  try {
+    const { q } = req.query;
+    if (!q) {
+      return res.status(400).json({ error: 'Query parameter "q" is required' });
+    }
+
+    const allDocs = kbCache.getAll();
+    const userId = req.session.user.id;
+
+    // Buscar em documentos do usuário
+    const userDocs = allDocs.filter(doc => doc.userId === userId || doc.userId === 'web-upload');
+
+    // Busca case-insensitive por nome
+    const searchTerm = q.toLowerCase();
+    const matches = userDocs.filter(doc =>
+      doc.name && doc.name.toLowerCase().includes(searchTerm)
+    );
+
+    // Enriquecer com status de validação
+    const enrichedMatches = matches.map(doc => ({
+      id: doc.id,
+      name: doc.name,
+      originalName: doc.originalName,
+      type: doc.type,
+      size: doc.size,
+      uploadedAt: doc.uploadedAt,
+      path: doc.path,
+      exists: doc.path && fs.existsSync(doc.path),
+      hasExtractedText: doc.textLength > 0,
+      hasStructuredFiles: doc.metadata?.hasStructuredFiles || false,
+      userId: doc.userId
+    }));
+
+    res.json({
+      query: q,
+      found: enrichedMatches.length,
+      matches: enrichedMatches
+    });
+  } catch (error) {
+    logger.error('❌ Erro ao buscar documentos:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+/**
  * GET /api/kb/documents/validate
  * 📊 Valida integridade do KB - lista docs válidos vs fantasmas
  */
