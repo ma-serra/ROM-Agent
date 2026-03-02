@@ -757,19 +757,34 @@ export async function executeTool(toolName, toolInput) {
         console.log(`📚 [KB] Consultando documentos: "${query}"`);
 
         try {
-          // ✅ CRÍTICO: Usar ACTIVE_PATHS para acessar disco persistente no Render
-          // Antes usava process.cwd() que é efêmero e perdido a cada deploy
-          const kbDocsPath = path.join(ACTIVE_PATHS.data, 'kb-documents.json');
-
-          if (!fs.existsSync(kbDocsPath)) {
-            return {
-              success: false,
-              content: 'Nenhum documento encontrado na Knowledge Base. Faça upload de documentos primeiro.'
-            };
+          // 🔥 FIX: Usar kbCache em vez de fs.readFileSync
+          // Importar kbCache dinamicamente (já está carregado no server)
+          let allDocs;
+          try {
+            // Tentar usar kbCache global se disponível (em server-enhanced.js)
+            if (typeof global.kbCache !== 'undefined') {
+              allDocs = global.kbCache.getAll();
+              console.log(`📚 [KB] Usando kbCache (${allDocs.length} docs)`);
+            } else {
+              // Fallback: ler do disco diretamente
+              const kbDocsPath = path.join(ACTIVE_PATHS.data, 'kb-documents.json');
+              if (!fs.existsSync(kbDocsPath)) {
+                return {
+                  success: false,
+                  content: 'Nenhum documento encontrado na Knowledge Base. Faça upload de documentos primeiro.'
+                };
+              }
+              const data = fs.readFileSync(kbDocsPath, 'utf8');
+              allDocs = JSON.parse(data);
+              console.log(`📚 [KB] Lendo do disco (${allDocs.length} docs)`);
+            }
+          } catch (cacheError) {
+            console.error(`❌ [KB] Erro ao acessar cache:`, cacheError);
+            // Fallback final: ler do disco
+            const kbDocsPath = path.join(ACTIVE_PATHS.data, 'kb-documents.json');
+            const data = fs.readFileSync(kbDocsPath, 'utf8');
+            allDocs = JSON.parse(data);
           }
-
-          const data = fs.readFileSync(kbDocsPath, 'utf8');
-          const allDocs = JSON.parse(data);
 
           if (allDocs.length === 0) {
             return {
@@ -788,9 +803,21 @@ export async function executeTool(toolName, toolInput) {
           const relevantDocs = allDocs
             .filter(doc => {
               const docName = doc.name.toLowerCase();
+              const docOriginalName = doc.originalName?.toLowerCase() || '';
               const docText = doc.extractedText?.toLowerCase() || '';
               const docType = doc.metadata?.documentType?.toLowerCase() || '';
-              const combinedText = `${docName} ${docText} ${docType}`;
+              const combinedText = `${docName} ${docOriginalName} ${docText} ${docType}`;
+
+              // 🔥 FIX 1: Busca por nome EXATO (prioridade máxima)
+              // Se query for exatamente o nome do arquivo, retornar true imediatamente
+              if (docName === queryLower || docOriginalName === queryLower) {
+                return true;
+              }
+
+              // 🔥 FIX 2: Busca por substring no nome (ex: "Report" encontra "Report01772467189156.pdf")
+              if (docName.includes(queryLower) || docOriginalName.includes(queryLower)) {
+                return true;
+              }
 
               // Se query tem palavras, procura por QUALQUER palavra
               if (queryWords.length > 0) {
@@ -809,9 +836,18 @@ export async function executeTool(toolName, toolInput) {
             .slice(0, limite);
 
           if (relevantDocs.length === 0) {
+            // 🔥 FIX: Mostrar lista de documentos disponíveis para ajudar o usuário
+            let availableDocs = '\n📚 **Documentos disponíveis na KB:**\n';
+            allDocs.slice(0, 10).forEach((doc, idx) => {
+              availableDocs += `${idx + 1}. ${doc.name}\n`;
+            });
+            if (allDocs.length > 10) {
+              availableDocs += `... e mais ${allDocs.length - 10} documentos\n`;
+            }
+
             return {
               success: false,
-              content: `Nenhum documento encontrado para "${query}". Documentos disponíveis: ${allDocs.length}`
+              content: `Nenhum documento encontrado para "${query}".${availableDocs}\n💡 Tente usar o nome exato do documento.`
             };
           }
 

@@ -76,6 +76,10 @@ import './utils/bedrock-helper.js';
 import autoPipelineService from './services/auto-pipeline-service.js';
 import { DocumentDeduplicator } from '../lib/document-deduplicator.js';
 import kbCache from '../lib/kb-cache.js';  // 🚀 Cache em memória para kb-documents.json
+
+// 🔥 FIX: Exportar kbCache como global para que tools possam acessá-lo
+global.kbCache = kbCache;
+
 import { scheduler } from './jobs/scheduler.js';
 import { deployJob } from './jobs/deploy-job.js';
 import authRoutes from './routes/auth.js';
