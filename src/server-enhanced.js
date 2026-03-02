@@ -75,6 +75,7 @@ import multiAgentPipelineService from './services/multi-agent-pipeline-service.j
 import './utils/bedrock-helper.js';
 import autoPipelineService from './services/auto-pipeline-service.js';
 import { DocumentDeduplicator } from '../lib/document-deduplicator.js';
+import kbCache from '../lib/kb-cache.js';  // 🚀 Cache em memória para kb-documents.json
 import { scheduler } from './jobs/scheduler.js';
 import { deployJob } from './jobs/deploy-job.js';
 import authRoutes from './routes/auth.js';
@@ -6118,22 +6119,16 @@ async function processUploadInBackground(uploadId, files, userId, userName) {
           }
         };
 
-        // Salvar no kb-documents.json
-        const kbDocsPath = path.join(ACTIVE_PATHS.data, 'kb-documents.json');
-        let kbDocs = [];
-
-        if (fs.existsSync(kbDocsPath)) {
-          const data = fs.readFileSync(kbDocsPath, 'utf8');
-          kbDocs = JSON.parse(data);
-        }
-
-        kbDocs.push(doc);
+        // 🚀 OTIMIZADO: Usar cache em memória (antes: I/O síncrono crescia O(N²))
+        // Adicionar documento principal ao cache
+        kbCache.add(doc);
 
         // 📄 ADICIONAR OS 7 DOCUMENTOS ESTRUTURADOS AO REGISTRO
+        const structDocsToAdd = [];
         for (const structDoc of structuredDocs) {
           const structContent = await fs.promises.readFile(structDoc.path, 'utf8');
 
-          kbDocs.push({
+          structDocsToAdd.push({
             id: `kb-struct-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
             name: `${file.originalname} - ${structDoc.name}`,
             type: structDoc.type === '.md' ? 'text/markdown' : 'application/json',
@@ -6153,7 +6148,10 @@ async function processUploadInBackground(uploadId, files, userId, userName) {
           });
         }
 
-        fs.writeFileSync(kbDocsPath, JSON.stringify(kbDocs, null, 2));
+        // Adicionar documentos estruturados em batch (mais eficiente)
+        if (structDocsToAdd.length > 0) {
+          kbCache.add(structDocsToAdd);
+        }
 
         uploadedDocs.push({
           id: doc.id,
@@ -6226,14 +6224,9 @@ async function processFileWithProgress(filePath, onProgress = null) {
 app.get('/api/kb/documents', requireAuth, (req, res) => {
   try {
     const userId = req.session.user.id; // ✅ Usar session auth
-    const kbDocsPath = path.join(ACTIVE_PATHS.data, 'kb-documents.json');
 
-    if (!fs.existsSync(kbDocsPath)) {
-      return res.json({ documents: [] });
-    }
-
-    const data = fs.readFileSync(kbDocsPath, 'utf8');
-    const allDocs = JSON.parse(data);
+    // 🚀 OTIMIZADO: Usar cache em memória (antes: fs.readFileSync bloqueante)
+    const allDocs = kbCache.getAll();
 
     // Filtrar documentos do usuário atual + documentos compartilhados (web-upload)
     const userDocs = allDocs.filter(doc => doc.userId === userId || doc.userId === 'web-upload');
@@ -6264,15 +6257,8 @@ app.get('/api/kb/documents/:id/download', requireAuth, (req, res) => {
     const { id } = req.params;
     const userId = req.session.user.id; // ✅ Usar session auth
     const userRole = req.session.user.role; // ✅ Usar session auth
-    const kbDocsPath = path.join(ACTIVE_PATHS.data, 'kb-documents.json');
-
-    if (!fs.existsSync(kbDocsPath)) {
-      return res.status(404).json({ error: 'Documento não encontrado' });
-    }
-
-    const data = fs.readFileSync(kbDocsPath, 'utf8');
-    const allDocs = JSON.parse(data);
-    const doc = allDocs.find(d => d.id === id);
+    // 🚀 OTIMIZADO: Usar cache em memória (antes: fs.readFileSync bloqueante)
+    const doc = kbCache.getById(id);
 
     if (!doc) {
       return res.status(404).json({ error: 'Documento não encontrado' });
@@ -6455,77 +6441,35 @@ app.delete('/api/kb/documents/:id', requireAuth, generalLimiter, async (req, res
     totalFilesDeleted += cleanerResult.filesDeleted || 0;
     totalSpaceSaved += cleanerResult.spaceSaved || 0;
 
-    // 2. Buscar documento em kb-documents.json para pegar referências de ficheiros estruturados
-    const kbDocsPath = path.join(ACTIVE_PATHS.data, 'kb-documents.json');
+    // 2. Buscar documento em cache para pegar referências de ficheiros estruturados
+    // 🚀 OTIMIZADO: Usar cache em memória (antes: I/O assíncrono + parse JSON)
     let removedFromNew = false;
     let structuredFiles = [];
 
-    if (fs.existsSync(kbDocsPath)) {
-      console.log('[KB DELETE] Lendo kb-documents.json...');
-      const fileContent = await fs.promises.readFile(kbDocsPath, 'utf8');
-      console.log(`[KB DELETE] Arquivo lido: ${fileContent.length} bytes`);
+    console.log('[KB DELETE] Buscando documento no cache...');
+    const doc = kbCache.getById(id);
 
-      let kbDocs;
-      try {
-        kbDocs = JSON.parse(fileContent);
-        console.log(`[KB DELETE] JSON parseado: ${kbDocs.length} documentos`);
-      } catch (parseError) {
-        console.error('[KB DELETE] ERRO ao parsear JSON:', parseError.message);
-        console.log('[KB DELETE] Tentando corrigir JSON corrompido...');
+    // Se documento tem ficheiros estruturados, pegar referências
+    if (doc && doc.metadata && doc.metadata.structuredDocsInKB) {
+      structuredFiles = doc.metadata.structuredDocsInKB;
+    }
 
-        // Tentar limpar e reparar o JSON
-        let cleanedContent = fileContent.trim();
+    // Remover documento principal do cache
+    const removed = kbCache.remove(id);
+    if (removed) {
+      removedFromNew = true;
+      totalFilesDeleted += 1;
+      logger.info(`✅ Documento ${id} removido do KB cache`);
+    }
 
-        // Remover múltiplos arrays concatenados (][ -> ,)
-        cleanedContent = cleanedContent.replace(/\]\s*\[/g, ',');
+    // Também remover ficheiros estruturados do cache (01_FICHAMENTO, etc.)
+    const removedStructured = kbCache.removeWhere(d => {
+      return d.metadata && d.metadata.isStructuredDocument && d.metadata.parentDocument === id;
+    });
 
-        // Garantir que começa com [ e termina com ]
-        if (!cleanedContent.startsWith('[')) cleanedContent = '[' + cleanedContent;
-        if (!cleanedContent.endsWith(']')) cleanedContent = cleanedContent + ']';
-
-        try {
-          kbDocs = JSON.parse(cleanedContent);
-          console.log(`[KB DELETE] JSON corrigido! ${kbDocs.length} documentos`);
-
-          // Salvar versão corrigida
-          await fs.promises.writeFile(kbDocsPath + '.backup', fileContent);
-          await fs.promises.writeFile(kbDocsPath, JSON.stringify(kbDocs, null, 2));
-          console.log('[KB DELETE] Arquivo corrigido salvo');
-        } catch (secondError) {
-          console.error('[KB DELETE] Falha ao corrigir JSON:', secondError.message);
-          throw new Error('kb-documents.json está corrompido e não pode ser reparado automaticamente');
-        }
-      }
-
-      const doc = kbDocs.find(d => d.id === id);
-
-      // Se documento tem ficheiros estruturados, pegar referências
-      if (doc && doc.metadata && doc.metadata.structuredDocsInKB) {
-        structuredFiles = doc.metadata.structuredDocsInKB;
-      }
-
-      // Remover documento principal do array
-      const originalLength = kbDocs.length;
-      const filtered = kbDocs.filter(d => d.id !== id);
-
-      if (filtered.length < originalLength) {
-        await fs.promises.writeFile(kbDocsPath, JSON.stringify(filtered, null, 2));
-        removedFromNew = true;
-        totalFilesDeleted += 1;
-        logger.info(`✅ Documento ${id} removido de kb-documents.json`);
-      }
-
-      // Também remover ficheiros estruturados do array (01_FICHAMENTO, etc.)
-      const filteredStructured = filtered.filter(d => {
-        return !(d.metadata && d.metadata.isStructuredDocument && d.metadata.parentDocument === id);
-      });
-
-      if (filteredStructured.length < filtered.length) {
-        await fs.promises.writeFile(kbDocsPath, JSON.stringify(filteredStructured, null, 2));
-        const removedCount = filtered.length - filteredStructured.length;
-        totalFilesDeleted += removedCount;
-        logger.info(`✅ ${removedCount} ficheiro(s) estruturado(s) removido(s) de kb-documents.json`);
-      }
+    if (removedStructured > 0) {
+      totalFilesDeleted += removedStructured;
+      logger.info(`✅ ${removedStructured} ficheiro(s) estruturado(s) removido(s) do KB cache`);
     }
 
     // 3. Deletar ficheiros estruturados físicos do disco (knowledge-base/documents/)
