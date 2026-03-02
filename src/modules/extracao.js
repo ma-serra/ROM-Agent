@@ -284,73 +284,98 @@ export async function aplicarFerramentas(texto) {
  */
 export async function aplicarProcessadores(texto, opcoes = {}) {
   const { tamanhoChunk = 450000 } = opcoes;
-  const resultados = {};
 
-  // Processador 1: Extração de Metadados
-  resultados.metadados = {
-    numerosProcesso: [...new Set(texto.match(/\d{7}-\d{2}\.\d{4}\.\d\.\d{2}\.\d{4}/g) || [])],
-    datas: [...new Set(texto.match(/\d{1,2}\/\d{1,2}\/\d{2,4}/g) || [])].slice(0, 50),
-    valores: [...new Set(texto.match(/R\$\s*[\d.,]+/g) || [])].slice(0, 30),
-    cpfs: [...new Set(texto.match(/\d{3}\.\d{3}\.\d{3}-\d{2}/g) || [])],
-    cnpjs: [...new Set(texto.match(/\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2}/g) || [])],
-    oabs: [...new Set(texto.match(/OAB\/[A-Z]{2}\s*\d+/g) || [])],
-    artigos: [...new Set(texto.match(/Art\.\s*\d+/g) || [])].slice(0, 50)
+  // 🚀 OTIMIZADO: Executar processadores 1-9 em PARALELO
+  // Cada processador analisa o texto independentemente
+  const [
+    metadados,
+    tiposDocumentais,
+    redundanciasResult,
+    estruturaResult,
+    chunksResult
+  ] = await Promise.all([
+    // Processador 1: Extração de Metadados (regex scans)
+    Promise.resolve({
+      numerosProcesso: [...new Set(texto.match(/\d{7}-\d{2}\.\d{4}\.\d\.\d{2}\.\d{4}/g) || [])],
+      datas: [...new Set(texto.match(/\d{1,2}\/\d{1,2}\/\d{2,4}/g) || [])].slice(0, 50),
+      valores: [...new Set(texto.match(/R\$\s*[\d.,]+/g) || [])].slice(0, 30),
+      cpfs: [...new Set(texto.match(/\d{3}\.\d{3}\.\d{3}-\d{2}/g) || [])],
+      cnpjs: [...new Set(texto.match(/\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2}/g) || [])],
+      oabs: [...new Set(texto.match(/OAB\/[A-Z]{2}\s*\d+/g) || [])],
+      artigos: [...new Set(texto.match(/Art\.\s*\d+/g) || [])].slice(0, 50)
+    }),
+
+    // Processador 2: Identificação de Documentos (regex scans)
+    Promise.resolve({
+      sentencas: (texto.match(/SENTENÇA|JULGO/gi) || []).length,
+      decisoes: (texto.match(/DECISÃO|DECIDO/gi) || []).length,
+      despachos: (texto.match(/DESPACHO|DETERMINO/gi) || []).length,
+      peticoes: (texto.match(/PETIÇÃO|REQUER/gi) || []).length,
+      certidoes: (texto.match(/CERTIDÃO|CERTIFICO/gi) || []).length,
+      laudos: (texto.match(/LAUDO|PARECER/gi) || []).length
+    }),
+
+    // Processador 3: Compactação (contagem de redundâncias)
+    Promise.resolve(() => {
+      const linhas = texto.split('\n');
+      const contador = {};
+      linhas.forEach(l => { contador[l] = (contador[l] || 0) + 1; });
+      const redundantes = Object.values(contador).filter(c => c > 3).length;
+      return { redundancias: redundantes, linhas };
+    })(),
+
+    // Processador 4-8: Análise estrutural
+    Promise.resolve(() => {
+      const linhas = texto.split('\n');
+      return {
+        totalLinhas: linhas.length,
+        totalParagrafos: texto.split(/\n\n+/).length,
+        totalPalavras: texto.split(/\s+/).length
+      };
+    })(),
+
+    // Processador 9: Divisão em Chunks
+    Promise.resolve(() => {
+      const palavras = texto.split(/\s+/);
+      const chunks = [];
+      let chunkAtual = [];
+      let tamanhoAtual = 0;
+
+      for (const palavra of palavras) {
+        const tamPalavra = Buffer.byteLength(palavra, 'utf8') + 1;
+        if (tamanhoAtual + tamPalavra > tamanhoChunk) {
+          chunks.push(chunkAtual.join(' '));
+          chunkAtual = [palavra];
+          tamanhoAtual = tamPalavra;
+        } else {
+          chunkAtual.push(palavra);
+          tamanhoAtual += tamPalavra;
+        }
+      }
+      if (chunkAtual.length > 0) {
+        chunks.push(chunkAtual.join(' '));
+      }
+
+      return { chunks, totalChunks: chunks.length };
+    })()
+  ]);
+
+  // Montar resultados combinados
+  const resultados = {
+    metadados,
+    tiposDocumentais,
+    redundancias: redundanciasResult.redundancias,
+    estrutura: estruturaResult,
+    chunks: chunksResult.chunks,
+    totalChunks: chunksResult.totalChunks
   };
 
-  // Processador 2: Identificação de Documentos
-  resultados.tiposDocumentais = {
-    sentencas: (texto.match(/SENTENÇA|JULGO/gi) || []).length,
-    decisoes: (texto.match(/DECISÃO|DECIDO/gi) || []).length,
-    despachos: (texto.match(/DESPACHO|DETERMINO/gi) || []).length,
-    peticoes: (texto.match(/PETIÇÃO|REQUER/gi) || []).length,
-    certidoes: (texto.match(/CERTIDÃO|CERTIFICO/gi) || []).length,
-    laudos: (texto.match(/LAUDO|PARECER/gi) || []).length
-  };
-
-  // Processador 3: Compactação (contagem de redundâncias)
-  const linhas = texto.split('\n');
-  const contador = {};
-  linhas.forEach(l => { contador[l] = (contador[l] || 0) + 1; });
-  const redundantes = Object.values(contador).filter(c => c > 3).length;
-  resultados.redundancias = redundantes;
-
-  // Processador 4-8: Análise estrutural
-  resultados.estrutura = {
-    totalLinhas: linhas.length,
-    totalParagrafos: texto.split(/\n\n+/).length,
-    totalPalavras: texto.split(/\s+/).length
-  };
-
-  // Processador 9: Divisão em Chunks
-  const palavras = texto.split(/\s+/);
-  const chunks = [];
-  let chunkAtual = [];
-  let tamanhoAtual = 0;
-
-  for (const palavra of palavras) {
-    const tamPalavra = Buffer.byteLength(palavra, 'utf8') + 1;
-    if (tamanhoAtual + tamPalavra > tamanhoChunk) {
-      chunks.push(chunkAtual.join(' '));
-      chunkAtual = [palavra];
-      tamanhoAtual = tamPalavra;
-    } else {
-      chunkAtual.push(palavra);
-      tamanhoAtual += tamPalavra;
-    }
-  }
-  if (chunkAtual.length > 0) {
-    chunks.push(chunkAtual.join(' '));
-  }
-
-  resultados.chunks = chunks;
-  resultados.totalChunks = chunks.length;
-
-  // Processador 10: Sumário
+  // Processador 10: Sumário (depende dos anteriores)
   resultados.sumario = {
     processadoresAplicados: 10,
-    chunksGerados: chunks.length,
-    metadadosExtraidos: Object.keys(resultados.metadados).length,
-    tiposIdentificados: Object.values(resultados.tiposDocumentais).reduce((a, b) => a + b, 0)
+    chunksGerados: chunksResult.totalChunks,
+    metadadosExtraidos: Object.keys(metadados).length,
+    tiposIdentificados: Object.values(tiposDocumentais).reduce((a, b) => a + b, 0)
   };
 
   return resultados;
