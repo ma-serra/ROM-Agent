@@ -334,26 +334,45 @@ export async function aplicarProcessadores(texto, opcoes = {}) {
       };
     })(),
 
-    // Processador 9: Divisão em Chunks
+    // Processador 9: Divisão em Chunks (OTIMIZADO - não explode memória)
     Promise.resolve(() => {
-      const palavras = texto.split(/\s+/);
       const chunks = [];
-      let chunkAtual = [];
+      let chunkAtual = '';
       let tamanhoAtual = 0;
 
-      for (const palavra of palavras) {
+      // 🚀 OTIMIZADO: Processar palavra por palavra SEM criar array gigante
+      // Split em stream usando regex
+      const palavras = texto.match(/\S+/g) || [];
+
+      for (let i = 0; i < palavras.length; i++) {
+        const palavra = palavras[i];
         const tamPalavra = Buffer.byteLength(palavra, 'utf8') + 1;
-        if (tamanhoAtual + tamPalavra > tamanhoChunk) {
-          chunks.push(chunkAtual.join(' '));
-          chunkAtual = [palavra];
+
+        if (tamanhoAtual + tamPalavra > tamanhoChunk && chunkAtual.length > 0) {
+          // Finalizar chunk atual
+          chunks.push(chunkAtual);
+          chunkAtual = palavra;
           tamanhoAtual = tamPalavra;
         } else {
-          chunkAtual.push(palavra);
+          // Adicionar palavra ao chunk atual
+          if (chunkAtual.length > 0) {
+            chunkAtual += ' ' + palavra;
+          } else {
+            chunkAtual = palavra;
+          }
           tamanhoAtual += tamPalavra;
         }
+
+        // 🔥 FIX: Limitar chunks para evitar memória infinita
+        if (chunks.length >= 100) {
+          console.warn(`⚠️ Limite de 100 chunks atingido, truncando resto`);
+          break;
+        }
       }
+
+      // Adicionar último chunk
       if (chunkAtual.length > 0) {
-        chunks.push(chunkAtual.join(' '));
+        chunks.push(chunkAtual);
       }
 
       return { chunks, totalChunks: chunks.length };

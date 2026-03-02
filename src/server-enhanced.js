@@ -3680,16 +3680,9 @@ app.post('/api/upload-documents', upload.array('files', 20), async (req, res) =>
           const kbMetadataPath = kbPath.replace('.txt', '.metadata.json');
           await fs.promises.writeFile(kbMetadataPath, JSON.stringify(kbMetadata, null, 2), 'utf8');
 
-          // 📋 REGISTRAR NO kb-documents.json (para aparecer na interface do KB)
+          // 📋 REGISTRAR NO kb-documents.json usando cache em memória
+          // 🚀 OTIMIZADO: Usar kbCache (antes: I/O síncrono CADA arquivo = gargalo!)
           try {
-            const kbDocsPath = path.join(ACTIVE_PATHS.data, 'kb-documents.json');
-            let kbDocs = [];
-
-            if (fs.existsSync(kbDocsPath)) {
-              const data = fs.readFileSync(kbDocsPath, 'utf8');
-              kbDocs = JSON.parse(data);
-            }
-
             // Criar entrada para o documento PRINCIPAL
             const kbDoc = {
               id: `kb-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
@@ -3711,13 +3704,15 @@ app.post('/api/upload-documents', upload.array('files', 20), async (req, res) =>
               }
             };
 
-            kbDocs.push(kbDoc);
+            // Adicionar documento principal ao cache
+            kbCache.add(kbDoc);
 
             // 📄 ADICIONAR OS 7 DOCUMENTOS ESTRUTURADOS AO REGISTRO
+            const structDocsToAdd = [];
             for (const structDoc of structuredDocs) {
               const structContent = await fs.promises.readFile(structDoc.path, 'utf8');
 
-              kbDocs.push({
+              structDocsToAdd.push({
                 id: `kb-struct-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
                 name: `${file.originalname} - ${structDoc.name}`,
                 type: structDoc.type === '.md' ? 'text/markdown' : 'application/json',
@@ -3736,11 +3731,16 @@ app.post('/api/upload-documents', upload.array('files', 20), async (req, res) =>
                 }
               });
             }
-            fs.writeFileSync(kbDocsPath, JSON.stringify(kbDocs, null, 2));
 
-            console.log(`   📋 KB Registry: Registrado em kb-documents.json (${kbDocs.length} total)`);
+            // Adicionar documentos estruturados em batch
+            if (structDocsToAdd.length > 0) {
+              kbCache.add(structDocsToAdd);
+            }
+
+            const totalDocs = 1 + structDocsToAdd.length;
+            console.log(`   📋 KB Registry: ${totalDocs} documento(s) adicionados ao cache`);
           } catch (registryError) {
-            console.error(`   ⚠️  Erro ao registrar em kb-documents.json: ${registryError.message}`);
+            console.error(`   ⚠️  Erro ao registrar no KB cache: ${registryError.message}`);
           }
 
         } catch (kbError) {
