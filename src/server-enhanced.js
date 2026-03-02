@@ -6251,6 +6251,37 @@ app.get('/api/kb/documents', requireAuth, (req, res) => {
   }
 });
 
+/**
+ * POST /api/kb/cache/reload
+ * 🔄 Força recarga do cache do disco (útil se cache ficou desatualizado)
+ * Admin/debug endpoint
+ */
+app.post('/api/kb/cache/reload', requireAuth, generalLimiter, async (req, res) => {
+  try {
+    logger.info('🔄 Forçando reload do KB cache...');
+
+    const beforeCount = kbCache.getAll().length;
+
+    // Recarregar cache do disco
+    kbCache.reload();
+
+    const afterCount = kbCache.getAll().length;
+
+    logger.info(`✅ KB cache recarregado: ${beforeCount} → ${afterCount} documentos`);
+
+    res.json({
+      success: true,
+      message: 'Cache recarregado com sucesso',
+      beforeCount,
+      afterCount,
+      changed: afterCount !== beforeCount
+    });
+  } catch (error) {
+    logger.error('❌ Erro ao recarregar KB cache:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
 // Download de documento do KB (requer autenticação e ownership)
 app.get('/api/kb/documents/:id/download', requireAuth, (req, res) => {
   try {
@@ -6454,22 +6485,23 @@ app.delete('/api/kb/documents/:id', requireAuth, generalLimiter, async (req, res
       structuredFiles = doc.metadata.structuredDocsInKB;
     }
 
-    // Remover documento principal do cache
-    const removed = kbCache.remove(id);
+    // Remover documento principal do cache (🔥 FIX: save imediato)
+    const removed = await kbCache.remove(id, true);  // immediate: true
     if (removed) {
       removedFromNew = true;
       totalFilesDeleted += 1;
-      logger.info(`✅ Documento ${id} removido do KB cache`);
+      logger.info(`✅ Documento ${id} removido do KB cache e salvo`);
     }
 
     // Também remover ficheiros estruturados do cache (01_FICHAMENTO, etc.)
-    const removedStructured = kbCache.removeWhere(d => {
+    // 🔥 FIX: save imediato para evitar cache desatualizado
+    const removedStructured = await kbCache.removeWhere(d => {
       return d.metadata && d.metadata.isStructuredDocument && d.metadata.parentDocument === id;
-    });
+    }, true);  // immediate: true
 
     if (removedStructured > 0) {
       totalFilesDeleted += removedStructured;
-      logger.info(`✅ ${removedStructured} ficheiro(s) estruturado(s) removido(s) do KB cache`);
+      logger.info(`✅ ${removedStructured} ficheiro(s) estruturado(s) removido(s) do KB cache e salvo(s)`);
     }
 
     // 3. Deletar ficheiros estruturados físicos do disco (knowledge-base/documents/)
