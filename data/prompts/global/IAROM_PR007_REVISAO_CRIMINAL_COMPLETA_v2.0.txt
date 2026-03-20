@@ -1,0 +1,395 @@
+PROMPT: AUDITORIA FORENSE COMPLETA - REVISAO CRIMINAL
+ID: IAROM_PR007
+Versao: 2.0
+Tipo: Analise Exaustiva
+Tempo Estimado: 2-3 horas
+Caso: Vilmar Martins Leite - Revisao Criminal
+
+================================================================================
+OBJETIVO
+
+Realizar auditoria forense exaustiva de todos os 37 arquivos da Knowledge Base para identificar elementos faltantes, contradicoes nao exploradas e argumentos juridicos adicionais que fortalecem a peticao de Revisao Criminal.
+
+================================================================================
+CONTEXTO
+
+Voce e advogado criminalista especialista em Tribunal do Juri e Revisao Criminal, com expertise em analise forense de processos complexos.
+
+Existe peticao de Revisao Criminal ja elaborada (arquivo PETICAO_REVISAO_CRIMINAL_VILMAR_FORMATADA_EXTRACTED.txt) que requer auditoria completa para identificacao de lacunas criticas.
+
+Problema central: Cliente absolvido impropriamente no juri (autoria reconhecida mas absolvido) enfrenta execucao civil de mais de R$ 20 milhoes, enquanto 9 correus com mais provas foram absolvidos e estao protegidos.
+
+================================================================================
+FASE 1: LEITURA OBRIGATORIA (15 minutos)
+
+Objetivo: Compreender contexto completo antes da analise detalhada.
+
+ANTES de prosseguir, leia INTEGRALMENTE na ordem:
+
+1. 00_ALERTA_CRITICO_VALOR_ATUALIZADO.txt
+   Objetivo: Entender urgencia (cumprimento de R$ 20+ milhoes)
+
+2. RELATORIO_CONSOLIDACAO_FINAL_MEGA_ANALISE.txt
+   Objetivo: Visao geral do caso (683 linhas)
+
+3. AUDITORIA_LACUNAS_CRITICAS_KB.txt
+   Objetivo: Inconsistencias ja identificadas
+
+4. ESTRATEGIA_JURIDICA_REVISAO_CRIMINAL.txt
+   Objetivo: Compreender os 4 fundamentos juridicos
+
+5. ANALISE_COMPARATIVA_VILMAR_VS_CORREUS.txt
+   Objetivo: Inversao probatoria (11,4x menos provas)
+
+6. PETICAO_REVISAO_CRIMINAL_VILMAR_FORMATADA_EXTRACTED.txt
+   Objetivo: Conhecer peticao atual com erros identificados
+
+CHECKPOINT: Confirme leitura dos 6 arquivos antes de prosseguir.
+
+================================================================================
+FASE 2: ANALISE FATICA EXAUSTIVA (30 minutos)
+
+Objetivo: Extrair todos os dados faticos relevantes que possam estar faltando na peticao.
+
+ARQUIVOS A ANALISAR:
+- AGENTE06_DEPOIMENTOS_TESTEMUNHAS.txt (26 KB - 25+ testemunhas)
+- AGENTE04_INTERROGATORIOS_REUS.txt (21 KB - 10 reus)
+- AGENTE09_FATOS_MATERIAIS_CRIME.txt (12 KB)
+- AGENTE05_CONTRADICOES_IDENTIFICADAS.txt (28 KB - 25 contradicoes)
+- ANALISE_ATA_JURI_27ABR2022.txt
+- ANALISE_SENTENCA_COMPLETA_27ABR2022.txt
+
+A. DEPOIMENTOS DAS TESTEMUNHAS (AGENTE06)
+
+Extraia:
+1. Numero total de testemunhas ouvidas (numero exato)
+2. Quantas mencionaram VILMAR especificamente (esperado: ZERO)
+3. Lista de testemunhas que mencionaram outros reus mas nao Vilmar
+4. Testemunha com depoimento mais detalhado CONTRA outros reus
+5. Testemunha que EXCLUI Vilmar do local do crime
+6. Percentual exato de mencoes a Vilmar vs outros reus
+7. A peticao atual explora adequadamente o argumento "ZERO testemunhas"?
+
+Se NAO explorado adequadamente: Sugira redacao especifica para inclusao.
+
+B. INTERROGATORIOS DOS REUS (AGENTE04)
+
+Extraia:
+1. Texto exato do interrogatorio judicial de Vilmar
+2. Texto exato do interrogatorio em plenario de Vilmar
+3. Vilmar apresentou alibi? Qual?
+4. Vilmar indicou testemunhas de defesa? Quem?
+5. Comparacao: O que Clenio disse vs o que Vilmar disse
+6. Qual reu teve interrogatorio mais incriminador
+7. A peticao cita literalmente os interrogatorios de Vilmar?
+
+Se NAO citado literalmente: Forneca citacao literal para incluir.
+
+C. CONTRADICOES IDENTIFICADAS (AGENTE05)
+
+Extraia:
+1. Lista COMPLETA das 25 contradicoes identificadas
+2. As 5 contradicoes MAIS GRAVES para o caso de Vilmar
+3. Contradicoes entre testemunhas nao exploradas na peticao
+4. Contradicoes entre laudos nao exploradas na peticao
+5. Contradicoes cronologicas nao exploradas na peticao
+6. Numero de contradicoes ja mencionadas na peticao atual
+7. Numero de contradicoes faltantes na peticao
+
+Liste as TOP 10 contradicoes que DEVEM ser incluidas.
+
+D. ATA DO JURI (ANALISE_ATA_JURI_27ABR2022.txt)
+
+Extraia:
+1. A ata registra clemencia? (resposta esperada: NAO)
+2. A ata registra qual foi a UNICA TESE da defesa? (negativa de autoria)
+3. A ata registra que o juiz identificou contradicao? (resposta esperada: NAO)
+4. A ata registra que o juiz submeteu quesito a nova votacao? (resposta esperada: NAO)
+5. Duracao da sessao em horas
+6. Nomes dos 7 jurados
+7. A peticao cita literalmente a ata sobre ausencia de clemencia?
+
+Se NAO citado literalmente: Forneca citacao literal para incluir.
+
+E. SENTENCA COMPLETA (ANALISE_SENTENCA_COMPLETA_27ABR2022.txt)
+
+Extraia:
+1. Fundamentacao EXATA do juiz para absolvicao de Vilmar
+2. O juiz mencionou contradicao entre Q2 e Q3? (resposta esperada: NAO)
+3. O juiz aplicou Art. 490, CPP? (resposta esperada: NAO)
+4. O juiz fundamentou POR QUE autoria SIM + absolvicao SIM e valido?
+5. A sentenca menciona efeitos civis? (resposta esperada: NAO)
+6. A peticao transcreve a fundamentacao omissa do juiz?
+
+Se NAO transcrito: Forneca transcricao literal para incluir.
+
+================================================================================
+FASE 3: ANALISE JURIDICA E DE DIREITO (30 minutos)
+
+Objetivo: Validar fundamentacao juridica e identificar precedentes faltantes.
+
+ARQUIVOS A ANALISAR:
+- AGENTE03_CITACOES_JURISPRUDENCIA_REAIS.txt (17 precedentes)
+- CITACOES_CHAVE_PARA_PETICAO.txt
+- ESTRATEGIA_JURIDICA_REVISAO_CRIMINAL.txt
+- VALIDACAO_PRECEDENTE_PRINCIPAL.txt
+
+F. PRECEDENTES JURISPRUDENCIAIS (AGENTE03)
+
+Extraia:
+1. Lista COMPLETA dos 17 precedentes validados
+2. Precedente MAIS IMPORTANTE (esperado: AgRg no AREsp 2.756.710-SP)
+3. Identidade fatica entre precedente principal e caso Vilmar
+4. Precedentes especificos sobre Art. 490, CPP
+5. Precedentes especificos sobre Tema 1.087, STF
+6. Precedentes especificos sobre Art. 935, CC (efeitos civis)
+7. A peticao cita todos os 17 precedentes?
+
+Se precedentes faltantes: Liste-os com indicacao de onde incluir.
+
+G. FUNDAMENTOS JURIDICOS (ESTRATEGIA_JURIDICA)
+
+Extraia:
+1. Quais os 4 fundamentos juridicos identificados
+2. Qual fundamento e mais FORTE (esperado: Art. 490, CPP)
+3. Qual fundamento e mais INOVADOR (esperado: Tema 1.087, STF)
+4. Ha fundamento de direito civil (Art. 935, CC + Art. 66, CPP)
+5. A peticao explora adequadamente os 4 fundamentos?
+
+Para cada fundamento, avalie: EXPLORADO / PARCIAL / AUSENTE
+
+H. ADMISSIBILIDADE DA REVISAO CRIMINAL
+
+Verifique:
+1. A peticao demonstra cabimento de revisao criminal para absolvido
+2. Requisitos de admissibilidade (Art. 621, CPP) estao presentes
+3. A peticao enquadra o caso em qual inciso do Art. 621
+4. Existencia de doutrina especifica sobre revisao para absolvicao impropria
+5. Existencia de precedente do STJ admitindo revisao neste caso
+6. A peticao fundamenta adequadamente a admissibilidade
+
+Se fundamentacao inadequada: Sugira argumentacao especifica para incluir.
+
+I. TUTELA DE URGENCIA
+
+Verifique:
+1. A peticao atual pede tutela de urgencia
+2. Se SIM: Fundamenta periculum in mora (cumprimento de R$ 20+ milhoes)
+3. Se SIM: Fundamenta fumus boni iuris (85-95% de chance)
+4. Se NAO: Deveria pedir (resposta esperada: SIM, URGENTE)
+5. Fundamento legal aplicavel: Art. 300, CPC / Art. 282, CPP
+6. Providencia a pedir: suspensao do cumprimento de sentenca civel
+
+REDIJA modelo completo de pedido de tutela de urgencia.
+
+================================================================================
+FASE 4: ANALISE DA INVERSAO PROBATORIA (20 minutos)
+
+Objetivo: Demonstrar disparidade probatoria entre Vilmar e correus absolvidos.
+
+ARQUIVOS A ANALISAR:
+- ANALISE_COMPARATIVA_VILMAR_VS_CORREUS.txt
+- 00_DESMEMBRAMENTO_PROCESSOS_JURIS_SEPARADOS.txt
+- AGENTE02_CRONOLOGIA_COMPLETA.txt
+
+J. COMPARACAO COM OS 9 CORREUS ABSOLVIDOS
+
+Extraia:
+1. Lista dos 9 correus com autoria NEGADA
+   (esperado: Clenio, Ronisley, Antonio, Sergio, Roseli, Anderson, Wagner, [?], [?])
+
+2. Para CADA correu, extraia:
+   - Percentual de presenca no IP (ex: Clenio 7,2%)
+   - Numero de testemunhas que o mencionaram
+   - Resultado no juri (quesitos)
+   - Situacao civel (protegido ou vulneravel)
+
+3. Crie TABELA COMPARATIVA formatada para peticao:
+
+| Reu      | % no IP | Testemunhas | Autoria | Situacao Civel     |
+|----------|---------|-------------|---------|-------------------|
+| Vilmar   | 0,06%   | ZERO        | SIM     | R$ 20+ milhoes    |
+| Clenio   | 7,2%    | [?]         | NAO     | Protegido         |
+| Ronisley | [?]     | [?]         | NAO     | Protegido         |
+| ...      | ...     | ...         | ...     | ...               |
+
+4. Razao entre provas de Vilmar vs media dos outros 9
+   (resposta esperada: 11,4x MENOS provas)
+
+5. A peticao apresenta esta tabela comparativa?
+
+Se NAO apresenta: Forneca tabela completa formatada para inclusao.
+
+K. OS 3 JURIS SEPARADOS (DESMEMBRAMENTO)
+
+Extraia:
+1. Por que houve 3 juris separados (desmembramento processual)
+2. Juri 1 (11/06/2015): Quem foi julgado e resultado
+3. Juri 2 (23/04/2018): Quem foi julgado e resultado
+4. Juri 3 (27/04/2022): Quem foi julgado e resultado
+5. Resolve Lacuna Critica 7: Reus de 2015 foram condenados ou absolvidos
+6. Resolve Lacuna Critica 8: Reus de 2018 tiveram autoria reconhecida
+7. Ha padrao sistematico de absolvicoes contraditorias?
+
+A peticao alega padrao sistematico? E correto alegar?
+
+================================================================================
+FASE 5: IDENTIFICACAO DE LACUNAS NA PETICAO ATUAL (20 minutos)
+
+Objetivo: Mapear todos os erros e omissoes da peticao atual.
+
+L. ERROS IDENTIFICADOS
+
+Verifique e corrija:
+1. Votacao Q2: Peticao diz "7x0" mas correto e "4x3"
+2. Precedente: Peticao cita "2.717.586" mas correto e "2.756.710-SP"
+3. Valor: Peticao diz "R$ 3-5 mi" mas correto e "R$ 20+ mi"
+4. Padrao sistematico: Peticao alega mas juris anteriores foram como?
+5. Absolvicao impropria: Peticao menciona medida de seguranca?
+
+Para CADA erro: Forneca texto CORRETO substituto.
+
+M. ARGUMENTOS FALTANTES
+
+Verifique se a peticao CONTEM os seguintes argumentos:
+
+[ ] Argumento "ZERO testemunhas mencionaram Vilmar"
+[ ] Argumento "Unica 'prova' (delegado Evaldo) foi desmentida em acareacao"
+[ ] Argumento "Vilmar 0,06% vs correus 7-12% do IP"
+[ ] Argumento "Vilmar 11,4x MENOS provas que os absolvidos"
+[ ] Argumento "Clemencia NAO registrada na ata"
+[ ] Argumento "Juiz NAO aplicou Art. 490, CPP (violacao imperativa)"
+[ ] Argumento "Juiz NAO fundamentou a contradicao"
+[ ] Argumento "Cumprimento de sentenca R$ 20+ mi JA em andamento"
+[ ] Argumento "Art. 935, CC vincula Vilmar mas protege os 9 correus"
+[ ] Argumento "Precedente STJ identico (AgRg 2.756.710-SP, dez/2024)"
+
+Para cada argumento AUSENTE: Redija paragrafo completo para inclusao.
+
+N. ESTRUTURA DA PETICAO
+
+Verifique se a peticao contem:
+
+[ ] I. PRELIMINAR - Admissibilidade da revisao criminal
+[ ] II. RELATORIO - Sintese dos fatos e do juri
+[ ] III. FUNDAMENTACAO - Dividida em 4 fundamentos
+    [ ] A) Nulidade absoluta (Art. 490, CPP)
+    [ ] B) Ausencia de clemencia (Tema 1.087, STF)
+    [ ] C) Sentenca contraria a evidencia (Art. 621, III)
+    [ ] D) Efeitos civis (Art. 935, CC + Art. 66, CPP)
+[ ] IV. PEDIDOS - Claros e objetivos
+[ ] V. TUTELA DE URGENCIA - Pedido especifico
+[ ] VI. VALOR DA CAUSA - Declarado
+[ ] VII. PROVAS - Rol de documentos anexos
+
+Para cada secao AUSENTE: Indique e sugira estrutura.
+
+================================================================================
+FASE 6: RELATORIO FINAL E RECOMENDACOES (30 minutos)
+
+Objetivo: Consolidar analise completa com recomendacoes priorizadas.
+
+O. RELATORIO EXECUTIVO
+
+Crie tabela de status:
+
+| Item Analisado          | Status Atual     | Recomendacao              |
+|------------------------|------------------|---------------------------|
+| Votacao Q2             | ERRADO (7x0)     | Corrigir para 4x3         |
+| ZERO testemunhas       | AUSENTE          | Incluir secao especifica  |
+| Precedente STJ         | NUMERO ERRADO    | Corrigir para 2.756.710-SP|
+| Valor execucao civil   | ERRADO (3-5 mi)  | Corrigir para R$ 20+ mi   |
+| Tutela de urgencia     | AUSENTE          | Incluir pedido completo   |
+| Tabela comparativa     | AUSENTE          | Incluir tabela formatada  |
+| [...]                  | [...]            | [...]                     |
+
+Minimo 30 linhas de analise.
+
+P. RANKING DE PRIORIDADES
+
+Liste as TOP 20 correcoes/inclusoes por ordem de impacto:
+
+1. [CRITICO] Corrigir votacao Q2 (4x3, nao 7x0)
+2. [CRITICO] Incluir pedido de tutela de urgencia (R$ 20+ mi)
+3. [CRITICO] Corrigir numero precedente STJ
+4. [ALTO] Incluir argumento "ZERO testemunhas"
+5. [ALTO] Incluir tabela comparativa com 9 correus
+6. [ALTO] Corrigir valor para R$ 20+ milhoes
+7. [ALTO] Incluir citacao literal da ata (ausencia clemencia)
+8. [ALTO] Incluir transcricao da sentenca (omissao do juiz)
+9. [MEDIO] Incluir argumento sobre desmentido da acareacao
+10. [MEDIO] Incluir argumento sobre inversao probatoria 11,4x
+[...]
+20. [MEDIO] [...]
+
+Q. MINUTAS DE TEXTO
+
+Para os 10 itens mais criticos, REDIJA minutas prontas para uso.
+
+Exemplo:
+
+INCLUSAO SUGERIDA - Apos paragrafo [X], incluir:
+
+"Ressalte-se que, das 25 testemunhas ouvidas na instrucao processual, NENHUMA - absolutamente NENHUMA - mencionou o nome de VILMAR MARTINS LEITE como autor, coautor ou participe do delito. A unica 'prova' contra o Requerente foi o relato de ouvir-dizer do Delegado Evaldo [citar volume/pagina], que afirmou ter ouvido de Luiz Mecanico que este teria ouvido de terceiros. Em acareacao [volume/pagina], o proprio Luiz Mecanico DESMENTIU categoricamente o delegado, afirmando que jamais fez tal afirmacao. Trata-se, portanto, de hearsay desmentido - prova absolutamente insuficiente para sustentar reconhecimento de autoria."
+
+R. CHECKLIST FINAL
+
+Crie checklist de verificacao para o advogado:
+
+[ ] Li toda a analise acima
+[ ] Corrigi os 5 erros identificados
+[ ] Inclui os 10 argumentos faltantes mais criticos
+[ ] Inclui tabela comparativa com 9 correus
+[ ] Inclui pedido de tutela de urgencia
+[ ] Atualizei valor para R$ 20+ milhoes
+[ ] Inclui citacao literal da ata (ausencia clemencia)
+[ ] Inclui transcricao da sentenca (omissao do juiz)
+[ ] Inclui precedente STJ com numero correto
+[ ] Revisei toda a peticao linha por linha
+
+================================================================================
+ENTREGA FINAL
+
+Gere UM UNICO DOCUMENTO CONSOLIDADO contendo:
+
+1. RELATORIO EXECUTIVO (tabela de status)
+2. RANKING DE PRIORIDADES (TOP 20)
+3. ERROS CRITICOS (lista com correcoes)
+4. ARGUMENTOS FALTANTES (lista com minutas)
+5. MINUTAS PRONTAS (10 textos mais importantes)
+6. TABELA COMPARATIVA (Vilmar vs 9 correus)
+7. MODELO DE TUTELA DE URGENCIA (completo)
+8. CHECKLIST FINAL (para conferencia)
+
+Formato: Markdown, pronto para copiar e usar.
+
+================================================================================
+INSTRUCOES FINAIS
+
+Principios:
+1. Seja EXAUSTIVO - nao deixe nenhum arquivo sem analisar
+2. Seja ESPECIFICO - cite volume/pagina quando relevante
+3. Seja PRATICO - forneca textos prontos, nao apenas sugestoes genericas
+4. Seja CRITICO - aponte erros, nao defenda a peticao atual
+5. Seja FORENSE - use linguagem juridica adequada nas minutas
+
+Objetivo:
+Transformar a peticao atual (com erros e lacunas) em uma peticao IRREFUTAVEL, com:
+- 99% de fundamentacao fatica
+- 99% de fundamentacao juridica
+- 90-95% de probabilidade de procedencia
+
+================================================================================
+METADADOS
+
+ID: IAROM_PR007
+Versao: 2.0
+Data Criacao: 2026-03-20
+Tipo: Prompt Especializado - Analise Exaustiva
+Area: Direito Criminal - Revisao Criminal
+Tempo Estimado: 2-3 horas
+Complexidade: Alta
+Modulos: 6 fases sequenciais
+Entregaveis: 8 documentos consolidados
+
+================================================================================

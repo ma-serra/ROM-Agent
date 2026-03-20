@@ -1,0 +1,159 @@
+================================================================================
+IAROM_IN002_PROTOCOLO_URGENTE_v2.0
+================================================================================
+
+METADADOS
+Tipo: Instrucao
+Categoria: Protocolo Processual Urgente
+Versao: 2.0
+Data: 2026-03-20
+Status: Refatorado
+
+================================================================================
+CONTEXTO
+================================================================================
+
+Processo: 5211157-86.2018.8.09.0051
+Status: PRAZO VENCENDO OU JA VENCIDO
+Acao: PROTOCOLAR IMEDIATAMENTE
+
+================================================================================
+MODULO 1: ARQUIVOS PARA PROTOCOLO
+================================================================================
+
+ORDEM DE PROTOCOLO (4 arquivos):
+
+1. PETICAO_FINAL_INVERSAO_ONUS_PROVA_ALESSANDRO.txt
+   Tipo: Peticao principal
+   Extensao: 25 paginas
+   Conteudo: Resposta a inversao do onus da prova
+   Status: PRONTA PARA PROTOCOLO
+
+2. ANEXO_I_MEMORIAL_CALCULO_PRINCIPAL.txt
+   Tipo: Anexo de calculo
+   Valor: R$ 3.074.295,00 (pedido principal)
+   Status: PRONTO PARA ANEXAR
+
+3. ANEXO_II_MEMORIAL_CALCULO_SUBSIDIARIO.txt
+   Tipo: Anexo de calculo
+   Valor: R$ 2.707.295,00 (pedido subsidiario)
+   Status: PRONTO PARA ANEXAR
+
+4. ANEXO_III_DEMONSTRATIVO_PROBATORIO_CHEQUES.txt
+   Tipo: Anexo demonstrativo
+   Conteudo: Demonstracao de bancos diferentes (000127 vs 000093)
+   Status: PRONTO PARA ANEXAR
+
+================================================================================
+MODULO 2: ARGUMENTO CENTRAL
+================================================================================
+
+TESE PRINCIPAL:
+REUS CONFESSARAM TER RECEBIDO O EMPRESTIMO (Movimento 14)
+
+Esta confissao, isoladamente, PROVA a licitude do negocio.
+
+ARGUMENTOS DE REFORCO:
+- Reus eram ADVOGADOS (capacidade plena)
+- OFERECERAM garantia real (2 imoveis)
+- PAGARAM 3 parcelas voluntariamente
+- RENEGOCIARAM 3 vezes espontaneamente
+- Inquerito policial e prova GENERICA insuficiente
+- Reus NAO PROVARAM quitacao
+
+================================================================================
+MODULO 3: PROTOCOLO DE EXECUCAO
+================================================================================
+
+ETAPA 1: CONVERSAO PARA PDF
+Acao: Converter documentos .txt para .pdf
+Ferramenta: Google Docs, Word ou conversor similar
+Requisito: Manter formatacao original
+
+ETAPA 2: ASSINATURA DIGITAL
+Acao: Assinar digitalmente apenas a peticao principal
+Ferramenta: Certificado digital OAB
+
+ETAPA 3: ACESSO AO SISTEMA
+Acao: Acessar ProjudiWeb/TJGO
+Processo: 5211157-86.2018.8.09.0051
+
+ETAPA 4: PROTOCOLAMENTO
+Acao: Protocolar documentos
+Tipo: "Manifestacao" ou "Peticao Intermediaria"
+Procedimento: Upload dos 4 arquivos na ordem especificada
+
+ETAPA 5: COMPROVACAO
+Acao: Salvar protocolo
+Procedimento: Imprimir comprovante, anotar numero/data/hora
+
+================================================================================
+MODULO 4: VALORES PARA CONFERENCIA
+================================================================================
+
+PEDIDO PRINCIPAL: R$ 3.074.295,00
+PEDIDO SUBSIDIARIO: R$ 2.707.295,00
+DIVIDA ORIGINAL: R$ 1.330.000,00 (julho/2017)
+
+================================================================================
+MODULO 5: VERIFICACAO OPCIONAL
+================================================================================
+
+Se houver tempo disponivel, verificar nos autos eletronicos:
+
+[ ] Movimento 14: Confirmar texto exato da CONFISSAO dos reus
+    Acao se diferente: Ajustar paragrafo 11 da peticao
+
+[ ] Movimento 1: Confirmar se contratos FISICOS estao anexados
+    Nota: Se NAO estiverem, peticao continua valida (confissao basta)
+
+================================================================================
+MODULO 6: PROGNOSTICO
+================================================================================
+
+PROBABILIDADE DE EXITO: ALTA
+
+FUNDAMENTOS:
+- Confissao dos reus e irrefutavel
+- Voluntariedade demonstrada
+- Inquerito desqualificado
+- Fundamentacao juridica solida (STJ + TJGO)
+- Reus nao provaram quitacao
+
+================================================================================
+MODULO 7: DOCUMENTOS DE APOIO
+================================================================================
+
+Documentos disponiveis para consulta (NAO protocolar):
+
+- CHECKLIST_FINAL_PROTOCOLO_ALESSANDRO.txt
+  Uso: Checklist detalhado
+
+- RESUMO_EXECUTIVO_FINAL_COMPLETO.txt
+  Uso: Visao geral do caso
+
+- FICHAMENTO_COMPLETO_TRES_CONTRATOS_ALESSANDRO.txt
+  Uso: Referencia tecnica
+
+- ANALISE_FORENSE_COMPLETA_ALESSANDRO.txt
+  Uso: Analise estrategica
+
+- REFUTACAO_TESE_MATA_MATA.txt
+  Uso: Usar se reus alegarem em replica
+
+================================================================================
+MODULO 8: CHECKLIST DE EXECUCAO
+================================================================================
+
+[ ] Converter arquivos para PDF
+[ ] Assinar digitalmente peticao principal
+[ ] Acessar ProjudiWeb/TJGO
+[ ] Localizar processo 5211157-86.2018.8.09.0051
+[ ] Protocolar 4 arquivos na ordem especificada
+[ ] Salvar comprovante de protocolo
+[ ] Anotar numero/data/hora de protocolo
+[ ] Verificar confirmacao de recebimento
+
+================================================================================
+FIM DO DOCUMENTO
+================================================================================
