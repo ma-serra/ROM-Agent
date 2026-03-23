@@ -219,6 +219,59 @@ function getBedrockManagementClient() {
 }
 
 // ============================================================
+// RESOLUÇÃO DE MODELOS
+// ============================================================
+
+/**
+ * Resolve nome amigável de modelo para ID completo do Bedrock
+ * Suporta: nomes amigáveis (nova-pro, llama-3.3-70b), IDs parciais, IDs completos
+ * @param {string} modelName - Nome ou ID do modelo
+ * @returns {string} ID completo do modelo para Bedrock
+ */
+export function resolveModelId(modelName) {
+  if (!modelName) {
+    return MODELOS_BEDROCK.amazon['nova-pro']; // Default
+  }
+
+  // 1. Já é um ID completo com inference profile? Retornar direto
+  if (INFERENCE_PROFILES[modelName]) {
+    return INFERENCE_PROFILES[modelName];
+  }
+
+  // 2. Buscar em MODELOS_BEDROCK por nome amigável
+  for (const provider of Object.values(MODELOS_BEDROCK)) {
+    for (const [friendlyName, modelId] of Object.entries(provider)) {
+      if (friendlyName === modelName) {
+        // Aplicar inference profile se necessário
+        return INFERENCE_PROFILES[modelId] || modelId;
+      }
+    }
+  }
+
+  // 3. Se não encontrou, pode ser um ID parcial - tentar aplicar inference profile
+  if (INFERENCE_PROFILES[modelName]) {
+    return INFERENCE_PROFILES[modelName];
+  }
+
+  // 4. Fallback: retornar o próprio modelName (pode ser ID completo já)
+  return modelName;
+}
+
+/**
+ * Lista todos os modelos disponíveis com nomes amigáveis
+ * @returns {Object} Mapa de modelos por provedor
+ */
+export function getAvailableModels() {
+  const models = {};
+
+  for (const [provider, providerModels] of Object.entries(MODELOS_BEDROCK)) {
+    models[provider] = Object.keys(providerModels);
+  }
+
+  return models;
+}
+
+// ============================================================
 // FUNÇÕES PRINCIPAIS
 // ============================================================
 
@@ -265,6 +318,9 @@ export async function conversar(prompt, options = {}) {
     cacheType = 'simple'  // ← v2.7.0: Cache type (simple, jurisprudence, legislation, templates)
   } = options;
 
+  // 🔥 RESOLVER MODELO (suporta nomes amigáveis: nova-pro, llama-3.3-70b, etc)
+  const modeloId = resolveModelId(modelo);
+
   // 🔥 v2.7.0: CACHE CHECK (10-50x faster on hits)
   if (enableCache && !enableTools) { // Only cache non-tool responses
     const cache = getCache();
@@ -308,8 +364,7 @@ export async function conversar(prompt, options = {}) {
     }
   ];
 
-  // Configurar inferência
-  const modeloId = INFERENCE_PROFILES[modelo] || modelo;
+  // Configurar inferência (modeloId já foi resolvido acima com resolveModelId)
   const isClaude45 = modeloId.includes('claude-haiku-4-5') ||
                      modeloId.includes('claude-sonnet-4-5') ||
                      modeloId.includes('claude-opus-4-5');
@@ -334,9 +389,9 @@ export async function conversar(prompt, options = {}) {
     const toolsUsed = [];
 
     while (loopCount < MAX_LOOPS) {
-      // Montar comando
+      // Montar comando (usando modeloId já resolvido)
       const commandParams = {
-        modelId: INFERENCE_PROFILES[modelo] || modelo,
+        modelId: modeloId,  // Já resolvido com inference profile
         messages: currentMessages,
         inferenceConfig
       };
@@ -648,6 +703,9 @@ export async function conversarStream(prompt, onChunk, options = {}) {
     userId = null  // 🔥 FIX: userId para passar para tools
   } = options;
 
+  // 🔥 RESOLVER MODELO (suporta nomes amigáveis: nova-pro, llama-3.3-70b, etc)
+  const modeloId = resolveModelId(modelo);
+
   // 🛡️ SEGURANÇA: Limitar maxTokens ao máximo absoluto
   // Se não especificado explicitamente, usar limite padrão (16K)
   // Se especificado, respeitar mas não ultrapassar limite absoluto (200K)
@@ -728,7 +786,7 @@ export async function conversarStream(prompt, onChunk, options = {}) {
 
 
   const commandParams = {
-    modelId: INFERENCE_PROFILES[modelo] || modelo,
+    modelId: modeloId,  // Já resolvido com resolveModelId
     messages,
     inferenceConfig: { maxTokens, temperature }
   };
@@ -1624,6 +1682,10 @@ export default {
   CONFIG,
   MODELOS_BEDROCK,
   INFERENCE_PROFILES,
+
+  // Resolução de modelos
+  resolveModelId,
+  getAvailableModels,
 
   // Funções principais
   conversar,
