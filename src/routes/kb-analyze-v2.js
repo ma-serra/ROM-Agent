@@ -223,11 +223,29 @@ router.post('/', async (req, res) => {
         console.log(`   ✅ PDF parseado: ${pdfData.numpages} páginas`);
         console.log(`   📊 Texto extraído: ${Math.round(rawText.length / 1000)}k caracteres`);
 
-        // 🔥 FIX: Detectar PDF escaneado (pouco/zero texto)
+        // 🔥 FIX v2: Detectar PDF escaneado por múltiplos critérios
         const charsPerPage = rawText.length / pdfData.numpages;
-        const MIN_CHARS_PER_PAGE = 100; // Menos que isso = provável escaneado
+        const fileSizeKB = fs.statSync(doc.path).size / 1024;
+        const textSizeKB = rawText.length / 1024;
+        const textToFileSizeRatio = textSizeKB / fileSizeKB;
 
-        if (charsPerPage < MIN_CHARS_PER_PAGE) {
+        console.log(`   📊 Análise de PDF:`);
+        console.log(`      Arquivo: ${Math.round(fileSizeKB)} KB`);
+        console.log(`      Texto: ${Math.round(textSizeKB)} KB`);
+        console.log(`      Chars/página: ${Math.round(charsPerPage)}`);
+        console.log(`      Ratio texto/arquivo: ${(textToFileSizeRatio * 100).toFixed(2)}%`);
+
+        // PDF escaneado tem MUITO menos texto que o tamanho do arquivo
+        // Arquivo de 40 MB com 6 KB de texto = 0.015% = ESCANEADO
+        // Arquivo de 1 MB com 500 KB de texto = 50% = DIGITAL
+        const MIN_TEXT_RATIO = 0.01; // 1% - se texto é menos que 1% do arquivo, é escaneado
+        const MIN_CHARS_PER_PAGE = 500; // Ou menos que 500 chars/página
+
+        const isScanned = textToFileSizeRatio < MIN_TEXT_RATIO || charsPerPage < MIN_CHARS_PER_PAGE;
+
+        if (isScanned) {
+          console.log(`   ⚠️  PDF ESCANEADO DETECTADO!`);
+          console.log(`      Motivo: ${textToFileSizeRatio < MIN_TEXT_RATIO ? `Texto é apenas ${(textToFileSizeRatio * 100).toFixed(2)}% do arquivo` : `Apenas ${Math.round(charsPerPage)} chars/página`}`);
           console.log(`   ⚠️  PDF escaneado detectado: ${Math.round(charsPerPage)} chars/página (< ${MIN_CHARS_PER_PAGE})`);
           console.log(`   🔄 Iniciando OCR com Tesseract.js...`);
 
