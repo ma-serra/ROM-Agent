@@ -235,17 +235,26 @@ router.post('/', async (req, res) => {
         console.log(`      Chars/página: ${Math.round(charsPerPage)}`);
         console.log(`      Ratio texto/arquivo: ${(textToFileSizeRatio * 100).toFixed(2)}%`);
 
+        // 🔥 MODO FORÇADO: Para PDFs grandes (>10 MB), SEMPRE tentar OCR
+        const FORCE_OCR_SIZE_MB = 10;
+        const fileSizeMB = fileSizeKB / 1024;
+        const shouldForceOCR = fileSizeMB > FORCE_OCR_SIZE_MB;
+
         // PDF escaneado tem MUITO menos texto que o tamanho do arquivo
-        // Arquivo de 40 MB com 6 KB de texto = 0.015% = ESCANEADO
-        // Arquivo de 1 MB com 500 KB de texto = 50% = DIGITAL
         const MIN_TEXT_RATIO = 0.01; // 1% - se texto é menos que 1% do arquivo, é escaneado
         const MIN_CHARS_PER_PAGE = 500; // Ou menos que 500 chars/página
 
-        const isScanned = textToFileSizeRatio < MIN_TEXT_RATIO || charsPerPage < MIN_CHARS_PER_PAGE;
+        const isScannedByRatio = textToFileSizeRatio < MIN_TEXT_RATIO || charsPerPage < MIN_CHARS_PER_PAGE;
+        const isScanned = isScannedByRatio || shouldForceOCR;
 
         if (isScanned) {
-          console.log(`   ⚠️  PDF ESCANEADO DETECTADO!`);
-          console.log(`      Motivo: ${textToFileSizeRatio < MIN_TEXT_RATIO ? `Texto é apenas ${(textToFileSizeRatio * 100).toFixed(2)}% do arquivo` : `Apenas ${Math.round(charsPerPage)} chars/página`}`);
+          if (shouldForceOCR && !isScannedByRatio) {
+            console.log(`   🔥 MODO FORÇADO: PDF grande (${Math.round(fileSizeMB)} MB > ${FORCE_OCR_SIZE_MB} MB)`);
+            console.log(`      Tentando OCR independente da detecção automática...`);
+          } else {
+            console.log(`   ⚠️  PDF ESCANEADO DETECTADO!`);
+            console.log(`      Motivo: ${textToFileSizeRatio < MIN_TEXT_RATIO ? `Texto é apenas ${(textToFileSizeRatio * 100).toFixed(2)}% do arquivo` : `Apenas ${Math.round(charsPerPage)} chars/página`}`);
+          }
           console.log(`   ⚠️  PDF escaneado detectado: ${Math.round(charsPerPage)} chars/página (< ${MIN_CHARS_PER_PAGE})`);
           console.log(`   🔄 Iniciando OCR com Tesseract.js...`);
 
