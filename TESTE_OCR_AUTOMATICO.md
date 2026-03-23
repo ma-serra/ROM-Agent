@@ -1,8 +1,11 @@
 # TESTE: OCR Automático para PDFs Escaneados
 
 **Data**: 2026-03-23
-**Commit Deployado**: 78a16ef ✅ (MODO FORÇADO)
-**Status**: PRONTO PARA TESTE - VERSÃO 3 (FORÇADA)
+**Commit Deployado**: b9903bb ✅ (CORREÇÃO DEFINITIVA)
+**Status**: PRONTO PARA TESTE - ARQUIVO CORRETO MODIFICADO
+
+**IMPORTANTE**: Versões anteriores (98bf54d, efe62f8, 78a16ef) modificavam arquivo ERRADO.
+Agora corrigido em `lib/extractor-pipeline.js` - o arquivo que processa upload!
 
 ---
 
