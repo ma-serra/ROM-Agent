@@ -6345,6 +6345,92 @@ app.get('/api/kb/documents', requireAuth, (req, res) => {
 });
 
 /**
+ * GET /api/kb/cache/emergency-diagnose
+ * 🚨 EMERGENCY: Diagnose KB cache without auth (temporary endpoint)
+ * SECURITY: Query param secret=mota2323kb required
+ */
+app.get('/api/kb/cache/emergency-diagnose', async (req, res) => {
+  try {
+    if (req.query.secret !== 'mota2323kb') {
+      return res.status(403).json({ error: 'Forbidden' });
+    }
+
+    const allDocs = kbCache.getAll();
+
+    const patriciaDocs = allDocs.filter(doc => {
+      const title = (doc.title || '').toLowerCase();
+      const content = (doc.content || '').toLowerCase();
+      return title.includes('patricia') || title.includes('patrícia') ||
+             content.includes('patricia') || content.includes('patrícia');
+    });
+
+    const alessandroDocs = allDocs.filter(doc => {
+      const title = (doc.title || '').toLowerCase();
+      const content = (doc.content || '').toLowerCase();
+      return title.includes('alessandro') || title.includes('espólio') || title.includes('espolio') ||
+             content.includes('alessandro') || content.includes('espólio') || content.includes('espolio');
+    });
+
+    const sorted = [...allDocs].sort((a, b) => {
+      const dateA = a.uploadedAt || a.createdAt || '';
+      const dateB = b.uploadedAt || b.createdAt || '';
+      return dateB.localeCompare(dateA);
+    });
+
+    res.json({
+      success: true,
+      totalDocuments: allDocs.length,
+      patriciaDocs: patriciaDocs.map(d => ({ id: d.id, title: d.title, size: d.size })),
+      alessandroDocs: alessandroDocs.map(d => ({ id: d.id, title: d.title, size: d.size })),
+      last10: sorted.slice(0, 10).map(d => ({
+        id: d.id,
+        title: d.title,
+        size: d.size,
+        date: d.uploadedAt || d.createdAt
+      })),
+      workerPID: process.pid,
+      cacheStats: kbCache.getStats()
+    });
+  } catch (error) {
+    logger.error('❌ Erro no diagnóstico emergencial:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+/**
+ * POST /api/kb/cache/emergency-clean
+ * 🚨 EMERGENCY: Clean and reload cache without auth (temporary endpoint)
+ * SECURITY: Query param secret=mota2323kb required
+ */
+app.post('/api/kb/cache/emergency-clean', async (req, res) => {
+  try {
+    if (req.query.secret !== 'mota2323kb') {
+      return res.status(403).json({ error: 'Forbidden' });
+    }
+
+    logger.info('🚨 EMERGENCY CLEAN: Limpando e recarregando cache...');
+
+    const beforeCount = kbCache.getAll().length;
+    kbCache.reload();
+    const afterCount = kbCache.getAll().length;
+
+    logger.info(`✅ Emergency clean: ${beforeCount} → ${afterCount} documentos`);
+
+    res.json({
+      success: true,
+      message: 'Cache recarregado com sucesso',
+      beforeCount,
+      afterCount,
+      changed: afterCount !== beforeCount,
+      workerPID: process.pid
+    });
+  } catch (error) {
+    logger.error('❌ Erro na limpeza emergencial:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+/**
  * POST /api/kb/cache/reload
  * 🔄 Força recarga do cache do disco (útil se cache ficou desatualizado)
  * Admin/debug endpoint
