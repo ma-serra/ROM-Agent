@@ -1,0 +1,357 @@
+===============================================================================
+PROMPT: FINALIZACAO E CONFIGURACAO — SISTEMA SCEAP NO MAC
+SISTEMA ROM V3.0 — RODOLFO OTAVIO MOTA ADVOGADOS ASSOCIADOS
+===============================================================================
+
+ARQUIVO:  IAROM_IN003_FINALIZACAO_MAC_V5.0.txt
+VERSAO:   5.0
+DATA:     23/03/2026
+AREA:     Instrucoes — Instalacao e Configuracao Tecnica
+AUTOR:    Dr. Rodolfo Otavio Mota — OAB/GO 21.841
+STATUS:   COMPLETO — Substitui V1.0 e V2.0 integralmente
+
+NOVIDADES DA V5.0 EM RELACAO A V2.0:
+- Estrutura hierarquizada conforme padrao ROM V3.0
+- Sistema [PENDENTE] integrado para dados faltantes
+- Checklist de instalacao expandido
+- Principios ROM explicitos e inviolaveis
+- Formatacao ROM V3.0 completa
+- Integracao total com Sistema ROM V3.0
+
+===============================================================================
+CONTEXTO
+================================================================================
+
+Objetivo: Transferir e instalar sistema SCEAP Auto Update no Mac
+Arquivo: ~/Desktop/sceap_auto_update.zip
+
+================================================================================
+MODULO 1: METODOS DE TRANSFERENCIA
+================================================================================
+
+OPCAO A: AIRDROP (RECOMENDADO)
+1. Abrir Finder
+2. Localizar: ~/Desktop/sceap_auto_update.zip
+3. Clicar com botao direito > Compartilhar > AirDrop
+4. Selecionar Mac de destino
+
+OPCAO B: EMAIL
+1. Anexar ~/Desktop/sceap_auto_update.zip em email
+2. Enviar para si mesmo
+3. Abrir no Mac de destino
+4. Baixar anexo
+
+OPCAO C: USB
+1. Copiar ~/Desktop/sceap_auto_update.zip para pendrive
+2. Conectar pendrive no Mac de destino
+3. Copiar arquivo para o Mac
+
+OPCAO D: REDE (MACS NA MESMA REDE)
+No Mac de destino:
+ifconfig | grep "inet " | grep -v 127.0.0.1
+
+No Mac atual:
+scp ~/Desktop/sceap_auto_update.zip usuario@IP_DO_MAC:~/Desktop/
+
+================================================================================
+MODULO 2: INSTALACAO NO MAC DE DESTINO
+================================================================================
+
+PASSO 1: EXTRAIR ARQUIVOS
+
+cd ~/Desktop
+unzip sceap_auto_update.zip
+
+PASSO 2: COPIAR PARA PROJETO SCEAP
+
+cd /caminho/do/seu/sceap
+cp -r ~/Desktop/auto_update ./
+cp ~/Desktop/test_video_extraction.py ./
+
+PASSO 3: INSTALAR DEPENDENCIAS
+
+Dependencias do sistema de auto-atualizacao:
+pip3 install schedule rich click
+
+Dependencias de video (se necessario):
+pip3 install openai-whisper ffmpeg-python moviepy pydub
+
+FFmpeg (se necessario):
+brew install ffmpeg
+
+PASSO 4: EXECUTAR CORRECAO AUTOMATICA
+
+cd /caminho/do/seu/sceap
+python3 auto_update/fix_video_extraction.py
+
+Funcoes do script:
+- Configurar SSL
+- Baixar modelo Whisper
+- Instalar dependencias faltantes
+- Verificar FFmpeg
+
+PASSO 5: TESTAR EXTRACAO DE VIDEO
+
+Teste com video:
+python3 test_video_extraction.py "/caminho/do/video.mp4"
+
+Diagnostico:
+python3 auto_update/diagnose_video_extraction.py
+
+================================================================================
+MODULO 3: VERIFICACAO DE FUNCIONAMENTO
+================================================================================
+
+COMANDO 1: VERIFICAR ATUALIZACOES
+
+python3 -m sceap.auto_update.cli check -r requirements.txt -v
+
+Saida esperada:
+- Sistema atualizado OU
+- X atualizacoes disponiveis
+
+COMANDO 2: VALIDAR SISTEMA
+
+python3 -m sceap.auto_update.cli validate -r requirements.txt
+
+Saida esperada:
+- Validacao passou: X/X testes
+- Taxa de sucesso: 100%
+
+COMANDO 3: TESTAR VIDEO
+
+python3 test_video_extraction.py "/caminho/do/video.mp4"
+
+Saida esperada:
+- Extracao de metadados bem-sucedida
+- Metadados extraidos
+- Confianca: 95%
+
+================================================================================
+MODULO 4: CONFIGURACAO OPCIONAL
+================================================================================
+
+CRIAR CONFIGURACAO PERSONALIZADA
+
+cd /caminho/do/seu/sceap
+cp auto_update/config_template.json auto_update/config.json
+nano auto_update/config.json
+
+HABILITAR AGENDAMENTO AUTOMATICO
+
+Verificar status:
+python3 -m sceap.auto_update.cli schedule -r requirements.txt --status
+
+Habilitar:
+nohup python3 -m sceap.auto_update.auto_update_scheduler \
+  --requirements requirements.txt \
+  --enable-auto-update > /tmp/sceap_scheduler.log 2>&1 &
+
+Salvar PID:
+echo $! > /tmp/sceap_scheduler.pid
+
+PARAR AGENDAMENTO
+
+kill $(cat /tmp/sceap_scheduler.pid)
+
+================================================================================
+MODULO 5: COMANDOS UTEIS
+================================================================================
+
+VERIFICACOES
+
+Status de todas as ferramentas:
+python3 auto_update/diagnose_video_extraction.py
+
+Verificar FFmpeg:
+ffmpeg -version
+ffprobe -version
+
+Verificar Whisper:
+python3 -c "import whisper; print('OK')"
+
+ATUALIZACOES
+
+Atualizar todas as ferramentas:
+python3 -m sceap.auto_update.cli update -r requirements.txt -y
+
+Atualizar apenas seguranca:
+python3 -m sceap.auto_update.cli update -r requirements.txt --security-only -y
+
+Simulacao (dry-run):
+python3 -m sceap.auto_update.cli update -r requirements.txt --dry-run
+
+RELATORIOS
+
+Gerar relatorio completo:
+python3 -m sceap.auto_update.cli report -r requirements.txt -o ~/Desktop/relatorio_sceap.md
+
+Ver versao do sistema:
+python3 -m sceap.auto_update.cli version
+
+================================================================================
+MODULO 6: TROUBLESHOOTING
+================================================================================
+
+PROBLEMA: "No module named 'schedule'"
+SOLUCAO:
+pip3 install schedule rich click
+
+PROBLEMA: "FFmpeg nao encontrado"
+SOLUCAO:
+brew install ffmpeg
+ffmpeg -version
+
+PROBLEMA: "SSL Certificate error"
+SOLUCAO:
+python3 auto_update/fix_video_extraction.py
+pip3 install certifi
+
+PROBLEMA: "Whisper nao carrega modelo"
+SOLUCAO:
+mkdir -p ~/.cache/whisper
+curl -L https://openaipublic.azureedge.net/main/whisper/models/ed3a0b6b1c0edf879ad9b11b1af5a0e6ab5db9205f891f668f8b0e6c6326e34e/base.pt \
+  -o ~/.cache/whisper/base.pt
+
+PROBLEMA: Extracao falha
+SOLUCAO:
+1. Ver logs:
+tail -100 /tmp/sceap_autoupdate.log
+
+2. Executar diagnostico:
+python3 auto_update/diagnose_video_extraction.py
+
+3. Executar correcao:
+python3 auto_update/fix_video_extraction.py
+
+4. Validar sistema:
+python3 -m sceap.auto_update.cli validate -r requirements.txt
+
+================================================================================
+MODULO 7: DOCUMENTACAO DE REFERENCIA
+================================================================================
+
+ARQUIVOS NO DESKTOP:
+
+1. LISTA_ARQUIVOS_IMPLEMENTADOS.md
+   Conteudo: Lista completa de arquivos, estrutura do sistema
+
+2. SCEAP_AUTO_UPDATE_RESUMO_COMPLETO.md
+   Conteudo: Guia completo, arquitetura, exemplos
+
+3. TESTE_VIDEO_CONCLUIDO.md
+   Conteudo: Resultado de teste, comandos de teste
+
+4. INSTRUCOES_FINAIS_MAC.md (arquivo original)
+   Conteudo: Instrucoes passo a passo, troubleshooting
+
+DOCUMENTACAO TECNICA:
+
+cat auto_update/README.md
+
+================================================================================
+MODULO 8: CHECKLIST DE INSTALACAO
+================================================================================
+
+[ ] Transferir ZIP para o Mac
+[ ] Extrair arquivos
+[ ] Copiar para pasta do SCEAP
+[ ] Instalar dependencias: pip3 install schedule rich click
+[ ] Instalar FFmpeg: brew install ffmpeg (se necessario)
+[ ] Executar correcao: python3 auto_update/fix_video_extraction.py
+[ ] Testar diagnostico: python3 auto_update/diagnose_video_extraction.py
+[ ] Testar video: python3 test_video_extraction.py video.mp4
+[ ] Verificar atualizacoes: python3 -m sceap.auto_update.cli check -r requirements.txt
+[ ] Validar sistema: python3 -m sceap.auto_update.cli validate -r requirements.txt
+[ ] Configurar agendamento (opcional)
+
+================================================================================
+MODULO 9: RESULTADO ESPERADO
+================================================================================
+
+Apos seguir todos os passos, o sistema deve ter:
+
+- Sistema de extracao de video funcionando
+- Sistema de auto-atualizacao operacional
+- 5 agentes especializados ativos
+- Interface CLI completa
+- 86-91 ferramentas atualizadas
+- Backup e rollback automaticos
+- Validacao pos-atualizacao
+- Agendamento configurado (se habilitado)
+
+================================================================================
+MODULO 10: SUPORTE ADICIONAL
+================================================================================
+
+Se encontrar problemas:
+
+1. Executar diagnostico:
+python3 auto_update/diagnose_video_extraction.py
+
+2. Ver logs:
+tail -100 /tmp/sceap_autoupdate.log
+
+3. Gerar relatorio diagnostico:
+python3 -m sceap.auto_update.cli report -r requirements.txt -o ~/Desktop/diagnostico.md
+
+================================================================================
+FIM DO DOCUMENTO
+================================================================================
+
+
+═══════════════════════════════════════════════════════════════════════════════════
+PARTE XVI: PRINCÍPIOS ROM FUNDAMENTAIS
+═══════════════════════════════════════════════════════════════════════════════════
+
+Este prompt opera sob os seguintes princípios do Sistema ROM V3.0:
+
+1. FIDEDIGNIDADE ABSOLUTA
+   Toda informação extraída ou citada deve corresponder exatamente aos
+   documentos fornecidos. Zero invenções, zero suposições.
+
+2. CONFERIBILIDADE OBRIGATÓRIA
+   Todo precedente, súmula ou jurisprudência citada deve ser verificável
+   via web_search ou constar dos autos. Citar sempre número do processo,
+   tribunal, data e ementa quando disponível.
+
+3. ANTI-SUPRESSÃO DE CONTEÚDO
+   Manter SEMPRE o conteúdo completo gerado. Jamais abreviar, resumir ou
+   suprimir seções sob pretexto de "já abordado" ou "extenso demais".
+   Argumentação jurídica exige exaustividade.
+
+4. LINGUAGEM FORENSE LIMPA
+   Evitar marcadores típicos de IA. Usar linguagem jurídica tradicional,
+   técnica, formal. Formatação sóbria e profissional.
+
+5. PRONTIDÃO PARA PROTOCOLO
+   A peça gerada deve estar pronta para protocolo imediato, sem necessidade
+   de revisão substancial. Qualidade profissional desde a primeira geração.
+
+6. MARCADOR [PENDENTE: ...] OBRIGATÓRIO
+   Toda lacuna informacional deve ser explicitamente sinalizada com
+   [PENDENTE: descrição]. Jamais preencher lacunas com dados fictícios.
+
+7. METODOLOGIA ROM - PESQUISA OBRIGATÓRIA
+   Sempre que solicitado precedente/jurisprudência, executar web_search
+   ANTES de redigir. Usar resultados reais e verificáveis.
+
+8. FORMATACAO SOBRIA ROM V3.0
+   Evitar emojis, excesso de travessoes decorativos, caixas ASCII.
+   Preferir numeracao hierarquica tradicional (1., 1.1, 1.1.1) e
+   separadores simples quando necessario.
+
+===============================================================================
+FIM DO DOCUMENTO — IAROM_IN003_FINALIZACAO_MAC_V5.0
+===============================================================================
+
+CONTROLE DE VERSOES:
+V1.0 (2025-XX-XX): Versao inicial legado
+V2.0 (2026-03-20): Refatoracao cientifica IAROM
+V5.0 (2026-03-23): Padronizacao ROM V3.0 completa
+
+ASSINATURA ROM:
+Dr. Rodolfo Otavio Mota — OAB/GO 21.841
+Sistema ROM V3.0 — Rodolfo Otavio Mota Advogados Associados
+
+===============================================================================

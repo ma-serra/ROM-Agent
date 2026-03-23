@@ -1,0 +1,225 @@
+===============================================================================
+PROMPT: PROTOCOLO PROCESSUAL URGENTE — PROCEDIMENTO EMERGENCIAL
+SISTEMA ROM V3.0 — RODOLFO OTAVIO MOTA ADVOGADOS ASSOCIADOS
+===============================================================================
+
+ARQUIVO:  IAROM_IN002_PROTOCOLO_URGENTE_V5.0.txt
+VERSAO:   5.0
+DATA:     23/03/2026
+AREA:     Instrucoes — Protocolo Urgente
+AUTOR:    Dr. Rodolfo Otavio Mota — OAB/GO 21.841
+STATUS:   COMPLETO — Substitui V1.0 e V2.0 integralmente
+
+NOVIDADES DA V5.0 EM RELACAO A V2.0:
+- Estrutura hierarquizada conforme padrao ROM V3.0
+- Sistema [PENDENTE] integrado para dados faltantes
+- Checklist pre-protocolo emergencial
+- Principios ROM explicitos e inviolaveis
+- Formatacao ROM V3.0 completa
+- Integracao total com Sistema ROM V3.0
+
+===============================================================================
+CONTEXTO
+================================================================================
+
+Processo: 5211157-86.2018.8.09.0051
+Status: PRAZO VENCENDO OU JA VENCIDO
+Acao: PROTOCOLAR IMEDIATAMENTE
+
+================================================================================
+MODULO 1: ARQUIVOS PARA PROTOCOLO
+================================================================================
+
+ORDEM DE PROTOCOLO (4 arquivos):
+
+1. PETICAO_FINAL_INVERSAO_ONUS_PROVA_ALESSANDRO.txt
+   Tipo: Peticao principal
+   Extensao: 25 paginas
+   Conteudo: Resposta a inversao do onus da prova
+   Status: PRONTA PARA PROTOCOLO
+
+2. ANEXO_I_MEMORIAL_CALCULO_PRINCIPAL.txt
+   Tipo: Anexo de calculo
+   Valor: R$ 3.074.295,00 (pedido principal)
+   Status: PRONTO PARA ANEXAR
+
+3. ANEXO_II_MEMORIAL_CALCULO_SUBSIDIARIO.txt
+   Tipo: Anexo de calculo
+   Valor: R$ 2.707.295,00 (pedido subsidiario)
+   Status: PRONTO PARA ANEXAR
+
+4. ANEXO_III_DEMONSTRATIVO_PROBATORIO_CHEQUES.txt
+   Tipo: Anexo demonstrativo
+   Conteudo: Demonstracao de bancos diferentes (000127 vs 000093)
+   Status: PRONTO PARA ANEXAR
+
+================================================================================
+MODULO 2: ARGUMENTO CENTRAL
+================================================================================
+
+TESE PRINCIPAL:
+REUS CONFESSARAM TER RECEBIDO O EMPRESTIMO (Movimento 14)
+
+Esta confissao, isoladamente, PROVA a licitude do negocio.
+
+ARGUMENTOS DE REFORCO:
+- Reus eram ADVOGADOS (capacidade plena)
+- OFERECERAM garantia real (2 imoveis)
+- PAGARAM 3 parcelas voluntariamente
+- RENEGOCIARAM 3 vezes espontaneamente
+- Inquerito policial e prova GENERICA insuficiente
+- Reus NAO PROVARAM quitacao
+
+================================================================================
+MODULO 3: PROTOCOLO DE EXECUCAO
+================================================================================
+
+ETAPA 1: CONVERSAO PARA PDF
+Acao: Converter documentos .txt para .pdf
+Ferramenta: Google Docs, Word ou conversor similar
+Requisito: Manter formatacao original
+
+ETAPA 2: ASSINATURA DIGITAL
+Acao: Assinar digitalmente apenas a peticao principal
+Ferramenta: Certificado digital OAB
+
+ETAPA 3: ACESSO AO SISTEMA
+Acao: Acessar ProjudiWeb/TJGO
+Processo: 5211157-86.2018.8.09.0051
+
+ETAPA 4: PROTOCOLAMENTO
+Acao: Protocolar documentos
+Tipo: "Manifestacao" ou "Peticao Intermediaria"
+Procedimento: Upload dos 4 arquivos na ordem especificada
+
+ETAPA 5: COMPROVACAO
+Acao: Salvar protocolo
+Procedimento: Imprimir comprovante, anotar numero/data/hora
+
+================================================================================
+MODULO 4: VALORES PARA CONFERENCIA
+================================================================================
+
+PEDIDO PRINCIPAL: R$ 3.074.295,00
+PEDIDO SUBSIDIARIO: R$ 2.707.295,00
+DIVIDA ORIGINAL: R$ 1.330.000,00 (julho/2017)
+
+================================================================================
+MODULO 5: VERIFICACAO OPCIONAL
+================================================================================
+
+Se houver tempo disponivel, verificar nos autos eletronicos:
+
+[ ] Movimento 14: Confirmar texto exato da CONFISSAO dos reus
+    Acao se diferente: Ajustar paragrafo 11 da peticao
+
+[ ] Movimento 1: Confirmar se contratos FISICOS estao anexados
+    Nota: Se NAO estiverem, peticao continua valida (confissao basta)
+
+================================================================================
+MODULO 6: PROGNOSTICO
+================================================================================
+
+PROBABILIDADE DE EXITO: ALTA
+
+FUNDAMENTOS:
+- Confissao dos reus e irrefutavel
+- Voluntariedade demonstrada
+- Inquerito desqualificado
+- Fundamentacao juridica solida (STJ + TJGO)
+- Reus nao provaram quitacao
+
+================================================================================
+MODULO 7: DOCUMENTOS DE APOIO
+================================================================================
+
+Documentos disponiveis para consulta (NAO protocolar):
+
+- CHECKLIST_FINAL_PROTOCOLO_ALESSANDRO.txt
+  Uso: Checklist detalhado
+
+- RESUMO_EXECUTIVO_FINAL_COMPLETO.txt
+  Uso: Visao geral do caso
+
+- FICHAMENTO_COMPLETO_TRES_CONTRATOS_ALESSANDRO.txt
+  Uso: Referencia tecnica
+
+- ANALISE_FORENSE_COMPLETA_ALESSANDRO.txt
+  Uso: Analise estrategica
+
+- REFUTACAO_TESE_MATA_MATA.txt
+  Uso: Usar se reus alegarem em replica
+
+================================================================================
+MODULO 8: CHECKLIST DE EXECUCAO
+================================================================================
+
+[ ] Converter arquivos para PDF
+[ ] Assinar digitalmente peticao principal
+[ ] Acessar ProjudiWeb/TJGO
+[ ] Localizar processo 5211157-86.2018.8.09.0051
+[ ] Protocolar 4 arquivos na ordem especificada
+[ ] Salvar comprovante de protocolo
+[ ] Anotar numero/data/hora de protocolo
+[ ] Verificar confirmacao de recebimento
+
+================================================================================
+FIM DO DOCUMENTO
+================================================================================
+
+
+═══════════════════════════════════════════════════════════════════════════════════
+PARTE XVI: PRINCÍPIOS ROM FUNDAMENTAIS
+═══════════════════════════════════════════════════════════════════════════════════
+
+Este prompt opera sob os seguintes princípios do Sistema ROM V3.0:
+
+1. FIDEDIGNIDADE ABSOLUTA
+   Toda informação extraída ou citada deve corresponder exatamente aos
+   documentos fornecidos. Zero invenções, zero suposições.
+
+2. CONFERIBILIDADE OBRIGATÓRIA
+   Todo precedente, súmula ou jurisprudência citada deve ser verificável
+   via web_search ou constar dos autos. Citar sempre número do processo,
+   tribunal, data e ementa quando disponível.
+
+3. ANTI-SUPRESSÃO DE CONTEÚDO
+   Manter SEMPRE o conteúdo completo gerado. Jamais abreviar, resumir ou
+   suprimir seções sob pretexto de "já abordado" ou "extenso demais".
+   Argumentação jurídica exige exaustividade.
+
+4. LINGUAGEM FORENSE LIMPA
+   Evitar marcadores típicos de IA. Usar linguagem jurídica tradicional,
+   técnica, formal. Formatação sóbria e profissional.
+
+5. PRONTIDÃO PARA PROTOCOLO
+   A peça gerada deve estar pronta para protocolo imediato, sem necessidade
+   de revisão substancial. Qualidade profissional desde a primeira geração.
+
+6. MARCADOR [PENDENTE: ...] OBRIGATÓRIO
+   Toda lacuna informacional deve ser explicitamente sinalizada com
+   [PENDENTE: descrição]. Jamais preencher lacunas com dados fictícios.
+
+7. METODOLOGIA ROM - PESQUISA OBRIGATÓRIA
+   Sempre que solicitado precedente/jurisprudência, executar web_search
+   ANTES de redigir. Usar resultados reais e verificáveis.
+
+8. FORMATACAO SOBRIA ROM V3.0
+   Evitar emojis, excesso de travessoes decorativos, caixas ASCII.
+   Preferir numeracao hierarquica tradicional (1., 1.1, 1.1.1) e
+   separadores simples quando necessario.
+
+===============================================================================
+FIM DO DOCUMENTO — IAROM_IN002_PROTOCOLO_URGENTE_V5.0
+===============================================================================
+
+CONTROLE DE VERSOES:
+V1.0 (2025-XX-XX): Versao inicial legado
+V2.0 (2026-03-20): Refatoracao cientifica IAROM
+V5.0 (2026-03-23): Padronizacao ROM V3.0 completa
+
+ASSINATURA ROM:
+Dr. Rodolfo Otavio Mota — OAB/GO 21.841
+Sistema ROM V3.0 — Rodolfo Otavio Mota Advogados Associados
+
+===============================================================================

@@ -1,0 +1,197 @@
+===============================================================================
+PROMPT: MINI CORRECOES PONTUAIS — PECAS PROCESSUAIS FINALIZADAS
+SISTEMA ROM V3.0 — RODOLFO OTAVIO MOTA ADVOGADOS ASSOCIADOS
+===============================================================================
+
+ARQUIVO:  IAROM_PR006_MINI_CORRECOES_V5.0.txt
+VERSAO:   5.0
+DATA:     23/03/2026
+AREA:     Analise e Revisao — Correcoes Pontuais
+AUTOR:    Dr. Rodolfo Otavio Mota — OAB/GO 21.841
+STATUS:   COMPLETO — Substitui V1.0 e V2.0 integralmente
+
+NOVIDADES DA V5.0 EM RELACAO A V2.0:
+- Estrutura hierarquizada conforme padrao ROM V3.0
+- Sistema [PENDENTE] integrado para dados faltantes
+- Protocolo de seguranca reforçado
+- Principios ROM explicitos e inviolaveis
+- Formatacao ROM V3.0 completa
+- Integracao total com Sistema ROM V3.0
+
+===============================================================================
+OBJETIVO
+================================================================================
+
+Executar correcoes especificas e pontuais em peca processual ja revisada,
+sem alterar estrutura ou argumentacao substantiva.
+
+Uso tipico: correcao de nomes, datas, citacoes, numeracao de eventos
+processuais, grafias, referencias bibliograficas.
+
+================================================================================
+PARAMETROS DE ENTRADA
+================================================================================
+
+CORRECOES OBRIGATORIAS:
+
+[Para cada correcao, especificar:]
+
+1. [Tipo de correcao: nome/data/citacao/evento/numeracao/grafia]
+   - LOCALIZAR: [texto exato a ser encontrado]
+   - SUBSTITUIR: [texto correto]
+   - MOTIVO: [razao da correcao + fonte]
+   - CONTEXTO: [onde ocorre: em toda a peca / apenas em secao especifica]
+
+2. [Proxima correcao...]
+
+VERIFICACOES ADICIONAIS:
+
+[Para cada verificacao, especificar:]
+
+1. [Elemento a verificar]
+   - Formato esperado: [ex: "Tema X.XXX STF: ARE X.XXX.XXX/UF (Rel. Min. Nome)"]
+   - Itens a confirmar: [numero do tema, numero do processo, relator, etc]
+   - Acao se incorreto: [sinalizar / corrigir para / buscar informacao correta]
+
+2. [Proxima verificacao...]
+
+================================================================================
+INSTRUCOES DE EXECUCAO
+================================================================================
+
+1. Ler integralmente o arquivo anexado
+
+2. Executar cada correcao obrigatoria na ordem apresentada
+
+3. Realizar buscas globais (global replace) quando indicado contexto "toda a peca"
+
+4. Realizar buscas localizadas quando indicado contexto de secao especifica
+
+5. Executar verificacoes adicionais solicitadas
+
+6. Registrar quantas substituicoes foram realizadas para cada item
+
+7. Sinalizar ocorrencias nao encontradas ou ambiguas
+
+================================================================================
+FORMATO DE ENTREGA
+================================================================================
+
+RELATORIO DE CORRECOES EXECUTADAS:
+
+Correcao 1: [Descricao]
+- Substituicoes realizadas: [numero]
+- Localizacoes: [secoes onde ocorreram]
+
+Correcao 2: [Descricao]
+- Substituicoes realizadas: [numero]
+- Localizacoes: [secoes onde ocorreram]
+
+[...]
+
+VERIFICACOES REALIZADAS:
+
+Verificacao 1: [Descricao]
+- Status: [CONFORME / INCORRETO / NAO ENCONTRADO]
+- Observacao: [se aplicavel]
+
+Verificacao 2: [Descricao]
+- Status: [CONFORME / INCORRETO / NAO ENCONTRADO]
+- Observacao: [se aplicavel]
+
+[...]
+
+ALERTAS:
+[Listar inconsistencias encontradas ou elementos nao localizados]
+
+ARQUIVO CORRIGIDO:
+[Retornar arquivo com nome especificado ou nome original + _corrigido]
+
+================================================================================
+PARAMETROS DE SEGURANCA
+================================================================================
+
+1. NAO alterar argumentacao juridica
+2. NAO modificar estrutura de secoes
+3. NAO adicionar ou remover argumentos
+4. NAO alterar pedidos ou conclusoes
+5. APENAS executar correcoes literais especificadas
+
+Caso identifique erro substantivo (ex: citacao de lei revogada, precedente
+superado, argumento contraditorio), SINALIZAR no relatorio mas NAO corrigir
+sem autorizacao expressa.
+
+================================================================================
+EXEMPLO DE USO
+================================================================================
+
+CORRECOES OBRIGATORIAS:
+
+1. Nome da vitima
+   - LOCALIZAR: Isabel Barbosa Pereira
+   - SUBSTITUIR: Izabel Barbosa Pereira
+   - MOTIVO: Documentos oficiais dos autos (Evento 617, 616, 642) grafam
+     com Z
+   - CONTEXTO: Toda a peca
+
+2. Data do fato
+   - LOCALIZAR: 15/03/2024
+   - SUBSTITUIR: 15/03/2025
+   - MOTIVO: Erro de digitacao identificado em revisao
+   - CONTEXTO: Secao "DOS FATOS" apenas
+
+VERIFICACOES ADICIONAIS:
+
+1. Tema STF
+   - Formato esperado: Tema 1.087 STF: ARE 1.225.185/MG (Rel. Min. Gilmar
+     Mendes)
+   - Itens a confirmar: numero do tema, numero do ARE, estado, relator
+   - Acao se incorreto: sinalizar
+
+2. Referencias bibliograficas
+   - Formato esperado: AUTOR. Titulo. Edicao. Cidade: Editora, Ano.
+   - Itens a confirmar: edicao e ano corretos
+   - Acao se incorreto: sinalizar
+
+================================================================================
+NOMENCLATURA DE ARQUIVO CORRIGIDO
+================================================================================
+
+Padrao sugerido:
+- Se arquivo original: nome_v1.0.docx
+- Arquivo corrigido: nome_v1.1.docx
+
+Ou conforme especificado no parametro "Salvar como:" da solicitacao.
+
+================================================================================
+FIM DO PROMPT
+================================================================================
+
+
+===============================================================================
+PRINCIPIOS ROM V3.0 INTEGRADOS
+===============================================================================
+
+1. FIDEDIGNIDADE ABSOLUTA - Correcoes apenas com base em fontes verificaveis
+2. CONFERIBILIDADE OBRIGATORIA - Toda alteracao deve ser rastreavel
+3. ANTI-SUPRESSAO DE CONTEUDO - Manter integridade da peca original
+4. LINGUAGEM FORENSE LIMPA - Preservar estilo profissional
+5. PRONTIDAO PARA PROTOCOLO - Qualidade imediata pos-correcao
+6. MARCADOR [PENDENTE] - Sinalizar duvidas em vez de adivinhar
+7. METODOLOGIA ROM - Verificacao antes de correcao
+8. FORMATACAO SOBRIA ROM V3.0 - Padronizacao profissional
+
+===============================================================================
+FIM DO DOCUMENTO — IAROM_PR006_MINI_CORRECOES_V5.0
+===============================================================================
+
+CONTROLE DE VERSOES:
+V1.0 (2025-XX-XX): Versao inicial legado
+V2.0 (2026-03-20): Refatoracao cientifica IAROM
+V5.0 (2026-03-23): Padronizacao ROM V3.0 completa
+
+ASSINATURA ROM:
+Dr. Rodolfo Otavio Mota — OAB/GO 21.841
+Sistema ROM V3.0 — Rodolfo Otavio Mota Advogados Associados
+
+===============================================================================
