@@ -266,14 +266,40 @@ export const ocrEngine = {
     await this.inicializar();
 
     const resultados = [];
+    const BATCH_SIZE = 4; // Processar 4 páginas em paralelo (1 por worker)
+    const totalPages = imagePaths.length;
+    const totalBatches = Math.ceil(totalPages / BATCH_SIZE);
 
-    for (let i = 0; i < imagePaths.length; i++) {
-      console.log(`\nProcessando imagem ${i + 1}/${imagePaths.length}`);
-      const resultado = await this.executarOCR(imagePaths[i], opcoes);
-      resultados.push({
-        arquivo: imagePaths[i],
-        ...resultado
-      });
+    console.log(`\n🚀 Processamento paralelo: ${totalPages} páginas em ${totalBatches} batches de ${BATCH_SIZE}`);
+
+    for (let batchIndex = 0; batchIndex < totalBatches; batchIndex++) {
+      const startIdx = batchIndex * BATCH_SIZE;
+      const endIdx = Math.min(startIdx + BATCH_SIZE, totalPages);
+      const batch = imagePaths.slice(startIdx, endIdx);
+
+      const batchNumber = batchIndex + 1;
+      const progress = ((batchIndex / totalBatches) * 100).toFixed(1);
+      console.log(`\n📊 Batch ${batchNumber}/${totalBatches} (${progress}%): Processando páginas ${startIdx + 1}-${endIdx} simultaneamente...`);
+
+      // Processar batch em paralelo
+      const batchResults = await Promise.all(
+        batch.map(async (imagePath, idx) => {
+          const pageNum = startIdx + idx + 1;
+          const resultado = await this.executarOCR(imagePath, opcoes);
+          return {
+            arquivo: imagePath,
+            pagina: pageNum,
+            ...resultado
+          };
+        })
+      );
+
+      resultados.push(...batchResults);
+
+      // Log de progresso
+      const pagesProcessed = (batchIndex + 1) * BATCH_SIZE;
+      const actualProgress = ((pagesProcessed / totalPages) * 100).toFixed(1);
+      console.log(`   ✅ Batch ${batchNumber} concluído - ${Math.min(pagesProcessed, totalPages)}/${totalPages} páginas (${actualProgress}%)`);
     }
 
     return {
