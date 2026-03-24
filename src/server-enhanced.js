@@ -6252,7 +6252,7 @@ async function processUploadInBackground(uploadId, files, userId, userName) {
             textLength: structContent.length,
             metadata: {
               isStructuredDocument: true,
-              parentDocument: file.originalname,
+              parentDocument: doc.id,  // 🔥 FIX: Use parent document ID instead of filename
               documentType: structDoc.name.split('_')[1]?.replace('.md', '').replace('.json', ''),
               structuredType: structDoc.name
             }

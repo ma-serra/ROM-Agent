@@ -320,7 +320,7 @@ const TOOL_TIMEOUTS = {
   pesquisar_sumulas: 30000,             // 30s - database search
   consultar_kb: 45000,                  // 45s - semantic search
   pesquisar_doutrina: 45000,            // 45s - complex searches
-  analisar_documento_kb: 600000,        // 🔥 FIX: 10 min (4 análises × 2 min cada + margem)
+  analisar_documento_kb: 1800000,       // 🔥 FIX #4: 30 min (18 fichamentos + retries + margem) - increased from 10min
   create_artifact: 5000,                 // 5s - local operation
   default: 30000                         // 30s default
 };
