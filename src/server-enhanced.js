@@ -3810,7 +3810,7 @@ app.post('/api/upload-documents', upload.array('files', 20), async (req, res) =>
                 textLength: structContent.length,
                 metadata: {
                   isStructuredDocument: true,
-                  parentDocument: file.originalname,
+                  parentDocument: kbDoc.id,  // 🔥 FIX: Use parent document ID instead of filename
                   documentType: structDoc.name.split('_')[1]?.replace('.md', '').replace('.json', ''),
                   structuredType: structDoc.name
                 }
