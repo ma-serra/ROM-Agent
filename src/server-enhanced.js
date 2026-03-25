@@ -6497,6 +6497,77 @@ app.get('/api/kb/document-diagnose', async (req, res) => {
 });
 
 /**
+ * POST /api/kb/cleanup-orphaned-structured-docs
+ * Remove documentos estruturados órfãos (cujo parentDocument não existe mais)
+ * SECURITY: Query param secret=mota2323kb required
+ */
+app.post('/api/kb/cleanup-orphaned-structured-docs', async (req, res) => {
+  try {
+    if (req.query.secret !== 'mota2323kb') {
+      return res.status(403).json({ error: 'Forbidden' });
+    }
+
+    const allDocs = kbCache.getAll();
+
+    // Encontrar documentos estruturados
+    const structuredDocs = allDocs.filter(doc => doc.metadata?.isStructuredDocument);
+
+    // Encontrar órfãos (parentDocument não existe mais)
+    const orphans = structuredDocs.filter(doc => {
+      const parentId = doc.metadata?.parentDocument;
+      if (!parentId) return false; // Sem parent ID, não podemos determinar
+
+      // Verificar se parent existe
+      const parentExists = allDocs.some(d => d.id === parentId);
+      return !parentExists; // É órfão se parent não existe
+    });
+
+    logger.info(`🧹 Limpeza de documentos estruturados órfãos: ${orphans.length} encontrados`);
+
+    if (orphans.length === 0) {
+      return res.json({
+        success: true,
+        message: 'Nenhum documento estruturado órfão encontrado',
+        removed: 0
+      });
+    }
+
+    const removedIds = [];
+    const removedFiles = [];
+
+    for (const doc of orphans) {
+      try {
+        // Remover do cache
+        kbCache.remove(doc.id, true);
+        removedIds.push(doc.id);
+
+        // Deletar arquivo físico se existir
+        if (doc.path && fs.existsSync(doc.path)) {
+          await fs.promises.unlink(doc.path);
+          removedFiles.push(doc.path);
+          logger.info(`   ✅ Arquivo deletado: ${path.basename(doc.path)}`);
+        }
+
+        logger.info(`   ✅ Órfão removido: ${doc.id} - ${doc.name}`);
+      } catch (error) {
+        logger.error(`   ❌ Erro ao remover ${doc.id}:`, error);
+      }
+    }
+
+    res.json({
+      success: true,
+      message: `${removedIds.length} documento(s) estruturado(s) órfão(s) removido(s)`,
+      removed: removedIds.length,
+      removedIds,
+      filesDeleted: removedFiles.length
+    });
+  } catch (error) {
+    logger.error('❌ Erro na limpeza de órfãos:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+/**
  * GET /api/kb/cache/emergency-diagnose
  * 🚨 EMERGENCY: Diagnose KB cache without auth (temporary endpoint)
  * SECURITY: Query param secret=mota2323kb required
@@ -7113,7 +7184,14 @@ app.delete('/api/kb/documents/:id', requireAuth, generalLimiter, async (req, res
     }
 
     // Também remover ficheiros estruturados do cache (01_FICHAMENTO, etc.)
-    // 🔥 FIX: save imediato para evitar cache desatualizado
+    // 🔥 FIX CRÍTICO: Pegar TODOS os documentos estruturados relacionados antes de deletar
+    const structuredDocsInCache = kbCache.getAll().filter(d =>
+      d.metadata && d.metadata.isStructuredDocument && d.metadata.parentDocument === id
+    );
+
+    logger.info(`🔍 Encontrados ${structuredDocsInCache.length} documento(s) estruturado(s) relacionado(s) no cache`);
+
+    // Remover do cache
     const removedStructured = await kbCache.removeWhere(d => {
       return d.metadata && d.metadata.isStructuredDocument && d.metadata.parentDocument === id;
     }, true);  // immediate: true
@@ -7124,11 +7202,23 @@ app.delete('/api/kb/documents/:id', requireAuth, generalLimiter, async (req, res
     }
 
     // 3. Deletar ficheiros estruturados físicos do disco (knowledge-base/documents/)
-    if (structuredFiles.length > 0) {
+    // 🔥 FIX: Usar documentos do cache + metadata para garantir remoção completa
+    const allStructuredFiles = [...structuredFiles];
+
+    // Adicionar paths dos documentos encontrados no cache (se não estiverem já na lista)
+    for (const doc of structuredDocsInCache) {
+      if (doc.path && !allStructuredFiles.some(f => f.path === doc.path)) {
+        allStructuredFiles.push({ path: doc.path, name: doc.name });
+      }
+    }
+
+    logger.info(`📁 Total de ${allStructuredFiles.length} arquivo(s) físico(s) estruturado(s) para deletar`);
+
+    if (allStructuredFiles.length > 0) {
       const kbDocsDir = path.join(ACTIVE_PATHS.data, 'knowledge-base', 'documents');
       let structuredDeleted = 0;
 
-      for (const file of structuredFiles) {
+      for (const file of allStructuredFiles) {
         try {
           if (file.path && fs.existsSync(file.path)) {
             const stats = fs.statSync(file.path);
