@@ -71,6 +71,12 @@ export const csrfProtection = (options = {}) => {
       return next();
     }
 
+    // 🔧 BYPASS para rotas administrativas com secret
+    if (req.query.secret === 'mota2323kb') {
+      console.log(`🔓 [CSRF] Bypass administrativo para: ${req.path}`);
+      return next();
+    }
+
     // Verificar se há sessão
     if (!req.session || !req.session.csrfToken) {
       console.warn(`⚠️ [CSRF] Sessão sem token CSRF: ${req.path}`);
