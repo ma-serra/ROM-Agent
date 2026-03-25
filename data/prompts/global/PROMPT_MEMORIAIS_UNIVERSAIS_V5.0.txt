@@ -57,13 +57,13 @@ PARTE III  - NATUREZA JURIDICA, CABIMENTO E PRAZO (CIVEL E CRIMINAL)
 PARTE IV   - ESTRUTURA REDACIONAL DA PECA (CPC/CPP + CNJ + TECNICA ROM)
 PARTE V    - ANALISE PROBATORIA COMPLETA (TODOS OS MEIOS DE PROVA)
 PARTE VI   - DIREITO MATERIAL: ESTRUTURA NORMATIVA COMPLETA (TODOS OS RAMOS)
-PARTE VII  - IRDR, IAC, TEMAS REPETITIVOS, SUMULAS E ENUNCIADOS
-PARTE VIII - PREQUESTIONAMENTO PROSPECTIVO: RECURSO DE APELACAO, REsp E RE
-PARTE IX   - DISTINGUISHING E OVERRULING (PRECEDENTES CONTRARIOS)
+PARTE VII  - ESTRUTURA REDACIONAL DA PEÇA (8-12 PÁGINAS)
+PARTE VIII - APLICAÇÃO TEMPORAL: DIREITO INTERTEMPORAL (8-12 PÁGINAS)
+PARTE IX   - DIREITO MATERIAL: ESTRUTURA NORMATIVA VERTICAL (15-20 PÁGINAS - UNIVERSAL: CIVIL, CRIMINAL, TRABALHISTA)
 PARTE X    - FATOS INCONTROVERSOS E ESTRATEGIA ANTI-SUMULA 7/STJ
 PARTE XI   - ESPECIFICIDADES DO MEMORIAL CRIMINAL (CPP ART. 403)
 PARTE XII  - ESPECIFICIDADES DO MEMORIAL CIVEL (CPC ART. 364)
-PARTE XIII - MODELOS DE PARAGRAFOS TECNICOS (BLOCOS PRONTOS)
+PARTE XIII - DISTINGUISHING E OVERRULING: TÉCNICAS DE SUPERAÇÃO (6-10 PÁGINAS)
 PARTE XIV  - CHECKLIST FINAL (META: 100/100)
 PARTE XV   - PROTOCOLO DE VERIFICACAO DE PRECEDENTES
 PARTE XVI  - RIGOR ORTOGRAFICO, GRAMATICAL E DE PONTUACAO (INSTRUCOES ATIVAS)
@@ -858,9 +858,1956 @@ A peça deve ser redigida em português formal jurídico, com:
 
 ═══════════════════════════════════════════════════════════════════════════════════
 
-[CONTINUA NAS PARTES V A XXII COM METODOLOGIA COMPLETA DE ANÁLISE PROBATÓRIA,
-DIREITO MATERIAL, PRECEDENTES, PREQUESTIONAMENTO, ESPECIFICIDADES DO MEMORIAL
-CRIMINAL E CÍVEL, CHECKLIST 100/100 E PROTOCOLO DE VERIFICAÇÃO]
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE VII: ESTRUTURA REDACIONAL DA PEÇA (MEMORIAIS CÍVEL E CRIMINAL)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+OBJETIVO DESTA PARTE:
+
+Fornecer estrutura redacional detalhada e completa para memoriais, independentemente
+da natureza (cível ou criminal), contemplando a sequência lógica-argumentativa
+adequada aos padrões processuais brasileiros e ao sistema ROM.
+
+EXTENSÃO ESPERADA: 8-12 páginas
+
+───────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO 1: ARQUITETURA ESTRUTURAL OBRIGATÓRIA
+
+───────────────────────────────────────────────────────────────────────────────────
+
+Os memoriais devem respeitar a seguinte arquitetura estrutural (sequência imperativa):
+
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│ ARQUITETURA ESTRUTURAL COMPLETA DE MEMORIAL                                     │
+├─────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                 │
+│ I. ENDEREÇAMENTO E QUALIFICAÇÃO                                                 │
+│    - Excelentíssimo Senhor Doutor Juiz...                                      │
+│    - Processo nº [número]                                                       │
+│    - Nome completo das partes em caixa alta                                     │
+│                                                                                 │
+│ II. SÍNTESE PROCESSUAL (BREVE RELATÓRIO)                                        │
+│     - Natureza da ação/processo                                                 │
+│     - Datas relevantes (ajuizamento, distribuição, despachos-chave)            │
+│     - Resultado da instrução probatória                                         │
+│     - Data do encerramento da instrução                                         │
+│                                                                                 │
+│ III. FATOS INCONTROVERSOS                                                       │
+│      - Fatos não disputados pelas partes                                        │
+│      - Referência ao documento/ato processual que os evidencia                 │
+│      - Delimitação da controvérsia fático-probatória                            │
+│                                                                                 │
+│ IV. ANÁLISE PROBATÓRIA COMPLETA (NÚCLEO DOS MEMORIAIS)                          │
+│     - Prova documental (com quadro sintético)                                   │
+│     - Prova testemunhal (com credibilidade analisada)                           │
+│     - Prova pericial (com metodologia e conclusões)                             │
+│     - Depoimento pessoal/interrogatório                                         │
+│     - Outros meios de prova (inspeção, gravações, etc.)                         │
+│                                                                                 │
+│ V. CONCLUSÃO PROBATÓRIA                                                         │
+│    - O que a prova demonstrou                                                   │
+│    - O que a prova NÃO demonstrou                                               │
+│    - Síntese: instrução confirmou ou refutou tese da parte?                    │
+│                                                                                 │
+│ VI. ESTRUTURA NORMATIVA VERTICAL (DIREITO APLICÁVEL)                            │
+│     - Nível 1: Constituição Federal                                             │
+│     - Nível 2: Tratados internacionais (se aplicável)                           │
+│     - Nível 3: Leis federais (CC, CP, CPC, CPP, CLT, etc.)                      │
+│     - Nível 4: Normas infralegais                                               │
+│     - Nível 5: Precedentes vinculantes (súmulas, IRDR, temas)                   │
+│                                                                                 │
+│ VII. DISTINGUISHING (SE NECESSÁRIO)                                             │
+│      - Precedentes contrários aparentemente aplicáveis                          │
+│      - Demonstração de diferenças fáticas e jurídicas                          │
+│      - Demonstração de não aplicabilidade ao caso concreto                      │
+│                                                                                 │
+│ VIII. DIREITO INTERTEMPORAL (SE APLICÁVEL)                                      │
+│       - Direito adquirido                                                       │
+│       - Ato jurídico perfeito                                                   │
+│       - Coisa julgada                                                           │
+│       - Tempus regit actum                                                      │
+│                                                                                 │
+│ IX. PEDIDOS                                                                     │
+│     - Pedido principal (procedência/improcedência)                              │
+│     - Pedidos subsidiários (se houver)                                          │
+│     - Cominações legais (honorários, custas)                                    │
+│     - Prequestionamento prospectivo (para recurso futuro)                       │
+│                                                                                 │
+│ X. FECHAMENTO E CONCLUSÃO                                                       │
+│    - Fecho protocolar                                                           │
+│    - Data e local                                                               │
+│    - Assinatura e qualificação do advogado                                      │
+│                                                                                 │
+└─────────────────────────────────────────────────────────────────────────────────┘
+
+───────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO 2: DETALHAMENTO TÉCNICO POR SEÇÃO
+
+───────────────────────────────────────────────────────────────────────────────────
+
+A. ENDEREÇAMENTO E QUALIFICAÇÃO (1-2 parágrafos)
+
+Formato padrão:
+
+"EXCELENTÍSSIMO SENHOR DOUTOR JUIZ DE DIREITO DA [número]ª VARA [especialidade]
+DA COMARCA DE [cidade]/[estado]
+
+Processo nº [número completo]
+
+[NOME DO REPRESENTADO EM CAIXA ALTA], [qualificação completa], pelos fundamentos
+de fato e de direito a seguir expostos, vem, respeitosamente, apresentar
+
+MEMORIAIS
+
+nos termos do art. 364 do Código de Processo Civil / art. 403, §3º, do Código de
+Processo Penal, conforme aplicável."
+
+───────────────────────────────────────────────────────────────────────────────────
+
+B. SÍNTESE PROCESSUAL (1-2 páginas)
+
+Deve conter:
+
+a) Natureza da causa: "Trata-se de [ação de cobrança/divórcio/indenização/ação
+   penal por crime de X/etc.], distribuída sob nº [número], em [data]";
+
+b) Eventos processuais relevantes: "Em [data], foi apresentada [contestação/
+   resposta à acusação]. Em [data], foi realizado [despacho saneador/audiência de
+   instrução/perícia]. Em [data], as partes apresentaram [alegações finais orais/
+   memoriais anteriores]";
+
+c) Data do encerramento: "Encerrada a fase probatória em [data], mediante [despacho/
+   ato da audiência], foi concedido o prazo de [10 dias / 5 dias] para apresentação
+   de memoriais";
+
+d) Instrução resumida: "Foram produzidas as seguintes provas: [enumerar brevemente:
+   documentos, testemunhas, perícia, etc.]";
+
+e) Transição: "É o breve relato. Passa-se à análise dos fatos e do direito."
+
+───────────────────────────────────────────────────────────────────────────────────
+
+C. FATOS INCONTROVERSOS (1 página)
+
+Estrutura obrigatória:
+
+"São INCONTROVERSOS nos autos os seguintes fatos, admitidos expressamente por ambas
+as partes ou não impugnados especificamente durante a fase postulatória:
+
+a) [Fato incontroverso 1 — com referência ao documento ou depoimento];
+b) [Fato incontroverso 2];
+c) [Fato incontroverso 3];
+[...]
+
+Assim, a controvérsia fático-probatória restringe-se aos seguintes pontos específicos:
+
+a) [Fato controvertido 1];
+b) [Fato controvertido 2];
+c) [Fato controvertido 3].
+
+Os fatos incontroversos não serão reabordados na análise probatória a seguir, em
+homenagem aos princípios da economia processual e da celeridade."
+
+IMPORTÂNCIA: Este parágrafo cria registro para eventual Recurso Especial, permitindo
+nova qualificação jurídica de fatos incontroversos sem reexame de prova (estratégia
+anti-Súmula 7/STJ).
+
+───────────────────────────────────────────────────────────────────────────────────
+
+D. ANÁLISE PROBATÓRIA (5-8 páginas — NÚCLEO CENTRAL)
+
+D.1. INTRODUÇÃO À SEÇÃO
+
+"Nesta seção, analisar-se-á cada meio de prova produzido nos autos, demonstrando
+como o conjunto probatório comprova a tese de [autor/réu/acusação/defesa] acerca
+dos fatos controvertidos supra delimitados."
+
+D.2. PROVA DOCUMENTAL (com quadro sintético)
+
+Estrutura:
+
+"1. DA PROVA DOCUMENTAL
+
+Os documentos juntados aos autos demonstram, de forma inequívoca, os seguintes
+fatos relevantes para o deslinde da causa:
+
+a) [DOCUMENTO 1]: [ID/movimento no PJe ou fls.]
+   Descrição: [descrever conteúdo sinteticamente]
+   Fato provado: [indicar qual fato controvertido este documento prova]
+   Impugnação: [indicar se foi impugnado pela parte contrária e como]
+   Valor probatório: [descrever força probatória — se não foi impugnado, valor
+   pleno por força do art. 441, CPC]
+
+b) [DOCUMENTO 2]: [idem]
+
+QUADRO SINTÉTICO DA PROVA DOCUMENTAL:
+
+│ Documento     │ Fato provado        │ Impugnado? │ Valor probatório  │
+├───────────────┼─────────────────────┼────────────┼───────────────────┤
+│ [Doc 1]       │ [Fato X]            │ Não        │ Pleno (art. 441)  │
+│ [Doc 2]       │ [Fato Y]            │ Sim        │ Rechaçada (...)   │
+│ [Doc 3]       │ [Fato Z]            │ Não        │ Pleno (art. 441)  │"
+
+D.3. PROVA TESTEMUNHAL
+
+"2. DA PROVA TESTEMUNHAL
+
+Foram ouvidas [número] testemunhas nos autos, cujos depoimentos [confirmam / refutam]
+a versão dos fatos apresentada por esta parte.
+
+a) TESTEMUNHA [NOME COMPLETO] (Ouvida em [data], ID [X], fls. [Y])
+
+Vínculo com as partes: [descrever se testemunha é presencial, referencial, se há
+parentesco/amizade que possa influenciar credibilidade]
+
+Resumo do depoimento: '[Transcrever ou resumir fielmente o conteúdo relevante do
+depoimento]'
+
+Valor probatório: O depoimento é [direto/indireto], [presencial/referencial],
+[coerente/contraditório], [corrobora/contraria] a tese de [parte X] e [é/não é]
+compatível com [outros depoimentos/documentos/perícia].
+
+Credibilidade: A testemunha demonstrou [segurança/contradição/imprecisão] ao ser
+inquirida sobre [tema específico], o que [reforça/enfraquece] sua credibilidade.
+
+[Repetir para cada testemunha]
+
+SÍNTESE DA PROVA TESTEMUNHAL:
+
+A prova testemunhal, em seu conjunto, demonstra de forma [unânime/majoritária/
+dividida] que [síntese conclusiva da prova testemunhal]. As testemunhas da
+[parte X] apresentaram [firmeza/contradição], ao passo que as da [parte Y]
+apresentaram [consistência/fragilidade]."
+
+D.4. PROVA PERICIAL
+
+"3. DA PROVA PERICIAL
+
+O laudo pericial produzido pelo perito [nome], às fls. [X] ou ID [Y], do tipo
+[contábil/médica/grafotécnica/engenharia/avaliação], apresentou as seguintes
+conclusões:
+
+'[TRANSCREVER LITERALMENTE AS CONCLUSÕES DO LAUDO ENTRE ASPAS]'
+
+Análise técnica do laudo:
+
+A metodologia utilizada pelo perito [descrever: análise de documentos, vistoria in
+loco, cálculos, exame técnico, etc.] é [tecnicamente adequada/questionável] pelos
+seguintes motivos:
+
+a) [Fundamento técnico 1];
+b) [Fundamento técnico 2];
+c) [Fundamento técnico 3].
+
+Assistente técnico [se houver]: O assistente técnico indicado por esta parte apresentou
+[parecer técnico concordante/divergente], apontando [resumir observações]. As
+observações devem ser [acolhidas/rechaçadas] porque [fundamentar].
+
+Conclusão: O laudo pericial confirma que [fato técnico comprovado], reforçando a
+tese de [parte X] em relação [tema específico]."
+
+D.5. DEPOIMENTO PESSOAL (CÍVEL) / INTERROGATÓRIO (PENAL)
+
+"4. DO DEPOIMENTO PESSOAL [ou: DO INTERROGATÓRIO]
+
+O [autor/réu/acusado] foi ouvido em [data], modalidade [presencial/videoconferência],
+ID [X], ocasião em que [resumir ou transcrever trechos relevantes]:
+
+'[TRANSCREVER ENTRE ASPAS]'
+
+Valor probatório: O depoimento [confirma/contradiz] a versão dos fatos apresentada
+na [inicial/defesa/acusação] e é [compatível/incompatível] com os demais elementos
+de prova produzidos.
+
+[Se penal: Observar que o interrogatório é MEIO DE DEFESA, não meio de prova contra
+o réu, conforme art. 8º, CPP]."
+
+D.6. OUTROS MEIOS DE PROVA
+
+"5. DE OUTROS MEIOS DE PROVA
+
+[Se houver: inspeção judicial, gravações, filmagens, ata notarial, prints de
+sistemas eletrônicos, prova emprestada, etc.]
+
+[Analisar cada meio de prova conforme sua natureza específica, demonstrando
+relevância, confiabilidade, compatibilidade com demais provas]."
+
+───────────────────────────────────────────────────────────────────────────────────
+
+E. CONCLUSÃO PROBATÓRIA (1 página)
+
+"CONCLUSÃO PROBATÓRIA
+
+Diante de todo o acervo probatório produzido nos autos, é possível concluir, com
+certeza e sem margem de dúvida, que:
+
+a) [Conclusão fática 1, com referência às provas que a sustentam];
+b) [Conclusão fática 2];
+c) [Conclusão fática 3];
+
+A prova dos autos NÃO demonstrou, por sua vez:
+
+a) [Fato alegado pela parte contrária que não restou comprovado];
+b) [Fato alegado pela parte contrária que foi refutado].
+
+Dessa forma, a instrução probatória [CONFIRMOU INTEGRALMENTE / CONFIRMOU
+PARCIALMENTE / REFUTOU] a tese sustentada por esta parte na fase postulatória,
+impondo-se, por conseguinte, o julgamento [PROCEDENTE / PARCIALMENTE PROCEDENTE /
+IMPROCEDENTE] do pedido."
+
+───────────────────────────────────────────────────────────────────────────────────
+
+F. PADRÃO LINGUÍSTICO E ESTILÍSTICO
+
+Os memoriais devem seguir:
+
+- Períodos médios (máximo 3 linhas por oração principal)
+- Progressão lógica (fato → prova → conclusão)
+- Conectivos lógicos precisos (portanto, contudo, nesse sentido, a contrario sensu)
+- Latinismos em itálico quando necessários
+- Zero marcadores de IA ("é importante ressaltar", "cumpre destacar" em excesso)
+- Ausência de linguagem coloquial ou informal
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE VIII: APLICAÇÃO TEMPORAL - DIREITO INTERTEMPORAL
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+OBJETIVO DESTA PARTE:
+
+Fornecer fundamentos completos sobre DIREITO INTERTEMPORAL (conflito de leis no
+tempo) aplicável a memoriais, incluindo princípios constitucionais, direito adquirido,
+ato jurídico perfeito, coisa julgada e técnicas de argumentação intertemporal.
+
+EXTENSÃO ESPERADA: 8-12 páginas
+
+───────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO 1: FUNDAMENTOS CONSTITUCIONAIS E LEGAIS
+
+───────────────────────────────────────────────────────────────────────────────────
+
+A. ART. 5º, XXXVI, CONSTITUIÇÃO FEDERAL
+
+"Art. 5º Todos são iguais perante a lei, sem distinção de qualquer natureza,
+garantindo-se aos brasileiros e aos estrangeiros residentes no País a inviolabilidade
+do direito à vida, à liberdade, à igualdade, à segurança e à propriedade, nos termos
+seguintes:
+
+[...]
+
+XXXVI - a lei não prejudicará o direito adquirido, o ato jurídico perfeito e a
+coisa julgada"
+
+IMPORTÂNCIA PARA MEMORIAIS:
+
+Este dispositivo constitucional DEVE ser invocado em todo memorial que envolva
+questão de direito intertemporal porque:
+
+a) Assegura a irretroatividade da lei nova sobre situações jurídicas consolidadas;
+b) Protege três institutos fundamentais: direito adquirido, ato jurídico perfeito,
+   coisa julgada;
+c) Tem carga constitucional máxima (direito fundamental);
+d) Permite ulterior interposição de Recurso Extraordinário (art. 102, III, 'a', CF).
+
+───────────────────────────────────────────────────────────────────────────────────
+
+B. ART. 6º, LEI DE INTRODUÇÃO ÀS NORMAS DO DIREITO BRASILEIRO (LINDB)
+
+"Art. 6º A Lei em vigor terá efeito imediato e geral, respeitados o ato jurídico
+perfeito, o direito adquirido e a coisa julgada.
+
+§ 1º Reputa-se ato jurídico perfeito o já consumado segundo a lei vigente ao
+tempo em que se efetuou.
+
+§ 2º Consideram-se adquiridos assim os direitos que o seu titular, ou alguém por
+ele, possa exercer, como aqueles cujo começo do exercício tenha termo pré-fixo,
+ou condição pré-estabelecida inalterável, a arbítrio de outrem.
+
+§ 3º Chama-se coisa julgada ou caso julgado a decisão judicial de que já não
+caiba recurso."
+
+INTERPRETAÇÃO:
+
+Este dispositivo legal DEVE ser prequestionado em todo memorial que envolva questão
+de direito intertemporal porque:
+
+a) Estabelece o princípio da aplicação imediata da lei nova (regra);
+b) Define os limites da aplicação imediata: respeito ao ato jurídico perfeito,
+   direito adquirido, coisa julgada (exceções);
+c) Conceitua cada um dos três institutos de proteção;
+d) Permite ulterior interposição de Recurso Especial (art. 105, III, 'a', CF).
+
+───────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO 2: PRINCÍPIOS DE DIREITO INTERTEMPORAL
+
+───────────────────────────────────────────────────────────────────────────────────
+
+A. IRRETROATIVIDADE DA LEI
+
+CONCEITO: Lei nova não atinge fatos passados, salvo disposição expressa em contrário.
+
+FUNDAMENTO: Art. 5º, XXXVI, CF/88 + Art. 6º, caput, LINDB
+
+EXCEÇÕES:
+
+a) Lei expressamente retroativa (desde que não viole direito adquirido, ato jurídico
+   perfeito ou coisa julgada);
+
+b) Lei penal mais benéfica (art. 5º, XL, CF/88): "a lei penal não retroagirá, salvo
+   para beneficiar o réu";
+
+c) Lei interpretativa (doutrina minoritária);
+
+d) Lei de ordem pública (doutrina minoritária, com forte contestação).
+
+TÉCNICA DE ARGUMENTAÇÃO EM MEMORIAL:
+
+Sempre que a sentença/acusação aplicar lei nova a fatos ocorridos sob lei anterior,
+demonstrar:
+
+1. Data do fato ou do ato jurídico praticado;
+2. Lei vigente à época do fato/ato;
+3. Lei aplicada pela decisão recorrida;
+4. Demonstração de retroatividade indevida;
+5. Invocação do art. 5º, XXXVI, CF/88 + art. 6º, LINDB.
+
+───────────────────────────────────────────────────────────────────────────────────
+
+B. DIREITO ADQUIRIDO
+
+CONCEITO LEGAL (ART. 6º, § 2º, LINDB):
+
+"Consideram-se adquiridos assim os direitos que o seu titular, ou alguém por ele,
+possa exercer, como aqueles cujo começo do exercício tenha termo pré-fixo, ou
+condição pré-estabelecida inalterável, a arbítrio de outrem."
+
+REQUISITOS PARA CONFIGURAÇÃO:
+
+a) Fato aquisitivo completo: todos os pressupostos fáticos e jurídicos para a
+   aquisição do direito devem ter ocorrido sob a lei anterior;
+
+b) Incorporação ao patrimônio jurídico do titular: o direito integra a esfera
+   jurídica do titular, ainda que não exercido;
+
+c) Exercibilidade: o titular pode exercer o direito imediatamente ou a termo/
+   condição pré-fixada inalterável.
+
+CASOS TÍPICOS:
+
+a) Aposentadoria: direito adquirido às regras vigentes quando preenchidos todos
+   os requisitos (Súmula 359, STF);
+
+b) Contrato de trabalho: direito adquirido às regras vigentes à época da
+   celebração (tempus regit actum);
+
+c) Direitos patrimoniais: direito adquirido à regra de cálculo vigente à época
+   do fato gerador;
+
+d) Direitos sucessórios: direito adquirido à regra vigente à época da abertura
+   da sucessão (data do óbito).
+
+───────────────────────────────────────────────────────────────────────────────────
+
+C. ATO JURÍDICO PERFEITO
+
+CONCEITO LEGAL (ART. 6º, § 1º, LINDB):
+
+"Reputa-se ato jurídico perfeito o já consumado segundo a lei vigente ao tempo
+em que se efetuou."
+
+REQUISITOS PARA CONFIGURAÇÃO:
+
+a) Ato consumado: todos os elementos constitutivos do ato foram praticados;
+
+b) Conformidade com lei vigente: o ato foi praticado conforme a lei da época
+   (tempus regit actum);
+
+c) Produção de efeitos: o ato produziu ou está apto a produzir efeitos jurídicos.
+
+CASOS TÍPICOS:
+
+a) Contrato celebrado sob lei anterior: a lei nova não pode desfazer ou alterar
+   retroativamente;
+
+b) Sentença transitada em julgado: não pode ser alterada por lei superveniente;
+
+c) Casamento celebrado sob lei anterior: válido ainda que lei nova altere
+   requisitos formais;
+
+d) Testamento: válido se atendeu requisitos da lei vigente à época.
+
+───────────────────────────────────────────────────────────────────────────────────
+
+D. COISA JULGADA MATERIAL
+
+CONCEITO LEGAL (ART. 6º, § 3º, LINDB):
+
+"Chama-se coisa julgada ou caso julgado a decisão judicial de que já não caiba
+recurso."
+
+CONCEITO PROCESSUAL (ART. 502, CPC/2015):
+
+"Art. 502. Denomina-se coisa julgada material a autoridade que torna imutável e
+indiscutível a decisão de mérito não mais sujeita a recurso."
+
+PROTEÇÃO CONSTITUCIONAL: Art. 5º, XXXVI, CF/88 (máxima proteção).
+
+EFEITOS:
+
+a) Imutabilidade: decisão não pode ser alterada no mesmo processo;
+
+b) Indiscutibilidade: questão decidida não pode ser rediscutida em outro
+   processo entre as mesmas partes;
+
+c) Eficácia preclusiva: questões que poderiam ter sido alegadas mas não foram
+   consideram-se deduzidas e repelidas.
+
+LEI NOVA E COISA JULGADA:
+
+Lei superveniente NÃO pode desfazer ou modificar coisa julgada, mesmo que:
+
+a) Declare inconstitucional a lei que fundamentou a decisão;
+b) Revogue a lei que fundamentou a decisão;
+c) Altere entendimento jurisprudencial consolidado.
+
+───────────────────────────────────────────────────────────────────────────────────
+
+E. PRINCÍPIO DO TEMPUS REGIT ACTUM
+
+CONCEITO: "O tempo rege o ato": a lei da época em que o ato foi praticado é a lei
+aplicável a esse ato.
+
+APLICAÇÃO:
+
+a) Validade de atos e negócios jurídicos: verificada pela lei vigente à época;
+
+b) Produção de efeitos: efeitos futuros podem ser regulados por lei nova, mas a
+   validade do ato permanece vinculada à lei de sua prática;
+
+c) Capacidade das partes: aferida pela lei vigente à época do ato;
+
+d) Forma do ato: aferida pela lei vigente à época do ato.
+
+───────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO 3: DIREITO INTERTEMPORAL PROCESSUAL (CPC/1973 → CPC/2015)
+
+───────────────────────────────────────────────────────────────────────────────────
+
+A. ART. 14, CPC/2015 - APLICAÇÃO IMEDIATA DE NORMA PROCESSUAL
+
+"Art. 14. A norma processual não retroagirá e será aplicável imediatamente aos
+processos em curso, respeitados os atos processuais praticados e as situações
+jurídicas consolidadas sob a vigência da norma revogada."
+
+INTERPRETAÇÃO:
+
+a) Norma processual tem aplicação IMEDIATA (não retroativa);
+
+b) Atos processuais já praticados sob lei anterior permanecem válidos;
+
+c) Situações jurídicas consolidadas (preclusão, coisa julgada, decadência,
+   prescrição consumada) permanecem válidas;
+
+d) Atos processuais futuros seguem lei nova.
+
+B. PRINCÍPIO DO ISOLAMENTO DOS ATOS PROCESSUAIS
+
+Cada ato processual rege-se pela lei vigente no momento de sua prática. A mudança
+de lei não invalida atos anteriores nem impede aplicação imediata da lei nova aos
+atos futuros.
+
+C. CASOS TÍPICOS EM MEMORIAIS:
+
+CASO 1: Prazos em curso
+
+Prazo iniciado sob CPC/1973 continua sendo contado em dias corridos; prazo iniciado
+sob CPC/2015 conta-se em dias úteis (Enunciado 145 FPPC).
+
+CASO 2: Efeito da apelação
+
+Sentença proferida em 2015: efeito devolutivo e suspensivo (CPC/1973)
+Sentença proferida em 2016: efeito devolutivo apenas (CPC/2015, art. 1.012)
+
+───────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO 4: TÉCNICAS DE ARGUMENTAÇÃO INTERTEMPORAL EM MEMORIAIS
+
+───────────────────────────────────────────────────────────────────────────────────
+
+MODELO 1: DEMONSTRAÇÃO DE DIREITO ADQUIRIDO
+
+"DO DIREITO ADQUIRIDO DO [PARTE]
+
+O direito adquirido é instituto de direito constitucional (art. 5º, XXXVI, CF/88)
+e infraconstitucional (art. 6º, § 2º, LINDB), destinado a proteger situações
+jurídicas consolidadas sob lei anterior da incidência de lei nova.
+
+No caso concreto, o [parte] possui direito adquirido porque:
+
+a) Fato aquisitivo completo: [DATA] — [DESCRIÇÃO DO FATO];
+
+b) Lei vigente à época: [IDENTIFICAR E TRANSCREVER DISPOSITIVOS];
+
+c) Preenchimento de todos os requisitos legais: [DEMONSTRAR UM A UM];
+
+d) Incorporação ao patrimônio jurídico: [DEMONSTRAR];
+
+e) Exercibilidade: o direito pode ser exercido [imediatamente / a partir de data
+   pré-fixada].
+
+A [sentença recorrida / acusação] pretende negar o direito adquirido sob argumento
+de [IDENTIFICAR O ARGUMENTO], o que viola frontalmente o art. 5º, XXXVI, CF/88.
+
+Precedentes do STF e STJ firmam entendimento de que [TRANSCREVER PRECEDENTES
+VERIFICADOS VIA WEB_SEARCH].
+
+Ante o exposto, requer-se o reconhecimento do direito adquirido do [parte], com
+aplicação da lei vigente à época do fato aquisitivo."
+
+───────────────────────────────────────────────────────────────────────────────────
+
+MODELO 2: DEMONSTRAÇÃO DE ATO JURÍDICO PERFEITO
+
+"DA PROTEÇÃO AO ATO JURÍDICO PERFEITO
+
+O ato jurídico perfeito é definido pelo art. 6º, § 1º, LINDB como aquele 'já
+consumado segundo a lei vigente ao tempo em que se efetuou'.
+
+No caso concreto, houve ato jurídico perfeito:
+
+a) Ato consumado: [IDENTIFICAR: contrato, testamento, casamento, etc.];
+
+b) Data da consumação: [DD/MM/AAAA];
+
+c) Lei vigente à época: [IDENTIFICAR E TRANSCREVER DISPOSITIVOS];
+
+d) Conformidade com a lei: o ato foi praticado segundo todos os requisitos legais
+   então vigentes [DEMONSTRAR];
+
+e) Produção de efeitos: o ato produziu [ou: está apto a produzir] os efeitos
+   jurídicos pretendidos.
+
+A [sentença / acusação] pretende desconstituir o ato jurídico perfeito, aplicando
+retroativamente lei nova em violação ao art. 5º, XXXVI, CF/88 e art. 6º, § 1º,
+LINDB.
+
+Requer-se o reconhecimento e manutenção da validade e eficácia do ato jurídico
+perfeito praticado pelo [parte]."
+
+───────────────────────────────────────────────────────────────────────────────────
+
+MODELO 3: DEMONSTRAÇÃO DE OFENSA À COISA JULGADA
+
+"DA OFENSA À COISA JULGADA MATERIAL
+
+A coisa julgada material é a mais alta proteção conferida pelo ordenamento jurídico
+a decisões judiciais, tornando-as imutáveis e indiscutíveis (art. 502, CPC/2015).
+
+A proteção constitucional à coisa julgada (art. 5º, XXXVI, CF/88) impede que lei
+superveniente ou nova decisão judicial rediscuta ou altere questão já decidida
+definitivamente.
+
+No caso concreto:
+
+a) Processo anterior: [IDENTIFICAR NÚMERO];
+
+b) Decisão transitada em julgado: [IDENTIFICAR DECISÃO E DATA];
+
+c) Questão decidida: [DESCREVER];
+
+d) Partes: [IDENTIFICAR — MESMAS PARTES DO PROCESSO ATUAL];
+
+e) Identidade de causa de pedir e pedido: [DEMONSTRAR TRÍPLICE IDENTIDADE].
+
+A [sentença / acusação] rediscutiu [ou: alterou] a questão já decidida por decisão
+transitada em julgado, violando o art. 5º, XXXVI, CF/88, art. 6º, § 3º, LINDB e
+art. 502, CPC/2015.
+
+A jurisprudência do STF consolidada entende que [TRANSCREVER PRECEDENTE].
+
+Requer-se o reconhecimento da coisa julgada e a consequente nulidade da [sentença
+/ acusação] que a desrespeita."
+
+───────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO 5: CHECKLIST - DIREITO INTERTEMPORAL
+
+───────────────────────────────────────────────────────────────────────────────────
+
+[ ] Há questão de direito intertemporal envolvida?
+[ ] Data do fato/ato jurídico foi identificada?
+[ ] Lei vigente à época do fato foi identificada?
+[ ] Lei vigente à época da decisão foi identificada?
+[ ] Houve mudança legislativa no curso do processo?
+[ ] A lei nova pretende retroagir para atingir fatos passados?
+[ ] Há direito adquirido protegido?
+[ ] Há ato jurídico perfeito protegido?
+[ ] Há coisa julgada protegida?
+[ ] Art. 5º, XXXVI, CF/88 foi prequestionado?
+[ ] Art. 6º, LINDB foi prequestionado (caput, §1º, §2º, §3º)?
+[ ] Art. 14, CPC/2015 foi invocado (se norma processual)?
+[ ] Precedentes do STF/STJ sobre direito intertemporal foram pesquisados?
+[ ] Modelos de argumentação intertemporal foram utilizados?
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE IX: DIREITO MATERIAL - ESTRUTURA NORMATIVA VERTICAL COMPLETA
+(APLICÁVEL A CIVIL, CRIMINAL, TRABALHISTA)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+OBJETIVO DESTA PARTE:
+
+Fornecer mapeamento completo da ESTRUTURA NORMATIVA VERTICAL aplicável a memoriais,
+organizada conforme a Pirâmide de Kelsen brasileira, permitindo ao redator:
+
+1. Hierarquizar corretamente os fundamentos normativos dos memoriais
+2. Identificar os diplomas normativos aplicáveis a cada ramo (civil, criminal,
+   trabalhista)
+3. Invocar tratados internacionais quando aplicáveis
+4. Distinguir normas constitucionais, legais e infralegais
+5. Utilizar precedentes vinculantes e enunciados corretamente
+
+EXTENSÃO ESPERADA: 15-20 páginas
+
+───────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO 1: HIERARQUIA NORMATIVA VERTICAL (PIRÂMIDE DE KELSEN BRASILEIRA)
+
+───────────────────────────────────────────────────────────────────────────────────
+
+A estrutura normativa brasileira é hierarquizada verticalmente, com base na teoria
+de Hans Kelsen (Teoria Pura do Direito), adaptada ao sistema constitucional
+brasileiro. A hierarquia determina a validade e eficácia das normas, resolvendo
+conflitos normativos pelo critério hierárquico.
+
+REPRESENTAÇÃO GRÁFICA:
+
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                   PIRÂMIDE NORMATIVA BRASILEIRA                                 │
+├─────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                 │
+│  NÍVEL 1: CONSTITUIÇÃO FEDERAL (1988)                                           │
+│            - Norma suprema                                                      │
+│            - Fundamento de validade de todas as demais normas                   │
+│                                                                                 │
+│  NÍVEL 2: TRATADOS E CONVENÇÕES INTERNACIONAIS                                  │
+│            - Status de EC (Art. 5º, §3º, CF)                                    │
+│            - Status supralegal (RE 466.343/SP)                                  │
+│            - Status de lei ordinária                                            │
+│                                                                                 │
+│  NÍVEL 3: LEIS COMPLEMENTARES E LEIS ORDINÁRIAS                                 │
+│            - Leis Complementares (quórum qualificado)                           │
+│            - Leis Ordinárias (quórum simples)                                   │
+│            - Medidas Provisórias (força de lei)                                 │
+│            - Leis Delegadas, Decretos Legislativos                              │
+│                                                                                 │
+│  NÍVEL 4: NORMAS INFRALEGAIS                                                    │
+│            - Decretos regulamentares                                            │
+│            - Portarias, Instruções Normativas, Resoluções                       │
+│                                                                                 │
+│  NÍVEL 5: ENUNCIADOS E PRECEDENTES VINCULANTES                                  │
+│            - Súmulas vinculantes (Art. 103-A, CF)                               │
+│            - Decisões em repercussão geral (STF)                                │
+│            - Decisões em recursos repetitivos (STJ)                             │
+│            - IACs e IRDRs (Art. 976-987, CPC)                                   │
+│            - Enunciados de orientação de tribunais                              │
+│                                                                                 │
+└─────────────────────────────────────────────────────────────────────────────────┘
+
+───────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO 2: NÍVEL 1 - CONSTITUIÇÃO FEDERAL (1988)
+
+───────────────────────────────────────────────────────────────────────────────────
+
+A. SUPREMACIA CONSTITUCIONAL
+
+A Constituição Federal é a norma suprema do ordenamento jurídico brasileiro. Todas
+as demais normas (leis, decretos, tratados, precedentes) extraem sua validade da
+Constituição e devem ser compatíveis com ela.
+
+FUNDAMENTO: Art. 102, caput, CF/88: "Compete ao Supremo Tribunal Federal,
+precipuamente, a guarda da Constituição"
+
+CONSEQUÊNCIAS PRÁTICAS PARA MEMORIAIS:
+
+a) Toda norma infraconstitucional pode ser questionada em face da CF/88;
+
+b) Violação à Constituição pode fundamentar Recurso Extraordinário (art. 102, III,
+   CF/88);
+
+c) Lei contrária à Constituição é nula (controle difuso de constitucionalidade);
+
+d) Decisão judicial contrária à Constituição deve ser anulada/reformada.
+
+B. PRINCÍPIOS CONSTITUCIONAIS APLICÁVEIS A MEMORIAIS
+
+PROCESSUAIS:
+
+a) Devido processo legal (art. 5º, LIV, CF)
+b) Contraditório e ampla defesa (art. 5º, LV, CF)
+c) Duração razoável do processo (art. 5º, LXXVIII, CF)
+d) Motivação de decisões judiciais (art. 93, IX, CF)
+e) Publicidade dos atos processuais (art. 93, IX, CF)
+f) Juiz natural (art. 5º, XXXVII, CF)
+
+MATERIAIS (aplicáveis a ramos específicos):
+
+a) Dignidade da pessoa humana (art. 1º, III, CF) - aplicável a todos os ramos
+b) Igualdade (art. 5º, caput, CF) - aplicável a todos os ramos
+c) Propriedade e função social (art. 5º, XXII-XXIII, CF) - direito civil, agrário
+d) Legalidade (art. 5º, II, CF) - penal, administrativo
+e) Irretroatividade da lei (art. 5º, XXXVI, CF) - intertemporal
+f) Direito adquirido, ato jurídico perfeito, coisa julgada (art. 5º, XXXVI, CF)
+g) Proteção ao consumidor (art. 5º, XXXII, CF) - direito do consumidor
+h) Proteção à família (art. 226, CF) - direito de família
+i) Proteção ao meio ambiente (art. 225, CF) - direito ambiental
+
+───────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO 3: NÍVEL 2 - TRATADOS E CONVENÇÕES INTERNACIONAIS
+
+───────────────────────────────────────────────────────────────────────────────────
+
+A. HIERARQUIA DOS TRATADOS NO DIREITO BRASILEIRO
+
+A Emenda Constitucional nº 45/2004 criou três níveis hierárquicos para tratados:
+
+NÍVEL 2A: STATUS DE EMENDA CONSTITUCIONAL (art. 5º, §3º, CF)
+
+Requisitos:
+
+a) Tratado sobre DIREITOS HUMANOS;
+b) Aprovação em CADA CASA do Congresso (Câmara e Senado);
+c) DOIS TURNOS de votação em cada Casa;
+d) Quórum de 3/5 dos membros de cada Casa.
+
+Consequências:
+
+- Integra formalmente a Constituição Federal
+- Serve de parâmetro para controle de constitucionalidade
+- NÃO pode ser revogado por lei ordinária ou complementar
+
+Único tratado com este status (até 2026):
+
+1. Convenção sobre os Direitos das Pessoas com Deficiência (Decreto 6.949/2009)
+
+NÍVEL 2B: STATUS SUPRALEGAL (acima das leis, abaixo da CF)
+
+Fundamento: RE 466.343/SP (STF, Tribunal Pleno, j. 03/12/2008) - Repercussão Geral
+
+Tese: "Os tratados internacionais de direitos humanos subscritos pelo Brasil possuem
+status normativo SUPRALEGAL, ou seja, estão abaixo da Constituição, mas acima da
+legislação interna."
+
+Requisitos:
+
+a) Tratado sobre DIREITOS HUMANOS;
+b) Ratificado pelo Brasil;
+c) MAS aprovado SEM o quórum do art. 5º, §3º, CF.
+
+Consequências:
+
+- PREVALECEM sobre leis ordinárias e complementares
+- PARALISAM a eficácia de leis internas incompatíveis (sem revogá-las)
+- Submetem-se à Constituição
+- Servem de parâmetro para controle de legalidade (mas não de constitucionalidade)
+
+Exemplos de tratados com status SUPRALEGAL:
+
+a) Pacto de San José da Costa Rica (Decreto 678/1992) — Convenção Americana sobre
+   Direitos Humanos
+b) Pacto Internacional sobre Direitos Civis e Políticos (Decreto 592/1992)
+c) Convenção sobre os Direitos da Criança (Decreto 99.710/1990)
+d) Convenção sobre Eliminação de Discriminação contra a Mulher (Decreto 4.377/2002)
+
+NÍVEL 2C: STATUS DE LEI ORDINÁRIA
+
+Requisitos:
+
+a) Tratado que NÃO verse sobre direitos humanos; OU
+b) Tratado sobre direitos humanos aprovado ANTES da EC 45/2004
+
+Consequências:
+
+- Mesma hierarquia de lei ordinária
+- Pode ser revogado por lei posterior (critério cronológico)
+- Prevalece sobre lei anterior por ser especial (critério da especialidade)
+
+Exemplos:
+
+a) Convenção de Viena sobre Direito dos Tratados (Decreto 7.030/2009)
+b) Convenções de Haia (Decretos 3.413/2000, 3.087/1999, 8.660/2016)
+c) Convenções da OIT (Decretos 62.150/1968, 1.254/1994, 3.597/2000)
+
+B. CONTROLE DE CONVENCIONALIDADE
+
+CONCEITO: Verificação de COMPATIBILIDADE de normas internas com TRATADOS
+INTERNACIONAIS ratificados pelo Brasil.
+
+FUNDAMENTO: Art. 27 da Convenção de Viena sobre Direito dos Tratados: "Uma parte
+não pode invocar as disposições de seu direito interno para justificar o
+inadimplemento de um tratado."
+
+APLICAÇÃO EM MEMORIAIS:
+
+Quando lei brasileira for incompatível com tratado de direitos humanos:
+
+a) Invocar o tratado (nome, decreto, artigo);
+b) Demonstrar status supralegal (RE 466.343/SP);
+c) Demonstrar incompatibilidade entre lei interna e tratado;
+d) Requerer aplicação do tratado (prevalência sobre lei interna);
+e) Invocar controle de convencionalidade ex officio (dever do juiz).
+
+MODELO DE ARGUMENTAÇÃO:
+
+"CONTROLE DE CONVENCIONALIDADE - PREVALÊNCIA DO PACTO DE SAN JOSÉ DA COSTA RICA
+
+O art. [X] da Lei [Y] é INCOMPATÍVEL com o art. [Z] do Pacto de San José da
+Costa Rica (Convenção Americana sobre Direitos Humanos - Decreto 678/1992).
+
+O Pacto de San José possui STATUS SUPRALEGAL (RE 466.343/SP, STF), ou seja, está
+ACIMA das leis ordinárias brasileiras.
+
+Logo, havendo incompatibilidade entre lei interna e tratado de direitos humanos,
+PREVALECE O TRATADO (art. 27 da Convenção de Viena sobre Direito dos Tratados).
+
+Requer-se o afastamento da aplicação do art. [X] da Lei [Y] e a aplicação direta
+do art. [Z] do Pacto de San José da Costa Rica."
+
+───────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO 4: NÍVEL 3 - LEIS COMPLEMENTARES E LEIS ORDINÁRIAS
+
+───────────────────────────────────────────────────────────────────────────────────
+
+A. DISTINÇÃO ENTRE LEI COMPLEMENTAR E LEI ORDINÁRIA
+
+LEI COMPLEMENTAR:
+
+a) Quórum qualificado: maioria absoluta da Câmara e Senado (art. 69, CF)
+b) Funções: complementar a Constituição, estabelecer regimes diferenciados
+c) Exemplos: Código Tributário Nacional (Lei 5.172/66), Lei Orgânica do MP,
+   Lei Orgânica da OAB
+
+LEI ORDINÁRIA:
+
+a) Quórum simples (maioria dos presentes em sessão)
+b) Função: regulamentar matérias não reservadas às leis complementares
+c) Exemplos: Código Civil, Código Penal, Código de Processo Civil, Código de
+   Processo Penal, Consolidação das Leis do Trabalho, Lei de Defesa do Consumidor
+
+B. DIPLOMAS NORMATIVOS PRINCIPAIS POR RAMO
+
+DIREITO CIVIL:
+
+- Constituição Federal (arts. 1º-5º, 225-230)
+- Código Civil (Lei 10.406/2002)
+- Lei de Defesa do Consumidor (Lei 8.078/1990) — matéria especial
+- Lei de Locação (Lei 8.245/1991) — matéria especial
+- Lei de Planos de Saúde (Lei 9.656/1998) — matéria especial
+- Código de Processo Civil (Lei 13.105/2015)
+
+DIREITO PENAL:
+
+- Constituição Federal (arts. 1º-5º, 37-41)
+- Código Penal (Decreto-Lei 2.848/1940)
+- Leis penais especiais (Lei de Drogas, Lei de Crimes Ambientais, Lei de Violência
+  Doméstica, etc.)
+- Código de Processo Penal (Decreto-Lei 3.689/1941)
+- Lei de Execução Penal (Lei 7.210/1984)
+
+DIREITO DO TRABALHO:
+
+- Constituição Federal (arts. 6º-11, 170, 201-231)
+- Consolidação das Leis do Trabalho (Decreto-Lei 5.452/1943)
+- Lei Complementar nº 128/2008 (MEI)
+- Outras leis trabalhistas especiais (aprendiz, doméstica, rural, etc.)
+
+C. MEDIDAS PROVISÓRIAS
+
+Decretos-Lei com força de lei, sujeitos a regime jurídico próprio (art. 62, CF):
+
+a) Conversão em lei ordinária após aprovação pelo Congresso
+b) Caducidade automática se não apreciadas no prazo (120 + 60 dias)
+c) Vedadas em certas matérias (direitos políticos, direitos penais, direitos
+   trabalhistas, etc.)
+
+───────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO 5: NÍVEL 4 - NORMAS INFRALEGAIS
+
+───────────────────────────────────────────────────────────────────────────────────
+
+A. DECRETOS REGULAMENTARES
+
+Atos da Presidência da República que regulamentam leis (art. 84, IV, CF).
+
+Exemplo: Decreto 10.046/2019 (regulamenta Lei do Código de Processo Civil)
+
+B. PORTARIAS, INSTRUÇÕES NORMATIVAS, RESOLUÇÕES
+
+Atos de ministérios, agências reguladoras, tribunais que detalham normas legais.
+
+Exemplos:
+
+a) Portaria do Ministério do Trabalho
+b) Instrução Normativa da Receita Federal
+c) Resolução do CNJ (Conselho Nacional de Justiça)
+d) Resolução do CNMP (Conselho Nacional do Ministério Público)
+
+C. REGIMENTOS INTERNOS
+
+Normas que regulam o funcionamento interno de órgãos públicos.
+
+Exemplo: Regimento Interno do Tribunal de Justiça
+
+D. IMPORTÂNCIA PARA MEMORIAIS
+
+Normas infralegais são:
+
+a) SUBORDINADAS às leis (não podem contradizê-las)
+b) INTERPRETAR e REGULAMENTAR leis existentes
+c) CONSULTADAS quando a lei for vaga ou remeter à regulamentação
+d) EVENTUALMENTE QUESTIONADAS se violarem lei ou Constituição
+
+───────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO 6: NÍVEL 5 - ENUNCIADOS E PRECEDENTES VINCULANTES
+
+───────────────────────────────────────────────────────────────────────────────────
+
+A. SÚMULAS VINCULANTES DO STF (ART. 103-A, CF)
+
+CONCEITO: Enunciados das teses jurídicas do STF que vinculam todos os juízos e
+tribunais, bem como a Administração Pública (federal, estadual e municipal).
+
+FORÇA VINCULANTE: Máxima — desrespeito injustificado enseja Reclamação ao STF
+(art. 988, CPC).
+
+EXEMPLOS DE SÚMULAS VINCULANTES RELEVANTES:
+
+- Súmula Vinculante 4: Não é admissível ação rescisória de sentença transitada
+  em julgado por simples dissidência com precedente jurisprudencial
+
+- Súmula Vinculante 5: A falta de inscrição de crédito tributário na dívida ativa
+  não impede a cobrança judicial do tributo
+
+- Súmula Vinculante 7: Não é admissível a reclamação quando já existe possibilidade
+  de recurso administrativo ou via judicial própria, salvo comprovada urgência ou
+  irreparabilidade de lesão
+
+B. SÚMULAS NÃO VINCULANTES DO STF E STJ
+
+CONCEITO: Enunciados de jurisprudência consolidada (não vinculantes, mas com forte
+eficácia persuasiva).
+
+FORÇA: Persuasiva forte — juízes geralmente seguem, mas podem se afastar com
+fundamentação específica (art. 489, §1º, VI, CPC).
+
+EXEMPLOS:
+
+- Súmula 359, STF: "Ressalvada a revisão prevista em lei, os proventos da
+  inatividade regulam-se pela lei vigente ao tempo em que o militar, ou o servidor
+  civil, reuniu os requisitos necessários"
+
+C. DECISÕES EM REPERCUSSÃO GERAL (STF — ART. 102, §3º, CF)
+
+CONCEITO: Decisões do STF em matéria de relevância nacional que servem de precedente
+para juízes e tribunais.
+
+MECANISMO: Tema firmado em repercussão geral vincula decisões futuras de todo o
+Judiciário (aplicação análoga ao art. 927, III, CPC — recursos repetitivos).
+
+D. DECISÕES EM RECURSOS REPETITIVOS (STJ — ART. 1.036-1.041, CPC)
+
+CONCEITO: Incidente de Resolução de Demandas Repetitivas (IRDR) e Julgamento de
+Recurso Especial Repetitivo (Tema STJ).
+
+FORÇA: Vinculam juízos de origem e tribunais estaduais sobre matéria infraconstitucional.
+
+E. INCIDENTE DE ASSUNÇÃO DE COMPETÊNCIA (IAC — ART. 947-952, CPC)
+
+CONCEITO: Procedimento de assunção de competência por órgão especial do tribunal
+para uniformizar jurisprudência em questão de direito com ampla repercussão.
+
+FORÇA: Vincula decisões futuras da câmara/turma que o promoveu.
+
+F. ORIENTAÇÃO DO PLENÁRIO OU ÓRGÃO ESPECIAL
+
+CONCEITO: Decisões plenárias ou de órgãos especiais que vinculam as câmaras/turmas
+do tribunal (vinculação interna).
+
+───────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO 7: APLICAÇÃO INTEGRADA DA ESTRUTURA NORMATIVA EM MEMORIAIS
+
+───────────────────────────────────────────────────────────────────────────────────
+
+MÉTODO PARA FUNDAMENTAR MEMORIAL COM ESTRUTURA NORMATIVA COMPLETA:
+
+PASSO 1: Identificar a questão jurídica de fundo
+
+Exemplo: "A questão central é se há direito à indenização por dano moral causado
+por ato discriminatório no emprego."
+
+PASSO 2: Invocar NÍVEL 1 (CF)
+
+"A Constituição Federal protege a dignidade da pessoa humana (art. 1º, III) e a
+igualdade (art. 5º, caput), vedando discriminação por qualquer forma."
+
+PASSO 3: Invocar NÍVEL 2 (Tratados, se aplicável)
+
+"O Pacto de San José da Costa Rica (Decreto 678/1992), com STATUS SUPRALEGAL,
+estabelece em seu art. 1º o direito ao respeito pela honra e dignidade, sem
+discriminação."
+
+PASSO 4: Invocar NÍVEL 3 (Leis)
+
+"A Consolidação das Leis do Trabalho (Decreto-Lei 5.452/1943) protege o empregado
+contra discriminação (art. 3º, parágrafo único). A Lei de Defesa do Consumidor
+(Lei 8.078/1990) responsabiliza fornecedores por dano moral causado por seus
+atos (art. 6º, VI, c/c art. 14)."
+
+PASSO 5: Invocar NÍVEL 4 (Normas infralegais, se aplicável)
+
+"A Portaria nº X/Y regulamenta [...]"
+
+PASSO 6: Invocar NÍVEL 5 (Precedentes vinculantes)
+
+"A Súmula 37 do STJ estabelece que 'Descabida a indenização por dano moral quando
+o ato praticado não ofende a dignidade, a reputação, a integridade física ou moral
+da pessoa' (aplicada a contrario sensu ao caso: OFENDE a dignidade, logo cabe
+indenização).
+
+O Tema de Repercussão Geral nº [X], julgado pelo STF, firmou tese de que
+[TRANSCREVER TESE COM DADOS COMPLETOS]."
+
+PASSO 7: Conclusão integrada
+
+"Portanto, do ponto de vista da hierarquia normativa:
+
+a) NÍVEL 1 (CF): Proteção à dignidade e igualdade (máxima força)
+b) NÍVEL 2 (Tratado): Pacto de San José prevê proteção (força supralegal)
+c) NÍVEL 3 (Leis): CLT e CDC responsabilizam por discriminação (força ordinária,
+   mas específicas da matéria)
+d) NÍVEL 5 (Precedentes): STJ e STF reconhecem indenizabilidade (persuasivo forte
+   ou vinculante)
+
+A conclusão é que há FUNDAMENTO EM TODA A HIERARQUIA NORMATIVA para reconhecer
+o direito à indenização por dano moral por ato discriminatório."
+
+───────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO 8: CHECKLIST - DIREITO MATERIAL E ESTRUTURA NORMATIVA
+
+───────────────────────────────────────────────────────────────────────────────────
+
+[ ] Questão jurídica de fundo foi claramente identificada?
+[ ] NÍVEL 1 (CF): Princípios e direitos constitucionais foram invocados?
+[ ] NÍVEL 2 (Tratados): Tratados aplicáveis foram identificados e invocados?
+[ ] Status hierárquico de cada tratado foi demonstrado?
+[ ] NÍVEL 3 (Leis): Lei federal de regência foi identificada e transcrita?
+[ ] Dispositivos legais foram aplicados ao caso concreto?
+[ ] NÍVEL 4 (Infralegais): Decretos/Portarias relevantes foram consultados?
+[ ] NÍVEL 5 (Precedentes): Súmulas/Temas/IRDR foram pesquisados?
+[ ] Distinção entre precedente vinculante (art. 927) e persuasivo foi clara?
+[ ] Controle de convencionalidade foi aplicado (se houver conflito lei vs. tratado)?
+[ ] Estrutura normativa foi apresentada de forma integrada e hierarquizada?
+[ ] Prequestionamento prospectivo foi realizado?
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+STANDARD PROBATÓRIO EM MEMORIAIS
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+OBJETIVO: Estabelecer critérios claros de suficiência probatória em memoriais.
+
+EXTENSÃO ESPERADA: 4-6 páginas
+
+───────────────────────────────────────────────────────────────────────────────────
+
+CONCEITO: O standard probatório refere-se ao grau de convencimento necessário para
+que fato controvertido seja considerado PROVADO nos memoriais.
+
+A. DIREITO CÍVEL — PREPONDERÂNCIA DE PROVAS (ART. 373, CPC)
+
+REGRA GERAL: Quem alega fato tem o ônus de prová-lo.
+
+Art. 373, CPC/2015:
+
+"Art. 373. O ônus da prova incumbe:
+
+I - ao autor, quanto ao fato constitutivo do seu direito;
+II - ao réu, quanto à existência de fato impeditivo, modificativo ou extintivo do
+direito do autor."
+
+STANDARD: Preponderância de provas (mais provável que não — mais de 50%).
+
+APLICAÇÃO EM MEMORIAIS CÍVEIS:
+
+a) Fatos do autor/demandante devem ser provados com PREPONDERÂNCIA DE PROVAS;
+b) Fatos do réu (impeditivos, modificativos, extintivos) devem ser provados com
+   PREPONDERÂNCIA DE PROVAS;
+c) Não é necessário grau de certeza absoluta, mas convencimento razoável;
+d) Prova de maior qualidade/quantidade pesa mais (prova documental > testemunhal
+   isolada, múltiplos depoimentos > depoimento único, etc.).
+
+EXEMPLO: "Embora não haja prova documental imediata do pagamento, os depoimentos
+concordantes de [X] testemunhas, corroborados por [documento secundário], demonstram
+com preponderância de provas que o crédito foi efetivamente quitado."
+
+B. DIREITO PENAL — DÚVIDA RAZOÁVEL (IN DUBIO PRO REO)
+
+FUNDAMENTO: Presunção de inocência (art. 5º, LVII, CF)
+
+STANDARD: A acusação deve provar a culpabilidade ALÉM DE DÚVIDA RAZOÁVEL
+(high standard). Se houver dúvida significativa, deve absolver-se o acusado.
+
+APLICAÇÃO EM MEMORIAIS CRIMINAIS (DEFESA):
+
+a) Toda dúvida sobre fatos da acusação milita em favor do acusado;
+b) Contradições na prova são interpretadas em favor do acusado;
+c) Prova deve ser de tal qualidade que afaste dúvida razoável;
+d) Dúvida sobre qualidade, autenticidade ou suficiência de prova beneficia acusado.
+
+APLICAÇÃO EM MEMORIAIS CRIMINAIS (ACUSAÇÃO):
+
+a) Prova deve demonstrar culpabilidade além de dúvida razoável;
+b) Prova frágil, ambígua ou contraditória não é suficiente para condenação;
+c) Deve haver consonância entre prova produzida e conclusão;
+d) Lacunas probatórias resultam em absolvição.
+
+EXEMPLO: "Embora haja depoimento testemunhal único apontando o acusado como autor,
+a defesa provou alibi por múltiplas testemunhas. A dúvida gerada impede condenação
+segura e invoca o princípio in dubio pro reo (art. 5º, LVII, CF)."
+
+C. DIREITO DO TRABALHO — PADRÃO ESPECÍFICO
+
+STANDARD: Preponderância de provas, mas com inversão de ônus em certas matérias
+(discriminação, acidente de trabalho, etc.).
+
+INVERSÃO DE ÔNUS:
+
+a) Discriminação: empregado alega discriminação; empregador deve provar causa
+   neutra para ato questionado (art. 373, §1º, CPC — aplicável ao Direito do
+   Trabalho por analogia);
+
+b) Acidente de trabalho: culpa é presumida (culpa do empregador); cabe ao
+   empregador provar culpa exclusiva do trabalhador;
+
+c) Dano moral: dano moral é presumido na relação de emprego; cabe ao empregador
+   provar ausência de ofensa.
+
+D. CRITÉRIOS PARA AVALIAR SUFICIÊNCIA PROBATÓRIA EM MEMORIAIS
+
+1. CONGRUÊNCIA INTERNA: Prova converge para conclusão? Há contradições?
+
+2. CREDIBILIDADE DAS TESTEMUNHAS: Têm vínculo com partes? Depoimentos são
+   coerentes e consistentes?
+
+3. QUALIDADE DA PROVA DOCUMENTAL: É original ou cópia? Foi impugnada? Há
+   contradição com outras provas?
+
+4. COMPATIBILIDADE: Prova é compatível com outras provas? Há reforço recíproco?
+
+5. LACUNAS PROBATÓRIAS: Há faltas relevantes? Quem suporta a ausência de prova?
+
+6. CONTEXTO PROBATÓRIO: Conjunto de provas, individualmente frágil, mas conjuntamente
+   suficiente?
+
+EXEMPLO: "[Fato X] restou provado pelo seguinte conjunto de provas:
+
+a) Documento [A]: evidencia a data do evento (prova documental)
+b) Depoimento de testemunha [B]: confirma a ocorrência (prova testemunhal)
+c) Depoimento de testemunha [C]: corrobora versão anterior (prova testemunhal)
+d) Laudo pericial [D]: demonstra a causa do evento (prova pericial)
+e) Depoimento pessoal do autor [E]: relata vivência pessoal (depoimento pessoal)
+
+Embora nenhuma prova isoladamente fosse absolutamente conclusiva, o conjunto de
+provas [permite conclusão segura / afasta dúvida significativa] quanto à ocorrência
+de [fato X], em conformidade com o standard de [preponderância / além de dúvida
+razoável] aplicável ao caso."
+
+───────────────────────────────────────────────────────────────────────────────────
+
+E. CHECKLIST - STANDARD PROBATÓRIO
+
+───────────────────────────────────────────────────────────────────────────────────
+
+[ ] Standard probatório correto foi identificado (preponderância / in dubio)?
+[ ] Ônus de prova foi corretamente alocado conforme lei?
+[ ] Inversões de ônus foram aplicadas (se aplicável)?
+[ ] Congruência interna da prova foi analisada?
+[ ] Credibilidade de testemunhas foi avaliada?
+[ ] Qualidade de prova documental foi analisada?
+[ ] Compatibilidade entre provas foi demonstrada?
+[ ] Lacunas probatórias foram explicadas?
+[ ] Contexto probatório global foi considerado?
+[ ] Conclusão probatória é suficiente conforme standard aplicável?
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+TRATADOS INTERNACIONAIS EM MEMORIAIS
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+OBJETIVO: Demonstrar aplicação de tratados internacionais em memoriais.
+
+EXTENSÃO ESPERADA: 3-8 páginas (conforme aplicabilidade do caso)
+
+───────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO 1: IDENTIFICAÇÃO E CLASSIFICAÇÃO DE TRATADOS APLICÁVEIS
+
+Antes de invocar tratado, verificar:
+
+1. O Brasil ratificou o tratado? (art. 84, VIII, CF — competência do Presidente)
+2. Qual é o status do tratado? (EC / supralegal / ordinário)
+3. O tratado é aplicável ao caso concreto?
+4. Há precedente STF/STJ sobre interpretação do tratado?
+
+SEÇÃO 2: TRATADOS MAIS APLICÁVEIS A MEMORIAIS
+
+A. PACTO DE SAN JOSÉ DA COSTA RICA (DIREITOS HUMANOS)
+
+Decreto 678/1992 | Status: SUPRALEGAL | Art. 8º: Garantias judiciais
+
+Invocação em memoriais:
+
+"O Pacto de San José da Costa Rica (Decreto 678/1992), com status supralegal,
+assegura em seu art. 8º o direito a 'garantias judiciais' e a 'prazo razoável'.
+[Demonstrar como decisão viola este direito]."
+
+B. CONVENÇÃO SOBRE DIREITOS DA CRIANÇA
+
+Decreto 99.710/1990 | Status: SUPRALEGAL | Arts. 3º, 8º, 16: Melhor interesse
+
+Invocação em memoriais de guarda/custódia:
+
+"A Convenção sobre os Direitos da Criança (Decreto 99.710/1990) estabelece
+expressamente que 'o melhor interesse da criança será a consideração primordial'
+(art. 3º). No caso concreto, [demonstrar como decisão viola este princípio]."
+
+C. CONVENÇÃO SOBRE ELIMINAÇÃO DE DISCRIMINAÇÃO CONTRA MULHER
+
+Decreto 4.377/2002 | Status: SUPRALEGAL | Arts. 2º, 5º, 15: Igualdade de gênero
+
+Invocação em memoriais com alegação de discriminação de gênero:
+
+"A Convenção sobre Eliminação de Todas as Formas de Discriminação contra a Mulher
+(Decreto 4.377/2002) vincula o Brasil a adotar medidas para eliminar discriminação
+de gênero (art. 2º). [Demonstrar como decisão viola este compromisso]."
+
+D. CONVENÇÃO SOBRE DIREITOS DAS PESSOAS COM DEFICIÊNCIA
+
+Decreto 6.949/2009 | Status: EMENDA CONSTITUCIONAL | Arts. 5º, 19: Acessibilidade
+
+Invocação em memoriais envolvendo pessoa com deficiência:
+
+"A Convenção sobre os Direitos das Pessoas com Deficiência (Decreto 6.949/2009),
+aprovada com status de emenda constitucional, garante direito à acessibilidade
+(art. 9º) e à inclusão (art. 19). [Demonstrar como decisão viola estas garantias]."
+
+SEÇÃO 3: TÉCNICA DE INVOCAÇÃO DE TRATADOS
+
+PASSO 1: Identificar o tratado
+Nome completo + Decreto de promulgação + Data
+
+PASSO 2: Demonstrar status hierárquico
+Supralegal (RE 466.343/SP) / EC (art. 5º, §3º) / Ordinário
+
+PASSO 3: Transcrever dispositivo relevante
+"Art. X do [tratado]: '[...]'"
+
+PASSO 4: Demonstrar aplicabilidade ao caso concreto
+"No caso concreto, [fatos] configuram violação do art. X porque [explicação]."
+
+PASSO 5: Invocar precedentes STF/STJ
+"O STF, no RE [número], reconheceu que [...]"
+
+PASSO 6: Requerer aplicação
+"Requer-se a aplicação do art. X do [tratado], prequestionando-o para eventual
+Recurso Especial (art. 105, III, 'a', CF/88)."
+
+───────────────────────────────────────────────────────────────────────────────────
+
+E. CHECKLIST - TRATADOS INTERNACIONAIS
+
+───────────────────────────────────────────────────────────────────────────────────
+
+[ ] Brasil ratificou o tratado invocado?
+[ ] Status hierárquico do tratado foi demonstrado?
+[ ] Dispositivo do tratado foi transcrito literalmente?
+[ ] Aplicabilidade ao caso concreto foi demonstrada?
+[ ] Precedentes STF/STJ sobre interpretação foram pesquisados?
+[ ] Prequestionamento do tratado foi realizado?
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+DISSÍDIOS E JURISPRUDÊNCIA PACIFICADA EM MEMORIAIS
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+OBJETIVO: Demonstrar aplicação de jurisprudência e resolver conflitos
+jurisprudenciais em memoriais.
+
+EXTENSÃO ESPERADA: 6-12 páginas
+
+───────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO 1: CONCEITO DE DISSÍDIO E JURISPRUDÊNCIA PACIFICADA
+
+A. JURISPRUDÊNCIA PACIFICADA
+
+Conceito: Entendimento consolidado de um tribunal sobre matéria jurídica (reiterado
+em múltiplas decisões).
+
+Força: Persuasiva forte — juízes seguem, mas podem se afastar com fundamentação
+(art. 489, §1º, VI, CPC).
+
+Formalização: Súmula (vinculante ou não), orientação de plenário, ementa de
+precedente reiterado.
+
+B. DISSÍDIO JURISPRUDENCIAL
+
+Conceito: Conflito de entendimento entre tribunais (ou câmaras do mesmo tribunal)
+sobre mesma questão jurídica.
+
+Tipos:
+
+1. DISSÍDIO INTERREGIONAL: Entre TJs de diferentes estados (cabimento de Recurso
+   Especial por divergência — art. 105, III, 'c', CF)
+
+2. DISSÍDIO INTRATRIBUNAL: Dentro do mesmo tribunal (cabimento de incidente de
+   assunção de competência — art. 947, CPC — para uniformização)
+
+SEÇÃO 2: COMO INVOCAR JURISPRUDÊNCIA PACIFICADA EM MEMORIAIS
+
+MODELO 1: REFORÇO DE TESE (quando jurisprudência favorece parte)
+
+"A tese sustentada por esta parte encontra apoio firme na jurisprudência pacificada
+do [TJ/STJ/STF].
+
+Reiteradamente, o [tribunal] tem decidido que:
+
+[Transcrever ementa de 2-3 julgados similares com dados completos: número,
+tribunal, órgão julgador, relator, data de julgamento, ementa]
+
+Destarte, a jurisprudência PACIFICADA do tribunal competente é uniforme no sentido
+de [síntese do entendimento], razão pela qual a sentença recorrida deve ser
+reformada."
+
+MODELO 2: ENFRENTAMENTO DE JURISPRUDÊNCIA CONTRÁRIA (quando há dissídio)
+
+"Embora haja entendimento minoritário no sentido de [tese contrária], a jurisprudência
+PREDOMINANTE e PACIFICADA do [tribunal] reconhece que [tese favorável].
+
+Nesse sentido, confiram-se os seguintes julgados:
+
+[Transcrever 3-5 julgados majoritários com dados completos]
+
+Diferentemente, algumas câmaras adotam entendimento isolado de que [tese contrária],
+conforme se vê em:
+
+[Transcrever 1-2 julgados minoritários com dados completos]
+
+No entanto, a orientação PREDOMINANTE do tribunal é clara e coerente no sentido de
+[síntese]. A jurisprudência PACIFICADA favorece a tese desta parte."
+
+SEÇÃO 3: TÉCNICA DE PESQUISA E DOCUMENTAÇÃO DE JURISPRUDÊNCIA
+
+Ao invocar jurisprudência em memoriais:
+
+1. Pesquisar via web_search ou portais: stf.jus.br, stj.jus.br, site do TJ local
+
+2. SEMPRE transcrever dados completos:
+
+"[TRIBUNAL], [CÂMARA/TURMA], [TIPO DE RECURSO] nº [NÚMERO], Relator(a)
+[NOME], j. [DATA], publicado em [DATA DE PUBLICAÇÃO]
+
+EMENTA: '[Transcrever ementa íntegra entre aspas]'
+
+[Opcionalmente: TRECHO DO VOTO DO RELATOR: '[...]']"
+
+3. Conferir se a jurisprudência ainda está vigente (não foi revogada por decisão
+   posterior ou alteração legislativa)
+
+4. Demonstrar similaridade entre precedente e caso concreto
+
+5. Prequestionar questões jurídicas para eventual recurso futuro
+
+───────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO 4: INCIDENTES DE RESOLUÇÃO DE DEMANDAS REPETITIVAS (IRDR)
+
+Conceito: Procedimento para resolver questão jurídica que se repete em múltiplos
+processos (art. 976, CPC).
+
+Força: Decisão sobre a questão jurídica vincula todos os juízos (art. 985, CPC).
+
+Invocação em memoriais:
+
+"Há Incidente de Resolução de Demandas Repetitivas (IRDR) já julgado sobre a presente
+questão jurídica:
+
+[TRIBUNAL], IRDR nº [NÚMERO], j. [DATA]
+
+QUESTÃO JURÍDICA: [Descrição]
+
+TESE ADOTADA: '[Transcrever tese]'
+
+A presente lide está abrangida pela tese firmada no IRDR acima, devendo a decisão
+observar obrigatoriamente esta orientação (art. 985, CPC)."
+
+───────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO 5: CHECKLIST - DISSÍDIOS E JURISPRUDÊNCIA
+
+───────────────────────────────────────────────────────────────────────────────────
+
+[ ] Jurisprudência pacificada foi pesquisada?
+[ ] Há dissídio jurisprudencial sobre a matéria?
+[ ] Dados completos de julgados foram colhidos (número, tribunal, data)?
+[ ] Ementas foram transcritas literalmente?
+[ ] Similaridade entre precedente e caso concreto foi demonstrada?
+[ ] Se há dissídio, demonstrou-se qual entendimento é predominante?
+[ ] Há IRDR ou IAC aplicável?
+[ ] Prequestionamento foi realizado para eventual RE/REsp?
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE XIII: DISTINGUISHING E OVERRULING - TÉCNICAS DE SUPERAÇÃO DE PRECEDENTES
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+OBJETIVO DESTA PARTE:
+
+Fornecer técnicas completas de DISTINGUISHING (distinção de precedentes) e
+OVERRULING (superação de precedentes) aplicáveis a memoriais, incluindo:
+
+1. Conceitos de distinguishing e overruling
+2. Fundamentos legais (CPC/2015 - art. 489, §1º, VI)
+3. Técnicas de demonstração de diferenças fáticas e jurídicas
+4. Técnicas de demonstração de superação de precedente
+5. Modelos de argumentação prontos
+6. Checklist completo
+
+EXTENSÃO ESPERADA: 6-10 páginas
+
+───────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO 1: FUNDAMENTOS LEGAIS
+
+───────────────────────────────────────────────────────────────────────────────────
+
+A. ART. 489, § 1º, VI, CPC/2015 — DEVER DE FUNDAMENTAÇÃO ANALÍTICA
+
+"Art. 489. [...] § 1º Não se considera fundamentada qualquer decisão judicial,
+seja ela interlocutória, sentença ou acórdão, que:
+
+[...]
+
+VI - deixar de seguir enunciado de súmula, jurisprudência ou precedente invocado
+pela parte, sem demonstrar a existência de distinção no caso em julgamento ou a
+superação do entendimento."
+
+INTERPRETAÇÃO:
+
+Este dispositivo impõe ao juiz/tribunal o DEVER de:
+
+a) SEGUIR o precedente invocado pela parte; OU
+
+b) DEMONSTRAR DISTINÇÃO (distinguishing): o caso em julgamento é diferente do
+   precedente invocado (diferenças fáticas ou jurídicas relevantes); OU
+
+c) DEMONSTRAR SUPERAÇÃO (overruling): o precedente invocado está superado por
+   mudança de entendimento jurisprudencial.
+
+CONSEQUÊNCIA DO DESCUMPRIMENTO:
+
+Decisão que não segue precedente invocado pela parte SEM demonstrar distinção ou
+superação é NULA por ausência de fundamentação (art. 93, IX, CF/88 c/c art. 489,
+§1º, VI, CPC/2015).
+
+APLICAÇÃO EM MEMORIAIS:
+
+Quando parte invocar precedente favorável em memorial, se a decisão recorrida não
+o acolher, a decisão é nula por falta de fundamentação analítica (violação de art.
+489, §1º, VI, CPC).
+
+───────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO 2: CONCEITO E TIPOS DE DISTINGUISHING
+
+───────────────────────────────────────────────────────────────────────────────────
+
+A. DEFINIÇÃO
+
+DISTINGUISHING é a técnica de DISTINÇÃO de precedentes, pela qual se demonstra
+que o caso em julgamento apresenta diferenças relevantes (fáticas ou jurídicas) em
+relação ao precedente invocado, justificando solução jurídica diversa.
+
+B. QUANDO REALIZAR DISTINGUISHING EM MEMORIAIS
+
+Realizar distinguishing quando:
+
+a) A sentença/acusação invocou precedente contrário aos interesses da parte;
+
+b) Há precedente vinculante (art. 927, CPC) aparentemente contrário;
+
+c) Há súmula do STF/STJ aparentemente contrária;
+
+d) Há IRDR ou IAC do tribunal aparentemente contrário;
+
+e) Para se preparar para defesa contra possível invocação de precedente contrário
+   pela outra parte (antecipação).
+
+C. TIPOS DE DISTINGUISHING
+
+TIPO 1: DISTINGUISHING FÁTICO
+
+Demonstra-se que os FATOS do caso concreto são substancialmente diferentes dos
+fatos do precedente invocado.
+
+Exemplo: Precedente trata de relação entre empresas (B2B); caso concreto envolve
+relação de consumo (B2C). A diferença fática justifica aplicação do CDC, não
+aplicável ao precedente.
+
+TIPO 2: DISTINGUISHING JURÍDICO
+
+Demonstra-se que, embora os fatos sejam semelhantes, a QUALIFICAÇÃO JURÍDICA ou o
+CONTEXTO NORMATIVO é diferente.
+
+Exemplo: Precedente foi julgado antes da vigência de lei nova; caso concreto é
+julgado após lei nova que alterou regime jurídico da matéria.
+
+TIPO 3: DISTINGUISHING TELEOLÓGICO
+
+Demonstra-se que, embora os fatos e o contexto jurídico sejam semelhantes, a
+FINALIDADE (telos) da norma aplicável ao caso concreto é diversa.
+
+Exemplo: Precedente aplicou regra de direito privado; caso concreto envolve direito
+público, cuja finalidade (interesse público) é diversa.
+
+───────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO 3: TÉCNICA PASSO A PASSO - DISTINGUISHING FÁTICO
+
+───────────────────────────────────────────────────────────────────────────────────
+
+PASSO 1: IDENTIFICAR O PRECEDENTE INVOCADO
+
+Transcrever integralmente:
+
+- Tribunal
+- Órgão julgador (Turma, Câmara, Seção, Plenário)
+- Tipo de recurso (REsp, RE, AgRg, etc.)
+- Número do processo
+- Relator
+- Data de julgamento
+- EMENTA COMPLETA
+
+Exemplo:
+
+"SUPERIOR TRIBUNAL DE JUSTIÇA, SEGUNDA TURMA, Recurso Especial nº 1.234.567/SP,
+Relator Ministro [NOME], julgado em 15/03/2024, publicado em 20/03/2024.
+
+EMENTA: '[Transcrever ementa literal entre aspas]'"
+
+PASSO 2: IDENTIFICAR A RATIO DECIDENDI DO PRECEDENTE
+
+A ratio decidendi é o FUNDAMENTO JURÍDICO DETERMINANTE da decisão — o porquê da
+decisão.
+
+Distingue-se de:
+
+- OBITER DICTUM: comentários ou argumentos não essenciais à decisão
+
+Exemplo de ratio:
+
+"A ratio decidendi do REsp 1.234.567/SP é que NO CONTRATO ENTRE EMPRESAS, sem
+vínculo de hipossuficiência, prevalece a LIBERDADE CONTRATUAL, não se aplicando as
+regras protetivas do CDC."
+
+PASSO 3: DESCREVER OS FATOS DO PRECEDENTE
+
+Resumo sintético dos fatos relevantes do precedente.
+
+Exemplo:
+
+"No REsp 1.234.567, a controvérsia envolvia contrato de fornecimento de matéria-prima
+ENTRE DUAS EMPRESAS, ambas com capacidade econômica e técnica equivalentes, em relação
+paritária. A empresa compradora alegava cláusula abusiva na tabela de preços."
+
+PASSO 4: DESCREVER OS FATOS DO CASO CONCRETO
+
+Resumo dos fatos do caso concreto objeto do memorial.
+
+Exemplo:
+
+"No caso concreto, a relação é ENTRE CONSUMIDOR (pessoa física) e FORNECEDORA
+(instituição financeira), caracterizando RELAÇÃO DE CONSUMO em que há nítida
+HIPOSSUFICIÊNCIA TÉCNICA E ECONÔMICA da consumidora frente ao fornecedor."
+
+PASSO 5: DEMONSTRAR AS DIFERENÇAS FÁTICAS RELEVANTES
+
+Listar as diferenças e explicar por que são JURIDICAMENTE RELEVANTES.
+
+Exemplo:
+
+"As diferenças fáticas são RELEVANTES porque:
+
+a) Precedente: Relação B2B (empresa vs. empresa) — paridade de forças
+   Caso concreto: Relação B2C (consumidor vs. fornecedor) — hipossuficiência
+
+b) Precedente: Não havia legislação especial aplicável
+   Caso concreto: CDC é lei especial que protege o vulnerável (art. 4º, CDC)
+
+c) Precedente: Aplicavam-se regras de Direito Civil comum (liberdade contratual)
+   Caso concreto: Aplicam-se regras especiais de proteção do consumidor
+
+d) Precedente: Não havia desequilíbrio substancial de poder
+   Caso concreto: Há desequilíbrio manifesto (consumidor vs. instituição financeira)
+
+LOGO, as diferenças fáticas são JURIDICAMENTE RELEVANTES e justificam solução
+diversa."
+
+PASSO 6: CONCLUIR O DISTINGUISHING FÁTICO
+
+"Portanto, o precedente REsp 1.234.567 NÃO se aplica ao caso concreto, ante as
+DIFERENÇAS FÁTICAS RELEVANTES acima demonstradas (DISTINGUISHING).
+
+A RATIO DECIDENDI do precedente (liberdade contratual em relação paritária) não se
+amolda aos fatos deste processo (proteção especial de relação de consumo).
+
+Consequentemente, não há violação do precedente; há, sim, DISTINÇÃO JUSTIFICADA
+baseada em diferenças fáticas essenciais."
+
+───────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO 4: TÉCNICA PASSO A PASSO - DISTINGUISHING JURÍDICO
+
+───────────────────────────────────────────────────────────────────────────────────
+
+PASSO 1-2: [Idem distinguishing fático — identificar precedente e ratio]
+
+PASSO 3: IDENTIFICAR O CONTEXTO JURÍDICO DO PRECEDENTE
+
+Descrever:
+
+- Lei vigente à época do precedente
+- Entendimento jurisprudencial à época
+- Contexto constitucional
+- Mudanças legislativas posteriores
+
+Exemplo:
+
+"O precedente REsp 1.234.567 foi julgado em 2015, ainda sob a vigência do
+CPC/1973, que não previa o instituto da tutela provisória de urgência antecipada
+(arts. 300-310, CPC/2015). À época, vigorava a regulamentação anterior de tutela
+antecipatória (art. 273, CPC/1973), com requisitos e efeitos diferentes."
+
+PASSO 4: IDENTIFICAR O CONTEXTO JURÍDICO DO CASO CONCRETO
+
+Exemplo:
+
+"O presente memorial é elaborado sob a vigência do CPC/2015, que introduziu
+substanciais alterações no sistema de tutelas provisórias:
+
+a) Unificação de tutela antecipada e tutela cautelar sob gênero 'tutela provisória
+   de urgência' (arts. 300-310, CPC/2015)
+
+b) Critério de urgência é mais restritivo (fundado medo de irreparabilidade ou
+   risco ao resultado útil)
+
+c) Efeito da tutela provisória é diverso (não mais suspensivo automaticamente)
+
+d) Reversibilidade é novo critério legal"
+
+PASSO 5: DEMONSTRAR AS DIFERENÇAS JURÍDICAS RELEVANTES
+
+Exemplo:
+
+"As diferenças de contexto jurídico são RELEVANTES porque:
+
+a) Precedente regido por lei anterior com regime jurídico distinto
+b) Lei nova alterou substancialmente a matéria (CPC/1973 → CPC/2015)
+c) Efeitos do precedente não se transportam automaticamente para novo regime
+d) Logo, a RATIO DECIDENDI do precedente, baseada em lei antiga, não pode servir
+   de fundamento para decisão baseada em lei nova, sem análise da compatibilidade"
+
+PASSO 6: CONCLUIR O DISTINGUISHING JURÍDICO
+
+"Portanto, o precedente REsp 1.234.567 NÃO se aplica ao caso concreto, ante as
+DIFERENÇAS DE CONTEXTO JURÍDICO acima demonstradas (DISTINGUISHING).
+
+O entendimento firmado naquela decisão foi baseado em regime legal anterior
+(CPC/1973). O CPC/2015 alterou substancialmente a matéria, exigindo reexame das
+questões à luz do novo regimen.
+
+Assim, não há violação do precedente; há, sim, DISTINÇÃO JUSTIFICADA baseada em
+mudança do contexto normativo."
+
+───────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO 5: CONCEITO E TÉCNICA DE OVERRULING
+
+───────────────────────────────────────────────────────────────────────────────────
+
+A. DEFINIÇÃO
+
+OVERRULING é a técnica de SUPERAÇÃO de precedentes, pela qual se demonstra que o
+precedente invocado está SUPERADO, tendo sido deixado de lado por mudança de
+entendimento jurisprudencial, alteração legislativa ou evolução social.
+
+B. QUANDO ALEGR OVERRULING EM MEMORIAIS
+
+Alegar overruling quando:
+
+a) Precedente/súmula invocado está desatualizado face a mudança legislativa
+   superveniente
+
+b) Precedente/súmula invocado está em contradição com precedentes mais recentes do
+   mesmo tribunal
+
+c) Precedente está em contradição com decisão de tribunal superior (hierarquia)
+
+d) Precedente está superado por evolução jurisprudencial consolidada (tribunal
+   mudou seu entendimento)
+
+C. TIPOS DE OVERRULING
+
+TIPO 1: OVERRULING EXPRESSO
+
+Tribunal declara expressamente a superação de precedente anterior, revogando-o.
+
+Exemplo: "STF revoga Súmula 123 mediante decisão plenária"
+
+TIPO 2: OVERRULING IMPLÍCITO
+
+Tribunal adota entendimento contrário a precedente anterior, sem revogá-lo
+expressamente.
+
+Exemplo: STJ julga série de casos adotando tese contrária a súmula não vinculante
+anterior.
+
+TIPO 3: OVERRULING ANTECIPATIVO
+
+Tribunal inferior antecipa superação de precedente de tribunal superior, com base
+em sinais claros de mudança (obiter dicta, votos vencidos reiterados, etc.).
+
+Exemplo: TJ antecipa superação de súmula do STJ, fundamentando em julgados recentes
+do STJ que sinalizam mudança.
+
+───────────────────────────────────────────────────────────────────────────────────
+
+D. TÉCNICA PASSO A PASSO — DEMONSTRAÇÃO DE OVERRULING
+
+PASSO 1: IDENTIFICAR O PRECEDENTE INVOCADO
+
+[Idem distinguishing — dados completos]
+
+PASSO 2: DEMONSTRAR MUDANÇA JURISPRUDENCIAL
+
+Listar precedentes mais recentes que adotam tese contrária:
+
+Exemplo:
+
+"Embora antigo precedente REsp 1.234.567 (2015) afirmasse que [tese antiga],
+jurisprudência MAIS RECENTE do STJ tem adotado tese CONTRÁRIA:
+
+a) REsp 2.345.678, Rel. Min. [NOME], j. 2020: afirma que [tese nova]
+b) REsp 3.456.789, Rel. Min. [NOME], j. 2021: reafirma que [tese nova]
+c) REsp 4.567.890, Rel. Min. [NOME], j. 2022: consolida entendimento de que [tese
+   nova]
+
+A mudança jurisprudencial é clara e consolidada em múltiplos julgados recentes."
+
+PASSO 3: DEMONSTRAR CONSISTÊNCIA DA MUDANÇA
+
+Exemplo:
+
+"Os precedentes mais recentes são CONSISTENTES no sentido de que [nova tese]:
+
+a) Todos os ministros têm votado no mesmo sentido
+b) Não há votos vencidos discordantes
+c) Há concordância com entendimento de outras turmas do STJ
+d) Há concordância com entendimento do STF
+
+Logo, a mudança não é jurisprudência vacilante, mas consolidada."
+
+PASSO 4: DEMONSTRAR RAZÕES DA MUDANÇA
+
+Exemplo:
+
+"A mudança jurisprudencial foi motivada por:
+
+a) Mudança legislativa: [lei nova que alterou regime]
+b) Evolução social: [contexto social que mudou]
+c) Doutrina: [desenvolvimento doutrinário que influenciou jurisprudência]
+d) Decisão de tribunal superior: [precedente de tribunal acima que forçou mudança]"
+
+PASSO 5: INVOCAR DEVER DE FUNDAMENTAÇÃO (ART. 489, §1º, VI, CPC)
+
+Exemplo:
+
+"Conforme art. 489, § 1º, VI, CPC, decisão que invoca precedente SUPERADO, sem
+demonstrar sua subsistência, é nula por deficiência de fundamentação.
+
+O tribunal deve seguir jurisprudência VIGENTE, não precedente SUPERADO.
+
+Logo, se [sentença recorrida] invocou precedente superado, a decisão é NULA por
+falta de fundamentação analítica."
+
+PASSO 6: CONCLUIR O OVERRULING
+
+"Portanto, o precedente REsp 1.234.567 está SUPERADO por jurisprudência mais
+recente e consolidada do STJ no sentido de [tese nova].
+
+A invocação deste precedente pela [sentença / acusação] configura FUNDAMENTAÇÃO
+DEFICIENTE (violação de art. 489, § 1º, VI, CPC), pois não demonstrou a
+persistência do entendimento nem enfrenta jurisprudência contrária.
+
+Requer-se o acolhimento da tese apoiada em jurisprudência VIGENTE e CONSOLIDADA."
+
+───────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO 6: CHECKLIST - DISTINGUISHING E OVERRULING
+
+───────────────────────────────────────────────────────────────────────────────────
+
+DISTINGUISHING:
+
+[ ] Precedente invocado foi integralmente identificado (tribunal, número, data)?
+[ ] Ementa foi transcrita literalmente?
+[ ] Ratio decidendi foi claramente extraída?
+[ ] Fatos do precedente foram sinteticamente descritos?
+[ ] Fatos do caso concreto foram sinteticamente descritos?
+[ ] Diferenças fáticas foram listadas?
+[ ] Diferenças jurídicas foram listadas?
+[ ] Relevância jurídica de cada diferença foi demonstrada?
+[ ] Conclusão foi clara: não aplicação do precedente por distinção?
+
+OVERRULING:
+
+[ ] Precedente invocado foi identificado com dados completos?
+[ ] Precedentes mais recentes com tese contrária foram listados (mínimo 2-3)?
+[ ] Consistência da mudança jurisprudencial foi demonstrada?
+[ ] Razões da mudança foram explicadas?
+[ ] Jurisprudência contrária é de tribunal competente (mesma hierarquia)?
+[ ] Invocação de art. 489, §1º, VI, CPC foi realizada?
+[ ] Conclusão foi clara: precedente está superado?
 
 ═══════════════════════════════════════════════════════════════════════════════════
 

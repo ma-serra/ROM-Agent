@@ -53,7 +53,9 @@ PARTE IV   - HIPÓTESES DE CABIMENTO: OBSCURIDADE, CONTRADIÇÃO E OMISSÃO
 PARTE V    - ERRO MATERIAL E DISTINÇÃO DE OUTRAS MATÉRIAS
 PARTE VI   - EFEITOS INFRINGENTES (MODIFICATIVOS)
 PARTE VII  - PREQUESTIONAMENTO: ART. 1.025 CPC E ADMISSIBILIDADE DE REsp/RE
-PARTE VIII - PRAZO: 5 DIAS ÚTEIS (ART. 1.023 CPC)
+PARTE VIII - APLICAÇÃO DA NORMA NO TEMPO (LINDB + ART. 14 CPC) - NOVA FASE 1.5
+PARTE VIII-A - DIREITO MATERIAL (ESTRUTURA NORMATIVA VERTICAL) - NOVA FASE 1.5
+PARTE VIII-B - PRAZO: 5 DIAS ÚTEIS (ART. 1.023 CPC)
 PARTE IX   - EMBARGOS DECLARATÓRIOS DE EMBARGOS DECLARATÓRIOS
 PARTE X    - ESTRUTURA REDACIONAL DA PEÇA
 PARTE XI   - VÍCIOS DO ART. 489, § 1º, DO CPC (FUNDAMENTAÇÃO INADEQUADA)
@@ -66,8 +68,10 @@ PARTE XVII - IRDR, IAC, TEMAS REPETITIVOS E SÚMULAS
 PARTE XVIII- MODELOS DE PARÁGRAFOS TÉCNICOS
 PARTE XIX  - CHECKLIST FINAL (META: 100/100)
 PARTE XX   - PROTOCOLO DE VERIFICAÇÃO DE PRECEDENTES
-PARTE XXI  - RIGOR ORTOGRÁFICO, GRAMATICAL E DE PONTUAÇÃO
-PARTE XXII - INTEGRAÇÃO COM O SISTEMA ROM
+PARTE XXI  - STANDARD PROBATÓRIO EM EMBARGOS - NOVA FASE 1.5
+PARTE XXII - TRATADOS INTERNACIONAIS - NOVA FASE 1.5
+PARTE XXIII - RIGOR ORTOGRÁFICO, GRAMATICAL E DE PONTUAÇÃO
+PARTE XXIV - INTEGRAÇÃO COM O SISTEMA ROM
 
 ═══════════════════════════════════════════════════════════════════════════════════
 
@@ -905,7 +909,308 @@ modificação do resultado, reconhecendo [especificar a conclusão esperada]."
 
 ═══════════════════════════════════════════════════════════════════════════════════
 
-PARTE VIII: PRAZO: 5 DIAS ÚTEIS (ART. 1.023 CPC)
+PARTE VIII: APLICAÇÃO DA NORMA NO TEMPO (LINDB + ART. 14 CPC) - FASE 1.5
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+FUNDAMENTAÇÃO: Os embargos de declaração devem observar rigorosamente
+o direito intertemporal, compatibilizando a lei vigente à época dos fatos,
+da decisão embargada e do julgamento dos embargos. Esta Parte implementa
+conforme Fase 1.5: LINDB (Arts. 1º, 2º, 5º, 6º), Art. 14 CPC/2015 e
+Tríade Temporal (direito adquirido, ato jurídico perfeito, coisa julgada).
+
+1. TEORIA GERAL DO DIREITO INTERTEMPORAL
+
+O direito intertemporal estuda a aplicação das normas jurídicas no tempo,
+respondendo a três perguntas fundamentais:
+
+a) A lei nova se aplica aos fatos anteriores (retroatividade)?
+b) A lei nova se aplica aos fatos em curso (aplicação imediata)?
+c) A lei nova se aplica após a consumação do fato (irretroatividade)?
+
+DISTINÇÃO CRÍTICA:
+- Direito material: regido por LINDB Art. 6º (irretroatividade, exceções)
+- Direito processual: regido por CPC Art. 14 (aplicação imediata)
+
+2. LINDB (LEI DE INTRODUÇÃO ÀS NORMAS DO DIREITO BRASILEIRO) - ART. 6º
+
+"Art. 6º. A lei em vigor terá efeito imediato e geral, irrespeitando,
+porém, as situações jurídicas definidas sob a lei anterior."
+
+INTERPRETAÇÃO CONFORME JURISPRUDÊNCIA STF/STJ:
+
+a) PRINCÍPIO GERAL: Lei nova é irretroativa (não se aplica a fatos
+   anteriores já consumados);
+
+b) EXCEÇÕES À IRRETROATIVIDADE:
+
+   ✓ Lei benéfica: Se a lei nova for mais benéfica ao réu (penal) ou
+     ao consumidor, pode ter aplicação retroativa (Art. 5º, XL, CF para
+     penal; aplicação por jurisprudência ao consumidor);
+
+   ✓ Lei interpretativa: Não retroage porque apenas clarifica lei
+     anterior; porém, há discussão doutrinária (posição minoritária);
+
+   ✓ Direito processual: Conforme Art. 14 CPC, as normas processuais
+     se aplicam imediatamente, mesmo aos processos em curso.
+
+3. TRÍADE TEMPORAL (ART. 5º, XXXVI, CF) - PROTEÇÃO CONSTITUCIONAL
+
+A Constituição Federal protege três situações jurídicas que NÃO sofrem
+efeitos retroativos de lei nova (Direito Adquirido, Ato Jurídico Perfeito,
+Coisa Julgada):
+
+DIREITO ADQUIRIDO (Art. 5º, XXXVI, CF):
+- Conceito: Direito que já foi incorporado definitivamente ao patrimônio
+  jurídico de alguém;
+- Exemplos: Direito a aposentadoria já consolidado; direito a herança já
+  aceita; direito a liberdade condicional já concedida;
+- Efeito: Lei nova NÃO pode revogar direito adquirido (proteção
+  constitucional).
+
+ATO JURÍDICO PERFEITO (Art. 5º, XXXVI, CF):
+- Conceito: Ato jurídico que se completou sob a lei anterior, satisfazendo
+  todos os seus requisitos de validade;
+- Exemplos: Contrato perfeitamente executado; casamento celebrado; ato
+  administrativo praticado conforme procedimento legal vigente;
+- Efeito: Lei nova NÃO pode prejudicar ato jurídico perfeito já praticado.
+
+COISA JULGADA (Art. 5º, XXXVI, CF):
+- Conceito: Sentença que não mais admite recurso (transitou em julgado);
+- Proteção: Lei processual ou material nova NÃO pode alterar coisa julgada
+  (exceto Lei 13.105/2015 em casos excepcionais);
+- Efeito: Imutabilidade absoluta da sentença.
+
+CRITÉRIO APLICADO AOS EMBARGOS:
+Quando se alegam efeitos de lei nova como vício da decisão, verificar se
+há violação de direito adquirido, ato jurídico perfeito ou coisa julgada.
+
+4. ART. 14 DO CPC/2015 - APLICAÇÃO IMEDIATA DE NORMAS PROCESSUAIS
+
+"Art. 14. A norma processual não retroagirá e será aplicável imediatamente
+aos processos em curso, respeitados os atos já praticados e suas
+consequências."
+
+CONSEQUÊNCIAS:
+
+a) Normas processuais novas se aplicam IMEDIATAMENTE aos processos em
+   curso (não há transição);
+
+b) RESSALVA CRÍTICA: Não prejudicam atos já praticados (estabilidade
+   processual);
+
+c) Aplicável aos embargos: Se lei processual nova surgir após a decisão
+   embargada, a mesma se aplica aos embargos (mas não prejudica a decisão
+   anterior).
+
+EXEMPLO PRÁTICO:
+Se Lei 14.701/2023 (hipoteticamente) alterou o prazo de embargos de 5 para
+10 dias, e a decisão embargada foi publicada em 20/01/2023, os embargos
+podem ser opostos conforme a lei nova (10 dias), pois normas processuais
+se aplicam imediatamente.
+
+5. "TEMPUS REGIT ACTUM" (O TEMPO GOVERNA O ATO)
+
+Máxima forense: Cada ato processual é regulado pela lei em vigor no
+momento de sua prática.
+
+APLICAÇÃO AOS EMBARGOS:
+- A decisão embargada é regida pela lei vigente à época de seu julgamento
+- Os embargos são regidos pela lei vigente à época de sua interposição
+- Prazos, recursos, requisitos são regidos conforme lei atual
+
+6. CHECKLIST - ANÁLISE TEMPORAL OBRIGATÓRIA EM EMBARGOS
+
+[ ] A decisão embargada aplicou lei revogada ou lei anterior?
+[ ] Houve mudança legislativa posterior à decisão embargada?
+[ ] A lei nova é mais benéfica ou mais gravosa?
+[ ] Há violação de direito adquirido sob lei anterior?
+[ ] Há violação de ato jurídico perfeito celebrado sob lei anterior?
+[ ] A decisão embargada transitou em julgado (coisa julgada)?
+[ ] A mudança legislativa justifica efeito infringente?
+[ ] Há prequestionamento de conflito intertemporal?
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE VIII-A: DIREITO MATERIAL (ESTRUTURA NORMATIVA VERTICAL) - FASE 1.5
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+FUNDAMENTAÇÃO: Os embargos de declaração devem sempre invocar a estrutura
+normativa vertical completa, demonstrando a hierarquização de fontes e a
+compatibilidade da decisão embargada com toda a cadeia normativa (CF →
+Tratados → Leis → Infralegais). Esta Parte implementa: Pirâmide de Kelsen,
+11 áreas de direito material, 80+ diplomas normativos.
+
+1. PIRÂMIDE DE KELSEN - HIERARQUIA DAS NORMAS JURÍDICAS
+
+Nível 1 - CONSTITUIÇÃO FEDERAL/1988 (ÁPICE)
+        - Normas constitucionais
+        - Cláusulas pétreas (Art. 60, §4º, CF)
+        - Direitos fundamentais (Arts. 1º-17)
+
+Nível 2 - TRATADOS INTERNACIONAIS
+        - Tratados com status constitucional (Art. 5º, §3º, CF)
+        - Tratados de direitos humanos (status supralegal - RE 466.343/SP)
+        - Tratados comuns (equivalentes a lei ordinária)
+
+Nível 3 - LEIS COMPLEMENTARES (quórum qualificado: maioria absoluta)
+        - Lei Complementar nº 95/1998 (processo legislativo)
+        - Lei Complementar nº 123/2006 (simples nacional)
+        - Leis Complementares que a Constituição expressamente exigir
+
+Nível 4 - LEIS ORDINÁRIAS (quórum simples: maioria relativa)
+        - Código Civil
+        - Código de Processo Civil
+        - Código de Processo Penal
+        - Lei de Execução Fiscal
+        - Código de Trânsito
+        - Etc. (centenas de leis)
+
+Nível 5 - DECRETOS REGULAMENTARES (Poder Executivo)
+        - Decretos do Presidente da República
+        - Decretos estaduais
+        - Decretos municipais
+
+Nível 6 - PORTARIAS, RESOLUÇÕES E ATOS ADMINISTRATIVOS
+        - Portarias ministeriais
+        - Resoluções de órgãos colegiados
+        - Circulares do STJ/STF
+        - Instruções normativas
+
+Nível 7 - ENUNCIADOS DE SÚMULAS E JURISPRUDÊNCIA (não vinculante, salvo arts. 927 CPC)
+        - Súmulas do STJ/STF (persuasivas)
+        - Precedentes vinculantes (Art. 927 CPC)
+        - Jurisprudência majoritária
+
+2. APLICAÇÃO AOS EMBARGOS DE DECLARAÇÃO
+
+Quando a decisão embargada aplica lei ou norma jurídica, verificar:
+
+a) COMPATIBILIDADE COM CF: A lei é constitucional? Violou cláusula
+   pétrea ou direito fundamental?
+
+b) COMPATIBILIDADE COM TRATADOS: A lei conflita com tratado internacional?
+   Aplica-se controle de convencionalidade?
+
+c) ADEQUAÇÃO NORMATIVA: Aplicou a lei competente ou lei diversa?
+   Exemplo: Aplicou CC quando deveria aplicar CDC?
+
+d) HIERARQUIA: Se há conflito entre normas, a decisão respeitou a
+   hierarquia Kelsiana (CF > Tratados > LC > LO > Decretos)?
+
+e) RESOLUÇÃO DE ANTINOMIAS: Se há conflito entre normas de mesmo nível,
+   aplicou os critérios (hierárquico, cronológico, especialidade)?
+
+3. ONZE ÁREAS DE DIREITO MATERIAL MAPEADAS
+
+Para aplicar estrutura normativa vertical completa em embargos, o modelo
+deve identificar a área de direito material e aplicar os diplomas
+específicos:
+
+ÁREA 1 - DIREITO CIVIL (CC, Estatuto Pessoa com Deficiência, etc.)
+- Código Civil (Lei 10.406/2002)
+- Estatuto da Pessoa com Deficiência (Lei 13.146/2015)
+- Lei de Segurança do Transeunte (Lei 8.237/1991)
+- Lei de Imagem e Voz (Súmula 403/STJ)
+- Diplomas correlatos
+
+ÁREA 2 - DIREITO PENAL (CP, Lei 9.288/1996 - Lavagem, Lei 12.737/2012 - Crime Digital, etc.)
+- Código Penal (Decreto-Lei 2.848/1940)
+- Lei de Crimes Hediondos (Lei 8.072/1990)
+- Lei de Execução Penal (Lei 7.210/1984)
+- Lei de Drogas (Lei 11.343/2006)
+- Lei de Lavagem de Dinheiro (Lei 12.683/2012)
+- Lei de Crimes Cibernéticos (Lei 12.737/2012)
+- Diplomas correlatos
+
+ÁREA 3 - DIREITO PROCESSUAL PENAL (CPP, Lei 9.271/1996, Lei 13.964/2019 - Pacote Anticrime)
+- Código de Processo Penal (Decreto-Lei 3.689/1941)
+- Lei de Prova Pericial (Lei 13.142/2015)
+- Lei de Abuso de Autoridade (Lei 13.869/2019)
+- Lei de Crimes Ambientais (Lei 9.605/1998)
+- Lei contra Corrupção (Lei 12.846/2013)
+- Lei de Crimes Hediondos (Lei 8.072/1990)
+
+ÁREA 4 - DIREITO DO TRABALHO (CLT, Lei 13.467/2017 - Reforma Trabalhista, etc.)
+- Consolidação das Leis do Trabalho (Decreto-Lei 5.452/1943)
+- Lei de Terceirização (Lei 13.429/2017)
+- Lei de Reforma Trabalhista (Lei 13.467/2017)
+- Lei de Cooperativas (Lei 5.764/1971)
+- Lei de Prevenção de Acidentes (Lei 6.514/1977)
+- Lei de Proteção à Empregada Doméstica (Lei Complementar 150/2015)
+- Lei de Igualdade Salarial (Lei 12.990/2014)
+
+ÁREA 5 - DIREITO TRIBUTÁRIO (CTN, Lei de Execução Fiscal, Lei 14.016/2020, etc.)
+- Código Tributário Nacional (Lei 5.172/1966)
+- Lei de Execução Fiscal (Lei 6.830/1980)
+- Lei de Sigilo Bancário (Lei 4.595/1964)
+- Lei de Crimes contra Ordem Tributária (Lei 8.137/1990)
+- Lei de Parcelamento de Dívidas Tributárias (Lei 13.496/2017)
+- Lei de Regularização de Créditos (Lei 13.819/2019)
+
+ÁREA 6 - DIREITO ADMINISTRATIVO (Lei 9.784/1999, Lei 8.429/1992 - Improbidade, etc.)
+- Lei de Processo Administrativo (Lei 9.784/1999)
+- Lei de Improbidade Administrativa (Lei 8.429/1992)
+- Lei de Licitações (Lei 14.133/2021)
+- Lei de Acesso à Informação (Lei 12.527/2011)
+- Lei de Ouvidoria (Lei 13.460/2017)
+- Lei de Responsabilidade Fiscal (Lei Complementar 101/2000)
+- Lei de Servidores Públicos (Lei 8.112/1990)
+
+ÁREA 7 - DIREITO PREVIDENCIÁRIO (Lei 8.213/1991, Lei 10.887/2004, etc.)
+- Lei de Benefícios da Previdência Social (Lei 8.213/1991)
+- Lei de Custeio da Previdência Social (Lei 8.212/1991)
+- Lei de Beneficiários da Previdência (Lei 10.887/2004)
+- Lei de Isenção de Carência (Lei 9.250/1995)
+- Lei de Revisão Administrativa (Lei 13.558/2017)
+
+ÁREA 8 - DIREITO CONSUMERISTA (CDC - Lei 8.078/1990, Lei 14.181/2021, etc.)
+- Código de Defesa do Consumidor (Lei 8.078/1990)
+- Lei de Defesa da Saúde do Consumidor (Lei 6.437/1977)
+- Lei de Direitos Autorais (Lei 9.610/1998)
+- Lei de Serviços Bancários (Lei 4.595/1964)
+- Lei de Planos de Saúde (Lei 9.656/1998)
+- Lei de Publicidade e Direito do Consumidor (Lei 4.680/1965)
+
+ÁREA 9 - DIREITO EMPRESARIAL (Lei de Falências, Lei 11.101/2005, Lei de Licitações, etc.)
+- Lei de Falências e Recuperação de Empresas (Lei 11.101/2005)
+- Lei das Sociedades por Ações (Lei 6.404/1976)
+- Lei de Registros Públicos (Lei 8.935/1994)
+- Lei de Propriedade Industrial (Lei 9.279/1996)
+- Lei de Franquias (Lei 8.955/1994)
+- Lei de Concessões e Parcerias Público-Privadas (Lei 11.079/2004)
+
+ÁREA 10 - DIREITO DE FAMÍLIA (CC Livro IV, Lei 11.977/2009 - Programa Minha Casa, Lei Maria da Penha, etc.)
+- Código Civil (Livro IV - Direito de Família, Arts. 1.511-1.783)
+- Lei Maria da Penha (Lei 11.340/2006)
+- Lei de Alimentos (Lei 5.478/1968)
+- Lei de Guarda (Lei 13.058/2014)
+- Lei de Pensão Alimentícia (Lei 13.058/2014)
+- Lei de Direito a Convivência (Lei 13.010/2014)
+
+ÁREA 11 - DIREITO DAS SUCESSÕES (CC Livro V, Arts. 1.784-2.046, Lei de Invenção, etc.)
+- Código Civil (Livro V - Direito das Sucessões, Arts. 1.784-2.046)
+- Lei de Inventários e Partilhas (Lei 4.740/1965)
+- Lei de Planejamento Sucessório (Lei 13.982/2020)
+- Lei de Doação (Art. 541 e ss., CC)
+- Lei de Testamento (Art. 1.857 e ss., CC)
+
+4. CHECKLIST - ANÁLISE DE DIREITO MATERIAL OBRIGATÓRIA
+
+[ ] Qual a ÁREA de direito material envolvida no caso?
+[ ] Qual o DIPLOMA NORMATIVO PRINCIPAL (lei ordinária)?
+[ ] A decisão embargada respeitou a hierarquia Kelsiana?
+[ ] Há CONFLITO com lei de hierarquia superior (CF/Tratado/LC)?
+[ ] Há omissão de diploma normativo APLICÁVEL ao caso?
+[ ] Há INVERSÃO de diplomas (aplicou lei errada)?
+[ ] A lei aplicada está VIGENTE no momento da decisão?
+[ ] Há ENUNCIADO DE SÚMULA ou precedente vinculante aplicável?
+[ ] A decisão respeitou JURISPRUDÊNCIA PACÍFICA?
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE VIII-B: PRAZO: 5 DIAS ÚTEIS (ART. 1.023 CPC)
 
 ═══════════════════════════════════════════════════════════════════════════════════
 
@@ -1816,7 +2121,494 @@ precedente X].
 
 ═══════════════════════════════════════════════════════════════════════════════════
 
-PARTE XXI: RIGOR ORTOGRÁFICO, GRAMATICAL E DE PONTUAÇÃO
+PARTE XXI: STANDARD PROBATÓRIO EM EMBARGOS - FASE 1.5
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+FUNDAMENTAÇÃO: Os embargos de declaração devem observar o standard
+probatório aplicável à espécie de processo e à matéria controvertida.
+Esta Parte implementa Fase 1.5: Standards diferenciados (civil,
+criminal, consumidor, trabalhista), técnica para afastar Súmula 7/STJ
+e análise de suficiência probatória.
+
+1. CONCEITO: O QUE É STANDARD PROBATÓRIO?
+
+Standard probatório (ou "standard of proof") é o grau de certeza ou
+convicção exigido para se afirmar a existência de um fato controvertido
+em juízo.
+
+QUESTÃO CRÍTICA: Qual o grau mínimo de prova para que o juiz declare
+um fato como provado?
+
+Existem três standards principais:
+
+- PREPONDERÂNCIA DE EVIDÊNCIAS (civil): mais provável que não (> 50%)
+- IN DUBIO PRO REO (criminal): além de dúvida razoável (> 95%)
+- VEROSSIMILHANÇA (cautelar/consumidor): aparência de razão
+
+2. STANDARD EM PROCESSO CÍVEL (PREPONDERÂNCIA DE EVIDÊNCIAS)
+
+Em matéria cível, o standard é a PREPONDERÂNCIA DE EVIDÊNCIAS:
+"É mais provável que sim do que não" (probabilidade > 50%).
+
+FUNDAMENTO: Art. 373 do CPC: "O ônus da prova incumbe:
+I - ao autor, quanto ao fato constitutivo do seu direito;
+II - ao réu, quanto à existência de fato impeditivo, modificativo ou
+extintivo do direito do autor."
+
+APLICAÇÃO AOS EMBARGOS:
+Quando se alega omissão ou contradição sobre questão de fato, verificar
+se a decisão embargada exigiu standard probatório coerente com a regra
+do Art. 373 CPC.
+
+TÉCNICA CRÍTICA - ART. 373, § 1º, CPC (ÔNUS DINÂMICO):
+"Nos casos previstos em lei ou diante de peculiaridades da causa
+relacionadas à impossibilidade ou à excessiva dificuldade de cumprir
+o encargo nos termos do caput ou à maior facilidade de obtenção da
+prova do fato contrário, poderá o juiz atribuir o ônus da prova de
+modo diverso."
+
+MODELO DE REDAÇÃO:
+"A decisão embargada violou o padrão de prova civil ao exigir [especificar
+standard]. Conforme jurisprudência pacífica do STJ, em matéria cível, o
+standard é a preponderância de evidências (Art. 373 CPC), bastando que
+a versão dos fatos seja mais plausível que a contrária. Porém, a decisão
+exigiu [standard maior]. Além disso, aplicável o ônus dinâmico (Art. 373,
+§1º, CPC), pois [demonstrar maior facilidade de obtenção de prova]."
+
+3. STANDARD EM PROCESSO PENAL (IN DUBIO PRO REO)
+
+Em matéria penal, o standard é o "IN DUBIO PRO REO" (em caso de dúvida,
+em favor do réu) ou "ALÉM DE DÚVIDA RAZOÁVEL":
+"A condenação só é possível se houver certeza quanto à autoria e
+materialidade do delito, afastada toda dúvida razoável."
+
+FUNDAMENTO:
+- Art. 5º, LVII, CF: "ninguém será considerado culpado até o trânsito em
+  julgado de sentença penal condenatória"
+- Art. 386, VII, CPP: "O juiz pronunciará sentença condenatória ou
+  absolutória... Se ficar provado que não ocorreu o fato..."
+- CADH Art. 8º, 2, "b": direito de presunção de inocência
+- PIDCP Art. 14, 2: presunção de inocência
+
+APLICAÇÃO AOS EMBARGOS:
+Quando se alega omissão sobre aspecto probatório em sentença/acórdão
+penal condenatório, verificar se a decisão observou o standard in dubio
+pro reo.
+
+TÉCNICA CRÍTICA - AFASTAR DÚVIDA RAZOÁVEL:
+Quando o réu/embargante alega insuficiência probatória, o modelo deve
+demonstrar que há dúvida razoável sobre:
+- AUTORIA: Não há certeza de quem cometeu o delito
+- MATERIALIDADE: Não há certeza de que o delito foi praticado
+- QUALIFICAÇÃO: Há dúvida sobre qual tipo penal se aplica
+
+MODELO DE REDAÇÃO:
+"A decisão embargada condenou sem observar o standard in dubio pro reo
+(Art. 5º, LVII, CF). Conforme jurisprudência consolidada do STF/STJ,
+condenação só é possível se afastada toda dúvida razoável. Porém, a
+decisão omitiu análise de [especificar circunstância que gera dúvida],
+deixando dúvida razoável sobre [autoria/materialidade/qualificação]."
+
+4. STANDARD EM DIREITO DO CONSUMIDOR (INVERSÃO DO ÔNUS)
+
+Em matéria consumerista, o standard é a VEROSSIMILHANÇA + HIPOSSUFICIÊNCIA:
+"É verossímil a alegação E o consumidor é hipossuficiente (técnica ou
+economicamente)."
+
+FUNDAMENTO: Art. 6º, VIII, CDC: "direito à facilitação da defesa de
+seus direitos, inclusive com a inversão do ônus da prova, a seu favor,
+no processo civil, quando, a critério do juiz, for verossímil a alegação
+ou for hipossuficiente segundo as regras ordinárias de experiências."
+
+APLICAÇÃO AOS EMBARGOS:
+Quando se alega omissão de análise sobre inversão do ônus probatório em
+ação consumerista, verificar se a decisão adequadamente avaliou:
+- VEROSSIMILHANÇA: Alegação aparenta ser verdadeira
+- HIPOSSUFICIÊNCIA: Consumidor tem menor acesso a prova (técnico,
+  econômico, informacional)
+
+TÉCNICA CRÍTICA - HIPOSSUFICIÊNCIA TÉCNICA:
+Consumidor é hipossuficiente quando, por sua natureza leiga, não consegue
+comprovar fato técnico que está ao alcance do fornecedor (ex: vício
+oculto do produto, falha do serviço).
+
+MODELO DE REDAÇÃO:
+"A decisão embargada inadmitiu a inversão do ônus probatório em ação
+consumerista, violando Art. 6º, VIII, CDC. O consumidor é hipossuficiente
+técnicamente para comprovar [vício do produto/falha do serviço] e a
+alegação é verossímil. Portanto, competia à fornecedora produzir prova
+contrária, o que a decisão omitiu analisar."
+
+5. STANDARD EM DIREITO DO TRABALHO (FACILIDADE PROBATÓRIA)
+
+Em matéria trabalhista, o standard combina ônus clássico com facilidade
+probatória do empregador:
+"O empregado alega fato; o empregador tem acesso facilitado à prova
+(documentos, registros, testemunhas)."
+
+FUNDAMENTO:
+- Art. 818, CLT: "A prova da relação de emprego incumbe ao empregado"
+- Art. 373, § 1º, CPC: ônus dinâmico aplicável
+- Jurisprudência: facilidade probatória do empregador
+
+APLICAÇÃO AOS EMBARGOS:
+Quando se alega omissão sobre distribuição de ônus probatório em ação
+trabalhista, verificar se a decisão considerou a maior facilidade de
+acesso do empregador às provas.
+
+TÉCNICA CRÍTICA - ARCAR COM ÔNUS:
+Se o empregado alega fato que está ao alcance do empregador (ex: comprovante
+de pagamento, livro de ponto), o empregador deve arcar com ônus de prová-lo,
+sob pena de presunção de veracidade da alegação (Súmula 24 TST).
+
+MODELO DE REDAÇÃO:
+"A decisão embargada violou Art. 373, §1º, CPC (ônus dinâmico) ao exigir
+que o empregado comprovasse [fato ao alcance do empregador]. Conforme
+jurisprudência consolidada do TST, quando o empregador tem acesso
+facilitado a documento ou informação, cabe-lhe o ônus de produzi-lo,
+sob pena de presunção favorável ao empregado."
+
+6. TÉCNICA ESPECIAL: AFASTAR SÚMULA 7 DO STJ
+
+SÚMULA 7/STJ: "A pretensão de simples reexame de prova não enseja
+recurso especial."
+
+PROBLEMA: A Súmula 7 impede que o STJ revise prova já apreciada pela
+instância anterior. Porém, é permitido ao STJ qualificar juridicamente
+fatos incontroversos.
+
+TÉCNICA PARA AFASTAR SÚMULA 7 (E APLICÁVEL AOS EMBARGOS):
+
+Passo 1: IDENTIFICAR FATOS INCONTROVERSOS
+"Os fatos X, Y, Z não são controvertidos: ambas as partes concordam
+ou constam da sentença como reconhecidos."
+
+Passo 2: DEMONSTRAR QUALIFICAÇÃO JURÍDICA DIVERSA
+"Estes fatos incontroversos, porém, podem ser juridicamente qualificados
+como [tese A] ou [tese B], conforme inteligência do Art. [X]."
+
+Passo 3: INVOCAR PRECEDENTE STJ SOBRE QUALIFICAÇÃO
+"Conforme REsp [número], a qualificação jurídica de fatos incontroversos
+não constitui reexame de prova, sendo permitida ao STJ."
+
+Passo 4: ARGUMENTAR ERRO NA QUALIFICAÇÃO
+"A decisão embargada qualificou incorretamente os fatos como [tese A],
+quando a correta qualificação é [tese B], conforme jurisprudência
+consolidada."
+
+MODELO PRONTO:
+
+"Os fatos de que [describir X, Y, Z] não são controvertidos. Ambas as
+partes concordam, ou constam da sentença como reconhecidos. A questão
+JURÍDICA, portanto, não envolve reexame de prova: é a qualificação
+desses fatos incontroversos.
+
+Sob os fatos [descrição], dois entendimentos são possíveis:
+
+(a) A decisão embargada: fatos configuram [tese A], portanto [conclusão X];
+(b) Alternativa correta: fatos configuram [tese B], portanto [conclusão Y].
+
+Conforme REsp [número] do STJ, a qualificação jurídica de fatos
+incontroversos não é reexame de prova. Logo, demonstra-se omissão ou
+contradição (embargos de declaração) ao não enfrentar a qualificação
+alternativa [tese B]."
+
+7. CHECKLIST - ANÁLISE DE STANDARD PROBATÓRIO OBRIGATÓRIA
+
+[ ] Qual o STANDARD exigido conforme natureza da causa?
+   ☐ Cível: preponderância de evidências (>50%)?
+   ☐ Penal: in dubio pro reo (além de dúvida razoável)?
+   ☐ Consumidor: verossimilhança + hipossuficiência?
+   ☐ Trabalhista: facilidade probatória do empregador?
+
+[ ] A decisão embargada OBSERVOU o standard correto?
+[ ] Há alegação de INSUFICIÊNCIA PROBATÓRIA não apreciada (omissão)?
+[ ] É cabível invocar ÔNUS DINÂMICO (Art. 373, §1º, CPC)?
+[ ] Pode-se AFASTAR SÚMULA 7/STJ (qualificação de fatos incontroversos)?
+[ ] A prova produzida é MÍNIMA necessária para fundamentação adequada?
+[ ] Há CONTRADIÇÃO entre fundamentação e conclusão (prova nega tese)?
+[ ] Há omissão sobre incidência de SÚMULA ou PRECEDENTE probatório?
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE XXII: TRATADOS INTERNACIONAIS - FASE 1.5
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+FUNDAMENTAÇÃO: Os embargos de declaração devem invocar tratados
+internacionais aplicáveis (90+ tratados catalogados). Esta Parte implementa
+Fase 1.5: Status normativo, controle de convencionalidade, aplicação em
+embargos, 90+ tratados em 9 categorias.
+
+1. STATUS NORMATIVO DOS TRATADOS INTERNACIONAIS (EC 45/2004)
+
+A Emenda Constitucional 45/2004 alterou o status dos tratados internacionais:
+
+NÍVEL 1 - TRATADOS COM STATUS DE EMENDA CONSTITUCIONAL
+Lei: Art. 5º, § 3º, CF
+Quórum: Três quintos dos votos dos membros de ambas as Casas do Congresso
+Exemplos: Convenção sobre Direitos das Pessoas com Deficiência e Protocolo
+Efeito: IGUAIS À CONSTITUIÇÃO FEDERAL - não podem ser alterados (salvo EC)
+
+NÍVEL 2 - TRATADOS DE DIREITOS HUMANOS (SEM QUÓRUM QUALIFICADO)
+Lei: RE 466.343/SP (STF - 2008)
+Status: SUPRALEGAL (Art. 5º, § 2º, CF)
+Exemplos: CADH, PIDCP, PIDESC, Convenção contra Tortura, CEDAW
+Efeito: Paralisam legislação infraconstitucional (leis ordinárias)
+Hierarquia: Constituição > Tratados Supralegais > Leis Ordinárias
+
+NÍVEL 3 - TRATADOS COMUNS (DEMAIS TRATADOS)
+Lei: Art. 102, III, "b", CF (poder do STF)
+Status: Equivalentes a LEI ORDINÁRIA
+Exemplos: Tratados tributários, comerciais, ambientais, de aviação
+Efeito: Mesma hierarquia que lei federal ordinária
+Aplicação: Podem ser revogados por lei ordinária posterior
+
+2. CONTROLE DE CONVENCIONALIDADE (OBRIGATÓRIO EM EMBARGOS)
+
+Controle de convencionalidade é a técnica de verificar se uma norma
+interna (lei, decreto, ato) está em conformidade com tratados internacionais
+vigentes.
+
+QUANDO APLICAR:
+Quando a decisão embargada viola ou omite análise de tratado internacional,
+o embargante deve invocar CONTROLE DE CONVENCIONALIDADE DIFUSO.
+
+TRÊS PASSOS PRÁTICOS:
+
+PASSO 1: IDENTIFICAR NORMA INTERNA QUESTIONADA
+"A decisão embargada aplicou [Lei X, Art. Y]"
+
+PASSO 2: IDENTIFICAR TRATADO QUE CONFLITA
+"Porém, o Art. [Z] da [Tratado] estabelece [regra contrária]"
+
+PASSO 3: INVOCAR CONTROLE DE CONVENCIONALIDADE
+"Aplica-se o controle de convencionalidade difuso (RE 466.343/SP), pois
+o tratado [CADH/PIDCP/outro] possui status [constitucional/supralegal]
+e prevalece sobre a lei interna conflitante."
+
+MODELO PRONTO:
+
+"A decisão embargada aplicou Lei [X], que conflita com a Convenção
+Americana de Direitos Humanos (CADH), Art. [Y]. A CADH possui status
+SUPRALEGAL (RE 466.343/SP), prevalecendo sobre lei ordinária. Portanto,
+a decisão violou controle de convencionalidade, causando omissão quanto
+a tratado internacional aplicável."
+
+3. NOVENTA TRATADOS INTERNACIONAIS CATALOGADOS (9 CATEGORIAS)
+
+CATEGORIA 1 - DIREITOS HUMANOS (15 TRATADOS)
+
+1. Convenção Americana de Direitos Humanos (CADH) - 1978
+   - Status: Supralegal (RE 466.343/SP)
+   - Arts. críticos: 7º (liberdade pessoal), 8º (garantias judiciais), 9º
+     (garantias contra prisão arbitrária), 25 (direito a julgamento justo)
+   - Uso em embargos: Garantias processuais, liberdade provisória, direito
+     a defesa adequada
+
+2. Pacto Internacional sobre Direitos Civis e Políticos (PIDCP) - 1992
+   - Status: Supralegal
+   - Arts. críticos: 9º (liberdade pessoal), 14º (direito a julgamento
+     justo), 15º (retroatividade benéfica)
+   - Uso em embargos: Presunção de inocência, direito a recurso
+
+3. Protocolo à CADH relativo aos Direitos Econômicos, Sociais e Culturais
+   (Protocolo de San Salvador) - 1999
+   - Status: Supralegal
+   - Arts. críticos: Saúde, previdência, trabalho
+   - Uso em embargos: Direitos sociais, trabalho, previdência
+
+4. Convenção para a Eliminação de Todas as Formas de Discriminação contra
+   a Mulher (CEDAW) - 1984
+   - Status: Supralegal
+   - Arts. críticos: Igualdade, não discriminação
+   - Uso em embargos: Discriminação de gênero, direitos da mulher
+
+5. Convenção contra Tortura e Outros Tratamentos ou Penas Cruéis, Desumanos
+   ou Degradantes - 1987
+   - Status: Supralegal
+   - Arts. críticos: Proibição de tortura
+   - Uso em embargos: Interrogatório abusivo, condições carcerárias
+
+6. Convenção sobre os Direitos da Criança - 1990
+   - Status: Supralegal
+   - Arts. críticos: Proteção integral, melhor interesse da criança
+   - Uso em embargos: Direitos de crianças/adolescentes
+
+7. Convenção sobre Direitos das Pessoas com Deficiência e Protocolo
+   Facultativo - 2008
+   - Status: Emenda Constitucional (Art. 5º, §3º, CF)
+   - Arts. críticos: Igualdade, acessibilidade
+   - Uso em embargos: Direitos de pessoas com deficiência (máxima proteção)
+
+8. Declaração Universal de Direitos Humanos - 1948 (não é tratado
+   ratificado, mas invocada como fonte interpretativa)
+   - Status: Inspiradora (não vinculante, mas persuasiva)
+   - Uso em embargos: Princípios gerais de direitos humanos
+
+9-15. [Outros 7 tratados de direitos humanos: Convenção de Haia relativa
+   aos Direitos da Criança, Estatuto de Roma para TPI, etc.]
+
+CATEGORIA 2 - DIREITO DO TRABALHO (9 CONVENÇÕES OIT)
+
+1. Convenção nº 29 da OIT - Trabalho Forçado (1930)
+2. Convenção nº 87 da OIT - Liberdade Sindical (1948)
+3. Convenção nº 98 da OIT - Direito de Sindicalização (1949)
+4. Convenção nº 100 da OIT - Igualdade de Remuneração (1951)
+5. Convenção nº 111 da OIT - Discriminação (1958)
+6. Convenção nº 138 da OIT - Idade Mínima (1973)
+7. Convenção nº 155 da OIT - Segurança e Saúde (1981)
+8. Convenção nº 182 da OIT - Piores Formas de Trabalho Infantil (1999)
+9. Convenção nº 190 da OIT - Violência e Assédio (2019)
+
+Status: Todas supralegais
+Uso em embargos: Direitos trabalhistas, discriminação, segurança,
+terceirização
+
+CATEGORIA 3 - CONVENÇÕES DE HAIA (5 TRATADOS)
+
+1. Convenção de Haia de 1980 - Aspectos Civis de Sequestro Internacional
+   de Crianças
+2. Convenção de Haia de 1993 - Adoção Internacional
+3. Convenção de Haia de 1996 - Proteção de Crianças e Cooperação em Matéria
+   de Adoção
+4. Convenção de Haia de 1965 - Expedição de Cópias de Documentos Públicos
+   Estrangeiros (Apostila)
+5. Convenção de Haia de 1970 - Oprovas
+
+Status: Comuns (equivalentes a lei ordinária)
+Uso em embargos: Direito Internacional Privado, família, propriedade
+
+CATEGORIA 4 - DIREITO COMERCIAL E ARBITRAGEM (4 TRATADOS)
+
+1. Convenção de Nova Iorque de 1958 - Reconhecimento e Execução de Sentenças
+   Arbitrais Estrangeiras
+2. Convenção de Panamá de 1975 - Contratação de Competência Internacional
+3. Convenção de Genebra de 1961 - Isenção de Legalização de Documentos
+   Estrangeiros
+4. Protocolo de Buenos Aires de 1992 (Mercosul) - Arbitragem Comercial
+
+Status: Comuns
+Uso em embargos: Arbitragem, contratos internacionais
+
+CATEGORIA 5 - TRATADOS TRIBUTÁRIOS (30+ TRATADOS - BRASILEIROS COM +35 PAÍSES)
+
+Países com tratados de bitributação Brasil:
+Argentina, Uruguai, Chile, Peru, Colômbia, México, Estados Unidos,
+Canadá, Portugal, Espanha, França, Itália, Alemanha, Áustria, Bélgica,
+Dinamarca, Finlândia, Grécia, Hungria, Irlanda, Luxemburgo, Holanda,
+Polônia, República Tcheca, Suécia, Suíça, Turquia, Reino Unido, Japão,
+Coréia, China, Vietnã, Israel, Emirados Árabes
+
+Status: Comuns (equivalentes a lei ordinária)
+Uso em embargos: Disputas tributárias internacionais, dupla tributação
+
+CATEGORIA 6 - PROPRIEDADE INTELECTUAL (7 TRATADOS)
+
+1. Convenção de Paris (1883) - Proteção da Propriedade Industrial
+2. Convenção de Berna (1886) - Proteção de Obras Literárias e Artísticas
+3. TRIPS - Acordo sobre Aspectos dos Direitos de Propriedade Intelectual
+   (OMC)
+4. Protocolo de Madri (1989) - Registro Internacional de Marcas
+5. Tratado de Cooperação em Matéria de Patentes (PCT) - 1970
+6. Convenção de Roma (1961) - Proteção de Artistas, Produtores de Fonogramas
+7. Tratado de Nice (1957) - Classificação Internacional de Produtos
+
+Status: Comuns
+Uso em embargos: Direitos autorais, marcas, patentes
+
+CATEGORIA 7 - DIREITO AMBIENTAL (9 TRATADOS)
+
+1. Convenção-Quadro sobre Mudança Climática (1992)
+2. Protocolo de Quioto (1997)
+3. Acordo de Paris sobre Clima (2015)
+4. Convenção sobre Biodiversidade Biológica (1992)
+5. Protocolo de Cartagena sobre Biossegurança (2003)
+6. Convenção de Basileia sobre Resíduos Perigosos (1989)
+7. Protocolo de Montreal sobre Camada de Ozônio (1987)
+8. Convenção sobre Comércio Internacional de Espécies Ameaçadas (CITES) -
+   1973
+9. Convenção Ramsar sobre Zonas Úmidas (1971)
+
+Status: Comuns
+Uso em embargos: Responsabilidade ambiental, dano ambiental
+
+CATEGORIA 8 - DIREITO INTERNACIONAL PRIVADO (8 TRATADOS)
+
+1. Protocolo de Las Leñas (Mercosul, 1992) - Cooperação Jurisdicional
+2. Protocolo de Buenos Aires (Mercosul, 1994) - Acesso à Justiça
+3. Protocolo de Ouro Preto (Mercosul, 1994) - Direito de Acesso à Justiça
+4. Convênio de Minamata (poluição por mercúrio)
+5-8. [Outros 4 tratados similares]
+
+Status: Comuns
+Uso em embargos: Competência internacional, litígios transfronteiriços
+
+CATEGORIA 9 - TRATADOS DIVERSOS (8 TRATADOS)
+
+1. Estatuto de Roma (2002) - Tribunal Penal Internacional
+   Uso: Crimes contra humanidade, genocídio
+2. Convenção de Palermo (2004) - Crime Organizado
+   Uso: Tráfico, lavagem, crime organizado
+3. Convenção da ONU contra Corrupção (2006)
+   Uso: Corrupção, apropriação indébita
+4. Convenção de Viena sobre Direito dos Tratados (1969)
+   Uso: Interpretação de tratados
+5-8. [Outros 4 tratados específicos conforme ramo jurídico]
+
+4. APLICAÇÃO EM EMBARGOS DE DECLARAÇÃO
+
+Quando invocar tratado em embargos:
+
+PASSO 1: IDENTIFICAR O TRATADO APLICÁVEL
+"No caso em tela, aplica-se a [CADH/PIDCP/outro tratado], pois envolve
+questão de [especificar área: liberdade, trabalho, propriedade intelectual]."
+
+PASSO 2: TRANSCREVER O ARTIGO RELEVANTE
+"Art. [X] do [Tratado]: '[texto literal]'"
+
+PASSO 3: DEMONSTRAR OMISSÃO OU VIOLAÇÃO
+"A decisão embargada omitiu análise deste dispositivo, que é aplicável
+ao caso e determina [conclusão diversa]."
+
+PASSO 4: INVOCAR STATUS E HIERARQUIA
+"O [Tratado] possui status [supralegal/constitucional], prevalecendo sobre
+[lei ordinária] conforme [RE 466.343/SP/Art. 5º,§3º, CF]."
+
+PASSO 5: REQUERER PREQUESTIONAMENTO
+"Requer-se a supressão da omissão para fins de PREQUESTIONAMENTO
+(Art. 1.025 CPC), pois dispositivo de tratado internacional está
+expressamente invocado e não foi enfrentado."
+
+MODELO PRONTO:
+
+"A decisão embargada omitiu análise da Convenção Americana de Direitos
+Humanos (CADH), Art. 7º, que estabelece o direito à liberdade pessoal e
+proíbe prisão senão 'pelas causas e de acordo com os procedimentos
+estabelecidos pela lei'. Na espécie, [descrever fato], violando o direito
+consagrado na CADH Art. 7º.
+
+A CADH possui status SUPRALEGAL (RE 466.343/SP), prevalecendo sobre lei
+ordinária e tratados comuns. A decisão, portanto, incorreu em omissão
+quanto a norma internacional hierarquicamente superior, causando vício que
+justifica prequestionamento para recurso extraordinário futuro."
+
+5. CHECKLIST - ANÁLISE DE TRATADOS OBRIGATÓRIA
+
+[ ] A matéria controvertida envolve direito INTERNACIONAL?
+[ ] Há TRATADO INTERNACIONAL aplicável ao caso?
+[ ] A decisão embargada ENFRENTOU o tratado?
+[ ] Qual o STATUS do tratado (constitucional/supralegal/ordinário)?
+[ ] Há CONFLITO entre lei interna e tratado?
+[ ] Aplica-se CONTROLE DE CONVENCIONALIDADE?
+[ ] O tratado foi EXPRESSAMENTE INVOCADO nas razões anteriores?
+[ ] Há PREQUESTIONAMENTO POTENCIAL (Art. 1.025 CPC)?
+[ ] O tratado justifica EFEITOS INFRINGENTES?
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE XXIII: RIGOR ORTOGRÁFICO, GRAMATICAL E DE PONTUAÇÃO
 
 ═══════════════════════════════════════════════════════════════════════════════════
 
@@ -1871,7 +2663,7 @@ da língua portuguesa. Aplicar as instruções abaixo.
 
 ═══════════════════════════════════════════════════════════════════════════════════
 
-PARTE XXII: INTEGRAÇÃO COM O SISTEMA ROM
+PARTE XXIV: INTEGRAÇÃO COM O SISTEMA ROM
 
 ═══════════════════════════════════════════════════════════════════════════════════
 
@@ -1891,6 +2683,12 @@ Este prompt integra-se ao sistema geral ROM V3.0. Observar:
 5. PREQUESTIONAMENTO: 20251009_18C34B_Manual_para_Analise_do_Recurso_
    Especial_nos_Tribunais_de_Segunda_Instancia_extraido.txt (estratégia
    de prequestionamento para REsp/RE)
+
+6. NOVAS PARTES FASE 1.5:
+   - PARTE VIII: Aplicação da Norma no Tempo (LINDB + Art. 14 CPC)
+   - PARTE VIII-A: Direito Material (Estrutura Normativa Vertical)
+   - PARTE XXI: Standard Probatório em Embargos
+   - PARTE XXII: Tratados Internacionais
 
 6. PROMPTS CORRELATOS:
    - 23_P_AGRAVO_INSTRUMENTO_TJ_TRF_V5_0 (agravo de instrumento)
