@@ -138,8 +138,28 @@ router.post('/', async (req, res) => {
 
     // Tentar ler do path físico primeiro
     if (doc.path && fs.existsSync(doc.path)) {
-      console.log(`   ✅ Arquivo existe no disco: ${doc.path}`);
+      console.log(`   ✅ Path existe no disco: ${doc.path}`);
+
+      // 🚨 VALIDAÇÃO CRÍTICA: Verificar se é arquivo e não diretório
+      const stats = fs.statSync(doc.path);
+      if (stats.isDirectory()) {
+        console.error(`   ❌ ERRO: Path é um DIRETÓRIO, não um arquivo!`);
+        console.error(`      Path: ${doc.path}`);
+        console.error(`      Isso indica bug no upload - path deve ser arquivo, não pasta`);
+
+        return res.status(500).json({
+          success: false,
+          error: `Path do documento é um diretório, não um arquivo`,
+          path: doc.path,
+          details: {
+            isDirectory: true,
+            message: 'O documento foi salvo incorretamente. Por favor, faça upload novamente.'
+          }
+        });
+      }
+
       console.log(`   📖 Lendo arquivo do disco...`);
+      console.log(`   📊 Tamanho no disco: ${Math.round(stats.size / 1024)}KB`);
 
       try {
       const fileExtension = path.extname(doc.path).toLowerCase();

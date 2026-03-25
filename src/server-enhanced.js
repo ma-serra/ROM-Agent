@@ -6380,6 +6380,75 @@ app.get('/api/kb/documents', requireAuth, (req, res) => {
 });
 
 /**
+ * GET /api/kb/document-diagnose
+ * 🔍 DEBUG: Diagnose specific document path issues
+ * SECURITY: Query param secret=mota2323kb required
+ */
+app.get('/api/kb/document-diagnose', async (req, res) => {
+  try {
+    if (req.query.secret !== 'mota2323kb') {
+      return res.status(403).json({ error: 'Forbidden' });
+    }
+
+    const { search } = req.query;
+    if (!search) {
+      return res.status(400).json({ error: 'Query param "search" required' });
+    }
+
+    const allDocs = kbCache.getAll();
+    const matches = allDocs.filter(doc => {
+      const searchLower = search.toLowerCase();
+      return doc.name?.toLowerCase().includes(searchLower) ||
+             doc.originalName?.toLowerCase().includes(searchLower) ||
+             doc.id?.toLowerCase().includes(searchLower);
+    });
+
+    const diagnostics = matches.map(doc => {
+      let pathDiagnostic = 'not defined';
+      if (doc.path) {
+        if (fs.existsSync(doc.path)) {
+          const stats = fs.statSync(doc.path);
+          pathDiagnostic = {
+            exists: true,
+            isDirectory: stats.isDirectory(),
+            isFile: stats.isFile(),
+            size: stats.size,
+            path: doc.path
+          };
+        } else {
+          pathDiagnostic = {
+            exists: false,
+            path: doc.path
+          };
+        }
+      }
+
+      return {
+        id: doc.id,
+        name: doc.name,
+        originalName: doc.originalName,
+        size: doc.size,
+        userId: doc.userId,
+        uploadedAt: doc.uploadedAt,
+        pathDiagnostic,
+        hasExtractedText: !!doc.extractedText,
+        extractedTextLength: doc.extractedText?.length || 0,
+        metadata: doc.metadata
+      };
+    });
+
+    res.json({
+      success: true,
+      found: diagnostics.length,
+      documents: diagnostics
+    });
+  } catch (error) {
+    logger.error('❌ Erro no diagnóstico:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+/**
  * GET /api/kb/cache/emergency-diagnose
  * 🚨 EMERGENCY: Diagnose KB cache without auth (temporary endpoint)
  * SECURITY: Query param secret=mota2323kb required
