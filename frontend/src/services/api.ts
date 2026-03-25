@@ -298,6 +298,7 @@ export async function* chatStream(
         messages, // Enviar historico completo para manter contexto
         attachedFiles: attachedFiles || [], // ✅ Usar diretamente, já formatado corretamente
         stream: true,
+        maxTokens: 64000, // 🔥 FIX: Enviar máximo de tokens para documentos completos
       }),
       signal,
     })

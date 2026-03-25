@@ -802,7 +802,17 @@ export async function executeTool(toolName, toolInput, context = {}) {
             .split(/\s+/)
             .filter(word => word.length > 3); // Ignora palavras muito curtas (de, da, os, etc)
 
-          const relevantDocs = allDocs
+          // 🚨 FIX: Filtrar apenas documentos principais (não fichamentos, não extraction packages)
+          const mainDocs = allDocs.filter(doc =>
+            !doc.metadata?.isStructuredDocument &&
+            !doc.metadata?.isExtractionPackage &&
+            !doc.name?.includes('FICHAMENTO') &&
+            !doc.name?.includes('CRONOLOGIA')
+          );
+
+          console.log(`📚 [KB] Total docs após filtro de principais: ${mainDocs.length}`);
+
+          const relevantDocs = mainDocs
             .filter(doc => {
               const docName = doc.name.toLowerCase();
               const docOriginalName = doc.originalName?.toLowerCase() || '';
@@ -821,8 +831,15 @@ export async function executeTool(toolName, toolInput, context = {}) {
                 return true;
               }
 
-              // Se query tem palavras, procura por QUALQUER palavra
+              // 🔥 FIX 3: Priorizar busca no NOME antes de buscar no texto completo
+              // Se query tem palavras, procura PRIMEIRO no nome, depois no texto
               if (queryWords.length > 0) {
+                const nameText = `${docName} ${docOriginalName}`;
+                const hasMatchInName = queryWords.some(word => nameText.includes(word));
+                if (hasMatchInName) {
+                  return true;
+                }
+                // Só buscar no texto se não encontrou no nome
                 return queryWords.some(word => combinedText.includes(word));
               }
 
@@ -830,12 +847,25 @@ export async function executeTool(toolName, toolInput, context = {}) {
               return combinedText.includes(queryLower);
             })
             .sort((a, b) => {
-              // ⭐ ORDENAR POR DATA: Mais recentes primeiro
+              // ⭐ PRIORIDADE 1: Match exato ou substring no nome principal
+              const queryInNameA = a.name?.toLowerCase().includes(queryLower) || a.originalName?.toLowerCase().includes(queryLower);
+              const queryInNameB = b.name?.toLowerCase().includes(queryLower) || b.originalName?.toLowerCase().includes(queryLower);
+
+              if (queryInNameA && !queryInNameB) return -1;
+              if (!queryInNameA && queryInNameB) return 1;
+
+              // ⭐ PRIORIDADE 2: Data mais recente
               const dateA = new Date(a.uploadedAt || 0).getTime();
               const dateB = new Date(b.uploadedAt || 0).getTime();
               return dateB - dateA; // Decrescente (mais recente primeiro)
             })
             .slice(0, limite);
+
+          // 🔍 DEBUG: Mostrar documentos encontrados
+          console.log(`📊 [KB] Documentos relevantes encontrados: ${relevantDocs.length}`);
+          relevantDocs.slice(0, 3).forEach((doc, idx) => {
+            console.log(`   ${idx + 1}. ${doc.name} (uploadedAt: ${doc.uploadedAt})`);
+          });
 
           if (relevantDocs.length === 0) {
             // 🔥 FIX: Mostrar lista de documentos disponíveis para ajudar o usuário

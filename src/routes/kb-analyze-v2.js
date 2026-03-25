@@ -41,6 +41,10 @@ const router = express.Router();
  * }
  */
 router.post('/', async (req, res) => {
+  // 🔥 FIX: Aumentar timeout para análises longas (30 minutos)
+  req.setTimeout(1800000); // 30 minutos
+  res.setTimeout(1800000); // 30 minutos
+
   try {
     console.log('\n🔬 [V2 Direct] Requisição recebida');
 
