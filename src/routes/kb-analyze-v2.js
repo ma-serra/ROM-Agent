@@ -124,6 +124,7 @@ router.post('/', async (req, res) => {
 
     console.log(`   ✅ Documento encontrado: ${doc.name || doc.originalName}`);
     console.log(`   📂 Path: ${doc.path}`);
+    console.log(`   👤 Owner userId: ${doc.userId || 'não definido'}`);
 
     // ═══════════════════════════════════════════════════════════
     // MERGE-FIRST ANALYSIS: Detectar documentos mesclados
@@ -374,6 +375,11 @@ router.post('/', async (req, res) => {
       message: 'Extraction started. Use jobId to track progress.'
     });
 
+    // 🔥 FIX CRÍTICO: Usar userId do documento ORIGINAL, não da sessão
+    // Fichamentos devem ter MESMO userId do documento pai para aparecer no filtro
+    const documentUserId = doc.userId || req.session?.user?.id || 'web-upload';
+    console.log(`   🔐 userId para fichamentos: ${documentUserId} (documento: ${doc.userId || 'não definido'}, sessão: ${req.session?.user?.id || 'não definido'})`);
+
     // Process in background (don't await)
     processExtractionInBackground(
       job?.id || null,
@@ -381,7 +387,7 @@ router.post('/', async (req, res) => {
       rawText,
       analysisType,
       model,
-      req.session?.user?.id || 'anonymous',
+      documentUserId,  // 🔥 FIX: Usar userId do documento original
       isPDF  // Pass PDF flag to skip AI extraction
     ).catch(error => {
       console.error(`   ❌ Background extraction failed:`, error);
