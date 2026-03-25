@@ -16,14 +16,14 @@ services:
     branch: main
 
     # ═══ BUILD ═══
-    buildCommand: bash scripts/build-production.sh
+    buildCommand: npm ci && cd frontend && npm ci && npm run build && cd ..
 
     # ═══ START ═══
     # CRÍTICO: Iniciar servidor IMEDIATAMENTE para evitar port scan timeout
     # Frontend já foi buildado no buildCommand
     # Migrations rodam assíncronamente após servidor abrir porta
     # Heap size otimizado: 1536MB × 2 workers = 3GB total (fits in 4GB RAM)
-    startCommand: node --max-old-space-size=1536 scripts/ensure-frontend-build.js && node --max-old-space-size=1536 src/server-cluster.js
+    startCommand: node --max-old-space-size=1536 src/server-cluster.js
 
     # ═══ VARIÁVEIS DE AMBIENTE ═══
     envVars:
@@ -165,13 +165,13 @@ services:
     branch: staging
 
     # ═══ BUILD ═══
-    buildCommand: bash scripts/build-production.sh
+    buildCommand: npm ci && cd frontend && npm ci && npm run build && cd ..
 
     # ═══ START ═══
     # CRÍTICO: Iniciar servidor IMEDIATAMENTE para evitar port scan timeout
     # Frontend já foi buildado no buildCommand
     # Migrations rodam assíncronamente após servidor abrir porta
-    startCommand: npm run web:enhanced
+    startCommand: node src/server-cluster.js
 
     # ═══ VARIÁVEIS DE AMBIENTE ═══
     envVars:
