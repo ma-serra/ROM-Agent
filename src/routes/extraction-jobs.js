@@ -270,7 +270,7 @@ router.post('/extraction-jobs/cleanup-orphaned', async (req, res) => {
     const orphanedJobs = await ExtractionJob.findAll({
       where: {
         status: ['pending', 'processing'],
-        updated_at: {
+        createdAt: {
           [ExtractionJob.sequelize.Sequelize.Op.lt]: thirtyMinutesAgo
         }
       }
