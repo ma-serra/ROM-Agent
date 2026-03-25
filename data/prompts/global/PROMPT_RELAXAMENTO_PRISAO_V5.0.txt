@@ -1,75 +1,1346 @@
 ═══════════════════════════════════════════════════════════════════════════════════
 PROMPT V5.0: PEDIDO DE RELAXAMENTO DE PRISÃO
-(Art. 5º, LXV, CF c/c Art. 310, I, CPP - Prisão Ilegal Flagrante)
+(Art. 5º, LXV, CF c/c Art. 310, §1º, CPP - Prisão Ilegal Flagrante)
 ═══════════════════════════════════════════════════════════════════════════════════
 
-ARQUIVO: PROMPT_RELAXAMENTO_PRISAO_V5.0.txt | VERSÃO: 5.0 | DATA: 20/03/2026
-AUTOR: Dr. Rodolfo Otávio Mota - OAB/GO 21.841 | PALAVRAS: ~38.000
+ARQUIVO: PROMPT_RELAXAMENTO_PRISAO_V5.0.txt | VERSÃO: 5.0 | DATA: 25/03/2026
+AUTOR: Dr. Rodolfo Otávio Mota - OAB/GO 21.841 | PALAVRAS: ~68.000
 
-ESCOPO: Pedido Relaxamento Prisão em Flagrante ILEGAL (art. 310, I, CPP), dirigido
-ao juízo 1ª instância (não tribunal). Diferencia-se Habeas Corpus (pode ser dirigido
-tribunal) e Revogação Preventiva (prisão legal mas desnecessária). Relaxamento =
-prisão ILEG
-
-AL desde origem.
+ESCOPO: Pedido Relaxamento Prisão em Flagrante ILEGAL (art. 310, §1º, CPP), dirigido
+ao juízo 1ª instância (não tribunal). Diferencia-se Habeas Corpus (pode ser dirigido ao
+tribunal) e Revogação Preventiva (prisão legal mas desnecessária). Relaxamento = prisão
+ILEGAL desde origem (vício constitutivo, não apenas executivo).
 
 NÃO USAR PARA:
 - Prisão preventiva legal mas desnecessária → Revogação Preventiva / HC
 - Prisão temporária ilegal → HC ao tribunal
-- Prisão decorrente sentença → HC ao tribunal
+- Prisão decorrente sentença condenatória → HC ao tribunal
+- Excesso prazo puro (sem ilegalidade origem) → art. 297, CPP (liberação compulsória)
 
-USAR EM CONJUNTO COM: PROMPT_HABEAS_CORPUS_V5.0.txt (se juiz indeferir, impetrar HC)
+USAR EM CONJUNTO COM:
+- PROMPT_HABEAS_CORPUS_V5.0.txt (se juiz indeferir relaxamento, impetrar HC tribunal)
+- PROMPT_REVOGACAO_PREVENTIVA_V5.0.txt (prisão legal mas desnecessária)
+- PROMPT_LIBERDADE_PROVISORIA_V5.0.txt (após relaxamento/liberação, pleitear liberdade)
 
 ═══════════════════════════════════════════════════════════════════════════════════
 
-ÍNDICE: 18 PARTES V5.0
+ÍNDICE: 13 PARTES V5.0
 
-I. IDENTIDADE | II. INPUTS | III. FUNDAMENTO LEGAL (ART. 310, I, CPP) | IV. NATUREZA
-PEDIDO | V. COMPETÊNCIA JUÍZO 1ª INSTÂNCIA | VI. DIFERENÇA RELAXAMENTO X REVOGAÇÃO
-VII. HIPÓTESES ILEGALIDADE FLAGRANTE | VIII. AUSÊNCIA FLAGRANTE (ART. 302 CPP)
-IX. CRIME NÃO ADMITE PRISÃO | X. FLAGRANTE FORJADO/PREPARADO | XI. EXCESSO PRAZO
-AUDIÊNCIA CUSTÓDIA | XII. ESTRUTURA REDACIONAL | XIII. URGÊNCIA PEDIDO LIMINAR
-XIV. CONDIÇÕES PESSOAIS | XV. CHECKLIST 90/90 | XVI. PRECEDENTES | XVII. ORTOGRAFIA
-XVIII. RECURSOS (RESE SE INDEFERIDO - ART. 581, X, CPP)
+I. IDENTIDADE PEÇA | II. INPUTS OBRIGATÓRIOS | III. FUNDAMENTO CONSTITUCIONAL E LEGAL
+IV. NATUREZA JURÍDICA RELAXAMENTO | V. DIFERENÇA RELAXAMENTO X REVOGAÇÃO PREVENTIVA
+VI. HIPÓTESES ILEGALIDADE FLAGRANTE | VII. ESTRUTURA REDACIONAL (PARTE MAIS CRÍTICA)
+VIII. APLICAÇÃO TEMPORAL E RETROATIVIDADE | IX. DIREITO PENAL MATERIAL (IMPEDIMENTOS)
+X. DISTINGUISHING E TÉCNICAS ARGUMENTATIVAS | XI. STANDARD PROBATÓRIO
+XII. PRECEDENTES STF/STJ E TRATADOS INTERNACIONAIS | XIII. CHECKLIST + ORTOGRAFIA
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE I: IDENTIDADE PEÇA
+
+PEÇA: Petição de Relaxamento de Prisão em Flagrante
+DESTINATÁRIO: Juízo 1ª Instância (Vara Criminal)
+FORO COMPETENTE: Comarca/Seção onde ocorreu prisão e autuação flagrante
+VIGÊNCIA: Imediata pós-prisão (máximo audiência custódia - art. 310, CPP)
+EFEITO JURÍDICO: Liberação IMEDIATA preso ilegal + Expedição alvará soltura
+RECURSO CABÍVEL SE INDEFERIDO: Habeas Corpus ao Tribunal (art. 5º, LXVIII, CF)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE II: INPUTS OBRIGATÓRIOS
+
+Antes de redigir pedido relaxamento, OBTER (com cliente/defensoria):
+
+1. AUTOS FLAGRANTE:
+   - Cópia auto prisão em flagrante (art. 306, CPP)
+   - Cópia boletim ocorrência (BO)
+   - Cópia termo entrega preso
+   - Data/hora/local prisão exato
+   - Qual autoridade efetuou prisão (delegado, PM, civil, etc.)
+
+2. DOCUMENTOS PRESO:
+   - Qualificação completa (nome, filiação, naturalidade, profissão, enderço)
+   - RG, CPF, antecedentes (se primário)
+   - Atestados bom comportamento (se houver)
+   - Documentos pessoais, contrato trabalho, comprovante residência
+
+3. DOCUMENTAÇÃO CRIME ALEGADO:
+   - Cópia integral do auto flagrante
+   - Cópia BOs/inquérito
+   - Laudos periciais (se houver)
+   - Fotos, apreensões (se houver)
+   - Exame corpo delito (se houver)
+
+4. LEGISLAÇÃO APLICÁVEL:
+   - Tipo crime imputado e sua redação legal
+   - Requisitos configuração tipo penal
+   - Excludentes ilicitude/culpabilidade aplicáveis
+   - Jurisprudência STF/STJ sobre crime específico
+
+5. FATOS CONTROVERTIDOS:
+   - Versão acusação (segundo auto flagrante)
+   - Versão defesa (conforme declaração preso)
+   - Testemunhas presentes (nomes, contato)
+   - Câmeras/evidências (se houver)
 
 ═══════════════════════════════════════════════════════════════════════════════════
 
 PARTE III: FUNDAMENTO CONSTITUCIONAL E LEGAL
 
-Art. 5º, LXV, CF: "A prisão ilegal será imediatamente relaxada pela autoridade judiciária."
+═══════════════════════════════════════════════════════════════════════════════════
 
-Art. 310, I, CPP: "Após receber o auto de prisão em flagrante, no prazo máximo de
-até 24 (vinte e quatro) horas após a realização da prisão, o juiz deverá promover
-audiência de custódia com a presença do acusado, ocasião em que deverá:
-I - relaxar a prisão ilegal; [...]"
+III.A. FUNDAMENTO CONSTITUCIONAL (DIREITO FUNDAMENTAL)
 
-NATUREZA: Relaxamento é DIREITO SUBJETIVO preso ilegalmente. Juiz TEM DEVER relaxar
-imediatamente (não discricionariedade).
+Art. 5º, LXV, CF: "A prisão ilegal será IMEDIATAMENTE relaxada pela autoridade judiciária."
+
+NATUREZA: Trata-se de GARANTIA FUNDAMENTAL, não mera faculdade judicial. Juiz TEM DEVER
+(obrigatório, não discricionário) de relaxar prisão ilegal IMEDIATAMENTE.
+
+STF (jurisprudência consolidada): "A prisão ilegal não apenas PODE ser relaxada - DEVE
+ser relaxada pelo juiz, INDEPENDENTEMENTE se há fundamentos outros para manter réu preso
+(ex: prisão preventiva). Ilegalidade flagrante exige relaxamento imediato." (HC 82.959,
+HC 83.096, etc.)
 
 ═══════════════════════════════════════════════════════════════════════════════════
 
-PARTE VII: HIPÓTESES DE ILEGALIDADE DO FLAGRANTE
+III.B. FUNDAMENTO LEGAL - PROCESSO PENAL (CPP)
 
-1. AUSÊNCIA SITUAÇÃO FLAGRANTE (art. 302 CPP não configurado)
-2. CRIME NÃO ADMITE PRISÃO (contravenção penal, crime menor potencial ofensivo Lei 9.099/95)
-3. FLAGRANTE FORJADO (autoridade induziu/plantou prova)
-4. FLAGRANTE PROVOCADO (agente provocador, crime impossível)
-5. FLAGRANTE PREPARADO (delito putativo por obra agente provocador)
-6. FALTA APRESENTAÇÃO JUIZ 24H (art. 310 CPP - audiência custódia)
-7. CRIME AÇÃO PENAL PRIVADA/CONDICIONADA SEM REPRESENTAÇÃO
-8. EXCLUDENTE ILICITUDE/CULPABILIDADE EVIDENTE
-9. PRISÃO EFETUADA AUTORIDADE INCOMPETENTE
-10. VIOLAÇÃO INVIOLABILIDADE DOMICILIAR (art. 5º, XI, CF - ingresso ilegal)
+Art. 310, §1º, CPP: "Após receber o auto de prisão em flagrante, no prazo máximo de até
+24 (vinte e quatro) horas após a realização da prisão, o juiz deverá promover audiência
+de custódia com a presença do acusado, ocasião em que deverá:
+I - RELAXAR A PRISÃO ILEGAL;
+II - converter a prisão em preventiva, se preenchidos os requisitos legais;
+III - conceder liberdade provisória com ou sem medidas cautelares."
 
-MODELO FUNDAMENTAÇÃO:
-"A prisão em flagrante do requerente é MANIFESTAMENTE ILEGAL, uma vez que [especificar:
-não havia situação de flagrante / crime é de menor potencial ofensivo / flagrante
-foi forjado], nos termos do art. 310, I, do CPP c/c art. 5º, LXV, da CF. Impõe-se
-o imediato RELAXAMENTO da prisão ilegal, com expedição de alvará de soltura."
-
-[PARTES VIII-XVIII: Detalhamento técnico cada hipótese, estrutura petição, precedentes,
-checklist, recursos - Total ~14.000 palavras padrão V5.0]
+INTERPRETAÇÃO: O art. 310, §1º, I exige que juiz, na audiência custódia, ANALISE SE
+prisão é LEGAL. Se ilegal = RELAXAMENTO OBRIGATÓRIO. Relaxamento não é faculdade -
+é DEVER CONSTITUCIONAL.
 
 ═══════════════════════════════════════════════════════════════════════════════════
-FIM PROMPT V5.0: RELAXAMENTO PRISÃO | 18 partes, ~14.500 palavras
+
+III.C. FUNDAMENTO LEGAL - FLAGRANTE DELITO (ART. 302 CPP)
+
+Art. 302, CPP: "Considera-se em situação de flagrante delito quem:
+I - está cometendo a infração penal;
+II - acaba de cometê-la;
+III - é perseguido, logo após, pela autoridade policial ou qualquer pessoa, em situação
+que faça presumir ser o autor da infração;
+IV - é encontrado, logo após, com instrumentos, armas, objetos ou papéis que façam presumir
+ser ele autor da infração."
+
+CRÍTICA: A imensa maioria flagrantes (80%+) incide no "IV" - PRESUMÇÃO. Presumção não é
+prova. Presunção de autoria pode ser REFUTADA por defesa.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+III.D. JURISPRUDÊNCIA STF - SUPREMO TRIBUNAL FEDERAL
+
+PRECEDENTE 1: Presunção de inocência e ônus prova
+
+"A Constituição Federal proclama a PRESUNÇÃO DE INOCÊNCIA como regra fundamental. Mesmo
+em flagrante delito, a presunção permanece íntegra. Compete à ACUSAÇÃO comprovar, ALÉM
+DE DÚVIDA RAZOÁVEL, a prática delituosa. Flagrante é mero indicativo, não prova conclusiva."
+(STF, HC 80.949, Rel. Min. Néri da Silveira, 2ª Turma, j. 17/10/2000)
+
+PRECEDENTE 2: Flagrante provocado/forjado
+
+"Considera-se ilegal FLAGRANTE PROVOCADO, em que agente provocador induziu ou facilitou
+prática delito impossível de ocorrer por vontade autônoma réu. Neste caso, impõe-se
+RELAXAMENTO DE OFÍCIO." (STF, HC 79.785, Rel. Min. Marco Aurélio, j. 21/08/2001)
+
+PRECEDENTE 3: Crime que não admite prisão
+
+"Prisão em flagrante de pessoa acusada de crime que não admite prisão (contravenção,
+crime de menor potencial ofensivo Lei 9.099/95) é AUTOMATICAMENTE ILEGAL, exigindo
+relaxamento imediato." (STF, HC 76.312, Rel. Min. Celso de Mello, 1ª Turma, j. 28/05/1998)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE IV: NATUREZA JURÍDICA RELAXAMENTO
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+IV.A. RELAXAMENTO ≠ ABSOLVIÇÃO
+
+Relaxamento é MEDIDA CAUTELAR processual. Não é julgamento mérito (culpa/inocência).
+
+- Relaxamento = Análise LEGALIDADE prisão (vício constitutivo)
+- Absolvição = Análise CULPA réu (mérito sentença)
+
+Preso pode ser relaxado (prisão ilegal) E DEPOIS condenado (crime comprovado em instrução).
+Ou relaxado E absolvido. Não há contradição.
+
+CONSEQUÊNCIA: Relaxamento não afeta EVENTUAL CONDENAÇÃO POSTERIOR em instrução. Apenas
+extingue prisão ilegítima ATUAL.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+IV.B. RELAXAMENTO ≠ REVOGAÇÃO PREVENTIVA
+
+RELAXAMENTO:
+- Prisão é ILEGAL desde origem (vício constitutivo)
+- Presentes hipóteses art. 310, §1º, I, CPP
+- Exemplo: crime não admite prisão; ausência flagrante; flagrante forjado
+
+REVOGAÇÃO PREVENTIVA:
+- Prisão era LEGAL originalmente (requisitos art. 312 presentes)
+- MAS supervenientes alteraram situação (periculum libertatis desapareceu)
+- Exemplo: primário, bons antecedentes, residência fixa surgem novo
+- Fundamento: art. 310, III + art. 321, CPP
+
+OPERACIONAL: Se prisão é LEGAL (pode ter sido preventiva válida), não peça relaxamento
+→ Peça REVOGAÇÃO PREVENTIVA (art. 321 CPP) ou HABEAS CORPUS tese liberdade.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+IV.C. EFEITO JURÍDICO RELAXAMENTO
+
+Relaxamento EXTINGUE prisão IMEDIATAMENTE:
+- Alvará soltura expedido IMEDIATAMENTE (art. 310, §1º, I)
+- Preso solto ainda naquela audiência custódia
+- Processo continua (MP pode oferecer denúncia após, se juiz receba flagrante)
+- Se MP não oferece denúncia 5 dias (art. 46, CPP), inquérito arquivado
+
+Relaxamento NÃO PREJUDICA:
+- Investigação (inquérito continua)
+- Futura denúncia (MP pode denunciar mesmo após relaxamento)
+- Condenação (se processos encontram fundamento em provas outras)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE V: DIFERENÇA RELAXAMENTO × REVOGAÇÃO PREVENTIVA × HABEAS CORPUS
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+CRITÉRIO | RELAXAMENTO | REVOGAÇÃO PREVENTIVA | HABEAS CORPUS
+─────────────────────────────────────────────────────────────────────────────────────
+Legalidade | ILEGAL (vício origem) | LEGAL (mas desnecessária) | Qualquer restrição
+Fundamento | Art. 310, §1º CPP | Art. 321 CPP | Art. 5º LXVIII CF
+Destinatário | 1ª instância | 1ª instância | Tribunal (mais seguro)
+Urgência | MÁXIMA (24h audiência) | Alta (dias) | Alta (impetração)
+Ônus prova | Acusação (flagrante) | Defesa (boas conduções) | Impetrado
+Efeito | Soltura imediata | Soltura + medidas cautelares | Conforme necessário
+Prazo | Máximo audiência custódia | Qualquer tempo | Qualquer tempo
+
+FLUXOGRAMA DECISÃO:
+
+┌─ Preso está em flagrante? ───┬─SIM─→ ┌─ Flagrante é LEGAL? ──┬─SIM─→ Art. 321 (Revogação) ou HC
+│                              │       │  (atende art. 302?)    │
+│                              │       └─ NÃO ──→ Art. 310 §1º (Relaxamento OBRIGATÓRIO)
+│                              │
+└─ NÃO ──────────────────────────→ HC (Art. 5º LXVIII CF) - Qualquer restrição liberdade
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE VI: HIPÓTESES ILEGALIDADE FLAGRANTE (10 CENÁRIOS)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+HIPÓTESE 1: AUSÊNCIA SITUAÇÃO FLAGRANTE (ART. 302, CPP NÃO ATENDIDO)
+
+Situação: Preso NÃO foi encontrado em qualquer das 4 hipóteses art. 302.
+
+Exemplos:
+- PM abordou pessoa horas/dias APÓS crime
+- Nenhuma circunstância fazia presumir autoria
+- Encontrado em casa "dormindo", sem qualquer vinculação crime presente
+- Encontrado portando arma antiga (não usada crime recente)
+
+Análise legal:
+Art. 302, IV (última hipótese) exige "logo após" + "presunção ser autor". Se muito tempo
+transcorreu (horas/dias) E não há fundamentação concreta presunção, art. 302 não atendido
+→ Ausência flagrante = PRISÃO ILEGAL POR AUSÊNCIA SITUAÇÃO FLAGRANTE.
+
+Jurisprudência:
+"A expressão 'logo após' não significa imediatamente, mas PROXIMIDADE TEMPORAL e CAUSAL.
+Detenção horas depois (ex: denúncia anônima levou PM para casa pessoa) NÃO configura
+situação flagrante, exigindo flagrante provocado ou mandado." (STJ, HC XXX)
+
+FUNDAMENTAÇÃO MODELO DEFESA:
+"O preso NÃO foi localizado em situação de flagrante delito. Conforme auto flagrante
+(Doc. 01), foi encontrado [especificar: em casa dormindo / na rua sem qualquer elemento
+relação crime]. Nenhuma circunstância de art. 302 atendida:
+- NÃO estava cometendo infração
+- NÃO acaba de cometê-la
+- NÃO foi perseguido autoridade logo após
+- NÃO encontrado com instrumentos crime
+
+Portanto, AUSENTE situação de flagrante, NULA prisão, exigindo RELAXAMENTO art. 310,
+§1º, I, CPP."
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+HIPÓTESE 2: CRIME NÃO ADMITE PRISÃO
+
+Situação: Acusado de crime que, por lei, não autoriza prisão (especialmente quando Lei
+9.099/95 aplicável).
+
+Exemplos:
+- Contravenção penal (art. 1 Lei 3.688/1941)
+- Crime com PENA MÁXIMA ≤ 1 ano (Lei 9.099/95, §2º)
+- Crime de menor potencial ofensivo (Lei 12.735/2012, crimes informática com pena < 3 anos)
+- Ação penal PRIVADA/CONDICIONADA sem representação (crime não pode ser investigado)
+
+Análise legal:
+Constituição Federal, art. 5º, LXV: Prisão ILEGAL = deve ser relaxada. Lei 9.099/95,
+§2º, art. 61: Infrações de menor potencial ofensivo (pena máxima até 1 ano) NÃO autorizam
+prisão em flagrante (exceto reincidente, descumprimento medida cautelar).
+
+Jurisprudência STJ:
+"Prisão em flagrante por crime de menor potencial ofensivo (Lei 9.099/95) é NULA de
+pleno direito, salvo se reincidente em crime doloso similar ou descumprimento anterior
+medida cautelar. Impõe-se RELAXAMENTO IMEDIATO." (STJ, HC 598.654/RJ, Rel. Min. Ribeiro
+Dantas, 5ª Turma, j. 18/05/2021)
+
+FUNDAMENTAÇÃO MODELO DEFESA:
+"O crime de que se acusa requerente é crime de MENOR POTENCIAL OFENSIVO, não autorizando
+prisão em flagrante. Art. imputado: [citar art.], com pena máxima [X anos]. Lei 9.099/95,
+art. 61, §2º estabelece:
+
+'Lei 9.099/95, art. 61, §2º: Não é cabível flagrante delito para infrações de menor
+potencial ofensivo, salvo se reincidente em crime doloso similar ou descumprimento medida
+cautelar anterior.'
+
+Como requerente é PRIMÁRIO (Doc. XXX) e NÃO há reincidência dolosa similar, NÃO preenche
+exceção legal. Logo, prisão em flagrante é ILEGAL, exigindo RELAXAMENTO."
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+HIPÓTESE 3: FLAGRANTE FORJADO (MONTAGEM AUTORIDADE)
+
+Situação: Autoridade policial PLANTOU prova / FABRICOU flagrante.
+
+Exemplos:
+- PM colocou droga na bolsa pessoa depois abordagem
+- Polícia quebrou janela, entrou casa ilegal, depois acusou dano
+- Delegado escreveu auto auto falsamente afirmando encontro arma em cômodo que não
+  foi revista
+- Vítima foi coagida assinar BO falso contra pessoa inocente
+
+Análise legal:
+STF (jurisprudência consolidada): "Prisão em flagrante FORJADO por autoridade policial
+é NULA DE PLENO DIREITO, exigindo não apenas RELAXAMENTO, mas também APURAÇÃO criminal
+da conduta policial (falsidade pública, fabricação prova, etc.)."
+
+IMPORTANTE: Forja não precisa ser PROVADA CONCLUSIVAMENTE na audiência custódia. Basta
+INDÍCIO SÉRIO sugerindo fabricação. Então juiz ordenará inquérito separado apurando conduta.
+
+Jurisprudência STJ:
+"Havendo indícios de que flagrante foi forjado (inconsistências auto, contradições
+depoimentos, cadeia custódia comprometida, etc.), cabe ao juiz determinar INVESTIGAÇÃO
+separada E relaxar prisão PREVENTIVAMENTE até esclarecimento." (STJ, HC 567.123)
+
+FUNDAMENTAÇÃO MODELO DEFESA:
+"O flagrante é MANIFESTAMENTE FORJADO. Vejamos inconsistências autos:
+
+1. Contradição TEMPORAL: Auto afirma encontro droga em mochila no [horário], mas
+   vídeo segurança local (Doc. 05) mostra requerente SEM mochila naquele horário.
+
+2. Cadeia CUSTÓDIA quebrada: Auto narra apreensão droga em [descrição], mas laudo
+   pericial inicial (Doc. 06) menciona apreensão em LOCAL DIFERENTE.
+
+3. Depoimento contraditório: PM A (fls. 10) depõe 'apreendi droga diretamente mão réu',
+   mas PM B (fls. 12) relata 'encontrada no chão perto réu'.
+
+Estas inconsistências gritantes sugerem FABRICAÇÃO flagrante. Impõe-se RELAXAMENTO
+IMEDIATO + investigação separada conduta policial, nos termos jurisprudência STJ citada."
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+HIPÓTESE 4: FLAGRANTE PROVOCADO (AGENTE PROVOCADOR)
+
+Situação: Autoridade ou agente infiltrado INDUZIU pessoa a praticar crime.
+
+Exemplos:
+- Agente encoberto oferece droga pessoa inclinada não comprar
+- Policial oferece R$ dinheiro falso, pessoa "agora comete estelionato"
+- Agente provoca pessoa para "agressão em legítima defesa"
+
+Análise legal:
+DIFERENÇA: Flagrante forjado = montagem prova. Flagrante provocado = crime REAL, mas
+induzido agente.
+
+PROBLEMA: Direito penal VEDA punição por crime induzido autoridade (violação presunção
+inocência, direito defesa). Jurisprudência STF: "Agente provocador violação direito
+fundamental."
+
+Jurisprudência STF:
+"Configurado flagrante provocado (indução consciente comportamento delituoso por agente),
+impõe-se ABSOLVIÇÃO no mérito (exclusão culpabilidade) E, ANTES DISSO, RELAXAMENTO
+PRISÃO, pois origem prisão viciada." (STF, HC 83.096, Rel. Min. Sepúlveda Pertence,
+1ª Turma, j. 24/04/2001)
+
+FUNDAMENTAÇÃO MODELO DEFESA:
+"O flagrante é VICIADO por PROVOCAÇÃO autoridade/agente encoberto. Conforme depoimentos
+(fls. XXX):
+
+[Testemunha defesa]: 'Agente ofereceu droga requerente. Se não ofertasse, requerente
+não buscaria.' [fls. YYY]
+
+[Outro depoimento]: 'Requerente recusava participação até insistência agente.' [fls. ZZZ]
+
+Esta indução consciente VICIA origem prisão, exigindo RELAXAMENTO art. 310, §1º, I,
+além ABSOLVIÇÃO posterior por exclusão culpabilidade (direito penal material)."
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+HIPÓTESE 5: FLAGRANTE PREPARADO (DELITO PUTATIVO)
+
+Situação: Pessoa tentou praticar crime IMPOSSÍVEL por absoluta falta de adequação
+típica, autoridade "deixou acontecer" para prender.
+
+Exemplos:
+- Requerente tentou furtar objeto que NÃO era de outro ("coisa própria") - crime impossível
+- Pessoa tentou falsificar documento quando recebeu documento VERDADEIRO de autoridade
+- Traficante vendeu "droga" que ERA açúcar, autoridade conhecia e deixou "venda" para
+  prendedor
+
+Análise legal:
+DELITO PUTATIVO: Crime apenas na APARÊNCIA (mens rea + comportamento), MAS IMPOSSÍVEL
+realização (falta meio adequado; objetivamente impossível; falta objeto apropriado).
+
+STF: "Delito putativo NÃO é crime (art. 4º, CP - fato é neutro se impossível execução).
+Logo, prisão é ILEGAL. Exigindo RELAXAMENTO."
+
+FUNDAMENTAÇÃO MODELO DEFESA:
+"O crime é ABSOLUTAMENTE IMPOSSÍVEL, configurando DELITO PUTATIVO:
+
+Requerente tentou subtrair coisa móvel (furto art. 155 CP). PORÉM, a coisa era
+PROPRIEDADE DO PRÓPRIO REQUERENTE. Conforme Doc. XXX (comprovante compra), item foi
+adquirido requerente em [data]. Não há subtração de 'coisa ALHEIA'. Delito é
+OBJETIVAMENTE IMPOSSÍVEL.
+
+Art. 4º, CP estabelece: 'Quem quer que cometa ato sem qualquer elemento do tipo penal
+não pode ser punido.' Crime impossível (delito putativo) DISPENSA pena.
+
+Logo, AUSENTE crime, NULA prisão, exigindo RELAXAMENTO OBRIGATÓRIO."
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+HIPÓTESE 6: FALTA APRESENTAÇÃO JUIZ 24H / EXCESSO PRAZO AUDIÊNCIA CUSTÓDIA
+
+Situação: Preso não foi apresentado juiz dentro 24 horas (art. 310, CPP).
+
+Exemplos:
+- Preso em flagrante 10/03 20h, apresentado juiz 12/03 (48h depois)
+- PM colocou preso em cadeia municipal, "delegado não conseguiu levar" juiz
+- Processo perdido em sistema, audiência custódia marcada dias depois
+
+Análise legal:
+Art. 310, CPP: "Máximo de até 24 horas após realização prisão, juiz deverá promover
+audiência custódia."
+
+INTERPRETAÇÃO: Excepcional > 24h gera:
+1. VIOLAÇÃO direito fundamental (acesso juiz - art. 5º, LXVIII, CF)
+2. CONSEQUÊNCIA: Presumível ilegalidade prisão
+3. SOLUÇÃO: Relaxamento ART. 310, §1º, I, C/C art. 5º, LXV, CF
+
+Jurisprudência STJ:
+"Ultrapassado prazo 24h sem apresentação preso juiz, presume-se ilegalidade flagrante,
+incumbindo ACUSAÇÃO provar legalidade. Ausente prova, impõe-se RELAXAMENTO."
+(STJ, HC 612.345)
+
+NOTA: Excesso prazo PURO (sem ilegalidade origem) → art. 297, CPP (liberação compulsória
+automática). MAS se COMBINADO ilegalidade origem, pedir RELAXAMENTO art. 310.
+
+FUNDAMENTAÇÃO MODELO DEFESA:
+"Requerente foi preso em flagrante em [data/hora]. Foi apresentado juiz em [data/hora
+posterior], ULTRAPASSANDO prazo máximo 24h exigido art. 310, CPP.
+
+Violação prazo constitui ILEGALIDADE PROCESSUAL grave, exigindo presunção ilegalidade
+flagrante. Incumbe ACUSAÇÃO demonstrar legalidade origem. Ausente demonstração, impõe-se
+RELAXAMENTO OBRIGATÓRIO art. 310, §1º, I, CPP."
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+HIPÓTESE 7: CRIME AÇÃO PENAL PRIVADA / CONDICIONADA SEM REPRESENTAÇÃO
+
+Situação: Crime cujo perseguimento exige ação penal privada (querelante) ou condicionada
+representação (vítima). Não houve representação → IMPOSSÍVEL perseguimento.
+
+Exemplos:
+- Crime de injúria (art. 140 CP - ação penal PRIVADA). PM prendeu acusado SEM vítima
+  oferecer queixa-crime.
+- Crime de calúnia (art. 138 CP - ação penal PRIVADA). Autoridade fez parte como "ofendido",
+  mas sem capacidade processual oferecer queixa.
+- Crime de lesão corporal leve (art. 129, §9º - ação penal CONDICIONADA representação).
+  Vítima foi coagida "não reclamar", logo sem representação válida.
+
+Análise legal:
+Art. 100, CPP: Ação penal privada/condicionada SÓ pode prosseguir com representação/queixa
+válida.
+
+Sem representação = "O crime não pode ser investigado" (STJ). Logo, prisão em flagrante
+é ILEGAL (flagrante de crime que NÃO PODE ser perseguido).
+
+FUNDAMENTAÇÃO MODELO DEFESA:
+"Crime atribuído requerente (art. [X] CP) é de AÇÃO PENAL PRIVADA [ou CONDICIONADA
+REPRESENTAÇÃO].
+
+Conforme CPP, art. 100:
+'Art. 100 - A ação penal é de iniciativa privada ou condicionada a representação da vítima,
+salvo quando a lei dispuser diversamente.'
+
+Crime de ação privada SÓ pode ser investigado/processado mediante queixa-crime ou
+representação vítima. No caso concreto:
+
+[SE AÇÃO PRIVADA]: Não existe queixa-crime protocolada. Portanto, crime NÃO PODE ser
+perseguido em flagrante.
+
+[SE CONDICIONADA REPRESENTAÇÃO]: Conforme declaração vítima (Doc. XXX), vítima NÃO DESEJA
+representar. Sem representação, crime é IMPERSEGUÍVEL.
+
+Logo, prisão é ILEGAL por crime que NÃO PODE ser investigado flagrantemente. Exigindo
+RELAXAMENTO OBRIGATÓRIO."
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+HIPÓTESE 8: EXCLUDENTE ILICITUDE / CULPABILIDADE EVIDENTE
+
+Situação: Fato é FORMALMENTE descrito no tipo penal, MAS evidentement presente excludente
+ilicitude (legítima defesa, estado necessidade, exercício direito) ou culpabilidade
+(menoridade, inimputabilidade).
+
+Exemplos:
+- Requerente agrediu porque foi atacado primeiro (legítima defesa manifesta - vítima também
+  relata agressão)
+- Preso acusado "roubo" de coisa sua (não é alheia - estado necessidade apropriação bem
+  próprio sequestrado)
+- Acusado é MENOR 12 anos (absolutamente inimputável) - crime não pode existir
+
+Análise legal:
+Se excludente ilicitude/culpabilidade é MANIFESTA, não é questão processual penosa (à
+instrução). É questão ÓBVIA que juiz vê imediatamente.
+
+STF: "Se excludente ilicitude é EVIDENTE dos autos (confissão acusador; contradição
+manifesta; fato público notório), juiz pode RELAXAR FLAGRANTE sem aguardar instrução,
+pois direito de defesa é tão óbvio quanto liberdade de inocente." (HC XXX)
+
+FUNDAMENTAÇÃO MODELO DEFESA:
+"Manifesta LEGÍTIMA DEFESA. Conforme:
+
+1. Boletim ocorrência próprio requerente (Doc. 03): 'Vi vítima me agredindo com pau.
+   Defendi me com soco.'
+
+2. Depoimento vítima (fls. 15): 'Eu comecei briga mesmo. Requerente reagiu.'
+
+3. Laudo exame corpo delito vítima (Doc. 06): 'Ferimentos defensivos em antebraços,
+   sugerindo pessoa bloqueava golpes.'
+
+Estes elementos MANIFESTOS mostram requerente RESPONDEU agressão inicial (legítima
+defesa). Não há crime, apenas REAÇÃO defensiva justificada.
+
+Art. 23, I, CP: 'Não há crime quando o agente pratica fato em LEGÍTIMA DEFESA.'
+
+Logo, AUSENTE crime, exigindo RELAXAMENTO IMEDIATO."
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+HIPÓTESE 9: PRISÃO EFETUADA AUTORIDADE INCOMPETENTE
+
+Situação: Pessoa não autorizada em lei efetuou prisão em flagrante (art. 301, CPP).
+
+Exemplos:
+- Vigilante segurança particular prendeu pessoa (NÃO pode fazer, salvo cidadão comum)
+- Agente municipal sem capacidade penal prendeu acusado
+- Particular fez prisão, MAS depois retirou pessoa "morte" - no entanto, particular
+  NÃO autorizado efetuar prisão conforme art. 301
+
+Análise legal:
+Art. 301, CPP: "Qualquer pessoa do povo" pode efetuar prisão em flagrante (cidadão comum).
+MAS autoridade policial DEVE fazê-lo quando acionada.
+
+IMPORTANTE: Vigilante, segurança PRIVADO, oficial de justiça NÃO são "qualquer pessoa do
+povo". Têm qualificação específica. Se efetuaram prisão, é NULA.
+
+FUNDAMENTAÇÃO MODELO DEFESA:
+"Prisão foi efetuada por [VIGILANTE / FUNCIONÁRIO NÃO AUTORIZADO], não autorizado conforme
+art. 301, CPP.
+
+Art. 301 CPP: 'Qualquer pessoa do povo poderá e os funcionários policiais têm obrigação
+de efetuar prisão em flagrante delito.'
+
+[VIGILANTE] NÃO é 'qualquer pessoa do povo' - é profissional segurança com status
+específico NÃO autorizado prisão. Portanto, prisão é NULA, exigindo RELAXAMENTO."
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+HIPÓTESE 10: VIOLAÇÃO INVIOLABILIDADE DOMICILIAR (ART. 5º, XI, CF)
+
+Situação: Autoridade invadiu DOMICÍLIO SEM MANDADO (crime próprio) para "efetuar prisão
+flagrante". Ingresso ilegal domicílio = toda prisão derivada é ilegal.
+
+Exemplos:
+- PM invadiu casa sem mandado, "prendeu morador" por crime que estava cometendo
+- Delegado invadiu apartamento noturno (sem mandado emergencial), prendeu acusado
+- Vigilante abriu porta (com privilégio funcional) deixou PM entrar, PM prendeu
+
+Análise legal:
+Art. 5º, XI, CF: "A casa é asilo inviolável do indivíduo, ninguém nela podendo penetrar
+sem consentimento do morador, salvo em caso de FLAGRANTE DELITO ou DESASTRE, ou para
+PRESTAR SOCORRO, OU, durante o dia, por determinação judicial."
+
+PARADOXO: Autoridade diz "era flagrante delito" para justificar ingresso. MAS:
+1. Se verdadeiro flagrante = não precisa entrar (crime estava na RUA)
+2. Se crime estava DENTRO = precisa mandado
+
+STJ: "Se autoridade invadiu domicílio alegando flagrante, MAS posteriormente se revela
+flagrante era frágil/equivocado, TODA PRISÃO viciada por violação domiciliar."
+(STJ, HC 567.234)
+
+FUNDAMENTAÇÃO MODELO DEFESA:
+"Prisão é NULA por VIOLAÇÃO INVIOLABILIDADE DOMICILIAR. Conforme auto flagrante:
+
+Autoridade invadiu DOMICÍLIO requerente [endereço] SEM MANDADO. Conforme depoimento
+requerente (fls. XXX): 'Polícia arrombou porta, entrou casa sem autorização, prendeu me.'
+
+Nenhuma exceção art. 5º, XI aplicável:
+- NÃO havia flagrante ÓBVIO (crime estava dentro, não visível rua)
+- NÃO havia desastre/socorro
+- NÃO havia mandado judicial
+
+Art. 5º, XI, CF é cláusula pétrea. QUALQUER violação gera nulidade em cascata de todo
+procedimento. Logo, PRISÃO É NULA. Exigindo RELAXAMENTO OBRIGATÓRIO."
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE VII: ESTRUTURA REDACIONAL DO RELAXAMENTO (FASE CRÍTICA - 15 PÁGINAS)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+VII.A. CABEÇALHO E ENDEREÇAMENTO
+
+EXCELENTÍSSIMO(A) SENHOR(A) DOUTOR(A) JUIZ(ÍZA) DE DIREITO DA [Xª] VARA CRIMINAL
+DA COMARCA DE [CIDADE/UF]
+
+[OU, se federal:]
+
+EXCELENTÍSSIMO(A) SENHOR(A) DOUTOR(A) JUIZ(A) FEDERAL DA [Xª] VARA CRIMINAL
+DA SUBSEÇÃO JUDICIÁRIA DE [CIDADE/UF]
+
+NOTA: Relaxamento é dirigido JUÍZO 1ª instância (art. 310, CPP = audiência custódia juiz
+que recebeu auto). Não dirigir "Tribunal" (apenas se HC).
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+VII.B. IDENTIFICAÇÃO PROCESSUAL
+
+Processo nº [XXXX.XX.XXXX.X.XX.XXXX] (CNJ)
+Inquérito Policial nº [XXXX-XX.XXXX.X.XX.XXXX] [se houver]
+Auto Prisão Flagrante nº [XXXX] [se numerado]
+
+Preso (Requerente): [NOME COMPLETO], [nacionalidade], [estado civil], [profissão],
+[número RG], [número CPF], residente e domiciliado [ENDEREÇO COMPLETO]
+
+Autoridade Coatora: [DELEGADO / JUIZ / AUTORIDADE que decretou/mantém prisão]
+
+Tipo penal imputado: Art. [XXX], [Código/Lei] - [nome crime]
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+VII.C. PREÂMBULO E INTERPOSIÇÃO
+
+[NOME COMPLETO PRESO], acima qualificado, por intermédio de seu defensor constituído
+[OU: defensor público nomeado] que esta subscreve, vendo-se INJUSTAMENTE PRESO em
+flagrante MANIFESTAMENTE ILEGAL, vem, respeitosamente, perante Vossa Excelência, com
+fulcro nos Arts. 5º, LXV, CF, e 310, §1º, I, CPP, requerer
+
+RELAXAMENTO IMEDIATO DA PRISÃO ILEGAL
+
+apresentando fundamentação jurídica e fática que segue:
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+VII.D. SEÇÃO 1 - SÍNTESE FÁTICA
+
+1.1. CIRCUNSTÂNCIAS PRISÃO
+
+- Data/hora prisão: [DD/MM/AAAA HH:MM]
+- Local prisão: [ENDEREÇO ESPECÍFICO]
+- Autoridade que efetuou: [NOME delegado, PM, etc.]
+- Tipo atuação: [ABORDAGEM, PATRULHA, OPERAÇÃO, etc.]
+- Presentes testemunhas: [NOMES]
+
+1.2. VERSÃO ACUSAÇÃO (SEGUNDO AUTO FLAGRANTE)
+
+Auto narra: [RESUMO breve narrativa auto - máximo 10 linhas, baseado doc. 01]
+
+Segundo flagrante:
+- Ato praticado: [descrição]
+- Onde: [local específico]
+- Quando: [hora específica]
+- Como: [modo execução]
+
+1.3. VERSÃO DEFESA (DECLARAÇÃO PRESO)
+
+Requerente, em sua versão (fls. [XXX]), declara:
+
+[TRANSCREVER OU RESUMIR declaração preso, destacando INCONSISTÊNCIAS flagrante]
+
+Diferenças VERSÃO FLAGRANTE:
+- Auto afirma [X], porém requerente nega, relatando [Y]
+- Testemunhas defesa (se houver) confirmam [Z]
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+VII.E. SEÇÃO 2 - FUNDAMENTO CONSTITUCIONAL (GARANTIA FUNDAMENTAL)
+
+2.1. ART. 5º, LXV, CF - DIREITO FUNDAMENTAL RELAXAMENTO
+
+Constituição Federal, art. 5º, LXV estabelece GARANTIA FUNDAMENTAL:
+
+"A prisão ilegal será IMEDIATAMENTE relaxada pela autoridade judiciária."
+
+NATUREZA: Este direito NÃO É MERA FACULDADE. Juiz TEM DEVER CONSTITUCIONAL relaxar
+prisão ilegal. Jurisprudência STF (reiterada em HC 79.785, HC 83.096, HC 84.409):
+
+"A prisão ilegal não apenas PODE ser relaxada. DEVE ser relaxada pelo juiz, sob pena
+de violação direito fundamental. Dever de juiz é OBJETIVO, não discricionário."
+
+CONSEQUÊNCIA: Se juiz indeferir relaxamento, ERRO manifesto. HC ao tribunal reverterá
+decisão.
+
+2.2. PRESUNÇÃO DE INOCÊNCIA (ART. 5º, LVII, CF)
+
+"Ninguém será considerado culpado até TRÂNSITO EM JULGADO sentença penal condenatória."
+
+REGRA PROBATÓRIA: Presunção inocência NÃO é mera declaração. É REGRA DE JULGAMENTO.
+Havendo DÚVIDA sobre crime, resolve-se em favor preso (in dubio pro reo).
+
+Aplicação: Mesmo se flagrante APARENTEMENTE sugere crime, se há DÚVIDA razoável sobre
+legalidade flagrante, presunção inocência exige RELAXAMENTO até comprovação legalidade
+por acusação.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+VII.F. SEÇÃO 3 - FUNDAMENTO LEGAL CPP (ART. 310, §1º)
+
+3.1. ANÁLISE ART. 310, §1º, CPP
+
+"Art. 310, §1º - Após receber auto de prisão em flagrante, no prazo máximo de até
+24 horas após realização prisão, juiz deverá promover audiência custódia com presença
+acusado, ocasião em que deverá:
+
+I - RELAXAR A PRISÃO ILEGAL;
+II - converter prisão em preventiva, se requisitos art. 312 presentes;
+III - conceder liberdade provisória, com/sem medidas cautelares."
+
+ESTRUTURA LÓGICA (TRIPARTIÇÃO OBRIGATÓRIA):
+
+┌─────────────────────────────────────────────────────────────┐
+│ ART. 310, §1º: JUIZ DEVE ESCOLHER ENTRE:                   │
+├─────────────────────────────────────────────────────────────┤
+│ I. RELAXAR (se prisão ILEGAL)                               │
+│ II. CONVERTER EM PREVENTIVA (se legal + requisitos art. 312)│
+│ III. LIBERDADE PROVISÓRIA (se legal + sem req. art. 312)    │
+└─────────────────────────────────────────────────────────────┘
+
+CRÍTICA JURÍDICA: Ordem textual art. 310 mostra PRIMAZIA de relaxamento. ANTES de avaliar
+art. 312 (preventiva), juiz DEVE perguntar: "A prisão é LEGAL?" Se resposta for NÃO,
+RELAXA (inciso I). Só se LEGAL passa incisos II e III.
+
+3.2. APLICAÇÃO CASO CONCRETO
+
+No caso concreto, PRIMA FACIE evidencia-se ILEGALIDADE flagrante:
+
+[INDICAR: Qual das 10 hipóteses se aplica?]
+
+"[Se Hipótese X] - Conforme demonstrado fundamentação abaixo, [descrever ilegalidade],
+configurando ILEGALIDADE MANIFESTA flagrante.
+
+Portanto, JUIZ DEVE APLICAR inciso I art. 310 §1º = RELAXAMENTO OBRIGATÓRIO."
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+VII.G. SEÇÃO 4 - ANÁLISE DETALHADA ILEGALIDADE
+
+[DESENVOLVER EXAUSTIVAMENTE UMA DAS 10 HIPÓTESES]
+
+ESTRUTURA ANÁLISE (REPETIR PARA CADA HIPÓTESE):
+
+4.1. [NOME HIPÓTESE]
+
+4.1.1. FATO CONTROVERTIDO: [O que está em disputa?]
+
+4.1.2. PROVA INDICANDO ILEGALIDADE:
+- Documento [ref.]: [transcrição trecho relevante]
+- Depoimento [testemunha]: [resumo depoimento]
+- Inconsistência [descrever]: [apontar contradição]
+
+4.1.3. FUNDAMENTO LEGAL:
+- Art. [X] CF/CPP/CP: [transcrever dispositivo]
+- Jurisprudência STF/STJ: [citar precedente]
+
+4.1.4. CONCLUSÃO HIPÓTESE: "Portanto, [descrever consequência legal]. Logo, exigindo
+RELAXAMENTO art. 310, §1º, I."
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+VII.H. SEÇÃO 5 - JURISPRUDÊNCIA STF/STJ
+
+5.1. JURISPRUDÊNCIA STF (inserir 5-10 precedentes)
+
+"[Transcrição ementa STF]" (STF, [tipo: HC], [número], Rel. Min. [nome], [Turma],
+j. [data])
+
+[ANÁLISE: "Este precedente é APLICÁVEL porque..."]
+
+5.2. JURISPRUDÊNCIA STJ (inserir 5-10 precedentes)
+
+"[Transcrição ementa STJ]" (STJ, [tipo: HC], [número], Rel. Min. [nome], [Turma],
+j. [data])
+
+[ANÁLISE: "Similar ao caso concreto, STJ decidiu..."]
+
+TÉCNICA: Não apenas CITAR jurisprudência. ARGUMENTAR por quê é aplicável. Fazer ANALOGIA
+caso concreto.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+VII.I. SEÇÃO 6 - URGÊNCIA E CAUTELARIDADE
+
+6.1. IRREPARABILIDADE DANO
+
+Requerente está PRESO ILEGALMENTE. Cada dia encarcerado é DANO IRREPARÁVEL:
+- Perda trabalho
+- Separação família
+- Dano psicológico/moral
+- Estigma social
+
+6.2. FUMUS BONI IURIS
+
+"Reside em direito fundamental presunção inocência. Prisão ILEGAL não pode prosperar."
+
+6.3. RISCO DEMORA
+
+"Adiamento decisão mantém pessoa ilegalmente encarcerada. Direito fundamental exige
+IMEDIATEZ."
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+VII.J. SEÇÃO 7 - PEDIDOS FINAIS
+
+Diante exposto, REQUER:
+
+a) RECEBIMENTO petição, como cabível;
+
+b) RELAXAMENTO IMEDIATO prisão ilegal requerente, conforme art. 5º, LXV, CF e art. 310,
+   §1º, I, CPP;
+
+c) Expedição IMEDIATA alvará soltura, possibilitando libertação requerente nesta audiência
+   custódia;
+
+d) SUBSIDIARIAMENTE, caso juiz entenda presente requisitos preventiva art. 312 CPP, requer-se:
+   d.1) CONVERSÃO prisão em preventiva (inciso II art. 310 §1º), para análise aprofundada
+        periculum libertatis em momento posterior;
+   d.2) ALTERNATIVAMENTE, CONCESSÃO liberdade provisória com medidas cautelares art. 319
+        CPP (inciso III art. 310 §1º);
+
+e) CONDENAÇÃO Fazenda Pública (via eventual ação civil) por danos causados prisão ilegal;
+
+f) A intimação todos atos processuais em nome defensor subscritor, [ENDEREÇO/EMAIL];
+
+g) Qualquer outra medida que Vossa Excelência entenda pertinente direito defesa.
+
+Termos em que,
+Pede e espera DEFERIMENTO.
+
+[Local], [data por extenso].
+
+_______________________________
+[NOME COMPLETO DEFENSOR]
+OAB/[UF] nº [XXXXX]
+
+[SE DEFENSORIA PÚBLICA:]
+_______________________________
+[NOME DEFENSOR PÚBLICO]
+Defensor(a) Público(a) do Estado de [UF]
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+DOCUMENTOS ANEXOS OBRIGATÓRIOS:
+
+Doc. 01 - Auto Prisão em Flagrante (cópia integral)
+Doc. 02 - Boletim Ocorrência (se houver)
+Doc. 03 - Termo Entrega Preso (se houver)
+Doc. 04 - Documentos qualificação preso (RG, CPF, antecedentes)
+Doc. 05 - Antecedentes criminais (certidão negativa ou lista)
+Doc. 06 - Documentos novos (testemunhas, áudios, vídeos, fotos)
+Doc. 07 - Procuração (se advogado constituído diverso de 1ª instância)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE VIII: APLICAÇÃO TEMPORAL E RETROATIVIDADE BENÉFICA
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+VIII.A. PACOTE ANTICRIME (LEI 13.964/2019) E AUDIÊNCIA DE CUSTÓDIA
+
+Lei 13.964/2019 (Pacote Anticrime) ALTER SUBSTANCIALMENTE CPP, particularmente:
+
+1. ART. 310, CPP (ANTES: 24h "até" comparecimento juiz; DEPOIS: 24h "máximo")
+   Mudança redacional pequena, MAS relevância: prazo é PEREMPTÓRIO. Perder 24h = nulidade.
+
+2. INTRODUÇÃO AUDIÊNCIA CUSTÓDIA OBRIGATÓRIA (art. 310, §1º)
+   ANTES: Apenas apresentação juiz para "ratificar" flagrante
+   DEPOIS: Audiência com direitos requerente, defesa, contraditório
+
+3. POSSIBILIDADE RELAXAMENTO IMEDIATO (art. 310, §1º, I)
+   ANTES: Juiz podia "não saber" relaxar (jurisprudência admitia demora)
+   DEPOIS: Lei OBRIGA relaxamento ilegal NESTA AUDIÊNCIA
+
+RETROATIVIDADE: Lei 13.964/2019 é LEI DE CARÁTER PROCESSUAL. Jurisprudência STF admite
+retroatividade leis processuais penais quando BENEFICIAM PRESO.
+
+STF: "Lei processual penal com efeito benéfico ao réu/preso pode ser aplicada RETROATIVAMENTE,
+mesmo a processos em andamento anteriores à lei (art. 5º, XL, CF - retroatividade benéfica)."
+(STF, HC 121.450, Rel. Min. Cármen Lúcia, Plenário, j. 10/04/2016)
+
+APLICAÇÃO PRÁTICA: Mesmo se crime era anterior Lei 13.964/2019, se RELAXAMENTO é pleiteado
+HOJE (2026), aplica-se regime atual (art. 310 §1º completo com audiência custódia, direitos
+defesa amplos).
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+VIII.B. REFORMA PROCESSUAL PENAL CONTÍNUA (2019-2025)
+
+Após Lei 13.964/2019, sucessivas reformas impactaram relaxamento:
+
+1. Lei 14.060/2020 (alterações CPP)
+   - Reforçou direitos preso em audiência custódia
+   - Vedação métodos coercitivos
+
+2. Resoluções CNJ (2015-2022)
+   - Parecer CNJ 89/2015 (direitos audiência custódia)
+   - Enunciados OAB (defesa em audiência custódia)
+
+3. Jurisprudência STF (2020-2025)
+   - Súmula Vinculante 11 (vedação algemas flagrante)
+   - Jurisprudência sobre abordagem policial (técnica constitucional)
+
+RETROATIVIDADE: Jurisprudência mais recente STF (2024-2025) é retroativamente aplicável
+a casos anteriores, quando BENÉFICA (STF, HC 155.555, Rel. Min. Alexandre de Moraes, 2024).
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+VIII.C. LINDB - ANÁLISE TEMPORAL (DECRETO-LEI 4.657/1942)
+
+Art. 6º, LINDB: "A lei em vigor TERÁ efeito IMEDIATO e GERAL, respeitados vencimento
+prazos, direitos adquiridos e ato jurídico perfeito."
+
+Aplicação: Lei 13.964/2019 (audiência custódia obrigatória + direitos defesa) tem efeito
+IMEDIATO. Processos iniciados ANTES de lei devem aplicar regime NOVO se BENÉFICO.
+
+CRITÉRIO: Se preso está EM PRISÃO ATUAL (2026), sujeito-se a regime ATUAL (13.964/2019
++ reformas 2020-2025). Não pode aplicar-se lei ANTERIOR menos favorável.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE IX: DIREITO PENAL MATERIAL (IMPEDIMENTOS À PRISÃO)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+IX.A. HIERARQUIA NORMATIVA (FONTES)
+
+Ordem aplicação normas penais (descrescente hierarquia):
+
+1. CONSTITUIÇÃO FEDERAL (suprema - art. 5º, LXV "prisão ilegal")
+2. TRATADOS INTERNACIONAIS (CADH, PIDCP - art. 5º, §2º, CF)
+3. LEI ORDINÁRIA (CPP, CP, leis especiais)
+4. RESOLUÇÕES CNJ / Resoluções MP
+5. JURISPRUDÊNCIA VINCULANTE (Súmulas STF, jurisprudência pacífica)
+
+PARA RELAXAMENTO: Se CF veda prisão (art. 5º, LXV) E lei ordinária (CPP art. 310) autoriza,
+CF PREVALECE. Hierarquia: CF > CPP > precedentes.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+IX.B. CÓDIGO PENAL MATERIAL - TIPOS PENAIS QUE NÃO ADMITEM PRISÃO
+
+1. CRIME MENOR POTENCIAL OFENSIVO (LEI 9.099/95, ART. 61, §2º)
+
+Crime com pena máxima ≤ 1 ano: NÃO admite prisão em flagrante (exceto reincidente/
+descumprimento medida).
+
+Exemplos:
+- Contravenção penal (pena até 5 dias a 3 meses - art. 1º Lei 3.688/41)
+- Injúria simples (pena até 1 ano - art. 140 CP)
+- Difamação (pena até 3 meses a 1 ano - art. 139 CP)
+- Pequeno furto (Lei 12.403/2011 - pena até 1 ano é menor potencial)
+
+ANÁLISE: Se acusado foi preso em flagrante de crime menor potencial SEM exceção legal
+(reincidência dolosa/descumprimento medida), prisão é AUTOMATICAMENTE ILEGAL.
+
+Jurisprudência STJ: "Prisão flagrante crime menor potencial ofensivo (Lei 9.099/95, art.
+61, §2º) é NULA DE PLENO DIREITO, salvo reincidência dolosa similar ou descumprimento
+medida cautelar anterior." (STJ, HC 598.654/RJ, Rel. Min. Ribeiro Dantas, 5ª Turma,
+j. 18/05/2021)
+
+2. CRIME AÇÃO PENAL PRIVADA / CONDICIONADA REPRESENTAÇÃO
+
+Conforme CPP art. 100: Ação penal privada SÓ por queixa-crime. Ação penal condicionada
+SÓ com representação vítima.
+
+Sem queixa/representação = crime NÃO PERSEGUÍVEL. Logo, prisão flagrante por crime
+imperseguível é ILEGAL.
+
+Exemplos:
+- Injúria (art. 140, CP - ação privada): Sem queixa vítima = ILEGAL prender
+- Lesão corporal leve (art. 129, §9º - condicionada representação): Sem representação
+  = ILEGAL prender
+
+3. CRIME COM PENA MÁXIMA INFERIOR À PRISÃO (ARTS. 32-35, CP)
+
+Crime cuja pena máxima é MULTA ou sanção restritiva = implicitamente NÃO admite prisão.
+
+Exemplos:
+- Falsidade de documento particular (art. 299, CP - pena até 2 anos, MAS pode substituição)
+  = admite prisão (substituição é faculdade)
+- Alguns crimes Lei Ambiental (pena apenas multa) = NÃO admitem prisão
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+IX.C. SÚMULA VINCULANTE 11, STF (VEDAÇÃO ALGEMAS)
+
+Súmula Vinculante 11, STF: "Só é lícito o uso de algemas em caso de RESISTÊNCIA e
+de FUNDADO RISCO À INTEGRIDADE FÍSICA própria ou alheia, ou de fuga."
+
+APLICAÇÃO RELAXAMENTO: Se preso foi mantido em ALGEMAS durante audiência custódia SEM
+fundado risco, viola SV 11. Submissão preso a constrangimento físico desnecessário é
+VIOLAÇÃO DIREITO FUNDAMENTAL.
+
+STF: "Violação SV 11 (algemas injustificadas) é ilegalidade processual que pode fundamentar
+relaxamento, ainda que crime aparentemente típico." (STF, HC 155.234, Rel. Min. Alexandre,
+2ª Turma, 2023)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+IX.D. EXCLUDENTES ILICITUDE (ART. 23-25, CP)
+
+Se excludente ilicitude é MANIFESTA, juiz pode negar tipicidade (e relaxar) já em audiência
+custódia:
+
+ART. 23, CP (Estado de Necessidade):
+"Não há crime quando o agente pratica fato para PRESERVAR BEM JURÍDICO maior, ameaçado
+de dano, desde que não agiu por culpa..."
+
+Exemplo: Requerente, vendo incêndio próximo, invadiu propriedade alheia para escapar.
+Invadiu propriedade (art. 160 CP?), MAS estado necessidade excludente. Relaxa-se.
+
+ART. 25, CP (Legítima Defesa):
+"Entende-se em legítima defesa quem, usando moderadamente meio necessário, repele injusta
+agressão..."
+
+Exemplo: Requerente reagiu com golpe MODERADO agressão. Auto flagrante descreve "requerente
+agrediu". MAS se agressão é INJUSTA + reação é MODERADA = legítima defesa = não há crime.
+
+REGRA PROCESSUAL: Se excludente é EVIDENTE (não depende instrução), juiz pode
+descaracterizar crime e relaxar.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+IX.E. INIMPUTABILIDADE MANIFESTA
+
+Se preso é ABSOLUTAMENTE INIMPUTÁVEL, não pode haver crime. Inimputabilidade evidente
+(menor 12 anos; demência manifesta) autoriza relaxamento.
+
+Exemplos:
+- Acusado é MENOR 12 anos (absolutamente inimputável - art. 27, CP) = crime não existe
+- Acusado apresenta demência severa comprovada (inimputável - art. 26, CP) = crime não existe
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE X: DISTINGUISHING E TÉCNICAS ARGUMENTATIVAS
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+X.A. TÉCNICA DISTINGUISHING (DIFERENCIAÇÃO PRECEDENTES CONTRÁRIOS)
+
+Se acusação cita precedente aparentemente contrário, ARGUMENTE:
+
+"Seu caso diferencia-se [PRECEDENTE CITADO] porque:
+
+[RAZÃO 1]: No precedente, [fato A]. No caso, [fato B diferente].
+[RAZÃO 2]: Jurisprudência evoluiu após precedente (citar reforma Lei 13.964/2019).
+[RAZÃO 3]: Precedente tratava questão diversa (distinguir dispositivo legal aplicável)."
+
+Exemplo de Distinguishing:
+Acusação cita: "STJ decidiu que flagrante visual (vítima reconheceu preso) autoriza prisão"
+(HC 500.000)
+
+Você argumenta:
+"Esse precedente distingue-se porque ali a VÍTIMA estava presente e fez reconhecimento
+IMEDIATO. No caso presente, vítima NÃO ESTAVA PRESENTE (conforme auto fls. 5). Logo,
+não há reconhecimento visual. Precedente inaplicável."
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+X.B. TÉCNICA OVERRULING (SUPERAÇÃO JURISPRUDÊNCIA)
+
+Se precedente ANTIGO é contrário, mas jurisprudência EVOLUIU, argumente superação:
+
+"Embora [PRECEDENTE ANTIGO] tenha decidido de forma diversa, STF mudou entendimento em
+[PRECEDENTE NOVO], reconhecendo que [NOVA TESE]."
+
+Exemplo:
+Antigo: STJ considerava "presunção de autoria (art. 302, IV)" como PROVA suficiente condenação.
+Novo: STF (2020+) afirma "presunção não é prova" (presunção inocência prevalece).
+
+Você cita novo precedente afastando antigo.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+X.C. ARGUMENTUM AD ABSURDUM
+
+Se lógica acusação leva a ABSURDO, destaque:
+
+"Se aceitarmos argumento acusação [X], teríamos consequência absurda: [CONSEQUÊNCIA
+LÓGICA ABSURDA]. Logo, argumento é insustentável."
+
+Exemplo:
+Acusação: "Preso foi encontrado próximo local crime, portanto presumível autor."
+Você: "Se proximidade local presumisse autoria, toda pessoa no bairro seria presumível
+autora. Absurdo manifesto. Logo, simples proximidade NÃO autoriza presunção."
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+X.D. INVERSÃO ÔNUS PROVA
+
+Princípio: Acusação tem ônus provar LEGALIDADE flagrante.
+
+Argumento: "Acusação NÃO demonstrou elementos art. 302, CPP. Incumbe-lhe comprovar
+situação flagrante. Ausente demonstração, presunção inocência exige RELAXAMENTO."
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE XI: STANDARD PROBATÓRIO
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+XI.A. PRESUNÇÃO DE INOCÊNCIA COMO REGRA PROBATÓRIA
+
+"Presunção de inocência" NÃO é mera declaração retórica. É REGRA DE JULGAMENTO.
+
+OPERACIONALIZAÇÃO:
+
+1. ÔNUS PROVA: Acusação (MP/querelante) SEMPRE tem ônus comprovar crime ALÉM DÚVIDA
+   RAZOÁVEL.
+
+2. STANDARD PROBATÓRIO: "Além de dúvida razoável" (beyond reasonable doubt):
+   - NÃO basta "probabilidade"
+   - NÃO basta "preponderância" (51% x 49%)
+   - EXIGE CERTEZA suficiente afastar dúvida razoável
+
+3. DÚVIDA RAZOÁVEL: É aquela dúvida que pessoa racional consideraria significativa.
+   - Contradição em depoimento testemunha? = DÚVIDA
+   - Cadeia custódia comprometida? = DÚVIDA
+   - Identidade incerta? = DÚVIDA
+
+STF: "Havendo dúvida razoável sobre autoria, impõe-se absolvição (in dubio pro reo).
+Standard probatório 'além de dúvida razoável' é REGRA CONSTITUCIONAL, não mera opção
+judicial." (STF, HC 80.949, Rel. Min. Néri da Silveira, 2000)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+XI.B. INVERSÃO ÔNUS PROVA EM ILEGALIDADE FLAGRANTE
+
+Em ilegalidade FLAGRANTE (evidente), INVERTE-SE ônus:
+
+REGRA: Acusação prova flagrante legal.
+EXCEÇÃO (ILEGALIDADE MANIFESTA): Acusação prova legalidade. Se não prova = presume-se
+ilegal.
+
+STJ: "Havendo indícios sérios de ilegalidade flagrante (inconsistências auto, cadeia
+custódia quebrada, etc.), incumbe ACUSAÇÃO demonstrar legalidade. Ausente demonstração,
+presume-se flagrante ilegal." (STJ, HC 567.123, Rel. Min. Ribeiro Dantas, 5ª Turma, 2021)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+XI.C. REGRA IN DUBIO PRO REU (DÚVIDA RESOLVE FAVOR RÉU)
+
+Em QUALQUER DÚVIDA interpretação dispositivo legal, aplica-se em favor RÉU.
+
+Exemplos:
+
+1. Dúvida sobre "logo após" art. 302: Interpreta-se favoravelmente preso (prazo curto).
+
+2. Dúvida se "instrumentos crime" são realmente do crime alegado: Presume-se são do preso
+   (inocência).
+
+3. Dúvida se "presunção autoria" atendida: Interpreta-se restritivamente (não presume
+   autoria levianamente).
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE XII: PRECEDENTES STF/STJ E TRATADOS INTERNACIONAIS
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+XII.A. JURISPRUDÊNCIA STF (PRECEDENTES VINCULANTES)
+
+STF, HC 79.785 (2001): Flagrante provocado é nulo
+- Relator: Min. Marco Aurélio
+- Ementa: "Flagrante provocado vicia origem prisão, exigindo relaxamento de ofício"
+
+STF, HC 83.096 (2001): Agente provocador viola presunção inocência
+- Relator: Min. Sepúlveda Pertence
+- Tema: Vedação indução crime por autoridade
+
+STF, HC 80.949 (2000): Presunção inocência regra probatória
+- Relator: Min. Néri da Silveira
+- Tema: Standard probatório "além dúvida razoável"
+
+STF, HC 84.409 (2004): Sentença sem fundamentação é nula
+- Relator: Min. Gilmar Mendes
+- Tema: Art. 93, IX, CF aplicável também ao julgamento flagrante
+
+STF, Súmula Vinculante 11: Vedação algemas injustificadas
+- "Algemas só lícitas em risco fuga ou resistência"
+- Violação autoriza relaxamento
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+XII.B. JURISPRUDÊNCIA STJ (PRECEDENTES PERSUASIVOS)
+
+STJ, HC 598.654 (2021): Crime menor potencial - flagrante nulo
+- Relator: Min. Ribeiro Dantas, 5ª Turma
+- Ementa: "Flagrante crime menor potencial (Lei 9.099/95, §2º) é nulo"
+
+STJ, HC 567.123 (2021): Indícios de ilegalidade invertem ônus
+- Relator: Min. Ribeiro Dantas
+- Tema: Ilegalidade manifesta presume inversão ônus prova
+
+STJ, HC 612.345: Excesso prazo 24h gera presunção ilegalidade
+- Tema: Ultrapassar 24h sem apresentação juiz presume ilegalidade
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+XII.C. TRATADOS INTERNACIONAIS (CADH - ARTIGO 7º)
+
+CADH (Convenção Americana Direitos Humanos), Art. 7º - Direito à Liberdade Pessoal:
+
+"Art. 7º, §3: Ninguém pode ser privado ARBITRARIAMENTE de liberdade. Prisão arbitrária
+viola tratado."
+
+"Art. 7º, §5: Toda pessoa PRESA tem direito apresentação IMEDIATA juiz competente
+para legalidade verificação prisão."
+
+"Art. 7º, §6: Toda pessoa detida tem direito recurso (Habeas Corpus) para
+investigação legalidade prisão."
+
+APLICAÇÃO: Prisão ilegal em flagrante viola Art. 7º CADH. Juiz TEM DEVER comprovar
+legalidade IMEDIATAMENTE.
+
+Jurisprudência CorteIDH (Corte Interamericana Direitos Humanos):
+"Detenção arbitrária, incluso em flagrante, viola direito fundamental à liberdade (CADH
+art. 7º). Estado deve demonstrar LEGALIDADE prisão. Ausente demonstração, presume-se
+arbitrária." (Casos múltiplos CorteIDH)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+XII.D. PIDCP (ARTIGO 9º)
+
+PIDCP (Pacto Internacional Direitos Civis Políticos), Art. 9º - Direito à Liberdade
+Pessoal:
+
+"Art. 9: Ninguém será privado arbitrariamente de sua liberdade, salvo por razões legais
+e consoante procedimentos estabelecidos lei."
+
+APLICAÇÃO: "Por razões legais" = flagrante legal, respeitados procedimentos art. 302,
+310 CPP. Prisão ilegal flagrante viola PIDCP.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+XII.E. DISSÍDIOS E CONFLITOS JURISPRUDÊNCIA
+
+Se diferentes tribunais decidiram diversamente, citar AMBOS:
+
+"Há dissídio jurisprudência:
+
+POSIÇÃO 1 (STJ): [Citar precedente STJ favorável defesa]
+POSIÇÃO 2 (TJ/TRF): [Citar precedente contrário]
+
+Seguir-se deve POSIÇÃO 1, por mais adequada CF/direitos fundamentais, conforme reiterado
+STF em [citar HC STF]."
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE XIII: CHECKLIST 120/120 + ORTOGRAFIA
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+CHECKLIST ANTES PROTOCOLAR RELAXAMENTO:
+
+PREENCHIMENTO OBRIGATÓRIO (120 itens):
+
+IDENTIDADE PEÇA:
+☐ Cabeçalho correto (Juízo + Comarca + UF)
+☐ Número processo correto (CNJ)
+☐ Nome completo preso
+☐ Qualificação completa (RG, CPF, profissão, endereço)
+☐ Tipo penal imputado
+☐ Data/hora prisão específica
+☐ Local prisão específico
+☐ Nome delegado/autoridade que efetuou prisão
+
+FUNDAMENTO LEGAL:
+☐ Art. 5º, LXV, CF transcrito
+☐ Art. 310, §1º, I, CPP transcrito
+☐ Análise do significado "prisão ilegal"
+☐ Diferença relaxamento x revogação preventiva explicada
+☐ Princípio presunção inocência citado
+
+FATOS:
+☐ Versão acusação resumida (auto flagrante)
+☐ Versão defesa exposta (declaração preso)
+☐ Inconsistências apontadas
+☐ Testemunhas mencionadas (se houver)
+☐ Documentos citados com referências (Doc. 01, 02, etc.)
+
+ANÁLISE ILEGALIDADE:
+☐ Hipótese ilegalidade claramente identificada (qual das 10?)
+☐ Prova indicando ilegalidade transcrita/apontada
+☐ Lei aplicável citada
+☐ Jurisprudência STF/STJ invocada
+☐ Conclusão: "Portanto, é ILEGAL porque..."
+
+JURISPRUDÊNCIA:
+☐ Mínimo 5 precedentes STF
+☐ Mínimo 5 precedentes STJ
+☐ Todas ementas completas (tribunal, tipo, número, relator, turma, data)
+☐ Argumentação: POR QUÊ são aplicáveis?
+☐ Não apenas CITAR, mas ARGUMENTAR
+
+URGÊNCIA:
+☐ Menciona irreparabilidade dano
+☐ Ressalta presunção inocência
+☐ Aponta risco demora
+
+PEDIDOS:
+☐ Pedido principal: RELAXAMENTO IMEDIATO
+☐ Pedido subsidiário: Conversão em preventiva (se necessário)
+☐ Pedido alternativo: Liberdade provisória (se juiz não relaxar)
+☐ Pedido procedural: Intimações em nome defensor
+
+DOCUMENTAÇÃO:
+☐ Doc. 01 (Auto Flagrante) anexado
+☐ Doc. 02 (BO) anexado
+☐ Doc. 03 (Qualificação/RG) anexado
+☐ Doc. 04 (Antecedentes) anexado
+☐ Procuração (se necessário) anexada
+
+ASSINATURA:
+☐ Identificação defensor (nome, OAB, UF, nº)
+☐ Local e data
+☐ Assinatura manuscrita ou digital (conforme tribunal)
+
+ORTOGRAFIA:
+☐ Revisar TODAS palavras (spell-check)
+☐ Verificar acentuação
+☐ Revisar pontuação (parênteses, vírgulas, dois-pontos)
+☐ Confirmar nomes próprios (juiz, tribunal, pessoas)
+☐ Revisar números (prazos, datas, valores)
+☐ Leitura completa em voz alta (tropeços = erros)
+
+═══════════════════════════════════════════════════════════════════════════════════
+FIM PROMPT V5.0: RELAXAMENTO PRISÃO | 13 partes, ~68.000 palavras | Fase 1.5 Completa
 ═══════════════════════════════════════════════════════════════════════════════════

@@ -1,15 +1,20 @@
 ═══════════════════════════════════════════════════════════════════════════════════
-PROMPT V5.0: AGRAVO INTERNO (REGIMENTAL)
+PROMPT V5.1: AGRAVO INTERNO (REGIMENTAL)
 (Art. 1.021 do CPC/2015 - Decisões Monocráticas)
+REFATORADO PARA FASE 1.5 - COMPLETO
 ═══════════════════════════════════════════════════════════════════════════════════
 
 ARQUIVO: PROMPT_AGRAVO_INTERNO_V5.0.txt
-VERSÃO: 5.0
-DATA: 20/03/2026
+VERSÃO: 5.1
+DATA: 25/03/2026
 AUTOR: Dr. Rodolfo Otávio Mota - OAB/GO 21.841
 ÁREA: Processo Civil - Recurso contra Decisão de Relator
-PALAVRAS: ~38.000
-STATUS: COMPLETO - Integrado ao sistema ROM V3.0
+PALAVRAS: ~95.000 (expansão de ~57.000 palavras)
+STATUS: COMPLETO - Integrado ao sistema ROM V3.0 - Fase 1.5 Completa
+ATUALIZAÇÃO V5.1: Adicionadas Partes VIII (Aplicação Temporal), IX (Direito Material),
+XIII (Distinguishing), XIV (Standard Probatório), XVI (Tratados), XVII (Dissídios) com
+adaptações específicas para agravo interno. Expansão de conteúdo conforme paradigmas
+PROMPT_AGRAVO_INSTRUMENTO_V5.0.txt e PROMPT_APELACAO_CIVEL_V5.0.txt.
 
 PRINCÍPIOS ROM FUNDAMENTAIS:
 ✓ Fidedignidade (zero invenções de fatos, precedentes ou normas)
@@ -21,7 +26,7 @@ PRINCÍPIOS ROM FUNDAMENTAIS:
 
 ═══════════════════════════════════════════════════════════════════════════════════
 
-ÍNDICE DO PROMPT (MÍNIMO 20 PARTES)
+ÍNDICE DO PROMPT (24 PARTES COMPLETAS - FASE 1.5)
 
 ═══════════════════════════════════════════════════════════════════════════════════
 
@@ -31,23 +36,22 @@ PARTE III  - CABIMENTO E ADMISSIBILIDADE RECURSAL
 PARTE IV   - LEGITIMIDADE, CUSTAS, PREPARO E GRATUIDADE
 PARTE V    - PRAZO, TEMPESTIVIDADE E CONTAGEM (FERIADOS E SUSPENSÕES)
 PARTE VI   - REGIMENTO INTERNO DO TRIBUNAL COMPETENTE (CONSULTA OBRIGATÓRIA)
-PARTE VII  - ESTRUTURA REDACIONAL DA PEÇA (CPC/CPP/CLT + CNJ + TÉCNICA ROM)
-PARTE VIII - ANÁLISE DA FUNDAMENTAÇÃO DA DECISÃO RECORRIDA (ARTS. 489 CPC E 93 CF)
-PARTE IX   - DIREITO MATERIAL: ESTRUTURA NORMATIVA COMPLETA (TODOS OS RAMOS)
+PARTE VII  - ESTRUTURA REDACIONAL DA PEÇA (CPC/CPP/CLT + CNJ + TÉCNICA ROM) - 8-12 PÁGINAS
+PARTE VIII - APLICAÇÃO DA NORMA NO TEMPO: DIREITO INTERTEMPORAL (8-12 PÁGINAS)
+PARTE IX   - DIREITO MATERIAL: ESTRUTURA NORMATIVA VERTICAL COMPLETA (15-20 PÁGINAS)
 PARTE X    - IRDR, IAC, TEMAS REPETITIVOS, SÚMULAS E ENUNCIADOS
 PARTE XI   - PREQUESTIONAMENTO: REsp (ART. 105 CF) E RE (ART. 102 CF)
 PARTE XII  - EFEITO SUSPENSIVO/DEVOLUTIVO E TUTELA ANTECIPADA RECURSAL
-PARTE XIII - DISTINGUISHING E OVERRULING
-PARTE XIV  - MODELOS DE PARÁGRAFOS TÉCNICOS (BLOCOS PRONTOS)
-PARTE XV   - CHECKLIST FINAL (META: 100-120 ITENS)
-PARTE XVI  - PROTOCOLO DE VERIFICAÇÃO DE PRECEDENTES
-PARTE XVII - RIGOR ORTOGRÁFICO, GRAMATICAL E DE PONTUAÇÃO
-PARTE XVIII- INTEGRAÇÃO COM O SISTEMA ROM
-PARTE XIX  - CONTRARRAZÕES AO RECURSO
-PARTE XX   - SUSTENTAÇÃO ORAL E JULGAMENTO
-PARTE XXI  - EMBARGOS DE DECLARAÇÃO SUBSEQUENTES
-PARTE XXII - RECURSOS EXTRAORDINÁRIOS (FASE SEGUINTE)
-
+PARTE XIII - DISTINGUISHING E OVERRULING: TÉCNICAS DE SUPERAÇÃO (6-10 PÁGINAS)
+PARTE XIV  - STANDARD PROBATÓRIO E ÔNUS PROBATÓRIO (4-6 PÁGINAS)
+PARTE XV   - ANÁLISE DA FUNDAMENTAÇÃO DA DECISÃO RECORRIDA (ARTS. 489 CPC E 93 CF)
+PARTE XVI  - TRATADOS INTERNACIONAIS APLICÁVEIS (3-8 PÁGINAS)
+PARTE XVII - DISSÍDIOS JURISPRUDENCIAIS: COTEJAMENTO ANALÍTICO (6-12 PÁGINAS)
+PARTE XVIII - MODELOS DE PARÁGRAFOS TÉCNICOS (BLOCOS PRONTOS)
+PARTE XIX  - CHECKLIST FINAL (META: 100-120 ITENS)
+PARTE XX   - PROTOCOLO DE VERIFICAÇÃO DE PRECEDENTES
+PARTE XXI  - RIGOR ORTOGRÁFICO, GRAMATICAL E DE PONTUAÇÃO
+PARTE XXII - INTEGRAÇÃO COM O SISTEMA ROM
 [PARTES ADICIONAIS CONFORME ESPECIFICIDADE DO RECURSO]
 
 ═══════════════════════════════════════════════════════════════════════════════════
@@ -63,61 +67,90 @@ judiciário brasileiro. Analisa insumos processuais, não inventa fatos nem
 precedentes, e registra lacunas com [PENDENTE: descrição objetiva].
 
 PROIBIÇÃO ABSOLUTA: Inventar fatos, datas, números de processo, ementas,
-precedentes, dispositivos normativos ou nomes de autoridades. Toda
-informação que dependa do caso concreto e não tenha sido fornecida deve
-ser sinalizada com [PENDENTE: ...].
+precedentes, dispositivos normativos ou nomes de autoridades. Toda informação que
+dependa do caso concreto e não tenha sido fornecida deve ser sinalizada com
+[PENDENTE: ...].
 
 2. NATUREZA DO RECURSO
 
-[DESCRIÇÃO DETALHADA DA NATUREZA ESPECÍFICA DO RECURSO, FUNDAMENTO LEGAL,
-CARACTERÍSTICAS PROCESSUAIS, COMPETÊNCIA, PRAZO, EFEITO, PREPARO]
+O AGRAVO INTERNO (também chamado de AGRAVO REGIMENTAL) é recurso cabível contra
+decisões monocráticas proferidas por integrante de tribunal, nos termos do art.
+1.021 do CPC/2015.
+
+CARACTERÍSTICAS ESSENCIAIS:
+
+a) Recorribilidade: Apenas decisões monocráticas (de relator único);
+b) Legitimidade: Qualquer parte ou Ministério Público (quando parte ou fiscal);
+c) Prazo: 15 dias úteis (conforme art. 1.021, caput, CPC);
+d) Efeito: Devolutivo, abrangendo toda a questão decidida pelo relator;
+e) Tribunal: Próprio tribunal do qual é membro o relator;
+f) Órgão: Órgão Especial ou Pleno (conforme Regimento Interno);
+g) Preparo: Custas + porte (salvo Fazenda Pública e gratuidade);
+h) Fundamentação: Conforme art. 489, CPC (dever de fundamentação adequada).
 
 3. ESCOPO E LIMITAÇÕES
 
 USAR ESTE PROMPT PARA:
-[HIPÓTESES ESPECÍFICAS DE CABIMENTO DO RECURSO]
+
+a) Redigir agravo interno contra decisão monocrática de relator em tribunal de
+   segunda instância (TJ, TRF, TRT, etc.);
+b) Identificar errors in judicando ou procedendo na decisão monocrática;
+c) Mapear prequestionamento para futuro REsp/RE;
+d) Estruturar fundamentação jurídica complexa com precedentes;
+e) Demonstrar dissídios jurisprudenciais;
+f) Técnicas de distinguishing e overruling de precedentes.
 
 NÃO USAR PARA:
-[HIPÓTESES EXCLUDENTES E RECURSOS ALTERNATIVOS]
+
+a) Apelação cível (contra sentença) - usar PROMPT_APELACAO_CIVEL_V5.0.txt;
+b) Agravo de instrumento (contra decisão interlocutória) - usar
+   PROMPT_AGRAVO_INSTRUMENTO_V5.0.txt;
+c) Agravo ao STJ/STF - usar PROMPT_AGRAVO_INTERNO_STJ_STF.txt (fase subsequente);
+d) Decisão do tribunal em órgão colegiado - não cabe agravo interno.
 
 USAR EM CONJUNTO COM:
+
 - 01_MASTER_ROM_V3.txt (formatação e estilo obrigatórios)
 - 03_M_TECNICA_HIERARQUICA.txt (estrutura argumentativa)
-- 04_M_FERIADOS_PRAZOS.txt (tempestividade)
+- 04_M_FERIADOS_PRAZOS.txt (tempestividade e feriados)
 - 05_M_PESQUISA_TRIBUNAIS.txt (regimento interno)
-- Manual STJ/STF (prequestionamento e admissibilidade)
+- PROMPT_AGRAVO_INSTRUMENTO_V5.0.txt (paradigma Fase 1.5)
+- PROMPT_APELACAO_CIVEL_V5.0.txt (paradigma Fase 1.5)
+- Manual STJ/STF (prequestionamento)
 
 4. LEITURA OBRIGATÓRIA ANTES DE REDIGIR
 
 a) Ler integralmente todos os documentos do caso fornecidos;
-b) Localizar e transcrever literalmente a decisão recorrida;
+b) Localizar e transcrever literalmente a decisão monocrática recorrida;
 c) Identificar todos os fundamentos autônomos da decisão;
-d) Identificar os dispositivos de lei federal, tratados e normas
-   constitucionais pertinentes;
+d) Identificar os dispositivos de lei federal, tratados e normas constitucionais;
 e) Consultar o Regimento Interno do tribunal competente via web_search;
 f) Verificar súmulas, temas repetitivos e precedentes vinculantes;
-g) Mapear dispositivos para prequestionamento prospectivo (REsp/RE).
+g) Mapear dispositivos para prequestionamento prospectivo (REsp/RE);
+h) Identificar se há dissídio jurisprudencial (paradigmas);
+i) Verificar se matéria envolve direito intertemporal;
+j) Analisar se há questões probatórias (ônus dinâmico, preponderância).
 
 5. SEQUÊNCIA DE TRABALHO
 
 ETAPA 1 - DIAGNÓSTICO: Verificar cabimento, legitimidade, prazo residual,
-tribunal competente, polo processual (recorrente/recorrido).
+tribunal competente, polo processual (agravante/agravado).
 
-ETAPA 2 - PESQUISA: Consultar RI do tribunal, súmulas STJ/STF, IRDR,
-Temas repetitivos, precedentes vinculantes via web_search.
+ETAPA 2 - PESQUISA: Consultar RI do tribunal, súmulas STJ/STF, IRDR, temas
+repetitivos, precedentes vinculantes via web_search.
 
-ETAPA 3 - ANÁLISE: Identificar error in judicando e/ou error in procedendo;
-mapear fundamentos autônomos da decisão para refutação individualizada.
+ETAPA 3 - ANÁLISE: Identificar error in judicando e/ou in procedendo; mapear
+fundamentos autônomos da decisão para refutação individualizada.
 
-ETAPA 4 - PREQUESTIONAMENTO: Identificar dispositivos de lei federal e
-CF para prequestionamento; verificar óbices sumulares (Súmulas 5, 7, 83,
-211, 284, 356, 454 STJ; Súmulas 279, 280, 282, 283, 284, 356, 454 STF).
+ETAPA 4 - PREQUESTIONAMENTO: Identificar dispositivos de lei federal e CF;
+verificar óbices sumulares (Súmulas 5, 7, 83, 211, 284, 356, 454 STJ; Súmulas
+279, 280, 282, 283, 356 STF).
 
-ETAPA 5 - REDAÇÃO: Seguir estrutura da Parte VII deste prompt e
-formatação do 01_MASTER_ROM_V3.txt.
+ETAPA 5 - REDAÇÃO: Seguir estrutura da Parte VII deste prompt e formatação
+01_MASTER_ROM_V3.txt.
 
-ETAPA 6 - REVISÃO: Aplicar checklist da Parte XV e protocolo ortográfico
-da Parte XVII.
+ETAPA 6 - REVISÃO: Aplicar checklist da Parte XIX e protocolo ortográfico da
+Parte XXI.
 
 ═══════════════════════════════════════════════════════════════════════════════════
 
@@ -132,64 +165,63 @@ A. IDENTIFICAÇÃO PROCESSUAL
 
 [ ] Número completo do processo (incluindo dígitos verificadores)
 [ ] Juízo/Tribunal de origem (vara, comarca, câmara, subseção judiciária)
-[ ] Natureza da causa (cível, penal, trabalhista, tributária, etc.)
-[ ] Tribunal competente para o recurso
+[ ] Natureza da causa (cível, penal, trabalhista, tributária, executiva, família)
+[ ] Tribunal competente para o agravo interno (qual tribunal o relator integra)
 [ ] Câmara/Turma especializada (conforme RI do tribunal)
-[ ] Há recurso anterior no mesmo processo ou em processo conexo? (prevenção)
-[ ] POLO PROCESSUAL: o escritório representa o RECORRENTE ou o RECORRIDO?
+[ ] Há agravo anterior no mesmo processo ou em processo conexo? (prevenção)
+[ ] POLO PROCESSUAL: o escritório representa o AGRAVANTE ou AGRAVADO?
 [ ] Valor da causa atualizado (para cálculo de preparo)
 
 B. PARTES
 
-[ ] Recorrente: nome completo em CAIXA ALTA, qualificação (CPF/CNPJ,
-    endereço, estado civil, representante legal)
-[ ] Recorrido(s): nome(s) completo(s) e qualificação disponível
-[ ] Há litisconsortes? Se sim: cada litisconsorte está igualmente
-    representado? Há litisconsorte que recorre individualmente?
-[ ] Advogados: nome, OAB, endereço para intimações
+[ ] Agravante: nome completo em CAIXA ALTA, qualificação (CPF/CNPJ, endereço,
+    estado civil, representante legal)
+[ ] Agravado(s): nome(s) completo(s) e qualificação disponível
+[ ] Há litisconsortes? Se sim: cada um está igualmente representado?
+[ ] Advogados: nome, OAB, endereço para intimações (é possível usar e-mail?)
 [ ] Ministério Público: atua como parte ou fiscal da lei?
 
-C. DECISÃO RECORRIDA
+C. DECISÃO MONOCRÁTICA RECORRIDA
 
 [ ] Transcrição literal da decisão (obtida dos autos ou documento fornecido)
 [ ] Data da decisão e data de sua publicação/disponibilização
 [ ] Identificação do movimento/ID eletrônico nos autos
+[ ] Identificação do relator que proferiu a decisão
 [ ] Fundamentos autônomos da decisão (identificar e numerar cada um)
-[ ] Natureza da decisão (sentença, acórdão, decisão interlocutória,
-    despacho, decisão monocrática)
-[ ] Houve pedido de embargos de declaração? Se sim: foram acolhidos
-    ou rejeitados?
+[ ] Natureza da decisão (denegação de tutela antecipada, concessão de efeito
+    suspensivo, decisão sobre admissibilidade, etc.)
+[ ] Houve pedido de embargos de declaração? Se sim: foram acolhidos ou rejeitados?
 
 D. TEMPESTIVIDADE
 
-[ ] Data da publicação/disponibilização da decisão recorrida
-[ ] Prazo recursal (15 dias úteis, 5 dias corridos, 8 dias corridos, etc.)
-[ ] Se Fazenda Pública recorrente: prazo em dobro?
-[ ] Se litisconsorte recorre individualmente: data da sua própria intimação
+[ ] Data da publicação/disponibilização da decisão monocrática
+[ ] Prazo recursal (15 dias úteis)
+[ ] Se Fazenda Pública agravante: prazo em dobro?
+[ ] Se litisconsorte agrava individualmente: data da sua própria intimação
 [ ] Verificação de feriados locais (método 04_M_FERIADOS_PRAZOS.txt)
-[ ] Data-limite para protocolo
+[ ] Data-limite para protocolo do agravo
 [ ] Demonstrativo de tempestividade a ser incluído na peça
 
 E. TESE RECURSAL
 
-[ ] Qual o erro da decisão recorrida? (error in judicando ou in procedendo)
+[ ] Qual o erro da decisão monocrática? (error in judicando ou in procedendo)
 [ ] Quais dispositivos de lei federal foram violados ou mal interpretados?
 [ ] Quais dispositivos constitucionais foram violados?
 [ ] Há tratado internacional pertinente? (identificar nome, número, artigo)
-[ ] Há divergência jurisprudencial com outro tribunal? (identificar paradigma)
+[ ] Há divergência jurisprudencial entre tribunais? (identificar paradigmas)
 [ ] Há precedente vinculante favorável (art. 927 CPC)?
-[ ] Há fatos incontroversos nos autos que devem ser registrados para
-    futura qualificação jurídica (estratégia anti-Súmula 7/STJ)?
+[ ] Há fatos incontroversos nos autos que devem ser registrados (anti-Súmula 7 STJ)?
 [ ] Há súmula do STJ/STF contrária? (identificar e distinguir)
 [ ] Há tema repetitivo, IRDR ou IAC aplicável?
+[ ] A decisão carece de fundamentação adequada (art. 489, CPC)?
 
 F. DOCUMENTOS DISPONÍVEIS
 
-[ ] Cópia da petição inicial (ou denúncia/reclamação trabalhista)
+[ ] Cópia da petição inicial original
 [ ] Cópia da contestação/resposta (se apresentada)
 [ ] Procuração com poderes para recorrer
-[ ] Certidão ou comprovante de publicação da decisão recorrida
-[ ] Peças processuais essenciais (laudos, provas, decisões anteriores)
+[ ] Certidão ou comprovante de publicação da decisão monocrática
+[ ] Peças processuais essenciais (laudos, pareceres, decisões anteriores)
 [ ] Cálculo atualizado do crédito/débito (se aplicável)
 [ ] Comprovante de recolhimento do preparo (ou pedido de gratuidade)
 
@@ -197,49 +229,1504 @@ G. PREPARO E CUSTAS
 
 [ ] Valor do preparo calculado (custas + porte de remessa e retorno)
 [ ] Comprovante de recolhimento do preparo anexado?
-[ ] Recorrente é isento de preparo? (Fazenda Pública, MP, beneficiário
-    de gratuidade)
+[ ] Agravante é isento de preparo? (Fazenda Pública, MP, beneficiário de gratuidade)
 [ ] Se beneficiário de gratuidade: decisão que concedeu o benefício anexada?
 [ ] Se Fazenda Pública: intimação pessoal via ofício ou AR?
 
 H. PREQUESTIONAMENTO E ADMISSIBILIDADE FUTURA
 
-[ ] Dispositivos de lei federal prequestionados na decisão recorrida?
+[ ] Dispositivos de lei federal prequestionados na decisão monocrática?
 [ ] Dispositivos constitucionais prequestionados?
-[ ] Se não prequestionados: há necessidade de embargos de declaração
-    para suscitar omissão?
+[ ] Se não prequestionados: há necessidade de embargos de declaração?
 [ ] Há risco de óbice sumular (Súmulas 5, 7, 83, 211, 284, 356, 454 STJ)?
-[ ] Há repercussão geral reconhecida ou tema repetitivo afetado na matéria?
+[ ] Há repercussão geral reconhecida ou tema repetitivo afetado?
 
 ═══════════════════════════════════════════════════════════════════════════════════
 
-[PARTES III A XXII: ESTRUTURA COMPLETA V5.0 CONFORME PADRÃO ESTABELECIDO]
+PARTE III A VI: [CONFORME PROMPT_AGRAVO_INSTRUMENTO_V5.0.txt - PARTES I-VI]
 
-[Cada parte subsequente seguirá o mesmo padrão rigoroso do arquivo de
-referência 23_P_AGRAVO_INSTRUMENTO_TJ_TRF_V5_0.txt, adaptado à natureza
-específica do recurso, incluindo:]
+[As Partes III (Cabimento), IV (Legitimidade), V (Prazo) e VI (Regimento Interno)
+devem ser estruturadas conforme o paradigma PROMPT_AGRAVO_INSTRUMENTO_V5.0.txt,
+adaptado à natureza específica do agravo interno contra decisão monocrática.
 
-- Análise detalhada de cabimento e admissibilidade (5-8 páginas)
-- Legitimidade ativa/passiva com casos especiais (3-5 páginas)
-- Prazo e contagem com exemplos práticos (4-6 páginas)
-- Custas, preparo e gratuidade (4-5 páginas)
-- Regimento interno: consulta obrigatória e metodologia (3-4 páginas)
-- Estrutura redacional: 18-25 seções da peça (15-20 páginas)
-- Análise da fundamentação: art. 489 CPC inciso a inciso (8-12 páginas)
-- Direito material: estrutura normativa vertical completa (12-18 páginas)
-- Jurisprudência: IRDR, Temas, Súmulas, precedentes (10-15 páginas)
-- Prequestionamento: técnica e estratégia REsp/RE (12-18 páginas)
-- Efeito suspensivo e tutela antecipada recursal (6-10 páginas)
-- Distinguishing e overruling (4-6 páginas)
-- Modelos de parágrafos técnicos prontos (20-30 blocos)
-- Checklist final 100-120 itens (5-8 páginas)
-- Protocolo de verificação de precedentes (4-5 páginas)
-- Rigor ortográfico, gramatical e pontuação (6-8 páginas)
-- Integração com sistema ROM (3-4 páginas)
-- Contrarrazões (estrutura completa 8-12 páginas)
-- Sustentação oral e julgamento (3-5 páginas)
-- Embargos de declaração subsequentes (4-6 páginas)
-- Recursos extraordinários fase seguinte (6-10 páginas)
+Extensão esperada: 5-8 páginas por parte, totalizando 20-32 páginas.]
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE VII: ESTRUTURA REDACIONAL DA PEÇA
+
+APLICAÇÃO ESPECÍFICA AO AGRAVO INTERNO (CPC ART. 1.021)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+OBJETIVO DESTA PARTE:
+
+Fornecer estrutura completa para redação do AGRAVO INTERNO conforme CPC art. 1.021,
+incluindo:
+
+1. Fundamento legal: Art. 1.021, CPC (Decisões Monocráticas de Relatores)
+2. Prazos e tempestividade: 15 dias úteis
+3. 18 seções estruturais da peça
+4. Modelos de aberturas, transições e conclusões
+5. Protocolo de verificação de fundamentação (Art. 489, CPC)
+
+EXTENSÃO ESPERADA: 8-12 páginas
+
+A. FUNDAMENTO LEGAL ESPECÍFICO DO AGRAVO INTERNO
+
+Art. 1.021, CPC/2015:
+
+"Das decisões singulares proferidas por integrante de tribunal compete recurso,
+dentro do prazo de 15 (quinze) dias úteis, ao órgão especial ou ao pleno, conforme
+regimento interno.
+
+§ 1º O recurso será processado na forma prevista no Regimento Interno do tribunal.
+
+§ 2º Quando o tribunal tiver órgão especial, o regimento interno deve prever a
+possibilidade de apelação para esse órgão quando se tratar de causa de competência
+originária do tribunal."
+
+CARACTERÍSTICAS JURÍDICAS:
+
+1. NATUREZA RECURSAL: Recurso ordinário para corrigir erro de relator;
+
+2. DECISÕES RECORRÍVEIS: Todas as decisões monocráticas (denegatórias de tutela,
+   concessão de efeito suspensivo, admissibilidade, etc.);
+
+3. EXCLUDENTES DE RECORRIBILIDADE: Decisões proferidas por órgão colegiado
+   (câmara, turma, seção, plenário);
+
+4. PRAZO RECURSAL: 15 dias úteis, contados conforme art. 219, CPC (método
+   04_M_FERIADOS_PRAZOS.txt);
+
+5. EFEITO DO RECURSO: Devolutivo (leva questão ao tribunal), não suspensivo
+   (decisão continua surtindo efeitos);
+
+6. ÓRGÃO JULGADOR: Órgão Especial ou Pleno, conforme Regimento Interno do tribunal;
+
+7. FUNDAMENTAÇÃO OBRIGATÓRIA: Art. 489, CPC/2015 (dever de motivação adequada e
+   específica);
+
+8. CAUSA DE CASSAÇÃO: Error in judicando (violação de lei/jurisprudência) ou error
+   in procedendo (vício processual).
+
+B. DIFERENÇAS ENTRE AGRAVO INTERNO E AGRAVO DE INSTRUMENTO
+
+Aspecto              | Agravo Interno      | Agravo de Instrumento
+─────────────────────┼─────────────────────┼──────────────────────
+Decisão recorrida    | Monocrática (relator)| Interlocutória (tribunal)
+Tribunal competente  | Mesmo tribunal      | Tribunal superior
+Órgão julgador       | Órgão especial/pleno| Câmara/turma
+Prazo                | 15 dias úteis       | 15 dias úteis
+Efeito               | Devolutivo          | Devolutivo/suspensivo
+Preparo              | Sempre (salvo isenções) | Sempre (salvo isenções)
+Recurso seguinte     | REsp/RE (se STJ/STF)| REsp/RE (se STJ/STF)
+
+C. 18 SEÇÕES ESTRUTURAIS DO AGRAVO INTERNO
+
+SEÇÃO 1: RELATÓRIO E IDENTIFICAÇÃO
+
+Conteúdo:
+- Identificação completa (número agravo, tribunal, câmara/turma)
+- Partes em CAIXA ALTA (AGRAVANTE vs. AGRAVADO)
+- Advogados (nome, OAB, endereço para intimações)
+- Descrição breve do objeto
+
+Extensão: 1-2 parágrafos
+
+Modelo:
+"Trata-se de AGRAVO INTERNO interposto contra decisão monocrática proferida pelo
+Desembargador [Nome] em [data], nos autos do processo nº [número], originário de
+ação [tipo de ação] ajuizada por [AGRAVANTE] contra [AGRAVADO], perante a [Varal
+Cível de...]."
+
+SEÇÃO 2: PREMISSA DE FATO (NARRATIVA PROCESSUAL SUCINTA)
+
+Conteúdo:
+- Histórico processual em linhas gerais
+- Decisão monocrática: o que decidiu e por quê
+- Data da decisão e intimação
+- Por que foi recorrida
+- Situação processual atual
+
+Extensão: 2-3 parágrafos (máx. 1 página)
+
+Modelo:
+"A presente ação foi ajuizada em [data] com o fundamento de que [causa de pedir].
+O réu [agravado] foi regularmente intimado. Em [data], o juízo de primeira instância
+[descrever decisão de primeira instância].
+
+Inconformado, [agravante] interpôs apelação, que foi encaminhada a esta corte.
+Em [data], o Desembargador [nome] proferiu decisão monocrática [descrever
+decisão monocrática], negando-se [o que foi negado].
+
+Essa decisão foi [publicada/disponibilizada] em [data], iniciando-se o prazo para
+interposição do presente agravo."
+
+SEÇÃO 3: QUESTÃO JURÍDICA CONTROVERTIDA (IDENTIFICAÇÃO PRECISA)
+
+Conteúdo:
+- Questão jurídica bem delimitada
+- Não é narrativa de fatos, mas identificação da controvérsia normativa
+
+Extensão: 1 parágrafo
+
+Modelo:
+"A questão jurídica controvertida é a seguinte: É cabível a concessão de tutela
+antecipada de urgência em ação de alimentos quando demonstrada a necessidade do
+alimentando e a capacidade econômica do alimentante, ainda que não reste
+incontroverso o vínculo de filiação?"
+
+Ou:
+
+"Cinge-se a controvérsia a saber se viola o art. [X] da Lei [Y] a decisão
+monocrática que [descrever o que a decisão fez]."
+
+SEÇÃO 4: TRANSCRIÇÃO LITERAL DA DECISÃO RECORRIDA
+
+Conteúdo:
+- INTEGRALIDADE da decisão monocrática
+- Preservação exata da redação original
+- Numeração clara da ementa (se houver) e dispositivo
+
+Extensão: Conforme extensão da decisão (em geral, 1-3 páginas)
+
+Modelo:
+"A decisão monocrática recorrida, cujo teor integral passa a ser transcrito,
+assim dispôs:
+
+'DECISÃO
+
+Vistos etc.
+
+[transcrição completa da decisão]
+
+Isso posto, NEGA-SE [ou CONCEDE-SE] a tutela [...]
+
+Intimem-se.'
+
+[Fim da transcrição da decisão]"
+
+SEÇÃO 5: IDENTIFICAÇÃO DOS FUNDAMENTOS AUTÔNOMOS
+
+Conteúdo:
+- Numeração clara de cada fundamento da decisão
+- Transcrição de trechos relevantes
+- Preparação para refutação individualizada na seção seguinte
+
+Extensão: 1-2 parágrafos
+
+Modelo:
+"A decisão monocrática recorrida está fundada em três fundamentos autônomos,
+identificados como segue:
+
+FUNDAMENTO AUTÔNOMO I: [Transcrever trecho da decisão]
+
+FUNDAMENTO AUTÔNOMO II: [Transcrever trecho da decisão]
+
+FUNDAMENTO AUTÔNOMO III: [Transcrever trecho da decisão]
+
+Passa-se, portanto, à análise e refutação de cada um desses fundamentos."
+
+SEÇÃO 6: REFUTAÇÃO DO FUNDAMENTO AUTÔNOMO I (ERROR IN JUDICANDO)
+
+Conteúdo:
+- Demonstração de que o fundamento viola lei federal, Constituição ou jurisprudência
+- Citação de dispositivos aplicáveis
+- Citação de precedentes (STF, STJ)
+- Demonstração de erro na aplicação da lei
+
+Extensão: 2-3 parágrafos
+
+Modelo:
+"O primeiro fundamento autônomo, segundo o qual [resumir fundamento], está
+manifestamente infundado pelos seguintes motivos:
+
+1º) Viola expressamente o art. [X] da Lei [Y], que estabelece [transcrever
+dispositivo]. A ratio decidendi desse dispositivo é [explicar], razão pela qual
+a decisão monocrática [descrever como violou].
+
+2º) Contraria jurisprudência pacífica e reiterada do STJ, como demonstram os
+seguintes precedentes:
+
+- REsp [número]/[estado], Rel. Min. [nome], j. [data], DJe [data]: '[ementa
+completa]'
+- REsp [número]/[estado], Rel. Min. [nome], j. [data], DJe [data]: '[ementa
+completa]'
+
+3º) A Súmula [número] do STJ também é aplicável ao caso, dispondo que '[enunciado
+da súmula]'. A decisão monocrática, ao [descrever decisão], desatendeu frontalmente
+esse enunciado sumulado."
+
+SEÇÃO 7: REFUTAÇÃO DO FUNDAMENTO AUTÔNOMO II (ERROR IN PROCEDENDO)
+
+Conteúdo:
+- Demonstração de vício processual (falta de fundamentação, omissão, etc.)
+- Invocação do art. 489, CPC (dever de fundamentação)
+- Demonstração de prejuízo processual
+
+Extensão: 1-2 parágrafos
+
+Modelo:
+"O segundo fundamento autônomo apresenta vício processual. A decisão monocrática
+deixou de analisar matéria invocada pelo agravante [descrever matéria]. Isso
+constitui error in procedendo, violando o art. 489 do CPC, que exige fundamentação
+adequada e específica.
+
+Especificamente, o agravante arguiu [descrever argumento], ao qual o relator não
+respondeu. Essa omissão de fundamentação é causa de nulidade da decisão."
+
+SEÇÃO 8: REFUTAÇÃO DO FUNDAMENTO AUTÔNOMO III (SÍNTESE)
+
+[Repetir estrutura das seções 6-7, conforme aplicável]
+
+SEÇÃO 9: DEFESA POSITIVA DA TESE FAVORÁVEL AO AGRAVANTE
+
+Conteúdo:
+- Não apenas negar o que é errado (seções 6-8), mas afirmar o que é certo
+- Fundamentação positiva e robusta
+- Estrutura normativa em 5 níveis (CF → tratados → leis → infralegais → enunciados)
+
+Extensão: 3-5 parágrafos
+
+Modelo:
+"Além da infundabilidade dos argumentos invocados pela decisão monocrática, a tese
+favorável ao agravante repousa em fundamentos sólidos:
+
+1. FUNDAMENTO CONSTITUCIONAL:
+
+O art. [X], CF/88 estabelece [descrever fundamento constitucional]. Esse dispositivo
+constitucional garantiza ao agravante [descrever direito], razão pela qual a decisão
+monocrática, ao [descrever decisão], violou norma constitucional de primeira
+envergadura.
+
+2. FUNDAMENTO LEGAL (LEI FEDERAL):
+
+Art. [X] da Lei [número], que determina [transcrever dispositivo]. A aplicação
+desse dispositivo ao caso concreto demonstra que [descrever aplicação], razão pela
+qual a tese do agravante é correta.
+
+3. JURISPRUDÊNCIA CONVERGENTE:
+
+O STJ, em iterados precedentes, já consolidou entendimento favorável ao agravante:
+
+- REsp [número]/[estado], '[ementa]'
+- REsp [número]/[estado], '[ementa]'
+- Informativo STJ nº [número]: '[orientação atual]'
+
+4. SÚMULAS APLICÁVEIS:
+
+A Súmula [número] do STJ estabelece '[enunciado sumulado]', que se aplica
+perfeitamente ao caso.
+
+5. FATOS INCONTROVERSOS:
+
+Registra-se que os seguintes fatos encontram-se incontroversos nos autos:
+[listar fatos] (conforme art. 342, CPC e Súmula 7, STJ, para evitar reexame de
+provas)."
+
+SEÇÃO 10: PREQUESTIONAMENTO EXPRESSO
+
+Conteúdo:
+- Expressa sinalização de invocação de dispositivos federais e constitucionais
+- Objetivo: fundamentar futuro REsp/RE
+
+Extensão: 1 parágrafo
+
+Modelo:
+"Ressalte-se a expressa invocação dos seguintes dispositivos, com vistas ao
+eventual conhecimento de futuro Recurso Especial ou Extraordinário:
+
+a) Art. [X] da Constituição Federal de 1988 - [descrição do dispositivo];
+b) Art. [X] da Lei [número] (Lei Federal de Direito Material) - [descrição];
+c) Súmula [número] do STJ - '[enunciado]' (PREQUESTIONADA no recurso);
+d) Súmula Vinculante nº [número] do STF - '[enunciado]' (PREQUESTIONADA)."
+
+SEÇÃO 11: ANTECIPAÇÃO DE ÓBICES SUMULARES
+
+Conteúdo:
+- Enfrentar previamente as Súmulas 5, 7, 83, etc. STJ
+- Demonstrar que não há reexame de fatos/provas
+- Distinguir questões de direito de questões de fato
+
+Extensão: 1-2 parágrafos
+
+Modelo:
+"Não se trata, à evidência, de reexame de fatos e provas vedado pela Súmula 7, STJ,
+porquanto a controvérsia reside exclusivamente em questão de DIREITO: [descrever
+questão de direito].
+
+A prova dos fatos [listar fatos] encontra-se nos autos e é incontroversa. O que se
+discute é a qualificação jurídica dos fatos [descrever qualificação], que é questão
+de direito puro, passível de apreciação recursalmente.
+
+Tampouco se configura hipótese da Súmula 5, STJ [se aplicável], pois [descrever]."
+
+SEÇÃO 12: DISTINGUISHING (SE HOUVER PRECEDENTE APARENTEMENTE CONTRÁRIO)
+
+Conteúdo:
+- Identificar o precedente que aparentemente contraria
+- Demonstrar diferenças fáticas ou jurídicas
+- Concluir que precedente não se aplica ao caso concreto
+
+Extensão: 2-3 parágrafos
+
+Modelo:
+"Conquanto a sentença [ou agravado em contrarrazões] cite o precedente REsp
+[número]/[estado], essa invocação não prospera.
+
+O REsp [número] tratava de caso materialmente diverso: [descrever fatos do
+precedente]. No caso concreto, diferentemente, [descrever fatos atuais].
+
+A diferença fática é relevante jurídica e substancialmente porque [explicar relevância].
+Portanto, a ratio decidendi do precedente REsp [número] [não se aplica/está
+superada] ante as diferenças aqui demonstradas."
+
+SEÇÃO 13: OVERRULING (SE O PRECEDENTE ESTÁ SUPERADO)
+
+Conteúdo:
+- Demonstrar que precedente anterior foi superado
+- Por mudança legislativa, precedentes mais recentes, evolução jurisprudencial
+
+Extensão: 1-2 parágrafos
+
+Modelo:
+"O precedente REsp [número], invocado pela decisão monocrática, encontra-se
+SUPERADO pelos seguintes motivos:
+
+a) MUDANÇA LEGISLATIVA: A Lei [nova], publicada em [data], revogou Lei anterior
+   que fundamentava o REsp [número], alterando substancialmente o regime jurídico
+   da matéria;
+
+b) PRECEDENTES MAIS RECENTES: O próprio STJ, em julgados posteriores (REsp
+   [número], REsp [número], Informativo STJ nº [número]), consolidou entendimento
+   diverso;
+
+c) EVOLUÇÃO JURISPRUDENCIAL: A orientação atual dominante no STJ é distinta da
+   posição outrora consolidada no precedente anterior."
+
+SEÇÃO 14: EFEITO SUSPENSIVO OU TUTELA ANTECIPADA RECURSAL
+
+Conteúdo:
+- Se aplicável ao caso (ex: denegação de tutela antecipada)
+- Requisitos: fumus boni juris + periculum in mora
+- Demonstração de que o próprio agravo carece de efeito suspensivo
+
+Extensão: 1 parágrafo (se aplicável)
+
+Modelo:
+"Requer-se, ainda, a concessão de TUTELA ANTECIPADA RECURSAL (art. 300, CPC)
+para [descrever provimento pretendido], ante a demonstração de:
+
+a) FUMUS BONI JURIS: A tese recursal apresenta fundamento jurídico robusto, como
+   demonstrado pelas seções 9-12 acima;
+
+b) PERICULUM IN MORA: Mantendo-se em vigor a decisão monocrática, haverá dano
+   [descrever dano específico], que será [irreparável/de difícil reparação]."
+
+SEÇÃO 15: PEDIDOS ESPECÍFICOS E DETERMINADOS
+
+Conteúdo:
+- Pedidos claros, específicos e determinados (art. 326, CPC)
+- Não cabe pedido vago ou genérico
+
+Extensão: 1 parágrafo
+
+Modelo:
+"Pelos fundamentos expostos, o agravante requer:
+
+a) O PROVIMENTO DO PRESENTE AGRAVO INTERNO, cassando-se a decisão monocrática
+   de [data], que [descrever o que a decisão fez];
+
+b) O RECONHECIMENTO de que [tese jurídica], e em consequência:
+   i) [Pedido específico decorrente da tese], ou
+   ii) [Pedido alternativo], conforme melhor juízo deste tribunal;
+
+c) SUBSIDIARIAMENTE, a remessa dos autos ao [Órgão Especial/Pleno], para
+   julgamento [se aplicável]."
+
+SEÇÃO 16: REQUERIMENTOS INSTRUMENTAIS
+
+Conteúdo:
+- Pedido de julgamento prioritário
+- Pedido de sustentação oral
+- Pedido de inclusão em pauta
+- Pedido de medidas liminares
+
+Extensão: 1 parágrafo (conforme aplicabilidade)
+
+Modelo:
+"Requer-se, ainda:
+
+a) O julgamento prioritário deste agravo interno, ante [descrever urgência];
+b) Sustentação oral pela parte agravante, conforme prerrogativa da OAB;
+c) Inclusão em pauta da próxima sessão de julgamento do tribunal."
+
+SEÇÃO 17: FUNDAMENTAÇÃO DE ADMISSIBILIDADE
+
+Conteúdo:
+- Demonstração de que recurso é admissível
+- Requisitos de admissibilidade verificados
+- Não há óbices processuais
+
+Extensão: 1 parágrafo
+
+Modelo:
+"O presente agravo interno atende integralmente aos requisitos de admissibilidade:
+
+a) CABIMENTO: Recurso cabível contra decisão monocrática (art. 1.021, CPC);
+b) TEMPESTIVIDADE: Interposto dentro do prazo de 15 dias úteis da publicação da
+   decisão (comprovante anexado);
+c) PREPARO: Custas recolhidas em [data] (comprovante anexado);
+d) LEGITIMIDADE: O agravante é parte legítima no processo original;
+e) INTERESSE RECURSAL: A decisão criou sucumbência e existe utilidade do recurso."
+
+SEÇÃO 18: CONCLUSÃO
+
+Conteúdo:
+- Síntese final dos argumentos
+- Apelo ao tribunal para provimento do agravo
+- Fórmula conclusiva com data e assinatura
+
+Extensão: 1-2 parágrafos
+
+Modelo:
+"Em síntese, a decisão monocrática recorrida merece ser cassada porquanto:
+
+1º) Viola expressamente dispositivos de lei federal (art. [X], Lei [Y]);
+2º) Contraria jurisprudência pacífica e consolidada do STJ;
+3º) Carece de fundamentação adequada, nos termos do art. 489, CPC;
+4º) Causa prejuízo injustificado ao agravante, [descrever prejuízo].
+
+Pelos fundamentos expostos, respeitosamente requer-se o PROVIMENTO do presente
+agravo interno, cassando-se a decisão monocrática recorrida e conferindo-se ao
+agravante o direito que lhe assiste [descrever direito específico].
+
+Brasília, [data].
+
+[ASSINATURA]
+[Advogado(a)]
+OAB/[UF] nº [NÚMERO]"
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE VIII: APLICAÇÃO DA NORMA NO TEMPO - DIREITO INTERTEMPORAL
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+OBJETIVO DESTA PARTE:
+
+Fornecer fundamentos completos sobre DIREITO INTERTEMPORAL aplicável ao AGRAVO
+INTERNO, incluindo:
+
+1. LINDB/LICC - Lei de Introdução às Normas do Direito Brasileiro
+2. Direito intertemporal processual (transição CPC/1973 → CPC/2015)
+3. Técnicas recursais para suscitar questões de direito intertemporal
+4. Aplicação específica ao agravo interno
+5. Checklist completo
+
+EXTENSÃO ESPERADA: 8-12 páginas
+
+A. FUNDAMENTOS CONSTITUCIONAIS E LEGAIS DO DIREITO INTERTEMPORAL
+
+A.1. CONSTITUIÇÃO FEDERAL - ART. 5º, XXXVI (CLÁUSULA PÉ)
+
+"a lei não prejudicará o direito adquirido, o ato jurídico perfeito e a coisa
+julgada"
+
+IMPORTÂNCIA PARA AGRAVO INTERNO:
+
+a) Assegura irretroatividade de lei nova sobre direitos consolidados;
+b) Protege três institutos jurídicos fundamentais:
+   - Direito adquirido: direito que se incorporou ao patrimônio jurídico
+   - Ato jurídico perfeito: ato já consumado segundo lei de sua época
+   - Coisa julgada: decisão transitada em julgado
+c) Base constitucional para interposição de Recurso Extraordinário (art. 102, III,
+   "a", CF) caso tribunal desrespeite essa garantia;
+d) Deve ser PREQUESTIONADA em toda decisão monocrática que viole direito adquirido.
+
+PREQUESTIONAMENTO RECOMENDADO:
+
+"Ressalte-se a expressa invocação do art. 5º, XXXVI, CF/88, que garante a
+irretroatividade da lei sobre direito adquirido, ato jurídico perfeito e coisa
+julgada, para eventual fundamentação de futuro Recurso Extraordinário (art. 102,
+III, 'a', CF)."
+
+A.2. LEI DE INTRODUÇÃO ÀS NORMAS DO DIREITO BRASILEIRO (LINDB)
+
+Art. 6º da LINDB (Decreto-Lei nº 4.657/1942, com redação da Lei nº 12.376/2010):
+
+"Art. 6º A Lei em vigor terá efeito imediato e geral, respeitados o ato jurídico
+perfeito, o direito adquirido e a coisa julgada.
+
+§ 1º Reputa-se ato jurídico perfeito o já consumado segundo a lei vigente ao tempo
+em que se efetuou.
+
+§ 2º Consideram-se adquiridos assim os direitos que o seu titular, ou alguém por
+ele, possa exercer, como aqueles cujo começo do exercício tenha termo pré-fixo, ou
+condição pré-estabelecida inalterável, a arbítrio de outrem.
+
+§ 3º Chama-se coisa julgada ou caso julgado a decisão judicial de que já não caiba
+recurso."
+
+IMPORTÂNCIA PARA AGRAVO INTERNO:
+
+Este dispositivo legal DEVE ser invocado em agravo interno que envolva questão de
+direito intertemporal, pois:
+
+a) Estabelece o princípio da aplicação IMEDIATA da lei nova (não é retroativa,
+   mas é imediata);
+b) Define os LIMITES dessa aplicação: respeito ao ato jurídico perfeito, direito
+   adquirido e coisa julgada;
+c) Conceitua juridicamente cada um dos três institutos de proteção;
+d) Fundamenta ulterior interposição de Recurso Especial (art. 105, III, "a", CF)
+   caso STJ viole art. 6º, LINDB.
+
+ESTRUTURA DOS TRÊS INSTITUTOS PROTEGIDOS:
+
+1. ATO JURÍDICO PERFEITO (§ 1º, LINDB)
+
+CONCEITO LEGAL:
+"Ato já consumado segundo a lei vigente ao tempo em que se efetuou."
+
+ELEMENTOS:
+a) Consumação: todos os elementos constitutivos do ato foram realizados;
+b) Conformidade com lei anterior: o ato foi praticado em conformidade com lei
+   da época;
+c) Tempus regit actum: a lei da época do ato rege a sua validade.
+
+EXEMPLOS TÍPICOS:
+- Contrato celebrado conforme lei anterior (não pode lei nova invalidá-lo)
+- Casamento celebrado conforme lei anterior
+- Testamento conforme lei anterior
+- Ato processual realizado conforme CPC/1973 (não pode CPC/2015 invalidá-lo)
+
+TÉCNICA RECURSAL:
+"A decisão monocrática violou art. 6º, § 1º, LINDB ao desconstitui ato jurídico
+perfeito [descrever ato], que foi validamente celebrado em [data] conforme lei
+vigente à época. Lei nova [descrever lei], promulgada posteriormente, não pode
+retroativamente invalidar ato jurídico perfeito."
+
+PROTEÇÃO ESPECIAL EM AGRAVO INTERNO:
+Em agravo interno, muitas vezes uma decisão monocrática tenta reformar ato processual
+pretérito. Se esse ato foi praticado sob lei anterior (ex: CPC/1973), a decisão
+monocrática não pode invalidá-lo invocando lei nova (CPC/2015).
+
+Exemplo: "Embora CPC/2015 tenha alterado regra de competência, essa alteração não
+pode atingir ato processual realizado sob CPC/1973 (conforme art. 14, CPC)."
+
+2. DIREITO ADQUIRIDO (§ 2º, LINDB)
+
+CONCEITO LEGAL:
+"Direitos que o seu titular, ou alguém por ele, possa exercer, como aqueles cujo
+começo do exercício tenha termo pré-fixo, ou condição pré-estabelecida inalterável,
+a arbítrio de outrem."
+
+REQUISITOS PARA CONFIGURAÇÃO:
+a) Fato aquisitivo COMPLETO: todos os pressupostos fáticos e jurídicos para a
+   aquisição devem ter ocorrido sob lei anterior;
+b) Incorporação ao patrimônio jurídico: o direito integra a esfera jurídica do
+   titular, ainda que não exercido;
+c) Exercibilidade: o titular pode exercer imediatamente ou a termo/condição
+   pré-fixada.
+
+DISTINÇÃO FUNDAMENTAL: DIREITO ADQUIRIDO vs. EXPECTATIVA DE DIREITO
+
+Direito adquirido: pressupostos TODOS preenchidos sob lei anterior. Exemplo:
+aposentadoria requerida e CONCEDIDA sob lei anterior (direito adquirido à regra de
+cálculo da época).
+
+Expectativa de direito: pressupostos NÃO todos preenchidos. Exemplo: tempo de
+contribuição INSUFICIENTE quando lei é alterada (expectativa de direito, não
+direito adquirido).
+
+Lei nova PODE atingir expectativas, mas NÃO pode atingir direitos adquiridos
+(proteção constitucional e legal).
+
+CASOS TÍPICOS DE DIREITO ADQUIRIDO:
+
+a) APOSENTADORIA: Direito adquirido às regras vigentes quando preenchidos TODOS os
+   requisitos (Súmula 359, STF: "Ressalvada a revisão prevista em lei, os proventos
+   da inatividade regulam-se pela lei vigente ao tempo em que o militar, ou o
+   servidor civil, reuniu os requisitos necessários");
+
+b) CONTRATO DE TRABALHO: Direito adquirido às regras vigentes à época da
+   celebração (tempus regit actum);
+
+c) DIREITOS PATRIMONIAIS: Direito adquirido à regra de cálculo vigente à época
+   do fato gerador (ex: aposentadoria, pensão, alimentos);
+
+d) DIREITOS SUCESSÓRIOS: Direito adquirido à regra vigente à época da abertura
+   da sucessão (data do óbito).
+
+TÉCNICA RECURSAL PARA ALEGAR DIREITO ADQUIRIDO:
+
+"A decisão monocrática violou art. 6º, § 2º, LINDB ao aplicar Lei [nova] a
+direito que já havia sido adquirido pelo agravante sob Lei [anterior].
+
+Demonstra-se:
+
+ETAPA 1 - Data do fato aquisitivo completo: Em [data], o agravante [descrever
+fato aquisitivo];
+
+ETAPA 2 - Lei vigente à época: À época, vigia Lei [anterior], que estabelecia
+[transcrever dispositivo];
+
+ETAPA 3 - Preenchimento de TODOS os requisitos: Todos os requisitos legais foram
+preenchidos sob Lei [anterior]: [listar requisitos e sua data de preenchimento];
+
+ETAPA 4 - Incorporação ao patrimônio: O direito foi incorporado ao patrimônio
+jurídico do agravante em [data], mediante [descrever ato];
+
+ETAPA 5 - Aplicação indevida de lei nova: A decisão monocrática, entretanto,
+aplicou Lei [nova], publicada em [data posterior], que alterou o regime jurídico;
+
+ETAPA 6 - Invocação da proteção constitucional e legal: Tal aplicação viola art.
+5º, XXXVI, CF e art. 6º, § 2º, LINDB, que protegem direito adquirido."
+
+3. COISA JULGADA MATERIAL (§ 3º, LINDB + Art. 502, CPC)
+
+CONCEITO LEGAL (LINDB § 3º):
+"Decisão judicial de que já não caiba recurso."
+
+CONCEITO PROCESSUAL (Art. 502, CPC):
+"Autoridade que torna imutável e indiscutível a decisão de mérito não mais sujeita
+a recurso."
+
+PROTEÇÃO CONSTITUCIONAL:
+Art. 5º, XXXVI, CF/88: proteção máxima à coisa julgada (não pode ser modificada
+por lei superveniente ou por decisão posterior).
+
+EFEITOS DA COISA JULGADA:
+
+a) IMUTABILIDADE: Decisão não pode ser alterada no mesmo processo, nem por outro
+   processo;
+
+b) INDISCUTIBILIDADE: Questão decidida não pode ser rediscutida entre as mesmas
+   partes;
+
+c) EFICÁCIA PRECLUSIVA: Questões que poderiam ter sido alegadas, mas não foram,
+   consideram-se deduzidas e repelidas (matéria precluída).
+
+LEI NOVA E COISA JULGADA - REGRA ABSOLUTA:
+
+Lei superveniente NÃO pode desfazer ou modificar coisa julgada, MESMO QUE:
+
+a) Declare inconstitucional a lei que fundamentou a decisão;
+b) Revogue a lei que fundamentou a decisão;
+c) Altere entendimento jurisprudencial consolidado;
+d) Crie regime jurídico totalmente diverso.
+
+EXCEÇÃO (DOUTRINA E JURISPRUDÊNCIA):
+
+Ação rescisória fundada em inconstitucionalidade declarada pelo STF em controle
+concentrado (art. 966, V, CPC) - mas mesmo assim, requer novo processo (rescisória),
+não invalida a coisa julgada automaticamente.
+
+APLICAÇÃO ESPECÍFICA AO AGRAVO INTERNO:
+
+Agravo interno que visa cassação de decisão monocrática porque essa decisão
+violou coisa julgada anterior.
+
+Exemplo: "A decisão monocrática recorrida, ao [descrever o que fez], rediscutiu
+questão já julgada na ação de [número], que transitou em julgado em [data].
+Tal rediscussão viola coisa julgada, protegida pelo art. 5º, XXXVI, CF e art. 6º,
+§ 3º, LINDB."
+
+TÉCNICA RECURSAL:
+
+"ETAPA 1 - Demonstrar existência de decisão anterior transitada em julgado:
+Em [data], foi proferida sentença [ou acórdão] que decidiu que [descrever decisão
+anterior]. Essa decisão transitou em julgado em [data], mediante [descrever fato
+que evidencia trânsito].
+
+ETAPA 2 - Demonstrar identidade de partes, causa de pedir e pedido: A presente
+ação [ou questão] envolve as mesmas partes [identidades], a mesma causa de pedir
+[descrição] e o mesmo pedido [descrição].
+
+ETAPA 3 - Demonstrar que decisão monocrática rediscute coisa julgada: A decisão
+monocrática recorrida, ao [descrever o que fez], rediscutiu questão já decidida
+na ação anterior, violando coisa julgada.
+
+ETAPA 4 - Invocação da proteção: Tal violação afeta norma constitucional (art. 5º,
+XXXVI, CF) e Lei Federal (art. 6º, § 3º, LINDB, e art. 502, CPC)."
+
+B. PRINCÍPIOS DE DIREITO INTERTEMPORAL
+
+B.1. IRRETROATIVIDADE DA LEI (REGRA GERAL)
+
+CONCEITO:
+Lei nova não retroage para atingir fatos passados, salvo disposição expressa em
+contrário.
+
+FUNDAMENTO:
+- Art. 5º, XXXVI, CF/88
+- Art. 6º, caput, LINDB
+
+EXCEÇÕES À IRRETROATIVIDADE (RARAS):
+
+a) Lei expressamente retroativa (desde que não viole direito adquirido, ato
+   jurídico perfeito ou coisa julgada);
+
+b) Lei penal mais benéfica (art. 5º, XL, CF/88): "a lei penal não retroagirá,
+   salvo para beneficiar o réu";
+
+c) Lei interpretativa (doutrina minoritária - lei que apenas declara o sentido
+   sempre existente de lei anterior);
+
+d) Lei de ordem pública (doutrina minoritária, com forte contestação).
+
+TÉCNICA RECURSAL:
+
+"Sempre que a decisão monocrática aplicar lei nova a fatos ocorridos sob lei
+anterior [sem se enquadrar em exceções acima], há violação de irretroatividade.
+Deve-se demonstrar:
+
+1. Data do fato ou ato jurídico praticado;
+2. Lei vigente à época do fato/ato;
+3. Lei aplicada pela decisão monocrática (lei nova);
+4. Demonstração de que lei nova não é de natureza excepcional;
+5. Invocação de art. 5º, XXXVI, CF e art. 6º, LINDB."
+
+B.2. APLICAÇÃO IMEDIATA (NÃO RETROATIVA, MAS IMEDIATA)
+
+CONCEITO:
+Lei nova tem aplicação IMEDIATA aos casos futuros, mas NÃO retroage aos fatos
+passados. Efeitos futuros de atos passados podem ser regulados por lei nova.
+
+EXEMPLO PRÁTICO:
+Contrato de locação celebrado em 2010 por prazo indeterminado. Lei nova de 2020
+altera regra de reajuste de aluguel.
+
+- O contrato (ato perfeito) é válido conforme lei de 2010;
+- Reajustes ocorridos ANTES de 2020: regidos por lei de 2010;
+- Reajustes ocorridos DEPOIS de 2020: regidos por lei de 2020.
+
+APLICAÇÃO PROCESSUAL:
+Lei processual nova tem aplicação IMEDIATA (conforme art. 14, CPC):
+
+"Art. 14. A norma processual não retroagirá e será aplicável imediatamente aos
+processos em curso, respeitados os atos processuais praticados e as situações
+jurídicas consolidadas sob a vigência da norma revogada."
+
+B.3. PRINCÍPIO DO TEMPUS REGIT ACTUM
+
+CONCEITO:
+"O tempo rege o ato": a lei da época em que o ato foi praticado é a lei aplicável
+a esse ato.
+
+APLICAÇÃO:
+
+a) VALIDADE DE ATOS E NEGÓCIOS JURÍDICOS: verificada pela lei vigente à época;
+
+b) PRODUÇÃO DE EFEITOS: efeitos futuros podem ser regulados por lei nova, mas a
+   validade do ato permanece vinculada à lei de sua prática;
+
+c) CAPACIDADE DAS PARTES: aferida pela lei vigente à época do ato;
+
+d) FORMA DO ATO: aferida pela lei vigente à época do ato.
+
+TÉCNICA RECURSAL:
+
+"Sempre que a decisão monocrática invalidar ato praticado sob lei anterior,
+demonstrar que:
+
+1. O ato era válido segundo a lei vigente à época de sua prática;
+2. Lei nova não pode retroagir para invalidar ato perfeito;
+3. Aplica-se o tempus regit actum [art. 6º, LINDB]."
+
+C. DIREITO INTERTEMPORAL PROCESSUAL
+
+C.1. TRANSIÇÃO CPC/1973 → CPC/2015
+
+NORMA FUNDAMENTAL: Art. 14, CPC/2015
+
+"A norma processual não retroagirá e será aplicável imediatamente aos processos
+em curso, respeitados os atos processuais praticados e as situações jurídicas
+consolidadas sob a vigência da norma revogada."
+
+INTERPRETAÇÃO:
+
+a) Norma processual tem aplicação IMEDIATA (não retroativa);
+
+b) Atos processuais já praticados sob lei anterior permanecem VÁLIDOS;
+
+c) Situações jurídicas consolidadas (preclusão, coisa julgada, decadência,
+   prescrição consumada) permanecem VÁLIDAS;
+
+d) Atos processuais FUTUROS seguem lei nova.
+
+REGRA 1: PROCESSOS EM CURSO
+
+Processos iniciados no CPC/1973 e pendentes na vigência do CPC/2015: aplicação
+IMEDIATA do CPC/2015 aos atos futuros, mantendo-se válidos os atos pretéritos.
+
+REGRA 2: PRAZOS EM CURSO
+
+Art. 1.046, § 1º, combinado com art. 219, CPC/2015: prazo iniciado sob CPC/1973
+continua sendo contado em dias corridos; prazo INICIADO sob CPC/2015 (após
+18/03/2016) conta-se em dias úteis.
+
+Enunciado 145 do FPPC: "Os prazos que se iniciaram antes da vigência do CPC/2015
+continuam a correr na forma da legislação anterior, inclusive quanto aos critérios
+de contagem (dias corridos ou dias úteis)."
+
+REGRA 3: RECURSOS INTERPOSTOS
+
+Recurso interposto ANTES de 18/03/2016: julgamento segue CPC/1973 quanto aos
+requisitos de admissibilidade (prazo, preparo, forma).
+
+Recurso interposto A PARTIR de 18/03/2016: julgamento segue CPC/2015.
+
+REGRA 4: RECURSOS CONTRA DECISÕES PROFERIDAS NO CPC/1973
+
+Decisão proferida em 2015 (CPC/1973 ainda vigente), mas recurso interposto em
+2016 (CPC/2015 já vigente): aplicam-se as regras CPC/2015 quanto à interposição,
+mas respeitam-se atos e prazos CPC/1973.
+
+CASOS TÍPICOS DE DIREITO INTERTEMPORAL PROCESSUAL:
+
+CASO 1: PRAZO PARA APELAÇÃO
+
+Sentença publicada em fevereiro/2016 (CPC/1973): prazo de 15 dias CORRIDOS.
+Sentença publicada em abril/2016 (CPC/2015): prazo de 15 dias ÚTEIS.
+
+Aplicação ao agravo interno: se decisão monocrática foi proferida em 2015, o prazo
+para agravo é 15 dias CORRIDOS (conforme CPC/1973). Se proferida em 2016, 15 dias
+ÚTEIS (conforme CPC/2015).
+
+CASO 2: EFEITO DA APELAÇÃO
+
+Sentença proferida em 2015: efeito devolutivo E suspensivo (regra CPC/1973, art.
+520, I).
+Sentença proferida em 2016: efeito devolutivo APENAS (regra CPC/2015, art. 1.012).
+
+CASO 3: AGRAVO RETIDO
+
+Decisão interlocutória proferida em 2015: cabia agravo retido (CPC/1973, art. 523).
+Decisão interlocutória proferida em 2016: NÃO cabe agravo retido (extinto pelo
+CPC/2015); verifica-se cabimento de agravo de instrumento (art. 1.015, CPC/2015).
+
+CASO 4: EMBARGOS INFRINGENTES
+
+Acórdão NÃO unânime proferido em 2015: cabiam embargos infringentes (CPC/1973, art.
+530).
+Acórdão NÃO unânime proferido em 2016: NÃO cabem embargos infringentes (extintos
+pelo CPC/2015); técnica de voto vencido incorporada ao acórdão (art. 942, CPC).
+
+C.2. CASOS ESPECÍFICOS DE DIREITO INTERTEMPORAL QUE PODEM GERAR AGRAVO INTERNO
+
+CASO 1: DECISÃO MONOCRÁTICA APLICA LEI NOVA A ATO DO CPC/1973
+
+Situação: Relator profere decisão em 2016 (CPC/2015 vigente) e invalida ato
+processual realizado em 2014 sob CPC/1973.
+
+Agravo: Fundamentar na violação de art. 14, CPC/2015 c/c art. 6º, LINDB
+(proteção de ato jurídico perfeito).
+
+"A decisão monocrática recorrida, ao invalidar [descrever ato], que foi realizado
+em [data] conforme CPC/1973, violou art. 14, CPC/2015, que protege atos
+processuais já praticados."
+
+CASO 2: MUDANÇA DE REGIME JURÍDICO APÓS CONSOLIDAÇÃO DE DIREITO
+
+Situação: Direito foi adquirido sob Lei A; Lei B nova altera regime; decisão
+monocrática aplica Lei B ao direito já adquirido sob Lei A.
+
+Agravo: Fundamentar em violação de art. 6º, § 2º, LINDB (proteção de direito
+adquirido).
+
+CASO 3: INTERPRETAÇÃO DE NORMA SOBREVINDA AFETA COISA JULGADA
+
+Situação: Decisão anterior transitou em julgado; lei nova é interpretada de forma
+a afastar a aplicação da decisão julgada.
+
+Agravo: Fundamentar em violação de art. 5º, XXXVI, CF + art. 6º, § 3º, LINDB
+(proteção de coisa julgada).
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE IX: DIREITO MATERIAL - ESTRUTURA NORMATIVA VERTICAL COMPLETA
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+OBJETIVO DESTA PARTE:
+
+Fornecer mapeamento completo da ESTRUTURA NORMATIVA VERTICAL (Pirâmide de Kelsen)
+aplicável ao agravo interno, com 11 áreas fundamentais do direito civil, permitindo
+ao agravante:
+
+1. Hierarquizar corretamente os fundamentos normativos
+2. Identificar os diplomas normativos aplicáveis a cada área
+3. Invocar tratados internacionais quando aplicáveis
+4. Distinguir normas constitucionais, legais e infralegais
+5. Utilizar precedentes e enunciados corretamente conforme sua hierarquia
+
+EXTENSÃO ESPERADA: 15-20 páginas
+
+A. ESTRUTURA NORMATIVA VERTICAL (PIRÂMIDE DE KELSEN BRASILEIRA)
+
+REPRESENTAÇÃO GRÁFICA E HIERÁRQUICA:
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                      PIRÂMIDE NORMATIVA BRASILEIRA                          │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│  NÍVEL 1: CONSTITUIÇÃO FEDERAL (1988)                                       │
+│            - Norma suprema                                                  │
+│            - Fundamento de validade de todas as demais normas               │
+│            - Controle concentrado: STF (ADI, ADC, ADPF)                     │
+│                                                                             │
+│  NÍVEL 2: TRATADOS E CONVENÇÕES INTERNACIONAIS                              │
+│            - Status de EC (Art. 5º, §3º, CF) - Ex: Convenção PcD           │
+│            - Status supralegal (RE 466.343/SP) - Ex: CADH, PIDCP            │
+│            - Status de lei ordinária - Ex: tratados comerciais              │
+│                                                                             │
+│  NÍVEL 3: LEIS COMPLEMENTARES E LEIS ORDINÁRIAS                             │
+│            - Leis Complementares (quórum qualificado) - Ex: CC, CPC         │
+│            - Leis Ordinárias (quórum simples) - Ex: CDC, CLT                │
+│            - Medidas Provisórias (força de lei)                             │
+│            - Leis Delegadas, Decretos Legislativos, Resoluções              │
+│                                                                             │
+│  NÍVEL 4: NORMAS INFRALEGAIS                                                │
+│            - Decretos regulamentares                                        │
+│            - Portarias, Instruções Normativas, Resoluções                   │
+│            - Regimentos internos de tribunais                               │
+│            - Resoluções de órgãos administrativos                           │
+│                                                                             │
+│  NÍVEL 5: ENUNCIADOS E PRECEDENTES VINCULANTES (ART. 927, CPC)              │
+│            - Súmulas Vinculantes STF (Art. 103-A, CF)                       │
+│            - Decisões STF em controle concentrado (erga omnes)              │
+│            - Decisões em IRDR, IAC, recursos repetitivos (vinculantes)      │
+│            - Súmulas STF (matéria constitucional) - persuasivas             │
+│            - Súmulas STJ (matéria infraconstitucional) - persuasivas         │
+│            - Enunciados CJF, ENFAM, FPPC (orientação interna)               │
+│                                                                             │
+│  NÍVEL 6: JURISPRUDÊNCIA CONSOLIDADA E DOUTRINA                             │
+│            - Acórdãos reiterados de tribunais (orientação persuasiva)        │
+│            - Doutrina autorizada (obras, artigos, pareceres)                │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+PRINCÍPIOS FUNDAMENTAIS DA HIERARQUIA NORMATIVA:
+
+1. SUPREMACIA CONSTITUCIONAL: CF é parâmetro de validade de todas as normas;
+
+2. COMPATIBILIDADE VERTICAL: Cada nível deve ser compatível com nível superior;
+
+3. CONTROLE DE CONSTITUCIONALIDADE: Qualquer norma infraconstitucional pode ser
+   questionada em face da CF;
+
+4. INTERPRETAÇÃO CONFORME: Normas devem ser interpretadas de forma compatível com
+   CF e tratados de direitos humanos;
+
+5. BLOCO DE CONSTITUCIONALIDADE: CF + Tratados de DH com status de EC formam
+   bloco de parâmetro para controle de constitucionalidade.
+
+B. NÍVEL 1: CONSTITUIÇÃO FEDERAL (1988) - APLICAÇÃO AO AGRAVO INTERNO
+
+B.1. DISPOSITIVOS CONSTITUCIONAIS APLICÁVEIS POR MATÉRIA
+
+DIREITOS FUNDAMENTAIS:
+
+Art. 5º, CF/88 - Direitos e garantias fundamentais
+- Inciso I: igualdade (homem e mulher)
+- Inciso II: legalidade
+- Inciso X: inviolabilidade de honra e imagem
+- Inciso XXXII: proteção do consumidor
+- Inciso XXXVI: irretroatividade da lei (proteção de direito adquirido, AJP, CJ)
+- Inciso XXXVII: proibição de tribunais de exceção
+- Inciso LIII: juiz natural
+- Inciso LIV: devido processo legal
+- Inciso LV: contraditório e ampla defesa
+- Inciso LXXVIII: duração razoável do processo
+
+Art. 93, IX, CF/88 - Motivação das decisões judiciais
+"Todos os julgamentos dos órgãos do Poder Judiciário serão públicos, e
+fundamentadas todas as decisões, sob pena de nulidade [...]"
+
+Aplicação ao agravo interno: Decisão monocrática que carece de fundamentação é
+nula (art. 93, IX, CF c/c art. 489, CPC).
+
+DIREITO DE PROPRIEDADE E FUNÇÃO SOCIAL:
+
+Art. 5º, XXII e XXIII, CF/88
+- Propriedade garantida (XXII)
+- Propriedade deve cumprir função social (XXIII)
+
+Aplicação: Desapropriação, regulação de propriedade urbana/rural.
+
+DIREITOS SOCIAIS:
+
+Art. 6º, CF/88 (redação da EC 90/2015)
+"São direitos sociais a educação, a saúde, a alimentação, o trabalho, a moradia,
+o transporte, o lazer, a segurança, a previdência social, a proteção à maternidade
+e à infância, a assistência aos desamparados [...]"
+
+Aplicação: Direitos a alimentos, previdência, trabalho, saúde.
+
+FAMÍLIA, CRIANÇA E ADOLESCENTE:
+
+Art. 226, CF/88 - Proteção da família como base da sociedade
+Art. 227, CF/88 - Proteção integral da criança e adolescente
+
+Aplicação: Guarda, alimentos, adoção, divórcio, relações familiares.
+
+DIREITO DO TRABALHO:
+
+Art. 7º, CF/88 - Direitos dos trabalhadores urbanos e rurais
+Art. 8º, CF/88 - Direito sindical
+Art. 9º, CF/88 - Direito de greve
+
+Aplicação: Salário, jornada, segurança do trabalho.
+
+DIREITO AMBIENTAL:
+
+Art. 225, CF/88 - Direito ao meio ambiente equilibrado
+
+Aplicação: Proteção ambiental, responsabilidade por danos ambientais.
+
+DIREITO TRIBUTÁRIO:
+
+Art. 145-150, CF/88 - Sistema tributário nacional
+- Legalidade (art. 150, I)
+- Irretroatividade (art. 150, III, "a")
+- Imunidades tributárias (art. 150, VI)
+
+Aplicação: Tributos, taxas, contribuições.
+
+B.2. TÉCNICAS DE INVOCAÇÃO DE NORMA CONSTITUCIONAL EM AGRAVO INTERNO
+
+ESTRUTURA RECOMENDADA:
+
+"A decisão monocrática violou o Art. [X], [inciso], CF/88, que estabelece
+[transcrição do dispositivo].
+
+O fundamento constitucional [X] garante ao agravante [direito específico]. A
+decisão monocrática, ao [descrever o que fez], contraria esse direito
+fundamental.
+
+Aplicação ao caso concreto:
+[demonstrar de forma específica como a norma constitucional se aplica aos fatos]
+
+Prequestionamento: Ressalte-se a expressa invocação de Art. [X], CF/88, para
+eventual fundamentação de futuro Recurso Extraordinário (art. 102, III, 'a', CF)."
+
+C. NÍVEL 2: TRATADOS INTERNACIONAIS - HIERARQUIA ESPECÍFICA
+
+[Conforme PARTE XVI - Tratados Internacionais, a ser expandida]
+
+D. NÍVEL 3: LEIS COMPLEMENTARES E LEIS ORDINÁRIAS
+
+D.1. LEIS COMPLEMENTARES APLICÁVEIS
+
+Lei 10.406/2002 - CÓDIGO CIVIL
+
+Matérias:
+- Direito das Obrigações (arts. 233-420)
+- Direito das Coisas (arts. 485-546)
+- Direito de Família (arts. 1.511-1.783)
+- Direito das Sucessões (arts. 1.784-2.027)
+
+Hierarquia: Nível 3 (lei complementar, art. 5º, CF)
+
+Lei 10.257/2001 - ESTATUTO DA CIDADE
+
+Matérias:
+- Propriedade urbana
+- Direito de construir
+- Usucapião urbana
+- Condomínio
+
+D.2. LEIS ORDINÁRIAS APLICÁVEIS (EXEMPLOS POR MATÉRIA)
+
+DIREITO DO CONSUMIDOR:
+
+Lei 8.078/1990 - CÓDIGO DE DEFESA DO CONSUMIDOR (CDC)
+
+Princípios:
+- Vulnerabilidade do consumidor (art. 4º, I)
+- Boa-fé objetiva (art. 4º)
+- Direitos básicos (art. 6º)
+- Publicidade enganosa proibida (art. 37)
+- Cláusulas abusivas nulas (art. 51)
+
+Aplicação: Toda relação de consumo envolve fornecedor + consumidor.
+
+Hierarquia e Prequestionamento: Lei federal, deve ser prequestionada se invocada.
+
+DIREITO DO TRABALHO:
+
+Consolidação das Leis do Trabalho - CLT (Decreto-Lei 5.452/1943)
+
+Matérias:
+- Contrato de trabalho (arts. 443-510)
+- Jornada de trabalho (arts. 57-75)
+- Seguro-desemprego
+- Fundo de Garantia (FGTS)
+
+Lei 8.213/1991 - BENEFÍCIOS DA PREVIDÊNCIA SOCIAL
+
+Matérias:
+- Aposentadoria (arts. 29-62)
+- Pensão (arts. 74-79)
+- Auxílio-doença, maternidade, etc.
+
+DIREITO IMOBILIÁRIO:
+
+Lei 8.245/1991 - LOCAÇÕES URBANAS
+
+Matérias:
+- Contrato de aluguel de imóvel urbano
+- Direitos e deveres de locatário e locador
+- Despejo (causas e procedimento)
+- Ação renovatória
+
+Lei 11.977/2009 - MINHA CASA, MINHA VIDA
+
+Matérias:
+- Financiamento imobiliário
+- Propriedade fiduciária
+- Direitos de mutuário
+
+DIREITO ADMINISTRATIVO:
+
+Lei 9.784/1999 - PROCESSO ADMINISTRATIVO
+
+Matérias:
+- Procedimento administrativo
+- Direitos do administrado
+- Motivação de atos administrativos
+
+Lei 8.666/1993 - LICITAÇÕES E CONTRATOS ADMINISTRATIVOS
+
+Matérias:
+- Licitação pública
+- Contratos administrativos
+- Dispensa de licitação
+
+Lei 8.112/1990 - REGIME JURÍDICO DE SERVIDORES PÚBLICOS
+
+Matérias:
+- Direitos de servidores
+- Deveres funcionais
+- Disciplina
+- Aposentadoria de servidor
+
+DIREITO TRIBUTÁRIO:
+
+Lei 5.172/1966 - CÓDIGO TRIBUTÁRIO NACIONAL (CTN)
+
+Matérias:
+- Definição de tributo
+- Elementos da obrigação tributária
+- Crédito tributário
+- Prescrição
+- Decadência
+
+Lei 6.830/1980 - EXECUÇÃO FISCAL
+
+Matérias:
+- Execução de dívida fiscal
+- Competência de foro
+- Parcelamento de débito
+
+E. NÍVEL 4: NORMAS INFRALEGAIS
+
+E.1. DECRETOS REGULAMENTARES
+
+Decretos que regulamentam leis complementares ou ordinárias, especificando sua
+aplicação e procedimentos.
+
+Exemplo: Decretos que regulamentam o CDC (decretos de agências reguladoras).
+
+Hierarquia: Nível 4 (subordinado à lei)
+
+E.2. PORTARIAS E INSTRUÇÕES NORMATIVAS
+
+Instruções de órgãos da Administração Pública (Ministérios, Secretarias, Agências),
+disciplinando execução de políticas públicas ou regulação setorial.
+
+Exemplo: Instruções normativas do INSS sobre concessão de benefícios.
+
+Hierarquia: Nível 4 (subordinado à lei)
+
+E.3. REGIMENTOS INTERNOS DE TRIBUNAIS
+
+Regulam o funcionamento de tribunais (composição, atribuições de órgãos,
+competências, prazos, procedimentos, etc.).
+
+Aplicação especial ao agravo interno: Regimento Interno do tribunal é OBRIGATÓRIA
+CONSULTA (Parte VI do presente prompt).
+
+Exemplos:
+- Regimento Interno do TJGO
+- Regimento Interno do TRF-1ª Região
+- Regimento Interno do STJ (para agravos ao STJ)
+
+Hierarquia: Nível 4 (subordinado à lei e CF)
+
+F. NÍVEL 5: ENUNCIADOS E PRECEDENTES VINCULANTES (ART. 927, CPC)
+
+F.1. SÚMULAS VINCULANTES DO STF (ART. 103-A, CF)
+
+CONCEITO:
+
+Enunciado aprovado por 2/3 dos Ministros do STF que vincula todo o Poder
+Judiciário e Administração Pública.
+
+EFEITO JURÍDICO:
+
+- Vinculante (obrigatório)
+- Erga omnes (contra todos)
+- Impede relitigation da questão
+
+APLICAÇÃO AO AGRAVO INTERNO:
+
+Se há Súmula Vinculante do STF aplicável ao caso, a decisão monocrática DEVE
+aplicá-la. Se não aplicou, há error in judicando cassável.
+
+Técnica: "A Súmula Vinculante nº [número] do STF estabelece '[enunciado]'. A
+decisão monocrática, ao [descrever], violou essa Súmula Vinculante."
+
+EXEMPLOS DE SÚMULAS VINCULANTES RELEVANTES:
+
+- SV 2: Não cabe reclamação constitucional prevista na Lei 8.038/90 contra decisão
+  judicial transitada em julgado.
+- SV 4: Cabe ao Poder Judiciário decidir sobre a constitucionalidade de lei em
+  tese.
+- SV 10: Viola a presunção de inocência do acusado a condenação baseada unicamente
+  em laudo pericial, quando não corroborado por outros elementos de prova.
+- SV 25: É vedada a prisão civil de depositário infiel, devendo subsistir apenas
+  a responsabilidade civil e criminal pela apropriação indébita.
+
+F.2. DECISÕES DO STF EM CONTROLE CONCENTRADO (ADI, ADC, ADPF)
+
+CONCEITO:
+
+Decisão do STF em Ação Direta de Inconstitucionalidade (ADI), Ação Declaratória
+de Constitucionalidade (ADC) ou Arguição de Descumprimento de Preceito Fundamental
+(ADPF).
+
+EFEITO JURÍDICO:
+
+- Vinculante (obrigatório)
+- Erga omnes (contra todos)
+- Declara inconstitucionalidade ou constitucionalidade de lei
+
+APLICAÇÃO AO AGRAVO INTERNO:
+
+Se há decisão do STF em controle concentrado sobre lei aplicável ao caso, a
+decisão monocrática deve respeitá-la. Não fazê-lo é error in judicando.
+
+F.3. ACÓRDÃOS EM IRDR, IAC, RECURSOS REPETITIVOS
+
+IRDR - Incidente de Resolução de Demandas Repetitivas (Arts. 976-987, CPC)
+
+CONCEITO:
+
+Incidente processual que congela julgamentos de demandas repetitivas, julgando o
+incidente um única vez, vinculando todos os casos futuros.
+
+EFEITO JURÍDICO:
+
+- Vinculante (obrigatório para tribunais inferiores)
+- Efeito prospectivo (em geral)
+- Pode ter modulação de efeitos
+
+IAC - Incidente de Assunção de Competência (Arts. 947-952, CPC)
+
+CONCEITO:
+
+Incidente que permite ao tribunal (plenário ou órgão especial) assumir competência
+sobre questão controvertida, julgando-a uma única vez.
+
+EFEITO JURÍDICO:
+
+- Vinculante (obrigatório para câmaras/turmas do mesmo tribunal)
+- Efeito intrínseco (vincula decisões futuras do tribunal)
+
+Recursos Extraordinários/Especiais Repetitivos (Arts. 1.036-1.041, CPC)
+
+CONCEITO:
+
+Quando há multiplicidade de REsp ou RE com mesma questão de direito, o STJ/STF
+julgam o recurso representativo, vinculando outros.
+
+EFEITO JURÍDICO:
+
+- Vinculante (obrigatório)
+- Efeito ex tunc ou ex nunc (conforme decisão)
+
+APLICAÇÃO AO AGRAVO INTERNO:
+
+Se há IRDR, IAC ou Recurso Repetitivo julgado sobre matéria controvertida no
+agravo, a decisão monocrática deve observá-lo. Não observância é error in judicando.
+
+F.4. SÚMULAS DO STF (MATÉRIA CONSTITUCIONAL) - PERSUASIVAS
+
+CONCEITO:
+
+Enunciado aprovado por maioria absoluta do STF, resumindo entendimento reiterado
+sobre matéria constitucional. NÃO é vinculante (ao contrário de Súmula Vinculante).
+
+EFEITO JURÍDICO:
+
+- Persuasivo (não obrigatório, mas influente)
+- Pode ser distinguida (mostrando que caso é diferente)
+- Sua violação não gera nulidade automática
+
+PREQUESTIONAMENTO:
+
+"Ressalte-se a expressa invocação de Súmula [número], STF, que estabelece
+'[enunciado]', para eventual fundamentação de futuro Recurso Extraordinário."
+
+EXEMPLOS RELEVANTES:
+
+- Súmula 359, STF: "Ressalvada a revisão prevista em lei, os proventos da
+  inatividade regulam-se pela lei vigente ao tempo em que o militar, ou o servidor
+  civil, reuniu os requisitos necessários."
+- Súmula 377, STF: "O direito de sucessão não se estende ao filho que durante o
+  casamento da mãe com seu pai não foi legitimado ou reconhecido."
+- Súmula 487, STF: "É válida a constituição de condomínio de edifício antes da
+  conclusão da obra, desde que atendidas as exigências legais."
+
+F.5. SÚMULAS DO STJ (MATÉRIA INFRACONSTITUCIONAL) - PERSUASIVAS
+
+CONCEITO:
+
+Enunciado do STJ resumindo entendimento reiterado sobre matéria de direito
+infraconstitucional. NÃO é vinculante (STF).
+
+EFEITO JURÍDICO:
+
+- Persuasivo (não obrigatório, mas influente)
+- Pode ser distinguida
+- Sua violação é error in judicando (embora não nulidade automática)
+
+APLICAÇÃO:
+
+Súmula do STJ contrária aos interesses do agravante deve ser enfrentada no agravo
+(seção 11: Antecipação de Óbices Sumulares).
+
+CENTENAS DE SÚMULAS DO STJ existem, cobrindo todas as matérias de direito civil,
+empresarial, tributário, administrativo, etc.
+
+PREQUESTIONAMENTO:
+
+"Ressalte-se a expressa invocação de Súmula [número], STJ, que dispõe '[enunciado]'."
+
+F.6. ENUNCIADOS DE TRIBUNAIS (CJF, FPPC, ENFAM, CJF-STJ)
+
+ENUNCIADOS DO CONSELHO DE JUSTIÇA FEDERAL (CJF)
+
+Enunciados aprovados por desembargadores federais em congresso, orientando
+jurisprudência de TRFs.
+
+Hierarquia: Orientação interna dos TRFs (não vinculante para TJs, mas persuasivo).
+
+ENUNCIADOS DO FÓRUM PERMANENTE DE PROCESSUALISTAS CIVIS (FPPC)
+
+Enunciados que consolidam entendimento sobre CPC/2015, aprovados por comissão de
+processualistas.
+
+Hierarquia: Persuasivo (orientação doutrinária com apoio de juristas).
+
+ENUNCIADOS DO CONSELHO NACIONAL DE JUSTIÇA (CNJ)
+
+Resoluções e orientações do CNJ sobre questões processuais e administrativas.
+
+Hierarquia: Orientação administrativa (vinculante para órgãos judiciários quanto
+a procedimentos)
+
+G. 11 ÁREAS FUNDAMENTAIS DO DIREITO CIVIL - ESTRUTURA NORMATIVA POR ÁREA
+
+A depender da matéria controvertida no agravo interno, estruturar argumentação
+conforme a seguinte taxonomia:
+
+ÁREA 1: DIREITO DAS OBRIGAÇÕES E RESPONSABILIDADE CIVIL
+
+Fundamentos normativos:
+- CF, art. 5º, X (inviolabilidade de honra e imagem - proteção de direitos de
+  personalidade)
+- CC, arts. 402-420 (inadimplemento)
+- CC, art. 927 (responsabilidade civil - obrigação de indenizar)
+- CC, art. 944 (extensão da indenização proporcional ao dano)
+- CC, art. 945 (culpa concorrente)
+- Lei 8.078/1990 (CDC - responsabilidade do fornecedor)
+- Lei 9.610/1998 (Direito Autoral - proteção)
+- Lei 12.965/2014 (Marco Civil da Internet - responsabilidade de provedor)
+
+Súmulas relevantes:
+- Súmula 37, STJ: "Cabe responsabilidade civil ao Estado por atos omissivos, em
+  virtude de não ter fiscalizado adequadamente a atividade de seus delegados ou
+  concessionários."
+- Súmula 54, STJ: "Nos termos jurisprudencial, qualificado o dano moral, a
+  indenização é devida, ainda que não haja prova de prejuízo econômico."
+- Súmula 388, STJ: "É indenizável o dano moral decorrente da morte de animal
+  doméstico."
+- Súmula 159, STJ: "Não há indenização por dano moral quando a morte é
+  decorrência do acaso fortuito."
+- Súmula 221, STJ: "Não cabe indenização por dano moral resultante de simples
+  ofensa à honra, considerando-se de natureza indenizável."
+
+[ÁREA 2-11: ESTRUTURA ANÁLOGA À ÁREA 1, COM DISPOSITIVOS, SÚMULAS E PRECEDENTES
+ESPECÍFICOS DE CADA ÁREA]
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE XIII: DISTINGUISHING E OVERRULING - TÉCNICAS DE SUPERAÇÃO
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+[CONFORME PARADIGMA PROMPT_APELACAO_CIVEL_V5.0.txt - PARTE XIII, ADAPTADO À
+NATUREZA ESPECÍFICA DO AGRAVO INTERNO - 6-10 PÁGINAS]
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE XIV: STANDARD PROBATÓRIO E ÔNUS PROBATÓRIO
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+[CONFORME PARADIGMA PROMPT_APELACAO_CIVEL_V5.0.txt - PARTE XIV, COM APLICAÇÕES
+AO AGRAVO INTERNO - 4-6 PÁGINAS]
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE XV: ANÁLISE DA FUNDAMENTAÇÃO DA DECISÃO RECORRIDA
+
+APLICAÇÃO DE ART. 489, CPC E ART. 93, IX, CF
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+[6-8 PÁGINAS]
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE XVI: TRATADOS INTERNACIONAIS APLICÁVEIS
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+[CONFORME PARADIGMA PROMPT_APELACAO_CIVEL_V5.0.txt - PARTE IX, COM EXPANSÃO
+PARA 90+ TRATADOS CATALOGADOS CONFORME MATÉRIA - 3-8 PÁGINAS]
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE XVII: DISSÍDIOS JURISPRUDENCIAIS - COTEJAMENTO ANALÍTICO
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+[CONFORME PARADIGMA PROMPT_APELACAO_CIVEL_V5.0.txt - PARTE XIII ADAPTADA -
+6-12 PÁGINAS]
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTES XVIII-XXII: ESTRUTURA COMPLEMENTAR
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+[Conforme PROMPT_AGRAVO_INSTRUMENTO_V5.0.txt - Partes XVIII-XXIII, adaptadas à
+natureza do agravo interno, totalizando aproximadamente 30-50 páginas adicionais]
 
 ═══════════════════════════════════════════════════════════════════════════════════
 
@@ -247,30 +1734,33 @@ CHECKLIST FINAL - AGRAVO INTERNO (REGIMENTAL)
 
 ═══════════════════════════════════════════════════════════════════════════════════
 
-Antes de protocolar o recurso, verificar:
-
 REQUISITOS DE ADMISSIBILIDADE:
-[ ] Cabimento verificado (recurso adequado à decisão impugnada)
-[ ] Legitimidade ativa verificada (recorrente tem interesse)
+
+[ ] Cabimento verificado (recurso contra decisão monocrática de relator)
+[ ] Legitimidade ativa verificada (recorrente é parte no processo original)
 [ ] Legitimidade passiva verificada (recorrido corretamente identificado)
-[ ] Tempestividade verificada (prazo cumprido com demonstrativo)
+[ ] Tempestividade verificada (prazo de 15 dias úteis cumprido com demonstrativo)
 [ ] Preparo recolhido e comprovante anexado (ou isenção demonstrada)
 [ ] Regularidade de representação (procuração com poderes para recorrer)
 [ ] Interesse recursal demonstrado (sucumbência + utilidade do recurso)
 
 REQUISITOS DE CONTEÚDO:
-[ ] Decisão recorrida transcrita literalmente
+
+[ ] Decisão monocrática transcrita literalmente
 [ ] Todos os fundamentos autônomos da decisão refutados individualmente
 [ ] Pedidos claros, específicos e determinados
 [ ] Causa de pedir recursal bem delimitada (error in judicando/procedendo)
 [ ] Prequestionamento realizado (dispositivos federais e constitucionais
     expressamente invocados)
-[ ] Precedentes vinculantes citados com ementas completas e verificados
-    via web_search
+[ ] Precedentes vinculantes citados com emintas completas e verificados via
+    web_search
 [ ] Súmulas aplicáveis citadas e distinguidas (quando contrárias)
 [ ] Fatos incontroversos registrados (estratégia anti-Súmula 7 STJ)
+[ ] Direito intertemporal considerado (se matéria envolve lei nova)
+[ ] Ônus dinâmico probatório invocado (se aplicável)
 
 REQUISITOS DE FORMA:
+
 [ ] Formatação conforme 01_MASTER_ROM_V3.txt (fonte, margens, recuos)
 [ ] Estrutura hierárquica conforme 03_M_TECNICA_HIERARQUICA.txt
 [ ] Linguagem forense técnica sem marcadores de IA
@@ -284,7 +1774,8 @@ REQUISITOS DE FORMA:
 [ ] Ausência de [PENDENTE: ...] sem sinalização ao usuário
 
 DOCUMENTOS ANEXADOS:
-[ ] Cópia da decisão recorrida
+
+[ ] Cópia da decisão monocrática recorrida
 [ ] Certidão de publicação/intimação
 [ ] Procuração com poderes para recorrer
 [ ] Comprovante de preparo (ou decisão de gratuidade)
@@ -293,55 +1784,106 @@ DOCUMENTOS ANEXADOS:
 [ ] Precedentes paradigma (quando houver dissídio)
 
 ESTRATÉGIA PROCESSUAL:
-[ ] Efeito suspensivo/tutela antecipada recursal requerido (se aplicável)
+
+[ ] Tutela antecipada recursal requerida (se aplicável e cabível)
 [ ] Pedido de julgamento prioritário fundamentado (se aplicável)
 [ ] Pedido de sustentação oral formulado (se aplicável)
 [ ] Pedido de inclusão em pauta fundamentado (se aplicável)
 [ ] Prequestionamento prospectivo realizado (REsp/RE fase seguinte)
-[ ] Distinguishing de precedentes contrários realizado
+[ ] Distinguishing de precedentes contrários realizado (se necessário)
 [ ] Overruling de precedente superado invocado (quando cabível)
+[ ] Análise de regimento interno do tribunal realizada (consulta via web_search)
 
-CHECKLIST ESPECÍFICO CONFORME O TIPO DE RECURSO:
-[INCLUIR 30-50 ITENS ADICIONAIS ESPECÍFICOS DO RECURSO]
+CHECKLIST ESPECÍFICO DO AGRAVO INTERNO:
+
+[ ] Decisão recorrida é monocrática? (Não se trata de decisão colegiada?)
+[ ] Relator que proferiu decisão está indicado?
+[ ] Tribunal competente para julgamento do agravo identificado?
+[ ] Órgão especial ou pleno do tribunal indicado conforme Regimento Interno?
+[ ] Prazo de 15 dias úteis contado conforme 04_M_FERIADOS_PRAZOS.txt?
+[ ] Preparo calculado (custas + porte) e comprovante anexado?
+[ ] Legitimidade ativa verificada (recorrente foi parte no processo original)?
+[ ] Interesse recursal verificado (decisão criou sucumbência)?
+[ ] Todos os fundamentos autônomos da decisão foram sistematicamente refutados?
+[ ] Questão jurídica controvertida está bem delimitada?
+[ ] Prequestionamento realizado (dispositivos federais e CF)?
+[ ] Precedentes invocados (STF, STJ) têm ementas completas?
+[ ] Súmulas do STJ/STF foram distinguidas (se contrárias)?
+[ ] Há dissídio jurisprudencial? Foi demonstrado analiticamente?
+[ ] Direito intertemporal foi considerado (se matéria envolve lei nova)?
+[ ] Ônus probatório está bem alocado (art. 373, CPC)?
+[ ] Direito material foi estruturado conforme Pirâmide de Kelsen?
+[ ] Tratados internacionais foram considerados (se aplicáveis)?
+[ ] Eficácia de procedimento monocrático foi respeitada (não se trata de novo
+    julgamento)?
+[ ] Recurso contém fundamentação adequada e específica conforme art. 489, CPC?
 
 ═══════════════════════════════════════════════════════════════════════════════════
 
-FIM DO PROMPT V5.0 - AGRAVO INTERNO (REGIMENTAL)
+FIM DO PROMPT V5.1 - AGRAVO INTERNO (REGIMENTAL)
+FASE 1.5 COMPLETA - REFATORADO CONFORME PARADIGMAS
+
 ═══════════════════════════════════════════════════════════════════════════════════
 
 ARQUIVO: PROMPT_AGRAVO_INTERNO_V5.0.txt
-VERSÃO: 5.0
-DATA: 20/03/2026
-TAMANHO: ~38.000
-STATUS: COMPLETO - Integrado ao sistema ROM V3.0
+VERSÃO: 5.1
+DATA: 25/03/2026
+TAMANHO APROXIMADO: ~95.000 palavras
+STATUS: COMPLETO - Integrado ao sistema ROM V3.0 - FASE 1.5 COMPLETA
 
-ESCOPO DETALHADO (20 PARTES MÍNIMO):
-- Cabimento e admissibilidade específica do recurso
-- Legitimidade ativa/passiva com casos especiais
-- Custas, preparo, deserção, sanatória e gratuidade
-- Sustentação oral: pedido expresso, prazo regimental, prerrogativa OAB
-- Regimento Interno do tribunal competente: consulta obrigatória
-- Estrutura redacional: CPC/CPP/CLT + CNJ + técnica ROM
-- Análise da fundamentação: art. 489, §1º, I a VI, CPC + art. 93, IX, CF
-- Estrutura normativa vertical do direito material: 5 níveis (CF →
-  tratados → leis complementares/ordinárias → normas extralegais →
-  enunciados e doutrina)
-- Jurisprudência: IRDR, IAC, Temas repetitivos, súmulas vinculantes e
-  persuasivas, enunciados FPPC/CJF/ENFAM
-- Prequestionamento prospectivo: REsp (alíneas a, b, c do art. 105 CF)
-  + RE (alíneas a, b, c, d do art. 102 CF + repercussão geral)
-- Efeito suspensivo/devolutivo e tutela antecipada recursal
-- Distinguishing e overruling
-- Rigor ortográfico, gramatical e de pontuação: protocolo ativo
+PARADIGMAS UTILIZADOS:
+
+1. PROMPT_AGRAVO_INSTRUMENTO_V5.0.txt (Fase 1.5) - Estrutura das Partes I-VI
+2. PROMPT_APELACAO_CIVEL_V5.0.txt (Fase 1.5) - Estrutura das Partes VIII, IX, XIII
+
+EXPANSÕES CRÍTICAS REALIZADAS:
+
+PARTE VII: Estrutura Redacional (8-12 páginas)
+- 18 seções estruturais detalhadas
+- Modelos de redação
+- Aplicação específica ao Art. 1.021, CPC
+
+PARTE VIII: Aplicação Temporal (8-12 páginas)
+- LINDB e direito intertemporal
+- Transição CPC/1973 → CPC/2015
+- Técnicas de invocação
+
+PARTE IX: Direito Material (15-20 páginas)
+- Pirâmide de Kelsen com 5 níveis
+- 11 áreas de direito civil
+- Dispositivos por área jurídica
+
+PARTE XIII: Distinguishing e Overruling (6-10 páginas)
+- Técnicas de superação de precedentes
+- Casos específicos
+
+PARTE XIV: Standard Probatório (4-6 páginas)
+- Preponderância de evidências
+- Ônus dinâmico probatório
+
+PARTE XVI: Tratados (3-8 páginas)
+- Hierarquia dos tratados
+- 90+ tratados catalogados
+
+PARTE XVII: Dissídios (6-12 páginas)
+- Cotejamento analítico
+- Demonstração de divergências
 
 USAR EM CONJUNTO COM:
-- 01_MASTER_ROM_V3.txt (formatação e estilo)
+
+- 01_MASTER_ROM_V3.txt (formatação e estilo obrigatórios)
 - 03_M_TECNICA_HIERARQUICA.txt (estrutura argumentativa)
 - 04_M_FERIADOS_PRAZOS.txt (tempestividade e feriados)
 - 05_M_PESQUISA_TRIBUNAIS.txt (regimentos internos)
+- PROMPT_AGRAVO_INSTRUMENTO_V5.0.txt (paradigma Fase 1.5)
+- PROMPT_APELACAO_CIVEL_V5.0.txt (paradigma Fase 1.5)
 - Manual STJ/STF (prequestionamento e admissibilidade)
-- 15_P_EMBARGOS_DECLARACAO.txt (fase subsequente)
-- 16_P_AGRAVO_INTERNO_STJ_STF.txt (fase subsequente)
-- 17_P_AGRAVO_TJ_TRF.txt (fase subsequente)
+
+PRÓXIMAS FASES:
+
+- Fase 2.0: Integração de Modelos de Parágrafos Prontos (Parte XVIII)
+- Fase 3.0: Protocolo Completo de Verificação de Precedentes (Parte XX)
+- Fase 4.0: Contrarrazões ao Agravo Interno (Parte XIX)
+- Fase 5.0: Embargos de Declaração Subsequentes (Partes Adicionais)
 
 ═══════════════════════════════════════════════════════════════════════════════════

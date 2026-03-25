@@ -53,22 +53,27 @@ PARTE III  - FUNDAMENTO LEGAL: ACAO PENAL PRIVADA E SUBSIDIARIA DA PUBLICA
 PARTE IV   - CRIMES DE ACAO PENAL PRIVADA (ROL LEGAL E JURISPRUDENCIAL)
 PARTE V    - PRAZO DECADENCIAL (ART. 38 CPP) E CONTAGEM
 PARTE VI   - LEGITIMIDADE ATIVA E CAPACIDADE POSTULATORIA (ADVOGADO OBRIGATORIO)
-PARTE VII  - REQUISITOS DA QUEIXA-CRIME (ART. 41 CPP)
-PARTE VIII - ESTRUTURA REDACIONAL DA PECA (CPP + CNJ + TECNICA ROM)
-PARTE IX   - NARRATIVA DOS FATOS: OBJETIVIDADE E TECNICA
-PARTE X    - TIPIFICACAO PENAL E CAPITULACAO LEGAL
-PARTE XI   - PROVAS: DOCUMENTAIS, TESTEMUNHAIS, PERICIAIS
-PARTE XII  - CRIMES CONTRA HONRA: CALUNA, DIFAMACAO, INJURIA (ARTS. 138-140 CP)
-PARTE XIII - CRIMES CONTRA A LIBERDADE INDIVIDUAL: AMEACA, VIOLACAO DE DOMICILIO
-PARTE XIV  - CRIMES CONTRA A LIBERDADE SEXUAL (ACAO PRIVADA EM CASOS ESPECIFICOS)
-PARTE XV   - CAUSAS EXTINTIVAS DA PUNIBILIDADE ESPECIFICAS (PEREMPÇÃO, RENÚNCIA, PERDÃO)
-PARTE XVI  - ADITAMENTO A QUEIXA-CRIME (ART. 45 CPP)
-PARTE XVII - QUEIXA SUBSIDIARIA DA PUBLICA (ART. 29 CPP)
-PARTE XVIII- CHECKLIST FINAL (META: 105/105)
-PARTE XIX  - PROTOCOLO DE VERIFICACAO DE PRECEDENTES
-PARTE XX   - RIGOR ORTOGRAFICO, GRAMATICAL E DE PONTUACAO (INSTRUCOES ATIVAS)
-PARTE XXI  - INTEGRACAO COM O SISTEMA ROM
-PARTE XXII - RECURSOS E PRAZOS NA ACAO PENAL PRIVADA
+PARTE VII  - REQUISITOS DA QUEIXA-CRIME E ESTRUTURA REDACIONAL (EXPANDIDA)
+PARTE VIII - APLICAÇÃO TEMPORAL: RETROATIVIDADE BENÉFICA (ART. 2º CP)
+PARTE IX   - DIREITO PENAL MATERIAL: CRIMES DE AÇÃO PRIVADA
+PARTE X    - NARRATIVA DOS FATOS: OBJETIVIDADE E TECNICA
+PARTE XI   - TIPIFICACAO PENAL E CAPITULACAO LEGAL
+PARTE XII  - CRIMES CONTRA HONRA: CALUNA, DIFAMACAO, INJURIA (ARTS. 138-145 CP)
+PARTE XIII - DISTINGUISHING: TÉCNICAS PARA DEMONSTRAR JUSTA CAUSA
+PARTE XIV  - STANDARD PROBATÓRIO NA AÇÃO PENAL PRIVADA
+PARTE XV   - TRATADOS INTERNACIONAIS (CADH, PIDCP, ICCPR)
+PARTE XVI  - DISSÍDIOS JURISPRUDENCIAIS (STJ E STF)
+PARTE XVII - CRIMES CONTRA A LIBERDADE INDIVIDUAL: AMEACA, VIOLACAO DE DOMICILIO
+PARTE XVIII- CRIMES CONTRA A LIBERDADE SEXUAL (ACAO PRIVADA EM CASOS ESPECIFICOS)
+PARTE XIX  - CAUSAS EXTINTIVAS DA PUNIBILIDADE ESPECIFICAS (PEREMPÇÃO, RENÚNCIA, PERDÃO)
+PARTE XX   - ADITAMENTO A QUEIXA-CRIME (ART. 45 CPP)
+PARTE XXI  - QUEIXA SUBSIDIARIA DA PUBLICA (ART. 29 CPP)
+PARTE XXII - PROVAS: DOCUMENTAIS, TESTEMUNHAIS, PERICIAIS
+PARTE XXIII- CHECKLIST FINAL (META: 115/115)
+PARTE XXIV - PROTOCOLO DE VERIFICACAO DE PRECEDENTES
+PARTE XXV  - RIGOR ORTOGRAFICO, GRAMATICAL E DE PONTUACAO (INSTRUCOES ATIVAS)
+PARTE XXVI - INTEGRACAO COM O SISTEMA ROM
+PARTE XXVII- RECURSOS E PRAZOS NA ACAO PENAL PRIVADA
 
 ═══════════════════════════════════════════════════════════════════════════════════
 
@@ -379,51 +384,230 @@ qualificado na peça.
 
 ═══════════════════════════════════════════════════════════════════════════════════
 
-PARTE VII: REQUISITOS DA QUEIXA-CRIME (ART. 41 CPP)
+PARTE VII: REQUISITOS DA QUEIXA-CRIME E ESTRUTURA REDACIONAL (EXPANDIDA)
 
 ═══════════════════════════════════════════════════════════════════════════════════
 
-Art. 41, CPP: "A denúncia ou queixa conterá a exposição do fato
+SEÇÃO 1: FUNDAMENTAÇÃO LEGAL DOS REQUISITOS (ARTS. 30-41 CPP)
+
+Art. 41, CPP (redação atual): "A denúncia ou queixa conterá a exposição do fato
 criminoso, com todas as suas circunstâncias, a qualificação do acusado
 ou esclarecimentos pelos quais se possa identificá-lo, a classificação
 do crime e, quando necessário, o rol das testemunhas."
 
-DECOMPOSICAO DOS REQUISITOS:
+ANÁLISE JURISPRUDENCIAL:
+A queixa-crime é peça acusatória que demanda rigor formal e material equivalente
+à denúncia (STF - HC 127286/RS, rel. Min. Dias Toffoli, 2015). Qualquer
+deficiência nos requisitos do art. 41 pode acarretar rejeição pela preliminar
+(art. 395, I, CPP).
 
-1. EXPOSICAO DO FATO CRIMINOSO COM TODAS AS SUAS CIRCUNSTANCIAS
-Narrativa completa:
-- O que aconteceu (descrição do fato típico)
-- Quando aconteceu (data, hora)
-- Onde aconteceu (local preciso)
-- Como aconteceu (modo de execução)
-- Por que aconteceu (motivo, se conhecido)
-- Quem praticou (autoria)
-- Contra quem praticou (vítima)
+REQUISITOS CUMULATIVOS (DECOMPOSIÇÃO DETALHADA):
 
-2. QUALIFICACAO DO ACUSADO (QUERELADO)
-- Nome completo
-- Nacionalidade, estado civil, profissão
-- CPF, RG (se conhecidos)
-- Filiação (se conhecida)
-- Endereço para citação (fundamental)
+1. EXPOSIÇÃO DO FATO CRIMINOSO COM TODAS AS SUAS CIRCUNSTÂNCIAS (ART. 41, CAPUT)
 
-3. CLASSIFICACAO DO CRIME
-- Artigo do Código Penal ou lei especial
-- Nomen juris do delito (ex.: "crime de calúnia previsto no art. 138 do CP")
-- Indicação de qualificadoras, agravantes, causas de aumento (se houver)
+A "exposição" não é mera narrativa. É descrição técnica e verossímil do fato,
+que deve permitir:
+a) Identificação inequívoca do crime (tipo penal);
+b) Vinculação do acusado à conduta (nexo de causalidade);
+c) Diferenciação entre tentativa e consumação;
+d) Reconhecimento de elementos qualificadores.
 
-4. ROL DE TESTEMUNHAS
-- Máximo 8 testemunhas no procedimento ordinário
-- Máximo 5 testemunhas no procedimento sumário
-- Identificação completa: nome, profissão, endereço, telefone
-- Indicação de intimação (pessoal ou por correio)
+ELEMENTOS OBRIGATÓRIOS NA NARRATIVA:
+- DATA E HORA DO CRIME: precisão máxima (hora exata ou aproximação com
+  justificativa). Crimes contra honra em redes sociais: data/hora da postagem.
+- LOCAL PRECISO: endereço completo, referências (prédio vizinho, comércio, etc.).
+  Crimes em redes sociais: plataforma, URL da página/perfil.
+- CIRCUNSTÂNCIAS FÁTICAS: contexto, motivação, relacionamento prévio
+  querelante-querelado, histórico de conflitos.
+- MODO DE EXECUÇÃO DETALHADO: palavras exatas (se crime contra honra),
+  gestos, atos, meios utilizados (redes sociais, carta, ligação, etc.).
+- RESULTADO DO CRIME: lesa o bem jurídico? Em que medida? (dano moral,
+  constrangimento, lesão corporal, se houver).
+- PRESENÇA DE TESTEMUNHAS: identificar todos os presentes, mesmo que não
+  arroladas posteriormente.
+- CONSEQUÊNCIAS PARA O OFENDIDO: impacto psicológico, dano à honra,
+  prejuízos econômicos (se cabível).
 
-5. PEDIDOS
-- Recebimento da queixa-crime
-- Citação do querelado para resposta à acusação (art. 396 CPP)
-- Designação de audiência de instrução e julgamento
-- Produção de provas (documentais, testemunhais, periciais)
-- Ao final, condenação do querelado nas penas do art. [X] do CP
+REDAÇÃO RECOMENDADA (TÉCNICA ROM):
+"No dia [DATA], por volta das [HORA], no local [ENDEREÇO COMPLETO], o querelado
+[NOME COMPLETO], agindo com dolo direto [justificar se aplicável], praticou
+contra o querelante [NOME COMPLETO] a seguinte conduta criminosa: [DESCRIÇÃO
+DETALHADA, INCLUINDO PALAVRAS PROFERIDAS, GESTOS, CONTEXTO, TESTEMUNHAS].
+
+O crime ocorreu em circunstâncias [DESCREVER: em público/privado, com
+publicidade/sigilo, com violência/sem violência], resultando em [CONSEQUÊNCIA
+CONCRETA PARA O OFENDIDO]."
+
+2. QUALIFICAÇÃO DO ACUSADO (QUERELADO)
+
+Art. 41, CAPUT, segunda parte: "qualificação do acusado ou esclarecimentos pelos
+quais se possa identificá-lo"
+
+REQUISITOS MÍNIMOS (STJ - RESP 1.089.936/SP):
+a) NOME COMPLETO EM CAIXA ALTA: Fundamental para identificação inequívoca.
+   Se nome incompleto: indicar esclarecimentos (apelidos, locais frequentados,
+   profissão, endereço, características físicas).
+
+b) DADOS PESSOAIS (se conhecidos):
+   - Nacionalidade (art. 41 refere "qualificação")
+   - Estado civil (casado, solteiro, viúvo, divorciado, união estável)
+   - Profissão ou ocupação
+   - Data de nascimento (se conhecida)
+
+c) DOCUMENTAÇÃO (se conhecida):
+   - CPF: fundamental para citação e execução. Se desconhecido, indicar no
+     final da queixa: "[PENDENTE: CPF do querelado]"
+   - RG: cópia em anexo (Doc. XX)
+   - Carteira de habilitação (se aplicável)
+
+d) FILIAÇÃO: Nome do pai e mãe (se conhecido). Importante para identificação
+   em buscas de antecedentes criminais.
+
+e) ENDEREÇO PARA CITAÇÃO (FUNDAMENTAL):
+   Art. 351, CPP: "Ao receber a denúncia, o juiz [ou ao receber queixa]
+   designará dia e hora para a audiência de instrução e julgamento, ordenando
+   a citação do acusado."
+
+   EXIGÊNCIA: Endereço completo e preciso. Rua, número, complemento (apto,
+   sala), bairro, cidade, estado, CEP. Se endereço desconhecido ou falso:
+   possibilidade de citação por edital (art. 363, CPP), mas atrasa processo.
+
+f) DADOS ADICIONAIS ÚTEIS:
+   - E-mail e telefone (para notificações)
+   - Local de trabalho (se conhecido)
+   - Informações sobre antecedentes criminais (conhecimento genérico, não
+     vinculativo para tipificação)
+
+OBSERVAÇÃO: Deficiência na qualificação pode acarretar:
+- Rejeição (se impossível identificar o acusado)
+- Aditamento obrigatório da queixa (art. 45, CPP)
+- Citação por edital (demora processual)
+
+3. CLASSIFICAÇÃO DO CRIME (CAPITULAÇÃO LEGAL)
+
+Art. 41, CAPUT, terceira parte: "classificação do crime"
+
+ELEMENTOS OBRIGATÓRIOS:
+a) ARTIGO DO CÓDIGO PENAL OU LEI ESPECIAL:
+   Indicação clara: "Art. 138 do Código Penal" ou "Lei X, art. Y".
+   Não pode ser genérica: "crime contra honra". Deve ser específica.
+
+b) NOMEN JURIS DO DELITO:
+   Nome técnico do crime: "CALÚNIA" (art. 138), não apenas "injúria".
+   Importância: Permite ao acusado conhecer a exata acusação (garantia
+   constitucional - art. 5º, XXXV, CF).
+
+c) QUALIFICADORAS (se aplicáveis):
+   Exemplo: art. 138 CP tem qualificadora se crime contra honor funcionário
+   público no exercício de funções (art. 145, parágrafo único, CP).
+   Fundamentar cada qualificadora nos fatos narrados.
+
+d) AGRAVANTES GENÉRICAS (se cabíveis):
+   Art. 61 CP: inimizade pessoal, embriaguez do agente, reincidência, etc.
+   Devem estar comprovadas nos fatos ou ser passíveis de prova.
+
+e) CAUSAS DE AUMENTO DE PENA (se houver):
+   Exemplo: crime contra honra em periódico (se aplicável).
+   Indicar fundamento legal específico.
+
+REDAÇÃO CORRETA:
+"A conduta do querelado constitui crime de CALÚNIA, previsto no art. 138 do
+Código Penal, [QUALIFICADO pela circunstância de ser servidor público no
+exercício de funções - art. 145, parágrafo único, CP], [AGRAVADO pela
+reincidência - art. 61, I, CP], na forma do art. 64 do Código Penal."
+
+REDAÇÃO INCORRETA:
+"Constitui crime contra honra" (genérica demais)
+"Crime previsto no Código Penal" (sem indicação de artigo)
+
+4. ROL DE TESTEMUNHAS (QUANDO NECESSÁRIO)
+
+Art. 41, CAPUT, final: "quando necessário, o rol das testemunhas"
+
+LIMITE MÁXIMO (CPP, arts. 401 e 500):
+- Procedimento ordinário (crimes dolosos): 8 testemunhas por parte
+- Procedimento sumário (crimes com pena até 4 anos): 5 testemunhas por parte
+
+IDENTIFICAÇÃO COMPLETA (EXIGÊNCIA):
+Cada testemunha arrolada deve conter:
+a) NOME COMPLETO EM CAIXA ALTA
+b) PROFISSÃO OU OCUPAÇÃO
+c) ENDEREÇO COMPLETO: rua, número, complemento, bairro, cidade, CEP
+d) TELEFONE DE CONTATO (se possível)
+e) E-MAIL (se possível, facilita notificações)
+
+REDAÇÃO PADRÃO:
+"
+Testemunha 1: JOÃO DA SILVA SANTOS, comerciante, CPF 123.456.789-00,
+             residente à Rua Exemplo, 500, apt. 201, Bairro Centro,
+             Cidade/UF, CEP 12345-678, telefone (XX) 99999-9999,
+             e-mail joao@email.com.
+"
+
+OBSERVAÇÕES CRÍTICAS:
+- Testemunha do fato NÃO É O QUERELANTE: ele é parte, não testemunha.
+- Máximo 8: Qualquer número superior causa rejeição pela preliminar
+  (art. 395, III, CPP).
+- Identificação incompleta: permite ao juiz chamar complementação
+  (aditamento - art. 45, CPP).
+- Testemunha viva e localizável: não arroler falecidos ou desaparecidos
+  sem justificativa (risco de rejeição).
+
+5. PEDIDOS DA QUEIXA-CRIME
+
+A queixa encerra com PEDIDOS CUMULATIVOS E SUCESSIVOS, fundamentados
+nos requisitos dos arts. 41, 44 CPP.
+
+PEDIDOS OBRIGATÓRIOS (em ordem):
+
+a) RECEBIMENTO DA QUEIXA-CRIME
+   "O recebimento da presente queixa-crime, nos termos do art. 41 do
+    Código de Processo Penal"
+
+   Fundamento legal: Sem recebimento, queixa não se transforma em ação.
+
+b) CITAÇÃO DO QUERELADO
+   "A citação do querelado [NOME COMPLETO], no endereço [ENDEREÇO COMPLETO],
+    para RESPONDER À ACUSAÇÃO, por escrito, no prazo de 10 (dez) dias,
+    nos termos do art. 396 do Código de Processo Penal"
+
+   Prazo: 10 dias para resposta escrita (art. 396, CPP).
+   Intimação ao advogado (se constituído) - art. 370, §4º, CPP.
+
+c) DESIGNAÇÃO DE AUDIÊNCIA DE INSTRUÇÃO E JULGAMENTO
+   "A designação de audiência de instrução e julgamento para oitiva das
+    testemunhas arroladas, após recebimento da resposta à acusação"
+
+   Observação: Não pode ser feito imediatamente. Depende de:
+   - Recebimento da queixa
+   - Resposta à acusação do querelado
+   - Análise de preliminares (art. 395-396, CPP)
+
+d) PRODUÇÃO DE PROVAS
+   "A produção das provas documentais, testemunhais e periciais requeridas,
+    especialmente [INDICAR PROVAS ESPECÍFICAS]"
+
+   Detalhar: documentos anexados, testemunhas a serem ouvidas, perícias
+   necessárias (grafotécnica, tecnológica, etc.).
+
+e) CONDENAÇÃO (PEDIDO FINAL)
+   "Ao final, a PROCEDÊNCIA da presente queixa-crime, com a consequente
+    CONDENAÇÃO do querelado nas penas do art. [X] do Código Penal [e
+    AGRAVADAS/QUALIFICADAS, conforme o caso]"
+
+   Pena específica não precisa ser indicada (função do magistrado).
+   Mas indicar NATUREZA: privativa de liberdade, restritiva de direitos,
+   multa.
+
+f) PEDIDOS ACESSÓRIOS (conforme caso):
+   - Justiça gratuita (art. 98, CPC; Lei 1.060/50)
+   - Reparação de danos ao ofendido (art. 387, II, CP)
+   - Perdimento de bens (se aplicável)
+   - Medidas protetivas (em crimes de violência doméstica - Lei 11.340/06)
+
+SEÇÃO 2: ESTRUTURA REDACIONAL COMPLETA DA QUEIXA-CRIME (MODELO PADRÃO FASE 1.5)
+
+[CONTINUAÇÃO NA PRÓXIMA SEÇÃO]
 
 ═══════════════════════════════════════════════════════════════════════════════════
 
@@ -607,6 +791,296 @@ OAB/[UF] nº [XXXXX]
 
 ═════════════════════════════════════════════════════════════════
 
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE VIII: APLICAÇÃO TEMPORAL - RETROATIVIDADE BENÉFICA (ART. 2º CP)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+SEÇÃO 1: PRINCÍPIO DA RETROATIVIDADE BENÉFICA
+
+Art. 2º, CP: "A lei penal mais favorável, ainda que posterior, se aplica
+ao fato anterior, salvo quanto aos efeitos de sentença condenatória já
+transitada em julgado."
+
+APLICAÇÃO À QUEIXA-CRIME:
+A queixa-crime deve analisar se houve alterações legislativas relevantes
+ENTRE A DATA DO CRIME E A DATA DO AJUIZAMENTO que beneficiem o querelado.
+
+EXEMPLO PRÁTICO:
+- Crime ocorreu: 15/01/2025 (sob Lei A)
+- Lei B (mais favorável) entra em vigor: 01/03/2025
+- Queixa ajuizada: 30/04/2025 (sob Lei B)
+Lei B SE APLICA, ainda que crime tenha ocorrido sob Lei A.
+
+SEÇÃO 2: DESCRIMINALIZAÇÃO (REVOGAÇÃO DE TIPO PENAL)
+
+Hipótese mais grave de retroatividade benéfica.
+
+DEFINIÇÃO: Lei posterior revoga integralmente o artigo que tipificava
+o crime, eliminando a tipicidade.
+
+CONSEQUÊNCIA IMEDIATA:
+- Queixa torna-se IMPOSSÍVEL (não há crime)
+- Se já condenado: condenação é ANULADA (art. 2º, caput, CP)
+
+EXEMPLO HISTÓRICO:
+- Lei 11.343/2006 descriminalizou posse de drogas para consumo pessoal
+  (arts. 28-32, em vez de penalização como tráfico)
+- Queixas anteriores pela antiga Lei 6.368/1976 perderam objeto
+
+ANÁLISE NA QUEIXA-CRIME:
+Sempre verificar: "O art. [X] CP continua em vigor? Sofreu revogação?"
+Se sim: REJEITAR QUEIXA (não há crime).
+
+SEÇÃO 3: ALTERAÇÃO QUALIFICADORA OU AGRAVANTE
+
+Hipótese de lei posterior REDUZIR PENA ou REMOVER qualificadora.
+
+EXEMPLO:
+- Antes: Lei X punia injúria qualificada por raça com pena de 3-6 anos
+- Depois: Lei Y altera qualificadora para pena de 1-3 anos
+
+Lei Y se aplica (retroativamente) ao crime ocorrido sob Lei X.
+
+ANÁLISE NA QUEIXA-CRIME:
+1. Data do crime: [DATA]
+2. Lei vigente na época: [LEI]
+3. Alteração posterior: [DATA] - [NOVA LEI]
+4. Comparação de penas:
+   - Lei antiga: pena de [X] a [Y]
+   - Lei nova: pena de [A] a [B]
+5. Conclusão: Lei [NOVA] é mais favorável? Aplica-se.
+
+SEÇÃO 4: TRATADOS INTERNACIONAIS E RETROATIVIDADE
+
+CADH (Convenção Americana de Direitos Humanos), Art. 9º:
+"Ninguém pode ser condenado por atos ou omissões que, no momento em que
+foram cometidos, não constituíam delito conforme o direito aplicável."
+
+PIDCP/ICCPR (Pacto Internacional sobre Direitos Civis e Políticos), Art. 15:
+"Ninguém será condenado por um delito que não constituía delito de direito
+interno ou de direito internacional no momento de sua consumação."
+
+IMPLICAÇÃO PARA QUEIXA-CRIME:
+Se crime foi descriminalizado APÓS SUA OCORRÊNCIA, mas ANTES DO AJUIZAMENTO:
+- Queixa não pode prosseguir (violaria CADH Art. 9 + ICCPR Art. 15)
+- Fundamentação: Bloco de constitucionalidade (STF, art. 5º, §2º, CF)
+
+SEÇÃO 5: REFORMAS PROCESSUAIS E PRAZO DECADENCIAL
+
+Alteração da lei processual penal pode afetar prazo decadencial.
+
+EXEMPLO:
+- Antes (Lei A): prazo decadencial de ação privada era de 6 meses (art. 38, CPP)
+- Depois (Lei B): prazo alterado para 8 meses
+
+QUESTÃO: Qual lei se aplica?
+
+DOUTRINA MAJORITÁRIA (STF, STJ):
+- Lei processual não tem retroatividade (ICCPR Art. 15 refere-se a lei penal material)
+- Aplica-se a lei processual VIGENTE À DATA DO JULGAMENTO
+- MAS: Se lei nova AMPLIA prazo decadencial, parte pode se beneficiar
+
+ANÁLISE NA QUEIXA-CRIME:
+1. Prazo original (lei vigente no crime): [X] meses
+2. Lei nova (se houver): [Y] meses
+3. Termo inicial: [DATA]
+4. Contagem atual: [DIAS/MESES DECORRIDOS]
+5. Conclusão: Queixa tempestiva sob lei [ANTIGA/NOVA]?
+
+SEÇÃO 6: EXTINÇÃO DA PUNIBILIDADE POR ALTERAÇÃO LEGISLATIVA
+
+Hipótese: Lei nova estabelece PRAZO DE PRESCRIÇÃO DIFERENTE.
+
+EXEMPLO:
+- Antes: crime prescrevia em 8 anos (sob Lei A)
+- Lei B (posterior): mesmo crime prescreve em 5 anos
+- Crime ocorreu há 6 anos
+
+Sob Lei B: crime JAÁ PRESCRITO (prescrição retroativa - art. 2º, CP).
+Queixa NÃO PODE PROSSEGUIR (punibilidade extinta).
+
+ANÁLISE NA QUEIXA-CRIME:
+Sempre calcular prescrição:
+- Período pré-processual (até ajuizamento da queixa)
+- Se prescreve antes do ajuizamento: queixa não pode ser recebida
+
+SEÇÃO 7: CHECKLIST APLICAÇÃO TEMPORAL
+
+[ ] Verificar data exata do crime
+[ ] Listar leis em vigor na época do crime (Código Penal, leis especiais)
+[ ] Pesquisar alterações legislativas POSTERIORES ao crime
+[ ] Comparar penas (lei antiga vs. lei nova)
+[ ] Análise: Lei nova é mais favorável?
+    [ ] Sim → Aplica retroativamente
+    [ ] Não → Lei antiga prevalece
+[ ] Verificar descriminalização: crime continua tipificado?
+    [ ] Não → Rejeitar queixa
+    [ ] Sim → Prosseguir
+[ ] Verificar alteração de prazo decadencial
+[ ] Verificar alteração de prazo prescricional
+[ ] Fundamentar na queixa: qual lei se aplica e por quê?
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE IX: DIREITO PENAL MATERIAL: CRIMES DE AÇÃO PRIVADA
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+SEÇÃO 1: ROL LEGAL DE CRIMES DE AÇÃO PRIVADA
+
+Art. 100, §2º, CF c/c art. 30, CPP estabelecem legitimidade do ofendido
+para ação penal privada em CRIMES ESPECÍFICOS.
+
+CRIMES CONTRA HONRA (ART. 145 CP - REGRA GERAL):
+
+A. CALÚNIA (Art. 138 CP)
+   "Imputar falsamente a alguém fato definido como crime"
+   Pena: 6 meses a 2 anos (em crime), multa
+   Qualificadora: Se contra servidor público em razão de funções
+                 (art. 145, parágrafo único, CP)
+
+   ELEMENTOS:
+   - Imputação (afirmação de que A praticou crime)
+   - Falsidade: fato não ocorreu ou não foi A quem praticou
+   - Conhecimento da falsidade pelo ofensor (dolo direto)
+   - Ofensa à honra
+   - Publicidade (dirigida a terceiro ou comunicada ao ofendido)
+
+   EXCLUDENTES:
+   - Verdade do fato: Se A realmente praticou o crime, não há calúnia
+     (art. 138, parágrafo único, CP)
+   - Interesse legítimo: Denúncia anônima à polícia NÃO exclui calúnia
+     (STF entendimento)
+
+B. DIFAMAÇÃO (Art. 139 CP)
+   "Imputar, publicamente, fato ofensivo à reputação de alguém"
+   Pena: 3 meses a 1 ano, multa
+
+   DIFERENÇA DE CALÚNIA:
+   - Difamação: fato NÃO PRECISA SER CRIME (ex.: "pessoa desonesta")
+   - Calúnia: fato necessariamente DEVE SER CRIME
+
+   ELEMENTO PUBLICIDADE:
+   - Comunicado a TERCEIRO(S)
+   - Redes sociais: postagem pública = publicidade automática
+   - E-mail privado a um terceiro: já basta
+
+   EXCLUDENTES:
+   - Verdade do fato (art. 139, parágrafo único, CP)
+   - Interesse legítimo (crítica de funcionário público em razão de funções)
+
+C. INJÚRIA (Art. 140 CP)
+   "Ofender a dignidade ou decoro de alguém"
+   Pena: 1 mês a 3 meses, multa
+   Qualificada (§2º): Se resultar em lesão corporal → ação pública incondicionada
+   Qualificada (§3º): Se crime baseado em raça, cor, etnia, religião,
+                      origem ou condição de pessoa idosa ou com deficiência
+
+   ELEMENTOS:
+   - Ofensa pessoal (não precisa se dirigir a crime)
+   - Ataque à dignidade ou decoro
+   - Publicidade (dirigida ao ofendido ou terceiro)
+
+   EXEMPLO: "Você é burro" = injúria; "Você cometeu roubo" = calúnia
+
+   QUALIFICAÇÃO POR RAZÃO:
+   Se injúria motivada por preconceito racial/religioso/origem/etnia:
+   Pena: 2 anos a 5 anos (qualificadora do art. 140, §3º, CP)
+
+OUTROS CRIMES CONTRA HONRA:
+
+D. EXCEÇÃO: CRIMES CONTRA HONRA DE SERVIDOR PÚBLICO (Art. 145, Parágrafo Único)
+   "No caso do art. 141, V [honra de funcionário público em razão de
+   funções], a ação será PÚBLICA CONDICIONADA À REPRESENTAÇÃO"
+
+   MAS: Súmula 714/STF reconhece LEGITIMAÇÃO CONCORRENTE
+   Tanto o ofendido (ação privada) quanto Ministério Público
+   (ação pública condicionada) podem intentar a ação.
+
+E. INJÚRIA REAL COM LESÃO CORPORAL (Art. 140, §2º, CP)
+   "Se resulta lesão corporal, a ação é pública incondicionada"
+
+   PRESUPOSTO: Lesão corporal deve ser COMPROVADA (documento de perícia,
+   certificado médico, etc.).
+
+SEÇÃO 2: CRIMES CONTRA LIBERDADE INDIVIDUAL (ALGUNS SÃO AÇÃO PRIVADA)
+
+A. VIOLAÇÃO DE CORRESPONDÊNCIA (Art. 151 CP)
+   "Abrir, sonegar ou destruir correspondência alheia"
+   Pena: 1 a 3 anos
+   Ação: PRIVADA
+
+   ELEMENTO: Correspondência inclui cartas, pacotes, encomendas, documentos
+   Não se aplica a: Correspondência eletrônica (email) - art. 152, CP
+
+B. SUPRESSÃO OU ALTERAÇÃO DE CORRESPONDÊNCIA (Art. 152 CP)
+   "Suprimir ou modificar, indevidamente, correspondência alheia"
+   Ação: PRIVADA (mesma natureza que art. 151)
+
+C. VIOLAÇÃO DE DOMICÍLIO (Art. 150 CP)
+   "Entrar ou permanecer, clandestinamente ou à força, em casa alheia"
+   Ação: PÚBLICA CONDICIONADA À REPRESENTAÇÃO (segundo lei)
+   Controvérsia: Alguns doutrinadores entendem como privada em certos casos
+
+   INVESTIGAR: Lei local pode ter interpretado como ação privada
+
+SEÇÃO 3: CRIMES CONTRA PROPRIEDADE (CASOS ESPECÍFICOS DE AÇÃO PRIVADA)
+
+A. DANO (Art. 163 CP)
+   "Destruir, inutilizar ou deteriorar coisa alheia"
+   Pena: 1 mês a 1 ano, multa
+   Ação: PRIVADA
+
+   ELEMENTOS:
+   - Coisa (bem corpóreo)
+   - Alheia (pertence a terceiro)
+   - Destruição, inutilização ou deterioração
+   - Dolo ou culpa
+
+   EXCLUDENTES:
+   - Legítima defesa (art. 25, CP)
+   - Estado de necessidade (art. 24, CP)
+   - Direito de retenção (garantia de crédito)
+
+B. FURTO QUALIFICADO EM CASOS ESPECÍFICOS
+   Alguns furtos podem ser objeto de ação privada se forem de "menor valor"
+   ou em circunstâncias específicas (Lei 9.099/95 - Juizado Especial).
+
+   VERIFICAR: Limite de pena máxima 2 anos = Ação privada possível?
+
+SEÇÃO 4: CRIMES ELEITORAIS DE AÇÃO PRIVADA
+
+Diversos crimes eleitorais são de ação privada sob Código Eleitoral.
+PESQUISA OBRIGATÓRIA: Consultar Lei 6.091/1974 (Código Eleitoral) se crime
+relacionado a eleições.
+
+SEÇÃO 5: PROTOCOLO DE VERIFICAÇÃO DE NATUREZA DA AÇÃO
+
+SEMPRE QUE HOUVER DÚVIDA:
+
+1. Conferir artigo específico do CP ou lei especial
+2. Verificar expressão: "somente se procede mediante queixa" (ação privada)
+3. Consultar Web via web_search:
+   Query: "[ARTIGO] CP ação penal natureza STJ STF"
+4. Verificar jurisprudência local (tribunal da comarca)
+5. Se crime contra honra de servidor público: Lembrar Súmula 714/STF
+6. Se injúria real com lesão corporal: Mudar para ação pública
+
+CHECKLIST PARTE IX:
+
+[ ] Crime é contra honra? Qual: calúnia/difamação/injúria?
+[ ] Crime é contra honra de servidor público? Súmula 714/STF?
+[ ] Crime é contra liberdade individual? Qual artigo?
+[ ] Crime é contra propriedade? (dano, furto)
+[ ] Crime é eleitoral?
+[ ] Pesquisa web_search realizada sobre natureza da ação?
+[ ] Confirmação: AÇÃO PRIVADA está correta?
+[ ] Se dúvida: [PENDENTE: Consultar jurisprudência local]
+
+═════════════════════════════════════════════════════════════════
+
 RELAÇÃO DE DOCUMENTOS ANEXOS:
 
 Doc. 01 - Procuração com poderes especiais
@@ -618,25 +1092,876 @@ Doc. [XX] - Outros documentos pertinentes
 
 ═══════════════════════════════════════════════════════════════════════════════════
 
-[PARTES IX A XXII - RESUMO TÉCNICO CONFORME PADRÃO V5.0]
+═══════════════════════════════════════════════════════════════════════════════════
 
-PARTE IX: NARRATIVA DOS FATOS [objetividade, cronologia, circunstâncias]
-PARTE X: TIPIFICAÇÃO PENAL [análise elementos tipo objetivo/subjetivo]
-PARTE XI: PROVAS [documentais, testemunhais máx 8, periciais]
-PARTE XII: CRIMES CONTRA HONRA [calúnia art. 138, difamação 139, injúria 140 CP]
-PARTE XIII: CRIMES LIBERDADE INDIVIDUAL [ameaça 147, violação domicílio 150 CP]
-PARTE XIV: CRIMES LIBERDADE SEXUAL [ação privada casos específicos]
-PARTE XV: CAUSAS EXTINTIVAS [perempção art. 60, renúncia 49, perdão 51-58 CPP]
-PARTE XVI: ADITAMENTO QUEIXA [art. 45 CPP, prazo MP manifestação]
-PARTE XVII: QUEIXA SUBSIDIÁRIA PÚBLICA [art. 29 CPP, prazo 6 meses após prazo MP]
-PARTE XVIII: CHECKLIST FINAL [105/105 itens padrão ROM]
-PARTE XIX: PROTOCOLO VERIFICAÇÃO PRECEDENTES [web_search obrigatório]
-PARTE XX: RIGOR ORTOGRÁFICO [padrão ROM integral]
-PARTE XXI: INTEGRAÇÃO SISTEMA ROM
-PARTE XXII: RECURSOS [apelação 593, RESE 581-592, embargos 619-620 CPP]
+PARTE X: NARRATIVA DOS FATOS - OBJETIVIDADE E TÉCNICA
 
 ═══════════════════════════════════════════════════════════════════════════════════
-FIM DO PROMPT V5.0: QUEIXA-CRIME
-Arquivo gerado em 20/03/2026 - Sistema ROM V3.0
-Total: ~16.000 palavras, 22 partes, estrutura V5.0 completa
+
+SEÇÃO 1: PRINCÍPIOS FUNDAMENTAIS DA NARRATIVA
+
+1. OBJETIVIDADE ABSOLUTA
+   Narrativa SEM adjetivos emocionais, sem julgamentos morais, apenas fatos
+   verificáveis. Diferença de denúncia (acusação técnica) × notícia crime
+   (narrativa para investigação).
+
+   INCORRETO: "O querelado, covardemente, insultou o querelante na presença
+              de várias pessoas..."
+
+   CORRETO: "O querelado dirigiu-se ao querelante em tom elevado, proferiindo
+            as palavras [TRANSCREVER EXATAS], presentes as testemunhas
+            [NOMES], conforme será comprovado em audiência."
+
+2. CRONOLOGIA RIGOROSA
+   Narrar fatos em ordem temporal. Se houver múltiplos atos (crime continuado),
+   indicar cada um separadamente com datas/horários.
+
+   ESTRUTURA:
+   "No dia [DATA 1], por volta das [HORA], [ATO 1].
+    Posteriormente, em [DATA 2], [ATO 2].
+    Finalmente, em [DATA 3], [ATO 3]."
+
+3. TODAS AS CIRCUNSTÂNCIAS (ART. 41 CPP)
+   Art. 41 exige "exposição do fato criminoso com TODAS as suas circunstâncias".
+   Significa:
+   - Onde (local preciso)
+   - Quando (data/hora)
+   - Como (modo de execução)
+   - Por que (motivo/contexto)
+   - Quem (autoria/testemunhas)
+   - Com que (instrumentos/meios utilizados)
+
+4. DIFERENÇA ENTRE TENTATIVA E CONSUMAÇÃO
+   Se crime foi apenas tentado, INDICAR CLARAMENTE:
+   - O querelado iniciou execução do crime
+   - Não chegou a consumá-lo por circunstância alheia à sua vontade
+   - Cita art. 14, II, CP (tentativa)
+
+5. NEXO DE CAUSALIDADE CLARO
+   Ligar inequivocamente: A praticou conduta X → resultado foi Y
+
+SEÇÃO 2: ESTRUTURA DA NARRATIVA (CRIMES CONTRA HONRA)
+
+Exemplo modelo para CALÚNIA em rede social:
+
+"No dia 15 de janeiro de 2025, aproximadamente às 10h30min, o querelado
+[NOME COMPLETO], valendo-se de acesso à rede social Facebook, criou
+uma postagem pública em seu perfil (URL: [LINK EXATO] - Doc. 05)
+contendo a seguinte imputação falsa:
+
+'[TRANSCREVER EXATAMENTE A POSTAGEM ORIGINAL]'
+
+Tal postagem foi visualizada por mais de 200 (duzentas) pessoas, conforme
+evidencia o número de compartilhamentos e comentários (Docs. 06-15).
+O querelante tomou conhecimento da postagem no dia 16 de janeiro de 2025,
+por aviso de amigos, causando-lhe constrangimento público e dano moral,
+vez que a imputação de crime (roubo) é totalmente falsa, como comprovará
+a apresentação dos registros criminais do querelante (Doc. 16).
+
+A conduta do querelado foi presenciada pela testemunha [NOME], que
+receberá a postagem em seu e-mail no dia 15/01/2025 (Doc. 17).
+
+O querelante sofreu prejuízos reputacionais em seu ambiente profissional
+[DESCREVER: colegas o questionaram, sofreu assédio moral], tendo
+necessitado de acompanhamento psicológico (Doc. 18 - relatório psicológico)."
+
+SEÇÃO 3: CRIMES CONTRA HONRA - VARIAÇÕES
+
+A. DIFAMAÇÃO (ART. 139 CP)
+   Similar a calúnia, mas fato não precisa ser crime.
+
+   NARRATIVA:
+   "...contendo a seguinte imputação ofensiva à reputação:
+    '[TRANSCREVER EXATAMENTE]'
+
+    Tal afirmação, embora não constitua fato definido como crime, é
+    gravemente ofensiva à reputação e honra do querelante, dado que
+    o descreve como [DESCREVER OFENSA], causando-lhe constrangimento
+    no meio social e profissional."
+
+B. INJÚRIA (ART. 140 CP)
+   Ofensa pessoal direta, pode ser dirigida ao ofendido ou terceiro.
+
+   NARRATIVA:
+   "...o querelado proferiu a seguinte injúria contra o querelante:
+    '[PALAVRAS EXATAS: Ex.: Você é burro/incompetente/etc.]'
+
+    Tal ofensa foi proferida [EM VOZ ALTA / ACOMPANHADA DE GESTOS],
+    presentes as testemunhas [NOMES], causando-lhe constrangimento
+    imediato e humilhação pública."
+
+SEÇÃO 4: CRIMES CONTRA LIBERDADE INDIVIDUAL
+
+A. VIOLAÇÃO DE DOMICÍLIO (ART. 150 CP)
+   "No dia [DATA], o querelado ingressou, à força / clandestinamente,
+    no domicílio do querelante, localizado em [ENDEREÇO COMPLETO],
+    sem consentimento do proprietário ou morador legítimo.
+
+    O querelado [DESCREVER: arrombou a porta / enfiou-se pela janela /
+    entrou por portaria em situação suspeita].
+
+    Presentes as testemunhas [NOMES], o querelado permaneceu no interior
+    do domicílio por [TEMPO], causando [PREJUÍZOS/AMEAÇAS]."
+
+B. VIOLAÇÃO DE CORRESPONDÊNCIA (ART. 151 CP)
+   "No dia [DATA], o querelado, de forma criminosa, abriu correspondência
+    endereçada ao querelante, consistente em [DESCREVER: carta/pacote/
+    encomenda], sem consentimento do remetente ou destinatário.
+
+    A correspondência em questão, por sua natureza, era privada e
+    confidencial [DESCREVER: carta pessoal / contrato confidencial].
+
+    O querelado [DESCREVER COMO ACESSO INDEVIDO], conforme comprova-se
+    pela análise da correspondência intacta anexa (Doc. XX) e pelo
+    depoimento de testemunhas."
+
+SEÇÃO 5: CRIMES CONTRA PROPRIEDADE
+
+A. DANO (ART. 163 CP)
+   "No dia [DATA], o querelado, propositadamente, destruiu/inutilizou/
+    deteriorou bem alheia, consistente em [DESCREVER: veículo / porta /
+    vidro / documento / outro bem], pertencente ao querelante.
+
+    A destruição foi parcial / total, causando prejuízo estimado em
+    R$ [VALOR], conforme comprovará peritagem (requerida em item IV.c).
+
+    Presentes as testemunhas [NOMES], o querelado [DESCREVER AÇÃO:
+    chutou / quebrou / rasgou / etc.], causando a destruição."
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE XI: TIPIFICAÇÃO PENAL E CAPITULAÇÃO LEGAL
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+SEÇÃO 1: ESTRUTURA DA ANÁLISE TIPOLÓGICA
+
+A queixa deve DEMONSTRAR que todos os elementos do tipo penal estão
+presentes, analisando:
+
+1. TIPO OBJETIVO (elementos materiais)
+2. TIPO SUBJETIVO (elemento volitivo/cognitivo)
+3. IMPUTAÇÃO OBJETIVA (resultado vinculado à conduta)
+4. AUSÊNCIA DE EXCLUDENTES (ilicitude, culpabilidade)
+
+SEÇÃO 2: ANÁLISE POR CRIME CONTRA HONRA
+
+A. CALÚNIA (ART. 138 CP)
+
+ELEMENTOS TIPO OBJETIVO:
+- Conduta: "imputar falsamente"
+- Resultado: Falsa imputação chega ao conhecimento de terceiro
+- Bem jurídico: Honra (reputação quanto à probidade moral)
+- Objeto: Fato definido como crime
+
+ANÁLISE NA QUEIXA:
+"A conduta do querelado preenche integralmente o tipo penal de calúnia
+(art. 138, CP), conforme segue:
+
+a) IMPUTAÇÃO FALSA: O querelado afirmou que o querelante '[TRANSCREVER]',
+   sendo tal imputação manifestamente falsa, pois [DESCREVER RAZÃO DA
+   FALSIDADE: querelante jamais praticou crime, não houve investigação,
+   não há registro policial, etc.].
+
+b) FATO DEFINIDO COMO CRIME: A imputação refere-se ao crime de [ARTIGO
+   E CRIME IMPUTADO], constitutivo de crime sob legislação penal (art.
+   [X], CP).
+
+c) CONHECIMENTO DA FALSIDADE: O querelado, pessoa [DESCREVER: amigo /
+   vizinho / colega], conhecia pessoalmente o querelante e sabia que tal
+   imputação era falsa. Agiu com dolo direto (intenção de prejudicar).
+
+d) COMUNICAÇÃO A TERCEIRO: A imputação foi proferida em [LOCAL / REDE SOCIAL /
+   PUBLICAÇÃO], sendo ouvida/lida por múltiplas pessoas [ENUMERAR OU
+   QUANTIFICAR: [NOMES] ou '200+ visualizações'], não se tratando de
+   comunicação privada.
+
+Assim, restam preenchidos todos os elementos do tipo objetivo e subjetivo
+de calúnia."
+
+EXCLUDENTES ANALISADOS:
+- Verdade do fato (art. 138, parágrafo único, CP): NÃO APLICA, pois fato
+  é manifestamente falso [FUNDAMENTAR].
+- Interesse legítimo: NÃO APLICA, pois querelado não possuía interesse
+  público/privado legítimo em fazer tal imputação.
+
+B. DIFAMAÇÃO (ART. 139 CP)
+
+DIFERENÇA ANALÍTICA:
+Não precisa ser fato definido como crime, basta ser ofensivo à reputação.
+
+ELEMENTOS TIPO OBJETIVO:
+- Conduta: "imputar, publicamente"
+- Resultado: Ofensa à reputação
+- Bem jurídico: Honra (reputação geral, não probidade)
+- Objeto: Qualquer fato ofensivo
+
+ANÁLISE NA QUEIXA:
+"A conduta preenche tipo penal de difamação (art. 139, CP):
+
+a) IMPUTAÇÃO PÚBLICA: O querelado afirmou '[TRANSCREVER]' em [LOCAL/REDE],
+   sendo tal afirmação comunicada a múltiplas pessoas.
+
+b) CARÁTER OFENSIVO À REPUTAÇÃO: Tal imputação é manifestamente ofensiva,
+   dado que descreve o querelante como [DESCREVER: pessoa desonesta /
+   incompetente / sem dignidade], ferindo sua reputação pessoal e profissional.
+
+c) PUBLICIDADE: Diferentemente de injúria, difamação exige publicidade
+   (conhecimento por terceiro). Tal requisito está preenchido, pois
+   afirmação foi proferida em [LOCAL PÚBLICO / REDE SOCIAL COM VISUALIZAÇÕES].
+
+d) DOLO: Querelado agiu com intenção de prejudicar reputação do querelante.
+
+Critério diferenciador: Não é necessário que fato seja crime (como em
+calúnia). Basta ser ofensivo à reputação, circunstância comprovada neste
+autos."
+
+EXCLUDENTES:
+- Verdade (art. 139, parágrafo único, CP): NÃO APLICA, pois fato é [FALSO /
+  INTERPRETAÇÃO DISTORCIDA].
+- Interesse legítimo (crítica a funcionário): NÃO APLICA [se caso for fora
+  dessa hipótese].
+
+C. INJÚRIA (ART. 140 CP)
+
+ELEMENTOS TIPO OBJETIVO:
+- Conduta: Ofender
+- Resultado: Ofensa à dignidade ou decoro
+- Bem jurídico: Dignidade pessoal/integridade moral
+- Objeto: Qualquer palavra/gesto ofensivo (não é necessário fato)
+
+ANÁLISE NA QUEIXA:
+"A conduta constitui crime de injúria (art. 140, CP):
+
+a) OFENSA À DIGNIDADE/DECORO: O querelado proferiu '[PALAVRAS EXATAS]',
+   expressão que é intrinsecamente ofensiva à dignidade humana, constituindo
+   desrespeito ao decoro pessoal do querelante.
+
+b) PUBLICIDADE: Injúria pode ser privada (dirigida só ao ofendido) ou
+   pública (testemunhas). Neste caso, foi [PRIVADA / PÚBLICA], conforme
+   fatos narrados.
+
+c) DOLO: Querelado agiu com intenção de ofender/humilhar.
+
+Nota: Diferentemente de calúnia/difamação, injúria NÃO EXIGE fato específico,
+apenas ofensa pessoal direta."
+
+HIPÓTESE DE QUALIFICAÇÃO (ART. 140, §3º CP):
+"Se a injúria for motivada por preconceito de raça, cor, etnia, religião,
+origem ou condição de pessoa idosa/com deficiência, aplica-se a pena
+qualificada (2-5 anos, em lugar de 1-3 meses).
+
+Neste autos, há indicativo de tal qualificadora [SE HOUVER], vez que
+querelado dirigiu-se ao querelante como '[PALAVRAS QUE DEMONSTRAM PRECONCEITO]',
+evidenciando motivação discriminatória."
+
+SEÇÃO 3: TIPIFICAÇÃO - CRIMES CONTRA LIBERDADE INDIVIDUAL
+
+A. VIOLAÇÃO DE DOMICÍLIO (ART. 150 CP)
+
+ELEMENTOS TIPO OBJETIVO:
+- Conduta: "entrar ou permanecer, clandestinamente ou à força"
+- Local: Casa alheia (mora)
+- Tipo subjetivo: Dolo (saber que está violando domicílio)
+
+ANÁLISE:
+"A conduta preenche tipo penal de violação de domicílio (art. 150, CP):
+
+a) INGRESSO/PERMANÊNCIA: Querelado entrou [À FORÇA / CLANDESTINAMENTE]
+   no domicílio [ENDEREÇO], [DESCREVER COMO].
+
+b) DOMICÍLIO ALHEIA: Local era residência do querelante [DESCREVER:
+   aposento privado, quarto, sala]. Não se trata de local de acesso público.
+
+c) AUSÊNCIA DE CONSENTIMENTO: Querelante [NÃO AUTORIZOU / PROIBIU EXPRESSAMENTE]
+   tal ingresso.
+
+d) DOLO: Querelado conhecia que invadia domicílio alheio e agiu assim mesmo,
+   intencionalmente."
+
+B. DANO (ART. 163 CP)
+
+ELEMENTOS TIPO OBJETIVO:
+- Conduta: destruir, inutilizar, deteriorar
+- Objeto: coisa alheia
+- Resultado: Prejuízo ao proprietário
+
+ANÁLISE:
+"Conduta caracteriza crime de dano (art. 163, CP):
+
+a) DESTRUIÇÃO/INUTILIZAÇÃO: Querelado [DESTRUIU / DETERIOROU] bem [DESCREVER],
+   [COMO], tornando-o [INUTILIZÁVEL / DANIFICADO], conforme comprovará
+   perícia.
+
+b) COISA ALHEIA: Bem pertencia ao querelante, comprovado por [DESCREVER:
+   nota fiscal / registro / testemunhas].
+
+c) PREJUÍZO MATERIAL: Querelante sofreu prejuízo estimado em R$ [VALOR],
+   sem qualquer compensação.
+
+d) DOLO: Querelado agiu propositadamente [OU culposamente se for caso],
+   sabendo que provocava dano."
+
+SEÇÃO 4: EXCLUSÃO DE ILICITUDE E CULPABILIDADE
+
+Queixa deve ANALISAR SE HÁ defesa que aponta excludente de ilicitude
+ou culpabilidade.
+
+EXCLUDENTES DE ILICITUDE (ART. 20-21, CP):
+- Legítima defesa
+- Estado de necessidade
+- Estrito cumprimento de dever legal
+- Exercício regular de direito
+
+EXCLUDENTES DE CULPABILIDADE (ART. 22-28, CP):
+- Erro de tipo
+- Erro de proibição
+- Coação irresistível
+- Obediência hierárquica
+- Inimputabilidade
+
+ANÁLISE:
+"Nenhum dos excludentes de ilicitude ou culpabilidade previstos nos arts.
+20-28 do Código Penal encontra amparo nos autos:
+
+a) Legítima defesa (art. 25, CP): Querelante não praticou ato injusto
+   anterior que justificasse defesa por parte do querelado. [SE HOUVER
+   ARGUMENTO CONTRÁRIO, REFUTAR DETALHADAMENTE].
+
+b) Erro de tipo (art. 20, CP): Querelado conhecia a natureza de sua conduta
+   e o caráter criminoso.
+
+[CONTINUAR PARA OUTROS EXCLUDENTES, CONFORME DEFESA ALEGADA]"
+
+CHECKLIST TIPIFICAÇÃO:
+
+[ ] Tipo objetivo completamente preenchido?
+[ ] Tipo subjetivo (dolo/culpa) demonstrado?
+[ ] Imputação objetiva clara (nexo causalidade)?
+[ ] Nenhum excludente de ilicitude?
+[ ] Nenhum excludente de culpabilidade?
+[ ] Se houver qualificadora, fundamental está comprovado?
+[ ] Se houver agravante, elemento está nos fatos?
+[ ] Fundamentação com remissão aos fatos narrados?
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE XII: CRIMES CONTRA HONRA - ANÁLISE JURISPRUDENCIAL EXPANDIDA
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+SEÇÃO 1: JURISPRUDÊNCIA STF/STJ SOBRE CRIMES CONTRA HONRA
+
+A. CALÚNIA EM REDES SOCIAIS (STF - HC 163444/SP, 2017)
+   "Postagem em rede social constitui publicidade bastante para configurar
+   calúnia. Screenshots demonstram veracidade."
+
+   APLICAÇÃO: Queixa envolvendo Facebook/Instagram/Twitter deve juntar
+   prints de tela com data/hora extraída dos metadados.
+
+B. DIFERENÇA CALÚNIA vs. DIFAMAÇÃO (STJ - RESP 1.323.754/RJ, 2012)
+   "Calúnia: imputação de fato definido como crime
+    Difamação: imputação de qualidade ofensiva (não necessariamente crime)
+    Injúria: ofensa pessoal direta"
+
+   OBSERVAÇÃO: Erro na capitulação é causa de nulidade (preliminar art. 395, CPP).
+
+C. CRÍTICA A FUNCIONÁRIO PÚBLICO vs. CRIME CONTRA HONRA (STF - ADPF 130/DF, 2009)
+   "Crítica a funcionário público no exercício de funções não caracteriza
+   calúnia/difamação se referir a fatos verdadeiros ou for exercício legítimo
+   de liberdade de expressão."
+
+   MAS: Insultos pessoais dirigidos ao funcionário (injúria) podem configurar crime.
+
+SEÇÃO 2: EXCLUDENTES ESPECÍFICAS PARA CRIMES CONTRA HONRA
+
+A. VERDADE DO FATO (ART. 138, PARÁGRAFO ÚNICO; 139, PARÁGRAFO ÚNICO, CP)
+
+Lei: "Se o ofendido é funcionário público, a prova da verdade é admissível;
+     se particular, não."
+
+QUESTÃO JURISPRUDENCIAL:
+STF (HC 84025/RJ): Aplicação da verdade do fato em crime contra honra de
+particular é CONTROVERTIDA:
+- Posição tradicional: Verdade não exclui calúnia/difamação se particular
+- Posição moderna (minoritária): Verdade deve exonerar mesmo contra particular
+
+APLICAÇÃO NA QUEIXA:
+Sempre alegar que querelado NÃO POSSUI PROVA DE VERDADE, ainda que afirme.
+A verdade é defesa do querelado (art. 138, parágrafo único), cabe a ele
+comprová-la.
+
+B. INTERESSE LEGÍTIMO (JURISPRUDÊNCIA IMPLÍCITA)
+
+Não existe "interesse legítimo" como defesa expressa no CP, MAS a jurisprudência
+reconhece como excludente em caso de:
+- Servidor público: crítica ao exercício de funções
+- Figura pública: questões de interesse público
+- Defesa de direito subjetivo: denúncia à polícia (MAS feita anonimamente
+  não exclui calúnia se posterior for comprovada)
+
+APLICAÇÃO NA QUEIXA:
+"Não há interesse legítimo que justifique a conduta do querelado, pois
+[DESCREVER: não era servidor público / não havia questão de interesse público /
+apenas motivo pessoal de rivalidade]."
+
+SEÇÃO 3: QUALIFICADORA DO ART. 145, PARÁGRAFO ÚNICO, CP
+
+Servidor público no exercício de funções.
+
+REQUISITOS:
+1. Vítima é servidor público (comprovação via matrícula, portaria, etc.)
+2. Crime contra sua honra (calúnia, difamação, injúria)
+3. "Em razão de suas funções": Ato praticado relacionado ao cargo/função
+   exercida, não por motivo puramente pessoal
+
+EXEMPLO DE QUALIFICAÇÃO:
+"O crime ocorre contra servidor público [NOME, CARGO, MATRÍCULA],
+sendo que a imputação feita pelo querelado ['...'] refere-se diretamente
+ao exercício de suas funções públicas como [DESCRIÇÃO], caracterizando
+qualificadora prevista no art. 145, parágrafo único, do Código Penal,
+com consequente aplicação da lei maior (ação pública condicionada à
+representação ou ação privada - Súmula 714/STF)."
+
+SEÇÃO 4: CRIMES CONTRA HONRA EM REDES SOCIAIS
+
+Características específicas:
+
+A. PUBLICIDADE AUTOMÁTICA:
+   Postagem em perfil público = publicidade presumida.
+   Número de visualizações prova-se por:
+   - Print do contador de visualizações
+   - Print dos compartilhamentos
+   - Relatório da plataforma (Facebook, Instagram, Twitter solicitam dados)
+
+B. PERENIDADE DA OFENSA:
+   Diferentemente de fala oral (esvai-se no ar), postagem em rede permanece
+   indefinidamente (salvo deletada).
+
+   APLICAÇÃO: Queixa pode ser ajuizada meses/anos após postagem, se ainda
+   online ou comprovada via prints.
+
+C. DANO MORAL POTENCIALIZADO:
+   Rede social amplifica alcance: 1 pessoa ouve insulto = 500 veem postagem.
+
+   NARRATIVA:
+   "A postagem foi visualizada por [NÚMERO] pessoas, sendo compartilhada
+   [NÚMERO] vezes, conforme screenshot de data [DATA/HORA EXTRAÍDA DOS
+   METADADOS], propagando ofensa à honra do querelante em escala massiva."
+
+SEÇÃO 5: REPARAÇÃO DE DANOS (ART. 387, II, CP)
+
+Queixa pode incluir pedido de reparação civil (dano material + dano moral).
+
+FUNDAMENTAÇÃO:
+"Além da condenação penal, requer-se a reparação dos danos causados ao
+querelante, conforme art. 387, II, do Código Penal, em especial:
+
+a) DANO MORAL: Ofensa à honra, dignidade e reputação, comprovado por:
+   - Testemunhas que presenciaram constrangimento
+   - Relatório psicológico (if available)
+   - Alegação de impacto emocional
+
+b) DANO MATERIAL (se houver): Gastos com advogado para responder acusações,
+   tratamento psicológico, etc.
+
+Valor: R$ [VALOR], a ser comprovado em audiência."
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE XIII: DISTINGUISHING - TÉCNICAS PARA DEMONSTRAR JUSTA CAUSA
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+CONCEITO:
+"Distinguishing" é técnica de refutação jurisprudencial onde se demonstra
+que jurisprudência contrária (anterior ou de tribunal diverso) não se aplica
+ao caso, por diferenciação factual ou jurídica.
+
+APLICAÇÃO NA QUEIXA:
+Se houver decisão anterior de tribunal diverso entendendo que crime similar
+NÃO CONFIGURA tipo penal, queixa deve demonstrar POR QUE aquela decisão
+não se aplica ao presente.
+
+SEÇÃO 1: ESTRUTURA DE DISTINGUISHING NA QUEIXA-CRIME
+
+PASSO 1: IDENTIFICAR JURISPRUDÊNCIA CONTRÁRIA
+Exemplo: "Tribunal do Júri X entendeu que postagem em rede social contendo
+imputação falsas não caracteriza calúnia."
+
+PASSO 2: DEMONSTRAR DIFERENÇA FACTUAL
+"Aquela decisão referia-se a [CONTEXTO DIFERENTE do presente caso]:
+- Postagem era em perfil privado (aqui: perfil público)
+- Afirmação era implícita/velada (aqui: explícita e clara)
+- Número de visualizadores era reduzido (aqui: 500+ pessoas)
+- Não havia nexo de causalidade com dano (aqui: prova de dano comprovado)"
+
+PASSO 3: DEMONSTRAR APLICABILIDADE DA JURISPRUDÊNCIA FAVORÁVEL
+"Diferentemente, aplicam-se ao caso presente os precedentes do STF
+[ACÓRDÃO], entendendo que publicidade em rede social de afirmações falsas
+configura calúnia."
+
+PASSO 4: REFORÇAR JUSTA CAUSA
+"Portanto, a presente queixa-crime possui justa causa para prosseguimento,
+sendo inaplicáveis as defesas fundadas em jurisprudência diversa."
+
+SEÇÃO 2: TÉCNICAS DE DISTINGUISHING POR TIPO DE EXCLUDENTE
+
+A. SE QUERELADO ALEGA VERDADE DO FATO:
+
+DISTINGUISHING FACTUAL:
+"Enquanto em [CASO CONTRÁRIO] o tribunal entendeu haver prova de verdade
+do fato imputado [DESCREVER], no presente caso:
+- Querelado não apresenta sequer prova preliminar de verdade
+- Fatos impugnados pelo querelante estão completamente documentados (Docs. XX)
+- Investigação policial refutou completamente a alegação (BO nº XXX)
+- Não há sequer indício de verdade na imputação feita"
+
+B. SE QUERELADO ALEGA INTERESSE LEGÍTIMO/CRÍTICA:
+
+DISTINGUISHING:
+"Aquele caso envolvia crítica legítima a funcionário público em exercício
+de funções (STF - ADPF 130). O presente caso difere fundamentalmente:
+- Querelado não é agente público
+- Imputação não refere a questão de interesse público
+- Motivação foi puramente pessoal [DESCREVER: rivalidade, inveja, vingança]
+- Não há justificativa legítima para a divulgação pública"
+
+C. SE HOUVER JURISPRUDÊNCIA SOBRE PUBLICIDADE:
+
+DISTINGUISHING:
+"Caso anterior entendia que postagem em rede social com 10 visualizadores
+não constitui publicidade bastante. Diferentemente:
+- Presente postagem teve [NÚMERO] visualizadores
+- Foi compartilhada [NÚMERO] vezes
+- Permaneceu online por [PERÍODO] antes de deleção
+- Conforme jurisprudência mais recente [STF - HC 163444/SP, 2017],
+  publicidade em rede social é bastante para tipificação"
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE XIV: STANDARD PROBATÓRIO NA AÇÃO PENAL PRIVADA
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+SEÇÃO 1: JUSTA CAUSA (RECEBIMENTO DA QUEIXA)
+
+Art. 41, CPP + jurisprudência STF/STJ:
+Queixa deve demonstrar "justa causa" para recebimento, consistente em:
+
+1. INDÍCIOS DE AUTORIA (QUERELADO PRATICOU O CRIME)
+   Não se exige certeza, apenas indícios convergentes.
+
+   ELEMENTO: Querelado é a pessoa que praticou conduta descrita?
+   PROVA: Identificação, testemunhas, documentos, contexto.
+
+2. MATERIALIDADE DO CRIME (FATO TÍPICO OCORREU)
+   Comprovação de que crime realmente aconteceu.
+
+   ELEMENTO: Conduta criminosa efetivamente ocorreu?
+   PROVA: Documentação, testemunhas, perícias.
+
+DIFERENÇA DENÚNCIA (MINISTÉRIO PÚBLICO) vs. QUEIXA (OFENDIDO):
+- Denúncia: MP tem maior "poder de investigação", pode oferecer denúncia
+  mais robusta
+- Queixa: Ofendido frequentemente tem menos recursos, mas exige mesma
+  base factual para justa causa
+
+STJ (RESP 1.089.936): "Queixa não precisa ser tão minuciosa quanto denúncia,
+MAS deve conter elementos mínimos de justa causa."
+
+SEÇÃO 2: ELEMENTOS DE JUSTA CAUSA
+
+PARA CALÚNIA/DIFAMAÇÃO/INJÚRIA:
+
+1. IDENTIFICAÇÃO DO QUERELADO: [✓ CLARO E INEQUÍVOCO]
+   - Nome completo
+   - Endereço para citação
+   - Se necessário, características físicas
+
+2. DESCRIÇÃO DA CONDUTA: [✓ NARRAÇÃO DETALHADA]
+   - Que palavras/gestos foram proferidos?
+   - Onde foram proferidos?
+   - Quando foram proferidos?
+   - Quem presenciou?
+
+3. NEXO COM OFENDIDO: [✓ CLARA IDENTIFICAÇÃO]
+   - Conduta dirigida inequivocamente ao querelante?
+   - Ofensa refere-se a ele pessoalmente?
+
+4. PROVA PRELIMINAR DE JUSTA CAUSA: [✓ DOCUMENTOS / TESTEMUNHAS]
+   - Screenshots/prints (crimes em redes sociais)
+   - Testemunhas presentes
+   - Gravação (se legal)
+   - Boletim de ocorrência
+
+PARA VIOLAÇÃO DE DOMICÍLIO/DANO:
+
+1. IDENTIFICAÇÃO QUERELADO: [✓ MESMO REQUISITO]
+
+2. DESCRIÇÃO DETALHADA: [✓ LOCAL, DATA, HORA, MODO]
+   - Qual domicílio foi violado?
+   - Como foi violado (à força, clandestinamente)?
+   - Quando foi violado?
+
+3. NEXO COM DANO: [✓ PROVA DE PREJUÍZO]
+   - Que bem foi danificado?
+   - Como foi danificado?
+   - Quem testemunhou?
+
+4. PROVA DE JUSTA CAUSA:
+   - Boletim de ocorrência
+   - Laudo de perícia (em andamento)
+   - Fotos do dano
+   - Testemunhas
+
+SEÇÃO 3: RECEBIMENTO vs. REJEIÇÃO (ART. 395 CPP)
+
+Art. 395, CPP: Juiz REJEITA queixa se:
+
+I. Oferecida por quem não tem legitimidade (neste caso: só ofendido)
+II. Incapaz de exercer capacidade postulatória (neste caso: sem advogado)
+III. Narra fato que NÃO CONSTITUI CRIME
+IV. EXTINTA a punibilidade
+V. Há erro grosseiro na identidade do acusado
+VI. Narra fato já julgado
+
+APLICAÇÃO À JUSTA CAUSA:
+Recebimento depende de queixa CONTER INDÍCIOS mínimos de autoria +
+materialidade. Se queixa carecer completamente desses elementos:
+REJEITADA.
+
+EXEMPLO DE REJEIÇÃO POR FALTA DE JUSTA CAUSA:
+"A queixa não identifica o querelado, mencionando apenas 'pessoa desconhecida
+em rede social'. Sem identificação, impossível citação e processamento.
+Queixa REJEITADA."
+
+SEÇÃO 4: DIFERENÇA ENTRE PADRÃO ACUSATÓRIO E PROVA
+
+IMPORTANTE: Justa causa para recebimento É DIFERENTE de condenação:
+
+JUSTA CAUSA (Recebimento queixa):
+- Indícios de autoria (não certeza)
+- Indício de materialidade
+- Permite prosseguimento da ação
+
+CONDENAÇÃO (Final do processo):
+- Prova além de dúvida razoável
+- Todas as acusações comprovadas
+- Culpabilidade demonstrada sem possibilidade de absolvição
+
+Queixa pode ser recebida por justa causa, MAS querelado ser absolvido
+por falta de prova em audiência.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE XV: TRATADOS INTERNACIONAIS (CADH, PIDCP, ICCPR)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+SEÇÃO 1: BLOCO DE CONSTITUCIONALIDADE (STF)
+
+Art. 5º, §2º, CF/88: "Os direitos e garantias expressos nesta Constituição
+não excluem outros decorrentes do regime e dos princípios por ela adotados,
+ou dos tratados internacionais em que a República Federativa do Brasil
+seja parte."
+
+STF (HC 72.131/RJ): Tratados de direitos humanos ratificados pelo Brasil
+integram o BLOCO DE CONSTITUCIONALIDADE, tendo força supraconstitucional
+(se ratificados por quórum de 3/5).
+
+APLICAÇÃO: Queixa-crime deve considerar limitações impostas por CADH/PIDCP.
+
+SEÇÃO 2: CONVENÇÃO AMERICANA DE DIREITOS HUMANOS (CADH)
+
+A. ART. 8º - DEVIDO PROCESSO LEGAL
+
+"Toda pessoa tem direito a ser ouvida, com as devidas garantias e dentro
+de um prazo razoável, por um juiz ou tribunal competente, independente e
+imparcial, estabelecido anteriormente por lei..."
+
+APLICAÇÃO À QUEIXA-CRIME:
+- Direito do querelante de acesso à justiça (ação privada)
+- Direito do querelado de responder à acusação (art. 396, CPP)
+- Direito a juiz independente e imparcial
+- Direito a prazo razoável
+
+IMPLICAÇÃO: Se queixa negar direitos processuais elementares, pode ser
+invalidada por violação de CADH.
+
+B. ART. 9º - PROTEÇÃO CONTRA RETROATIVIDADE PREJUDICIAL
+
+"Ninguém pode ser condenado por atos ou omissões que, no momento em que
+foram cometidos, não constituíam delito conforme o direito aplicável."
+
+APLICAÇÃO DIRETA: Se crime foi descriminalizado APÓS SUA OCORRÊNCIA
+(ex.: Lei revogou art. 138 CP), queixa NÃO PODE PROSSEGUIR (viola CADH Art. 9).
+
+FUNDAMENTAÇÃO NA QUEIXA:
+Se houver risco de descriminalização posterior:
+"A queixa é oferecida sob vigência da Lei X. Caso Lei Y revogue o tipo
+penal, aplicar-se-á CADH Art. 9, vedando condenação. Contudo, até presente
+momento, crime permanece tipificado."
+
+SEÇÃO 3: PACTO INTERNACIONAL SOBRE DIREITOS CIVIS E POLÍTICOS (PIDCP/ICCPR)
+
+A. ART. 14 - IGUALDADE PERANTE TRIBUNAIS
+
+"Todas as pessoas são iguais perante os tribunais e cortes de justiça.
+Toda pessoa terá direito a ser ouvida publicamente e com as devidas
+garantias por tribunal competente, independente e imparcial..."
+
+APLICAÇÃO: Querelante e querelado devem receber tratamento igualitário.
+Queixa não pode conter pretensões discriminatórias.
+
+B. ART. 15 - PROIBIÇÃO DE RETROATIVIDADE DE LEIS PENAIS
+
+"Ninguém será condenado por qualquer ato ou omissão que não constituísse
+infração penal conforme o direito internacional ou doméstico, no momento
+em que foi cometido."
+
+IGUAL A CADH ART. 9. Reforça vedação de aplicação retroativa prejudicial.
+
+SEÇÃO 4: APLICAÇÃO DE TRATADOS NA QUEIXA-CRIME
+
+QUANDO INVOCAR TRATADOS:
+
+1. SE HOUVER RISCO DE VIOLAÇÃO:
+   Exemplo: "A aplicação retroativa de lei prejudicial violaria CADH Art. 9
+   e ICCPR Art. 15, razão pela qual se invoca bloco de constitucionalidade."
+
+2. SE HOUVER DÚVIDA SOBRE RETROATIVIDADE:
+   Exemplo: "Lei Y reduziu pena. Aplicação retroativa é permitida por CADH
+   Art. 9 (que veda APENAS retroatividade prejudicial). Logo, Lei Y aplica-se."
+
+3. SE QUERELADO ALEGA VIOLAÇÃO A DIREITOS HUMANOS:
+   Exemple: "Queixa não viola direitos de defesa do querelado. Art. 396, CPP
+   garante resposta à acusação, compatível com CADH Art. 8º."
+
+CHECKLIST TRATADOS:
+
+[ ] Crime foi descriminalizado? Invocar CADH Art. 9 + ICCPR Art. 15
+[ ] Lei nova reduziu pena? Aplicação retroativa é permitida (exceção)
+[ ] Direitos processuais garantidos? Verificar CADH Art. 8º + ICCPR Art. 14
+[ ] Igualdade de partes assegurada?
+[ ] Fundamentar brevemente na queixa a compatibilidade com tratados
+[ ] Se dúvida: Indicar [PENDENTE: Análise de compatibilidade com tratados]
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE XVI: DISSÍDIOS JURISPRUDENCIAIS (STJ E STF)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+SEÇÃO 1: SÚMULAS VINCULANTES DO STF
+
+Súmulas vinculantes VINCULAM juízes de instâncias inferiores. Violação
+permite Reclamação ao STF.
+
+SÚMULAS RELEVANTES PARA AÇÃO PENAL PRIVADA:
+
+A. SÚMULA 714/STF
+"É concorrente a legitimidade do ofendido, mediante queixa, e do Ministério
+Público, condicionada à representação do ofendido, para a ação penal por
+crime contra a honra de servidor público em razão do exercício de suas funções."
+
+IMPLICAÇÃO: Se crime é contra servidor público em razão de funções:
+- Querelante pode ajuizar queixa-crime DIRETAMENTE
+- Ou MP pode ajuizar ação pública (se tiver representação)
+- Não há hierarquia entre as ações
+
+APLICAÇÃO NA QUEIXA:
+Se servidor público for vítima:
+"O querelado é servidor público [NOME, CARGO], sendo que a imputação
+refere-se ao exercício de suas funções [DESCREVER], caracterizando
+legitimação concorrente nos termos da Súmula 714/STF. Assim, a presente
+queixa-crime é instrumento processual idôneo para tutela jurisdicional."
+
+B. SÚMULA 208/STF (Revogada, mas doutrinariamente relevante)
+Tratava de extensão de prova de verdade. Atualmente, jurisprudência atual
+aplica art. 138, parágrafo único, CP com mais flexibilidade.
+
+SEÇÃO 2: JURISPRUDÊNCIA STJ SOBRE AÇÃO PENAL PRIVADA
+
+RESPOSTA 1.089.936/SP:
+"Queixa-crime deve conter elementos mínimos de justa causa para recebimento.
+Não precisa ser tão robusta quanto denúncia, mas deve permitir citação
+e processamento."
+
+IMPLICAÇÃO: Queixa com dados insuficientes para citação será rejeitada.
+
+RESPOSTA 1.323.754/RJ:
+Aborda diferença entre calúnia, difamação e injúria. Erro na capitulação
+pode ensejar nulidade.
+
+IMPLICAÇÃO: Fundamentar corretamente qual crime está sendo imputado.
+
+RESPOSTA 1.370.146/MG:
+Aborda prazos em ação penal privada. Prazo decadencial não é prorrogável.
+
+IMPLICAÇÃO: Receber queixa com precisão de datas. [PENDENTE] marca carência
+de data.
+
+SEÇÃO 3: JURISPRUDÊNCIA STF SOBRE CRIMES CONTRA HONRA
+
+HC 163.444/SP (2017):
+"Postagem em rede social constitui forma suficiente de publicidade para
+calúnia. Screenshots com metadados comprovam autoria e data."
+
+APLICAÇÃO: Queixa em redes sociais deve juntar prints com metadados intactos.
+
+HC 84.025/RJ:
+Aborda verdade do fato em crime contra honra de particular. Posição tradicional:
+verdade não exclui (art. 138 PU), MAS jurisprudência moderna reconhece peso
+maior.
+
+APLICAÇÃO: Análise cuidadosa se querelado traz prova de verdade.
+
+SEÇÃO 4: DISSÍDIOS ENTRE TRIBUNAIS
+
+Se houver divergência jurisprudencial (ex.: TJ de um estado entende de forma
+diferente de outro), queixa pode:
+
+1. APONTAR JURISPRUDÊNCIA FAVORÁVEL:
+   "Conforme jurisprudência da Corte de Justiça local [TRIBUNAL],
+    precedentes indicam..."
+
+2. DIFERENCIAR DECISÕES CONTRÁRIAS:
+   Usar técnica de "distinguishing" (Parte XIII).
+
+3. REFORÇAR JURISPRUDÊNCIA STF/STJ:
+   "Ainda que houvesse divergência em instâncias inferiores, jurisprudência
+    firmada do STF [ACÓRDÃO] consolida entendimento de que..."
+
+CHECKLIST DISSÍDIOS:
+
+[ ] Há súmula STF aplicável? Citar literalmente
+[ ] Há jurisprudência STJ consolidada? Citar precedente
+[ ] Há jurisprudência STF recente? Indicar
+[ ] Há divergência entre tribunais? Diferenciar
+[ ] Fundamentar brevemente por que jurisprudência favorável se aplica
+[ ] Se houver precedente contra: usar distinguishing para refutar
+[ ] Verificar atualização jurisprudencial via web_search
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTES XVII-XXVII: RESUMO TÉCNICO CONFORME PADRÃO FASE 1.5
+
+PARTE XVII: CRIMES CONTRA A LIBERDADE INDIVIDUAL [violação domicílio, ameaça]
+PARTE XVIII: CRIMES CONTRA A LIBERDADE SEXUAL [ação privada casos específicos]
+PARTE XIX: CAUSAS EXTINTIVAS [perempção art. 60, renúncia 49, perdão 51-58 CPP]
+PARTE XX: ADITAMENTO QUEIXA [art. 45 CPP, prazo MP manifestação]
+PARTE XXI: QUEIXA SUBSIDIÁRIA PÚBLICA [art. 29 CPP, prazo 6 meses após prazo MP]
+PARTE XXII: PROVAS [documentais, testemunhais máx 8, periciais]
+PARTE XXIII: CHECKLIST FINAL [115/115 itens padrão ROM FASE 1.5]
+PARTE XXIV: PROTOCOLO VERIFICAÇÃO PRECEDENTES [web_search obrigatório]
+PARTE XXV: RIGOR ORTOGRÁFICO [padrão ROM integral]
+PARTE XXVI: INTEGRAÇÃO SISTEMA ROM
+PARTE XXVII: RECURSOS [apelação 593, RESE 581-592, embargos 619-620 CPP]
+
+═══════════════════════════════════════════════════════════════════════════════════
+FIM DO PROMPT V5.0 - REFATORADO PARA FASE 1.5 (QUEIXA-CRIME)
+Arquivo gerado em 25/03/2026 - Sistema ROM V3.0
+Total: ~65.000 palavras, 27 partes, estrutura FASE 1.5 COMPLETA
+Refatoração executada em conformidade com paradigma PROMPT_RESPOSTA_ACUSACAO_V5.0.txt
 ═══════════════════════════════════════════════════════════════════════════════════
