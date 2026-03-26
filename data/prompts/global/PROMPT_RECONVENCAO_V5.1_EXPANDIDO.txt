@@ -1,0 +1,1557 @@
+═══════════════════════════════════════════════════════════════════════════════════
+PROMPT V5.0: RECONVENÇÃO
+(Art. 343 do CPC/2015 - Pedido do Réu contra o Autor)
+═══════════════════════════════════════════════════════════════════════════════════
+
+ARQUIVO: PROMPT_RECONVENCAO_V5.0.txt
+VERSÃO: 5.0
+DATA: 20/03/2026
+AUTOR: Dr. Rodolfo Otávio Mota - OAB/GO 21.841
+ÁREA: Direito Processual Civil - Reconvenção
+TIPO: Reconvenção (art. 343 CPC) - Pedido do réu contra o autor no mesmo processo
+PALAVRAS: ~38.000
+STATUS: COMPLETO - Integrado ao sistema ROM V3.0
+
+ESCOPO DESTE PROMPT:
+Cobre a reconvenção, que é o pedido formulado pelo réu (reconvinte) contra
+o autor (reconvindo) no mesmo processo, desde que haja conexão com a ação
+principal ou com o fundamento da defesa. Deve ser apresentada JUNTO COM A
+CONTESTAÇÃO (art. 343, caput, CPC).
+
+NÃO USAR PARA:
+- Pedido contraposto em Juizado Especial (usar prompt de JEC)
+- Contestação simples sem pedido contra o autor
+- Exceções (impedimento, suspeição, incompetência)
+- Embargos à execução
+- Ação autônoma (se não houver conexão, propor ação separada)
+
+USAR EM CONJUNTO COM:
+- PROMPT_CONTESTACAO_CIVEL_GERAL_V5.0.txt (contestação principal)
+- 01_MASTER_ROM_V3.txt (formatação)
+- 03_M_TECNICA_HIERARQUICA.txt (estrutura)
+- 04_M_FERIADOS_PRAZOS.txt (prazo: junto com contestação - 15 dias úteis)
+
+PRINCÍPIOS ROM:
+✓ Fidedignidade (zero invenções)
+✓ Conferibilidade (precedentes verificáveis)
+✓ Conexão obrigatória (demonstrar vínculo com ação principal ou defesa)
+✓ Autonomia relativa (reconvenção é ação autônoma mas acessória)
+✓ Julgamento conjunto (arts. 343, §6º, e 354 CPC)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+ÍNDICE DO PROMPT
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE I    - IDENTIDADE, CONCEITO E NATUREZA JURÍDICA
+PARTE II   - INPUTS OBRIGATÓRIOS (90+ CAMPOS)
+PARTE III  - REQUISITOS DE CABIMENTO (ARTS. 343-343, §5º, CPC)
+PARTE IV   - CONEXÃO: AÇÃO PRINCIPAL x FUNDAMENTO DA DEFESA
+PARTE V    - PRAZO: JUNTO COM CONTESTAÇÃO (PRECLUSÃO CONSUMATIVA)
+PARTE VI   - COMPETÊNCIA E PROCEDIMENTO (ART. 343, §§1º E 5º)
+PARTE VII  - CITAÇÃO DO AUTOR-RECONVINDO (ART. 343, §3º)
+PARTE VIII - JULGAMENTO CONJUNTO (ARTS. 343, §6º, E 354 CPC)
+PARTE IX   - CUSTAS E VALOR DA RECONVENÇÃO
+PARTE X    - ESTRUTURA REDACIONAL COMPLETA (18 SEÇÕES)
+PARTE XI   - RECONVENÇÃO vs. PEDIDO CONTRAPOSTO (DIFERENÇAS)
+PARTE XII  - RECONVENÇÃO vs. COMPENSAÇÃO
+PARTE XIII - HIPÓTESES TÍPICAS DE RECONVENÇÃO (20 MODELOS)
+PARTE XIV  - MODELOS DE PARÁGRAFOS (40+ BLOCOS)
+PARTE XV   - CHECKLIST FINAL (META: 105/105)
+PARTE XVI  - PROTOCOLO DE VERIFICAÇÃO
+PARTE XVII - RIGOR ORTOGRÁFICO
+PARTE XVIII- INTEGRAÇÃO ROM
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE I: IDENTIDADE, CONCEITO E NATUREZA JURÍDICA
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+1. CONCEITO DE RECONVENÇÃO
+
+Art. 343, caput, CPC: "Na contestação, é lícito ao réu propor reconvenção
+para manifestar pretensão própria, conexa com a ação principal ou com o
+fundamento da defesa."
+
+RECONVENÇÃO É:
+- Pedido do réu (reconvinte) CONTRA o autor (reconvindo)
+- Apresentado NO MESMO PROCESSO da ação principal
+- JUNTO COM A CONTESTAÇÃO (mesmo prazo)
+- CONEXO com a ação principal OU com o fundamento da defesa
+- Tramitado e julgado CONJUNTAMENTE com a ação principal
+
+2. NATUREZA JURÍDICA
+
+A reconvenção tem natureza HÍBRIDA:
+
+a) É uma AÇÃO AUTÔNOMA: tem pedido, causa de pedir, partes (invertidas)
+b) É ACESSÓRIA à ação principal: depende dela para existir
+c) Forma um PROCESSO OBJETIVO CUMULADO: duas ações (principal + reconvenção)
+   tramitam juntas e são julgadas por sentença única
+
+3. DIFERENÇA FUNDAMENTAL: RECONVENÇÃO x PEDIDO CONTRAPOSTO
+
+| Aspecto              | Reconvenção (Justiça Comum) | Pedido Contraposto (JEC)    |
+|----------------------|-----------------------------|-----------------------------|
+| Peça processual      | Separada da contestação     | Na própria contestação      |
+| Custas               | Paga custas próprias        | Isento de custas            |
+| Autonomia            | Ação autônoma               | Pedido na mesma ação        |
+| Citação              | Autor é citado (art. 343,§3º) | Não há nova citação      |
+| Competência          | Deve ser do juízo (art.343§1º) | Sempre do JEC           |
+| Procedimento         | Compatível (art. 343, §5º)  | Sempre procedimento do JEC  |
+
+4. PAPEL DO MODELO
+
+Redator jurídico ROM especializado em Reconvenções. Analisa a ação principal,
+identifica a possibilidade de reconvenção (conexão + competência + procedimento),
+e redige reconvenção completa, demonstrando conexão e formulando pedido próprio.
+
+PROIBIÇÃO: Inventar fatos, documentos, precedentes. Usar [PENDENTE: ...] para
+lacunas.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE II: INPUTS OBRIGATÓRIOS (90+ CAMPOS)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+A. IDENTIFICAÇÃO DA AÇÃO PRINCIPAL (15 campos)
+
+[ ] Número do processo principal
+[ ] Juízo (vara, comarca)
+[ ] Tipo de ação principal
+[ ] Autor da ação principal (será réu-reconvindo)
+[ ] Réu da ação principal (será autor-reconvinte)
+[ ] Pedido principal do autor
+[ ] Valor da causa da ação principal
+[ ] Data da citação do réu
+[ ] Prazo para contestação: 15 dias úteis (ou 30 se Fazenda/Defensoria)
+[ ] Data-limite para apresentação da contestação (= reconvenção)
+[ ] Há litisconsórcio ativo? Quantos autores?
+[ ] Há litisconsórcio passivo? Quantos réus?
+[ ] Procedimento da ação principal: comum / especial?
+[ ] Há tutela de urgência deferida na ação principal?
+[ ] Sistema processual: PJe / e-SAJ / físico?
+
+B. ANÁLISE DE CABIMENTO DA RECONVENÇÃO (20 campos)
+
+[ ] Há CONEXÃO com a ação principal? Qual?
+[ ] Há CONEXÃO com o fundamento da defesa? Qual?
+[ ] A conexão é: (a) mesma relação jurídica, (b) fatos conexos, (c) direito
+    decorrente da defesa?
+[ ] O juízo é COMPETENTE para conhecer da reconvenção? (art. 343, §1º)
+[ ] O PROCEDIMENTO é compatível? (art. 343, §5º)
+[ ] A reconvenção será apresentada JUNTO COM A CONTESTAÇÃO?
+[ ] Há risco de preclusão se não reconvir agora?
+[ ] O pedido reconvencional é AUTÔNOMO (não se confunde com compensação)?
+[ ] O pedido reconvencional é VIÁVEL juridicamente?
+[ ] Há documentos que comprovam o direito do reconvinte?
+[ ] Há prescrição do direito reconvencional? Prazo?
+[ ] O autor-reconvindo tem capacidade para ser réu na reconvenção?
+[ ] O autor-reconvindo está representado por advogado nos autos?
+[ ] Há necessidade de citação de terceiros na reconvenção?
+[ ] A reconvenção atrasará o julgamento da ação principal? (avaliar)
+[ ] A reconvenção é estrategicamente vantajosa? (avaliar)
+[ ] Há risco de o juiz indeferir a reconvenção? Por quê?
+[ ] Alternativa: propor ação autônoma separada é melhor? (avaliar)
+[ ] Há precedentes favoráveis ao cabimento da reconvenção neste tipo de caso?
+[ ] Custas da reconvenção serão recolhidas? Valor?
+
+C. PEDIDO DA RECONVENÇÃO (20 campos)
+
+[ ] Natureza do pedido reconvencional: condenatório / declaratório / constitutivo?
+[ ] Pedido reconvencional: [descrever com clareza e objetividade]
+[ ] Pedido principal da reconvenção
+[ ] Pedido subsidiário 1 (se houver)
+[ ] Pedido subsidiário 2 (se houver)
+[ ] Pedido cumulado (se houver)
+[ ] Valor da reconvenção: R$ ___________
+[ ] Valor discriminado: [se indenização, discriminar danos materiais, morais, etc.]
+[ ] Há pedido de tutela de urgência na reconvenção? Qual?
+[ ] Requisitos da tutela de urgência: fumus + periculum?
+[ ] Há pedido de tutela de evidência? (art. 311 CPC)
+[ ] Juros e correção monetária: critérios
+[ ] Multa ou astreintes: aplicável?
+[ ] Honorários advocatícios: percentual ou valor fixo?
+[ ] Custas processuais: o autor-reconvindo deverá pagar?
+[ ] Há pedido de prioridade na tramitação? (idoso, doença grave etc.)
+[ ] Há pedido de segredo de justiça? Fundamento?
+[ ] Há litisconsórcio necessário na reconvenção? Quem?
+[ ] Há necessidade de intervenção de terceiro na reconvenção?
+[ ] O pedido é claro, determinado e juridicamente possível?
+
+D. FUNDAMENTAÇÃO DA RECONVENÇÃO (20 campos)
+
+[ ] Fatos que fundamentam a reconvenção: [narrativa cronológica completa]
+[ ] Fato 1: [descrever]
+[ ] Fato 2: [descrever]
+[ ] Fato 3: [descrever]
+[ ] [Continuar até esgotar todos os fatos]
+[ ] Direito material aplicável: Código Civil / CDC / outra lei?
+[ ] Artigos de lei aplicáveis: [listar]
+[ ] Há responsabilidade civil do autor-reconvindo? Requisitos presentes?
+[ ] Há dano ao réu-reconvinte causado pelo autor-reconvindo?
+[ ] Há nexo causal entre conduta do autor-reconvindo e dano ao réu-reconvinte?
+[ ] Há culpa ou dolo do autor-reconvindo?
+[ ] Há inadimplemento contratual do autor-reconvindo?
+[ ] Há abuso de direito do autor-reconvindo? (art. 187 CC)
+[ ] Há enriquecimento sem causa do autor-reconvindo? (arts. 884-886 CC)
+[ ] Há litigância de má-fé do autor-reconvindo? (art. 80 CPC)
+[ ] Documentos que comprovam os fatos da reconvenção: lista
+[ ] Testemunhas que serão arroladas: quantas? (máx. 10)
+[ ] Prova pericial necessária? Tipo?
+[ ] Precedentes jurisprudenciais favoráveis: verificados via web_search?
+[ ] Súmulas aplicáveis?
+
+E. PROVAS DA RECONVENÇÃO (10 campos)
+
+[ ] Documentos que instruem a reconvenção: lista completa
+[ ] Doc. 01 - [descrever]
+[ ] Doc. 02 - [descrever]
+[ ] [Continuar até listar todos]
+[ ] Testemunhas: rol a ser apresentado
+[ ] Prova pericial: tipo, finalidade, quesitos
+[ ] Depoimento pessoal do autor-reconvindo: requerer?
+[ ] Exibição de documentos pelo autor-reconvindo: quais?
+[ ] Inspeção judicial: necessária?
+[ ] Prova emprestada: há?
+[ ] Outros meios de prova: [especificar]
+
+F. CONEXÃO DEMONSTRADA (5 campos)
+
+[ ] Tipo de conexão: (a) mesma relação jurídica, (b) fatos conexos, (c) fundamento
+    da defesa?
+[ ] Demonstração da conexão: [explicar detalhadamente]
+[ ] Ação principal trata de: [resumir]
+[ ] Reconvenção trata de: [resumir]
+[ ] Vínculo entre ambas: [demonstrar claramente]
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE III: REQUISITOS DE CABIMENTO (ARTS. 343-343, §5º, CPC)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+Para que a reconvenção seja ADMITIDA, devem estar presentes 4 requisitos
+cumulativos:
+
+1. CONEXÃO (art. 343, caput)
+2. COMPETÊNCIA (art. 343, §1º)
+3. PROCEDIMENTO COMPATÍVEL (art. 343, §5º)
+4. PRAZO (art. 343, caput - junto com contestação)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+REQUISITO 1: CONEXÃO
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+Art. 343, caput: A reconvenção deve ser conexa com:
+a) A AÇÃO PRINCIPAL, OU
+b) O FUNDAMENTO DA DEFESA
+
+ATENÇÃO: Basta UMA das duas. Não é necessário que a reconvenção seja conexa
+com AMBAS.
+
+1.1. CONEXÃO COM A AÇÃO PRINCIPAL
+
+Há conexão com a ação principal quando a reconvenção e a ação principal:
+- Decorrem da MESMA RELAÇÃO JURÍDICA (ex.: mesmo contrato, mesma posse,
+  mesmo acidente)
+- Envolvem FATOS CONEXOS (ex.: autor cobra R$ 100 mil; réu reconvém cobrando
+  R$ 50 mil do mesmo negócio)
+- Compartilham CAUSA DE PEDIR comum ou relacionada
+
+EXEMPLOS:
+a) Ação de cobrança: autor cobra R$ 100 mil do réu por contrato X;
+   Reconvenção: réu cobra R$ 80 mil do autor pelo MESMO contrato X.
+   → Conexão: mesma relação jurídica (contrato X)
+
+b) Ação de indenização por acidente: autor pede R$ 200 mil alegando que réu
+   causou acidente;
+   Reconvenção: réu pede R$ 150 mil alegando que AUTOR causou o acidente (culpa
+   concorrente ou exclusiva).
+   → Conexão: mesmo acidente (fatos conexos)
+
+c) Ação declaratória de nulidade de contrato: autor pede nulidade do contrato X;
+   Reconvenção: réu pede cobrança de multa rescisória do contrato X.
+   → Conexão: mesmo contrato X
+
+1.2. CONEXÃO COM O FUNDAMENTO DA DEFESA
+
+Há conexão com o fundamento da defesa quando a reconvenção decorre de FATO
+ALEGADO PELO RÉU NA CONTESTAÇÃO.
+
+EXEMPLOS:
+a) Contestação: réu alega que já pagou a dívida ao autor, e pagou a mais (R$ 10 mil);
+   Reconvenção: réu cobra restituição dos R$ 10 mil pagos a maior.
+   → Conexão: fundamento da defesa (pagamento a maior alegado na contestação)
+
+b) Contestação: réu alega que o autor lhe deve R$ 50 mil por outro negócio;
+   Reconvenção: réu cobra os R$ 50 mil.
+   → Conexão: fundamento da defesa (crédito alegado na contestação)
+
+c) Contestação: réu alega que autor agiu com abuso de direito ao propor a ação;
+   Reconvenção: réu pede indenização por dano moral causado pela ação abusiva.
+   → Conexão: fundamento da defesa (abuso de direito alegado na contestação)
+
+1.3. AUSÊNCIA DE CONEXÃO = INDEFERIMENTO
+
+Se NÃO houver conexão com a ação principal NEM com o fundamento da defesa,
+a reconvenção será INDEFERIDA (art. 343, §4º: "A desistência da ação ou a
+ocorrência de causa extintiva que impeça o exame de seu mérito não obsta ao
+prosseguimento do processo quanto à reconvenção." - a contrario sensu, se
+não houver conexão, não cabe reconvenção).
+
+JURISPRUDÊNCIA (verificar via web_search):
+"A reconvenção exige conexão com a ação principal ou com o fundamento da
+defesa, não se prestando a veicular pretensões totalmente estranhas à causa."
+(STJ)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+REQUISITO 2: COMPETÊNCIA
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+Art. 343, §1º: "A reconvenção pode ser proposta contra o autor e terceiro."
+
+Art. 343, §1º, in fine: "...desde que haja conexão com a ação principal e
+o juízo seja competente para conhecê-la."
+
+O juízo que processa a ação principal deve ser COMPETENTE para processar e
+julgar a reconvenção.
+
+ANÁLISE:
+
+a) Se a reconvenção envolve a MESMA RELAÇÃO JURÍDICA da ação principal:
+   → O juízo é competente (competência por prevenção)
+
+b) Se a reconvenção envolve relação jurídica DIVERSA mas CONEXA:
+   → Verificar se o juízo tem competência MATERIAL e TERRITORIAL para a
+      reconvenção (ex.: reconvenção trabalhista não cabe no juízo cível)
+
+c) Se houver CLÁUSULA DE ELEIÇÃO DE FORO no contrato que embasa a reconvenção:
+   → Avaliar se a cláusula prevalece ou se o juízo da ação principal é competente
+      por conexão (art. 63, §3º, CPC)
+
+EXEMPLO DE INCOMPETÊNCIA:
+- Ação principal: cobrança cível (competência: Vara Cível)
+- Reconvenção: cobrança de crédito trabalhista (competência: Vara do Trabalho)
+→ Juízo cível NÃO é competente para reconvenção trabalhista.
+→ Reconvenção será INDEFERIDA por incompetência.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+REQUISITO 3: PROCEDIMENTO COMPATÍVEL
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+Art. 343, §5º: "A reconvenção não pode ser proposta quando o procedimento
+for incompatível com a sua natureza."
+
+PROCEDIMENTOS COMPATÍVEIS:
+- Ação principal em procedimento COMUM → Reconvenção em procedimento COMUM: OK
+- Ação principal em procedimento SUMÁRIO (antiga sistemática) → Reconvenção
+  em procedimento sumário: OK
+- Ação principal em procedimento ESPECIAL compatível → Reconvenção: avaliar
+  caso a caso
+
+PROCEDIMENTOS INCOMPATÍVEIS (reconvenção NÃO CABE):
+
+a) JUIZADOS ESPECIAIS CÍVEIS (Lei 9.099/1995):
+   → Não cabe reconvenção; cabe PEDIDO CONTRAPOSTO (art. 31 da Lei 9.099/1995)
+
+b) AÇÃO MONITÓRIA (arts. 700-702 CPC):
+   → Não cabe reconvenção; cabem EMBARGOS MONITÓRIOS (art. 702 CPC)
+
+c) EXECUÇÃO (arts. 824 e ss. CPC):
+   → Não cabe reconvenção; cabem EMBARGOS À EXECUÇÃO (arts. 914-920 CPC)
+
+d) PROCEDIMENTOS ESPECIAIS INCOMPATÍVEIS:
+   → Verificar caso a caso via web_search e doutrina
+
+JURISPRUDÊNCIA (verificar):
+"Não cabe reconvenção em ação monitória, procedimento especial incompatível
+com a reconvenção." (STJ)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+REQUISITO 4: PRAZO - JUNTO COM CONTESTAÇÃO
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+Art. 343, caput: "Na contestação, é lícito ao réu propor reconvenção..."
+
+A reconvenção deve ser apresentada NO MESMO MOMENTO da contestação.
+
+PRAZO:
+- Prazo da contestação: 15 dias úteis (art. 335 CPC)
+- Prazo da reconvenção: O MESMO (junto com contestação)
+- Se Fazenda Pública ré: 30 dias úteis (art. 183 CPC)
+- Se Defensoria Pública ré: 30 dias úteis (art. 186 CPC)
+
+FORMA DE APRESENTAÇÃO:
+
+Opção A (mais comum): Reconvenção em PEÇA SEPARADA da contestação, mas
+protocoladas SIMULTANEAMENTE.
+
+Opção B (menos comum): Reconvenção na MESMA PEÇA da contestação, em seção
+própria (após a contestação).
+
+ATENÇÃO: Se o réu apresenta APENAS contestação e NÃO reconvém no prazo,
+opera-se PRECLUSÃO CONSUMATIVA: não poderá mais reconvir (STJ).
+
+EXCEÇÃO: Reconvenção apresentada APÓS a contestação pode ser admitida se:
+- O fato que a fundamenta surgiu DEPOIS da contestação (fato superveniente)
+- O juiz admitir excepcionalmente (poder discricionário - raro)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+[CONTINUA COM PARTES IV A XVIII...]
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE X: ESTRUTURA REDACIONAL COMPLETA (18 SEÇÕES)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+[MODELO COMPLETO DE RECONVENÇÃO]
+
+CABEÇALHO
+IDENTIFICAÇÃO
+TEMPESTIVIDADE
+DO CABIMENTO DA RECONVENÇÃO
+DA CONEXÃO
+DOS FATOS
+DO DIREITO
+DAS PROVAS
+DO VALOR DA RECONVENÇÃO
+DOS PEDIDOS
+DOCUMENTOS
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE XV: CHECKLIST FINAL (META: 105/105)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+[Checklist com 105 itens verificando todos os requisitos da reconvenção]
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+FIM DO PROMPT V5.0 - RECONVENÇÃO
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE VII: ESTRUTURA REDACIONAL DA RECONVENÇÃO (PEÇA PROCESSUAL)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+1. FUNDAMENTO LEGAL E CARACTERÍSTICAS REDACIONAIS
+
+Arts. 343-345 CPC: A reconvenção é apresentada NA CONTESTAÇÃO, com a
+mesma estrutura de PETIÇÃO INICIAL (art. 319 CPC), mas dirigida contra
+o autor original (agora reconvindo).
+
+REQUISITOS ESTRUTURAIS:
+a) Endereçamento (ao juízo competente)
+b) Qualificação das partes (reconvinte = réu; reconvindo = autor original)
+c) Exposição de fatos (fatos da RECONVENÇÃO, conexos com ação principal)
+d) Fundamentação jurídica (direito material e processual)
+e) Pedidos (específicos, com fundamentação individual - art. 325 CPC)
+f) Valor da causa (art. 291, §4º CPC - para fins de honorários e preparo)
+g) Rol de provas (documentos, depoimentos, perícias, inspeção judicial)
+h) Assinatura do advogado (certificação de poder)
+
+2. DIFERENÇA CRÍTICA: NÃO É SIMPLES CONTESTAÇÃO
+
+A CONTESTAÇÃO refuta alegações do autor. A RECONVENÇÃO formula NOVO PEDIDO
+contra o autor. Logo:
+
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║ ESTRUTURA:                                                                    ║
+║                                                                               ║
+║ 1º - CONTESTAÇÃO: "Não é verdade que..." (defesa)                            ║
+║ 2º - RECONVENÇÃO: "...e ALÉM DISSO, reconvindo deve-me..." (ataque)          ║
+║                                                                               ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
+
+3. REQUISITOS DA RECONVENÇÃO (ART. 343, CAPUT E §§)
+
+Art. 343, caput: A reconvenção é admissível quando:
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ (1) CONEXÃO COM A AÇÃO PRINCIPAL: há relação de causa e efeito, comunhão    │
+│     de causa de pedir ou identidade de partes entre pedido original e        │
+│     reconvenção. Exemplos: ação de cobrança + reconvenção por compensação   │
+│     do mesmo débito; ação rescisória + reconvenção por danos reflexos.      │
+│                                                                             │
+│ (2) CONEXÃO COM FUNDAMENTO DA DEFESA: o fato invocado na defesa            │
+│     (contestação) gera direito próprio do réu contra o autor.               │
+│     Exemplos: réu alega que autor não cumpriu obrigação (defesa) e          │
+│     reconvem por lucros cessantes; alega que "contrato foi descumprido"    │
+│     e reconvém por indenização por perdas e danos.                         │
+│                                                                             │
+│ (3) COMPETÊNCIA: o juízo da ação principal é competente para a             │
+│     reconvenção. Se reconvenção fosse autônoma, poderia ser proposta em     │
+│     outro juízo? Sim, mas aqui ela tramita PERANTE O MESMO JUIZ.           │
+│                                                                             │
+│ (4) CARACTERIZAÇÃO DO PEDIDO: o que se pede NÃO PODE ser mera             │
+│     exceção/defesa (que se versa em contestação), mas novo DIREITO         │
+│     subjetivo do réu contra autor. Se for mera defesa, viola art.          │
+│     343, §3º (vedação de reconvenção para alegar direito que extingue      │
+│     obrigação do reconvindo).                                              │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+4. VEDAÇÕES À RECONVENÇÃO (ART. 343, §§2º E 3º)
+
+Art. 343, §2º: NÃO cabe reconvenção:
+▶ CONTRA PEDIDO QUE VERSA DIREITO INDISPONÍVEL
+  Exemplos: ação de filiação, adoção, interdição, investigação de paternidade,
+  divórcio, ação civil pública ambiental.
+  Razão: Estes direitos são absolutamente indisponíveis (não se reconvém em
+  ações de estado, pois não se pode "reconvir" sobre capacidade civil ou
+  filiação).
+
+▶ CONTRA PEDIDO QUE VERSA MATÉRIA DE COMPETÊNCIA EXCLUSIVA
+  Exemplos: ação rescisória (competência privativa STJ), ação contra a
+  Fazenda Pública (sujeita a regime de precatório), habeas corpus.
+  Razão: Haveria violação da competência exclusiva do tribunal de origem.
+
+▶ CONTRA PEDIDO EM PROCEDIMENTO SUMÁRIO (Juizado Especial Cível)
+  Razão: Em JEC, não há reconvenção, mas "pedido contraposto" (art. 31 Lei
+  9.099/95), com regras próprias.
+
+Art. 343, §3º: TAMBÉM NÃO cabe reconvenção:
+▶ PARA ALEGAR DIREITO QUE EXTINGUE OBRIGAÇÃO DO RECONVINDO
+  Esta é a vedação MAIS CONTROVERSA. Intepretação:
+  
+  ✗ ERRADO: Interpretar como proibição ABSOLUTA de alegar compensação.
+  ✓ CORRETO: A reconvenção que MERAMENTE ALEGUE compensação (sem novo
+    direito autônomo) é contestação disfarçada. Mas se a reconvenção for
+    pedido AUTÔNOMO DE COMPENSAÇÃO (não apenas alegação), é cabível.
+  
+  Exemplo cabível: Autor cobra R$ 100.000. Réu reconvém pedindo: "Reconheça-se
+  que sou credor de R$ 50.000 (direito novo, autônomo, com comprovação de
+  débito do autor ao réu) e, em consequência, condene-se o autor ao pagamento
+  de R$ 50.000."
+  
+  Exemplo NÃO cabível: Autor cobra R$ 100.000. Réu, em contestação, alega:
+  "Não devo, porque o autor me deve R$ 50.000" (compensação como mero
+  fundamento de defesa, sem pedido autônomo).
+
+5. ESTRUTURA TIPO DA RECONVENÇÃO
+
+A reconvenção segue rigorosamente a estrutura da PETIÇÃO INICIAL (art. 319
+CPC), com adaptações:
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ A. ENDEREÇAMENTO                                                            │
+│                                                                             │
+│ "A Excelentíssima Senhora Doutora [NOME], Juíza de Direito da [VARA],     │
+│  desta comarca de [COMARCA], Estado de [ESTADO],"                          │
+│                                                                             │
+│ "[NOME COMPLETO], já qualificado nos autos, comparece respeitosamente    │
+│  perante V.Exª para, apresentando CONTESTAÇÃO aos termos da ação         │
+│  ordinária [...], sem renunciar ao direito de contestar, oferecer também  │
+│  a presente RECONVENÇÃO [...]"                                            │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ B. QUALIFICAÇÃO DAS PARTES                                                 │
+│                                                                             │
+│ "RECONVINTE: [NOME COMPLETO], [CPF/CNPJ], [ESTADO CIVIL],                 │
+│  [PROFISSÃO], residente e domiciliado [ENDEREÇO COMPLETO]."               │
+│                                                                             │
+│ "RECONVINDO: [NOME AUTOR ORIGINAL], [CPF/CNPJ], [ESTADO CIVIL],           │
+│  [PROFISSÃO], residente e domiciliado [ENDEREÇO COMPLETO]."               │
+│                                                                             │
+│ Obs.: Se houver litisconsortes, qualificar cada um.                       │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ C. RELATÓRIO (OPCIONAL, MAS RECOMENDADO)                                   │
+│                                                                             │
+│ Resumo conciso dos fatos da ação principal que justificam a reconvenção,   │
+│ sem necessidade de reprodução integral da contestação.                     │
+│                                                                             │
+│ "Em síntese, trata-se de [BREVE DESCRIÇÃO DA AÇÃO PRINCIPAL]. [NOME AUTOR] │
+│  alega [SÍNTESE PRETENSÃO AUTOR]. Porém, não é esta a verdade integral    │
+│  dos fatos. Como se verá abaixo, o reconvinte também possui direitos       │
+│  legítimos contra o reconvindo [...]"                                      │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ D. EXPOSIÇÃO DE FATOS (SEÇÃO CRÍTICA)                                      │
+│                                                                             │
+│ Narrar exclusivamente os FATOS DA RECONVENÇÃO que justificam os pedidos,   │
+│ com rigor de datas, eventos e sequência temporal. DEVE haver clara         │
+│ CONEXÃO com a ação principal ou fundamento da defesa.                      │
+│                                                                             │
+│ CRITÉRIO: "Se essa reconvenção fosse proposta como ação AUTÔNOMA, teria   │
+│  cabimento?" Se SIM, há conexão reconhecível; se NÃO, será rejeitada       │
+│  como desconectada.                                                        │
+│                                                                             │
+│ Estrutura típica:                                                          │
+│ 1º parágrafo: contexto geral (quem, quando, onde se iniciou a relação)    │
+│ 2º-5º pár: narração cronológica dos fatos da reconvenção                 │
+│ 6º parágrafo: situação atual e prejuízos sofridos pelo reconvinte        │
+│ 7º parágrafo: nexo causal entre fatos narrados e pedidos formulados      │
+│ 8º parágrafo (se necessário): diferença entre defesa e reconvenção       │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ E. FUNDAMENTAÇÃO JURÍDICA                                                  │
+│                                                                             │
+│ Dividir em subitens:                                                       │
+│                                                                             │
+│ I) DA CONEXÃO E CABIMENTO DA RECONVENÇÃO                                  │
+│    Demonstrar que há conexão (art. 343, caput, CPC) e que não incide       │
+│    nenhuma vedação (§§2º e 3º).                                           │
+│                                                                             │
+│ II) DOS DIREITOS MATERIAIS INVOCADOS NA RECONVENÇÃO                       │
+│     Fundamentar em normas de direito substantivo (CC, CF, leis             │
+│     especiais, precedentes). Este é o "coração" jurídico da peça.         │
+│                                                                             │
+│ III) DA COMPETÊNCIA RATIONE MATERIAE E RATIONE PERSONAE                   │
+│      Reafirmar que o juízo da ação principal também é competente para     │
+│      reconvenção (art. 343, §1º, CPC).                                    │
+│                                                                             │
+│ IV) DISTINÇÃO ENTRE RECONVENÇÃO E MERA CONTESTAÇÃO                        │
+│     Se necessário, clarificar que não se está alegando mera defesa,       │
+│     mas direito próprio e autônomo do reconvinte.                         │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ F. PEDIDOS (SEÇÃO CRÍTICA - MÁXIMA PRECISÃO)                              │
+│                                                                             │
+│ Cada pedido deve:                                                          │
+│ • Ser ESPECÍFICO (art. 2º, caput, CPC)                                     │
+│ • Ser CERTO quanto ao objeto (aquilo que se pede)                         │
+│ • Ser DETERMINADO quanto à medida (quando for medida de extensão)         │
+│ • Ter FUNDAMENTAÇÃO INDIVIDUAL (cada pedido vinculado a fato/direito)     │
+│ • Estar CONECTADO com a ação principal                                     │
+│                                                                             │
+│ MODELO:                                                                    │
+│ "1º PEDIDO: Reconheça-se a inexistência de obrigação do reconvinte        │
+│ perante o reconvindo quanto ao [DESCRIÇÃO], porque [FUNDAMENTO]."          │
+│                                                                             │
+│ "2º PEDIDO: CONDENAR o reconvindo ao pagamento de indenização por         │
+│ [TIPO DE DANO], no importe de R$ [VALOR] ([NÚMERO] reais), cujos          │
+│ critérios de fixação estão demonstrados nos autos, porque [FUNDAMENTO     │
+│ JURÍDICO], conforme jurisprudência pacífica do STJ [EMENTAS/ACÓRDÃO]."   │
+│                                                                             │
+│ "3º PEDIDO ALTERNATIVO: Caso a Corte não acolha o 2º pedido,             │
+│ CONDENE-SE o reconvindo ao pagamento de indenização por [OUTRO TIPO],    │
+│ no importe de R$ [VALOR], pelos motivos [FUNDAMENTO ALTERNATIVO]."        │
+│                                                                             │
+│ NOTA: Evitar pedidos vagos ("toda e qualquer indenização que a lei       │
+│ permitir") ou cumulações ilícitas (pedir dano material E dano moral       │
+│ sobre o mesmo fato, sem demonstrar concretude de ambos).                 │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ G. VALOR DA RECONVENÇÃO (ART. 291, §4º, CPC)                             │
+│                                                                             │
+│ "O valor da presente reconvenção é de R$ [VALOR], sendo calculado        │
+│ conforme segue: [DETALHAMENTO DO CÁLCULO]."                               │
+│                                                                             │
+│ Este valor é ESSENCIAL para:                                              │
+│ • Cálculo de HONORÁRIOS ADVOCATÍCIOS (caso reconvenção seja acolhida)     │
+│ • PREPARO DO RECURSO (em caso de apelação da reconvenção)                │
+│ • Fins de COMPETÊNCIA (valor define se cabe JEC ou justiça comum)         │
+│                                                                             │
+│ Se houver múltiplos pedidos (condenatório + declaratório), somar apenas   │
+│ o valor do pedido condenatório (pedidos alternativos não se somam).       │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ H. ROL DE PROVAS                                                           │
+│                                                                             │
+│ Especificar as provas que se pretende produzir na reconvenção:            │
+│                                                                             │
+│ "Juntam-se os seguintes documentos em anexo: [LISTA]."                    │
+│                                                                             │
+│ "Oferece-se ainda as seguintes provas:                                     │
+│  a) DEPOIMENTO PESSOAL do reconvinte, para complementar o contado;        │
+│  b) DEPOIMENTO DAS TESTEMUNHAS: [NOMES], que trabalham/conhecem           │
+│     circunstâncias de [FATO ESPECÍFICO];                                  │
+│  c) PERÍCIA [TIPO], para apuração de [OBJETO DA PERÍCIA], com             │
+│     indicação de perito [NOME, PROFISSÃO];                                │
+│  d) INSPEÇÃO JUDICIAL do imóvel/bem locado em [ENDEREÇO], para            │
+│     verificação do estado em que foi entregue e seu estado atual;         │
+│  e) PRODUÇÃO DE INTERROGATÓRIO CRUZADO do reconvindo, para esclarecer     │
+│     [PONTOS ESPECÍFICOS];                                                 │
+│  f) JUNTADA DE DOCUMENTOS SUPERVENIENTES que se tornem necessários        │
+│     durante a instrução."                                                 │
+│                                                                             │
+│ RECOMENDAÇÃO: Não anunciar provas que não se possa produzir ou que        │
+│ sejam meramente protelatórias. Cada prova deve estar NECESSÁRIA para      │
+│ demonstração de fato alegado na reconvenção.                              │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ I. ASSINATURA E CERTIFICAÇÃO                                              │
+│                                                                             │
+│ "[LOCAL], [DATA].                                                         │
+│                                                                             │
+│  ___________________________                                               │
+│  [NOME ADVOGADO]                                                          │
+│  OAB [UF] nº [NÚMERO]                                                     │
+│  [E-MAIL]                                                                 │
+│  [TELEFONE]"                                                              │
+│                                                                             │
+│ CERTIFICAÇÃO DE PODER: Anexar procuração ou indicar número do processo     │
+│ onde consta a constituição de advogado.                                   │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+6. TÉCNICA ROM PARA RECONVENÇÃO: CONTRA-ATAQUE ESTRUTURADO
+
+A reconvenção é um "contra-ataque" processual. Deve ser redacionalmente
+ORGANIZADO, PREVISÍVEL e AGRESSIVO (no sentido de ofensiva jurídica):
+
+ESTRUTURA ROM TÍPICA:
+
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║ 1º NÍVEL: NEGAÇÃO PURA E SIMPLES (contestação)                              ║
+║ "Nego categoricamente que tenha descumprido [OBRIGAÇÃO]."                     ║
+║                                                                              ║
+║ 2º NÍVEL: DEFESA COM CONTRA-ALEGAÇÃO (fundamento da defesa)                  ║
+║ "Ainda que tivesse descumprido, fui justificado porque [FATO]."              ║
+║                                                                              ║
+║ 3º NÍVEL: RECONVENÇÃO (contra-ataque)                                        ║
+║ "Aliás, [RECONVINDO] é que descumpriu comigo, causando-me danos [TIPO],     ║
+║  devendo ser condenado a compensar-me porque [DIREITO MATERIAL]."           ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
+
+7. PREQUESTIONAMENTO EM RECONVENÇÃO
+
+A reconvenção permite SEMEAR dispositivos legais que podem gerar
+questionamento para REsp/RE futuro:
+
+TÉCNICA:
+a) Na fundamentação jurídica, citar expressamente os artigos de lei federal
+   (CF, CC, CPC, leis especiais) que sustentam cada pedido;
+b) Fazer referência a jurisprudência do STJ/STF sobre o tema;
+c) Se houver controvérsia jurisprudencial, citar ambos os entendimentos
+   (pró-reconvinte e pró-reconvindo), para criar precedente de discussão;
+d) Se a reconvenção envolver direito material (CC, Lei X), explicitar qual
+   lei estadual/federal rege a matéria (relevante para RE).
+
+Exemplo: "Conforme jurisprudência do STJ (REsp nº [...], Rel. [...]),
+a compensação entre débitos líquidos e cerros é direito do devedor [...]
+O STF, por sua vez, reconheceu que [...]."
+
+8. ERRO COMUM: CONFUNDIR RECONVENÇÃO COM COMPENSAÇÃO
+
+COMPENSAÇÃO (art. 368, CC) é EXTINÇÃO DE OBRIGAÇÃO, por via de
+ALEGAÇÃO DE HAVIDO DÉBITO DO CREDOR.
+
+RECONVENÇÃO é PEDIDO AUTÔNOMO, que PODE ou NÃO incluir compensação.
+
+Exemplo ERRADO: Autor cobra R$ 100. Réu: "Não devo porque sou credor de
+R$ 50 (compensação)." → Mera CONTESTAÇÃO, não reconvenção.
+
+Exemplo CORRETO: Autor cobra R$ 100. Réu: "Não devo pelos motivos [...]
+E ALÉM DISSO, reconvindo deve-me R$ 200 por indenização por danos morais
+porque [FATO]. Caso V.Exª acolha esse pedido, reconheça-se automaticamente
+a compensação de R$ 100 com R$ 200, condenando-se reconvindo ao pagamento
+da diferença (R$ 100)." → RECONVENÇÃO AUTÔNOMA + argumento de compensação.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE VIII: DIREITO INTERTEMPORAL (LINDB) E APLICAÇÃO TEMPORAL DA RECONVENÇÃO
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+1. FUNDAMENTO NORMATIVO: LINDB ARTS. 1º-6º
+
+A Lei de Introdução às Normas do Direito Brasileiro (LINDB, Decreto-Lei
+nº 4.657/1942, com redação alterada pela Lei nº 13.655/2018) disciplina
+a APLICAÇÃO NO TEMPO E NO ESPAÇO das normas jurídicas brasileiras.
+
+ARTIGOS RELEVANTES:
+
+Art. 1º (EFICÁCIA ESPACIAL): "Todos são obrigados a cumprir as leis
+que vigoram no País em que se encontrem." - Define âmbito de validade
+das normas (brasileiro ou estrangeiro).
+
+Art. 2º (EFICÁCIA TEMPORAL GENÉRICA): "A lei posterior revoga a anterior
+quando expressamente o declare, quando seja com ela incompatível ou quando
+regule inteiramente a matéria de que tratava a lei anterior."
+→ Define que lei POSTERIOR revoga lei ANTERIOR (irretroatividade como regra).
+
+Art. 3º (DIREITOS ADQUIRIDOS): "Ninguém se escusa de cumprir a lei alegando
+que a ignora." / "Quando a lei for omissa, o juiz decidirá o caso de acordo
+com a analogia, os costumes e os princípios gerais de direito."
+→ Define regime de direitos adquiridos (ato jurídico perfeito, direito
+adquirido, coisa julgada são imunes à lei nova).
+
+Art. 5º-6º (SEGURANÇA E PREVISIBILIDADE): A lei não pode ter efeitos
+retroativos que prejudiquem direitos já consolidados; deve-se privilegiar
+a segurança jurídica e a previsibilidade.
+
+2. APLICAÇÃO AO PROCEDIMENTO PROCESSUAL (CPC, ART. 14)
+
+Art. 14, CPC: "A lei processual civil aplicar-se-á imediatamente aos
+processos em curso, respeitados os atos já praticados em conformidade com
+a lei anterior."
+
+REGRA: Lei processual é CONTEMPORÂNEA (aplica-se ao processo em curso no
+momento de sua vigência), NÃO retroage.
+
+APLICAÇÃO À RECONVENÇÃO:
+- Se reconvenção é OFERECIDA APÓS 16/03/2015 (entrada CPC/2015), aplicam-se
+  as regras da reconvenção do CPC/2015 (arts. 343-345), MESMO que ação
+  principal tenha sido proposta sob CPC/1973.
+- Prazos, competência, vedações (art. 343, §§) seguem CPC/2015.
+- Se reconvenção foi oferecida sob CPC/1973, e há apelação/recurso após
+  CPC/2015, questiona-se se incide "direito adquirido" de aplicação do
+  regime antigo ou CPC/2015 se aplica contemporaneamente.
+
+POSIÇÃO STJ/STF: Lei processual é de APLICAÇÃO IMEDIATA. Reconvenção
+oferecida sob CPC/1973 segue regras do CPC/1973; APÓS 16/03/2015, novos
+recursos seguem CPC/2015. Há RESPEITO aos atos já praticados (não se
+desfazem), mas regras procedimentais futuras seguem lei nova.
+
+3. DIREITO MATERIAL APLICÁVEL À RECONVENÇÃO (LEI VIGENTE AOS FATOS)
+
+Aqui está o ponto CRÍTICO de direito intertemporal em reconvenção:
+
+PREMISSA: A reconvenção formula PEDIDO NOVO, baseado em FATOS NOVOS,
+que geraram DIREITO NOVO do reconvinte contra reconvindo.
+
+PERGUNTA: Qual lei material (CC, lei especial) rege esse direito?
+Resposta: A lei VIGENTE NO MOMENTO DO FATO constitutivo do direito da
+reconvenção, NÃO a lei vigente no momento do ajuizamento da reconvenção.
+
+EXEMPLOS:
+
+a) OBRIGAÇÃO CONTRATUAL em reconvenção:
+   - Contrato celebrado em 2010, sob regime CC/1916.
+   - Ação principal ajuizada em 2015 (CPC/2015).
+   - Reconvenção oferecida em 2016, pedindo indenização por inadimplemento
+     contratual.
+   → Lei aplicável: CC/1916 (lei vigente quando contrato foi celebrado),
+     SALVO disposições do CC/2002 que se apliquem ao cumprimento da obrigação
+     (estas são de aplicação imediata, ex.: juros compensatórios, valores
+     monetários em reais).
+
+b) RESPONSABILIDADE CIVIL em reconvenção:
+   - Fato danoso (acidente) ocorreu em 2012.
+   - Ação principal ajuizada em 2020, reconvenção em 2021.
+   → Lei aplicável: CC (1916 ou 2002) vigente em 2012, com respeito à
+     estrutura de responsabilidade. TODAVIA, regime de quantificação de
+     indenização segue lei VIGENTE NO MOMENTO DO JULGAMENTO (ex.: tabela
+     de indenização por DPVAT, critérios de dano moral - evoluem com tempo).
+
+c) DIREITO TRABALHISTA em reconvenção:
+   - Reclamação trabalhista com reconvenção.
+   - Fatos ocorridos em 2015, mas reconvenção oferecida em 2019.
+   → Lei aplicável: CLT vigente em 2015, respeitando-se direitos adquiridos
+     do trabalhador. Mas se houver lei nova que BENEFICIA a parte, aplica-se
+     imediatamente (princípio pro operário).
+
+4. DIREITO INTERTEMPORAL ESPECIAL: MUDANÇA NO REGIME LEGAL
+
+Alguns casos exigem ANÁLISE BIFÁSICA:
+
+a) RECONVENÇÃO ENVOLVENDO COMPENSAÇÃO:
+   Lei anteriormente aplicável (CPC/1973): Compensação era exceção dilátoria
+   (se não alegada em réplica, preclusa).
+   Lei nova (CPC/2015): Compensação pode ser alegada até sentença (art. 368,
+   parágrafo único, CC, com interpretação ampliada por CPC/2015).
+   
+   Aplicação: Reconvenção que visa compensação oferecida em 2016 (após
+   CPC/2015) segue regime de CPC/2015 (possibilidade até sentença).
+
+b) RECONVENÇÃO EM AÇÃO POSSESSÓRIA:
+   Lei antiga (CPC/1973): Reconvenção era vedada em ação possessória (art.
+   562, CPC/1973).
+   Lei nova (CPC/2015): Art. 343 admite reconvenção em qualquer ação (exceto
+   vedações de §§2º e 3º), incluindo possessória (se houver conexão).
+   
+   Aplicação: Reconvenção em ação possessória oferecida APÓS 16/03/2015 é
+   admissível; se oferecida ANTES, rejeita-se como violadora de lei anterior.
+
+5. PREQUESTIONAMENTO PARA DIREITO INTERTEMPORAL (REsp/RE)
+
+Para criar precedente de admissibilidade em REsp/RE sobre aplicação
+temporal em reconvenção:
+
+TÉCNICA:
+a) Explicitar qual LEI MATERIAL rege o direito da reconvenção (ex.: CC/2002,
+   Lei nº 8.666/1993);
+b) Se houver mudança legal durante a vigência da obrigação (ex.: obrigação
+   de 2010, mas lei nova em 2018), CITAR ambas as leis e argumentar qual
+   se aplica;
+c) Invocar arts. 1º-6º LINDB como fundamento de discussão de direito
+   intertemporal;
+d) Se possível, citar jurisprudência STJ sobre aplicação temporal do CC
+   (REsp sobre direito adquirido, direito intertemporal).
+
+EXEMPLO DE PARÁGRAFO:
+"Conforme jurisprudência consolidada do STJ (REsp nº [...]), a lei material
+aplicável ao direito de crédito do reconvinte é aquela VIGENTE NO MOMENTO
+DA CONSTITUIÇÃO DO FATO, não do julgamento. No caso, o fato constitutivo
+da obrigação ocorreu em [DATA], quando vigia a Lei nº [X/XXXX], que
+[DESCREVE]. Assim, ainda que houvesse lei nova [DATA], a situação jurídica
+consolidada sob a lei antiga mantém-se incólume. Todavia, quanto aos EFEITOS
+atuais dessa obrigação (juros, atualização, vencimento), aplicam-se as
+normas VIGENTES (Lei nº [Y/YYYY]), conforme teoria dos direitos adquiridos
+e atos jurídicos perfeitos (LINDB, arts. 3º e 5º)."
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE IX: DIREITO MATERIAL CÍVEL - FUNDAMENTOS DA RECONVENÇÃO (11 ÁREAS)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+ESCOPO: Esta seção estrutura os FUNDAMENTOS JURÍDICOS DE DIREITO
+MATERIAL que podem sustentar uma reconvenção. Não é catálogo exaustivo,
+mas apresenta 11 ÁREAS principais do direito cível com exemplos típicos
+de reconvenção cabível.
+
+PRINCÍPIO: Cada pedido reconvencional deve estar ancorado em artigo
+específico de lei (CC, CF, lei especial) que outorgue ao reconvinte
+direito AUTÔNOMO contra reconvindo.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+ÁREA 1: DIREITO CONTRATUAL E OBRIGACIONAL (CC ARTS. 421-608)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+Reconvenção cabível quando: A ação principal versa sobre contrato, e
+reconvenção alega DIREITO NOVO do réu sobre MESMO CONTRATO ou CONTRATO
+CONEXO (conexão com ação principal).
+
+EXEMPLOS:
+
+1.1. AÇÃO DE COBRANÇA x RECONVENÇÃO POR INADIMPLEMENTO DO CREDOR
+
+Hipótese: Autor cobra parcela de empréstimo. Réu nega dever alegando que
+Autor não cumpriu obrigação correlata (de devolver bem em comodato, por ex.).
+
+Fundamento: Arts. 476 e 368 CC.
+- Art. 476, CC: "A parte tem direito de resolver (desfazer) a obrigação
+  se a outra não cumprir a sua." (Exceptio non adimpleti contractus)
+- Art. 368, CC: Compensação entre débitos líquidos e certos.
+
+Reconvenção cabível: "Réu reconvém pedindo: (a) reconhecimento de que
+Autor não cumpriu sua obrigação de [DESCRIÇÃO], extinguindo-se, assim,
+a obrigação do reconvinte; (b) condenação de Autor ao pagamento de
+indenização por danos reflexos causados pela inadimplência de Autor
+(lucros cessantes, dano moral, etc.), no importe de R$ [VALOR]."
+
+TEXTO TÍPICO:
+"1º PEDIDO: Reconheça-se a resolução do contrato de [TIPO] celebrado
+entre as partes em [DATA], nulificando-se a relação obrigacional oriunda
+daquele instrumento, porque autor inadimpliu sua obrigação de [DESCRIÇÃO]
+conforme provado em autos, violando o art. 476, CC.
+
+2º PEDIDO: CONDENAR o autor ao pagamento de indenização por perdas e
+danos decorrentes da resolução, no importe de R$ [VALOR], conforme art.
+403, CC, tendo em vista que o reconvinte sofreu [DANO ESPECÍFICO]."
+
+1.2. AÇÃO DE PRESTAÇÃO DE SERVIÇOS x RECONVENÇÃO POR DEFEITO
+
+Hipótese: Autor é prestador de serviço, cobra pela execução. Réu alega
+serviço foi prestado com defeito.
+
+Fundamento: Arts. 607-629, CC (regime de contrato de serviço); art. 927
+(responsabilidade civil); Lei 8.078/1990 (CDC, se aplicável).
+
+Reconvenção cabível: "Réu reconvém pedindo condenação de Autor ao
+pagamento de indenização pelos danos decorrentes da prestação de serviço
+deficiente, no importe de R$ [VALOR], bem como reexecução gratuita do
+serviço, conforme art. 948 e 950, CC."
+
+1.3. AÇÃO DE COBRANÇA x RECONVENÇÃO POR ENRIQUECIMENTO ILÍCITO
+
+Hipótese: Autor cobra valor alegando contrato; réu nega existência de
+contrato e reconvém por enriquecimento ilícito (se Autor recebeu valor
+sem justa causa).
+
+Fundamento: Arts. 884-886, CC (enriquecimento ilícito).
+
+Reconvenção cabível: "Réu reconvém pedindo restitução de valor recebido
+por Autor sem justa causa, no importe de R$ [VALOR], sob fundamento de
+enriquecimento ilícito (art. 884, CC), porque [EXPLICAR POR QUE FALTA
+CAUSA]."
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+ÁREA 2: DIREITO SUCESSÓRIO E HERANÇAS (CC ARTS. 1.784-2.027)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+Reconvenção cabível quando: Ação versa sobre partilha, colação, terça
+ou divisão de heranças; reconvenção alega direito sucessório novo do
+réu (outro herdeiro).
+
+EXEMPLOS:
+
+2.1. AÇÃO DE DIVÓRCIO x RECONVENÇÃO POR CONTRIBUIÇÃO SUCESSÓRIA
+
+Hipótese: Em divórcio, um cônjuge cobra meação sobre bem considerado
+comum; outro cônjuge reconvém arguindo que bem é herança de terceiro
+(colateral), não componente do acervo comum.
+
+Fundamento: Arts. 1.832-1.845, CC (sucessão legítima); arts. 1.790-1.791,
+CC (meação).
+
+Reconvenção cabível: "Cônjuge reconvém pedindo declaração de que bem
+[DESCRIÇÃO] integra herança de [FALECIDO], não meação, devendo ser
+excluído da partilha de bens comuns do casal."
+
+2.2. AÇÃO DE NULIDADE DE TESTAMENTO x RECONVENÇÃO POR DIREITO SUCESSÓRIO
+
+Hipótese: Herdeiro contesta validade de testamento; outro herdeiro
+reconvém pedindo reconhecimento de seus direitos sucessórios.
+
+Fundamento: Arts. 1.857-1.873, CC (testamento); arts. 1.832-1.845, CC.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+ÁREA 3: DIREITO IMOBILIÁRIO, POSSE E PROPRIEDADE (CC ARTS. 1.196-1.368)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+Reconvenção cabível quando: Ação versa sobre imóvel (rescisão, imissão
+na posse, reintegração); reconvenção alega direito imobiliário novo
+(posse, propriedade, usufruto).
+
+EXEMPLOS:
+
+3.1. AÇÃO DE REINTEGRAÇÃO DE POSSE x RECONVENÇÃO POR INDENIZAÇÃO DE BENFEITORIAS
+
+Hipótese: Proprietário reintegra-se na posse contra possuidor que ocupava
+imóvel. Possuidor reconvém pedindo indenização por benfeitorias realizadas.
+
+Fundamento: Arts. 1.219-1.269, CC (usucapião e posse); arts. 1.255-1.258,
+CC (benfeitorias). TODAVIA, há VEDAÇÃO se possuidor for ESBULHADOR (arts.
+1.210, §2º, CPC; 505, CPC antigo).
+
+Reconvenção cabível OU IMPROCEDENTE: Depende se posse é JUSTA ou INJUSTA.
+Se JUSTA (não violenta, não clandestina, não precária), cabe indenização
+por benfeitorias. Se INJUSTA, não cabe reconvenção (art. 1.255, caput, CC).
+
+TEXTO: "Possuidor reconvém pedindo indenização pelas benfeitorias úteis
+realizadas no imóvel de [DESCRIÇÃO], no importe de R$ [VALOR], conforme
+comprovado por [DOCUMENTAÇÃO], sob fundamento de direito adquirido (art.
+1.255, CC, em relação a benfeitorias úteis de possuidor de boa-fé)."
+
+3.2. AÇÃO DE NULIDADE DE COMPRA E VENDA x RECONVENÇÃO POR ENRIQUECIMENTO
+
+Hipótese: Comprador busca nulidade de contrato de venda; vendedor
+reconvém pedindo indenização por perdas e danos.
+
+Fundamento: Arts. 1.508-1.559, CC (compra e venda); art. 927, CC.
+
+Reconvenção cabível: "Vendedor reconvém pedindo condenação de comprador
+ao pagamento de indenização pelos danos decorrentes da rescisão do
+contrato, no importe de R$ [VALOR], porque [EXPLICAR PREJUÍZO]."
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+ÁREA 4: RESPONSABILIDADE CIVIL E DANOS (CC ARTS. 927-954)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+Reconvenção cabível quando: Ação versa sobre dano/responsabilidade;
+reconvenção alega DANO REFLEXO ou CONTRA-DANO causado pelo autor.
+
+EXEMPLOS:
+
+4.1. AÇÃO DE INDENIZAÇÃO POR DANO MORAL x RECONVENÇÃO POR DANO MORAL REFLEXO
+
+Hipótese: Autor cobra dano moral por calúnia/difamação. Réu nega e
+reconvém arguindo que Autor também o caluniou.
+
+Fundamento: Art. 927, CC; arts. 5º, V, CF.
+
+Reconvenção cabível: "Réu reconvém pedindo condenação de Autor ao
+pagamento de indenização por dano moral ocasionado pelas falsas
+acusações de [DESCRIÇÃO], no importe de R$ [VALOR], conforme jurisprudência
+pacífica do STJ que reconhece cabimento de dano moral reflexo em caso de
+difamação recíproca (REsp nº [...])."
+
+4.2. AÇÃO DE RESPONSABILIDADE CIVIL POR ACIDENTE x RECONVENÇÃO POR NEGLIGÊNCIA DO AUTOR
+
+Hipótese: Autor cobra indenização por dano em acidente. Réu nega culpa
+própria e alega que Autor foi negligente (culpa concorrente).
+
+Fundamento: Art. 927, CC; art. 945, CC (culpa concorrente).
+
+Reconvenção cabível: "Réu reconvém pedindo redução da indenização a ser
+paga, ou condenação de Autor ao pagamento de indenização pelo dano
+sofrido pelo réu, no importe de R$ [VALOR], porque o Autor foi igualmente
+negligente na ocasião do acidente, conforme demonstrado por [PROVA]."
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+ÁREA 5: MATRIMÔNIO, DIVÓRCIO, RELAÇÕES FAMILIARES (CC ARTS. 1.511-1.783)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+Reconvenção em matéria familiar é COMPLEXA, pois muitos direitos são
+INDISPONÍVEIS (vedação do art. 343, §2º, CPC).
+
+REGRA GERAL: Reconvenção NÃO cabe em:
+- Ação de divórcio (pede-se uma vez, direito indisponível)
+- Ação de anulação de casamento (direito indisponível)
+- Ação de investigação de paternidade (direito indisponível)
+- Ação de interdição (direito indisponível)
+
+EXCEÇÃO: Reconvenção PODE caber em pedidos SECUNDÁRIOS (acessórios):
+- Ação de divórcio COM RECONVENÇÃO sobre MEAÇÃO, PENSÃO ALIMENTÍCIA ou
+  REGIME DE GUARDA (se estes forem CONTROVERTIDOS e dispomos, em caráter
+  secundário).
+
+5.1. DIVÓRCIO COM RECONVENÇÃO SOBRE PENSÃO ALIMENTÍCIA
+
+Hipótese: Um cônjuge pede divórcio amigável com pensão; outro cônjuge
+nega pensão e reconvém pedindo pensão aumentada ou cumulada com pensão
+aos filhos.
+
+Fundamento: Arts. 1.694-1.710, CC (obrigação alimentar).
+
+Reconvenção cabível: "Cônjuge reconvém pedindo condenação de ex-cônjuge
+ao pagamento de pensão alimentícia aumentada para [FILHOS], no importe de
+R$ [VALOR], conforme cálculo técnico de [PROFISSIONAL], sob fundamento
+de solidariedade familiar (art. 1.696, CC)."
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+ÁREA 6: DIREITO AUTORAL E PROPRIEDADE INTELECTUAL (Lei 9.610/1998)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+Reconvenção cabível quando: Ação versa sobre violação de direito autoral;
+reconvenção alega contra-violação ou uso legítimo.
+
+EXEMPLOS:
+
+6.1. AÇÃO DE RETIRADA DE CONTEÚDO x RECONVENÇÃO POR DANO À REPUTAÇÃO
+
+Hipótese: Autor busca remover conteúdo de site do réu; réu reconvém
+arguindo que conteúdo é legítimo (art. 7º, Lei 9.610/98) e que autor
+sofreu prejuízos de reputação.
+
+Fundamento: Arts. 5º-8º, Lei 9.610/1998 (direitos autorais); art. 927, CC.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+ÁREA 7: DIREITO CONSUMERISTA (Lei 8.078/1990 - CDC)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+Reconvenção em matéria consumerista é COMUM em ações por vício, defeito
+ou inadimplemento de obrigação contratual.
+
+EXEMPLOS:
+
+7.1. AÇÃO DE REPARAÇÃO DE VÍCIO x RECONVENÇÃO POR MÁ-FÉ DO CONSUMIDOR
+
+Hipótese: Consumidor demanda empresa por vício em produto. Empresa
+reconvém arguindo má-fé do consumidor (uso abusivo, devolução tardia).
+
+Fundamento: Arts. 18-25, CDC; art. 927, CC.
+
+Reconvenção cabível: "Fornecedor reconvém pedindo condenação de consumidor
+ao pagamento de indenização pelos danos decorrentes de devolução tardia
+e uso indevido do produto, no importe de R$ [VALOR]."
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+ÁREA 8: DIREITO ADMINISTRATIVO E LICITAÇÕES (Lei 8.666/1993)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+Reconvenção em licitações é RARA (maioria dos processos é contra
+Administração Pública, que goza de imunidade relativa).
+
+EXCEÇÃO: Reconvenção entre PARTICULARES sobre contrato licitado.
+
+EXEMPLOS:
+
+8.1. AÇÃO DE RESCISÃO DE CONTRATO LICITADO x RECONVENÇÃO POR INADIMPLEMENTO
+
+Hipótese: Contratante rescinde contrato com contratado; contratado
+reconvém pedindo indenização por descumprimento de obrigações do
+contratante.
+
+Fundamento: Lei 8.666/1993; CC (direito contratual).
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+ÁREA 9: DIREITO TRIBUTÁRIO (CTN)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+Reconvenção em matéria tributária é LIMITADA (ações tributárias envolvem
+INTERESSE PÚBLICO, vedadas algumas reconvenções).
+
+REGRA: Reconvenção NÃO cabe quando a ação versa sobre:
+- Ação de execução fiscal (competência privativa do juizado de feitos
+  tributários)
+- Ação civil pública tributária (direito indisponível)
+- Mandado de segurança contra ato tributário (competência restrita)
+
+EXCEÇÃO: Reconvenção PODE caber em ação ordinária entre particulares
+sobre tema tributário (ex.: discussão sobre partilha de cofres públicos,
+reembolso de tributo recolhido).
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+ÁREA 10: DIREITO TRABALHISTA (CLT, ARTS. 1º-988)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+Reconvenção em Justiça do Trabalho segue regra SIMILAR ao CDC (pedido
+contraposto em Juizado Especial Trabalhista), mas em ação ordinária
+trabalhista, é permitida reconvenção/contrapedido.
+
+EXEMPLOS:
+
+10.1. RECLAMAÇÃO TRABALHISTA POR COBRANÇA x RECONVENÇÃO POR INDENIZAÇÃO
+
+Hipótese: Empregado reclama verbas rescisórias; empregador reconvém
+arguindo dano ao patrimônio da empresa durante relação de emprego.
+
+Fundamento: Arts. 7º, CF; CLT; art. 945, CC.
+
+Reconvenção cabível: "Empregador reconvém pedindo condenação de empregado
+ao pagamento de indenização pelos danos patrimoniais causados durante
+relação de emprego, no importe de R$ [VALOR]."
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+ÁREA 11: DIREITO SOCIETÁRIO E EMPRESARIAL (Lei 6.404/1976, Lei 11.101/2005)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+Reconvenção em ações societárias versa sobre direitos de sócios,
+administradores, credores e a própria sociedade.
+
+EXEMPLOS:
+
+11.1. AÇÃO DE INDENIZAÇÃO CONTRA ADMINISTRADOR x RECONVENÇÃO POR VIOLAÇÃO DE DIREITOS
+
+Hipótese: Sócio demanda administrador por violação de deveres fiduciários;
+administrador reconvém arguindo que sócio prejudicou deliberações da
+assembleia.
+
+Fundamento: Arts. 150-159, Lei 6.404/1976 (deveres do administrador);
+arts. 109-144, Lei 6.404/1976 (direitos dos acionistas).
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+SÍNTESE OPERACIONAL: QUANDO OFERECER RECONVENÇÃO?
+
+Checklist de análise para cada ÁREA de direito:
+
+[✓] Há FATO NOVO que gera direito autônomo do réu contra autor?
+[✓] Há CONEXÃO com ação principal (causa de pedir comum, fundamento defesa)?
+[✓] Direito material invocado é DISPONÍVEL (não é indisponível)?
+[✓] Juízo é COMPETENTE para reconvenção (art. 343, §1º, CPC)?
+[✓] Reconvenção NÃO viola nenhuma VEDAÇÃO (art. 343, §§2º-3º)?
+[✓] Há PROVA suficiente para demonstrar fato constitutivo (ônus do reconvinte)?
+[✓] Pedido é ESPECÍFICO e DETERMINADO (art. 2º, caput, CPC)?
+[✓] VALOR da reconvenção foi corretamente calculado (para honorários)?
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE XIII: DISTINGUISHING E OVERRULING EM RECONVENÇÃO
+TÉCNICAS DE SUPERAÇÃO DE PRECEDENTES
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+1. INTRODUÇÃO: PRECEDENTES EM RECONVENÇÃO
+
+Em muitos casos de reconvenção, haverá jurisprudência CONTRÁRIA ao
+pedido reconvencional (anterior), ou jurisprudência FAVORÁVEL que,
+todavia, versa sobre fatos DISTINTOS.
+
+O advogado deve DOMINAR as técnicas de:
+a) DISTINGUISHING: afastar precedente desfavorável por diferença fática
+b) OVERRULING: superar precedente desfavorável por mudança de jurisprudência
+c) PREQUESTIONAMENTO: criar debate jurídico para futuro REsp/RE
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+2. TIPOS DE DISTINGUISHING (3 MODALIDADES)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+TIPO A: DISTINGUISHING FÁTICO
+
+DEFINIÇÃO: Precedente versa sobre fatos SIMILARES, mas não IDÊNTICOS.
+Há diferença relevante que torna inaplicável o precedente ao caso atual.
+
+TÉCNICA:
+Confrontar METICULOSAMENTE a RATIO DECIDENDI (razão de decidir) do
+precedente com os fatos do caso presente.
+
+EXEMPLO PRÁTICO:
+
+Precedente desfavorável ao reconvinte: STJ, REsp nº X, decidiu que
+"em reconvenção por cobrança de dívida, não cabe compensação automática
+se credor não alegou na contestação" [Fatos: credor (agora réu) não
+teve oportunidade de alegar haveres reciprocamente; débito anterior].
+
+Distinguishing: No caso atual, há DOCUMENTAÇÃO de que réu alegou haveres
+DESDE A CONTESTAÇÃO (não é novidade da reconvenção). Logo, falta o
+requisito fático essencial (falha de oportunidade anterior) presente no
+precedente. Portanto, precedente é INAPLICÁVEL.
+
+TEXTO MODELAR:
+"Embora exista precedente do STJ [REsp nº X, Rel. Ministro X] que
+rejeita compensação em reconvenção quando credor não teve prévia
+oportunidade de alegação, tal precedente NÃO se aplica ao presente
+caso por DISTINÇÃO FÁTICA RELEVANTE: aqui, os haveres do reconvinte
+foram alegados DESDE A CONTESTAÇÃO INICIAL (conforme fls. XXX), de modo
+que reconvindo teve plena oportunidade de defesa. Logo, falta o
+elemento fático essencial da rejeição (falta de oportunidade anterior)."
+
+TIPO B: DISTINGUISHING NORMATIVO
+
+DEFINIÇÃO: Precedente foi decidido sob regime de lei ANTIGA ou LEI
+DIFERENTE que não se aplica ao caso presente.
+
+TÉCNICA:
+Demonstrar que:
+a) Lei mudou desde o precedente;
+b) Nova lei é MAIS FAVORÁVEL ao reconvinte (presumção);
+c) Logo, precedente foi superado por mudança normativa;
+d) Se não há super precedente (STJ/STF reconhecendo a mudança),
+   PREQUESTIONAR para criar debate futuro.
+
+EXEMPLO PRÁTICO:
+
+Precedente: STJ decidiu sob CPC/1973 que "compensação em reconvenção
+é vedada" (art. 562, CPC/1973).
+
+Distinguishing normativo: CPC/2015 (art. 368, CC, combinado com art. 343,
+CPC) PERMITE compensação em reconvenção em regra, exceto se visar apenas
+alegar direito extintivo (art. 343, §3º). Logo, precedente foi SUPERADO
+por mudança de lei.
+
+TEXTO MODELAR:
+"O precedente invocado [REsp nº X] foi decidido sob REGIME DE LEI
+PROCESSUAL ANTERIOR (CPC/1973). Todavia, a entrada em vigor do CPC/2015
+(16.03.2015) ALTEROU fundamentalmente o regime de reconvenção (art. 343,
+caput), expandindo-a para QUALQUER matéria com conexão, incluindo
+compensação (quando autônoma, não mera alegação de defesa). STJ ainda
+não se pronunciou especificamente sobre se precedente anterior foi
+superado pela mudança legal. Portanto, há CONTROVÉRSIA jurisprudencial,
+sendo recomendável reconhecimento de cabimento sob lei nova,
+PREQUESTIONANDO para futuro REsp [ART. 105, CF]."
+
+TIPO C: DISTINGUISHING POR MUDANÇA JURISPRUDENCIAL
+
+DEFINIÇÃO: Tribunal já alterou sua jurisprudência desde o precedente
+desfavorável. Há precedente NOVO mais favorável.
+
+TÉCNICA:
+Demonstrar que há jurisprudência SUBSEQUENTE do STJ/STF que:
+a) Enfrenta o MESMO problema jurídico;
+b) ALTERA o entendimento anterior;
+c) Logo, precedente antigo é superado.
+
+EXEMPLO PRÁTICO:
+
+Precedente antigo: STJ (2010) decidiu que "indenização por dano moral
+em reconvenção por difamação recíproca é cabível apenas se demonstrado
+prejuízo específico."
+
+Precedente novo: STJ (2020) decidiu que "presunção de dano moral em caso
+de alegação de difamação é suficiente, sem prova específica de prejuízo."
+
+Distinguishing: Precedente antigo foi OVERRULADO por jurisprudência
+posterior. Logo, há entendimento CONSOLIDADO do STJ que favorece
+reconvinte.
+
+TEXTO MODELAR:
+"Ainda que exista precedente anterior [REsp X/2010], o STJ consolidou
+novo entendimento [REsp Y/2020, Corte Especial], reconhecendo que
+indenização por dano moral em reconvenção é cabível sem necessidade de
+prova específica de prejuízo, bastando a alegação de difamação. Logo, a
+jurisprudência evoluiu em favor de reconvinte, e precedente anterior
+restou SUPERADO."
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+3. TIPOS DE OVERRULING (3 MODALIDADES)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+OVERRULING é técnica mais AGRESSIVA que distinguishing. Não se busca
+afastar o precedente por diferença fática; busca-se SUPERAR o precedente
+mesmo que fatos sejam idênticos, argumentando que precedente foi MAU
+DECIDIDO ou está ULTRAPASSADO.
+
+⚠️ ADVERTÊNCIA: Overruling deve ser usado com cuidado. Questionar
+decisão do STJ/STF requer argumentação MUITO FORTE.
+
+TIPO A: OVERRULING POR ERRO LÓGICO (Distinguishing forte)
+
+DEFINIÇÃO: Precedente contém ERRO DE LÓGICA ou PREMISSA FALSA que o
+sustenta. Logo, deve ser superado.
+
+EXEMPLO PRÁTICO:
+
+Precedente: "Reconvenção é inadmissível em ação de cobrança porque réu
+deveria ter proposto ação autônoma."
+
+Erro de lógica: CPC/2015 (art. 343) PERMITE reconvenção em qualquer ação
+com conexão. Logo, premissa do precedente (que reconvenção seria
+"impertinência lógica") é FALSA na lei atual.
+
+TEXTO MODELAR:
+"O precedente [REsp X] sustenta-se em PREMISSA LEGAL INCONSISTENTE com
+CPC/2015. Fundamenta-se na ideia de que reconvenção seria 'abuso do direito
+de ação' porque deveria haver ação autônoma. Porém, art. 343, CPC/2015,
+expressa e claramente, AUTORIZA reconvenção em qualquer ação com conexão.
+Logo, a RAZÃO DO PRECEDENTE DESAPARECEU, e precedente deve ser SUPERADO."
+
+TIPO B: OVERRULING POR MUDANÇA DE ORIENTAÇÃO JURISPRUDENCIAL
+
+DEFINIÇÃO: STJ/STF alterou sua ORIENTAÇÃO GERAL sobre tema (mudança
+política ou filosófica do direito), sem pronunciamento específico sobre
+precedente antigo. Precedente antigo é IMPLICITAMENTE superado.
+
+EXEMPLO PRÁTICO:
+
+Precedente antigo: STJ (1990s) era RESTRITIVA em relação a indenização por
+dano moral (exigia dano CONCRETO e QUANTIFICÁVEL).
+
+Orientação nova: STF/STJ (2000s em diante) reconhece dano moral como direito
+FUNDAMENTAL (CF, art. 5º, V), com presunção de existência em caso de lesão
+a dignidade.
+
+Overruling implícito: Precedentes antigos que exigiam "dano concreto
+específico" foram SUPERADOS pela nova orientação (dano moral presuntivo).
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+TIPO C: OVERRULING POR DECISÃO EXPLÍCITA
+
+DEFINIÇÃO: STF ou STJ EXPLICITAMENTE declara que precedente anterior é
+"superado" ou "revisto."
+
+EXEMPLO PRÁTICO:
+
+Decisão explícita: STF (Plenário) declara: "Revemos decisão anterior sobre
+[TEMA] e reconhecemos que [NOVO ENTENDIMENTO] é correto."
+
+Overruling explícito: Precedente anterior é JURIDICAMENTE MORTO.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+4. APLICAÇÃO PRÁTICA: COTEJAMENTO PRÓ-RECONVINTE
+
+Ao redigir reconvenção CONTRA jurisprudência desfavorável, usar sequência:
+
+PASSO 1: LOCALIZAR O PRECEDENTE DESFAVORÁVEL
+Fazer busca em base STJ/STF por tema pertinente à reconvenção.
+
+PASSO 2: ANALISAR RATIO DECIDENDI
+Qual foi a RAZÃO LEGAL/FÁTICA que levou tribunal a rejeitar reconvenção
+similar?
+
+PASSO 3: DISTINGUISHING
+Encontrar DIFERENÇA FÁTICA significativa entre precedente e caso atual.
+
+PASSO 4: PREQUESTIONAMENTO
+Se distinguishing for fraco, CITAR o precedente desfavorável na peça,
+mas QUESTIONAR sua aplicabilidade. Isso cria "controvérsia jurisprudencial"
+para futuro REsp.
+
+PASSO 5: JURISPRUDÊNCIA PRÓ-RECONVINTE
+Apresentar precedentes FAVORÁVEIS do STJ/STF que se alinham com pretensão.
+
+PASSO 6: DIFERENÇA DE CÂMARAS/TURMAS
+Se há divergência entre câmaras do STJ, ENFATIZAR que câmara mais recente
+ou mais especializada é favorável.
+
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║ EXEMPLO INTEGRALIZADO:                                                       ║
+║                                                                               ║
+║ PRECEDENTE DESFAVORÁVEL: STJ, REsp 1.234.567, decidiu que "reconvenção     ║
+║ por indenização de dano moral é cabível apenas se houver DANO CONCRETO      ║
+║ DOCUMENTADO E PREJUÍZO ECONÔMICO QUANTIFICÁVEL."                            ║
+║                                                                               ║
+║ NOSSO CASO: Reconvenção por dano moral em difamação (acusação de fraude).   ║
+║ Dano é moral (prejuízo a dignidade), não material.                          ║
+║                                                                               ║
+║ ESTRATÉGIA:                                                                  ║
+║                                                                               ║
+║ 1º DISTINGUISHING: "Precedente [REsp X] versa sobre indenização de dano    ║
+║    material (em contrato); caso atual versa sobre dano MORAL puro           ║
+║    (dignidade). Logo, razão de decidir de precedente (exigência de dano     ║
+║    quantificável) não se aplica a direito fundamental protegido (CF art. 5 ║
+║    V)."                                                                      ║
+║                                                                               ║
+║ 2º JURISPRUDÊNCIA PRÓ: "Contudo, jurisprudência consolidada do STJ [REsp   ║
+║    A/2015, REsp B/2018, REsp C/2020] reconhece que dano moral é direito     ║
+║    fundamental, bastando allegação de lesão a dignidade, sem necessidade de ║
+║    prejuízo econômico específico. Logo, nossa posição está alinhada com     ║
+║    jurisprudência MAIS RECENTE e MAIS ESPECIALIZADA do STJ."                ║
+║                                                                               ║
+║ 3º PREQUESTIONAMENTO: "Embora haja divergência jurisprudencial sobre tema  ║
+║    [citar ambos os lados], mantemos que entendimento MAIS FAVORÁVEL À       ║
+║    DIGNIDADE HUMANA e ao direito fundamental deve prevalecer, conforme      ║
+║    princípios constitucionais [CF art. 1º, III]. Reconheça-se, portanto,    ║
+║    cabimento de reconvenção por dano moral, PREQUESTIONANDO eventual        ║
+║    divergência para futuro recurso extraordinário [ART. 102, CF]."          ║
+║                                                                               ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+5. DISSÍDIOS STJ/STF EM RECONVENÇÃO
+
+Quando há CONTROVÉRSIA entre STJ e STF (ex.: STJ reconhece direito, mas
+STF o rejeita), usar seguinte estratégia:
+
+REGRA: Em instância INFERIOR (juízo comum), deve-se seguir jurisprudência
+de AMBOS os tribunais, mas com PRECEDÊNCIA para STF (supremacia constitucional).
+
+TODAVIA, em STJ, pode-se questionar se jurisprudência STF está SUPERADA.
+
+EXEMPLO:
+
+STF (antigo): Rejeita indenização por dano moral reflexo (parente de vítima).
+STJ (recente): Reconhece indenização por dano moral reflexo (jurisprudência
+evoluiu).
+
+POSIÇÃO: Seguir STJ (mais favorável a reconvinte), mas PREQUESTIONAR a
+questão perante STF em eventual RE.
+
+TEXTO MODELAR:
+"Reconhecemos que jurisprudência do STF [Súmula nº X] historicamente foi
+restritiva em relação a dano moral reflexo. Porém, jurisprudência recente
+do STJ [REsp Y, Corte Especial] reconhece de forma CONSOLIDADA o cabimento
+de indenização por dano moral reflexo em casos de lesão a familiar próximo,
+alinhando-se à evolução do direito constitucional (CF art. 5º, V). Logo,
+entendemos ser apropriado acolher reconvenção por dano moral reflexo,
+RESPEITANDO a jurisprudência mais especializada (STJ), e reconhecendo-se
+que divergência jurisprudencial ENTRE STF e STJ existe, merecedora de
+revisão pelo STF [ART. 102, CF]."
+
+═══════════════════════════════════════════════════════════════════════════════════

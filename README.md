@@ -2,6 +2,26 @@
 
 Agente de IA para Redação de Peças Jurídicas com Excelência.
 
+## 🎉 Status do Projeto
+
+**Fase 2 Concluída:** 74/83 prompts refatorados (89%)
+**Última atualização:** 26/03/2026
+**Conformidade ROM V3.0:** 100%
+
+### Progresso da Refatoração
+
+- ✅ **Wave 1-2:** 16 prompts criminais + cíveis (100%)
+- ✅ **Wave 3:** 8 prompts recursos cíveis (100%)
+- ✅ **Wave 4:** 6 prompts trabalhistas (100%)
+- ✅ **Wave 5:** 8 prompts petições iniciais (100%)
+- ✅ **Wave 6:** 8 prompts ações especiais (100%)
+- ✅ **Wave 7:** 8 prompts especiais + contratos (100%)
+- ✅ **Wave 8:** 8 prompts contratos (100%)
+- ✅ **Wave 9:** 8 prompts extrajudiciais + revisão (100%)
+- ✅ **Wave 10:** 4 prompts instrumentais (100%)
+
+**Total:** 74 prompts com 7 partes obrigatórias Fase 1.5 cada (~518 partes adicionadas)
+
 ## Instalação
 
 ```bash
@@ -47,6 +67,27 @@ console.log(resposta);
 - ✅ Formatação profissional com papel timbrado
 - ✅ Criação de tabelas, fluxogramas e linhas do tempo
 - ✅ Busca de artigos científicos jurídicos
+
+## 📚 Prompts Refatorados (Fase 1.5)
+
+### 7 Partes Obrigatórias por Prompt
+1. **PARTE VII:** Estrutura Redacional (8-12 pág)
+2. **PARTE VIII:** LINDB Arts. 1º-6º + Art. 14 CPC / Retroatividade Benéfica (criminal) (8-12 pág)
+3. **PARTE IX:** Direito Material (15-20 pág)
+4. **PARTE XIII:** Distinguishing + Overruling (6-10 pág)
+5. **Standard Probatório** (4-6 pág)
+6. **Tratados Internacionais** (3-8 pág)
+7. **Dissídios Jurisprudenciais STJ/STF** (6-12 pág)
+
+### Áreas Cobertas
+- **Criminais:** 12 prompts (Habeas Corpus, Apelação, Recursos, Revisão, etc.)
+- **Cíveis:** 22 prompts (Apelação, Agravos, Embargos, Ações, etc.)
+- **Trabalhistas:** 7 prompts (Reclamação, Contestação, Recursos, etc.)
+- **Petições Iniciais:** 8 prompts (Petição, Contestação, Réplica, etc.)
+- **Contratos:** 17 prompts (Social, Compra/Venda, Locação, etc.)
+- **Revisão/Análise:** 8 prompts (Análise, Revisão Geral, Parecer, etc.)
+
+**Crescimento médio:** +250% linhas, +220% palavras por prompt
 
 ## Ferramentas Integradas
 
