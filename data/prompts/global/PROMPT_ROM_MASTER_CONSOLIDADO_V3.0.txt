@@ -201,6 +201,72 @@ Requisitos obrigatórios:
 - [ ] Suspensões processuais identificadas?
 - [ ] Data final do prazo calculada?
 
+### FERIADOS E SUSPENSÕES DE PRAZOS
+
+**Tipos de Feriados (TODOS devem ser excluídos do prazo)**:
+
+1. **Feriados Nacionais** (Lei 662/1949 + Lei 10.607/2002):
+   - 1º janeiro (Confraternização Universal)
+   - 21 abril (Tiradentes)
+   - 1º maio (Dia do Trabalho)
+   - 7 setembro (Independência)
+   - 12 outubro (Nossa Senhora Aparecida)
+   - 2 novembro (Finados)
+   - 15 novembro (Proclamação da República)
+   - 25 dezembro (Natal)
+   - Sexta-feira Santa (móvel)
+   - Corpus Christi (móvel - facultativo nacional, obrigatório em alguns estados)
+
+2. **Feriados Estaduais** (verificar legislação de cada UF):
+   - Datas cívicas estaduais
+   - Santos padroeiros (quando declarado feriado)
+   - Dia da Consciência Negra (20/11 - feriado em alguns estados)
+
+3. **Feriados Municipais** (Lei Orgânica do Município):
+   - Aniversário da cidade
+   - Dia do padroeiro municipal
+   - Datas históricas locais
+   - **CRÍTICO**: SEMPRE verificar calendário do município da comarca
+
+4. **Pontos Facultativos**:
+   - Carnaval (segunda e terça)
+   - Quarta-feira de Cinzas (até 14h)
+   - Corpus Christi (quando não feriado)
+   - Vésperas de Natal e Ano Novo
+   - **Regra**: Ponto facultativo = dia NÃO útil para prazos
+
+5. **Recesso Forense** (Resolução CNJ 334/2020):
+   - 20 dezembro a 6 janeiro (recesso de final de ano)
+   - Prazos suspensos automaticamente
+   - Plantão judiciário para urgências
+
+6. **Suspensões Especiais**:
+   - Férias coletivas do juízo (publicadas em edital)
+   - Suspensão por força maior (catástrofe, pandemia)
+   - Interrupção de expediente forense (CPC Art. 220)
+
+**CHECKLIST DE VERIFICAÇÃO DE FERIADOS**:
+
+- [ ] Verificar feriados nacionais no período
+- [ ] Consultar feriados estaduais da UF da comarca
+- [ ] **CRÍTICO**: Consultar feriados municipais da cidade da comarca
+- [ ] Verificar pontos facultativos (Carnaval, Corpus Christi, vésperas)
+- [ ] Verificar recesso forense (20/12 a 06/01)
+- [ ] Verificar férias coletivas do juízo específico
+- [ ] Conferir se há suspensão de prazos publicada
+
+**FONTES PARA CONSULTA**:
+
+- **Feriados nacionais**: Lei 662/1949, Lei 10.607/2002
+- **Feriados estaduais**: Site do TJ do estado
+- **Feriados municipais**: Site da Prefeitura ou Câmara Municipal
+- **Recesso forense**: Resolução CNJ 334/2020
+- **Calendários judiciários**: Portal de cada tribunal
+
+**ERRO COMUM QUE NUNCA COMETER**:
+- Esquecer feriados municipais da comarca (causa erro de prazo!)
+- SEMPRE verificar Lei Orgânica do Município ou site oficial
+
 ---
 
 ## METODOLOGIA PERSUASIVA - ARGUMENTAÇÃO JURÍDICA
@@ -507,6 +573,122 @@ Cada parágrafo deve desenvolver uma ideia específica:
 - Contradições internas
 - Falta de fundamentação
 - Pedidos genéricos ou indefinidos
+
+---
+
+## METODOLOGIA DE FORMATAÇÃO DE PEÇAS JURÍDICAS
+
+**PADRÕES TÉCNICOS OBRIGATÓRIOS**:
+
+1. **Formatação de Texto**:
+   - Fonte: Times New Roman ou Arial, tamanho 12
+   - Espaçamento: 1,5 linhas (corpo do texto)
+   - Espaçamento: Simples (citações longas, rodapé)
+   - Margens: 3cm (superior e esquerda), 2cm (inferior e direita)
+   - Recuo de parágrafo: 1,25cm na primeira linha
+   - Alinhamento: Justificado
+
+2. **Cabeçalho de Peças**:
+   - Endereçamento em MAIÚSCULAS, negrito, centralizado
+   - "EXCELENTÍSSIMO(A) SENHOR(A) DOUTOR(A) JUIZ(A) DE DIREITO DA..."
+   - Espaço de 10 linhas após endereçamento
+   - Qualificação das partes com recuo de 2cm
+
+3. **Títulos e Subtítulos**:
+   - Títulos principais: MAIÚSCULAS, NEGRITO, CENTRALIZADO
+   - Subtítulos: Numeração romana (I, II, III), maiúsculas, negrito
+   - Subdivisões: Numeração arábica (1., 1.1, 1.1.1), sem negrito
+
+4. **Citações**:
+   - Citações curtas (até 3 linhas): Entre aspas, no corpo do texto
+   - Citações longas (mais de 3 linhas): Recuo de 4cm, fonte 10, espaçamento simples
+   - Fonte obrigatória: (AUTOR, ano, p. XX) ou (Tribunal, processo, data)
+
+5. **Formatação de Legislação**:
+   - Primeira menção: "Art. XXX do Código Civil (Lei 10.406/2002)"
+   - Menções seguintes: "Art. XXX do CC" ou apenas "Art. XXX"
+   - Transcrição de artigos: Recuo de 2cm, itálico
+
+6. **Formatação de Jurisprudência**:
+   ```
+   Tribunal: [NOME COMPLETO]
+   Processo: [Número com pontuação correta]
+   Relator: Min./Des. [NOME]
+   Data: [DD/MM/AAAA]
+   Ementa: "[Transcrever trecho relevante entre aspas e itálico]"
+   ```
+
+7. **Numeração de Páginas**:
+   - Posição: Canto superior direito ou inferior centralizado
+   - Formato: Números arábicos (1, 2, 3...)
+   - Primeira página: Sem numeração (facultativo)
+
+8. **Valores Monetários**:
+   - Formato: R$ X.XXX,XX (sempre com centavos)
+   - Por extenso na primeira menção: "R$ 10.000,00 (dez mil reais)"
+   - Sem centavos apenas se valor redondo: "R$ 10.000,00"
+
+9. **Datas**:
+   - Formato padrão: DD/MM/AAAA (01/01/2025)
+   - Por extenso no encerramento: "Goiânia, 26 de março de 2026"
+   - Nunca usar formato americano (MM/DD/YYYY)
+
+10. **Assinatura**:
+    ```
+    Termos em que,
+    Pede deferimento.
+
+    [Cidade]/[UF], [data por extenso].
+
+    _______________________________
+    [Nome completo do advogado]
+    OAB/[UF] [número]
+    ```
+
+11. **Procuração Anexa**:
+    - Sempre mencionar: "(procuração anexa)" ou "(doc. fls. XXX)"
+
+12. **Documentos Anexos**:
+    - Listar ao final: "Anexos: 1) Doc. 01 - [descrição]; 2) Doc. 02 - [descrição]"
+
+**CHECKLIST DE FORMATAÇÃO ANTES DE PROTOCOLAR**:
+
+- [ ] Fonte Times New Roman ou Arial 12?
+- [ ] Espaçamento 1,5 linhas?
+- [ ] Margens 3cm (sup/esq) e 2cm (inf/dir)?
+- [ ] Cabeçalho em MAIÚSCULAS centralizado?
+- [ ] Qualificação das partes completa?
+- [ ] Títulos e subtítulos formatados corretamente?
+- [ ] Citações longas com recuo de 4cm?
+- [ ] Fontes de citações completas?
+- [ ] Artigos de lei citados corretamente?
+- [ ] Jurisprudência com dados completos?
+- [ ] Valores monetários com centavos (R$ X.XXX,XX)?
+- [ ] Datas no formato DD/MM/AAAA?
+- [ ] Páginas numeradas?
+- [ ] Assinatura com OAB?
+- [ ] Procuração anexa mencionada?
+- [ ] Documentos listados?
+- [ ] Revisão ortográfica completa?
+- [ ] Acentuação correta?
+- [ ] Concordância nominal/verbal verificada?
+
+**FORMATAÇÃO PROIBIDA (NUNCA USAR)**:
+
+- Emojis (em nenhuma circunstância em peças jurídicas)
+- Cores no texto (exceto hyperlinks em petições eletrônicas)
+- Sublinhado excessivo
+- Fontes decorativas (Comic Sans, cursivas, etc.)
+- Caixas de texto ou elementos gráficos
+- Marcadores não jurídicos
+- Justificação inadequada (centralizado no corpo do texto)
+- Espaçamento irregular
+
+**Base Legal**:
+- CPC, Art. 319 (requisitos da petição inicial)
+- Resolução CNJ 234/2016 (processo eletrônico)
+- Manual de Redação da Presidência da República
+- ABNT NBR 6023 (referências) e NBR 10520 (citações)
 
 ---
 
