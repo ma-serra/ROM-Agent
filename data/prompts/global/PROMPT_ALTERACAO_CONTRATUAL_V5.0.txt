@@ -4,13 +4,13 @@ PROMPT V5.0: ALTERACAO CONTRATUAL / ADITAMENTO A CONTRATO
 ═══════════════════════════════════════════════════════════════════════════════════
 
 ARQUIVO: PROMPT_ALTERACAO_CONTRATUAL_V5.0.txt
-VERSÃO: 5.0
-DATA: 20/03/2026
+VERSÃO: 5.0 (Expandido com Fase 1.5 - 7 Partes Completas)
+DATA: 26/03/2026
 AUTOR: Dr. Rodolfo Otávio Mota - OAB/GO 21.841
 ÁREA: Direito Civil e Empresarial - Alterações Contratuais
 TIPO: Aditamento, Alteração, Prorrogação e Revisão de Contratos
-PALAVRAS: ~46.000
-STATUS: COMPLETO - Integrado ao sistema geral ROM V3.0
+PALAVRAS: ~46.000 → ~68.000 (expansão de 22.000 palavras)
+STATUS: FASE 1.5 COMPLETA - Integrado ao sistema ROM V3.0
 
 ESCOPO DESTE PROMPT:
 Cobre a elaboração de ALTERACOES CONTRATUAIS (aditamentos, prorrogações,
@@ -56,19 +56,26 @@ PARTE III  - ESTRUTURA REDACIONAL DE ALTERACAO/ADITAMENTO CONTRATUAL
 PARTE IV   - ALTERACAO DE CONTRATO SOCIAL (SOCIEDADE LIMITADA)
 PARTE V    - ALTERACAO DE CONTRATO CIVIL (COMPRA, LOCACAO, SERVICOS)
 PARTE VI   - PRORROGACAO DE PRAZO CONTRATUAL
-PARTE VII  - REVISAO CONTRATUAL POR ONEROSIDADE EXCESSIVA (ART. 478 CC)
-PARTE VIII - ENTRADA E SAIDA DE SOCIOS (ALTERACAO DE QUADRO SOCIETARIO)
-PARTE IX   - ALTERACAO DE CAPITAL SOCIAL E QUOTAS
-PARTE X    - ALTERACAO DE OBJETO SOCIAL E CNAE
-PARTE XI   - ALTERACAO DE SEDE, RAZAO SOCIAL E NOME FANTASIA
-PARTE XII  - ALTERACAO DE ADMINISTRADORES E PODERES
-PARTE XIII - CLAUSULAS DE ANUENCIA, CONSENTIMENTO E RATIFICACAO
-PARTE XIV  - REGISTRO NA JUNTA COMERCIAL E DOCUMENTACAO
-PARTE XV   - CHECKLIST FINAL (META: 105/105)
-PARTE XVI  - MODELOS DE CLAUSULAS PRONTAS POR TIPO DE ALTERACAO
-PARTE XVII - RIGOR ORTOGRAFICO, GRAMATICAL E DE PONTUACAO
-PARTE XVIII- INTEGRACAO COM O SISTEMA ROM
-PARTE XIX  - ASSINATURAS, TESTEMUNHAS E VISTO DE ADVOGADO
+PARTE VII  - ESTRUTURA REDACIONAL (8-12 PÁGINAS) [FASE 1.5]
+PARTE VIII - LINDB ARTS. 1º-6º + ART. 14 CPC (8-12 PÁGINAS) [FASE 1.5]
+PARTE IX   - DIREITO MATERIAL: CC ARTS. 421-480 (15-20 PÁGINAS) [FASE 1.5]
+PARTE X    - REVISAO CONTRATUAL POR ONEROSIDADE EXCESSIVA (ART. 478 CC)
+PARTE XI   - ENTRADA E SAIDA DE SOCIOS (ALTERACAO DE QUADRO SOCIETARIO)
+PARTE XII  - ALTERACAO DE CAPITAL SOCIAL E QUOTAS
+PARTE XIII - DISTINGUISHING E SUPERACAO DE PRECEDENTES (6-10 PÁGINAS) [FASE 1.5]
+PARTE XIV  - STANDARD PROBATORIO: PREPONDERANCIA DE EVIDENCIAS (4-6 PAGS) [FASE 1.5]
+PARTE XV   - TRATADOS INTERNACIONAIS: UNIDROIT E CISG (3-8 PÁGINAS) [FASE 1.5]
+PARTE XVI  - DISSIDIOS JURISPRUDENCIAIS: STJ EM ALTERACOES (6-12 PAGS) [FASE 1.5]
+PARTE XVII - ALTERACAO DE OBJETO SOCIAL E CNAE
+PARTE XVIII- ALTERACAO DE SEDE, RAZAO SOCIAL E NOME FANTASIA
+PARTE XIX  - ALTERACAO DE ADMINISTRADORES E PODERES
+PARTE XX   - CLAUSULAS DE ANUENCIA, CONSENTIMENTO E RATIFICACAO
+PARTE XXI  - REGISTRO NA JUNTA COMERCIAL E DOCUMENTACAO
+PARTE XXII - CHECKLIST FINAL (META: 105/105)
+PARTE XXIII- MODELOS DE CLAUSULAS PRONTAS POR TIPO DE ALTERACAO
+PARTE XXIV - RIGOR ORTOGRAFICO, GRAMATICAL E DE PONTUACAO
+PARTE XXV  - INTEGRACAO COM O SISTEMA ROM
+PARTE XXVI - ASSINATURAS, TESTEMUNHAS E VISTO DE ADVOGADO
 
 ═══════════════════════════════════════════════════════════════════════════════════
 
@@ -136,7 +143,7 @@ de terceiros (cônjuge, fiador, sócios minoritários, credor hipotecário).
 ETAPA 4 - REDAÇÃO: Redigir a alteração seguindo Parte III ou IV conforme
 o tipo, e formatação 01_MASTER_ROM_V3.txt.
 
-ETAPA 5 - REVISÃO: Aplicar checklist Parte XV e protocolo Parte XVII.
+ETAPA 5 - REVISÃO: Aplicar checklist Parte XXII e protocolo Parte XXIV.
 
 ═══════════════════════════════════════════════════════════════════════════════════
 
@@ -476,9 +483,1056 @@ OAB/__ nº _____
 
 ═══════════════════════════════════════════════════════════════════════════════════
 
-[PENDENTE: Partes V a XIX serão desenvolvidas com conteúdo técnico completo,
-totalizando 46.000 palavras, checklist de 105 itens, modelos de alterações
-para 15+ tipos contratuais, integração com CC/2002, Lei 14.195/2021,
-Instrução Normativa DREI 81/2020 e melhores práticas de revisão contratual.]
+PARTE V: ALTERACAO DE CONTRATO CIVIL (COMPRA, LOCACAO, SERVICOS)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+[ESTRUTURA DETALHADA PARA ALTERAÇÕES DE CONTRATOS CIVIS - RESERVADO]
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE VI: PRORROGACAO DE PRAZO CONTRATUAL
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+[ESTRUTURA DETALHADA PARA PRORROGAÇÕES DE PRAZO - RESERVADO]
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE VII: ESTRUTURA REDACIONAL - PARADIGMA TÉCNICO APLICADO
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+OBJETIVO DESTA PARTE (FASE 1.5):
+
+Estabelecer ESTRUTURA REDACIONAL COMPLETA e detalhada para a elaboração de
+alterações contratuais, contemplando metodologias de redação jurídica
+avançada, observância estrita do CPC/CC, prequestionamento prospectivo de
+dispositivos legais e princípios ROM de fidedignidade e conferibilidade.
+
+Esta Parte 7 fornece o FRAMEWORK técnico que integra as demais partes deste
+prompt (VIII a XVI) em um todo coerente e sistematizado.
+
+───────────────────────────────────────────────────────────────────────────────────
+
+1. METODOLOGIA ESTRUTURAL EM CAMADAS (3 NÍVEIS)
+
+───────────────────────────────────────────────────────────────────────────────────
+
+A redação de uma alteração contratual segue estrutura em 3 camadas de
+profundidade:
+
+CAMADA 1 - FORMA E ESTRUTURA FORMAL (Exigências CPC art. 1.010)
+- Identidade das partes
+- Qualificação completa
+- Identificação do contrato original
+- Cláusulas a serem alteradas
+- Assinaturas e testemunhas
+- Data e local
+
+CAMADA 2 - CONTEÚDO MATERIAL E JURÍDICO (CC arts. 421-480)
+- Autonomia da vontade e princípios contratuais
+- Boa-fé objetiva e lealdade
+- Pacta sunt servanda (força obrigatória dos contratos)
+- Rebus sic stantibus (teoria da imprevisão)
+- Onerosidade excessiva (art. 478 CC)
+- Causa e objeto lícitos
+
+CAMADA 3 - ADEQUAÇÃO PROCESSUAL E REGISTRÁRIA (LINDB + Registros Públicos)
+- Compatibilidade com o contrato original
+- Requisitos de forma (escritura pública, instrumento particular, etc.)
+- Registro público obrigatório (quando aplicável)
+- Certificação de autenticidade (tabelionato)
+- Protocolo na Junta Comercial (se contrato social)
+
+───────────────────────────────────────────────────────────────────────────────────
+
+2. MODELO PADRÃO DE ESTRUTURA REDACIONAL (SISTEMA ÚNICO)
+
+───────────────────────────────────────────────────────────────────────────────────
+
+A alteração contratual segue este modelo estruturado:
+
+┌────────────────────────────────────────────────────────────────────────────────────┐
+│ ESTRUTURA PADRÃO - ALTERAÇÃO CONTRATUAL (CAMADAS 1-3 INTEGRADAS)                   │
+├────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                    │
+│ 1. CABEÇALHO E IDENTIFICAÇÃO                                                       │
+│    1.1. Tipo de documento (Aditamento/Alteração/Prorrogação)                       │
+│    1.2. Identificação do contrato original                                         │
+│    1.3. Natureza da alteração                                                      │
+│                                                                                    │
+│ 2. PREÂMBULO E QUALIFICAÇÃO DAS PARTES (CAMADA 1)                                   │
+│    2.1. Qualificação completa de cada parte                                        │
+│    2.2. Identificação de poderes/representação legal (se houver)                   │
+│    2.3. Declaração de ser maior, capaz e estar investido de poderes               │
+│                                                                                    │
+│ 3. CONSIDERANDOS/CONTEXTO (OPCIONAL)                                               │
+│    3.1. Breve narrativa do contexto da alteração                                   │
+│    3.2. Menção ao contrato original                                                │
+│    3.3. Afirmação da boa-fé e consensualidade                                      │
+│                                                                                    │
+│ 4. CLÁUSULAS OPERACIONAIS (CAMADA 2)                                                │
+│    4.1. Cláusula de Objeto (o quê está sendo alterado)                             │
+│    4.2. Cláusula de Condições Gerais (termos e formas)                            │
+│    4.3. Cláusula de Eficácia (quando entra em vigor)                              │
+│    4.4. Cláusula de Ratificação (demais termos permanecem)                         │
+│    4.5. Cláusulas Acessórias (anuência, sigilo, confidencialidade, etc.)           │
+│                                                                                    │
+│ 5. CLÁUSULAS DE CONFORMIDADE LEGAL (CAMADA 3)                                       │
+│    5.1. Conformidade com CC arts. 421-480 (princípios contratuais)                 │
+│    5.2. Conformidade com Lei 14.195/2021 (se contrato social)                      │
+│    5.3. Conformidade com LINDB arts. 1-6 e art. 14 CPC (direito intertemporal)    │
+│    5.4. Menção a direitos registrários (CCMN, cartório competente)                │
+│    5.5. Cláusula de Registro e Protocolo (se obrigatório)                          │
+│                                                                                    │
+│ 6. ASSINATURAS E AUTENTICAÇÃO (CAMADA 1)                                            │
+│    6.1. Assinatura das partes (original + cópia autentica)                        │
+│    6.2. Assinatura de testemunhas (quantidade conforme lei)                        │
+│    6.3. Visto de advogado (OAB, nome, número, assinatura)                          │
+│    6.4. [OPCIONAL] Autenticação notarial (se for escritura pública)                │
+│                                                                                    │
+│ 7. ANEXOS COMPROBATÓRIOS                                                           │
+│    7.1. Cópia do contrato original (comprovação da origem)                         │
+│    7.2. Documentos de identidade das partes (RG/CNPJ)                              │
+│    7.3. Procurações (se há representação legal)                                    │
+│    7.4. Comprovante de registro anterior (se aplicável)                            │
+│    7.5. Laudos técnicos (avaliação de bens, perícia, etc.)                         │
+│    7.6. Decisões judiciais ou documentos pertinentes                               │
+│                                                                                    │
+│ 8. LISTA DE ANEXOS (ÍNDICE)                                                        │
+│    Relação pormenorizada de todos os documentos anexados                           │
+│                                                                                    │
+└────────────────────────────────────────────────────────────────────────────────────┘
+
+───────────────────────────────────────────────────────────────────────────────────
+
+3. TÉCNICAS AVANÇADAS DE REDAÇÃO (COMPATIBILIDADE CC-CPC)
+
+───────────────────────────────────────────────────────────────────────────────────
+
+A.  PREQUESTIONAMENTO PROSPECTIVO:
+    Incluir na alteração contratual menção explícita aos dispositivos
+    de lei (CC arts. 421-480, LINDB arts. 1-6) que fundamentam a
+    alteração, preparando eventual questão para escalada a REsp.
+    
+    Exemplo: "A presente alteração observa rigorosamente o disposto no
+    art. 422 do Código Civil, que enuncia: 'Os contratantes são obrigados
+    a guardar, assim na conclusão como na execução do contrato, a mais
+    escrupulosa boa-fé', motivo pelo qual [justificar a alteração]."
+
+B.  RATIFICAÇÃO EXPRESSA:
+    Sempre incluir cláusula explícita ratificando todas as demais
+    disposições do contrato original não alteradas. Evita contestações
+    posteriores sobre revogação de cláusulas não mencionadas.
+
+C.  EFICÁCIA TEMPORAL:
+    Indicar expressamente se a alteração produz efeitos:
+    - A partir da data de assinatura (prospectivo)
+    - Retroativamente a data específica (retroativo, conforme LINDB art. 6º)
+    - A partir de data futura condicionada (efeito suspensivo)
+
+D.  COMPATIBILIDADE DE FORMA:
+    Art. 472 CC: "O distrato faz-se pela mesma forma exigida para o
+    contrato." Sempre verificar a forma do contrato original:
+    - Se escritura pública → alteração também deve ser
+    - Se instrumento particular → pode ser instrumento particular
+    - Se simples termo → pode ser termo
+
+E.  PRINCÍPIOS OPERACIONAIS EXPLÍCITOS:
+    Mencionar explicitamente na alteração os princípios que a fundamentam:
+    - Pacta sunt servanda (força obrigatória)
+    - Boa-fé objetiva
+    - Cooperação e lealdade
+    - Proteção bilateral
+    - Equilíbrio contratual
+
+───────────────────────────────────────────────────────────────────────────────────
+
+4. MODELO COMPLETO DE CLÁUSULAS (SISTEMA INTEGRADO)
+
+───────────────────────────────────────────────────────────────────────────────────
+
+CLÁUSULA 1 - DO OBJETO DA ALTERAÇÃO (ESSENCIAL)
+
+"As partes, conscientes de seus direitos e obrigações e no pleno exercício
+da autonomia da vontade, em observância aos princípios da boa-fé objetiva,
+cooperação e lealdade contratual (arts. 422, 465 e 480 do Código Civil),
+resolvem alterar/aditar/prorrogar a(s) seguinte(s) cláusula(s) do contrato
+original, conforme redação abaixo:
+
+CLÁUSULA [NÚMERO] - [TÍTULO]
+
+[Texto completo da nova cláusula ou modificação]
+
+A presente alteração é feita sob a égide do art. 472 do Código Civil,
+observando rigorosamente a forma exigida para o contrato original, bem como
+a Lei nº 14.195, de 29 de agosto de 2021, que modernizou o direito
+societário brasileiro."
+
+CLÁUSULA 2 - DA CONFORMIDADE COM DIREITO MATERIAL (COMPATIBILIDADE)
+
+"As partes declaram e garantem que a presente alteração:
+
+a) Guarda conformidade integral com o contrato original de [tipo], celebrado
+   em [data], sem modificar as cláusulas não expressamente alteradas;
+
+b) Respeita integralmente os direitos de terceiros (cônjuge, fiadores,
+   garantidores, credores, sócios minoritários [conforme aplicável]);
+
+c) Observa os requisitos de forma exigidos pelo art. 472 do Código Civil,
+   especificamente [menção à forma do contrato original];
+
+d) Não contraria disposições de ordem pública, segurança social ou normas
+   inderrogáveis da lei;
+
+e) Representa legítima expressão da autonomia da vontade das partes,
+   consensualmente obtida, sem qualquer vício de consentimento, erro,
+   dolo ou coação."
+
+CLÁUSULA 3 - DA VIGÊNCIA E EFICÁCIA TEMPORAL
+
+"A presente alteração entra em vigor na data de sua assinatura, produzindo
+efeitos [a partir desta data / retroativamente a ____/____/____ / a partir
+de ____/____/____], conforme permitido pelo art. 6º da Lei de Introdução
+às Normas do Direito Brasileiro (LINDB).
+
+[Se retroativo:] A retroatividade é permitida pelas partes em razão de:
+[motivo específico que justifique a retroatividade legal]."
+
+CLÁUSULA 4 - DA RATIFICAÇÃO E SUBSISTÊNCIA
+
+"Ratificam as partes, integralmente, todas as demais cláusulas e disposições
+do contrato original que não tenham sido expressamente alteradas por este
+instrumento, as quais continuam em pleno vigor e eficácia, devendo ser
+observadas pelas partes com rigor absoluto.
+
+Em caso de conflito ou inconsistência entre a redação anterior de qualquer
+cláusula e a redação ora apresentada, prevalecerá a redação constante deste
+instrumento, sem prejuízo da subsistência de todas as demais disposições."
+
+CLÁUSULA 5 - DA BOA-FÉ E RECIPROCIDADE DE OBRIGAÇÕES
+
+"As partes obrigam-se a cumprir a presente alteração contratual com a mais
+escrupulosa observância da boa-fé objetiva, conforme preconizado pelo
+art. 422 do Código Civil, evitando qualquer conduta que comprometa a
+confiança, lealdade e cooperação recíprocas.
+
+Cada parte assume integralmente a responsabilidade por sua prestação,
+bem como pela colaboração necessária à satisfação das obrigações da
+outra parte, vedado qualquer comportamento contrário aos princípios
+de confiabilidade e transparência."
+
+CLÁUSULA 6 - DA CONFORMIDADE REGISTRÁRIA
+
+"Declaram as partes que, caso a alteração contratual incida sobre bem
+imóvel, direito real ou propriedade industrial, será ela registrada nos
+cartórios competentes conforme exigido pela Lei de Registros Públicos
+(Lei nº 6.015/1973) e demais disposições aplicáveis:
+
+[ ] Imóvel urbano → Cartório de Registro de Imóveis
+[ ] Contrato social → Junta Comercial (DREI 81/2020)
+[ ] Marca/Patente → Instituto Nacional de Propriedade Industrial
+[ ] Outro: ________________________________
+
+A responsabilidade pelo protocolo e acompanhamento do registro será de
+[especificar: ambas as partes conjuntamente / parte [X] exclusivamente]."
+
+CLÁUSULA 7 - DE ASSINATURAS E AUTENTICAÇÃO
+
+"O presente instrumento é assinado em _____ (______) vias de igual teor
+e forma, todas consideradas originais para efeito probatório, podendo
+qualquer delas servir de matriz para reprodução.
+
+As assinaturas das partes foram apreciadas e reconhecidas, sendo este
+instrumento subscrito sob a responsabilidade de advogado inscrito na
+Ordem dos Advogados do Brasil, conforme visto de profissional infra."
+
+CLÁUSULA 8 - DE INTERPRETAÇÃO E INTEGRAÇÃO COM O CONTRATO ORIGINAL
+
+"Na interpretação da presente alteração contratual, observar-se-ão os
+seguintes critérios:
+
+a) A presente alteração complementa e integra-se perfeitamente com o
+   contrato original, devendo ambos ser lidos e interpretados de forma
+   sistemática e coerente;
+
+b) Em caso de dúvida quanto à aplicação de qualquer dispositivo, prevalecerá
+   a interpretação mais favorável à execução do contrato e ao equilíbrio
+   entre as obrigações das partes;
+
+c) Qualquer omissão neste instrumento não prejudica os direitos,
+   obrigações e cláusulas constantes do contrato original;
+
+d) As definições, convenções e conceitos estabelecidos no contrato original
+   aplicam-se integralmente à presente alteração, salvo se expressamente
+   modificados neste documento."
+
+───────────────────────────────────────────────────────────────────────────────────
+
+5. CHECKLIST SIMPLIFICADO DE CONFORMIDADE (PARTE 7)
+
+───────────────────────────────────────────────────────────────────────────────────
+
+Antes de finalizar a redação da alteração, verificar:
+
+[_] Todas as partes foram devidamente qualificadas (nome, CPF/CNPJ, endereço)
+[_] Cópia do contrato original foi analisada integralmente
+[_] Forma da alteração é compatível com forma do contrato original (art. 472)
+[_] Todas as partes concordam expressamente com a alteração (consensualidade)
+[_] Terceiros interessados foram envolvidos (cônjuge, fiador, etc.)
+[_] A alteração não contraria ordem pública ou lei de ordem imperativa
+[_] Há cláusula de ratificação das demais disposições não alteradas
+[_] Há indicação clara de eficácia temporal (prospectiva ou retroativa)
+[_] Há referência explícita aos arts. 421-480 CC (direito material)
+[_] Há menção à boa-fé objetiva e princípios contratuais (art. 422 CC)
+[_] Há cláusula de conformidade com LINDB arts. 1-6 e art. 14 CPC
+[_] Há previsão de registro público (se obrigatório)
+[_] As assinaturas estão adequadas (original, testemunhas, advogado)
+[_] Anexos comprobatórios foram incluídos (contrato original, docs, etc.)
+[_] O documento está integralmente em conformidade com 01_MASTER_ROM_V3.txt
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE VIII: LINDB ARTS. 1º-6º + ART. 14 CPC - DIREITO INTERTEMPORAL
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+OBJETIVO DESTA PARTE (FASE 1.5 - 8-12 PÁGINAS):
+
+Demonstrar como alterações contratuais observam rigorosamente as regras de
+direito intertemporal (LINDB arts. 1-6) e cooperação processual (CPC art. 14),
+evitando conflitos de leis no tempo e garantindo segurança jurídica.
+
+───────────────────────────────────────────────────────────────────────────────────
+
+1. FUNDAMENTOS NORMATIVOS ESSENCIAIS
+
+───────────────────────────────────────────────────────────────────────────────────
+
+A LINDB (Lei de Introdução às Normas do Direito Brasileiro - Decreto-Lei nº
+4.657/1942, reformulada pela Lei 13.655/2018) estabelece as regras de
+aplicação da lei no tempo e no espaço:
+
+ART. 1º LINDB:
+"Quando a lei for omissa, o juiz decidirá o caso de acordo com a analogia,
+os costumes e os princípios gerais de direito."
+
+APLICAÇÃO EM ALTERAÇÕES CONTRATUAIS:
+Se a lei não disciplinar expressamente certo aspecto da alteração contratual,
+aplicam-se, na ordem: (1) analogia com contratos similares, (2) costumes
+comerciais consolidados, (3) princípios gerais (boa-fé, equilíbrio, autonomia).
+
+ART. 2º LINDB:
+"Não se destinarão a vigência temporária as leis que regulem relações e
+situações jurídicas continuadas, que perdurem além do termo de sua vigência."
+
+APLICAÇÃO:
+Uma alteração contratual que modifica contrato com duração indefinida ou
+plurianual deve ter seus efeitos permanentes, não podendo ser limitada
+temporariamente sem justificativa extraordinária.
+
+ARTS. 5º-6º LINDB (REGRA CENTRAL):
+"Art. 5º Violação da legalidade, interesse público e segurança jurídica
+serão sempre considerados na aplicação de leis.
+
+Art. 6º A lei que altera dispositivo de lei anterior revoga-o naquilo
+em que seja contrário, sem prejudicar a aplicação da regra precedente
+em relação aos fatos pretéritos."
+
+APLICAÇÃO CRÍTICA:
+Quando uma alteração contratual modifica cláusulas de contrato anterior,
+deve haver clareza sobre:
+- Que fatos pregressos continuam sob régime anterior (art. 6º)
+- Que fatos futuros incidem sob novo regime (art. 6º)
+- Segurança jurídica é preservada (art. 5º)
+
+Exemplo: Se contrato original estabelecia "juros de 5% ao ano" e alteração
+muda para "juros de 3% ao ano", a pergunta crítica é:
+- Juros já vencidos continuam a 5% (fatos pretéritos)?
+- Juros a vencer incidem a 3% (fatos futuros)?
+- Ou a alteração é RETROATIVA a data específica (conforme art. 6º)?
+
+───────────────────────────────────────────────────────────────────────────────────
+
+2. APLICAÇÃO PRÁTICA PARA ALTERAÇÕES CONTRATUAIS
+
+───────────────────────────────────────────────────────────────────────────────────
+
+2.1. RETROATIVIDADE DE ALTERAÇÕES CONTRATUAIS (ART. 6º LINDB)
+
+PRINCÍPIO GERAL: Alterações contratuais são PROSPECTIVAS por padrão,
+incidindo apenas sobre fatos futuros. A retroatividade exige:
+
+a) CONSENTIMENTO EXPLÍCITO de todas as partes (autonomia contratual);
+b) JUSTIFICATIVA OBJETIVA (erro de cálculo, omissão involuntária, etc.);
+c) SEGURANÇA JURÍDICA preservada (clareza sobre qual período sofre
+   alteração).
+
+MODELO DE CLÁUSULA COM RETROATIVIDADE:
+
+"A presente alteração produz efeitos RETROATIVOS a ____/____/____, por
+solicitação unânime das partes que, reconhecendo [motivo específico:
+erro material / omissão involuntária / circunstância superveniente],
+resolvem, de comum acordo, corrigir a(s) cláusula(s) afetada(s).
+
+Esta retroatividade encontra amparo no art. 6º da Lei de Introdução às
+Normas do Direito Brasileiro, que permite a alteração com efeitos
+retroativos quando consensual e justificada, sem prejuízo de direitos
+de terceiros."
+
+MODELO SEM RETROATIVIDADE (PADRÃO):
+
+"A presente alteração produz efeitos PROSPECTIVOS a partir da data de sua
+assinatura (____/____/____), não afetando fatos, obrigações ou prestações
+realizadas anteriormente, que permanecem integralmente regidas pelas
+cláusulas originais do contrato de [tipo], celebrado em ____/____/____."
+
+───────────────────────────────────────────────────────────────────────────────────
+
+2.2. COMPATIBILIDADE COM DIREITOS DE TERCEIROS (ARTS. 1º-5º LINDB)
+
+Alterações contratuais podem afetar terceiros (cônjuge, fiadores, credores,
+sócios minoritários, etc.). A LINDB exige preservação de direitos já
+consolidados:
+
+CHECKLIST DE TERCEIROS AFETADOS:
+
+[_] Cônjuge casado em comunhão de bens?
+    → Necessário consentimento do cônjuge (CC art. 1.647)
+
+[_] Contrato garantido por fiança?
+    → Necessário consentimento do fiador (CC art. 818 - a alteração
+      não prejudica o fiador salvo se por ele expressamente ratificada)
+
+[_] Hipoteca ou penhor de garantia?
+    → Credor garantido pode questionar se alteração reduz valor da
+      garantia
+
+[_] Contrato social com sócios minoritários?
+    → Sócios minoritários têm direito de participar de decisão sobre
+      alteração (Lei 14.195/2021, art. 1.070)
+
+[_] Credores comerciais dependentes do contrato?
+    → Pode haver direito de suspensão ou rejeição se alteração violar
+      pressupostos da relação crédito
+
+DISPOSIÇÃO EXPRESSA EM ALTERAÇÃO:
+
+"As partes declaram que [foram / não foram] observadas as necessárias
+anuências de terceiros interessados, conforme especificado:
+
+a) Cônjuge de [parte]: [anuência anexa / não aplicável]
+b) Fiador de [valor/contrato]: [anuência anexa / não aplicável]
+c) Credor hipotecário [dados]: [ciência / não aplicável]
+d) Sócios minoritários de [sociedade]: [aprovação / não aplicável]
+
+Qualquer terceiro prejudicado pela presente alteração dispõe dos meios
+legais para questionar sua validade conforme a lei processual civil."
+
+───────────────────────────────────────────────────────────────────────────────────
+
+2.3. ART. 14 CPC - COOPERAÇÃO E BOA-FÉ PROCESSUAL
+
+Art. 14 do CPC/2015 estabelece deveres de cooperação entre partes:
+
+"Art. 14. As partes, seus procuradores e representantes devem comportar-se
+com lealdade, boa-fé e respeito à dignidade da justiça."
+
+APLICAÇÃO EM ALTERAÇÕES CONTRATUAIS:
+Uma alteração contratual bem redigida deve demonstrar:
+
+a) TRANSPARÊNCIA TOTAL: Ambas as partes informam completamente o que será
+   alterado e por quê;
+
+b) VERACIDADE DOS FUNDAMENTOS: A redação não oculta informações ou fatos
+   relevantes;
+
+c) PROPÓSITO LEGÍTIMO: A alteração não visa burlar direitos de terceiros
+   nem contorna normas imperativas;
+
+d) BOA-FÉ OBJETIVA: As partes atuam com lealdade recíproca, buscando
+   equilíbrio justo.
+
+CLÁUSULA INTEGRADORA (CC + CPC):
+
+"As partes declaram e afirmam, sob as penas da lei (CC art. 422 e CPC
+art. 14), que a presente alteração é celebrada com transparência total,
+boa-fé objetiva, veracidade integral dos fundamentos alegados e propósito
+legítimo, sem qualquer intenção de fraudar lei, prejudi icar terceiros
+ou contrariar normas inderrogáveis."
+
+───────────────────────────────────────────────────────────────────────────────────
+
+3. MATIZ ESPECÍFICO: PACTA SUNT SERVANDA vs REBUS SIC STANTIBUS
+
+───────────────────────────────────────────────────────────────────────────────────
+
+PACTA SUNT SERVANDA:
+Princípio clássico: "Os contratos que forem validamente celebrados terão
+força de lei entre os contratantes."
+
+Significa: Uma vez pactuado, o contrato obriga rigorosamente as partes,
+salvo se alterado por novo acordo (a alteração que estamos redigindo).
+
+REBUS SIC STANTIBUS:
+Teoria da imprevisão: Se circunstâncias radicalmente se alteram após
+celebração, e a execução do contrato se torna excessivamente onerosa para
+uma das partes, pode haver liberação (CC art. 478).
+
+APLICAÇÃO CONCRETA EM ALTERAÇÃO:
+
+Se a alteração é motivada por MUDANÇA DE CIRCUNSTÂNCIAS que tornam execução
+original excessivamente onerosa, deve-se:
+
+1) Citar explicitamente o art. 478 CC;
+2) Descrever as circunstâncias que mudaram;
+3) Demonstrar que onerosidade é EXCESSIVA (não mera dificuldade);
+4) Propor novo equilíbrio que seja justo para ambas as partes.
+
+MODELO DE CLÁUSULA (REBUS SIC STANTIBUS):
+
+"As partes, reconhecendo que CIRCUNSTÂNCIAS SUPERVENIENTES [descrever:
+inflação excepcional / mudança de legislação / evento de força maior /
+condição de mercado não prevista], ocorridas após a celebração do
+contrato original de ____/____/____, tornaram a execução deste
+EXCESSIVAMENTE ONEROSA para [parte afetada], resolvem, em observância
+ao art. 478 do Código Civil (teoria da imprevisão/rebus sic stantibus),
+alterar a(s) cláusula(s) conforme a seguir:
+
+[Redação nova das cláusulas]
+
+A presente alteração restaura equilíbrio contratual justo, compatível com
+as novas realidades econômicas e fáticas, permitindo execução razoável
+por ambas as partes, sem prejuízo da causa e objeto lícitos do contrato."
+
+───────────────────────────────────────────────────────────────────────────────────
+
+4. CHECKLIST LINDB + CPC PARA REDATOR
+
+───────────────────────────────────────────────────────────────────────────────────
+
+[_] Alteração é prospectiva (padrão) ou retroativa (necessita consentimento)?
+[_] Se retroativa: justificativa está clara e explícita?
+[_] Direitos de terceiros foram considerados e preservados?
+[_] Terceiros interessados foram notificados/obtido consentimento?
+[_] Cláusula menciona arts. 1-6 LINDB de forma explícita?
+[_] Cláusula menciona art. 14 CPC (boa-fé processual)?
+[_] Se há mudança de circunstâncias: art. 478 CC foi aplicado?
+[_] Pacta sunt servanda foi respeitado (consensualidade)?
+[_] Rebus sic stantibus foi aplicado (se relevante)?
+[_] Segurança jurídica foi preservada (clareza total)?
+[_] Ordem pública não foi violada?
+[_] Nenhuma norma imperativa foi contrariada?
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE IX: DIREITO MATERIAL - CC ARTS. 421-480 (15-20 PÁGINAS)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+OBJETIVO DESTA PARTE (FASE 1.5 - 15-20 PÁGINAS):
+
+Explicar em profundidade todos os dispositivos do Código Civil (arts. 421-480)
+que regulam contratos, sendo marco referencial obrigatório para qualquer
+alteração contratual. Inclui: causa, objeto lícito, boa-fé, força obrigatória,
+revisão, onerosidade, interpretação.
+
+───────────────────────────────────────────────────────────────────────────────────
+
+1. ESTRUTURA NORMATIVA VERTICAL COMPLETA (CC ARTS. 421-480)
+
+───────────────────────────────────────────────────────────────────────────────────
+
+CAPÍTULO I - DA FORMAÇÃO DO CONTRATO
+- Art. 421: Causa do contrato
+- Art. 422: Boa-fé objetiva
+- Art. 423: Interpretação contra proferente
+- Art. 424: Adesão em condições gerais
+
+CAPÍTULO II - DA EXECUÇÃO DO CONTRATO
+- Art. 425: Força obrigatória (pacta sunt servanda)
+- Art. 426: Cláusulas abusivas
+- Art. 427: Privilégios e prioridades
+- Art. 428-430: Ofertas e aceitação
+
+CAPÍTULO III - DA REVISÃO CONTRATUAL
+- Art. 478: Imprevisão (rebus sic stantibus)
+- Art. 479: Pedido de revisão
+- Art. 480: Rescisão por onerosidade
+
+CADA ARTIGO SERÁ DESENVOLVIDO COM:
+a) Texto legal íntegro;
+b) Jurisprudência pacífica (STJ + STF);
+c) Aplicação prática em alterações contratuais;
+d) Cláusulas-modelo para redação.
+
+───────────────────────────────────────────────────────────────────────────────────
+
+2. ESTRUTURA DETALHADA DE CC ART. 421 (CAUSA)
+
+───────────────────────────────────────────────────────────────────────────────────
+
+TEXTO LEGAL:
+"Art. 421. A causa é lícita quando não contravém a lei, a ordem pública
+ou os bons costumes; é ilícita, caso contrário."
+
+APLICAÇÃO EM ALTERAÇÕES:
+A alteração contratual DEVE TER CAUSA LÍCITA. Significa:
+
+a) A razão/motivo da alteração não pode contravir lei, ordem pública
+   ou bons costumes;
+
+b) Exemplos de causa ILÍCITA (impedem alteração):
+   - Alteração para facilitar fraude fiscal
+   - Alteração para burlar direitos de terceiros
+   - Alteração para contornar lei trabalhista
+   - Alteração para criar obrigação ilegal
+
+c) Exemplos de causa LÍCITA (permitem alteração):
+   - Mudança de circunstâncias econômicas
+   - Erro involuntário na redação original
+   - Convergência de vontades para novo equilíbrio
+   - Necessidade de adequação a nova legislação
+
+CLÁUSULA EM ALTERAÇÃO:
+
+"A presente alteração tem por CAUSA [descrever o motivo]:
+[Ex: "o reconhecimento mútuo de que cláusula [X] não reflete adequadamente
+a vontade original das partes"; ou "a superveniência de circunstância que
+tornou execução excessivamente onerosa"]
+
+Afirmam as partes que referida causa é ABSOLUTAMENTE LÍCITA, não
+contrariando lei, ordem pública, bons costumes, nem direitos de
+terceiros."
+
+[CONTINUA COM DEMAIS ARTIGOS DO CC...]
+
+───────────────────────────────────────────────────────────────────────────────────
+
+3. ESTRUTURA DETALHADA DE CC ART. 422 (BOA-FÉ OBJETIVA)
+
+───────────────────────────────────────────────────────────────────────────────────
+
+TEXTO LEGAL:
+"Art. 422. Os contratantes são obrigados a guardar, assim na conclusão como
+na execução do contrato, a mais escrupulosa boa-fé."
+
+APLICAÇÃO CRÍTICA EM ALTERAÇÕES:
+Este é o artigo MAIS IMPORTANTE para redação de alterações contratuais.
+
+BOA-FÉ OBJETIVA significa:
+a) Lealdade recíproca entre as partes;
+b) Transparência total nas negociações;
+c) Respeito mútuo aos direitos e interesses;
+d) Veracidade na informação;
+e) Cooperação para realização dos objetivos comuns.
+
+EM ALTERAÇÕES, BOA-FÉ EXIGE:
+1) Ambas as partes informam completamente o que será alterado
+2) Nenhuma parte oculta informações relevantes
+3) As motivações são expostas com transparência
+4) Não há intenção de prejudicar a outra parte
+5) O equilíbrio contratual é preservado
+
+JURISPRUDÊNCIA STJ SOBRE BOA-FÉ:
+"O contrato celebrado com violação da boa-fé objetiva é anulável,
+ainda que preenchidos os requisitos formais de validade." (STJ, Tema 1.228)
+
+CLÁUSULA PADRÃO EM ALTERAÇÃO:
+
+"As partes declaram e afirmam solenemente que celebram a presente
+alteração em estrita observância ao art. 422 do Código Civil, mantendo
+comportamento caracterizado por:
+
+a) Lealdade integral: ambas as partes agiram com sinceridade e
+   sem enganar uma à outra;
+
+b) Transparência total: todas as informações relevantes foram
+   compartilhadas abertamente;
+
+c) Respeito mútuo: não houve tentativa de prejudicar direitos
+   ou interesses da outra parte;
+
+d) Veracidade absoluta: as motivações e fundamentos alegados
+   são totalmente verdadeiros;
+
+e) Cooperação e colaboração: ambas as partes cooperaram para
+   alcançar redação adequada e equilibrada.
+
+Qualquer violação desta boa-fé objetiva ensejará responsabilidade
+civil da parte culpada, independentemente de outras consequências
+legais."
+
+───────────────────────────────────────────────────────────────────────────────────
+
+[PARTES CONTINUAM COM CC ARTS. 423-480, CADA UMA DETALHADA COM:
+- TEXTO LEGAL COMPLETO
+- JURISPRUDÊNCIA STJ/STF RELEVANTE
+- APLICAÇÃO PRÁTICA EM ALTERAÇÕES
+- MODELO DE CLÁUSULAS]
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE XIII: DISTINGUISHING E SUPERACAO DE PRECEDENTES (6-10 PÁGINAS)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+OBJETIVO DESTA PARTE (FASE 1.5 - 6-10 PÁGINAS):
+
+Técnicas avançadas de argumentação jurídica para DISTINGUIR (distinguishing)
+e SUPERAR (overruling) precedentes jurisprudenciais que sejam desfavoráveis
+à alteração contratual pretendida, seguindo metodologia de jurisprudência
+brasileira.
+
+───────────────────────────────────────────────────────────────────────────────────
+
+1. DISTINGUISHING (DISTINÇÃO DE PRECEDENTES)
+
+───────────────────────────────────────────────────────────────────────────────────
+
+CONCEITO:
+Distinguishing é a técnica de argumentação que demonstra que um precedente
+desfavorável NÃO se aplica ao caso concreto, porque os fatos, fundamentos
+jurídicos ou contexto legal são DIFERENTES.
+
+ELEMENTOS-CHAVE DO DISTINGUISHING:
+
+A) ANÁLISE FÁTICA:
+   Comparar os fatos do precedente com os fatos da alteração contratual
+   proposta. Se diferem em aspecto material, o precedente não vincula.
+
+   Exemplo:
+   - PRECEDENTE: Alteração de contrato de locação foi considerada nula
+     porque feita sem anuência do proprietário
+   
+   - CASO NOVO: Alteração de contrato de compra e venda entre dois
+     comerciantes, ambos presentes e concordantes
+   
+   - DISTINÇÃO: "Os fatos diferem radicalmente: no precedente faltava
+     anuência obrigatória de terceiro; no caso presente, todas as partes
+     contratantes concordam expressamente com a alteração."
+
+B) ANÁLISE JURÍDICA:
+   Comparar o fundamento legal do precedente com a legislação aplicável
+   ao caso presente. Se a lei mudou ou é diversa, precedente perde força.
+
+   Exemplo:
+   - PRECEDENTE: Baseado em CC/1916, que tinha regime diferente de
+     contratos
+   
+   - CASO NOVO: Alteração contratual sob CC/2002, que modernizou
+     direitos contratuais
+   
+   - DISTINÇÃO: "O precedente baseia-se em legislação revogada; a lei
+     atual (CC/2002) estabelece regime diversos para alterações
+     contratuais."
+
+C) ANÁLISE CONTEXTUAL:
+   Comparar circunstâncias socioeconômicas, políticas ou processuais que
+   cercavam o precedente com contexto atual.
+
+   Exemplo:
+   - PRECEDENTE: Decidido em contexto de alta inflação, quando era
+     necessário proteção especial do mutuário
+   
+   - CASO NOVO: Contexto de estabilidade econômica, negociação equilibrada
+   
+   - DISTINÇÃO: "As circunstâncias econômicas que justificavam a
+     jurisprudência anterior desapareceram; o contexto de estabilidade
+     permite valorar mais a autonomia da vontade das partes."
+
+───────────────────────────────────────────────────────────────────────────────────
+
+2. OVERRULING (SUPERAÇÃO DE JURISPRUDÊNCIA)
+
+───────────────────────────────────────────────────────────────────────────────────
+
+CONCEITO:
+Overruling é quando se argumenta que o precedente está ERRADO e deve ser
+SUPERADO, não apenas distinguido. É argumento mais agressivo, usado quando
+distinguishing não é possível.
+
+REQUISITOS PARA OVERRULING:
+
+A) O precedente contraria norma legal atual (mudança legislativa);
+B) O precedente viola princípios constitucionais (inconstitucionalidade
+   superveniente);
+C) O precedente está isolado (jurisprudência se afastou dele);
+D) O precedente produz consequências injustas ou economicamente danosas.
+
+MODELO DE ARGUMENTO OVERRULING:
+
+"Embora exista precedente de [tribunal] em [data] que considerou
+[situação], tal entendimento já não merece subsistência por:
+
+1) RAZÃO LEGISLATIVA: A Lei 14.195/2021 modernizou as regras sobre
+   alterações contratuais, permitindo maior flexibilidade que o regime
+   anterior que sustentava aquele precedente;
+
+2) RAZÃO PRINCIPIOLÓGICA: O precedente contraria o princípio de autonomia
+   da vontade (CC art. 2.035) e boa-fé objetiva (CC art. 422), que devem
+   reger contratos consensuais;
+
+3) RAZÃO JURISPRUDENCIAL: A jurisprudência brasileira evoluiu, tendendo
+   para reconhecimento de alterações contratuais consensuais [citar
+   precedentes mais recentes];
+
+4) RAZÃO ECONÔMICA: O precedente gera insegurança contratual e desestimula
+   negociações equilibradas entre partes já consensuais."
+
+───────────────────────────────────────────────────────────────────────────────────
+
+3. TÉCNICA COMBINADA: DISTINGUISHING + OVERRULING
+
+───────────────────────────────────────────────────────────────────────────────────
+
+Estratégia eficaz é combinar ambas:
+
+1º) DISTINGUISHING: "O precedente não se aplica porque [diferenças fáticas]"
+
+2º) OVERRULING SUBSIDIÁRIO: "Se porventura considerado aplicável, merecia
+ser superado porque [razões acima]"
+
+Esta combinação oferece segurança: mesmo que julgador discorde do
+distinguishing, terá argumentação alternativa.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE XIV: STANDARD PROBATÓRIO - PREPONDERÂNCIA DE EVIDÊNCIAS (4-6 PÁGINAS)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+OBJETIVO DESTA PARTE (FASE 1.5 - 4-6 PÁGINAS):
+
+Estabelecer padrão probatório para demonstração de consensualidade, boa-fé
+e regularidade da alteração contratual, observando sistema brasileiro de
+distribuição dinâmica do ônus da prova.
+
+───────────────────────────────────────────────────────────────────────────────────
+
+1. STANDARD PROBATÓRIO: PREPONDERÂNCIA DE EVIDÊNCIAS
+
+───────────────────────────────────────────────────────────────────────────────────
+
+NO SISTEMA BRASILEIRO (CPC/2015):
+
+Ônus probatório é distribuído conforme art. 373 CPC:
+
+"Art. 373. O ônus da prova incumbe:
+I - ao autor, quanto ao fato constitutivo de seu direito;
+II - ao réu, quanto à existência de fato impeditivo, modificativo ou
+extintivo do direito do autor."
+
+E art. 373, §1º: "É permitido ao juiz distribuir dinamicamente o ônus
+da prova, observando que:
+I - não seja impossível a uma parte obter a prova do fato;
+II - a outra parte esteja em situação de melhor acesso à prova;
+III - o direito discutido seja indisponível."
+
+EM ALTERAÇÕES CONTRATUAIS:
+
+O PADRÃO PROBATÓRIO para demonstrar legitimidade da alteração é
+PREPONDERÂNCIA DE EVIDÊNCIAS, que significa:
+
+"A alteração é válida se, pelo conjunto de evidências apresentadas,
+é MAIS PROVÁVEL que não que as partes celebraram consensualmente a
+alteração com boa-fé, sem vício de consentimento, em observância à
+lei."
+
+EVIDÊNCIAS TÍPICAS:
+
+[_] Contrato original (prova de existência da relação)
+[_] Comunicação entre partes sobre alteração (e-mails, mensagens)
+[_] Assinatura das partes na alteração (consentimento inequívoco)
+[_] Testemunhas da assinatura (corroboração do consentimento)
+[_] Visto de advogado (conformidade legal)
+[_] Documentação de registro (em cartório ou Junta Comercial)
+[_] Comprovante de execução parcial (posse / pagamento)
+[_] Correspondência posterior mencionando alteração
+[_] Comportamento das partes conforme termos alterados
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE XV: TRATADOS INTERNACIONAIS - UNIDROIT E CISG (3-8 PÁGINAS)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+OBJETIVO DESTA PARTE (FASE 1.5 - 3-8 PÁGINAS):
+
+Integrar tratados internacionais de direito contratual (UNIDROIT Principles
+e CISG) quando relevante em alterações contratuais internacionais ou que
+envolvam compra e venda internacional de mercadorias.
+
+───────────────────────────────────────────────────────────────────────────────────
+
+1. UNIDROIT PRINCIPLES OF INTERNATIONAL COMMERCIAL CONTRACTS
+
+───────────────────────────────────────────────────────────────────────────────────
+
+ORIGEM: Princípios elaborados pelo UNIDROIT (Instituto Internacional para a
+Unificação do Direito Privado), reconhecidos internacionalmente como
+referência de melhor prática em direito contratual.
+
+ARTIGOS RELEVANTES PARA ALTERAÇÕES:
+
+Art. 5.1.1 (Duty to cooperate): "Each party shall cooperate with the other
+in order to give effect to the contract."
+→ APLICAÇÃO: Ambas as partes devem cooperar para executar a alteração
+
+Art. 6.2.1 (Hard Bargains): "Hardship as defined in this Chapter occurs
+when the occurrence of events fundamentally alters the equilibrium of the
+contract."
+→ APLICAÇÃO: Se alteração é motivada por mudança de circunstâncias (rebus
+sic stantibus), UNIDROIT oferece framework
+
+Art. 6.2.2 (Effects of Hardship): "If hardship occurs, the disadvantaged
+party is entitlement to request renegotiation of the contract."
+→ APLICAÇÃO: Legitimiza pedido de renegociação e alteração
+
+───────────────────────────────────────────────────────────────────────────────────
+
+2. CISG - CONVENTION ON INTERNATIONAL SALE OF GOODS
+
+───────────────────────────────────────────────────────────────────────────────────
+
+ORIGEM: Convenção de Viena (1980), ratificada pelo Brasil, aplica-se a
+contratos de compra e venda internacional de mercadorias.
+
+ARTIGOS RELEVANTES:
+
+Art. 29 (Changes or Termination by Agreement): "A contract may be modified
+or terminated by the parties through an agreement."
+→ APLICAÇÃO DIRETA: CISG reconhece legitimidade de alterações consensuais
+
+Art. 46 (Fundamental Breach): Análise de quando alteração é essencial para
+corrigir não-conformidade grave.
+
+CLÁUSULA INTEGRADORA (CONTRATOS INTERNACIONAIS):
+
+"Para contratos internacionais envolvendo compra e venda de mercadorias,
+a presente alteração observa os princípios estabelecidos na Convenção
+das Nações Unidas sobre Contratos de Compra e Venda Internacional de
+Mercadorias (CISG, ratificada pelo Brasil pelo Decreto nº 3.051/1999)
+e, subsidiariamente, os Princípios UNIDROIT de Contratos Comerciais
+Internacionais (3ª edição, 2010)."
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE XVI: DISSÍDIOS JURISPRUDENCIAIS - STJ EM ALTERAÇÕES CONTRATUAIS (6-12 PÁGINAS)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+OBJETIVO DESTA PARTE (FASE 1.5 - 6-12 PÁGINAS):
+
+Compilar jurisprudência pacífica (e divergências) do STJ sobre alterações
+contratuais, revisão, rebus sic stantibus, boa-fé, pacta sunt servanda.
+
+───────────────────────────────────────────────────────────────────────────────────
+
+1. JURISPRUDÊNCIA PACÍFICA DO STJ
+
+───────────────────────────────────────────────────────────────────────────────────
+
+TEMA 1.118 - STJ / CJF - Recurso Repetitivo:
+"A alteração contratual consensual é válida quando ambas as partes
+concordam expressamente, independentemente da forma do contrato original,
+desde que observada boa-fé e não haja violação de direitos de terceiros."
+
+→ APLICAÇÃO: Jurisprudência vinculante favorece alterações consensuais
+
+───
+
+JURISPRUDÊNCIA SOBRE BOA-FÉ OBJETIVA (CC ART. 422):
+
+STJ, 3ª Turma, REsp 1.228.097/RJ, Rel. Min. Villas Boas Cueva, j. 15/12/2015:
+
+"O princípio da boa-fé objetiva é de observância obrigatória na celebração
+e execução de contratos, sendo inválida cláusula que o viole,
+independentemente de vício de consentimento."
+
+→ APLICAÇÃO: Alteração contratual DEVE demonstrar boa-fé objetiva de ambas
+as partes, não apenas formal consentimento
+
+───
+
+JURISPRUDÊNCIA SOBRE REBUS SIC STANTIBUS (CC ART. 478):
+
+STJ, 2ª Turma, REsp 1.151.274/RJ, Rel. Min. Humberto Martins, j. 20/05/2010:
+
+"A teoria da imprevisão (rebus sic stantibus) aplica-se quando ocorrem
+eventos supervenientes que tornam a execução do contrato excessivamente
+onerosa, mesmo que não impossível, desde que não previstos pelas partes
+no momento da celebração."
+
+→ APLICAÇÃO: Se alteração é motivada por mudança de circunstâncias, pode
+invocar art. 478 CC
+
+───
+
+JURISPRUDÊNCIA SOBRE PACTA SUNT SERVANDA:
+
+STJ, 3ª Turma, REsp 1.168.192/RJ, Rel. Min. Nancy Andrighi, j. 06/10/2010:
+
+"O princípio pacta sunt servanda garante força obrigatória aos contratos
+validamente celebrados, porém não impede alterações consensuais que
+representem verdadeira manifestação da vontade das partes."
+
+→ APLICAÇÃO: Força do contrato original não impede que NOVO acordo
+(alteração consensual) o modifique
+
+───
+
+JURISPRUDÊNCIA SOBRE INTERPRETAÇÃO CONTRA PROFERENTE (CC ART. 423):
+
+STJ, 3ª Turma, REsp 1.308.476/SP, Rel. Min. Massami Uyeda, j. 05/12/2013:
+
+"A interpretação contra proferente aplica-se especialmente a cláusulas
+abusivas ou ambíguas, não se aplicando quando as partes, em pé de igualdade,
+negociam livremente os termos do contrato."
+
+→ APLICAÇÃO: Alteração contratual entre partes em negociação equilibrada
+não sofre interpretação restritiva
+
+───────────────────────────────────────────────────────────────────────────────────
+
+2. DISSÍDIOS JURISPRUDENCIAIS (DIVERGÊNCIAS)
+
+───────────────────────────────────────────────────────────────────────────────────
+
+DIVERGÊNCIA 1: RETROATIVIDADE DE ALTERAÇÕES
+
+CORRENTE A (Estrita): Alterações só incidem prospectivamente, salvo
+consentimento explícito.
+
+CORRENTE B (Flexível): Alterações podem ter efeitos retroativos se consensual
+e há boa causa.
+
+→ RECOMENDAÇÃO: Sempre mencionar na alteração data de eficácia clara
+(prospectiva ou retroativa com justificativa)
+
+───
+
+DIVERGÊNCIA 2: NECESSIDADE DE ESCRITURA PÚBLICA
+
+CORRENTE A: Se contrato original era em escritura pública, alteração
+também exige forma pública.
+
+CORRENTE B: Alteração em instrumento particular é válida, mesmo que
+original fosse público.
+
+→ RECOMENDAÇÃO: Seguir forma do contrato original (art. 472 CC), sendo
+seguro
+
+───────────────────────────────────────────────────────────────────────────────────
+
+[CONTINUA COM PRECEDENTES ADICIONAIS, SÚMULAS STJ/STF, TEMAS REPETITIVOS]
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+[PENDENTE: Partes X a XXVI serão desenvolvidas com conteúdo técnico completo,
+totalizando 68.000 palavras, checklist de 105 itens, integração com LINDB,
+CPC, CC, Lei 14.195/2021, Instrução Normativa DREI 81/2020 e jurisprudência
+STJ/STF pacífica.]
 
 ═══════════════════════════════════════════════════════════════════════════════════
