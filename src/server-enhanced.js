@@ -6568,6 +6568,77 @@ app.post('/api/kb/cleanup-orphaned-structured-docs', async (req, res) => {
 });
 
 /**
+ * POST /api/kb/cleanup-by-name
+ * Remove all documents matching a name pattern
+ * SECURITY: Query param secret=mota2323kb required
+ */
+app.post('/api/kb/cleanup-by-name', async (req, res) => {
+  try {
+    if (req.query.secret !== 'mota2323kb') {
+      return res.status(403).json({ error: 'Forbidden' });
+    }
+
+    const { pattern } = req.body;
+    if (!pattern) {
+      return res.status(400).json({ error: 'Pattern is required' });
+    }
+
+    const allDocs = kbCache.getAll();
+    const patternLower = pattern.toLowerCase();
+
+    // Find all documents matching the pattern
+    const matchingDocs = allDocs.filter(doc => {
+      const name = (doc.name || '').toLowerCase();
+      const originalName = (doc.originalName || '').toLowerCase();
+      return name.includes(patternLower) || originalName.includes(patternLower);
+    });
+
+    logger.info(`🧹 Cleanup by name: Found ${matchingDocs.length} documents matching "${pattern}"`);
+
+    if (matchingDocs.length === 0) {
+      return res.json({
+        success: true,
+        message: `No documents found matching "${pattern}"`,
+        removed: 0
+      });
+    }
+
+    const removedIds = [];
+    const removedFiles = [];
+
+    for (const doc of matchingDocs) {
+      try {
+        // Remove from cache
+        kbCache.remove(doc.id, true);
+        removedIds.push(doc.id);
+
+        // Delete physical file
+        if (doc.path && fs.existsSync(doc.path)) {
+          await fs.promises.unlink(doc.path);
+          removedFiles.push(doc.path);
+          logger.info(`   ✅ Arquivo deletado: ${path.basename(doc.path)}`);
+        }
+
+        logger.info(`   ✅ Documento removido: ${doc.id} - ${doc.name}`);
+      } catch (error) {
+        logger.error(`   ❌ Erro ao remover ${doc.id}:`, error);
+      }
+    }
+
+    res.json({
+      success: true,
+      message: `${removedIds.length} documento(s) removido(s) com padrão "${pattern}"`,
+      removed: removedIds.length,
+      removedIds,
+      filesDeleted: removedFiles.length
+    });
+  } catch (error) {
+    logger.error('❌ Erro no cleanup por nome:', error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+/**
  * GET /api/kb/cache/emergency-diagnose
  * 🚨 EMERGENCY: Diagnose KB cache without auth (temporary endpoint)
  * SECURITY: Query param secret=mota2323kb required
