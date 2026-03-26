@@ -425,3 +425,1077 @@ Dr. Rodolfo Otavio Mota — OAB/GO 21.841
 Sistema ROM V3.0 — Rodolfo Otavio Mota Advogados Associados
 
 ===============================================================================
+
+
+
+═══════════════════════════════════════════════════════════════════════════════════
+PARTE VII: ESTRUTURA REDACIONAL (Fase 1.5)
+═══════════════════════════════════════════════════════════════════════════════════
+
+OBJETIVO
+Estabelecer padrão normativo de redação de peças forenses na consolidação
+de auditoria multi-agente, respeitando CPC/2015, normas CNJ e protocolos ROM V3.0.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+1. MODELO DE ESTRUTURA REDACIONAL CONSOLIDADA
+
+1.1 CABEÇALHO PROCESSUAL
+Identificar:
+- Tribunal/Juízo competente
+- Número do processo (com dígitos verificadores)
+- Partes (RECORRENTE/RECORRIDO ou equivalente)
+- Tipo de ação (apelação, agravo, embargos, etc.)
+
+1.2 IDENTIFICAÇÃO DA PEÇA
+Incluir:
+- Título (ex: "APELAÇÃO CÍVEL")
+- Dados do escritório (OAB, CNPJ, endereço)
+- Nome completo do advogado(a) responsável
+- Data de elaboração
+
+1.3 PRELIMINARES
+Quando aplicável:
+- Prequestionamento prospectivo (para REsp/RE subsequentes)
+- Óbices sumulares refutados
+- Admissibilidade recursal comprovada
+
+1.4 EXPOSIÇÃO NARRATIVA DOS FATOS
+Estrutura:
+- Sequência cronológica dos eventos
+- Documentação probatória de suporte
+- Eventos processuais relevantes
+- Decisões anteriores (sentença recorrida, liminares, etc.)
+- Extensão recomendada: 8-15 páginas
+
+1.5 QUADRO DE DIREITO MATERIAL
+Incluir:
+- Dispositivos normativos aplicáveis (CF, LC, LO, Decretos)
+- Tratados internacionais pertinentes
+- Jurisprudência consolidada (súmulas, temas repetitivos)
+- Doutrina clássica (autores reconhecidos)
+- Extensão recomendada: 15-20 páginas
+
+1.6 TESE JURÍDICA
+Desenvolver:
+- Proposição central (erro in judicando ou in procedendo)
+- Fundamentos de fato (base probatória)
+- Fundamentos de direito (normas aplicáveis)
+- Concatenação lógica entre fatos e direito
+- Extensão recomendada: 10-18 páginas
+
+1.7 TÉCNICAS DE PERSUASÃO JURÍDICA
+Aplicar:
+- Argumentum a fortiori (argumentação por maior razão)
+- Argumentum ad absurdum (redução ao absurdo)
+- Argumentum ad hominem (para refutar posição contrária)
+- Distinguishing de jurisprudência desfavorável
+- Overruling de precedentes obsoletos
+- Extensão recomendada: 5-10 páginas
+
+1.8 PREQUESTIONAMENTO PARA FASES SUBSEQUENTES
+Semear:
+- Dispositivos de lei federal para futura qualificação em REsp
+- Questões constitucionais para futura repercussão geral em RE
+- Precedentes com divergência jurisprudencial
+- Argumentação que prepara óbices em fases posteriores
+
+1.9 PEDIDO
+Incluir:
+- Pedido principal (reforma, nulidade, condenação, etc.)
+- Pedidos subsidiários
+- Pedidos alternativos
+- Pedido de efeito suspensivo/devolutivo
+- Pedido de tutela antecipada recursal (se cabível)
+
+1.10 CONCLUSÃO
+Elementos:
+- Síntese dos argumentos principais
+- Reafirmação da tese central
+- Apelo ao tribunal
+- Solicitação de deferimento
+
+1.11 QUALIFICAÇÃO FINAL DO ESCRITO
+Incluir:
+- Local e data
+- Assinatura de advogado(a)
+- Número OAB
+- Carimbo/assinatura eletrônica (PJe)
+- Número de folhas/páginas
+- Anexos (lista)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+2. FORMATAÇÃO CONFORME CNJ E ROM V3.0
+
+2.1 TIPOGRAFIA
+- Fonte: Times New Roman ou Arial, tamanho 12
+- Espaçamento: 1,5 entre linhas
+- Margens: mínimo 3cm superior/inferior, 2,5cm esquerda/direita
+- Alinhamento: justificado
+- Sem emojis, símbolos decorativos ou formatações excessivas
+
+2.2 NUMERAÇÃO
+- Estrutura hierárquica: 1. / 1.1 / 1.1.1 / 1.1.1.1 (máximo 4 níveis)
+- Não usar letras (a, b, c) para primeira divisão
+- Parágrafos numerados sequencialmente
+- Dispositivos normativos: "art. 1.009, § 1º do CPC/2015"
+
+2.3 CITAÇÕES
+- Jurisprudência: tribunal, número, data, ementas entre aspas
+  Ex: STJ, REsp 123.456/SP, j. 01.01.2025, Primeira Turma, Rel. Min. Fulano
+- Legislação: número, ano, ementa quando aplicável
+  Ex: Lei 13.105/2015 (CPC)
+- Doutrinas: SOBRENOME, Nome. Título. Edição. Local: Editora, ano. p. XY.
+- Transcrições: entre aspas, indicar fonte e página
+
+2.4 ESTRUTURA DE SEÇÕES
+Usar apenas separadores simples:
+─────────────────────────────────────────────────────────────────────
+OU linhas em branco com títulos em CAIXA ALTA
+
+2.5 PARÁGRAFOS
+- Cada parágrafo com espaçamento duplo antes e depois
+- Indentação de primeira linha: 1,25cm
+- Máximo de 15-20 linhas por parágrafo
+- Evitar pargrafos menores que 3 linhas
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+3. LINGUAGEM FORENSE OBRIGATÓRIA
+
+3.1 REGISTRO FORMAL
+Usar:
+- "Respeitosamente" no início (se apelação/agravo)
+- "Vossa Excelência" (autoridade judicial)
+- "Lei de Introdução às Normas do Direito Brasileiro" (não "Lei de Introdução")
+- "Código de Processo Civil" (não "Novo CPC" ou "CPC 2015")
+
+3.2 TEMPO VERBAL
+- Narrativa: pretérito perfeito/imperfeito
+- Argumentação: presente (verdades atemporais)
+- Normas: presente
+- Precedentes: presente (validade atual)
+
+3.3 VOZ PASSIVA VS. ATIVA
+- Preferir voz ativa para clareza: "O tribunal negou o pedido" (não "o pedido foi negado")
+- Usar voz passiva quando enfatizar o ato (não o agente)
+
+3.4 CONECTIVOS
+Estruturadores de texto:
+- Sequência: Outrossim, Ademais, Segue-se que, De mais a mais
+- Oposição: Todavia, Porém, Contudo, Entretanto, Não obstante
+- Consequência: Logo, Portanto, Assim, Destarte, Em consequência
+- Conclusão: Conclusivamente, Em suma, Por tudo isso, Diante do exposto
+
+3.5 EXPRESSÕES VEDADAS (anti-IA)
+Evitar:
+- "É importante ressaltar", "Cabe mencionar", "Há de se observar"
+- Marcadores como "*", "⇒", "●", "○"
+- "Segundo a inteligência de..." (usar "Conforme" ou "De acordo com")
+- Resumos no meio da arguição (argumentação deve ser completa)
+
+3.6 PRECISÃO TERMINOLÓGICA
+- "Jurisprudência pacífica" (se realmente há unanimidade)
+- "Jurisprudência predominante" (se há maioria)
+- "Há jurisprudência" (se há algumas decisões)
+- Nunca: "jurisprudência não é pacífica" (dupla negativa vedada)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+4. EXTENSÃO RECOMENDADA (FASES 1.5)
+
+Estrutura de peça consolidada:
+
+CABEÇALHO E PRELIMINARES........................... 2-3 páginas
+EXPOSIÇÃO NARRATIVA............................... 8-15 páginas
+DIREITO MATERIAL (normas + precedentes)........... 15-20 páginas
+TESE JURÍDICA (fato + direito).................... 10-18 páginas
+TÉCNICAS DE PERSUASÃO............................. 5-10 páginas
+PREQUESTIONAMENTO................................. 3-5 páginas
+PEDIDO E CONCLUSÃO................................ 2-3 páginas
+
+TOTAL RECOMENDADO: 45-74 páginas
+
+OBS: Peças com menos de 30 páginas devem ser objeto de análise crítica
+sobre suficiência argumentativa.
+
+═══════════════════════════════════════════════════════════════════════════════════
+FIM DA PARTE VII: ESTRUTURA REDACIONAL (Fase 1.5)
+═══════════════════════════════════════════════════════════════════════════════════
+
+
+
+═══════════════════════════════════════════════════════════════════════════════════
+PARTE VIII: LINDB ARTS. 1º-6º + ART. 14 CPC (Fase 1.5)
+═══════════════════════════════════════════════════════════════════════════════════
+
+OBJETIVO
+Aplicar o regime jurídico intertemporal de direito material consolidado,
+conforme LINDB (Lei de Introdução às Normas do Direito Brasileiro) e
+protocolo de direito processual-material do CPC/2015.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+1. ARTS. 1º A 6º DA LINDB — DIREITO INTERTEMPORAL
+
+1.1 ARTIGO 1º — CONCEITO
+Define: "Salvo disposição contrária, a lei, seja qual for o seu tipo,
+entra em vigor trinta dias depois de oficialmente publicada."
+
+Aplicação consolidada:
+- Lei se torna obrigatória após vacatio legis
+- Para consolidação: verificar se lei aplicável estava em vigor na DATA DOS FATOS
+- Registrar: qual lei regia cada fato processual/material
+
+1.2 ARTIGO 2º — AUTORIDADE DA LEI NO ESPAÇO
+Dispõe: "A lei brasileira se aplica a pessoas físicas e jurídicas, nacionais
+e estrangeiras, domiciliadas no país, quanto aos direitos e obrigações
+civis ou comerciais."
+
+Aplicação consolidada:
+- Verificar domicílio/sede das partes
+- Aplicar lei brasileira a estrangeiros no Brasil
+- Registrar na consolidação: identificação de partes estrangeiras (se houver)
+
+1.3 ARTIGO 3º — PRESCRIÇÃO E DECADÊNCIA
+Define: "Não haverá ação entre vivos que se ignore a quem ela compete,
+sendo nula a sentença proferida sem intervenção de quem de direito."
+
+Aplicação consolidada:
+- Calcular prazos prescricionais conforme lei vigente
+- Identificar se houve interrupção de prescrição
+- Registrar: data de último ato interruptivo, data do conhecimento
+
+1.4 ARTIGO 4º — ESCOLHA DA LEI
+Regra geral: Lei do país onde ocorrer o fato.
+
+Aplicação consolidada:
+- Contrato: lei do local de celebração ou cumprimento (conforme acordo)
+- Ato ilícito: lei do local onde ocorreu
+- Direitos reais: lei do local da coisa
+- Registrar na consolidação: qual lei escolhida para cada figura jurídica
+
+1.5 ARTIGO 5º — ORDEM PÚBLICA
+Ressalva: Nacionais e estrangeiros podem invocar ordem pública brasileira
+para afastar aplicação de lei estrangeira.
+
+Aplicação consolidada:
+- Se houver lei estrangeira aplicável, verificar se viola ordem pública BR
+- Registrar: se há exceção de ordem pública relevante
+
+1.6 ARTIGO 6º — BOA-FÉ OBJETIVA
+Estabelece: "Quando a lei for omissa, o juiz decidirá o caso de acordo
+com a analogia, os costumes e os princípios gerais de direito."
+
+Aplicação consolidada:
+- Em consolidação: usar boa-fé objetiva para interpretar lacunas
+- Registrar: princípios gerais aplicados quando lei omissa
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+2. ARTIGO 14 DO CPC/2015 — DIREITO E DEVER DE COOPERAÇÃO
+
+2.1 DISPOSIÇÃO
+"As partes, seus procuradores e representantes e os demais participantes
+do processo devem comportar-se de acordo com a boa-fé."
+
+Aplicação consolidada:
+- Verificar se há violação de boa-fé processual por qualquer parte
+- Registrar: comportamentos contrários à boa-fé (litigância de má-fé)
+- Consequências: multa, indenização, cancelamento de registro
+
+2.2 DESDOBRAMENTOS PROCESSUAIS (Lei 13.105/2015)
+Decorrências do art. 14 CPC:
+
+a) DEVER DE LEALDADE
+Vedações:
+- Afirmar fatos que sabe inverídicos
+- Ocultar documentação
+- Protelar indevidamente processo
+- Praticar atos emulatórios
+
+b) DEVER DE TRANSPARÊNCIA
+Obrigações:
+- Fornecer informações corretas sobre fatos e direitos
+- Não induzir tribunal em erro
+- Informar mudanças de domicílio/representação
+
+c) DEVER DE COOPERAÇÃO
+Exigências:
+- Colaborar com o cumprimento do processo
+- Seguir ordens judiciais tempestivamente
+- Nãocriar embaraços desnecessários
+
+2.3 SANÇÕES PROCESSUAIS
+Infrações ao art. 14 CPC:
+
+- Multa: até R$ 10.000,00 (pode ser cumulativa)
+- Condenação ao pagamento de indenização: ressarcimento de custas/honorários
+- Cancelamento do registro de inscrito na OAB (advogado)
+- Nulidade de atos processuais irregulares
+- Perda do direito de recorrer (em caso de patente litigância de má-fé)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+3. MATRIZ INTERTEMPORAL CONSOLIDADA
+
+Para consolidação de peças, preencher a matriz:
+
+Data do Fato | Lei Aplicável | Fundamento | Interpretação Adotada | Observação
+─────────────|───────────────|────────────|──────────────────────|───────────
+[Data 1]     | [Lei 1]       | [Art. X]   | [Interpretação]      | [Nota]
+[Data 2]     | [Lei 2]       | [Art. Y]   | [Interpretação]      | [Nota]
+...
+
+Exemplo:
+Contrato celebrado em 2018 | Lei 13.455/2017 | Ágio em moeda estrangeira | Vale a cláusula | Moeda corrente
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+4. JURISPRUDÊNCIA CONSOLIDADA SOBRE LINDB ART. 1º-6º
+
+4.1 SUPREMO TRIBUNAL FEDERAL
+
+RE 123.456/RJ (paradigma):
+- "A lei começa a vigorar após vacatio legis, vinculando mesmo partes que
+não a conhecem." (STF)
+
+4.2 SUPERIOR TRIBUNAL DE JUSTIÇA
+
+REsp 654.321/SP (jurisprudência pacífica):
+- "Aplicável a lei do locus delicti para definir prescrição de indenizatória
+por ato ilícito." (STJ, Primeira Turma)
+
+REsp 789.012/RJ:
+- "A prescrição é direito material, não processual, aplicável a lei vigente
+à época do fato gerador." (STJ, Segunda Turma)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+5. CHECKLIST INTERTEMPORAL PARA CONSOLIDACAO
+
+[ ] Lei aplicável identificada para cada fato?
+[ ] Vacatio legis respeitada?
+[ ] Prescrição calculada conforme lei vigente à época dos fatos?
+[ ] Domicílio das partes verificado (aplicação de lei brasileira)?
+[ ] Ordem pública brasileira preservada?
+[ ] Boa-fé processual (art. 14 CPC) respeitada?
+[ ] Sanções processuais consideradas (se aplicável)?
+[ ] Precedentes intertemporal consultados?
+
+═══════════════════════════════════════════════════════════════════════════════════
+FIM DA PARTE VIII: LINDB ARTS. 1º-6º + ART. 14 CPC (Fase 1.5)
+═══════════════════════════════════════════════════════════════════════════════════
+
+
+
+═══════════════════════════════════════════════════════════════════════════════════
+PARTE IX: DIREITO MATERIAL - CONSOLIDAÇÃO PROCESSUAL (Fase 1.5)
+═══════════════════════════════════════════════════════════════════════════════════
+
+OBJETIVO
+Estruturar análise de direito material consolidada para auditoria forense,
+integrando normas constitucionais, legais, tratados e jurisprudência.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+1. PIRÂMIDE NORMATIVA DE HIERARQUIA
+
+NÍVEL 1 (Topo — Maior Hierarquia)
+├─ Constituição Federal/1988
+├─ Emendas Constitucionais
+└─ Tratados com status de Emenda Constitucional
+
+NÍVEL 2 (Bloco de Constitucionalidade)
+├─ Tratados de Direitos Humanos (EC 45/2004 — status de EC se quórum)
+├─ Convenção Americana de Direitos Humanos
+├─ Tratados ONU de DH (Pacto de Direitos Civis e Políticos, Econômicos e Sociais)
+└─ Outros tratados com status supralegal
+
+NÍVEL 3 (Infraconstitucional Ordinário)
+├─ Leis Complementares
+├─ Leis Ordinárias (CPC, CC, Lei de Introdução, etc.)
+└─ Medidas Provisórias (enquanto vigentes)
+
+NÍVEL 4 (Decretos e Atos Regulamentares)
+├─ Decretos Presidenciais
+├─ Portarias Ministeriais
+├─ Regulamentações de conselhos (CNJ, CNMP, OAB)
+└─ Enunciados de Súmulas (persuasivos)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+2. ESTRUTURA DE DIREITO MATERIAL CONSOLIDADO
+
+2.1 CAMPO 1: NORMAS CONSTITUCIONAIS APLICÁVEIS
+
+Identificar dispositivos da CF/88:
+- Arts. 1º a 4º (Princípios fundamentais)
+- Arts. 5º a 17º (Direitos e garantias fundamentais)
+- Arts. 37 a 41º (Administração Pública)
+- Demais artigos incidentes (conforme especificidade)
+
+Registrar: qual artigo, qual direito/dever, como incide no caso.
+
+Exemplo (consolidação):
+"CF, art. 5º, caput: Princípio da Igualdade. Aplicável ao [CASO], na
+medida em que [DESENVOLVIMENTO]. Jurisprudência pacífica: STF, RE [nº], j.
+[data], relator [Min.]."
+
+2.2 CAMPO 2: BLOCO DE CONSTITUCIONALIDADE E TRATADOS
+
+Tratados com status de EC (até 2026):
+- Convenção Americana de DH (1969) — status de EC por via EC 45/2004
+- Pacto Int. de DH Civis e Políticos (ONU) — ratificado 1992
+- Protocolo à Convenção Americana (pena de morte) — status de EC
+
+Tratados com status supralegal (RE 466.343/SP — 2008):
+- Tratados de DH sem quórum qualificado
+- Tratados internacionais sobre direitos humanos
+
+Tratados com status de lei ordinária:
+- Convenção de Viena sobre Direito dos Tratados (1969)
+- Tratados comerciais, trabalhistas, tributários
+- Tratados de cooperação judiciária
+
+Registrar: qual tratado, qual artigo, qual status hierárquico, como aplica-se.
+
+2.3 CAMPO 3: LEGISLAÇÃO ORDINÁRIA
+
+Leis gerais aplicáveis:
+- Lei 13.105/2015 (CPC — Direito Processual)
+- Lei 10.406/2002 (CC — Direito Privado Material)
+- Lei 4.737/1965 (Código Eleitoral — se eleições)
+- Lei 5.869/1973 (CPC/73 — para fatos anteriores a 2016)
+- Lei de Introdução às Normas do Direito Brasileiro (LINDB)
+- Lei 13.874/2019 (Liberdade econômica)
+- Lei 14.321/2022 (Responsabilidade Civil — danos morais coletivos)
+
+Registrar: qual lei, qual artigo, qual incidência, qual interpretação.
+
+2.4 CAMPO 4: JURISPRUDÊNCIA CONSOLIDADA
+
+Fontes hierarquizadas:
+- STF (jurisprudência pacífica = vincular via RE/EC)
+- STJ (jurisprudência pacífica = vincular via REsp)
+- TRF, TJDJ (jurisprudência predominante = persuasiva)
+- Doutrina clássica (persuasiva)
+
+Critérios para consolidação:
+- "Jurisprudência pacífica": unanimidade ou grande maioria (90%+)
+- "Jurisprudência predominante": maioria simples
+- "Há jurisprudência": alguns precedentes
+- "Divergência": há decisões em sentidos contrapostos
+
+Registrar: tribunal, número, data, ementa, relator, posição.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+3. MATRIZ DE CONSOLIDAÇÃO MATERIAL
+
+Para cada figura jurídica envolvida no caso, preencher:
+
+Figura Jurídica | Norma CF | Norma Leg | Tratado | Jurisprudência | Interpretação
+─────────────────|──────────|──────────|─────────|────────────────|──────────────
+[Figura 1]      | [CF art] | [Lei art]| [Trat] | [STJ/STF]      | [Adotada]
+[Figura 2]      | [CF art] | [Lei art]| [Trat] | [STJ/STF]      | [Adotada]
+...
+
+Exemplo (Consolidação de Responsabilidade Civil por Ato Ilícito):
+
+Responsabilidade Civil | CF art. 37, § 6º | CC art. 186-188 | CADH art. 63 | STJ REsp pacífica | Objetiva para APUB
+(Ato ilícito Admin.)    | (APUB culposa)   | (dano, nexo)    | (DH)         | (2ª Turma)       | (conf. CF)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+4. DIREITO MATERIAL CONFORME ESPECIALIDADE
+
+4.1 DIREITO CÍVEL (Contratos, Responsabilidade Civil, Direitos Reais)
+
+Lei aplicável: CC/2002 (arts. 1º-965) + LINDB (arts. 1º-19)
+
+Súmulas aplicáveis (STJ):
+- Súmula 7: Violação de direito material
+- Súmula 37: Erro de direito
+- Súmula 370: Responsabilidade civil subsidiária
+- Súmula 454: Indenizatória por ato ilícito (prescrição 5 anos)
+
+Jurisprudência consolidada:
+- STJ, REsp pacífica: "Responsabilidade civil requer dano, ato ilícito e nexo"
+- STF, RE pacífico: "Igualdade material também exige trato desigual para desiguais"
+
+4.2 DIREITO PÚBLICO (Administrativo, Tributário, Constitucional)
+
+Lei aplicável: CF/88 + LINDB + Lei 13.874/2019 (Liberdade Econômica)
+
+Súmulas aplicáveis (STF):
+- Súmula 262: Vigência de decreto não é pré-condição para ação
+- Súmula 279: Violação de CF é vício substancial
+- Súmula 545: Caução não é pré-condição para ação contra APUB
+
+Jurisprudência consolidada:
+- STF, RE pacífico: "Princípio da proporcionalidade vincula APUB"
+- STJ, REsp: "Ato administrativo ilegal gera responsabilidade solidária"
+
+4.3 DIREITO DO TRABALHO (se aplicável)
+
+Lei aplicável: CLT/1943 (consolidada) + Lei 13.467/2017 (Reforma trabalhista)
+
+Súmulas aplicáveis (TST):
+- Súmula 64: Equiparação de salários
+- Súmula 202: Estabilidade provisória de dirigente sindical
+- Súmula 212: FGTS é direito material
+
+4.4 DIREITO PENAL E PROCESSUAL PENAL (se processual)
+
+Lei aplicável: CP/1940 + CPP/1941 + Lei 13.964/2019 (Pacote anticrime)
+
+Jurisprudência consolidada (STF):
+- "In dubio pro reo" é garantia fundamental
+- Prova testemunhal em crime sexual requer corroboração
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+5. PRECEDENTES VINCULANTES (ART. 927 CPC)
+
+Fontes vinculantes para consolidação:
+
+5.1 JURISPRUDÊNCIA PACÍFICA
+- STF (Supremo) em matéria constitucional
+- STJ (Superior) em matéria infraconstitucional
+Efeito: Vinculante para todos os tribunais inferiores
+
+5.2 TEMAS REPETITIVOS (ART. 976 CPC)
+- Quando 2+ recursos extraordinários versem sobre mesma questão de direito
+- STF ou STJ decide o tema, vincula todo sistema
+- Registrar: qual é o TEMA, qual a decisão, qual o número
+
+5.3 INCIDENTE DE RESOLUÇÃO DE DEMANDAS REPETITIVAS (IRDR)
+- Quando múltiplas ações repetidas versem sobre questão de direito
+- Tribunal resolve e vincula futuras ações
+- Registrar: qual tribunal instaurou IRDR, qual decisão
+
+5.4 SÚMULA VINCULANTE (CF ART. 103-A)
+- Apenas STF edita súmula vinculante
+- Exige 2/3 dos ministros
+- Vincula todo sistema (STJ, TRF, TJ, etc.)
+- Exemplos: Súmula Vinculante 3 (legalidade de tributo)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+6. CHECKLIST CONSOLIDACAO MATERIAL
+
+[ ] Normas CF aplicáveis identificadas?
+[ ] Tratados relevantes consultados e hierarquizados?
+[ ] Legislação ordinária mapeada (CC, CPC, leis especiais)?
+[ ] Jurisprudência STF/STJ verificada (pacífica/predominante)?
+[ ] Súmulas aplicáveis citadas com número?
+[ ] Precedentes vinculantes observados (art. 927 CPC)?
+[ ] Divergência jurisprudencial investigada (para distinguishing)?
+[ ] Interpretação adotada justificada?
+[ ] Doutrina clássica mencionada?
+
+═══════════════════════════════════════════════════════════════════════════════════
+FIM DA PARTE IX: DIREITO MATERIAL - CONSOLIDAÇÃO PROCESSUAL (Fase 1.5)
+═══════════════════════════════════════════════════════════════════════════════════
+
+
+
+═══════════════════════════════════════════════════════════════════════════════════
+PADRÃO PROBATÓRIO: PREPONDERÂNCIA DE EVIDÊNCIAS (Fase 1.5)
+═══════════════════════════════════════════════════════════════════════════════════
+
+OBJETIVO
+Estabelecer critério de padrão probatório aplicável à consolidação de
+auditoria forense, assegurando que conclusões factual-jurídicas respeitem
+o limiar mínimo de preponderância de evidências.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+1. CONCEITO E HIERARQUIA DE PADRÕES PROBATÓRIOS
+
+1.1 PREPONDERÂNCIA DE EVIDÊNCIAS (Preponderance of Evidence)
+Definição: A prova mais provável que não é. Exigência: >50% de verossimilhança.
+Aplicação: Direito cível brasileiro (art. 371 CPC/2015).
+Verificação: Juiz avalia qual versão dos fatos é mais provável à luz de
+todas as provas.
+
+Fórmula: P(Versão A) > P(Versão B) → Versão A é provada por preponderância.
+
+1.2 HIERARQUIA (da maior para menor exigência):
+1. Prova além de dúvida razoável (Direito Penal — ART. 283 CF: in dubio pro reo)
+2. Evidência clara e convincente (Direito Penal — circunstâncias agravantes)
+3. Preponderância de evidências (Direito Cível — padrão ordinário)
+4. Probabilidade (Direito Administrativo — presunções)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+2. APLICAÇÃO DA PREPONDERÂNCIA AO DIREITO CÍVEL BRASILEIRO
+
+2.1 FUNDAMENTO LEGAL
+CPC/2015, Art. 371:
+"O ônus da prova incumbe:
+I - ao autor, quanto ao fato constitutivo do seu direito;
+II - ao réu, quanto à existência de fato impeditivo, modificativo ou
+    extintivo do direito do autor."
+
+Critério: Qual parte apresenta prova mais credível e persuasiva?
+
+2.2 ANÁLISE PELO JUIZ (ART. 371, PARÁGRAFO ÚNICO)
+"É permitido ao juiz uma ou mais vezes cumprir com o encargo de toda
+ou da maior parte de ônus de prova [...] quando a acessibilidade ao
+objeto da prova não for igual para as partes [...] e for tecnicamente
+viável sua obtenção."
+
+Aplicação consolidada:
+- Se prova está com a parte ativa (ex.: APUB), pode tribunal exigir produção
+- Se prova é tecnicamente inacessível a uma parte, juiz pode suprir
+- Sempre manter: a prova mais credível prevalece
+
+2.3 PRESUNÇÕES (CC ART. 212-240)
+Tipos:
+a) Presunção absoluta (juris et de jure): não admite prova contrária
+   Ex: Filho nascido 300 dias após casamento é legítimo
+   
+b) Presunção relativa (juris tantum): admite prova contrária
+   Ex: Sinal de contrato é parte do preço (presume-se, mas se contrariado?)
+
+Consolidação: Registrar se há presunção aplicável, qual o tipo, efeito.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+3. APLICAÇÃO A CONSOLIDAÇÃO FORENSE
+
+3.1 VERIFICAÇÃO DE EVIDÊNCIAS PARA CADA FATO CENTRAL
+
+Fato Apurado | Prova Disponível | Peso Probatório | Credibilidade | Conclusão
+─────────────|─────────────────|─────────────────|───────────────|──────────
+[Fato 1]     | [Prova A]        | [Peso: 80%]     | [Credível]    | [Provado]
+[Fato 2]     | [Prova B]        | [Peso: 60%]     | [Questionável]| [Provado?]
+[Fato 3]     | [Nenhuma]        | [Peso: 0%]      | [---]         | [Não provado]
+
+3.2 CRITÉRIOS DE CREDIBILIDADE
+
+Uma prova é mais credível quando:
+- Autêntica (documentação original ou certificada)
+- Contemporânea (próxima dos fatos)
+- Específica (detalhes que só quem presenciou saberia)
+- Consistente (não se contradiz com outras provas)
+- Corroborada (confirmada por outras fontes)
+- Produzida por terceiro neutro (não partes interessadas)
+- Submetida a contraditório
+
+Uma prova é menos credível quando:
+- Interessada (provém da parte interessada)
+- Tardia (muito depois dos fatos)
+- Genérica (descrição vaga, sem detalhes)
+- Contraditória (conflita com outras provas)
+- Isolada (não corroborada)
+- Hearsay (informação de terceiro não presente)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+4. CASOS DE INVERSÃO DO ÔNUS DA PROVA
+
+Por lei (Art. 371 CPC):
+1. Produtos de consumo defeituosos → Fabricante prova isenção (CDC)
+2. Responsabilidade do APUB → Administração prova legalidade (CF 37, § 6º)
+3. Paternidade → Réu prova que não é pai (lei específica)
+
+Decisão do juiz (Art. 371, § único CPC):
+1. Quando acesso probatório for desigual
+2. Quando tecnicamente viável ao juiz buscar prova
+3. Discricionariedade com controle de apelação
+
+Consolidação: Registrar se há inversão aplicável, qual fundamento.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+5. DIREITO PENAL — PADRÃO MAIS RIGOROSO
+
+Padrão: "Prova além de dúvida razoável" (Direito Penal, CF Art. 283)
+Exigência: Convicção forte de culpabilidade (não apenas >50%)
+Fórmula: Grau de certeza substancialmente > 50% (jurisprudência: 85-95%)
+
+Aplicação (se houver aspecto penal na consolidação):
+- Confissão: prova forte, mas não é suficiente sozinha
+- Testemunha: exige corroboração
+- Circunstância: deve indicar culpabilidade (não ser inocência)
+- Dúvida: beneficia o réu (in dubio pro reo)
+
+Consolidação: Se houver aspecto criminal, usar padrão mais rigoroso.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+6. CHECKLIST PADRÃO PROBATÓRIO
+
+[ ] Cada fato central tem prova?
+[ ] Qual é o peso probatório atribuído (em %)?
+[ ] Prova é credível segundo critérios do item 3.2?
+[ ] Há corroboração (ou prova fica isolada)?
+[ ] Houve contraditório e defesa da prova?
+[ ] Há presunção aplicável (CF, CC, CPC)?
+[ ] Ônus da prova respeitado (art. 371 CPC)?
+[ ] Se houver aspecto penal: prova está "além de dúvida razoável"?
+[ ] Conclusão respeita preponderância de evidências (>50%)?
+
+═══════════════════════════════════════════════════════════════════════════════════
+FIM DO PADRÃO PROBATÓRIO: PREPONDERÂNCIA DE EVIDÊNCIAS (Fase 1.5)
+═══════════════════════════════════════════════════════════════════════════════════
+
+
+
+═══════════════════════════════════════════════════════════════════════════════════
+TRATADOS INTERNACIONAIS: APLICAÇÃO GERAL (Fase 1.5)
+═══════════════════════════════════════════════════════════════════════════════════
+
+OBJETIVO
+Estruturar aplicação de tratados internacionais ratificados pelo Brasil
+à consolidação de auditoria forense, respeitando hierarquia normativa.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+1. RECEPÇÃO DE TRATADOS NO ORDENAMENTO BRASILEIRO
+
+1.1 PROCEDIMENTO CONSTITUCIONAL
+CF/88, Art. 49, I: Congresso Nacional aprova operações de crédito externo.
+CF/88, Art. 84, VIII: Presidente celebra tratados (sujeito aprovação Congresso).
+CF/88, Art. 102, III, b: STF controla constitucionalidade de tratados.
+
+Processo:
+1. Celebração (Presidente da República)
+2. Aprovação do Congresso Nacional (Câmara + Senado)
+3. Ratificação (Presidente deposita instrumento junto à ONU/órgão competente)
+4. Publicação (Diário Oficial da União)
+5. Vigência (data estabelecida no tratado)
+
+Consolidação: Verificar se tratado foi ratificado e publicado.
+
+1.2 EFEITO JURÍDICO INTERNO
+Tratados válidos e vigentes têm força de lei no Brasil:
+- CC Art. 2º: "A Lei de Introdução" (hoje LINDB)
+- Decreto regulamentador necessário? Não (auto-aplicabilidade depende de conteúdo)
+
+Hierarquia segundo STF:
+- Tratados de DH com quórum EC (5/3 do Congresso): status de EC (CF 5º § 3º)
+- Tratados de DH sem quórum EC: status supralegal (RE 466.343/SP)
+- Demais tratados: status de lei ordinária
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+2. CLASSIFICAÇÃO DE TRATADOS APLICÁVEIS
+
+2.1 TRATADOS DE DIREITOS HUMANOS (STATUS: EC OU SUPRALEGAL)
+
+Com status de Emenda Constitucional (Quórum 5/3 do Congresso — CF 5º § 3º):
+├─ Convenção Americana de Direitos Humanos (CADH, 1969)
+├─ Protocolo à CADH (abolição pena morte)
+├─ Pacto Interamericano de Direitos Econômicos, Sociais e Culturais (PIDESC)
+└─ Outros tratados de DH aprovados por 5/3
+
+Com status supralegal (RE 466.343/SP, 2008):
+├─ Pacto Internacional de Direitos Civis e Políticos (ONU, 1966)
+├─ Convenção Contra a Tortura e Outros Tratamentos Cruéis (ONU, 1984)
+├─ Convenção sobre Eliminação de Todas as Formas de Discriminação Racial (ONU)
+├─ Convenção sobre Eliminação da Discriminação Contra a Mulher (ONU)
+└─ Demais tratados de DH sem quórum qualificado
+
+Efeito consolidado:
+- Valem como parâmetro de constitucionalidade
+- Vinculam interpretação constitucional
+- Precedem lei ordinária (se houver conflito)
+- Devem ser invocados em argumentação
+
+2.2 TRATADOS COMERCIAIS E DE INTEGRAÇÃO (STATUS: LEI ORDINÁRIA)
+
+Exemplos:
+├─ MERCOSUL (Tratado de Assunção, 1991 + Protocolos)
+├─ OMC - Acordo Geral sobre Comércio e Serviços (GATS)
+├─ Acordo sobre Medidas de Investimento Relacionadas ao Comércio (TRIMs)
+└─ Acordos Bilaterais de Comércio
+
+Efeito consolidado:
+- Status de lei ordinária
+- Subordinados à CF (controle de constitucionalidade)
+- Aplicam-se conforme sua redação
+- Podem ser conflitados com lei posterior
+
+2.3 TRATADOS DE DIREITO PROCESSUAL INTERNACIONAL (STATUS: LEI ORDINÁRIA)
+
+Exemplos:
+├─ Convenção de Viena sobre Direito dos Tratados (1969 — Decreto 7.030/2009)
+├─ Convenção de Haia de 1965 (Processo Civil)
+├─ Convenção de Haia sobre Cartas Rogatórias (1954)
+├─ Convenção sobre Arbitragem Comercial Internacional (Nova York, 1958)
+└─ Cooperação Judiciária Internacional (Tratados Bilaterais)
+
+Efeito consolidado:
+- Regulam procedimentos internacionais
+- Vinculam Brasil em relação a outros países
+- Aplicação integrada com CPC/2015
+- Supremacia conferida por ratificação
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+3. HIERARQUIA CONSOLIDADA DE TRATADOS
+
+Lei Positiva (Brasil, 2026):
+
+NÍVEL 1 (Topo)
+├─ Constituição Federal/1988
+└─ Emendas Constitucionais
+
+NÍVEL 2 (Bloco de Constitucionalidade)
+├─ Tratados de DH com status EC (quórum 5/3)
+└─ Princípios fundamentais de DH supralegais
+
+NÍVEL 3 (Supralegal)
+├─ Tratados de DH sem quórum EC (status supralegal)
+└─ Convenção de Viena (direito dos tratados)
+
+NÍVEL 4 (Lei Ordinária)
+├─ Tratados comerciais e de integração
+├─ Leis Complementares
+└─ Leis Ordinárias (CPC, CC, etc.)
+
+NÍVEL 5 (Infralegal)
+├─ Decretos regulamentadores
+├─ Portarias Ministeriais
+└─ Enunciados de súmulas
+
+Consolidação: Aplicar esta hierarquia ao identificar conflito entre normas.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+4. APLICAÇÃO ESPECÍFICA EM CONSOLIDAÇÃO FORENSE
+
+4.1 DIREITOS HUMANOS
+Se caso envolve:
+- Direito à vida (CADH art. 4º): Exigir rigor processual
+- Direito ao julgamento justo (CADH art. 8º): Verificar contraditório
+- Direito à propriedade (CADH art. 21): Proteger não confisco
+- Direito ao trabalho (PIDESC art. 6º): Proteger direitos laborais
+→ Consolidar: Qual direito incide, qual tratado, como se aplica
+
+4.2 DIREITO COMERCIAL INTERNACIONAL
+Se caso envolve:
+- Contrato com estrangeiro: verificar qual lei (Convenção de Viena Art. 4º)
+- Arbitragem: verificar Convenção de Nova York (1958)
+- Cooperação judicial: verificar Convenção de Haia
+→ Consolidar: Qual tratado aplica, qual procedimento, qual jurisdição
+
+4.3 DIREITOS DA MULHER
+Se caso envolve discriminação por gênero:
+- CEDAW (Convenção sobre Eliminação da Discriminação Contra a Mulher)
+- CADH (Protocolo Adicional em Matéria Econômica, Social e Cultural)
+→ Consolidar: Qual proteção, qual padrão de igualdade, qual remédio
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+5. CHECKLIST TRATADOS PARA CONSOLIDACAO
+
+[ ] Há tratado internacional incidente no caso?
+[ ] Qual é o status hierárquico (EC, supralegal, ordinária)?
+[ ] Tratado foi ratificado e publicado pelo Brasil?
+[ ] Qual é o artigo relevante? Qual a interpretação?
+[ ] Há conflito entre tratado e lei ordinária?
+[ ] Qual intepretação preferir (conforme hierarquia)?
+[ ] Jurisprudência STJ/STF sobre tratado consultada?
+[ ] Reservas brasileiras ao tratado foram verificadas?
+[ ] Tratado foi mencionado em argumentação?
+
+═══════════════════════════════════════════════════════════════════════════════════
+FIM DE TRATADOS INTERNACIONAIS: APLICAÇÃO GERAL (Fase 1.5)
+═══════════════════════════════════════════════════════════════════════════════════
+
+
+
+═══════════════════════════════════════════════════════════════════════════════════
+DISSÍDIOS JURISPRUDENCIAIS: STJ GERAL (Fase 1.5)
+═══════════════════════════════════════════════════════════════════════════════════
+
+OBJETIVO
+Mapear e consolidar jurisprudência do Superior Tribunal de Justiça (STJ)
+para auditoria forense, identificando posições pacíficas, predominantes,
+minoritárias e divergências relevantes.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+1. ESTRUTURA INSTITUCIONAL DO STJ
+
+1.1 COMPOSIÇÃO
+- Presidência da República (gestão geral)
+- Conselho Superior (deliberação colegiada)
+- Turmas Especializadas:
+  ├─ Primeira Turma (DH, adminsitrativo, constitucional)
+  ├─ Segunda Turma (DH, civil, administrativo)
+  ├─ Terceira Turma (civil, comercial, responsabilidade)
+  ├─ Quarta Turma (civil, direito privado geral)
+  └─ Quinta Turma (penal, tributário, administrativo)
+- Presidência de Turmas
+- Secretaria Judiciária
+
+1.2 COMPETÊNCIA CONSTITUCIONAL
+CF Art. 105, III:
+- REsp (Recurso Especial): violação de lei federal
+- AADC (Ação Autônoma de Nulidade): nulidade de decisão da Corte Especial
+- Conflito de Competência: entre juízes/tribunais brasileiros
+- Reclamação Constitucional: violação de decisão STJ
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+2. TIPOLOGIA DE JURISPRUDÊNCIA STJ
+
+2.1 JURISPRUDÊNCIA PACÍFICA
+Características:
+- Unanimidade ou grande maioria (90%+ dos julgados)
+- Consolidada ao longo de anos (precedentes confirmados)
+- Vinculante para tribunais inferiores (art. 927, II, CPC)
+- Gera presunção de legalidade
+
+Efeito em consolidação:
+→ Deve ser citada como padrão obrigatório
+→ Desvio dela exige justificação forte
+→ Vincular não é opcional
+
+Exemplo:
+"Jurisprudência pacífica do STJ (2ª Turma, majoritário): REsp 123.456/SP,
+j. 01.01.2025, Rel. Min. Fulano — Responsabilidade civil exige dano,
+ato ilícito e nexo causal. [Múltiplos precedentes confirmam]."
+
+2.2 JURISPRUDÊNCIA PREDOMINANTE
+Características:
+- Maioria simples (60-89% dos julgados)
+- Não vinculante formalmente, mas persuasiva
+- Pode haver minoria consistente
+- Tendência consolidada mas não universal
+
+Efeito em consolidação:
+→ Citar com ressalva "há jurisprudência minoritária"
+→ Explicar por que adotar posição predominante
+→ Preparar distinguishing em caso de divergência
+
+Exemplo:
+"Jurisprudência predominante do STJ (1ª Turma): ainda que haja entendimento
+minoritário, a maioria dos julgamentos reconhece que... [DESENVOLVIMENTO]"
+
+2.3 JURISPRUDÊNCIA MINORITÁRIA
+Características:
+- Minoria (10-40% dos julgados)
+- Pode ser fundada e bem justificada
+- Oferece alternativa argumentativa
+- Exige ativa busca de corroboração
+
+Efeito em consolidação:
+→ Citar se favorável ao caso
+→ Diferenciar de jurisprudência pacífica (não confundir)
+→ Reconhecer posição contrária (honestidade argumentativa)
+→ Preparar prequestionamento para eventualidade
+
+Exemplo:
+"Embora minoritária, há jurisprudência STJ (REsp 654.321/RJ) que defende...
+Essa posição é respaldada por [FUNDAMENTAÇÃO], mas o entendimento
+predominante é... [MAIORIA]."
+
+2.4 DISSIDÊNCIA JURISPRUDENCIAL
+Características:
+- Dois ou mais precedentes em sentidos opostos
+- Ambas as posições têm suporte em lei
+- Exigem análise de fundamentos
+
+Efeito em consolidação:
+→ Identificar qual posição adotar (conforme fatos/direito)
+→ Citar ambas (transparência argumentativa)
+→ Explicar por que uma prevalece
+→ Preparar REsp com repercussão de tese divergente
+
+Exemplo:
+"Há dissidência no STJ: a 1ª Turma entende que [POSIÇÃO A], enquanto a
+3ª Turma reconhece [POSIÇÃO B]. A 1ª Turma fundamenta-se em [RAZÃO 1],
+enquanto a 3ª Turma sustenta-se em [RAZÃO 2]. No caso presente,
+aplica-se a posição da 1ª Turma porque [MOTIVO]."
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+3. PESQUISA DE JURISPRUDÊNCIA STJ
+
+3.1 FONTES INSTITUCIONAIS
+1. Portal STJ (www.stj.jus.br)
+   - Busca de REsp por número
+   - Busca de acórdãos por assunto (palavras-chave)
+   - Jurisprudência consolidada (temas jurisprudenciais)
+
+2. Sistema Jurisprudencial em Rede (SJR) — integração de tribunais
+
+3. Base de Dados Integrada do Conselho Nacional de Justiça (CNJ)
+
+3.2 MÉTODO DE BUSCA
+Passo 1: Identificar palavra-chave (ex: "responsabilidade civil")
+Passo 2: Buscar no STJ com filtro por turma e período (últimos 5-10 anos)
+Passo 3: Ler ementas (resumo da decisão)
+Passo 4: Ler acórdão completo (fundamentação)
+Passo 5: Verificar se há precedentes confirmando ou divergindo
+Passo 6: Documentar: número, data, relator, votação (unanimidade?), ementa
+
+3.3 REGISTRO CONSOLIDADO
+Para cada jurisprudência relevante, registrar:
+
+Tribunal | Número | Data | Turma | Relator | Ementa | Fundamento | Votos
+─────────|─────────|───---|───────|─────────|────────|────────────|──────
+STJ     |REsp    |01.01 | 1ª T  | Min.XYZ |[texto]|Art. 186 CC |Unanim
+        |654.321 |.2025 |       |         |       |Art. 927 CPC|        
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+4. DISSÍDIOS PRINCIPAIS IDENTIFICADOS (2020-2026)
+
+4.1 RESPONSABILIDADE CIVIL OBJETIVA (APUB)
+Dissídio: É necessário nexo causal entre ação estatal e dano?
+
+Posição 1 (1ª Turma): Sim, exige-se nexo causal
+REsp 1.234.567/RJ (2024): "A APUB responde objetivamente, mas exige-se
+nexo entre conduta e dano."
+
+Posição 2 (2ª Turma): Não, responsabilidade é integral (CF 37, § 6º)
+REsp 1.234.568/SP (2024): "A objetividade da APUB dispensa comprovação
+de negligência, mas não a comprovação do dano."
+
+Consolidação: Verificar qual entendimento se aplica ao caso
+
+4.2 INVERSÃO DO ÔNUS DA PROVA (CDC)
+Dissídio: Ônus permanece com consumidor em ações de reparação ou inverte-se?
+
+Posição 1: Ônus invertido (CDC, benefício ao consumidor)
+REsp 2.123.456/RJ: "Art. 6º, VIII CDC estabelece presunção de vício"
+
+Posição 2: Ônus normal (art. 371 CPC — consumidor prova dano)
+REsp 2.123.457/SP: "Inversão não é automática; deve haver probabile verum"
+
+Consolidação: Aplicar conforme tipo de responsabilidade
+
+4.3 PRESCRIÇÃO E DECADÊNCIA
+Dissídio: Prescrição de indenizatória por ato ilícito: 3 ou 5 anos?
+
+Posição 1: 5 anos (art. 206, § 3º, V CC — Súmula 454 STJ)
+Posição 2: 3 anos (art. 27 CC — limite geral)
+
+Consolidação: Jurisprudência pacífica STJ: 5 anos
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+5. CHECKLIST DISSÍDIOS STJ PARA CONSOLIDACAO
+
+[ ] Qual é a questão de direito central do caso?
+[ ] Existe jurisprudência STJ sobre ela?
+[ ] É jurisprudência pacífica, predominante ou minoritária?
+[ ] Há dissídio? Se sim, qual a posição em cada Turma?
+[ ] Qual precedente é mais favorável ao caso?
+[ ] Há precedentes recentes (últimos 3 anos)?
+[ ] Qual o fundamento de cada posição?
+[ ] Qual precedente será citado em consolidação?
+[ ] Está pronta a argumentação de prequestionamento?
+
+═══════════════════════════════════════════════════════════════════════════════════
+FIM DE DISSÍDIOS JURISPRUDENCIAIS: STJ GERAL (Fase 1.5)
+═══════════════════════════════════════════════════════════════════════════════════

@@ -355,3 +355,1656 @@ Dr. Rodolfo Otavio Mota — OAB/GO 21.841
 Sistema ROM V3.0 — Rodolfo Otavio Mota Advogados Associados
 
 ===============================================================================
+═══════════════════════════════════════════════════════════════════════════════════
+PARTE VII: ESTRUTURA TÉCNICA FINALIZAÇÃO MAC - INSTALAÇÃO E CONFIGURAÇÃO
+═══════════════════════════════════════════════════════════════════════════════════
+
+OBJETIVO DESTA PARTE:
+
+Fornecer estrutura técnica completa e detalhada para a finalização da instalação
+do sistema SCEAP no ambiente macOS, contemplando verificação de dependências,
+configuração de caminhos, validação de componentes críticos e integração com
+sistema operacional host.
+
+APLICAÇÃO: Esta parte substitui e expande o MODULO 2 (Instalação) com rigor
+técnico equivalente ao de um procedimento jurídico crítico. Cada etapa é
+verificável, reversível e documentada.
+
+────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO A: VERIFICAÇÃO PRÉ-INSTALAÇÃO
+
+────────────────────────────────────────────────────────────────────────────────
+
+A.1. DIAGNÓSTICO DO AMBIENTE MAC
+
+Antes de qualquer procedimento de instalação, o técnico deve executar diagnóstico
+completo do ambiente macOS:
+
+COMANDO 1: Versão do sistema operacional
+sw_vers
+Saída esperada: macOS Big Sur (11.x), Monterey (12.x), Ventura (13.x) ou
+Sonoma (14.x). Versões anteriores a Big Sur (10.16) podem apresentar
+incompatibilidades com Python 3.9+.
+
+COMANDO 2: Verificar processador
+uname -m
+Saída esperada: arm64 (Apple Silicon M1/M2/M3/M4) ou x86_64 (Intel).
+CRÍTICO: Versões Intel do Python diferem de Apple Silicon. Verificar
+compatibilidade do interpretador.
+
+COMANDO 3: Verificar shell padrão
+echo $SHELL
+Saída esperada: /bin/zsh (padrão em Catalina+) ou /bin/bash.
+Obs: Diretivas de configuração (.bashrc, .zprofile) dependem do shell.
+
+A.2. VERIFICAÇÃO DE DEPENDÊNCIAS CRÍTICAS DO SISTEMA
+
+PASSO 1: Verificar Python instalado
+python3 --version
+Saída esperada: Python 3.9.x ou superior. Se ausente: instalar via
+Homebrew (brew install python3) ou official installer (python.org).
+
+PASSO 2: Verificar Pip
+pip3 --version
+Saída esperada: pip 21.0+ associado ao Python 3.9+.
+Se ausente: python3 -m pip install --upgrade pip
+
+PASSO 3: Verificar Git
+git --version
+Saída esperada: git 2.30.0+.
+Se ausente: brew install git (requer Xcode Command Line Tools).
+
+PASSO 4: Verificar Homebrew
+brew --version
+Saída esperada: Homebrew 3.x ou superior.
+Se ausente: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+A.3. VERIFICAÇÃO DE ESPAÇO EM DISCO
+
+COMANDO:
+df -h ~/Desktop
+Saída esperada: Mínimo 5GB livres no disco onde ~/Desktop está localizado.
+CRÍTICO: Se menor: liberar espaço antes de prosseguir.
+
+A.4. VERIFICAÇÃO DE PERMISSÕES DE ARQUIVO
+
+COMANDO:
+ls -ld ~/Desktop
+Saída esperada: drwx------+ ou drwxr-xr-x (permissões de leitura/escrita).
+Se permissões inadequadas: chmod 755 ~/Desktop
+
+────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO B: INSTALAÇÃO ESTRUTURADA (FASES)
+
+────────────────────────────────────────────────────────────────────────────────
+
+B.1. FASE 1: PREPARAÇÃO DO AMBIENTE PYTHON
+
+ETAPA 1.1: Criar ambiente virtual isolado
+cd /caminho/do/seu/sceap
+python3 -m venv venv_sceap
+
+ETAPA 1.2: Ativar ambiente virtual
+source venv_sceap/bin/activate
+Verificação: Prompt deve mudar para (venv_sceap) $
+
+ETAPA 1.3: Atualizar pip, setuptools e wheel dentro do venv
+pip install --upgrade pip setuptools wheel
+
+B.2. FASE 2: INSTALAÇÃO DE DEPENDÊNCIAS CORE
+
+ETAPA 2.1: Instalação de dependências obrigatórias (módulos Python)
+pip install schedule rich click
+
+Cada pacote tem função crítica:
+- schedule: Agendamento de tarefas periódicas (verificação de updates)
+- rich: Formatação de output em terminal (logs estruturados)
+- click: CLI framework (interface de linha de comando)
+
+ETAPA 2.2: Validação de instalação (verificar imports)
+python3 -c "import schedule; import rich; import click; print('OK')"
+Saída esperada: OK
+
+B.3. FASE 3: INSTALAÇÃO DE DEPENDÊNCIAS DE VÍDEO (OPCIONAL)
+
+ETAPA 3.1: Instalar FFmpeg via Homebrew
+brew install ffmpeg
+
+ETAPA 3.2: Verificar instalação do FFmpeg
+ffmpeg -version
+ffprobe -version
+Saída esperada: Número de versão do FFmpeg (ex: ffmpeg version 5.1.2)
+
+ETAPA 3.3: Instalar dependências Python de vídeo
+pip install openai-whisper ffmpeg-python moviepy pydub
+
+ETAPA 3.4: Validação de instalação
+python3 -c "import whisper; import moviepy; import pydub; print('OK')"
+
+B.4. FASE 4: EXTRAÇÃO E CÓPIA DE ARQUIVOS
+
+ETAPA 4.1: Extrair arquivo zip
+cd ~/Desktop
+unzip -v sceap_auto_update.zip
+Nota: -v para verbose (listar arquivos extraídos)
+
+ETAPA 4.2: Copiar diretório auto_update para projeto SCEAP
+cd /caminho/do/seu/sceap
+cp -r ~/Desktop/auto_update ./
+Verificação: ls -la auto_update/
+
+ETAPA 4.3: Copiar script de teste
+cp ~/Desktop/test_video_extraction.py ./
+Verificação: ls -la test_video_extraction.py
+
+B.5. FASE 5: CORREÇÃO AUTOMÁTICA DE PROBLEMAS
+
+ETAPA 5.1: Executar script de diagnóstico e correção
+python3 auto_update/fix_video_extraction.py
+
+Este script:
+- Configura certificado SSL (problema comum em macOS isolado)
+- Baixa modelo pré-treinado do Whisper
+- Instala dependências faltantes automaticamente
+- Verifica presença do FFmpeg
+- Configura variáveis de ambiente necessárias
+
+ETAPA 5.2: Executar diagnóstico completo
+python3 auto_update/diagnose_video_extraction.py
+
+Este script verifica:
+- Presença de Python 3.9+
+- Presença de FFmpeg
+- Imports de Python
+- Certificados SSL
+- Permissões de arquivo
+- Espaço em disco
+
+────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO C: TESTES E VALIDAÇÃO CRÍTICA
+
+────────────────────────────────────────────────────────────────────────────────
+
+C.1. TESTE 1: VERIFICAR ATUALIZAÇÕES DISPONÍVEIS
+
+COMANDO:
+python3 -m sceap.auto_update.cli check -r requirements.txt -v
+
+Saída esperada (cenário A): "Sistema atualizado"
+Saída esperada (cenário B): "X atualizações disponíveis" (onde X > 0)
+
+ANÁLISE:
+Se cenário A: Sistema já está em versão atual.
+Se cenário B: Prosseguir para TESTE 2 (aplicar updates).
+
+C.2. TESTE 2: APLICAR ATUALIZAÇÕES
+
+COMANDO:
+python3 -m sceap.auto_update.cli update -r requirements.txt -y
+
+Saída esperada:
+- Listagem de pacotes a atualizar
+- Barra de progresso de download
+- Mensagem "Update completed successfully"
+- Backup automático criado
+
+BACKUP: O script cria automaticamente backup em:
+/caminho/do/seu/sceap/auto_update/backups/backup_TIMESTAMP.tar.gz
+
+C.3. TESTE 3: VALIDAR INTEGRIDADE DO SISTEMA
+
+COMANDO:
+python3 -m sceap.auto_update.cli validate -r requirements.txt
+
+Saída esperada:
+- "Validation passed: X/X tests"
+- "Success rate: 100%"
+
+Se taxa < 100%: Executar diagnóstico (TESTE 4).
+
+C.4. TESTE 4: DIAGNÓSTICO DETALHADO (SE NECESSÁRIO)
+
+COMANDO:
+python3 auto_update/diagnose_video_extraction.py
+
+Saída esperada: Relatório detalhado com status de cada componente:
+- Python version: OK
+- FFmpeg: OK
+- OpenAI Whisper: OK
+- SSL Certificate: OK
+- Disk space: OK
+
+C.5. TESTE 5: TESTE DE EXTRAÇÃO DE VÍDEO
+
+COMANDO:
+python3 test_video_extraction.py "/caminho/completo/para/video.mp4"
+
+Saída esperada:
+- "Metadata extraction successful"
+- "Extracted metadata: [JSON com dados do vídeo]"
+- "Confidence: 95%"
+
+────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO D: CONFIGURAÇÃO AVANÇADA
+
+────────────────────────────────────────────────────────────────────────────────
+
+D.1. CRIAR CONFIGURAÇÃO PERSONALIZADA
+
+ETAPA 1: Copiar template de configuração
+cp auto_update/config_template.json auto_update/config.json
+
+ETAPA 2: Editar arquivo de configuração
+nano auto_update/config.json
+
+CAMPOS PRINCIPAIS (adaptáveis):
+
+{
+  "update_interval": 86400,  // Segundos entre verificações (24h)
+  "enable_auto_update": false,  // true para atualizar automaticamente
+  "backup_retention": 7,  // Dias para manter backups
+  "log_level": "INFO",  // DEBUG, INFO, WARNING, ERROR
+  "video_extraction_timeout": 300,  // Segundos até timeout
+  "whisper_model": "base",  // tiny, base, small, medium, large
+  "ssl_verify": true  // Verificar certificados SSL
+}
+
+D.2. HABILITAR AGENDAMENTO AUTOMÁTICO
+
+ETAPA 1: Verificar status do scheduler
+python3 -m sceap.auto_update.cli schedule -r requirements.txt --status
+
+ETAPA 2: Iniciar scheduler em background
+nohup python3 -m sceap.auto_update.auto_update_scheduler \
+  --requirements requirements.txt \
+  --enable-auto-update > /tmp/sceap_scheduler.log 2>&1 &
+
+ETAPA 3: Salvar PID do processo
+echo $! > /tmp/sceap_scheduler.pid
+
+ETAPA 4: Verificar logs
+tail -f /tmp/sceap_scheduler.log
+
+D.3. PARAR AGENDAMENTO AUTOMÁTICO
+
+COMANDO:
+kill $(cat /tmp/sceap_scheduler.pid)
+
+VERIFICAÇÃO:
+ps aux | grep auto_update_scheduler
+
+────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO E: TRATAMENTO DE ERROS CRÍTICOS
+
+────────────────────────────────────────────────────────────────────────────────
+
+E.1. TABELA DE ERROS E SOLUÇÕES
+
+ERRO: "No module named 'schedule'"
+CAUSA: Pacote não instalado ou venv não ativado.
+SOLUÇÃO:
+  source venv_sceap/bin/activate
+  pip install schedule rich click
+
+ERRO: "FFmpeg not found"
+CAUSA: FFmpeg não instalado no sistema.
+SOLUÇÃO:
+  brew install ffmpeg
+  ffmpeg -version (verificar)
+
+ERRO: "SSL Certificate error"
+CAUSA: Certificados SSL do macOS não configurados (comum em macs isolados).
+SOLUÇÃO:
+  python3 /Applications/Python\ 3.x/Install\ Certificates.command
+  OU
+  python3 auto_update/fix_video_extraction.py
+
+ERRO: "Whisper model download failed"
+CAUSA: Conexão de internet ou cache corrompido.
+SOLUÇÃO:
+  mkdir -p ~/.cache/whisper
+  rm -rf ~/.cache/whisper/*
+  python3 auto_update/fix_video_extraction.py
+
+────────────────────────────────────────────────────────────────────────────────
+
+RESUMO DA PARTE VII:
+
+Esta seção fornece estrutura redacional completa para instalação técnica,
+incluindo: (a) Verificação pré-instalação; (b) Instalação em fases; (c) Testes
+validatórios; (d) Configuração avançada; (e) Tratamento de erros com mapeamento
+exaustivo. Cada comando é verificável, reversível e documentado conforme
+princípios ROM V3.0.
+
+═══════════════════════════════════════════════════════════════════════════════════
+PARTE VIII: NORMAS DE DIREITO TEMPORAL — LINDB ARTS. 1º-6º + ART. 14 CPC
+═══════════════════════════════════════════════════════════════════════════════════
+
+OBJETIVO DESTA PARTE:
+
+Adaptar os princípios de direito intertemporal (LINDB) para a finalização
+técnica de sistema em macOS, considerando: (a) Migração de versões anteriores
+do SCEAP; (b) Compatibilidade com versões legadas do Python e dependências;
+(c) Continuidade operacional durante transição; (d) Direitos e obrigações
+gerados em regimes anteriores.
+
+APLICAÇÃO FORENSE: Embora a LINDB seja norma de direito material/processual,
+seus princípios estruturam adequadamente os problemas de migração técnica,
+onde "lei anterior" = versão anterior do software e "lei posterior" = versão
+nova (V5.0).
+
+────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO A: ART. 1º LINDB — VIGÊNCIA DAS NORMAS
+
+────────────────────────────────────────────────────────────────────────────────
+
+Transposição para contexto técnico:
+
+VERSÃO ANTERIOR (V2.0): Modo de instalação e configuração anterior ao
+SCEAP V5.0, com dependências, estrutura de arquivos e convenções próprias.
+
+VERSÃO NOVA (V5.0): Modo de instalação revisado, com novas dependências,
+estrutura hierarquizada conforme padrão ROM V3.0, novos scripts de automação.
+
+PRINCÍPIO: Art. 1º LINDB: "Nenhuma lei será abrogada senão por outra lei."
+
+APLICAÇÃO TÉCNICA:
+
+A instalação de SCEAP V5.0 substitui integralmente a V2.0 no que toca a:
+- Estrutura de diretórios (/modulos/ → /auto_update/)
+- Arquivo de configuração (config_v2.json → config_template.json)
+- Dependências (requirements_v2.txt → requirements.txt atualizado)
+- Scripts de execução (run_v2.py → auto_update_scheduler)
+- Convenções de nomenclatura (conforme padrão ROM V3.0)
+
+MAS: Dados gerados pela V2.0 (vídeos extraídos, metadados, logs) continuam
+válidos e utilizáveis na V5.0, com conversão automatizada se necessário.
+
+────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO B: ART. 2º LINDB — EFICÁCIA RETROATIVA DE NORMAS
+
+────────────────────────────────────────────────────────────────────────────────
+
+Transposição para contexto técnico:
+
+Art. 2º LINDB: "A lei não prejudicará o direito adquirido, o ato jurídico
+perfeito e a coisa julgada."
+
+APLICAÇÃO TÉCNICA:
+
+A instalação de V5.0 NÃO prejudicará:
+
+1. DADOS JÁ EXTRAÍDOS (direito adquirido): Vídeos processados e metadados
+   gerados pela V2.0 continuam acessíveis e válidos na V5.0. Sistema
+   implementa compatibilidade para leitura de formato legado.
+
+2. CONFIGURAÇÕES VÁLIDAS (ato jurídico perfeito): Se admin criou configuração
+   válida em V2.0, V5.0 oferece migração automática ou manual para novo
+   formato (com validação).
+
+3. HISTÓRICO DE OPERAÇÕES (coisa julgada): Logs de execução, backups e
+   registros auditoria de V2.0 são preservados em diretório /legacy/ com
+   acesso restrito.
+
+IMPLEMENTAÇÃO TÉCNICA:
+
+# Script de migração preservador
+python3 auto_update/migrate_from_v2.py --preserve-data --validate-integrity
+
+Este script:
+- Lê dados em formato V2.0
+- Converte para formato V5.0 (com validação)
+- Cria backup de dados originais em /legacy/backup_v2/
+- Registra mapeamento em log de migração
+- Oferece rollback se necessário
+
+────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO C: ART. 3º LINDB — INTERPRETAÇÃO TRANSITÓRIA
+
+────────────────────────────────────────────────────────────────────────────────
+
+Art. 3º LINDB: "Ninguém se escusa de cumprir a lei alegando que a desconhece."
+
+APLICAÇÃO TÉCNICA:
+
+Admin que utiliza SCEAP V5.0 é responsável por:
+
+1. Ler integralmente este prompt (IAROM_IN003_FINALIZACAO_MAC_V5.0)
+2. Executar verificação pré-instalação (Parte VII, Seção A)
+3. Seguir fases de instalação estruturadas (Parte VII, Seção B)
+4. Não contornar validações ou testes críticos (Parte VII, Seção C)
+
+CONSEQUÊNCIA: Se admin ignora instruções e sistema falha, responsabilidade
+por falha é administrativo (não técnico): sistema funcionará conforme
+especificado se instruções forem seguidas.
+
+PROTEÇÃO DO SISTEMA: V5.0 implementa bloqueios para impedir execução com
+estado crítico não-resolvido (ex: sem FFmpeg → bloqueio de extração de vídeo).
+
+────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO D: ART. 4º LINDB — CONFLITO ENTRE NORMAS
+
+────────────────────────────────────────────────────────────────────────────────
+
+Art. 4º LINDB: "Quando a lei for omissa, o juiz decidirá o caso de
+acordo com a analogia, os costumes e os princípios gerais de direito."
+
+APLICAÇÃO TÉCNICA:
+
+Se situação de instalação/configuração NÃO é coberta explicitamente por
+este prompt (lacuna), aplicar analogicamente:
+
+1. ANALOGIA: Se problema de V5.0 é análogo a problema de V2.0 documentado,
+   aplicar solução de V2.0 com adaptações.
+
+2. COSTUMES: Se práticas instalação em comunidade macOS developer são
+   conhecidas (ex: uso de nvm para Node, pyenv para Python), aplicá-las
+   na medida compatível com ROM V3.0.
+
+3. PRINCÍPIOS GERAIS: Os princípios ROM (fidedignidade, conferibilidade,
+   anti-supressão) regem qualquer decisão técnica não-explícita.
+
+MECANISMO: Quando lacuna é identificada, marcar com [PENDENTE: descrição]
+e solicitar esclarecimento antes de prosseguir (nunca inventar solução).
+
+────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO E: ART. 5º LINDB — INTERPRETAÇÃO CONCILIADORA
+
+────────────────────────────────────────────────────────────────────────────────
+
+Art. 5º LINDB: "Na aplicação da lei, o juiz atenderá aos fins sociais a que
+ela se dirige e às exigências do bem comum."
+
+APLICAÇÃO TÉCNICA:
+
+SCEAP V5.0 é instalado para:
+1. Automatizar processos de extração de vídeo/áudio
+2. Integrar-se com sistema operacional macOS (bem comum = usabilidade)
+3. Manter compatibilidade com versões antigas (bem comum = continuidade)
+4. Permitir auditar todas operações (bem comum = segurança/conformidade)
+
+Qualquer decisão técnica conflitante deve ser resolvida prioridando:
+- Segurança de dados (acesso, backup, integridade)
+- Usabilidade (interface clara, erros diagnosticáveis)
+- Compatibilidade (com hardware, SO, versões anteriores)
+- Conformidade (logs completos, rastreabilidade)
+
+────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO F: ART. 6º LINDB — VIGÊNCIA ESPACIAL
+
+────────────────────────────────────────────────────────────────────────────────
+
+Art. 6º LINDB: "A lei entra em vigor na data que a própria lei fixa.
+Quando lei não designa data de vigência, entra em vigor trinta dias depois
+de oficialmente publicada."
+
+APLICAÇÃO TÉCNICA:
+
+SCEAP V5.0 entra em vigor:
+1. DATA EXPLÍCITA: Se admin executa "python3 auto_update/install_v5.0.py",
+   V5.0 entra em vigor IMEDIATAMENTE (data do comando).
+
+2. DATA IMPLÍCITA: Se admin apenas descarrega arquivo V5.0 mas NÃO executa
+   instalação, V2.0 continua em vigor (leitura do arquivo ≠ instalação).
+
+MECANISMO: Sistema mantém versão ativa em arquivo /VERSION ou variável
+ambiente SCEAP_VERSION. Ao iniciar, programa verifica:
+  - Qual versão está instalada? (lê /VERSION)
+  - Há versão mais nova disponível? (compara com repo)
+  - Admin autorizou upgrade? (se V5.0 detectada, pergunta: "Upgrade V2→V5?")
+
+────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO G: ART. 14 CPC — APLICAÇÃO DO DIREITO NO TEMPO
+
+────────────────────────────────────────────────────────────────────────────────
+
+Art. 14 CPC é norma sobre aplicação de lei no tempo (direito intertemporal).
+Transposição para migração técnica:
+
+ART. 14 VIGÊNCIA: "Enquanto não revogada, a lei será aplicada."
+
+APLICAÇÃO TÉCNICA:
+
+V2.0 permanece válida e aplicável enquanto:
+- Admin não executa instalação de V5.0
+- Dados de V2.0 continuam sendo gerados/utilizados
+- Nenhuma incompatibilidade foi introduzida no hardware/SO
+
+QUANDO V2.0 É REVOGADA:
+
+1. Instalação explícita de V5.0 (uninstall V2.0)
+2. OU: Detecção de SO incompatível com V2.0 (ex: macOS 14 Sonoma remove
+   suporte a Python 2.7, afetando alguns scripts legados)
+3. OU: Descoberta de vulnerabilidade crítica em V2.0 que força upgrade
+
+MECANISMO DE REVOGAÇÃO SEGURA:
+
+# Antes de revogação:
+python3 auto_update/backup_v2_state.py --full-backup
+# Cria: /legacy/backup_v2_full_TIMESTAMP/
+
+# Revogação:
+python3 auto_update/uninstall_v2.py --preserve-data
+# Remove V2.0, preserva dados em /legacy/
+
+# Rollback (se necessário):
+python3 auto_update/restore_v2.py --from /legacy/backup_v2_full_TIMESTAMP/
+# Restaura V2.0 do backup (com avisos de conflito se V5.0 já em uso)
+
+────────────────────────────────────────────────────────────────────────────────
+
+RESUMO DA PARTE VIII:
+
+Esta seção aplica princípios de direito intertemporal (LINDB) à finalização
+técnica, estruturando: (a) Vigência de versões; (b) Direitos adquiridos
+(dados legados); (c) Interpretação transitória (responsabilidade); (d)
+Conflitos normativos (lacunas); (e) Vigência temporal e espacial; (f)
+Revogação segura. Garante continuidade operacional e proteção de dados
+durante transição V2.0 → V5.0.
+
+═══════════════════════════════════════════════════════════════════════════════════
+PARTE IX: DIREITO MATERIAL — ESTRUTURA NORMATIVA VERTICAL E FORMATAÇÃO/PDF
+═══════════════════════════════════════════════════════════════════════════════════
+
+OBJETIVO DESTA PARTE:
+
+Estruturar direito material aplicável à finalização do SCEAP em macOS sob
+perspectiva de "normas técnicas" (análogo a códigos/leis), considerando:
+(a) Normas do SO macOS; (b) Convenções Python/CLI; (c) Padrão ROM V3.0;
+(d) Formatação e exportação para PDF. Demonstra aplicação de múltiplas
+"camadas normativas" simultâneas.
+
+────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO A: HIERARQUIA DE NORMAS TÉCNICAS APLICÁVEIS
+
+────────────────────────────────────────────────────────────────────────────────
+
+NÍVEL 1 (SUPREMO): Padrão ROM V3.0
+- Fidedignidade, conferibilidade, anti-supressão
+- Linguagem forense, formatação sóbria
+- Checklist exaustivo (100+ itens)
+- Aplicável a TODO documento gerado pelo sistema ROM
+
+NÍVEL 2 (CONSTITUCIONAL): macOS Operating System
+- Arquitetura UNIX/BSD
+- Sistema de arquivos (APFS)
+- Modelo de permissões POSIX
+- Variáveis de ambiente shell (zsh/bash)
+- Restrições Gatekeeper/Notarization (código assinado)
+
+NÍVEL 3 (LEGAL): Python Official Standards (PEP)
+- PEP 8 (Style Guide for Python Code)
+- PEP 257 (Docstring Conventions)
+- PEP 440 (Version Identification and Dependency Specification)
+- PEP 517 (A build-system independent format) para empacotamento
+
+NÍVEL 4 (REGULATÓRIO): Convenções CLI e DevOps
+- POSIX conventions (comando --help, --version)
+- Logging level standards (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+- Exit codes (0 = sucesso, >0 = erro)
+- Environment variables naming (UPPERCASE_WITH_UNDERSCORES)
+
+NÍVEL 5 (PRÁTICO): Regimento Interno do Projeto SCEAP
+- Estrutura de diretórios
+- Convenção de nomenclatura (arquivos, funções, classes)
+- Estrutura de config files (JSON, YAML)
+- Padrões de teste (unittest, pytest)
+
+────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO B: APLICAÇÃO VERTICAL DE NORMAS AO CASO CONCRETO
+
+────────────────────────────────────────────────────────────────────────────────
+
+SITUAÇÃO CONCRETA: Admin no macOS precisa verificar se SCEAP está funcionando.
+
+ANÁLISE VERTICAL (aplicando normas de todos os níveis):
+
+NÍVEL 1 (ROM V3.0): Comando de verificação deve
+- Retornar resposta fidedigna (não inventar status OK fictício)
+- Ser conferível (output deve poder ser validado manualmente)
+- Ser completo (não suprimir informações de erro)
+- Usar linguagem técnica clara (sem marcadores de IA)
+
+NÍVEL 2 (macOS): Comando deve
+- Ser executável em shell zsh (padrão em Catalina+)
+- Respeitar modelo POSIX de permissões (verificar rwx)
+- Usar variáveis ambiente padrão ($PATH, $HOME, $SHELL)
+- Ser compatível com ambos processadores (arm64 + x86_64)
+
+NÍVEL 3 (Python PEP): Código deve
+- Seguir PEP 8 (indentação 4 espaços, max 79 caracteres por linha)
+- Usar docstrings conforme PEP 257
+- Versionamento semântico (MAJOR.MINOR.PATCH)
+- Dependências em requirements.txt com pinning de versão
+
+NÍVEL 4 (CLI): Script deve
+- Aceitar flags: --help, --version, --verbose
+- Retornar exit code 0 (sucesso) ou >0 (erro)
+- Logar em stderr (não stdout)
+- Usar formatação padronizada: "[TIMESTAMP] [LEVEL] message"
+
+NÍVEL 5 (SCEAP): Deve
+- Listar status de cada módulo em ordem canônica
+- Persistir resultados em log em /var/log/sceap/ ou ~/.sceap/logs/
+- Comparar com último teste bem-sucedido
+- Sugerir ações corretivas se falha detectada
+
+COMANDO INTEGRADO (aplicando todos os níveis):
+
+python3 -m sceap.auto_update.cli check -r requirements.txt -v
+
+Output esperado (respeitando todos os níveis):
+─────────────────────────────────────────────────────────────────────────
+SCEAP AutoUpdate Checker (v5.0.1) — 2026-03-26 14:25:33 UTC
+macOS 14.3.1 Sonoma | arm64 Apple Silicon | Python 3.11.7
+─────────────────────────────────────────────────────────────────────────
+[2026-03-26 14:25:33] [INFO] Iniciando verificação de atualizações...
+[2026-03-26 14:25:33] [DEBUG] Lendo requirements.txt
+[2026-03-26 14:25:34] [DEBUG] Consultando PyPI API
+[2026-03-26 14:25:45] [INFO] Verificação concluída
+
+RESULTADO:
+─────────────────────────────────────────────────────────────────────────
+schedule: 1.1.9 → 1.2.0 (DISPONÍVEL)
+rich: 13.1.2 → 13.3.0 (DISPONÍVEL)
+click: 8.1.3 → 8.1.4 (DISPONÍVEL)
+
+RESUMO: 3 atualizações disponíveis | Taxa de atualização: 100%
+─────────────────────────────────────────────────────────────────────────
+[2026-03-26 14:25:45] [INFO] Próxima verificação: 2026-03-27 14:25:33
+
+Exit code: 0 (sucesso, sistema operacional, atualizações disponíveis)
+─────────────────────────────────────────────────────────────────────────
+
+Esta saída respeita:
+- ROM V3.0: Fidedigno (números reais), conferível (timestamps), completo
+- macOS: Shell compatibility (zsh), processador identificado, versão SO
+- PEP: Separação clara de output (INFO vs DEBUG), formatação padrão
+- CLI: Exit code 0, uso correto de streams, formato estruturado
+- SCEAP: Ordem canônica, log persistido, próxima ação indicada
+
+────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO C: FORMATAÇÃO PARA PDF (EXPORT TÉCNICO)
+
+────────────────────────────────────────────────────────────────────────────────
+
+C.1. GERAÇÃO DE RELATÓRIO EM MARKDOWN
+
+COMANDO:
+python3 -m sceap.auto_update.cli report -r requirements.txt \
+  -o ~/Desktop/relatorio_SCEAP_v5_20260326.md
+
+Formato Markdown permite:
+- Conversão para PDF (via pandoc)
+- Versionamento em Git
+- Estrutura hierárquica clara (headings 1-6)
+- Suporte a tabelas, código, listas
+
+C.2. ESTRUTURA DO RELATÓRIO MARKDOWN
+
+# RELATÓRIO DE INSTALAÇÃO — SCEAP V5.0 MAC
+
+Data: 2026-03-26 | Admin: [NOME] | Mac: [MODELO] | macOS: [VERSÃO]
+
+## 1. RESUMO EXECUTIVO
+
+- Sistema SCEAP V5.0 instalado com sucesso
+- 91/91 dependências validadas (100%)
+- Nenhum erro crítico detectado
+- Recomendações: [listar se houver]
+
+## 2. AMBIENTE
+
+| Campo | Valor |
+|-------|-------|
+| macOS | 14.3.1 Sonoma |
+| Processador | arm64 (Apple Silicon M3 Max) |
+| Python | 3.11.7 |
+| Pip | 23.3.2 |
+| Git | 2.40.0 |
+
+## 3. VERIFICAÇÃO DE DEPENDÊNCIAS
+
+### 3.1 Dependências Core
+
+| Pacote | Versão Instalada | Status |
+|--------|------------------|--------|
+| schedule | 1.1.9 | ✓ OK |
+| rich | 13.1.2 | ✓ OK |
+| click | 8.1.3 | ✓ OK |
+
+### 3.2 Dependências de Vídeo (Opcional)
+
+| Pacote | Versão Instalada | Status |
+|--------|------------------|--------|
+| openai-whisper | 20230314 | ✓ OK |
+| ffmpeg-python | 0.2.1 | ✓ OK |
+| moviepy | 1.0.3 | ✓ OK |
+| pydub | 0.25.1 | ✓ OK |
+
+## 4. TESTES EXECUTADOS
+
+### 4.1 Teste de Importação Python
+```
+python3 -c "import schedule; import rich; import click; print('OK')"
+Resultado: OK ✓
+Timestamp: 2026-03-26 14:25:33
+```
+
+### 4.2 Teste de Validação do Sistema
+```
+python3 -m sceap.auto_update.cli validate -r requirements.txt
+Resultado: Validation passed: 91/91 tests
+Success rate: 100%
+```
+
+### 4.3 Teste de Extração de Vídeo
+```
+python3 test_video_extraction.py "/caminho/para/video.mp4"
+Resultado: Metadata extraction successful
+Confidence: 95%
+```
+
+## 5. LOGS E REGISTROS
+
+[Seção contém excerpt de /tmp/sceap_autoupdate.log]
+
+## 6. RECOMENDAÇÕES
+
+1. Habilitar agendamento automático (opcional, não crítico)
+2. Backup semanal de ~/sceap/
+3. Monitorar /tmp/sceap_scheduler.log mensalmente
+
+---
+
+Relatório gerado por: SCEAP AutoUpdate CLI v5.0.1
+Assinado eletronicamente conforme padrões ROM V3.0
+
+C.3. CONVERSÃO MARKDOWN → PDF
+
+COMANDO (requer pandoc):
+brew install pandoc
+
+pandoc ~/Desktop/relatorio_SCEAP_v5_20260326.md \
+  --from markdown \
+  --to pdf \
+  --output ~/Desktop/relatorio_SCEAP_v5_20260326.pdf \
+  --template eisvogel \
+  --number-sections
+
+RESULTADO: PDF profissional com:
+- Título, autor, data
+- Índice automático
+- Numeração de seções
+- Quebras de página automáticas
+- Formatação tipográfica profissional
+
+C.4. ESTRUTURA LEGAL DO PDF (ROM V3.0)
+
+PDF deve conter (conforme modelo jurídico):
+
+[CAPA]
+RELATÓRIO TÉCNICO DE INSTALAÇÃO
+Sistema SCEAP — Versão 5.0
+macOS Finalização
+Data: 26 de março de 2026
+
+[ASSINATURA]
+Responsável Técnico: [NOME]
+OAB/Go [NÚMERO] (se aplicável)
+Rodolfo Otavio Mota Advogados Associados
+
+[ÍNDICE]
+Gerado automaticamente
+
+[CORPO]
+Seções 1-6 conforme Markdown
+
+[ANEXOS]
+A. Logs completos de instalação
+B. Saída de diagnóstico
+C. Configuração final (config.json)
+D. Versões de cada dependência (requirements.txt)
+
+────────────────────────────────────────────────────────────────────────────────
+
+RESUMO DA PARTE IX:
+
+Esta seção estrutura direito material (normas técnicas em hierarquia) e
+demonstra aplicação vertical a caso concreto. Define padrão de exportação
+para PDF (relatório final) conforme modelo forense ROM V3.0, permitindo
+protocolo e arquivamento de prova técnica de instalação bem-sucedida.
+Formatação dual: Markdown (versão controle) + PDF (protocolo/arquivo).
+
+═══════════════════════════════════════════════════════════════════════════════════
+PARTE XIII: DISTINGUISHING TÉCNICO — SOLUÇÃO DE CONFLITOS ENTRE VERSÕES E PARADIGMAS
+═══════════════════════════════════════════════════════════════════════════════════
+
+OBJETIVO DESTA PARTE:
+
+Fornecer técnicas de distinguishing (diferenciação) análogas ao método
+jurídico, aplicadas a conflitos técnicos: quando versão anterior (V2.0)
+aponta para solução diferente de versão nova (V5.0), como proceder?
+Inclui overruling técnico (quando V5.0 revoga V2.0 explicitamente).
+
+────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO A: MODELO 1 — DISTINGUISHING DE CONFIGURAÇÃO LEGADA
+
+────────────────────────────────────────────────────────────────────────────────
+
+SITUAÇÃO: Admin tem config_v2.json (V2.0) e quer usá-la em V5.0.
+V2.0 sugeria: config_v2.json com campo "use_gpu": true
+V5.0 exige: config_template.json sem campo "use_gpu" (substituído por "whisper_model")
+
+QUESTÃO: A configuração legada (use_gpu) aplica-se a V5.0?
+
+RESPOSTA (DISTINGUISHING):
+
+A configuração legada NÃO se aplica a V5.0, pelos seguintes motivos:
+
+1. MUDANÇA DE ARQUITETURA
+   V2.0 usava TensorFlow (otimizado para GPU)
+   V5.0 usa OpenAI Whisper (GPU é optional)
+   Configuração de GPU é obsoleta em V5.0.
+
+2. CAMPO NÃO MAPEÁVEL
+   "use_gpu" (V2.0) → NÃO EXISTS em V5.0
+   Conversão automática é impossível (não há equivalência 1:1)
+
+3. PRECEDENTE TÉCNICO
+   Versão posterior (V5.0) é VINCULANTE (art. 927 CPC analogia)
+   Admin não pode usar V2.0 config file em V5.0 sem conversão validada
+
+CONSEQUÊNCIA:
+
+Admin DEVE:
+1. Descartar config_v2.json
+2. Usar config_template.json novo
+3. Reconfigura campos aplicáveis manualmente
+4. Se dado crítico em V2.0: tentar migração automática com:
+   python3 auto_update/migrate_config_v2_to_v5.py --from config_v2.json
+
+────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO B: MODELO 2 — DISTINGUISHING DE ESTRUTURA DE DIRETÓRIOS
+
+────────────────────────────────────────────────────────────────────────────────
+
+SITUAÇÃO: V2.0 usava diretório /modulos/ para scripts especializados
+V5.0 usa diretório /auto_update/ (padrão ROM V3.0)
+
+Admin tem scripts customizados em /modulos/ e quer mantê-los.
+
+QUESTÃO: Scripts de /modulos/ continuam funcionando em V5.0?
+
+RESPOSTA (DISTINGUISHING):
+
+A estrutura de V2.0 NÃO é diretamente aplicável a V5.0, PORÉM há
+exceções (distinguishing):
+
+REGRA GERAL (V5.0 sobrepõe V2.0):
+- Código oficial deve estar em /auto_update/
+- V2.0 scripts em /modulos/ devem ser reescrito
+
+EXCEÇÃO 1: Scripts de Terceiros (Customizações do Admin)
+Se script customizado (não parte de SCEAP oficial) foi criado por admin em
+/modulos/, ele PODE ser preservado EM PASTA SEPARADA:
+  /custom_modules/  (novo diretório)
+
+Razão da exceção: Não é responsabilidade de SCEAP suportar código customizado
+do admin, mas preservá-lo não prejudica funcionamento de V5.0.
+
+EXCEÇÃO 2: Dados Gerados (Não Código)
+Dados gerados por V2.0 scripts (ex: metadados extraídos) devem ser preservados
+independente de estrutura de diretórios:
+  /legacy/data_v2_extracted/  (diretório de compatibilidade)
+
+Razão da exceção: Dados são responsabilidade de SCEAP (direito adquirido do
+admin), código é responsabilidade do admin.
+
+CONSEQUÊNCIA:
+
+Admin DEVE:
+1. Revisar cada script em /modulos/
+2. Se oficial (parte de SCEAP): reescrever conforme padrão V5.0 em /auto_update/
+3. Se customizado: copiar para /custom_modules/ com aviso de incompatibilidade
+4. Se dados: copiar para /legacy/data_v2_extracted/ com catalogação
+5. Remover /modulos/ antigo apenas após validação completa
+
+────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO C: MODELO 3 — DISTINGUISHING DE DEPENDÊNCIA CONFLITANTE
+
+────────────────────────────────────────────────────────────────────────────────
+
+SITUAÇÃO: V2.0 exigia "requests==2.25.1" (antiga)
+V5.0 exige "requests>=2.31.0" (recente, com correções de segurança)
+
+Admin tem "requests==2.25.1" instalado globalmente (pip list mostra isso)
+
+QUESTÃO: Pode instalar V5.0 sem atualizar requests?
+
+RESPOSTA (DISTINGUISHING + VALIDAÇÃO):
+
+NÃO. requests==2.25.1 é INCOMPATÍVEL com V5.0, pelos seguintes motivos:
+
+1. SEGURANÇA: requests 2.25.1 tem 3 CVEs conhecidas
+2. COMPATIBILIDADE: V5.0 usa features disponíveis apenas em 2.31.0+
+3. PRECEDENTE TÉCNICO: Requerimento de V5.0 é vinculante
+
+ENTRETANTO: admin pode COEXISTIR ambas versões usando virtualenv:
+
+DISTINGUISHING (exceção ao bloqueio):
+
+# V5.0 em virtualenv separado
+python3 -m venv venv_sceap_v5
+source venv_sceap_v5/bin/activate
+pip install -r requirements.txt  # instala requests 2.31.0 NESTE venv
+
+# V2.0 permanece em sistema global (se necessário)
+# Mas SCEAP V5.0 sempre usa venv_sceap_v5 (isolado)
+
+CONSEQUÊNCIA:
+
+1. V5.0 funciona com sua própria versão de requests (2.31.0+)
+2. V2.0 (se mantido) funciona com sua versão antiga
+3. Não há conflito porque estão em ambientes isolados
+4. Admin deve ATIVAR venv antes de usar V5.0:
+   source venv_sceap_v5/bin/activate
+
+────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO D: MODELO 4 — OVERRULING TÉCNICO (V5.0 REVOGA V2.0)
+
+────────────────────────────────────────────────────────────────────────────────
+
+SITUAÇÃO: V2.0 admitia iniciar SCEAP manualmente com:
+  python3 /path/to/sceap_v2.py
+
+V5.0 NÃO suporta este método direto. Exige:
+  python3 -m sceap.auto_update.cli check -r requirements.txt
+
+Admin quer usar método antigo de V2.0.
+
+QUESTÃO: Método de V2.0 continua válido em V5.0?
+
+RESPOSTA (OVERRULING — V5.0 REVOGA EXPLICITAMENTE V2.0):
+
+NÃO. Método de V2.0 é REVOGADO (overruling), pelos seguintes motivos:
+
+1. MUDANÇA ARQUITETURAL: V5.0 reorganizou package structure
+   /modulos/sceap_v2.py → /auto_update/cli.py (novo namespace)
+
+2. CLI MODULAR: V5.0 usa interface CLI robusta (via Click library)
+   Método direto (python3 sceap.py) é inseguro em V5.0
+
+3. PRECEDENTE VINCULANTE: Documentação V5.0 (este prompt) é
+   normativa (art. 927 CPC analogia) para formato oficial
+
+SOLUÇÃO (OVERRULING SEGURO):
+
+Admin que precisa de compatibilidade máxima pode criar wrapper:
+
+# /custom_modules/sceap_v2_compat.py
+#!/usr/bin/env python3
+"""Wrapper de compatibilidade V2.0 → V5.0 (DEPRECATED)"""
+
+import subprocess
+import sys
+
+def main():
+    # Redireciona comando antigo para novo
+    cmd = ["python3", "-m", "sceap.auto_update.cli", "check", 
+           "-r", "requirements.txt"]
+    result = subprocess.run(cmd)
+    sys.exit(result.returncode)
+
+if __name__ == "__main__":
+    main()
+
+# Uso: python3 sceap_v2_compat.py
+# Internamente: chama V5.0 cli corretamente
+
+CONSEQUÊNCIA:
+
+1. Método V2.0 (python3 sceap.py) é REVOGADO
+2. Método V5.0 é OBRIGATÓRIO (python3 -m sceap.auto_update.cli)
+3. Compatibilidade é possível via wrapper (cria ilusão de V2.0)
+4. Wrapper deve ter aviso: "DEPRECATED: use V5.0 CLI directly"
+
+────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO E: MATRIZ DE DECISÃO — DISTINGUISHING VS OVERRULING
+
+────────────────────────────────────────────────────────────────────────────────
+
+Quando encontrar conflito V2.0 vs V5.0, usar matriz:
+
+┌──────────────────┬─────────────────┬──────────────────┬──────────────────┐
+│ TIPO DE CONFLITO │ PODE COEXISTIR? │ DECISÃO          │ AÇÃO             │
+├──────────────────┼─────────────────┼──────────────────┼──────────────────┤
+│ Configuração     │ NÃO             │ DISTINGUISHING   │ Migrar/descartar │
+│ Dependência      │ SIM (venv)      │ DISTINGUISHING   │ Isolação         │
+│ Estrutura dir    │ PARCIAL         │ DISTINGUISHING   │ Preservar dados  │
+│ Formato código   │ NÃO             │ OVERRULING       │ Reescrever       │
+│ API/Interface    │ NÃO             │ OVERRULING       │ Wrapper (temp)   │
+│ Dados (output)   │ SIM             │ COMPATIBILIDADE  │ Converter        │
+│ Segurança        │ NÃO             │ OVERRULING       │ Atualizar        │
+└──────────────────┴─────────────────┴──────────────────┴──────────────────┘
+
+LÓGICA:
+- Se pode coexistir: DISTINGUISHING (preservar, isolar)
+- Se não pode coexistir: OVERRULING (revoga V2.0, força V5.0)
+- Se é dados: compatibilidade (converter se possível)
+- Se é segurança: sempre OVERRULING (V5.0 obrigatório)
+
+────────────────────────────────────────────────────────────────────────────────
+
+RESUMO DA PARTE XIII:
+
+Fornece técnicas de distinguishing (diferenciação técnica entre V2.0 e V5.0)
+e overruling (quando V5.0 revoga explicitamente V2.0), com 4 modelos concretos
+e matriz de decisão. Permite admin navegar transição V2.0→V5.0 de forma
+estruturada, sem perder dados ou configurações críticas.
+
+═══════════════════════════════════════════════════════════════════════════════════
+STANDARD PROBATÓRIO — VALIDAÇÃO DE INSTALAÇÃO
+═══════════════════════════════════════════════════════════════════════════════════
+
+OBJETIVO DESTA PARTE:
+
+Estabelecer "standard probatório" (padrão de prova) para validação de
+instalação bem-sucedida do SCEAP V5.0. Análogo a "além da dúvida razoável"
+em direito penal. Que nível de evidência é suficiente para afirmar que
+"SCEAP está instalado corretamente"?
+
+────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO A: STANDARD PREPONDERÂNCIA (MÍNIMO)
+
+────────────────────────────────────────────────────────────────────────────────
+
+DEFINIÇÃO: 50%+ de evidência de funcionamento. Instalação é considerada
+"provavelmente bem-sucedida".
+
+EVIDÊNCIAS NECESSÁRIAS:
+
+1. Arquivo ~/Desktop/sceap_auto_update.zip foi extraído
+   [ ] ls -la ~/Desktop/ | grep auto_update
+
+2. Diretório /caminho/do/seu/sceap/auto_update/ existe
+   [ ] test -d /caminho/do/seu/sceap/auto_update && echo "OK"
+
+3. Python 3.9+ está instalado
+   [ ] python3 --version | grep -E "3\.[9-9]|4\."
+
+4. Pip consegue listar pacotes
+   [ ] pip3 list | head -5
+
+CONCLUSÃO (STANDARD PREPONDERÂNCIA):
+Se 3 ou 4 de 4 evidências estão presentes, instalação passou em padrão mínimo.
+Funcionar real: 60-70% de confiança.
+
+INSUFICIENTE PARA: Uso em produção. Apenas para diagnóstico inicial.
+
+────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO B: STANDARD CLARA E CONVINCENTE (INTERMEDIÁRIO)
+
+────────────────────────────────────────────────────────────────────────────────
+
+DEFINIÇÃO: Evidência clara de funcionamento da maioria dos componentes.
+Confiança: 80-90%.
+
+EVIDÊNCIAS NECESSÁRIAS:
+
+1. (PREPONDERÂNCIA) Todos 4 acima
+2. Pacotes Python foram instalados com sucesso
+   [ ] pip3 list | grep -E "schedule|rich|click"
+3. FFmpeg foi instalado (se video extraction habilitado)
+   [ ] ffmpeg -version | head -1
+4. Script de diagnóstico executa sem erro crítico
+   [ ] python3 auto_update/diagnose_video_extraction.py | grep -v WARNING
+5. Teste de validação sistema passa
+   [ ] python3 -m sceap.auto_update.cli validate -r requirements.txt | grep "100%"
+
+CONCLUSÃO (STANDARD CLARA E CONVINCENTE):
+Se todas 5 evidências estão presentes, instalação está funcionando em
+aspecto geral. Confiança: 85%.
+
+ADEQUADO PARA: Desenvolvimento, testes internos, prototipagem.
+
+────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO C: STANDARD ALÉM DA DÚVIDA RAZOÁVEL (RIGOROSO)
+
+────────────────────────────────────────────────────────────────────────────────
+
+DEFINIÇÃO: Evidência de funcionamento completo de TODOS os componentes,
+sem exceção. Instalação está pronta para produção.
+
+EVIDÊNCIAS NECESSÁRIAS (TODAS):
+
+1. (CLARA E CONVINCENTE) Todos 5 acima
+2. Teste de extração de vídeo real funciona
+   [ ] python3 test_video_extraction.py "/caminho/video_teste.mp4" | grep "successful"
+3. Agendamento automático foi habilitado e está ativo
+   [ ] ps aux | grep sceap_scheduler | grep -v grep
+4. Logs estão sendo gerados corretamente
+   [ ] tail -5 /tmp/sceap_scheduler.log | grep -v DEBUG
+5. Backup foi criado e é resgatável
+   [ ] ls -la /caminho/do/seu/sceap/auto_update/backups/ | wc -l | awk '{if ($1 > 0) print "OK"}'
+6. Relatório final pode ser exportado (PDF)
+   [ ] python3 -m sceap.auto_update.cli report -r requirements.txt -o ~/teste_report.md
+
+CONCLUSÃO (STANDARD ALÉM DA DÚVIDA RAZOÁVEL):
+Se TODAS 6 evidências estão presentes (executadas e verificadas), instalação
+está PRONTA PARA PRODUÇÃO. Confiança: 99%+.
+
+ADEQUADO PARA: Produção, operação crítica, ambientes com conformidade
+regulatória.
+
+────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO D: CHECKLIST DE VALIDAÇÃO ESTRATIFICADA
+
+────────────────────────────────────────────────────────────────────────────────
+
+[ ] STANDARD PREPONDERÂNCIA (Mínimo)
+  [ ] Arquivo extraído
+  [ ] Diretório existe
+  [ ] Python 3.9+
+  [ ] Pip funciona
+  → Resultado: ___/4
+
+[ ] STANDARD CLARA E CONVINCENTE (Intermediário)
+  [ ] (Todos acima)
+  [ ] Pacotes Python instalados
+  [ ] FFmpeg instalado
+  [ ] Diagnóstico executa
+  [ ] Validação sistema passa
+  → Resultado: ___/5
+
+[ ] STANDARD ALÉM DA DÚVIDA RAZOÁVEL (Rigoroso)
+  [ ] (Todos acima)
+  [ ] Teste vídeo real funciona
+  [ ] Agendador ativo
+  [ ] Logs gerados
+  [ ] Backup criado
+  [ ] Relatório exportável
+  → Resultado: ___/6
+
+────────────────────────────────────────────────────────────────────────────────
+
+RESUMO DO STANDARD PROBATÓRIO:
+
+Estabelece 3 níveis de evidência para validação de instalação, análogos a
+padrões jurídicos. Permite admin determinar se instalação está "apenas
+começando", "funcionando bem" ou "pronta para produção" baseado em evidências
+verificáveis. Standard rigoroso garante confiança 99%+ para uso crítico.
+
+═══════════════════════════════════════════════════════════════════════════════════
+PARTE XV: TRATADOS — DOCUMENTAÇÃO ELETRÔNICA E COMPATIBILIDADE TÉCNICA
+═══════════════════════════════════════════════════════════════════════════════════
+
+OBJETIVO DESTA PARTE:
+
+Adaptar conceitos de "tratados internacionais" (acordos entre países) para
+"convenções técnicas internacionais" (padrões adotados globalmente). Documentar
+como SCEAP V5.0 adere a padrões de documentação eletrônica e formatação.
+
+────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO A: TRATADO 1 — ISO 27001 (SEGURANÇA DE INFORMAÇÃO)
+
+────────────────────────────────────────────────────────────────────────────────
+
+NORMA: International Organization for Standardization (ISO) 27001
+ESCOPO: Information Security Management System (ISMS)
+
+CLÁUSULAS CRÍTICAS PARA SCEAP V5.0:
+
+Cláusula A.8.2 — Asset Management
+"Informação deve ser classificada e registrada"
+
+IMPLEMENTAÇÃO EM SCEAP:
+- Dados de vídeo: CLASSIFICAÇÃO: Sensível (pode conter informações pessoais)
+- Metadados extraídos: CLASSIFICAÇÃO: Confidencial (não publicar)
+- Logs de operação: CLASSIFICAÇÃO: Interno (auditoria)
+
+Localização:
+/caminho/do/seu/sceap/data/assets/classification.json
+
+Exemplo:
+{
+  "video_files": {"classification": "sensível", "retention": "90 dias"},
+  "extracted_metadata": {"classification": "confidencial", "retention": "indefinido"},
+  "system_logs": {"classification": "interno", "retention": "30 dias"}
+}
+
+Cláusula A.12.4 — Logging and Monitoring
+"Logs devem ser mantidos e regularmente revisados"
+
+IMPLEMENTAÇÃO EM SCEAP:
+- Logs salvos em: /var/log/sceap/ (Linux) ou ~/.sceap/logs/ (macOS)
+- Retenção: Mínimo 90 dias
+- Rotação automática: sceap_logrotate.service (se usar systemd em Linux)
+
+Comando de auditoria:
+find ~/.sceap/logs/ -name "*.log" -mtime +90 -delete  # Limpar logs antigos
+
+────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO B: TRATADO 2 — RFC 3161 (TIMESTAMP DIGITAL)
+
+────────────────────────────────────────────────────────────────────────────────
+
+NORMA: Request for Comments 3161 (Internet Engineering Task Force)
+ESCOPO: Time-Stamp Protocol (TSP) para assinatura de documentos
+
+PROPÓSITO: Provar que documento foi criado em data/hora específica
+(relevante para conformidade legal).
+
+IMPLEMENTAÇÃO EM SCEAP:
+
+Cada relatório gerado deve ter timestamp RFC 3161:
+
+COMANDO:
+python3 -m sceap.auto_update.cli report -r requirements.txt \
+  -o ~/relatorio.md --timestamp rfc3161
+
+Saída inclui:
+-----BEGIN TIMESTAMP RESPONSE-----
+[dados codificados base64]
+-----END TIMESTAMP RESPONSE-----
+
+VERIFICAÇÃO POSTERIOR (prova criptográfica):
+
+openssl ts -verify -in relatorio.tsr -data relatorio.md -CAfile ca.pem
+
+Resultado esperado:
+"Verification: OK"
+
+VALOR JURÍDICO: Timestamp RFC 3161 é aceitável em processos judiciais como
+prova de autenticidade e data de criação.
+
+────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO C: TRATADO 3 — UTF-8 (CODIFICAÇÃO DE CARACTERES)
+
+────────────────────────────────────────────────────────────────────────────────
+
+NORMA: Unicode Standard / RFC 3629 (UTF-8)
+ESCOPO: Codificação universal de caracteres
+
+RAZÃO: SCEAP processa textos em português (acentos, til, cedilha).
+UTF-8 é padrão de facto global para Web, Linux, macOS.
+
+IMPLEMENTAÇÃO OBRIGATÓRIA:
+
+ARQUIVO 1: Python source code
+# -*- coding: utf-8 -*-  [Declaração obrigatória em todo .py]
+
+Exemplo:
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Módulo SCEAP de extração de vídeo
+Suporta caracteres acentuados: àáâãäå...
+"""
+
+ARQUIVO 2: Config files
+config.json (salvar com encoding UTF-8, sem BOM)
+
+nano auto_update/config.json
+(Salvar com Ctrl+X → Y → [sem BOM])
+
+ARQUIVO 3: Documentação e relatórios
+Markdown, PDF, TXT: SEMPRE UTF-8
+
+Verificação:
+file -i ~/relatorio.md
+Saída esperada: text/plain; charset=utf-8
+
+────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO D: TRATADO 4 — POSIX (PORTABLE OPERATING SYSTEM INTERFACE)
+
+────────────────────────────────────────────────────────────────────────────────
+
+NORMA: IEEE 1003.1 (POSIX)
+ESCOPO: Interface portável entre sistemas operacionais
+
+APLICAÇÃO A SCEAP:
+
+Objetivo: SCEAP V5.0 deve funcionar em macOS, Linux, e idealmente Windows
+(via WSL — Windows Subsystem for Linux).
+
+CLÁUSULAS CRÍTICAS:
+
+1. Caminhos de arquivo: Usar / (não \)
+   ✓ CORRETO: /caminho/do/arquivo
+   ✗ ERRADO: \caminho\do\arquivo
+
+2. Variáveis de ambiente: UPPERCASE com underscore
+   ✓ CORRETO: $SCEAP_HOME, $PYTHONPATH
+   ✗ ERRADO: $ScaepHome, $python.path
+
+3. Scripts shell: Usar #!/bin/bash ou #!/bin/zsh (não hardcode caminhos)
+   #!/bin/bash  # Funciona em macOS, Linux, WSL
+
+4. Permissões: POSIX chmod (rwxrwxrwx = 777)
+   chmod 755 auto_update/*.sh  # Executáveis
+   chmod 644 *.py              # Legíveis, não executáveis
+
+5. Newline: LF (\n) em vez de CRLF (\r\n)
+   git config core.autocrlf false  # Prevenir conversão automática
+
+VERIFICAÇÃO DE COMPATIBILIDADE POSIX:
+
+shellcheck auto_update/*.sh  # Lint shell scripts (requer: brew install shellcheck)
+
+────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO E: TRATADO 5 — SEMVER (SEMANTIC VERSIONING)
+
+────────────────────────────────────────────────────────────────────────────────
+
+NORMA: Semantic Versioning 2.0.0 (www.semver.org)
+ESCOPO: Versionamento consistente de software
+
+FORMATO: MAJOR.MINOR.PATCH
+Exemplo: 5.0.1
+
+SIGNIFICADO:
+
+MAJOR (5): Muda quando há mudanças NÃO compatíveis com versão anterior
+  Exemplo: V4→V5 (estrutura de diretórios muda, API muda)
+  Consequência: Admin deve validar tudo novamente
+
+MINOR (0): Muda quando há funcionalidade NOVA mas compatível
+  Exemplo: V5.0→V5.1 (novo campo em config, mas config_v5.0 ainda funciona)
+  Consequência: Upgrade é seguro
+
+PATCH (1): Muda quando há apenas BUG FIXES
+  Exemplo: V5.0→V5.0.1 (corrige erro em diagnóstico)
+  Consequência: Upgrade é recomendado
+
+IDENTIFICAÇÃO DA VERSÃO EM SCEAP:
+
+cat auto_update/__version__.py
+Saída esperada:
+__version__ = "5.0.1"
+__major__ = 5
+__minor__ = 0
+__patch__ = 1
+
+COMANDO:
+python3 -m sceap.auto_update.cli version
+Saída: "SCEAP AutoUpdate CLI v5.0.1"
+
+────────────────────────────────────────────────────────────────────────────────
+
+RESUMO DA PARTE XV:
+
+Documenta 5 "tratados técnicos" (padrões internacionais): ISO 27001 (segurança),
+RFC 3161 (timestamp), UTF-8 (codificação), POSIX (portabilidade), SEMVER
+(versionamento). Garante que SCEAP V5.0 adere a padrões globais, facilitando
+compatibilidade, segurança e conformidade regulatória.
+
+═══════════════════════════════════════════════════════════════════════════════════
+PARTE XXII: DISSÍDIOS JURISPRUDENCIAIS — DIVERGÊNCIA EM FORMATAÇÃO STJ/FINALIZACAO
+═══════════════════════════════════════════════════════════════════════════════════
+
+OBJETIVO DESTA PARTE:
+
+Mapear "dissídios" (divergências de entendimento) entre diferentes abordagens
+de formatação e finalização, similar a jurisprudência divergente no STJ.
+Apresentar teses concorrentes e indicar qual é OBRIGATÓRIA em SCEAP V5.0.
+
+────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO A: DISSÍDIO 1 — DIRETÓRIO RAIZ DO PROJETO
+
+────────────────────────────────────────────────────────────────────────────────
+
+TESE A (V2.0 legacy): Projeto SCEAP no diretório de origem do developer
+  /Users/[USERNAME]/projects/sceap/
+  /home/[USERNAME]/dev/sceap/
+
+TESE B (V5.0 padrão ROM): Projeto SCEAP no diretório específico conforme
+sistema operacional
+
+  macOS: /Applications/SCEAP/ ou ~/Applications/SCEAP/
+  Linux: /opt/sceap/ ou /usr/local/sceap/
+  Desenvolvimento: ~/projects/sceap/ (apenas para dev local)
+
+RESOLUÇÃO (STJ-ANALÓGICO):
+
+TESE B é OBRIGATÓRIA para instalação oficial de V5.0.
+Razão: Padronização conforme FHS (Filesystem Hierarchy Standard).
+
+PRECEDENTE:
+"Instalação de software profissional deve seguir convenção do SO
+(FHS em Linux, /Applications em macOS), não preferência pessoal do
+developer." — Jurisprudência de melhores práticas DevOps.
+
+CONSEQUÊNCIA:
+
+Admin DEVE:
+1. Para uso PESSOAL (desenvolvimento): Tese A é aceitável (~Projects/)
+2. Para uso PROFISSIONAL/PRODUÇÃO: Tese B obrigatória (/Applications/SCEAP)
+3. Documentar qual tese está sendo seguida no arquivo /VERSION
+
+────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO B: DISSÍDIO 2 — FORMATO DE CONFIGURAÇÃO
+
+────────────────────────────────────────────────────────────────────────────────
+
+TESE A (V2.0 legacy): INI files (config.ini com seções [section])
+
+[scheduler]
+interval = 86400
+enable_auto_update = false
+
+[logging]
+level = INFO
+file = /tmp/sceap.log
+
+TESE B (V5.0 padrão): JSON files (config.json com estrutura hierárquica)
+
+{
+  "scheduler": {
+    "interval": 86400,
+    "enable_auto_update": false
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "/tmp/sceap.log"
+  }
+}
+
+TESE C (Alternativa moderna): YAML (config.yaml, mais legível)
+
+scheduler:
+  interval: 86400
+  enable_auto_update: false
+logging:
+  level: INFO
+  file: /tmp/sceap.log
+
+RESOLUÇÃO (STJ-ANALÓGICO):
+
+TESE B (JSON) é OBRIGATÓRIA para V5.0.
+Razão: JSON é nativo em Python (stdlib json module), validação Schema
+possível, e é padrão em ecossistema Node.js (V5.0 pode evoluir para
+TypeScript futuramente).
+
+PRECEDENTE:
+"Formato de configuração deve ser suportado nativamente pela linguagem
+e permitir schema validation. JSON atende ambos requisitos." — Jurisprudência
+de portabilidade.
+
+CONSEQUÊNCIA:
+
+Admin DEVE usar config.json (TESE B).
+Se possui config.ini legado: migrar com ferramenta automática:
+
+python3 auto_update/migrate_config_ini_to_json.py --from config.ini --to config.json
+
+────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO C: DISSÍDIO 3 — FORMATO DE SAÍDA (OUTPUT)
+
+────────────────────────────────────────────────────────────────────────────────
+
+TESE A (Simples, V2.0): Plain text, sem cores
+  "System check: OK"
+  "Update available: 3"
+
+TESE B (Interativo, V5.0 recomendado): Rich colored output (lib rich)
+  System check: ✓ OK [GREEN]
+  Update available: 3 [YELLOW]
+
+TESE C (Máquina-legível, CI/CD): JSON output (para parsers)
+  {"status": "ok", "updates_available": 3}
+
+RESOLUÇÃO (STJ-ANALÓGICO):
+
+TESE B (Rich colored) é PREFERIDA para terminal interativo.
+TESE C (JSON) é OBRIGATÓRIA quando --json flag é usado.
+
+Razão: Terminal humano aprecia cores e ícones; CI/CD pipelines precisam
+parsear JSON.
+
+IMPLEMENTAÇÃO:
+
+# Output padrão (TESE B):
+python3 -m sceap.auto_update.cli check -r requirements.txt
+→ Output colorido com ✓, ✗, ⚠ emojis via lib rich
+
+# Output para CI/CD (TESE C):
+python3 -m sceap.auto_update.cli check -r requirements.txt --json
+→ {"status": "success", "updates": 3}
+
+CONSEQUÊNCIA:
+
+Script deve DETECTAR se está rodando em terminal humano (TTY) ou
+em CI/CD pipeline, e adaptar output automaticamente:
+
+if sys.stdout.isatty():
+    # Terminal humano: usar TESE B (rich colors)
+    usar_rich_console()
+else:
+    # CI/CD pipeline: usar TESE C (JSON)
+    usar_json_output()
+
+────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO D: DISSÍDIO 4 — RETENÇÃO DE LOGS
+
+────────────────────────────────────────────────────────────────────────────────
+
+TESE A (Desenvolvimento): Deletar logs automaticamente após 7 dias
+
+TESE B (Produção): Manter logs indefinidamente (arquivo)
+
+TESE C (Conformidade): Manter logs apenas 90 dias, depois arquivar
+
+RESOLUÇÃO (STJ-ANALÓGICO):
+
+TESE C (90 dias + arquivamento) é PADRÃO.
+Razão: Conformidade LGPD (Lei Geral de Proteção de Dados), que exige
+retenção mínima para auditoria, mas não indefinida.
+
+IMPLEMENTAÇÃO:
+
+# /etc/logrotate.d/sceap (Linux) ou equivalente macOS:
+/var/log/sceap/*.log {
+    daily
+    rotate 90
+    compress
+    delaycompress
+    missingok
+    notifempty
+}
+
+CONSEQUÊNCIA:
+
+Admin DEVE configurar logrotate (Linux) ou equivalente macOS para
+rotação automática de logs conforme TESE C.
+
+────────────────────────────────────────────────────────────────────────────────
+
+SEÇÃO E: DISSÍDIO 5 — CERTIFICAÇÃO E ASSINATURA
+
+────────────────────────────────────────────────────────────────────────────────
+
+TESE A (Sem assinatura): Relatórios são entregues como plain text/PDF
+  Qualquer admin pode criar relatório fictício
+
+TESE B (Com assinatura digital): Relatórios são assinados com chave
+criptográfica
+
+  Apenas holder da chave privada pode assinar relatórios válidos
+  Receptor pode verificar integridade com chave pública
+
+RESOLUÇÃO (STJ-ANALÓGICO):
+
+TESE B (Com assinatura) é OBRIGATÓRIA para instalações de PRODUÇÃO.
+Razão: Conformidade regulatória, prova de autenticidade em potencial
+disputa.
+
+IMPLEMENTAÇÃO:
+
+# 1. Gerar par de chaves (uma vez)
+openssl genrsa -out ~/.sceap/private.key 2048
+openssl rsa -in ~/.sceap/private.key -pubout -out ~/.sceap/public.key
+
+# 2. Assinar relatório
+python3 -m sceap.auto_update.cli report -r requirements.txt \
+  -o ~/relatorio.md \
+  --sign-with ~/.sceap/private.key
+
+Saída: relatorio.md + relatorio.md.sig (assinatura)
+
+# 3. Verificar assinatura (receptor)
+openssl dgst -sha256 -verify ~/.sceap/public.key \
+  -signature relatorio.md.sig relatorio.md
+
+Resultado: "Verified OK"
+
+CONSEQUÊNCIA:
+
+Para PRODUÇÃO: gerar chaves criptográficas e assinar relatórios.
+Para DESENVOLVIMENTO: assinatura é opcional.
+
+────────────────────────────────────────────────────────────────────────────────
+
+RESUMO DA PARTE XXII:
+
+Mapeia 5 "dissídios jurisprudenciais" (divergências de abordagem) em
+formatação e finalização, resolvendo cada uma com "tese obrigatória"
+conforme padrão STJ. Cobre: diretório raiz, formato config, formato output,
+retenção de logs, certificação. Garante uniformidade técnica análoga a
+jurisprudência vinculante.
+
+════════════════════════════════════════════════════════════════════════════════════════
+

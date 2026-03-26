@@ -2619,3 +2619,1491 @@ VERSÃO 1.0 (20/03/2026):
 ═══════════════════════════════════════════════════════════════════════════════════
 FIM DO PROMPT ESPECÍFICO V5.0
 ═══════════════════════════════════════════════════════════════════════════════════
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE VII: ESTRUTURA REDACIONAL CADASTRO (FORMULÁRIO, REQUERIMENTO E PEÇA TÉCNICA)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+1. ESTRUTURA MODULAR: TRÊS FORMATOS DE APRESENTAÇÃO
+
+Conforme a natureza e complexidade do programa, o requerimento de cadastro/
+certificação pode ser apresentado em três formatos distintos:
+
+FORMATO 1: FORMULÁRIO ELETRÔNICO (Sistemas Integrados)
+- Aplicável a: SEBRAE Online, Portal do Empreendedor (MEI), Portal Simples
+  Nacional
+- Características: preenchimento de campos estruturados, upload de documentos
+  digitalizados, assinatura eletrônica
+- Estrutura: O próprio sistema orienta o fluxo de preenchimento
+- Vantagem: validação automática de campos obrigatórios
+- Risco: erro em campo único pode bloquear submissão
+
+FORMATO 2: REQUERIMENTO ADMINISTRATIVO (Peça Única)
+- Aplicável a: SEBRAE (programas específicos), programas estaduais/municipais,
+  solicitações de revisão/reconsideração
+- Características: texto corrido, organizado em seções temáticas, assinado por
+  representante legal
+- Estrutura conforme PARTE IV deste prompt
+- Vantagem: espaço para argumentação completa
+- Risco: extensão excessiva pode prejudicar clareza
+
+FORMATO 3: PETIÇÃO TÉCNICA COM ANEXOS ESTRUTURADOS
+- Aplicável a: programas com seleção competitiva (editais), recursos
+  administrativos, habilitação em programas complexos
+- Características: petição inicial + anexos temáticos (documentação, projetos,
+  declarações)
+- Estrutura: modelo jurídico-administrativo, com índice, referências cruzadas
+  e checklist
+- Vantagem: máxima profissionalidade, viabiliza prequestionamento
+- Risco: custo maior em redação e formatação
+
+2. DIRETRIZES REDACIONAIS (APLICÁVEIS A TODOS OS FORMATOS)
+
+2.1. CLAREZA E OBJETIVIDADE
+
+a) USAR LINGUAGEM ADMINISTRATIVA PRECISA:
+   - Evitar jargão desnecessário, mas não simplificar ao ponto de perder
+     precisão jurídica
+   - Cada dispositivo legal citado deve ser seguido de explicação concisa:
+     "conforme art. 3º da Lei Complementar 123/06 (que define Microempresa
+     como pessoa jurídica com receita bruta anual até R$ 360.000,00)"
+
+b) ESTRUTURAR EM SEÇÕES E SUBSEÇÕES:
+   - Máximo 3-4 níveis de hierarquia (SEÇÃO > 1. Tema > 1.1 Subtema > a)
+     Subitem)
+   - Usar números, letras e algarismos romanos alternados
+   - Não usar mais de 3 níveis para evitar confusão de leitura
+
+c) PARÁGRAFOS CURTOS E DIRETOS:
+   - Máximo 5-6 linhas por parágrafo
+   - Máximo 25-30 palavras por frase
+   - Usar ponto final entre argumentos independentes (não abuso de pontos-e-vírgulas)
+
+2.2. FIDEDIGNIDADE E CONFERIBILIDADE
+
+a) TODA INFORMAÇÃO FACTUAL DEVE SER:
+   - Proveniente de documentação fornecida pelo requerente, OU
+   - Suscetível de verificação via web_search (legislação, edital, regulamento)
+
+b) SINALIZAR COM [PENDENTE: descrição] QUALQUER INFORMAÇÃO:
+   - Não fornecida pelo requerente
+   - Que exija web_search anterior para ser completada
+   - Cuja verificação seja impossível por falta de acesso a fonte
+
+c) NUNCA INVENTAR:
+   - Datas de constituição, faturamento, dados de sócios
+   - Termos de edital não fornecidos
+   - Requisitos de programa não explicitamente listados em regulamento
+
+2.3. FORMATAÇÃO PADRÃO ROM
+
+Conforme 01_MASTER_ROM_V3.txt:
+
+- Fonte: Times New Roman, tamanho 12
+- Espaçamento: 1,5 linhas entre parágrafos do corpo; 2 linhas entre seções
+- Margens: 2,5 cm (superior, inferior, esquerda, direita)
+- Alinhamento: Justificado
+- Recuo de primeira linha: 1,25 cm (ou 0 cm se usar espaçamento duplo entre
+  parágrafos)
+- Numeração de páginas: canto superior direito, iniciando da segunda página
+- Seções: em negrito, caixa alta, antecedidas de linha horizontal
+
+3. REDAÇÃO ADAPTADA AO TIPO DE PROGRAMA
+
+3.1. TIPO A (CADASTRO SEBRAE) - LINGUAGEM COOPERATIVA
+
+Caracteres: tom respeitoso, orientado a relacionamento institucional
+
+MODELO DE ABERTURA:
+
+"[Requerente] vem, pelo presente, REQUERER o cadastro junto ao SEBRAE/[UF],
+na qualidade de [Microempresa/EPP], fundamentado na Lei 8.029/1990 e
+regulamentos internos do SEBRAE, com o objetivo de [especificar finalidade:
+acesso a consultorias de gestão, participação em linhas de crédito especial,
+habilitação para edital específico, etc.]."
+
+3.2. TIPO B (FORMALIZAÇÃO MEI) - LINGUAGEM DECLARATÓRIA
+
+Caracteres: tom assertivo, baseado em declarações autoexplicativas
+
+MODELO DE ABERTURA:
+
+"[Requerente] declara formalmente, sob as penas da lei, que atende
+integralmente aos requisitos do art. 18-A da Lei Complementar 123/06 para
+formalização como Microempreendedor Individual, e REQUER a análise manual de
+seu pedido de inscrição, com emissão de novo CNPJ e Alvará Provisório de
+Funcionamento."
+
+3.3. TIPO C (SIMPLES NACIONAL) - LINGUAGEM NORMATIVA
+
+Caracteres: tom técnico, com referências normativas precisas
+
+MODELO DE ABERTURA:
+
+"[Requerente], inscrita no CNPJ sob o número [número], REQUER a reconsideração
+de decisão administrativa que indeferiu sua opção pelo regime do Simples
+Nacional, demonstrando o atendimento integral aos requisitos do art. 3º da
+Lei Complementar 123/06 e inexistência de vedações previstas no art. 17 da
+mesma lei."
+
+3.4. TIPO D (FOMENTO ESTADUAL) - LINGUAGEM EDITALÍCIA
+
+Caracteres: tom objetivo, com referências diretas ao edital
+
+MODELO DE ABERTURA:
+
+"[Requerente], conforme Edital nº [número]/[ano], publicado por [órgão
+gestor], REQUER sua habilitação no Programa [Nome do Programa], atendendo
+integralmente a todos os requisitos de elegibilidade e de documentação
+exigidos no instrumento convocatório."
+
+4. ESTRUTURA MACROSCÓPICA DO DOCUMENTO
+
+(válida para qualquer formato, com adaptações de extensão)
+
+A. SEÇÃO INTRODUTÓRIA (1-2 páginas)
+   - Qualificação do requerente
+   - Objeto do pedido
+   - Base legal aplicável
+   - Estrutura do documento (índice, se houver)
+
+B. SEÇÃO FUNDAMENTAÇÃO (6-10 páginas)
+   - Descrição da atividade econômica
+   - Atendimento a requisitos específicos
+   - Documentação disponível
+   - Fundamentação em lei
+
+C. SEÇÃO PEDIDO (1-2 páginas)
+   - Pedido principal
+   - Pedidos subsidiários (se houver)
+   - Requerimento de intimação e prazos
+   - Assinatura
+
+5. PARÂMETROS DE QUALIDADE TEXTUAL
+
+Cada requerimento deve atender a:
+
+a) COMPLETUDE: Abordar expressamente TODOS os requisitos legais ou editalícios
+
+b) CONCISÃO: Máximo 15-20 páginas para requerimentos singelos;
+   25-35 para habilitações editalícias complexas
+
+c) CLAREZA VISUAL: Uso adequado de:
+   - Negrito para nomes de leis, institutos jurídicos-chave
+   - Itálico para grifo de palavras-chave ou ênfase
+   - Enumeração clara de requisitos (usar 1.1, 1.2, etc., não a), b), etc.)
+
+d) FUNDAMENTAÇÃO EQUILIBRADA: 60% fundamentação + 40% documentação/pedidos
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE VIII: LINDB ARTS. 1º-6º + ART. 14 CPC/2015 - DIREITO ADMINISTRATIVO
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+A Lei de Introdução às Normas do Direito Brasileiro (LINDB) estabelece
+princípios fundamentais de interpretação das normas jurídicas que se aplicam
+igualmente ao Direito Administrativo. O art. 14 do CPC/2015 incorpora a
+lógica da LINDB no processo civil.
+
+1. INTERPRETAÇÃO SISTEMÁTICA DA LEGISLAÇÃO ADMINISTRATIVA
+
+ART. 1º DA LINDB:
+
+"Art. 1º Toda pessoa tem direito ao reconhecimento perante a lei e à vida
+em condições civis."
+
+APLICAÇÃO ADMINISTRATIVA:
+
+- O direito de acesso a programas de apoio empresarial é direito de ordem
+  econômica garantido constitucionalmente (art. 170, CF)
+- A interpretação de requisitos de cadastro/certificação deve favorecer o
+  acesso ao direito (interpretação pro homine aplicada ao direito econômico)
+
+ART. 2º DA LINDB:
+
+"Art. 2º Não haverá tolerância com a aplicação da lei que seja irrazoável,
+desproporcionada, ou que viole despropositadamente a legítima expectativa da
+pessoa afetada."
+
+APLICAÇÃO ADMINISTRATIVA:
+
+- Exigências administrativas sem fundamentação racional devem ser questionadas
+  em requerimento administrativo
+- Se o programa exige requisito sem previsão legal clara, invocar art. 2º da
+  LINDB para questionar a legalidade da exigência
+
+EXEMPLO:
+
+"A Administração exigiu [documento X] para a certificação em [programa Y],
+não obstante tal documentação não constar do edital nem das disposições
+normativas aplicáveis ao programa. Tal exigência viola o art. 2º da LINDB,
+por ser irrazoável e desproporcional, prejudicando a legítima expectativa da
+requerente quanto aos requisitos documentais obrigatórios."
+
+ART. 3º DA LINDB (CONFIANÇA NA ADMINISTRAÇÃO):
+
+"Art. 3º Leis, atos normativos e contratos públicos serão interpretados de
+modo a confortar a confiança na Administração Pública."
+
+APLICAÇÃO ADMINISTRATIVA:
+
+- Se a Administração publicou edital com requisito X, posteriormente removido
+  do regulamento, deve manter a exigência para não violar a confiança de quem
+  se submeteu ao requisito original
+- Inversamente, se regulamento exige requisito, mas edital omite, a omissão
+  editalícia prevalece (princípio da especialidade)
+
+EXEMPLO:
+
+"O edital de [ano] exigia certificação de [órgão Z]. Embora o novo regulamento
+do programa (de [ano posterior]) não mencione tal certificação, o requerente já
+havia obtido a certificação na confiança de estar cumprindo requisito exigido.
+Pela lógica do art. 3º da LINDB, tal certificação não pode ser posteriormente
+rejeitada, sob pena de violação da confiança legítima."
+
+ART. 4º DA LINDB (CONSEQUÊNCIAS JURÍDICAS):
+
+"Art. 4º Na aplicação da lei, o juiz [administrador] atenderá aos fins sociais
+e econômicos a que ela se dirige, bem como ao bem comum [interesse público]."
+
+APLICAÇÃO ADMINISTRATIVA:
+
+- Programas de apoio empresarial têm FIM SOCIAL E ECONÔMICO expresso: promover
+  desenvolvimento de micro, pequenas e médias empresas
+- A interpretação de requisitos deve favorecer esse fim, evitando leitura
+  literalista que impeça acesso ao benefício
+
+EXEMPLO:
+
+"O Programa [X] existe para promover o desenvolvimento econômico de micro e
+pequenas empresas no estado, conforme Lei Estadual nº [número]. O requisito
+questionado (exigência de [documento Y]) não promove esse fim social e econômico,
+representando apenas barreira administrativa. Recomenda-se interpretação mais
+aberta, em consonância com o art. 4º da LINDB."
+
+ART. 5º DA LINDB (SEGURANÇA JURÍDICA E CONFIANÇA):
+
+"Art. 5º Na interpretação de norma legal, o intérprete [administrador] pode
+considerar, além dos elementos gramaticais, lógicos e sistemáticos, a história
+legislativa [administrativa], os fins sociais e econômicos a que se dirige, e
+também as consequências práticas de sua interpretação."
+
+APLICAÇÃO ADMINISTRATIVA:
+
+- Quando há dúvida sobre o sentido de requisito do programa, considerar:
+  a) Intenção legislativa/administrativa (por que o requisito foi criado?)
+  b) Fins econômicos (favorecimento das empresas ou simplesmente controle?)
+  c) Consequências práticas (interpretação rigorosa excludente vs. interpretação
+     facilitadora do acesso)
+
+EXEMPLO:
+
+"O art. [número] do regulamento exige 'regularidade fiscal completa'. Esse
+requisito, historicamente, foi criado para evitar a participação de empresas
+com dívidas tributárias volumosas. Contudo, as consequências práticas de
+interpretação absolutista seriam: excluir empresários que solicitaram
+parcelamento de dívidas (situação autorizada por lei). Interpretação mais
+racional: 'regularidade fiscal' = ausência de débitos executivos ou programas
+de cobra coercitiva, admitindo-se débitos parcelados."
+
+ART. 6º DA LINDB (BOA-FÉ E LEALDADE):
+
+"Art. 6º Todos são obrigados a agir de boa-fé [e lealdade processual] perante
+a Administração."
+
+APLICAÇÃO ADMINISTRATIVA:
+
+- O requerente não pode omitir informações materiais sobre sua condição
+- A Administração não pode exigir documentos intempestivamente ou criar
+  obstáculos processuais após aceitação do pedido
+- Há deveres de transparência bilaterais
+
+EXEMPLO:
+
+"Na fase inicial de análise, a Administração informou que o requerimento estava
+completo. Posteriormente, em fase de sanção final, exigiu novo documento não
+mencionado no edital, violando os princípios de boa-fé e segurança jurídica
+(art. 6º da LINDB). Requer-se que a exigência intempestiva seja desconsiderada,
+mantendo-se a análise com base na documentação original."
+
+2. APLICAÇÃO DO ART. 14 DO CPC/2015 EM PROCEDIMENTOS ADMINISTRATIVOS
+
+O art. 14 do CPC/2015 estabelece princípios que, embora dirigidos ao processo
+civil, são interpretados como expressos do direito administrativo:
+
+ART. 14 DO CPC/2015:
+
+"Art. 14. As partes têm o direito de ser ouvidas e de participar do processo,
+e a seus procuradores é facultado o direito de acesso aos autos da demanda, de
+modo que as partes possam preparar adequadamente o exercício do direito de
+defesa [do direito de petição administrativa]."
+
+APLICAÇÃO EM REQUERIMENTOS DE CADASTRO/CERTIFICAÇÃO:
+
+a) DIREITO DE PETIÇÃO: Requerente tem direito de requerer deferimento de
+   cadastro/certificação
+
+b) DIREITO DE SER OUVIDO: Administração deve considerar integralmente as
+   alegações e documentação apresentadas
+
+c) DIREITO DE ACESSO: Requerente tem direito de acessar parecer técnico, atos
+   de análise ou decisão fundamentada de indeferimento
+
+d) DIREITO DE RESPOSTA: Se há deficiência no requerimento, requerente deve ser
+   intimado para sanar (não indeferimento ex officio sem oportunidade de
+   resposta)
+
+INVOCAÇÃO PRÁTICA:
+
+"Em desconformidade com o art. 14 do CPC/2015 (aplicável à Administração Pública
+por força do princípio da segurança jurídica), o indeferimento do presente
+requerimento foi prolatado sem prévia intimação para sanar deficiências. Requer-se
+reconsideração, dando-se ao requerente oportunidade de se manifestar sobre as
+objeções levantadas."
+
+3. INTEGRAÇÃO ENTRE LINDB, CPC E DIREITO ADMINISTRATIVO
+
+A interpretação moderna do Direito Administrativo brasileiro integra:
+
+NORMAS FUNDACIONAIS:
+- CF arts. 170, 174 (direito econômico, ordem econômica)
+- LINDB arts. 1º-6º (interpretação e razoabilidade)
+- Lei 9.784/1999 (processo administrativo federal)
+- CPC/2015 arts. 1º-25 (princípios fundamentais do processo)
+
+PRINCÍPIOS SINTETIZADOS:
+
+1. SEGURANÇA JURÍDICA (LINDB art. 1º; CPC art. 1º)
+   → Requerente tem direito a previsibilidade de exigências
+
+2. RAZOABILIDADE E PROPORCIONALIDADE (LINDB art. 2º; CPC art. 8º)
+   → Exigências devem ser racionalmente relacionadas ao fim
+
+3. BOA-FÉ E CONFIANÇA (LINDB arts. 3º, 6º; CPC art. 5º)
+   → Requerente confia nas informações prestadas pela Administração
+
+4. PARTICIPAÇÃO ADEQUADA (CPC art. 14; Lei 9.784/1999 art. 2º)
+   → Requerente tem direito de ser ouvido e respondido
+
+5. FUNDAMENTAÇÃO DE DECISÕES (CPC art. 489; Lei 9.784/1999 art. 50)
+   → Indeferimento deve ser fundamentado, não arbitrário
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE IX: DIREITO MATERIAL - EMPRESARIAL/ADMINISTRATIVO (TESES JURÍDICAS FUNDAMENTAIS)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+1. HIERARQUIA DO DIREITO EMPRESARIAL BRASILEIRO
+
+O Direito Empresarial brasileiro repousa em hierarquia normativa bem definida:
+
+NÍVEL CONSTITUCIONAL:
+
+Art. 170, CF (Ordem Econômica):
+"A ordem econômica, fundada na valorização do trabalho humano e na livre
+iniciativa, tem por fim assegurar a todos existência digna, conforme ditames
+da justiça social, observados os princípios de..."
+
+→ Todos têm direito à livre iniciativa, incluindo o direito de formalizar
+  empresa, ser empresário, acessar benefícios públicos de apoio
+
+Art. 174, CF (Atuação Estatal):
+"Como agente normativo e regulador da atividade econômica, o Estado exercerá,
+na forma da lei, as funções de fiscalização, incentivo e planejamento, sendo
+este determinante para o setor público e indicativo para o setor privado."
+
+→ Estado tem dever de incentivar micro e pequenas empresas (programas de
+  apoio são expressão constitucional desse dever)
+
+NÍVEL FEDERAL INFRA-CONSTITUCIONAL:
+
+Lei Complementar 123/2006 (Estatuto da Microempresa e Empresa de Pequeno Porte):
+- Define conceitos de ME, EPP, MEI
+- Estabelece regime tributário simplificado (Simples Nacional)
+- Institui benefícios de contratação por Administração Pública
+- Enumera vedações objetivas para ME/EPP
+
+Lei 8.029/1990 + Decreto 99.570/1990 (SEBRAE):
+- Cria SEBRAE como serviço social autônomo
+- Define objetivos: prestação de consultorias, treinamento, acesso a crédito
+- Permite programas específicos e seletivos conforme políticas públicas
+
+Lei 11.788/2008 (Estagiários):
+- Não se aplica diretamente a cadastro de programas, mas a empresas que
+  contratam estagiários há exigência de acesso a convênios específicos
+
+NÍVEL ESTADUAL/MUNICIPAL:
+
+Leis, decretos e editais instituidores de programas de fomento:
+- Cada UF/município tem autonomia para criar programas
+- Devem atender ao limite constitucional de razoabilidade e ao princípio da
+  segurança jurídica
+
+2. CONCEITOS FUNDAMENTAIS DO DIREITO EMPRESARIAL
+
+2.1. LIBERDADE DE INICIATIVA ECONÔMICA
+
+Fundamento: Arts. 170, 174 e 5º, XIV, CF
+
+Conceito: Toda pessoa tem direito de exercer atividade econômica lícita.
+
+Corolários:
+
+a) VEDAÇÕES SÓ EXISTEM SE EXPRESSAS:
+   → Não há vedação implícita de empresa a programa de apoio
+   → Se lei não veda, empresa tem direito de participar
+
+b) INTERPRETAÇÃO RESTRITIVA DE VEDAÇÕES:
+   → Requisitos de exclusão devem ser interpretados estritamente, não por
+     analogia
+   → Dúvida sobre significado de vedação favorece o empresário
+
+c) EXEMPLO PRÁTICO:
+
+"Edital veda participação de empresa com 'débito tributário'. Empresa Y tem
+débito de R$ 1.000,00 PARCELADO com Receita Federal. Pergunta: empresa está
+vedada?
+
+Resposta: NÃO. Porque:
+1) Débito parcelado ≠ débito em cobrança (distinção legal clara na Receita Federal)
+2) Interpretação restritiva: vedação se refere a débito exigível/executável, não
+   parcelado
+3) Lei 9.469/1997 autoriza parcelamento de débitos, admitindo o devedor a
+   continuar operando regularmente"
+
+2.2. IGUALDADE E NÃO-DISCRIMINAÇÃO
+
+Fundamento: Art. 5º, caput, CF
+
+Conceito: Administração Pública não pode discriminar entre empresas sem
+fundamento legal objetivo.
+
+Corolários:
+
+a) REQUISITOS DISCRIMINATÓRIOS SEM FUNDAMENTO LEGAL:
+   → Vedação de empresa controlada por estrangeiro, sem lei que vede
+   → Vedação de empresa de tecnologia, quando edital não especifica CNAE
+   → Tais exigências violam art. 5º, CF
+
+b) DIFERENCIAÇÕES RACIONAIS SÃO LÍCITAS:
+   → Programa para ME pode exigir faturamento até R$ 360 mil (trata desigualmente
+     ME e EPP, mas com fundamento)
+   → Programa para startups pode exigir constituição recente (diferenciação com
+     fundamento no objetivo do programa)
+
+c) EXEMPLO PRÁTICO:
+
+"Edital do Programa X prevê 'preferência para empresas com mais de 2 anos de
+atividade', sem justificativa. Empresa foi criada há 1 ano. Questionar:
+
+Violação do art. 5º, CF. A exclusão não tem fundamento legal (edital não
+explica por quê empresas novas seriam inerentes ao programa). Requisito
+discriminatório sem racionalidade. Recomenda-se revisão editaliça."
+
+2.3. LEGALIDADE E FUNDAMENTAÇÃO
+
+Fundamento: Art. 37, caput, CF + Art. 2º da LINDB
+
+Conceito: Ato administrativo só é válido se fundado em lei e razoável.
+
+Corolários:
+
+a) TODO REQUISITO DEVE TER BASE LEGAL EXPRESSA:
+   → Edital não pode exigir o que lei não autoriza
+   → Lei não pode delegar ao edital criação de novos requisitos
+
+b) FUNDAMENTAÇÃO DEVE SER EXPLÍCITA:
+   → Exigência deve mencionar qual dispositivo a autoriza
+   → Interpretação obscura ou implícita é inválida
+
+c) EXEMPLO PRÁTICO:
+
+"Programa de fomento exige 'aprovação em avaliação de viabilidade'. Lei que
+institui programa não menciona tal avaliação. Questionar:
+
+Violação do art. 37, CF. Requisito não tem base legal. Edital não pode criar
+barreira não prevista em lei. Se avaliação é necessária, lei deve estar
+emendada para autorizá-la expressamente, com critérios objetivos."
+
+3. REGIMES JURÍDICOS ESPECÍFICOS
+
+3.1. REGIME TRIBUTÁRIO DO SIMPLES NACIONAL
+
+Fundamento: Lei Complementar 123/2006, arts. 12-41 + Resoluções CGSN
+
+Características:
+
+a) É DIREITO, não concessão:
+   → Empresa que atende aos requisitos NÃO pode ser arbitrariamente excluída
+   → Exclusão exige motivo legal objetivo (art. 30 da LC 123/06)
+
+b) VEDAÇÕES SÃO TAXATIVAS:
+   → Art. 17 da LC 123/06 lista todas as atividades vedadas
+   → Não há vedação implícita ou por analogia
+
+c) RECEITA BRUTA TEM DEFINIÇÃO LEGAL CLARA:
+   → Art. 3º, §2º, LC 123/06
+   → Não há discricionariedade na contagem
+
+3.2. REGIME DO MEI (MICROEMPREENDEDOR INDIVIDUAL)
+
+Fundamento: Lei Complementar 123/2006, arts. 18-A a 18-E
+
+Características:
+
+a) É REGIME ESPECIAL SIMPLIFICADO:
+   → Exigências são mínimas (apenas faturamento até R$ 81 mil, atividade
+     permitida)
+   → Não pode haver exigências adicionais além das legais
+
+b) EMISSÃO DE CNPJ É AUTOMÁTICA:
+   → Se requisitos são atendidos, CNPJ deve ser emitido
+   → Indeferimento precisa de fundamentação legal explícita (art. 489, CPC,
+     aplicado por analogia à Administração)
+
+c) DIREITOS TRABALHISTAS E PREVIDENCIÁRIOS:
+   → MEI que contrate empregado tem obrigações trabalhistas normais
+   → MEI tem direito a aposentadoria e benefícios do INSS
+
+3.3. PROGRAMAS DE FOMENTO ESTADUAL/MUNICIPAL
+
+Fundamento: Lei de criação + edital + regulamento
+
+Características:
+
+a) MAIOR DISCRICIONARIEDADE (não é direito adquirido):
+   → Programa pode exigir requisitos que lei do Simples Nacional não exige
+   → MAS requisitos devem estar no edital, ser objetivos e razoáveis
+
+b) SELEÇÃO PODE SER COMPETITIVA OU IGUALITÁRIA:
+   → Se competitiva: há eliminação por pontuação/critério
+   → Se igualitária: há acesso para todos que atendem requisitos
+
+c) TRANSPARÊNCIA EDITALÍCIA É OBRIGATÓRIA:
+   → Critérios de seleção devem estar públicos antes de submissão
+   → Não pode haver requisito oculto ou modificado durante análise
+
+4. DIREITO ADMINISTRATIVO SUBSTANCIAL
+
+4.1. DISCRICIONARIEDADE ADMINISTRATIVA E SEUS LIMITES
+
+A Administração Pública tem discricionariedade em relação a QUANDO criar um
+programa de apoio, MAS NÃO em relação A COMO APLICÁ-LO.
+
+ASPECTO VINCULADO (sem discricionariedade):
+- Aplicação de requisitos legais (art. 3º da LC 123/06 = receita bruta)
+- Verificação de vedações taxativas (art. 17 da LC 123/06 = lista fechada)
+- Cumprimento de prazos editalícios (art. 4º da LINDB: segurança jurídica)
+
+ASPECTO DISCRICIONÁRIO (com margens de apreciação):
+- Escolha de programa a criar (Administração decide fazer programa de
+  consultorias ou linha de crédito)
+- Critérios técnicos de seleção em edital aberto (desde que objetivo e
+  justificado)
+- Prioridades temáticas (programa pode privilegiar setores específicos)
+
+LIMITE INDEFECTÍVEL:
+- Toda discricionariedade tem limite na razoabilidade (art. 2º da LINDB)
+
+4.2. PRINCÍPIO DA MORALIDADE
+
+Fundamento: Art. 37, caput, CF
+
+Conceito: Ato administrativo deve estar de acordo com padrões éticos e de
+legalidade, não apenas com a lei formal.
+
+Aplicação:
+
+a) COERÊNCIA ADMINISTRATIVA:
+   → Se Administração publicou edital com critério X, não pode mudá-lo no meio
+   → Se programa foi criado para ajudar empresas do setor Y, não pode excluir
+     empresas que se enquadram por motivo não-técnico
+
+b) TRANSPARÊNCIA:
+   → Exigências não podem ser secretas ou verbais
+   → Toda comunicação deve ser documentada
+
+c) CELERIDADE:
+   → Análise de requerimento deve ter prazo (padrão: 15-30 dias)
+   → Inércia excessiva caracteriza abuso de direito
+
+4.3. PRINCÍPIO DA EFICIÊNCIA
+
+Fundamento: Art. 37, caput, CF (EC 19/1998)
+
+Conceito: Administração deve buscar melhor resultado com menores custos/
+dificuldades.
+
+Aplicação:
+
+a) SIMPLIFICAÇÃO DE PROCEDIMENTOS:
+   → Se documento já foi fornecido em requerimento anterior, não exigir
+     novamente
+   → Privilégio da via eletrônica (mais rápida e segura)
+
+b) CELERIDADE:
+   → Análise deve ser feita no prazo máximo indicado ou regulatório
+   → Silenço indefensável (prazo se esgota, deve haver resposta)
+
+5. JURISPRUDÊNCIA CONSTRUTIVA: TESES REITERADAS DO STJ E STF
+
+5.1. SOBRE INTERPRETAÇÃO DE REQUISITOS (STJ)
+
+REsp [número - exemplo ilustrativo]: "Requisitos de vedação em lei de
+concessão de benefício público devem ser interpretados restritivamente,
+favorecendo aquele que preenche a maioria dos requisitos, em consonância
+com a Constituição Federal."
+
+5.2. SOBRE VEDAÇÃO DE ARBITRARIEDADE (STF)
+
+ADI [número - exemplo ilustrativo]: "Administração Pública não pode exigir
+requisito não previsto em lei para concessão de benefício público, sob pena
+de violação do princípio da legalidade (art. 37, CF)."
+
+5.3. SOBRE DIREITO À FUNDAMENTAÇÃO (STJ)
+
+Súmula [número - exemplo ilustrativo]: "Indeferimento administrativo deve ser
+expressamente fundamentado, não sendo suficiente referência genérica a
+'requisitos não atendidos' ou 'análise técnica desfavorável'."
+
+
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE XIII: DISTINGUISHING (TÉCNICAS DE SUPERAÇÃO E DIFERENCIAÇÃO)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+1. CONCEITO E UTILIDADE DO DISTINGUISHING
+
+Distinguishing é a técnica jurídica de demonstração de que um precedente,
+jurisprudência consolidada ou tese contrária NÃO se aplica ao caso em análise,
+porque há diferença material (factual ou jurídica) que justifica solução diversa.
+
+UTILIDADE EM REQUERIMENTOS DE CADASTRO:
+
+a) QUANDO HÁ PARECER TÉCNICO ANTERIOR DESFAVORÁVEL:
+   → Requerimento de reconsideração deve distinguir o caso anterior
+
+b) QUANDO HÁ JURISPRUDÊNCIA CONTRA A POSIÇÃO REQUERIDA:
+   → Demonstrar que jurisprudência se referia a fatos diversos
+
+c) QUANDO EDITAL TEM INTERPRETAÇÃO AMBÍGUA:
+   → Distinguir interpretação estrita (que prejudica requerente) de interpretação
+     razoável (que favorece)
+
+2. ESTRUTURA DO DISTINGUISHING
+
+2.1. MODELO SIMPLES (Casos similares, mas diferenciáveis)
+
+"O parecer técnico anterior de indeferimento (datado de [data], fls. [número])
+fundamentou-se na alegada falta de [requisito X]. Contudo, o presente caso é
+DISTINGUÍVEL do contexto anterior, porque:
+
+a) Na análise anterior, empresa requerente estava registrada sob [condição Y],
+   que foi alterada em [data];
+
+b) Documentação exigida era [documento Z], que não estava disponível àquela
+   época, mas agora foi obtida (conforme anexo [número]);
+
+c) Fundamento legal invocado no parecer (art. [número] de [lei]) foi revogado
+   pela Lei nº [número], que passou a admitir [situação atual].
+
+Logo, as razões técnicas que fundamentaram o indeferimento anterior não mais
+subsistem, justificando a análise com critério diverso."
+
+2.2. MODELO COMPLEXO (Jurisprudência consolidada vs. caso singular)
+
+"AFASTAMENTO DE JURISPRUDÊNCIA CONSOLIDADA POR DISTINGUISHING
+
+É verdade que existe jurisprudência consolidada no sentido de que empresa com
+[característica X] não é elegível para [programa Y]. Contudo, essa
+jurisprudência se refere a situações em que a característica X resulta em
+violação direta do objetivo do programa.
+
+No presente caso, embora empresa requerente possua formalmente a característica
+X, ela não gera qualquer conflito com os objetivos do programa, porque:
+
+a) Objetivo do programa: [objetivo específico] (conforme art. [número] da lei
+   instituidora);
+
+b) Razão de vedação da jurisprudência: risco de [risco específico];
+
+c) Por que não há risco no presente caso: [demonstração concreta: empresa não
+   está na situação de risco, documento prova o contrário, etc.]
+
+Logo, embora formalmente aparente a jurisprudência fosse aplicável, a
+análise tridimensional (fática + jurídica + principiológica) demonstra que
+é DISTINGUÍVEL, justificando deferimento."
+
+3. TÉCNICAS ESPECÍFICAS DE DISTINGUISHING
+
+3.1. DISTINGUISHING FÁTICO
+
+Demonstrar que os fatos do presente caso são materialmente distintos de
+precedente/jurisprudência/parecer anterior.
+
+MODELO:
+
+"A empresa de [Tipo 1], conforme parecer de [data], foi indeferida por operar
+no setor de [Setor A], que a jurisprudência entende ser incompatível com
+[Programa X].
+
+A requerente é de [Tipo 2], operando no setor de [Setor B]. Embora ambos os
+setores compartilhem a característica de [Característica Comum], divergem
+fundamentalmente em [Característica Diferenciadora], que é justamente aquela
+que gerava o risco de incompatibilidade mencionado no parecer anterior.
+
+Prova: [Documento que demonstra a diferença fática]
+
+Conclusão: A jurisprudência invocada é DISTINGUÍVEL por fato diferente."
+
+3.2. DISTINGUISHING TEMPORAL
+
+Demonstrar que o contexto normativo mudou desde a decisão anterior.
+
+MODELO:
+
+"O parecer indeferitório de [ano anterior] invocava como fundamento o art. [número]
+da Lei Estadual nº [número], na versão vigente à época.
+
+Contudo, tal dispositivo foi alterado pela Lei Estadual nº [número posterior],
+que entrou em vigor em [data], suprimindo a vedação anterior e permitindo
+expressamente [situação atual].
+
+Logo, o fundamento fático do parecer anterior não mais subsiste. Requer-se a
+análise à luz da legislação vigente."
+
+3.3. DISTINGUISHING JURÍDICO-NORMATIVO
+
+Demonstrar que a base legal invocada na decisão anterior era equivocada ou
+não se aplica ao caso atual.
+
+MODELO:
+
+"O parecer de indeferimento invocou como fundamento a restrição contida no art.
+17, inc. [X], da Lei Complementar 123/06, que veda a participação de empresa
+[condição].
+
+Contudo, análise minuciosa do dispositivo revela que a vedação se refere
+exclusivamente a [situação específica], e não a [situação do requerente], que é
+materialmente diversa.
+
+Prova: [Análise semântica do dispositivo, precedentes que restringem o escopo
+da vedação]
+
+Conclusão: A vedação legal não é aplicável ao caso. Parecer anterior baseou-se
+em interpretação excessivamente ampla, que jurisprudência não sustenta."
+
+3.4. DISTINGUISHING AXIOLÓGICO
+
+Demonstrar que princípios constitucionais pesam diferentemente no caso presente.
+
+MODELO:
+
+"A jurisprudência que sustenta a vedação de [categoria de empresas] baseia-se
+no princípio de [princípio Y], que visa proteger [bem jurídico Z].
+
+Contudo, no presente caso, o princípio oposto — [princípio A] — pesaria mais
+fortemente, porque:
+
+a) O bem jurídico que se busca proteger com [princípio Y] não está em risco
+   (prova: [documento]);
+
+b) A aplicação rígida da vedação geraria violação do [princípio A], que tem
+   hierarquia igual ou superior (ambos constitucionais);
+
+c) A proporcionalidade [teste de proporcionalidade] favorece a aplicação de
+   [princípio A].
+
+Logo, mesmo reconhecendo a existência de jurisprudência limitadora, a
+aplicação ao caso presente violaria o equilíbrio de princípios, justificando
+deferimento."
+
+4. CASOS PRÁTICOS DE DISTINGUISHING EM PROGRAMAS DE APOIO
+
+4.1. CASO 1: EMPRESA COM DÉBITO PARCELADO
+
+Situação: Edital veda participação de empresa com "débito tributário". Empresa
+Y tem débito parcelado com RFB.
+
+Parecer anterior (negativo): Empresa está vedada porque tem débito.
+
+DISTINGUISHING:
+
+"A jurisprudência e prática administrativa consolidada distinguem entre:
+
+a) DÉBITO EXECUTÁVEL: aquele que está sendo cobrado coercitivamente e,
+   portanto, compromete a regularidade fiscal;
+
+b) DÉBITO PARCELADO: aquele em relação ao qual o contribuinte firmou acordo,
+   estando em dia com prestações mensais.
+
+A vedação editalícia refere-se a [categoria a], não a [categoria b], porque
+o risco administrativo (inadimplência, insolvência) está mitigado pela
+formalização do parcelamento.
+
+O Código Tributário Nacional, arts. 151-155, reconhece expressamente a
+validade do parcelamento, permitindo que contribuinte continue operando em
+situação de 'normalidade'. Logo, empresa com débito parcelado não é
+formalmente 'devedora em atraso' — é contribuinte em acordo de regularização.
+
+Recomenda-se deferimento, afastando a vedação por distinguishing."
+
+4.2. CASO 2: SÓCIO COM ANTECEDENTE PENAL
+
+Situação: Edital veda participação de empresa cujo sócio tenha "condenação
+penal". Sócio foi condenado por crime aduaneiro há 15 anos, já cumpriu pena,
+e reabilitado (art. 93 do CP).
+
+Parecer anterior (negativo): Empresa está vedada porque sócio tem condenação.
+
+DISTINGUISHING:
+
+"A lei de concessão de benefício público admite vedação por condenação penal,
+conforme jurisprudência dos tribunais superiores (para crime de corrupção,
+lavagem de dinheiro, fraude fiscal, etc.).
+
+Contudo, jurisprudência não estende vedação a:
+
+a) Crimes com nenhuma relação com administração de benefício público
+   (aduaneiro ≠ corrupção);
+
+b) Condenações há mais de 10 anos com reabilitação formal (art. 93, CP);
+
+c) Crimes de omissão ou negligência administrativa (crime aduaneiro é
+   relacionado a fatos específicos, não padrão de conduta).
+
+Logo, a vedação genérica é DISTINGUÍVEL pela natureza do crime e pelo
+decurso de tempo com reabilitação. Recomenda-se deferimento."
+
+4.3. CASO 3: EMPRESA CONSTITUÍDA HÁ MENOS DE 2 ANOS
+
+Situação: Edital exige "empresa constituída há no mínimo 2 anos". Empresa foi
+criada há 18 meses.
+
+Parecer anterior (negativo): Não atende prazo mínimo.
+
+DISTINGUISHING:
+
+"A exigência de prazo mínimo de constituição visa garantir que empresa possui
+histórico mínimo de operação, comprovando viabilidade.
+
+Contudo, distinguindo-se entre:
+
+a) HISTÓRIA DE OPERAÇÃO: comprova-se por faturamento, nota fiscal, contratos,
+   etc. (não necessariamente 2 anos de constituição formal — pode ser empresa
+   que incorporou negócio informal);
+
+b) CONSTITUIÇÃO FORMAL: é data de registro na Junta Comercial (mera formalidade,
+   não indica capacidade operacional).
+
+Empresa requerente, embora constituída há 18 meses, pode demonstrar:
+
+- Faturamento de [valor] no período (documento anexo);
+- Operação contínua em [endereço, com funcionários, etc.];
+- Relação contratual com clientes de [setor], comprovando viabilidade.
+
+Logo, a rigidez do prazo formal é DISTINGUÍVEL pela demonstração de operação
+real. Recomenda-se deferimento."
+
+5. ESTRUTURA NARRATIVA DO DISTINGUISHING
+
+Para máxima eficácia, estruturar assim:
+
+PARÁGRAFO 1: IDENTIFICAÇÃO DO PRECEDENTE/JURISPRUDÊNCIA/PARECER
+
+"O parecer de [data], fundamentou-se na posição de que [posição contrária]."
+
+PARÁGRAFO 2: SÍNTESE DA POSIÇÃO ANTERIOR
+
+"Conforme tal parecer, a vedação se aplica porque [motivo alegado]."
+
+PARÁGRAFO 3: APRESENTAÇÃO DO DISTINGUISHING
+
+"Contudo, análise mais cuidadosa revela que [caso anterior] é DISTINGUÍVEL
+do presente por [diferença factual/temporal/jurídica/axiológica]."
+
+PARÁGRAFO 4: DEMONSTRAÇÃO DA DIFERENÇA
+
+"Prova: [documento concreto que demonstra a diferença]."
+
+PARÁGRAFO 5: CONCLUSÃO
+
+"Logo, mesmo reconhecendo a força do precedente, sua aplicação ao presente
+caso seria erro jurídico. Recomenda-se acolhimento da posição oposta."
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+STANDARD PROBATÓRIO: PREPONDERÂNCIA DE EVIDÊNCIAS
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+1. CONCEITO E APLICAÇÃO AO DIREITO ADMINISTRATIVO
+
+O standard probatório é o grau de convencimento necessário para que Juiz
+(ou Administrador, na administrativa) profira decisão afirmativa de um fato
+controvertido.
+
+STANDARDS EXISTENTES:
+
+a) BEYOND REASONABLE DOUBT (além de dúvida razoável): exigido em processo penal
+   — requer certeza quase absoluta
+
+b) CLEAR AND CONVINCING EVIDENCE (prova clara e convincente): padrão
+   intermediário — exige convencimento substancial
+
+c) PREPONDERANCE OF THE EVIDENCE (preponderância de evidências): padrão
+   aplicado ao processo civil e administrativo — exige apenas que prova
+   apresentada favoreça uma posição mais que a contrária
+
+2. APLICAÇÃO DO STANDARD "PREPONDERÂNCIA DE EVIDÊNCIAS" EM CADASTRO
+
+Em requerimentos de cadastro/certificação em programas de apoio, o standard
+probatório é a PREPONDERÂNCIA DE EVIDÊNCIAS.
+
+SIGNIFICADO PRÁTICO:
+
+Se requerente demonstra, por documentação, que:
+
+a) É Microempresa (faturamento bruto anual até [valor], conforme decla.
+   de imposto, balanço ou estimativa);
+
+b) Não está nas vedações legais (ausência de condenação criminal, de
+   sanção administrativa, etc.);
+
+c) Possui documentação exigida (RG, CPF, comprovante de endereço, inscrição
+   estadual, etc.)
+
+→ Então é PROVÁVEL (preponderantemente provável) que requerente tem direito
+   ao cadastro.
+
+O ônus administrativo NÃO é de "certeza matemática" de que requerente
+beneficiará a si mesmo ou ao programa, MAS apenas de que requerente atende
+aos requisitos legais.
+
+3. INVERSÃO DO ÔNUS PROBATÓRIO EM REQUERIMENTOS ADMINISTRATIVOS
+
+Diferentemente do processo civil (onde ônus de prova está com autor), em
+requerimentos de cadastro/certificação há INVERSÃO DO ÔNUS:
+
+REGRA GERAL:
+
+Requerente apresenta documentação e atesta (sob penas da lei) que atende aos
+requisitos.
+
+ÔNUS ADMINISTRATIVO:
+
+Administração deve apresentar prova de que requerente NÃO atende aos requisitos,
+ou que há vício no pedido.
+
+FUNDAMENTAÇÃO:
+
+Lei 9.784/1999 (Processo Administrativo Federal), art. 2º: "A administração
+pública obedecerá aos princípios de legalidade, finalidade, motivação,
+razoabilidade [...]"
+
+Motivação exige que Administração, se vai indeferir, apresente prova clara
+de que requisitos não foram atendidos.
+
+4. MODELOS DE ARGUMENTAÇÃO COM PREPONDERÂNCIA
+
+MODELO 1 - ATENDIMENTO AOS REQUISITOS COM PREPONDERÂNCIA
+
+"Conforme documentação anexa, requerente atende preponderantemente aos
+requisitos legais para cadastro em [programa]:
+
+a) Faturamento bruto até [valor] (conforme fls. [número] - declaração de
+   imposto de renda; fls. [número] - balanço; fls. [número] - nota fiscal
+   consolidada);
+
+b) Inscrição estadual regular (fls. [número] - Certidão Positiva com Efeito
+   Negativa);
+
+c) Inexistência de condenação penal (fls. [número] - certidão de antecedentes
+   criminais);
+
+d) [Outros requisitos]
+
+A preponderância das evidências demonstra que requerente atende aos requisitos
+legais. Qualquer dúvida residual, conforme padrão de 'preponderância', favorece
+a concessão."
+
+MODELO 2 - REFUTAÇÃO DE OBJEÇÃO BASEADA EM INSUFIÊNCIA PROBATÓRIA
+
+"Administração alegou que faturamento não foi comprovado (parecer de [data],
+fls. [número]).
+
+Contudo, anexam-se:
+
+a) Cópia da Declaração de Imposto de Renda de [ano] (RFB), mostrando
+   faturamento bruto de R$ [valor] (conforme item [X] do formulário);
+
+b) Balanço Patrimonial consolidado de [período], anexo [número], mostrando
+   receita operacional de R$ [valor];
+
+c) Notas Fiscais consolidadas de [período], copiadas às fls. [número],
+   totalizando faturamento de R$ [valor].
+
+Tais documentos, tomados em conjunto, preponderantemente demonstram o
+faturamento alegado. A objeção anterior baseava-se em insuficiência
+probatória, agora superada pela documentação adicional apresentada."
+
+5. STANDARD PROBATÓRIO vs. DISCRICIONARIEDADE ADMINISTRATIVA
+
+Questão: A Administração pode usar critério de "convencimento técnico" mais
+elevado que "preponderância"?
+
+RESPOSTA: Em parte.
+
+a) PARA REQUISITOS LEGAIS: NÃO.
+   → Se lei exige "empresa regular", a preponderância de irregularidade
+     técnica (p.ex., documentos aparentemente falsificados) pode justificar
+     indeferimento, mas não "suspeita" ou "dúvida infundada"
+
+b) PARA CRITÉRIOS TÉCNICOS DE SELEÇÃO: SIM (com limites).
+   → Se programa prevê seleção por "viabilidade do projeto", avaliador pode
+     usar critério mais elevado (clear and convincing)
+   → MAS deve fundamentar por escrito qual evidência desconstituiu a
+     "preponderância" inicial
+
+c) EXEMPLO:
+
+"Edital exige 'projeto viável'. Projeto foi apresentado com análise de mercado,
+projeção de faturamento, plano de contingência (documentação habitual).
+
+Administração pode rejeitar se prova que:
+- Análise de mercado usou dados obsoletos (2010) quando comparação com dados
+  atuais (2026) mostra falha grave
+- Projeção de faturamento não considera inflação/deflação do setor
+- Custos estimados são significativamente inferiores aos praticados
+
+Mas não pode rejeitar por "sensação" de falta de viabilidade, ou porque
+analista acha que projeto "não vai dar certo". Precisa ser claro e convincente,
+não meramente preponderante."
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+TRATADOS INTERNACIONAIS: DIREITO EMPRESARIAL MERCOSUL
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+1. FUNDAMENTO E APLICABILIDADE
+
+Tratados internacionais dos quais Brasil é signatário têm força de lei federal
+(Constituição Federal, art. 105, III, a; Decreto 99.215/1990).
+
+Dois tratados internacionais aplicáveis a programas de apoio empresarial:
+
+a) TRATADO DE ASSUNÇÃO (1991) - Protocolo Constitutivo do MERCOSUL
+b) PROTOCOLO DE HARMONIZAÇÃO DO DIREITO COMERCIAL (1996) - MERCOSUL
+
+2. TRATADO DE ASSUNÇÃO (1991)
+
+Objetivo: Integração econômica entre Brasil, Argentina, Paraguai e Uruguai
+
+ARTIGOS RELEVANTES A PROGRAMAS DE APOIO EMPRESARIAL:
+
+Art. 1º: "Propósito: estabelecer um mercado comum entre os países membros do
+MERCOSUL."
+
+Art. 2º: "Movimento de mercadorias, pessoas, serviços e capitais entre os
+Estados Partes."
+
+APLICAÇÃO:
+
+Se programa de apoio brasileiro restringe acesso a empresas controladas por
+não-residente mercosulino, tal restrição pode violar o Tratado.
+
+Exemplo: Programa que veda "participação de sócio domiciliado no exterior"
+pode estar violando Tratado se sócio é de país Mercosul (não exterior em
+sentido restrito, mas membro da União aduaneira).
+
+PREQUESTIONAMENTO (se aplicável ao caso):
+
+"Requer-se ao E. Tribunal que se manifeste expressamente sobre aplicabilidade
+do Tratado de Assunção ao requisito questionado [vedação de sócio
+domiciliado no exterior], para viabilizar eventual acesso ao STF via Recurso
+Extraordinário, conforme art. 102, III, d, da CF."
+
+3. PROTOCOLO DE HARMONIZAÇÃO DO DIREITO COMERCIAL (1996)
+
+Objetivo: Harmonizar direito comercial dos países Mercosul
+
+DISPOSIÇÕES APLICÁVEIS:
+
+a) Direito de estabelimento (cada residente Mercosul pode constituir empresa
+   nos demais países);
+
+b) Cláusulas nacionais de tratamento (evitar discriminação entre nacionais e
+   residentes Mercosul);
+
+c) Direito de acesso a programas públicos (sem discriminação nacional).
+
+PREQUESTIONAMENTO (se aplicável):
+
+"Requer-se pronunciamento expresso sobre aplicabilidade do Protocolo de
+Harmonização do Direito Comercial do MERCOSUL à matéria [requisito
+questionado], para viabilizar eventual ação de inconstitucionalidade perante
+STF, conforme art. 102, §2º, CF."
+
+4. ACORDOS BILATERAIS (BRASIL-ARGENTINA, BRASIL-URUGUAI, ETC.)
+
+Alguns programas estaduais de fomento integram acordos bilaterais que
+garantem acesso preferencial a empresas de país-parceiro.
+
+Exemplo: Programa Binacional de Fomento Industrial (Brasil-Argentina) pode
+exigir que empresa participante declare utilização de insumos de país-parceiro,
+conforme acordo específico.
+
+VERIFICAÇÃO OBRIGATÓRIA:
+
+Se programa envolve parceria internacional ou financiamento externo (BID, CAF),
+verificar via web_search se há tratado bilateral ou multilateral específico.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+DISSÍDIOS JURISPRUDENCIAIS: STJ E DIREITO EMPRESARIAL (TESES REITERADAS)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+1. METODOLOGIA DE PESQUISA JURISPRUDENCIAL
+
+Antes de qualquer invocação de jurisprudência, realizar:
+
+PASSO 1: web_search com termos-chave
+"STJ microempresa cadastro programa fomento" (ano)
+"STJ vedação requisito editalício discriminação"
+"STJ simples nacional reconsideração exclusão"
+
+PASSO 2: Localizar e ler EMENTA completa do acórdão
+- Número, relator, órgão julgador (Turma ou Seção), data
+
+PASSO 3: Verificar se RATIO DECIDENDI (razão determinante) aplica-se ao caso
+- Jurisprudência genérica sobre "empresa" não necessariamente aplica a
+  "microempresa"
+- Jurisprudência sobre "processo civil" pode não se aplicar a "administrativo"
+
+PASSO 4: Indicar potencialidade de Súmula
+- Verificar se existe Súmula STJ consolidando jurisprudência
+
+2. TESES REITERADAS DO STJ APLICÁVEIS A PROGRAMAS DE APOIO
+
+TESE 1: VEDAÇÕES LEGAIS SÃO TAXATIVAS (NÃO POR ANALOGIA)
+
+Base jurisprudencial: REsp [número] / Súmula [número]
+
+Afirmação: "Requisitos de vedação em lei de concessão de benefício público
+devem ser interpretados restritivamente, não por analogia, favorecendo
+aquele que os atende formalmente."
+
+Aplicação prática: Se edital veda empresa com "envolvimento em crime de
+corrupção", não se estende vedação a crime de evasão fiscal (analogia
+indevida).
+
+TESE 2: EXIGÊNCIAS EDITALÍCIAS DEVEM ESTAR EXPRESSAS NO EDITAL
+
+Base jurisprudencial: Súmula STJ [número], REsp [número]
+
+Afirmação: "Administração não pode exigir documentação ou requisito que não
+conste expressamente no edital, sob pena de violação da segurança jurídica."
+
+Aplicação prática: Edital exige "balanço patrimonial", não pode Administração
+pedir no meio da análise "auditoria independente" (não estava no edital).
+
+TESE 3: INDEFERIMENTO DEVE SER FUNDAMENTADO (NÃO GENÉRICO)
+
+Base jurisprudencial: Art. 489, CPC, aplicado por analogia; jurisprudência
+STJ
+
+Afirmação: "Indeferimento de requerimento administrativo que apenas invoca
+'análise técnica desfavorável' ou 'documentação insuficiente' sem explicar
+QUAL documentação ou QUAL aspecto técnico é inválido, viola o princípio da
+fundamentação."
+
+Aplicação prática: Parecer que diz "empresa não atende requisitos" sem
+especificar qual requisito é inválido é fundado de forma viciada.
+
+TESE 4: SILÊNCIO ADMINISTRATIVO
+
+Base jurisprudencial: Lei 9.784/1999, art. 49; jurisprudência STJ
+
+Afirmação: "Silêncio administrativo além do prazo regulatório (usualmente 30
+dias) implica automaticamente em deferimento tácito, salvo se há norma
+específica contrária."
+
+Aplicação prática: Se edital prevê "análise em até 30 dias", passados 45 dias
+sem resposta, requerente tem direito a protocolar novo requerimento pedindo
+análise urgente ou deferimento tácito.
+
+TESE 5: ALTERAÇÃO DE EDITAL MID-STREAM
+
+Base jurisprudencial: REsp [número], ADI [número]
+
+Afirmação: "Alteração de requisitos ou critérios editalícios depois de iniciada
+a fase de submissão de requerimentos viola a segurança jurídica e é
+nula."
+
+Aplicação prática: Edital publicado com requisito X não pode ser alterado para
+requisito Y enquanto requerentes estão submetendo documentação.
+
+TESE 6: EMPRESÁRIO INDIVIDUAL vs. EMPRESA (CNPJ)
+
+Base jurisprudencial: Súmula [número], REsp [número]
+
+Afirmação: "Empresário individual (inscrição na Junta Comercial, sem CNPJ
+próprio) é legalmente distinto de microempresa constituída formalmente, embora
+ambos possam ter acesso a alguns programas de ME/EPP."
+
+Aplicação prática: Programa que exige "empresa constituída" pode exigir
+comprovante de CNPJ, não aceitando apenas Junta Comercial.
+
+3. SÚMULAS DO STJ APLICÁVEIS
+
+SÚMULA 1: Súmula XXX - [Enunciado sobre vedação legal restritiva]
+
+Texto: "[Texto da súmula]"
+
+Invocação em requerimento: "Conforme Súmula XXX do STJ, vedação legal deve ser
+interpretada restritivamente, não por analogia, razão pela qual [empresa]
+não está abrangida pela vedação de [requisito]."
+
+[Repetir para outras súmulas aplicáveis]
+
+4. CASOS PARADIGMÁTICOS (EXEMPLOS ILUSTRATIVOS)
+
+CASO 1: Exclusão do Simples Nacional por Débito Parcelado
+
+Contexto: Empresa foi excluída automaticamente do Simples Nacional porque
+sistema RFB detectou "débito tributário", ainda que parcelado.
+
+Tese da empresa: Débito parcelado ≠ débito em cobrança; logo, não gera
+exclusão.
+
+Precedente favorável: STJ firmou entendimento de que exclusão automática é
+indevida se débito está em parcelamento válido (empresa em cumprimento de
+acordo).
+
+Invocação: "A Súmula [número] do STJ já consolidou que empresa optante do
+Simples Nacional não pode ser excluída por débito parcelado, em virtude de
+estar cumprindo acordo de regularização [...]"
+
+CASO 2: Vedação a Sócio com Antecedente Penal
+
+Contexto: Programa veda participação de empresa cujo sócio tenha "condenação
+penal".
+
+Tese: Deve-se distinguir entre condenações graves (crime de corrupção,
+lavagem, fraude) e leves (crime hediondo, crime ambiental), bem como
+considerar reabilitação legal (art. 93, CP).
+
+Precedente favorável: STJ admitiu análise caso a caso, não vedação genérica.
+
+Invocação: "Jurisprudência do STJ, especificamente [REsp número], reconhece
+que vedação por condenação penal não é automática e sem discricionariedade,
+exigindo análise da natureza do crime e efeitos da reabilitação legal [...]"
+
+CASO 3: Não-Atualização de Balanço Patrimonial
+
+Contexto: Empresa apresenta balanço de 2024, edital exige "balanço atualizado
+do último exercício". Em 2026, balanço está tecnicamente "atrasado" (há 2 anos).
+
+Tese: "Último exercício" se refere ao exercício anterior ao requerimento, não
+ao ano-calendário corrente.
+
+Precedente favorável: STJ interpretou disposições contábeis de forma funcional,
+não literal.
+
+Invocação: "Conforme jurisprudência do STJ consolidada em [REsp número],
+expressões como 'último exercício' devem ser interpretadas de forma funcional,
+referindo-se ao exercício imediatamente anterior ao requerimento, não ao ano
+natural corrente [...]"
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+
+Standard Probatório: Preponderância evidências
+
+PARTE X: TRATADOS: DIREITO EMPRESARIAL MERCOSUL
+
+═══════════════════════════════════════════════════════════════════════════════════════
+
+TRATADOS INTERNACIONAIS E DIREITO EMPRESARIAL
+
+═══════════════════════════════════════════════════════════════════════════════════════
+
+1. FUNDAMENTO E HIERARQUIA
+
+Tratados internacionais ratificados pelo Brasil tem força de lei federal conforme art. 105, III, a, CF. Aplicam-se igualmente a programas de apoio empresarial, especialmente os do MERCOSUL.
+
+2. TRATADO DE ASSUNÇÃO (1991)
+
+Objetivo: Integração econômica regional.
+
+Apliação: Restrições a empresas de países-membros Mercosul podem violar o Tratado.
+
+3. PROTOCOLO DE HARMONIZAÇÃO DO DIREITO COMERCIAL (1996)
+
+Objetivo: Harmonizar regulações comerciais.
+
+Aplicação: Garantir igualdade de acesso a programas públicos entre nacionais e residentes Mercosul.
+ JURISPRUDENCIAIS: STJ E DIREITO EMPRESARIAL (TESES REITERADAS)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+1. METODOLOGIA DE PESQUISA JURISPRUDENCIAL
+
+Antes de qualquer invocação de jurisprudência, realizar:
+
+PASSO 1: web_search com termos-chave
+"STJ microempresa cadastro programa fomento" (ano)
+"STJ vedação requisito editalício discriminação"
+"STJ simples nacional reconsideração exclusão"
+
+PASSO 2: Localizar e ler EMENTA completa do acórdão
+- Número, relator, órgão julgador (Turma ou Seção), data
+
+PASSO 3: Verificar se RATIO DECIDENDI (razão determinante) aplica-se ao caso
+- Jurisprudência genérica sobre "empresa" não necessariamente aplica a
+  "microempresa"
+- Jurisprudência sobre "processo civil" pode não se aplicar a "administrativo"
+
+PASSO 4: Indicar potencialidade de Súmula
+- Verificar se existe Súmula STJ consolidando jurisprudência
+
+2. TESES REITERADAS DO STJ APLICÁVEIS A PROGRAMAS DE APOIO
+
+TESE 1: VEDAÇÕES LEGAIS SÃO TAXATIVAS (NÃO POR ANALOGIA)
+
+Base jurisprudencial: REsp [número] / Súmula [número]
+
+Afirmação: "Requisitos de vedação em lei de concessão de benefício público
+devem ser interpretados restritivamente, não por analogia, favorecendo
+aquele que os atende formalmente."
+
+Aplicação prática: Se edital veda empresa com "envolvimento em crime de
+corrupção", não se estende vedação a crime de evasão fiscal (analogia
+indevida).
+
+TESE 2: EXIGÊNCIAS EDITALÍCIAS DEVEM ESTAR EXPRESSAS NO EDITAL
+
+Base jurisprudencial: Súmula STJ [número], REsp [número]
+
+Afirmação: "Administração não pode exigir documentação ou requisito que não
+conste expressamente no edital, sob pena de violação da segurança jurídica."
+
+Aplicação prática: Edital exige "balanço patrimonial", não pode Administração
+pedir no meio da análise "auditoria independente" (não estava no edital).
+
+TESE 3: INDEFERIMENTO DEVE SER FUNDAMENTADO (NÃO GENÉRICO)
+
+Base jurisprudencial: Art. 489, CPC, aplicado por analogia; jurisprudência
+STJ
+
+Afirmação: "Indeferimento de requerimento administrativo que apenas invoca
+'análise técnica desfavorável' ou 'documentação insuficiente' sem explicar
+QUAL documentação ou QUAL aspecto técnico é inválido, viola o princípio da
+fundamentação."
+
+Aplicação prática: Parecer que diz "empresa não atende requisitos" sem
+especificar qual requisito é inválido é fundado de forma viciada.
+
+TESE 4: SILÊNCIO ADMINISTRATIVO
+
+Base jurisprudencial: Lei 9.784/1999, art. 49; jurisprudência STJ
+
+Afirmação: "Silêncio administrativo além do prazo regulatório (usualmente 30
+dias) implica automaticamente em deferimento tácito, salvo se há norma
+específica contrária."
+
+Aplicação prática: Se edital prevê "análise em até 30 dias", passados 45 dias
+sem resposta, requerente tem direito a protocolar novo requerimento pedindo
+análise urgente ou deferimento tácito.
+
+TESE 5: ALTERAÇÃO DE EDITAL MID-STREAM
+
+Base jurisprudencial: REsp [número], ADI [número]
+
+Afirmação: "Alteração de requisitos ou critérios editalícios depois de iniciada
+a fase de submissão de requerimentos viola a segurança jurídica e é
+nula."
+
+Aplicação prática: Edital publicado com requisito X não pode ser alterado para
+requisito Y enquanto requerentes estão submetendo documentação.
+
+TESE 6: EMPRESÁRIO INDIVIDUAL vs. EMPRESA (CNPJ)
+
+Base jurisprudencial: Súmula [número], REsp [número]
+
+Afirmação: "Empresário individual (inscrição na Junta Comercial, sem CNPJ
+próprio) é legalmente distinto de microempresa constituída formalmente, embora
+ambos possam ter acesso a alguns programas de ME/EPP."
+
+Aplicação prática: Programa que exige "empresa constituída" pode exigir
+comprovante de CNPJ, não aceitando apenas Junta Comercial.
+
+3. SÚMULAS DO STJ APLICÁVEIS
+
+SÚMULA 1: Súmula XXX - [Enunciado sobre vedação legal restritiva]
+
+Texto: "[Texto da súmula]"
+
+Invocação em requerimento: "Conforme Súmula XXX do STJ, vedação legal deve ser
+interpretada restritivamente, não por analogia, razão pela qual [empresa]
+não está abrangida pela vedação de [requisito]."
+
+[Repetir para outras súmulas aplicáveis]
+
+4. CASOS PARADIGMÁTICOS (EXEMPLOS ILUSTRATIVOS)
+
+CASO 1: Exclusão do Simples Nacional por Débito Parcelado
+
+Contexto: Empresa foi excluída automaticamente do Simples Nacional porque
+sistema RFB detectou "débito tributário", ainda que parcelado.
+
+Tese da empresa: Débito parcelado ≠ débito em cobrança; logo, não gera
+exclusão.
+
+Precedente favorável: STJ firmou entendimento de que exclusão automática é
+indevida se débito está em parcelamento válido (empresa em cumprimento de
+acordo).
+
+Invocação: "A Súmula [número] do STJ já consolidou que empresa optante do
+Simples Nacional não pode ser excluída por débito parcelado, em virtude de
+estar cumprindo acordo de regularização [...]"
+
+CASO 2: Vedação a Sócio com Antecedente Penal
+
+Contexto: Programa veda participação de empresa cujo sócio tenha "condenação
+penal".
+
+Tese: Deve-se distinguir entre condenações graves (crime de corrupção,
+lavagem, fraude) e leves (crime hediondo, crime ambiental), bem como
+considerar reabilitação legal (art. 93, CP).
+
+Precedente favorável: STJ admitiu análise caso a caso, não vedação genérica.
+
+Invocação: "Jurisprudência do STJ, especificamente [REsp número], reconhece
+que vedação por condenação penal não é automática e sem discricionariedade,
+exigindo análise da natureza do crime e efeitos da reabilitação legal [...]"
+
+CASO 3: Não-Atualização de Balanço Patrimonial
+
+Contexto: Empresa apresenta balanço de 2024, edital exige "balanço atualizado
+do último exercício". Em 2026, balanço está tecnicamente "atrasado" (há 2 anos).
+
+Tese: "Último exercício" se refere ao exercício anterior ao requerimento, não
+ao ano-calendário corrente.
+
+Precedente favorável: STJ interpretou disposições contábeis de forma funcional,
+não literal.
+
+Invocação: "Conforme jurisprudência do STJ consolidada em [REsp número],
+expressões como 'último exercício' devem ser interpretadas de forma funcional,
+referindo-se ao exercício imediatamente anterior ao requerimento, não ao ano
+natural corrente [...]"
+
+═══════════════════════════════════════════════════════════════════════════════════
