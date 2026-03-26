@@ -170,9 +170,20 @@ router.post('/', async (req, res) => {
       console.log(`   📊 Tamanho no disco: ${Math.round(stats.size / 1024)}KB`);
 
       try {
+      // 🔥 FIX: Detect PDF by original name, not just physical path
+      // Physical path may be .pdf.txt after upload processing
       const fileExtension = path.extname(doc.path).toLowerCase();
+      const originalExtension = path.extname(doc.name || doc.originalName || '').toLowerCase();
+      const isOriginallyPDF = originalExtension === '.pdf' || fileExtension === '.pdf';
 
-      if (fileExtension === '.pdf' && isMergedDocument && sourceVolumes.length > 0) {
+      console.log(`   🔍 Detecção de tipo:`);
+      console.log(`      Path: ${doc.path}`);
+      console.log(`      Nome original: ${doc.name || doc.originalName}`);
+      console.log(`      Extensão do path: ${fileExtension}`);
+      console.log(`      Extensão original: ${originalExtension}`);
+      console.log(`      É PDF? ${isOriginallyPDF}`);
+
+      if (isOriginallyPDF && isMergedDocument && sourceVolumes.length > 0) {
         // ═══════════════════════════════════════════════════════════
         // DOCUMENTO MESCLADO: Processar volumes originais em PARALELO
         // ═══════════════════════════════════════════════════════════
@@ -241,20 +252,29 @@ router.post('/', async (req, res) => {
 
         isPDF = true;
 
-      } else if (fileExtension === '.pdf') {
+      } else if (isOriginallyPDF) {
         // PDF simples (não mesclado)
         console.log(`   📄 Arquivo PDF detectado - extraindo texto...`);
-        const pdfParse = (await import('pdf-parse/lib/pdf-parse.js')).default;
-        const dataBuffer = fs.readFileSync(doc.path);
-        const pdfData = await pdfParse(dataBuffer);
-        rawText = pdfData.text;
-        isPDF = true;
-        console.log(`   ✅ PDF parseado: ${pdfData.numpages} páginas`);
-        console.log(`   📊 Texto extraído: ${Math.round(rawText.length / 1000)}k caracteres`);
 
-        // 🔥 FIX v2: Detectar PDF escaneado por múltiplos critérios
-        const charsPerPage = rawText.length / pdfData.numpages;
-        const fileSizeKB = fs.statSync(doc.path).size / 1024;
+        // 🔥 FIX: If path is .txt (already extracted), read text directly
+        if (fileExtension === '.txt') {
+          console.log(`   ⚡ Texto já extraído (path .txt) - lendo diretamente`);
+          rawText = fs.readFileSync(doc.path, 'utf8');
+          isPDF = true;
+          console.log(`   ✅ Texto lido: ${Math.round(rawText.length / 1000)}k caracteres`);
+        } else {
+          // Path is actual .pdf, extract with pdf-parse
+          const pdfParse = (await import('pdf-parse/lib/pdf-parse.js')).default;
+          const dataBuffer = fs.readFileSync(doc.path);
+          const pdfData = await pdfParse(dataBuffer);
+          rawText = pdfData.text;
+          isPDF = true;
+          console.log(`   ✅ PDF parseado: ${pdfData.numpages} páginas`);
+          console.log(`   📊 Texto extraído: ${Math.round(rawText.length / 1000)}k caracteres`);
+
+          // 🔥 FIX v2: Detectar PDF escaneado por múltiplos critérios
+          const charsPerPage = rawText.length / pdfData.numpages;
+          const fileSizeKB = fs.statSync(doc.path).size / 1024;
         const textSizeKB = rawText.length / 1024;
         const textToFileSizeRatio = textSizeKB / fileSizeKB;
 
