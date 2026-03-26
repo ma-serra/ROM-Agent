@@ -155,7 +155,7 @@ export function UploadPage() {
     if (selectedFiles.length === 0) return
 
     try {
-      const csrfToken = getCsrfToken()
+      const csrfToken = await getCsrfToken()
 
       // ✅ DETECTAR SE PRECISA CHUNKED UPLOAD (arquivos >80MB)
       const CHUNKED_THRESHOLD = 80 * 1024 * 1024 // 80MB
