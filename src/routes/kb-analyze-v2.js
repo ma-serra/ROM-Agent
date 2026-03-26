@@ -386,15 +386,15 @@ router.post('/', async (req, res) => {
       });
     }
 
-    // LIMITE DE 100MB: Aplicar apenas a PDFs NÃO mesclados
+    // LIMITE DE 200MB: Aplicar apenas a PDFs NÃO mesclados
     // Documentos mesclados usam estratégia de volumes (sem limite)
-    if (isPDF && !isMergedDocument && doc.size > 100 * 1024 * 1024) {
+    if (isPDF && !isMergedDocument && doc.size > 200 * 1024 * 1024) {
       console.log(`   ⚠️ PDF muito grande (${Math.round(doc.size/1024/1024)}MB) - processamento pode falhar`);
       return res.status(400).json({
         success: false,
-        error: `PDF muito grande (${Math.round(doc.size/1024/1024)}MB). Limite: 100MB para PDFs únicos. Use função de merge de volumes para processar documentos grandes.`,
+        error: `PDF muito grande (${Math.round(doc.size/1024/1024)}MB). Limite: 200MB para PDFs únicos. Use função de merge de volumes para processar documentos grandes.`,
         size: doc.size,
-        limit: 100 * 1024 * 1024
+        limit: 200 * 1024 * 1024
       });
     }
 
