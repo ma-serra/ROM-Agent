@@ -939,21 +939,157 @@ Ser o melhor assistente jurídico do Brasil, sempre atualizado, tecnicamente per
 
 ---
 
+## 📁 PARADIGMAS DE QUALIDADE - FASE 1.5
+
+### Localização dos Prompts Refatorados
+
+Todos os prompts refatorados seguindo a metodologia **ROM V3.0 Fase 1.5** estão organizados em:
+
+**`03_PROMPTS_ESPECIFICOS/`**
+
+### Estrutura de Pastas:
+
+#### 1. **B_ANALISE_REVISAO_V5**
+   - Prompts de análise e revisão de peças jurídicas
+   - Paradigma: Análise crítica completa
+
+#### 2. **B_RECURSOS_CIVEIS_REFATORADOS**
+   - Apelação Cível, Agravo de Instrumento, Recurso Especial, etc.
+   - Paradigma principal: PROMPT_APELACAO_CIVEL_V5.0.txt (27 partes, 85.000 palavras)
+   - Conformidade: 100% ROM V3.0
+
+#### 3. **C_RECURSOS_CRIMINAIS**
+   - Apelação Criminal, Habeas Corpus, Revisão Criminal, etc.
+   - Paradigma principal: PROMPT_APELACAO_CRIMINAL_COMPLETA_V5.0.txt
+   - Inclui: Retroatividade benéfica (3-4 pág), LEP completa, Regras Mandela/Bangkok
+
+#### 4. **D_PETICOES_INICIAIS_REFATORADAS**
+   - Petição Inicial Cível, Contestação Universal, Réplica, etc.
+   - Estrutura: Arts. 319-342 CPC detalhados
+
+#### 5. **E_EXTRAJUDICIAIS_REFATORADOS**
+   - Contratos, Notificações, Pareceres Jurídicos, Termos de Acordo
+   - Aplicação: Direito civil + empresarial + tributário
+
+#### 6. **F_TRABALHISTAS_REFATORADOS** ✨ **NOVO**
+   - Reclamação Trabalhista, Contestação, Recurso Ordinário, Recurso de Revista TST
+   - Embargos de Execução Trabalhista, Mandado de Segurança Trabalhista
+   - Paradigma: CLT + CPC subsidiário + 12 Convenções OIT
+   - Reforma Trabalhista (Lei 13.467/2017) integrada
+
+#### 7. **G_CONTRARRAZOES_CIVEIS**
+   - Estrutura especializada: 11 partes obrigatórias + 24 dimensões
+   - Cotejamento analítico de divergência jurisprudencial
+   - Prequestionamento estruturado
+
+#### 8. **H_CONTRARRAZOES_CRIMINAIS**
+   - Contrarrazões em recursos criminais
+   - In dubio pro reo aplicado
+   - CADH + PIDCP integrados
+
+---
+
+### Como Usar os Paradigmas:
+
+#### Para Refatoração de Prompts:
+```markdown
+1. LER o prompt original completamente
+2. LER o paradigma correspondente da pasta 03_PROMPTS_ESPECIFICOS/
+3. IDENTIFICAR gaps críticos (comparar estrutura)
+4. ADICIONAR 7 partes obrigatórias Fase 1.5:
+   - Parte VII: Estrutura Redacional
+   - Parte VIII: Aplicação Temporal + LINDB
+   - Parte IX: Direito Material
+   - Parte XIII: Distinguishing + Overruling
+   - Standard Probatório
+   - Tratados Internacionais
+   - Dissídios Jurisprudenciais
+5. SALVAR preservando estrutura original
+```
+
+#### Partes Obrigatórias Fase 1.5:
+
+**PARTE VII - ESTRUTURA REDACIONAL (8-12 páginas)**
+- Legislação processual aplicável (CPC, CPP, CLT)
+- Técnica ROM: Prequestionamento + Atom bomb approach
+- 5 princípios redacionais por área
+
+**PARTE VIII - APLICAÇÃO TEMPORAL + LINDB (8-12 páginas)**
+- LINDB Arts. 1º-6º completos
+- Art. 14 CPC/2015 (aplicação subsidiária)
+- Direito intertemporal (tempus regit actum)
+- Marcos legislativos importantes
+- 5 princípios aplicação temporal
+
+**PARTE IX - DIREITO MATERIAL (15-20 páginas)**
+- **Cível**: CC + 11 áreas mapeadas (obrigações, contratos, família, sucessões, responsabilidade civil, etc.)
+- **Criminal**: CP + LEP + Retroatividade benéfica (Art. 2º CP + CADH Art. 9º + PIDCP Art. 15)
+- **Trabalhista**: CLT 80+ artigos + Reforma Trabalhista (Lei 13.467/2017)
+
+**PARTE XIII - DISTINGUISHING + OVERRULING (6-10 páginas)**
+- 3 tipos distinguishing (factual, jurídico, axiológico)
+- 3 tipos overruling (express, implied, anticipatory)
+- Técnica afastamento precedentes contrários
+- Cotejamento analítico
+
+**STANDARD PROBATÓRIO (4-6 páginas)**
+- **Criminal**: In dubio pro reo (beyond reasonable doubt)
+- **Cível**: Preponderância evidências + ônus dinâmico
+- **Trabalhista**: Inversão ônus prova (CLT Art. 818)
+- 5 standards: preponderância, prova clara, beyond reasonable doubt, scintilla, prima facie
+
+**TRATADOS INTERNACIONAIS (3-8 páginas)**
+- **Cível**: 90+ tratados (Haia, Viena, Mercosul, etc.)
+- **Criminal**: CADH (8 arts), PIDCP (3 arts), Convenção Tortura
+- **Trabalhista**: 12 Convenções OIT (029, 087, 098, 100, 105, 111, 132, 138, 155, 159, 182, 190)
+
+**DISSÍDIOS JURISPRUDENCIAIS (6-12 páginas)**
+- Técnica cotejamento analítico
+- Estrutura: tese A vs tese B → análise crítica → proposta
+- Súmulas STF/STJ/TST aplicáveis
+- Precedentes vinculantes (Art. 927 CPC)
+
+---
+
+### Conformidade ROM V3.0 - Checklist:
+
+Todos os paradigmas devem ter **100% conformidade**:
+
+- ✅ **Fidedignidade**: Zero invenções, sistema [PENDENTE: ...]
+- ✅ **Conferibilidade**: web_search obrigatório, citação completa (tribunal, número, data)
+- ✅ **Anti-Supressão**: Checklists 100-180 itens
+- ✅ **Linguagem Forense Limpa**: Português escorreito, sem emojis/IA-markers
+
+---
+
+### Qualidade Esperada:
+
+- **Crescimento**: +120-180% palavras por prompt
+- **Partes**: +7 partes obrigatórias Fase 1.5
+- **Qualidade Projetada**: 85-95/100
+- **Conformidade ROM V3.0**: 100%
+
+---
+
 ## 🔐 METADADOS DE ATUALIZAÇÃO
 
 ```json
 {
-  "version": "1.0.0",
-  "last_update": "2025-12-13",
-  "next_review": "2025-12-20",
+  "version": "1.1.0",
+  "last_update": "2026-03-25",
+  "next_review": "2026-04-01",
   "auto_update": true,
   "priority": "MAXIMUM",
   "status": "active",
+  "paradigm_folder": "03_PROMPTS_ESPECIFICOS/",
+  "fase": "1.5",
+  "conformidade_rom": "100%",
   "update_sources": [
     "STF website",
     "STJ website",
     "Planalto legislation",
-    "User feedback"
+    "User feedback",
+    "Paradigmas Fase 1.5"
   ]
 }
 ```
