@@ -17,7 +17,7 @@
  * @version 7.0.0 - Complete Cache Strategies
  */
 
-const VERSION = 'v8.1.0'; // CRITICAL: Force cache clear + Base64 flag reset fix
+const VERSION = 'v8.2.0'; // CRITICAL: Force browser cache refresh - Upload fixes deployed
 const STATIC_CACHE = `rom-agent-static-${VERSION}`;
 const RUNTIME_CACHE = `rom-agent-runtime-${VERSION}`;
 const OFFLINE_CACHE = `rom-agent-offline-${VERSION}`;

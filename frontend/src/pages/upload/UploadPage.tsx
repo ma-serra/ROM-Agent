@@ -7,6 +7,8 @@
  * - Geracao de documentos estruturados
  * - Listagem e busca de documentos
  * - Integracao com backend /api/kb/upload
+ *
+ * @version 2.8.1 - Upload fixes: await getCsrfToken + AbortController timeout (27/03/2026)
  */
 
 import { useState, useEffect, useCallback } from 'react'
