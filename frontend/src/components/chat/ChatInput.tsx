@@ -195,7 +195,7 @@ export function ChatInput({ onSend, isLoading, onStop, onAttachClick, hasAttachm
             multiple
             onChange={handleFileSelect}
             className="hidden"
-            accept=".pdf,.doc,.docx,.txt,.md,.json,.csv"
+            accept=".pdf,.doc,.docx,.txt,.md,.json,.csv,.jpg,.jpeg,.png,.gif,.bmp,.tiff,.tif,.webp,.heic,.heif,image/*"
           />
 
           {/* Format selector (Fase 2) */}

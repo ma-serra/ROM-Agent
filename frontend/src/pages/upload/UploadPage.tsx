@@ -634,6 +634,7 @@ export function UploadPage() {
                 <input
                   type="file"
                   multiple
+                  accept=".pdf,.docx,.doc,.txt,.md,.jpg,.jpeg,.png,.gif,.bmp,.tiff,.tif,.webp,.heic,.heif,image/*,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,text/plain,text/markdown"
                   onChange={handleFileUpload}
                   className="hidden"
                   id="file-upload"

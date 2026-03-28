@@ -1053,24 +1053,35 @@ const upload = multer({
     files: 20 // 20 arquivos por vez
   },
   fileFilter: (req, file, cb) => {
-    // Aceitar por extensão de arquivo
-    const allowedExtensions = /\.(pdf|docx|doc|txt|md)$/i;
+    // Aceitar por extensão de arquivo (documentos + imagens)
+    const allowedExtensions = /\.(pdf|docx|doc|txt|md|jpg|jpeg|png|gif|bmp|tiff|tif|webp|heic|heif)$/i;
     const hasValidExtension = allowedExtensions.test(file.originalname);
 
-    // Aceitar por MIME type
+    // Aceitar por MIME type (documentos + imagens)
     const allowedMimeTypes = [
+      // Documentos
       'application/pdf',
       'application/msword',
       'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
       'text/plain',
-      'text/markdown'
+      'text/markdown',
+      // Imagens
+      'image/jpeg',
+      'image/jpg',
+      'image/png',
+      'image/gif',
+      'image/bmp',
+      'image/tiff',
+      'image/webp',
+      'image/heic',
+      'image/heif'
     ];
     const hasValidMimeType = allowedMimeTypes.includes(file.mimetype);
 
     if (hasValidExtension || hasValidMimeType) {
       return cb(null, true);
     } else {
-      cb(new Error('Apenas arquivos PDF, DOCX, DOC, TXT e MD são permitidos!'));
+      cb(new Error('Apenas arquivos PDF, DOCX, DOC, TXT, MD e imagens (JPG, PNG, GIF, etc) são permitidos!'));
     }
   }
 });
@@ -6092,12 +6103,23 @@ app.post('/api/kb/process-uploaded', requireAuth, async (req, res) => {
 function getMimeType(filename) {
   const ext = path.extname(filename).toLowerCase();
   const mimeTypes = {
+    // Documentos
     '.pdf': 'application/pdf',
     '.doc': 'application/msword',
     '.docx': 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
     '.txt': 'text/plain',
-    '.png': 'image/png',
+    '.md': 'text/markdown',
+    // Imagens
     '.jpg': 'image/jpeg',
+    '.jpeg': 'image/jpeg',
+    '.png': 'image/png',
+    '.gif': 'image/gif',
+    '.bmp': 'image/bmp',
+    '.tiff': 'image/tiff',
+    '.tif': 'image/tiff',
+    '.webp': 'image/webp',
+    '.heic': 'image/heic',
+    '.heif': 'image/heif',
     '.jpeg': 'image/jpeg',
     '.zip': 'application/zip',
     '.rar': 'application/x-rar-compressed'
