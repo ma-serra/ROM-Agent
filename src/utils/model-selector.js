@@ -24,12 +24,12 @@ const MODEL_COSTS = {
   'llama': 0.99
 };
 
-// IDs completos dos modelos
+// IDs completos dos modelos (sincronizado com bedrock.js INFERENCE_PROFILES)
 const MODEL_IDS = {
   'nova-micro': 'us.amazon.nova-micro-v1:0',
   'nova-lite': 'us.amazon.nova-lite-v1:0',
   haiku: 'us.anthropic.claude-haiku-4-5-20251001-v1:0',
-  sonnet: 'us.anthropic.claude-sonnet-4-5-20241022-v2:0',
+  sonnet: 'us.anthropic.claude-sonnet-4-5-20250929-v1:0',  // ✅ FIX: Atualizado para versão correta
   opus: 'us.anthropic.claude-opus-4-5-20251101-v1:0',
   'deepseek-r1': 'us.anthropic.deepseek-r1-distill-llama-70b',
   llama: 'us.meta.llama3-3-70b-instruct-v1:0'
