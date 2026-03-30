@@ -12096,6 +12096,110 @@ Acesse: https://iarom.com.br/kb-documents.html
 }
 
 // ═══════════════════════════════════════════════════════════════════════
+// ADMIN - LIMPEZA COMPLETA DO SISTEMA
+// ═══════════════════════════════════════════════════════════════════════
+
+/**
+ * POST /api/admin/cleanup-all
+ * 🧹 LIMPEZA COMPLETA: Remove todos os uploads, KB e temporários
+ * APENAS PARA ADMIN - Operação destrutiva!
+ */
+app.post('/api/admin/cleanup-all', requireAuth, generalLimiter, async (req, res) => {
+  try {
+    const currentUserRole = req.session.user?.role;
+
+    // Segurança: apenas admin pode limpar tudo
+    if (currentUserRole !== 'admin') {
+      return res.status(403).json({ error: 'Acesso negado - apenas admin' });
+    }
+
+    logger.warn('🧹 LIMPEZA COMPLETA INICIADA', { userId: req.session.user.id });
+
+    let totalDeleted = 0;
+    const results = {};
+
+    // Função helper para deletar recursivamente
+    function deleteRecursive(dirPath) {
+      if (!fs.existsSync(dirPath)) {
+        return 0;
+      }
+
+      let count = 0;
+      const files = fs.readdirSync(dirPath);
+
+      for (const file of files) {
+        const filePath = path.join(dirPath, file);
+        const stat = fs.statSync(filePath);
+
+        if (stat.isDirectory()) {
+          count += deleteRecursive(filePath);
+          fs.rmdirSync(filePath);
+        } else {
+          fs.unlinkSync(filePath);
+          count++;
+        }
+      }
+
+      return count;
+    }
+
+    // 1. Limpar uploads
+    results.uploads = deleteRecursive(ACTIVE_PATHS.upload);
+    totalDeleted += results.uploads;
+
+    // 2. Limpar extraídos
+    results.extracted = deleteRecursive(ACTIVE_PATHS.extracted);
+    totalDeleted += results.extracted;
+
+    // 3. Limpar processados
+    results.processed = deleteRecursive(ACTIVE_PATHS.processed);
+    totalDeleted += results.processed;
+
+    // 4. Limpar KB
+    const kbPath = ACTIVE_PATHS.kb || path.join(path.dirname(path.dirname(__dirname)), 'data', 'kb');
+    if (fs.existsSync(kbPath)) {
+      results.kb = deleteRecursive(kbPath);
+      totalDeleted += results.kb;
+    } else {
+      results.kb = 0;
+    }
+
+    // 5. Recriar pastas vazias
+    [ACTIVE_PATHS.upload, ACTIVE_PATHS.extracted, ACTIVE_PATHS.processed].forEach(dir => {
+      if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir, { recursive: true });
+      }
+    });
+
+    // 6. Resetar arquivo de documentos KB
+    const kbDocumentsFile = path.join(path.dirname(path.dirname(__dirname)), 'data', 'kb-documents.json');
+    if (fs.existsSync(kbDocumentsFile)) {
+      fs.writeFileSync(kbDocumentsFile, JSON.stringify({ documents: [] }, null, 2));
+    }
+
+    // 7. Limpar cache do KB
+    kbCache.clear();
+
+    logger.warn('✅ LIMPEZA COMPLETA CONCLUÍDA', {
+      totalDeleted,
+      results,
+      userId: req.session.user.id
+    });
+
+    res.json({
+      success: true,
+      message: 'Limpeza completa concluída',
+      totalDeleted,
+      details: results
+    });
+
+  } catch (error) {
+    logger.error('Erro na limpeza completa', { error: error.message });
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// ═══════════════════════════════════════════════════════════════════════
 // ERROR HANDLERS v2.8.0 - Devem vir APÓS todas as rotas
 // ═══════════════════════════════════════════════════════════════════════
 
