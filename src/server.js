@@ -30,6 +30,7 @@ import metricsCollector from './utils/metrics-collector-v2.js';
 import testPuppeteerRoutes from './routes/test-puppeteer.js';
 import testEnvRoutes from './routes/test-env.js';
 import debugModelSelectorRoutes from './routes/debug-model-selector.js';
+import testDeployRoutes from './routes/test-deploy.js';
 
 // Authentication imports
 import { createSessionMiddleware, sessionEnhancerMiddleware } from './config/session-store.js';
@@ -63,6 +64,7 @@ app.use('/api/auth', authRoutes);
 // Test routes (no auth required for diagnostics)
 app.use('/api', testPuppeteerRoutes);
 app.use('/api', testEnvRoutes);
+app.use('/api/test-deploy', testDeployRoutes);
 app.use('/api/debug/model-selector', debugModelSelectorRoutes);
 
 // Serve static files (login.html, index.html, etc.)
