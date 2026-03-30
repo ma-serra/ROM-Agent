@@ -22,8 +22,8 @@ services:
     # CRÍTICO: Iniciar servidor IMEDIATAMENTE para evitar port scan timeout
     # Frontend já foi buildado no buildCommand
     # Migrations rodam assíncronamente após servidor abrir porta
-    # Heap size: 3GB for single worker (fits in 4GB RAM with system overhead)
-    startCommand: node --max-old-space-size=3072 src/server-cluster.js
+    # Heap size: 800MB per worker × 4 workers = 3.2GB + 800MB system = 4GB total
+    startCommand: node --max-old-space-size=800 src/server-cluster.js
 
     # ═══ VARIÁVEIS DE AMBIENTE ═══
     envVars:
@@ -34,12 +34,11 @@ services:
         value: 25.2.1
 
       # ═══ CONCORRÊNCIA - PRO PLAN ═══
-      # CRITICAL FIX: Single worker until PostgreSQL session store is fixed
-      # Issue: MemoryStore + cluster mode = sessions not shared between workers
-      # Result: Login creates session in Worker 1, upload goes to Worker 2 → 302 redirect
-      # TODO: Fix PostgreSQL session store race condition, then increase to 2+
+      # FIXED: PostgreSQL session store now working correctly
+      # Sessions persisted in database = shared across all workers
+      # 4 workers with 800MB each = 3.2GB + 800MB system = 4GB total (fits in Pro plan)
       - key: WEB_CONCURRENCY
-        value: 1  # Single worker ensures session consistency
+        value: 4  # Restored to 4 workers for optimal performance
 
       # Porta (Render usa 10000)
       - key: PORT

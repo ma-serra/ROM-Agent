@@ -268,7 +268,7 @@ export const ocrEngine = {
     const { onProgress, ...ocrOptions } = opcoes; // Extrair callback de progresso
 
     const resultados = [];
-    const BATCH_SIZE = 4; // Processar 4 páginas em paralelo (1 por worker)
+    const BATCH_SIZE = 16; // Processar 16 páginas em paralelo (4 por worker com 4 workers)
     const totalPages = imagePaths.length;
     const totalBatches = Math.ceil(totalPages / BATCH_SIZE);
 

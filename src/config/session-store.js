@@ -56,6 +56,7 @@ function createPostgresSessionStore() {
   const pool = getPostgresPool();
 
   if (!pool) {
+    logger.warn('PostgreSQL pool not available - cannot create PostgreSQL SessionStore');
     return null;
   }
 
@@ -70,10 +71,12 @@ function createPostgresSessionStore() {
       }
     });
 
-    logger.info('PostgreSQL SessionStore created (fallback, persistent)');
+    logger.info('✅ PostgreSQL SessionStore CRIADO - sessões persistentes e compartilhadas entre workers!');
+    console.log('✅ [SESSION] PostgreSQL SessionStore ativo - multi-worker seguro');
     return store;
   } catch (error) {
-    logger.warn('Failed to create PostgreSQL SessionStore', { error: error.message });
+    logger.error('Failed to create PostgreSQL SessionStore', { error: error.message });
+    console.error('❌ [SESSION] Erro ao criar PostgreSQL SessionStore:', error.message);
     return null;
   }
 }
@@ -107,8 +110,14 @@ export function createSessionStore() {
   }
 
   // Emergency fallback to MemoryStore
+  console.error('━'.repeat(70));
+  console.error('❌ [SESSION] Redis e PostgreSQL INDISPONÍVEIS');
+  console.error('❌ [SESSION] Usando MemoryStore (SESSÕES EFÊMERAS!)');
+  console.error('⚠️  [SESSION] MULTI-WORKER NÃO SEGURO COM MEMORYSTORE');
+  console.error('⚠️  [SESSION] Configure DATABASE_URL para persistência');
+  console.error('━'.repeat(70));
   logger.warn('Redis e PostgreSQL nao disponiveis - usando MemoryStore (SESSOES EFEMERAS!)');
-  logger.warn('ATENCAO: Sessoes serao perdidas em redeploy!');
+  logger.warn('ATENCAO: Sessoes serao perdidas em redeploy e NAO compartilhadas entre workers!');
 
   return {
     store: new session.MemoryStore(),

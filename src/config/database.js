@@ -51,6 +51,9 @@ export async function initPostgres() {
     return pgPool;
   }
 
+  // CRITICAL FIX: Create pool SYNCHRONOUSLY (doesn't throw on invalid config)
+  // Pool creation is deferred - actual connection happens on first query
+  // This allows session store to use pool even if DB is temporarily unavailable
   try {
     // Optimized pool configuration for production performance
     const poolConfig = {
@@ -87,8 +90,9 @@ export async function initPostgres() {
     console.log('🔍 [PG] Statement timeout:', config.statement_timeout + 'ms');
     console.log('🔍 [PG] Application name:', config.application_name);
 
-    console.log('🔍 [PG] Criando pg.Pool...');
+    console.log('🔍 [PG] Criando pg.Pool (sync - não lança exceção)...');
     pgPool = new pg.Pool(config);
+    console.log('✅ [PG] Pool CRIADO - disponível para session store');
 
     // Configurar schema (para separar staging/production)
     const schema = process.env.DATABASE_SCHEMA || 'public';
@@ -145,16 +149,15 @@ export async function initPostgres() {
     return pgPool;
   } catch (error) {
     console.error('━'.repeat(70));
-    console.error('❌ [PG] ERRO AO CONECTAR POSTGRESQL');
+    console.error('❌ [PG] ERRO AO CRIAR POOL POSTGRESQL');
     console.error('❌ [PG] Error message:', error.message);
     console.error('❌ [PG] Error code:', error.code);
-    console.error('❌ [PG] Error stack:', error.stack);
     console.error('━'.repeat(70));
 
-    logger.warn('PostgreSQL INDISPONÍVEL - dados serão perdidos em redeploy!', {
+    logger.error('PostgreSQL pool creation FAILED - session store will use Memory!', {
       error: error.message
     });
-    logger.warn('Configure DATABASE_URL para persistência de dados');
+    logger.warn('Configure DATABASE_URL corretamente para persistência de sessões');
     pgPool = null;
     return null;
   }
