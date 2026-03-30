@@ -41,6 +41,13 @@ const MODEL_IDS = {
 function classifyTask(prompt, context = {}) {
   const promptLower = prompt.toLowerCase();
 
+  // 🐛 DEBUG: Log do prompt recebido
+  console.log('[ModelSelector] classifyTask called:', {
+    prompt: prompt.substring(0, 100),
+    promptLower: promptLower.substring(0, 100),
+    contextKeys: Object.keys(context)
+  });
+
   // 🔧 FIX CRÍTICO: Verificar se tools são necessárias
   // KB, jurisprudência, legislação precisam de tool use
   // Nova Micro e Nova Lite NÃO suportam tool use!
@@ -53,6 +60,8 @@ function classifyTask(prompt, context = {}) {
     promptLower.includes('jurisprudência') ||
     promptLower.includes('legislação') ||
     promptLower.includes('súmula');
+
+  console.log('[ModelSelector] requiresTools:', requiresTools);
 
   // 🟢 NOVA MICRO - Tarefas ultra-simples (97% economia vs Sonnet)
   // ⚠️ NÃO suporta tool use - NUNCA usar quando tools são necessárias
@@ -95,6 +104,7 @@ function classifyTask(prompt, context = {}) {
   // Verificar keywords por prioridade (mais específico primeiro)
   for (const keyword of opusKeywords) {
     if (promptLower.includes(keyword)) {
+      console.log('[ModelSelector] Matched OPUS keyword:', keyword);
       return { type: 'dense', model: 'opus', confidence: 0.9 };
     }
   }
@@ -112,6 +122,7 @@ function classifyTask(prompt, context = {}) {
   // 🔧 FIX: Nova Micro NÃO suporta tool use - upgrade para Haiku se tools necessárias
   for (const keyword of novaMicroKeywords) {
     if (promptLower.includes(keyword)) {
+      console.log('[ModelSelector] Matched NOVA MICRO keyword:', keyword, 'requiresTools:', requiresTools);
       if (requiresTools) {
         return { type: 'simple+tools', model: 'haiku', confidence: 0.7 };
       }
@@ -153,6 +164,7 @@ function classifyTask(prompt, context = {}) {
   }
 
   // Default: Sonnet (seguro)
+  console.log('[ModelSelector] No keyword matched, using default SONNET');
   return { type: 'medium', model: 'sonnet', confidence: 0.5 };
 }
 
