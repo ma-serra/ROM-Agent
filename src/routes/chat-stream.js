@@ -138,7 +138,8 @@ router.post('/stream', async (req, res) => {
     const modelInput = model || modelo;
     let selectedModel;
 
-    if (modelInput) {
+    // 🔧 FIX: Tratar 'auto' como ausência de modelo (permite seleção automática)
+    if (modelInput && modelInput !== 'auto') {
       // Se usuário especificou modelo, usar ele
       selectedModel = MODEL_MAPPING[modelInput] || modelInput;
     } else {
