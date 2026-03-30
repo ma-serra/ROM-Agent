@@ -1359,70 +1359,9 @@ export function useFileUpload<T = DefaultUploadResponse>(
         }
 
         const kbResult = await processResponse.json();
-        console.log('📤 [useFileUpload] KB processing started:', kbResult);
+        console.log('✅ [useFileUpload] KB processing completed:', kbResult);
 
-        // 🔥 FIX: Aguardar processamento via SSE (não marcar como 100% ainda!)
-        if (kbResult.uploadId) {
-          console.log(`🔄 [useFileUpload] Connecting to SSE for progress: ${kbResult.uploadId}`);
-
-          // Aguardar processamento via SSE
-          await new Promise((resolve, reject) => {
-            const eventSource = new EventSource(`/api/upload/progress/${kbResult.uploadId}`);
-            let lastProgress = 0;
-
-            eventSource.onmessage = (event) => {
-              try {
-                const data = JSON.parse(event.data);
-
-                if (data.type === 'progress') {
-                  lastProgress = data.progress || lastProgress;
-                  console.log(`📊 [useFileUpload] Progress: ${lastProgress}% - ${data.message}`);
-
-                  setState((prev) => ({
-                    ...prev,
-                    progress: lastProgress,
-                    status: 'processing',
-                  }));
-
-                  setAttachedFiles((prev) =>
-                    prev.map((af) =>
-                      af.fileInfo.id === fileId ? { ...af, fileInfo: { ...af.fileInfo, progress: lastProgress } } : af
-                    )
-                  );
-
-                  onProgress?.(lastProgress, (file.size * lastProgress) / 100, file.size);
-                }
-                else if (data.type === 'completed') {
-                  console.log('✅ [useFileUpload] Processing completed via SSE');
-                  eventSource.close();
-                  resolve(data);
-                }
-                else if (data.type === 'error') {
-                  console.error('❌ [useFileUpload] Processing failed:', data.error);
-                  eventSource.close();
-                  reject(new Error(data.error || 'Processing failed'));
-                }
-              } catch (error) {
-                console.error('❌ [useFileUpload] SSE parse error:', error);
-              }
-            };
-
-            eventSource.onerror = () => {
-              console.error('❌ [useFileUpload] SSE connection failed');
-              eventSource.close();
-              reject(new Error('SSE connection failed'));
-            };
-
-            // Timeout de 2 horas para processamento completo
-            setTimeout(() => {
-              eventSource.close();
-              reject(new Error('Upload cancelado: Timeout de 2 horas excedido'));
-            }, 2 * 60 * 60 * 1000);
-          });
-        }
-
-        // Agora sim, marcar como 100% após processamento via SSE
-        console.log('✅ [useFileUpload] KB processing completed');
+        // Progress 100%
         setState((prev) => ({
           ...prev,
           progress: 100,
@@ -1438,7 +1377,7 @@ export function useFileUpload<T = DefaultUploadResponse>(
 
         onProgress?.(100, file.size, file.size);
 
-        // Return KB processing result
+        // Return KB processing result (contains document info)
         return kbResult as T;
       } catch (error: any) {
         console.error('❌ [useFileUpload] Chunked upload error:', error);
