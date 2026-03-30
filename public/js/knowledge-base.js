@@ -992,7 +992,8 @@ class KnowledgeBase {
           reject(new Error('Upload failed'));
         });
 
-        xhr.open('POST', '/api/upload');
+        // 🔥 FIX: Usar endpoint correto do KB (não o genérico /api/upload)
+        xhr.open('POST', '/api/kb/upload');
         xhr.send(formData);
       });
     } catch (error) {
