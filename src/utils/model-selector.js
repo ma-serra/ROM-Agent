@@ -42,7 +42,7 @@ function classifyTask(prompt, context = {}) {
   const promptLower = prompt.toLowerCase();
 
   // 🐛 DEBUG: Log do prompt recebido
-  logger.debug('[ModelSelector] classifyTask called', {
+  logger.info('[ModelSelector] classifyTask called', {
     prompt: prompt.substring(0, 100),
     promptLower: promptLower.substring(0, 100),
     contextKeys: Object.keys(context)
@@ -61,7 +61,7 @@ function classifyTask(prompt, context = {}) {
     promptLower.includes('legislação') ||
     promptLower.includes('súmula');
 
-  logger.debug('[ModelSelector] requiresTools', { requiresTools });
+  logger.info('[ModelSelector] requiresTools', { requiresTools });
 
   // 🟢 NOVA MICRO - Tarefas ultra-simples (97% economia vs Sonnet)
   // ⚠️ NÃO suporta tool use - NUNCA usar quando tools são necessárias
