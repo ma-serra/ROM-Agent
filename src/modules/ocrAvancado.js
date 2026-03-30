@@ -425,19 +425,40 @@ export const extratorPDF = {
   /**
    * Converte PDF para imagens
    */
-  async pdfParaImagens(pdfPath, outputDir = null, dpi = 300) {
+  async pdfParaImagens(pdfPath, outputDir = null, dpi = 300, onProgress = null) {
     const dir = outputDir || path.dirname(pdfPath);
     const baseName = path.basename(pdfPath, '.pdf');
     const outputPrefix = path.join(dir, baseName);
 
     try {
-      await execAsync(`pdftoppm -png -r ${dpi} "${pdfPath}" "${outputPrefix}"`);
+      // Reportar início da conversão
+      if (onProgress) {
+        onProgress({ status: 'Convertendo PDF para imagens...', percent: 0 });
+      }
+
+      console.log(`🔄 Iniciando conversão: pdftoppm -png -r ${dpi}`);
+      const startTime = Date.now();
+
+      // Converter PDF para imagens (com timeout de 30 minutos)
+      await execAsync(`pdftoppm -png -r ${dpi} "${pdfPath}" "${outputPrefix}"`, {
+        timeout: 1800000, // 30 minutos
+        maxBuffer: 500 * 1024 * 1024 // 500MB
+      });
+
+      const elapsedSec = Math.round((Date.now() - startTime) / 1000);
+      console.log(`✅ Conversão concluída em ${elapsedSec}s`);
 
       const arquivos = await fs.readdir(dir);
       const imagens = arquivos
         .filter(f => f.startsWith(baseName) && f.endsWith('.png'))
         .sort()
         .map(f => path.join(dir, f));
+
+      console.log(`✅ ${imagens.length} imagens geradas`);
+
+      if (onProgress) {
+        onProgress({ status: `${imagens.length} imagens geradas`, percent: 10 });
+      }
 
       return {
         success: true,
@@ -446,6 +467,7 @@ export const extratorPDF = {
         dpi
       };
     } catch (error) {
+      console.error(`❌ Erro na conversão PDF→imagens: ${error.message}`);
       return {
         success: false,
         error: error.message,
@@ -465,8 +487,21 @@ export const extratorPDF = {
       onProgress = null
     } = opcoes;
 
-    console.log('Convertendo PDF para imagens...');
-    const conversao = await this.pdfParaImagens(pdfPath, null, dpi);
+    console.log('🔄 Convertendo PDF para imagens...');
+
+    // Wrapper para mapear progresso da conversão (0-10%)
+    const conversionProgress = onProgress ? (data) => {
+      onProgress({
+        status: data.status || 'Convertendo PDF...',
+        percent: Math.floor(data.percent || 0), // 0-10%
+        batch: 0,
+        totalBatches: 0,
+        pagesProcessed: 0,
+        totalPages: 0
+      });
+    } : null;
+
+    const conversao = await this.pdfParaImagens(pdfPath, null, dpi, conversionProgress);
 
     if (!conversao.success || conversao.imagens.length === 0) {
       return {
@@ -476,8 +511,19 @@ export const extratorPDF = {
       };
     }
 
-    console.log(`Executando OCR em ${conversao.imagens.length} paginas...`);
-    const resultado = await ocrEngine.executarOCRMultiplo(conversao.imagens, { preprocessar, onProgress });
+    console.log(`🔍 Executando OCR em ${conversao.imagens.length} páginas...`);
+
+    // Wrapper para mapear progresso do OCR (10-100%)
+    const ocrProgress = onProgress ? (data) => {
+      const ocrPercent = data.percent || 0; // 0-100%
+      const mappedPercent = 10 + Math.floor(ocrPercent * 0.9); // Mapear para 10-100%
+      onProgress({
+        ...data,
+        percent: mappedPercent
+      });
+    } : null;
+
+    const resultado = await ocrEngine.executarOCRMultiplo(conversao.imagens, { preprocessar, onProgress: ocrProgress });
 
     // Limpar arquivos temporarios
     if (limparTemporarios) {
