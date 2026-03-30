@@ -287,19 +287,27 @@ export async function* chatStream(
     });
 
     console.log('[V7-SSE] Sending fetch to /api/chat/stream...')
+
+    // ✅ FIX: Se model='auto', NÃO enviar campo model (backend usa selectOptimalModel)
+    const payload: any = {
+      message,
+      conversationId,
+      messages, // Enviar historico completo para manter contexto
+      attachedFiles: attachedFiles || [], // ✅ Usar diretamente, já formatado corretamente
+      stream: true,
+      maxTokens: 64000, // 🔥 FIX: Enviar máximo de tokens para documentos completos
+    };
+
+    // Somente incluir model se não for 'auto' (permite seleção automática do backend)
+    if (model && model !== 'auto') {
+      payload.model = model;
+    }
+
     const res = await fetch(`${API_BASE}/chat/stream`, {
       method: 'POST',
       credentials: 'include',
       headers,
-      body: JSON.stringify({
-        message,
-        conversationId,
-        model,
-        messages, // Enviar historico completo para manter contexto
-        attachedFiles: attachedFiles || [], // ✅ Usar diretamente, já formatado corretamente
-        stream: true,
-        maxTokens: 64000, // 🔥 FIX: Enviar máximo de tokens para documentos completos
-      }),
+      body: JSON.stringify(payload),
       signal,
     })
 

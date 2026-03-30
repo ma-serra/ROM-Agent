@@ -302,6 +302,13 @@ export interface AIModel {
  */
 export const AI_MODELS: AIModel[] = [
   {
+    id: 'auto',
+    name: 'Automático',
+    description: 'Seleção inteligente (economiza até 97%)',
+    maxTokens: 200000,
+    available: true,
+  },
+  {
     id: 'claude-opus-4-5',
     name: 'Claude Opus 4.5',
     description: 'Mais inteligente e capaz',

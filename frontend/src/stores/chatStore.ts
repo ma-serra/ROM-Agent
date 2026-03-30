@@ -45,7 +45,7 @@ export const useChatStore = create<ChatState>()(
       conversations: [],
       activeConversationId: null,
       isStreaming: false,
-      selectedModel: 'claude-sonnet-4-5',
+      selectedModel: 'auto', // Seleção automática por padrão (economiza custos)
       outputFormat: 'docx', // Fase 2: Word por padrão
       isLoading: false,
 
