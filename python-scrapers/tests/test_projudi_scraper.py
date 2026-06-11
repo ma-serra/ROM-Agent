@@ -15,7 +15,7 @@ import os
 import sys
 import tempfile
 import unittest
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from unittest.mock import AsyncMock, MagicMock, patch
 
@@ -345,8 +345,8 @@ class TestSessionCache(unittest.TestCase):
         """Testa cache valido"""
         cache = SessionCache(
             cookies={"session": "abc123"},
-            created_at=datetime.utcnow(),
-            expires_at=datetime.utcnow() + timedelta(hours=1),
+            created_at=datetime.now(timezone.utc),
+            expires_at=datetime.now(timezone.utc) + timedelta(hours=1),
             user_agent="Test",
             is_authenticated=True
         )
@@ -356,8 +356,8 @@ class TestSessionCache(unittest.TestCase):
         """Testa cache expirado"""
         cache = SessionCache(
             cookies={},
-            created_at=datetime.utcnow() - timedelta(hours=2),
-            expires_at=datetime.utcnow() - timedelta(hours=1),
+            created_at=datetime.now(timezone.utc) - timedelta(hours=2),
+            expires_at=datetime.now(timezone.utc) - timedelta(hours=1),
             user_agent="Test"
         )
         self.assertFalse(cache.is_valid())

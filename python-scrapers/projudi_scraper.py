@@ -214,7 +214,7 @@ class DadosProcesso:
     juiz: Optional[str] = None
     url_consulta: Optional[str] = None
     dados_brutos: Optional[Dict[str, Any]] = None
-    timestamp_extracao: datetime = field(default_factory=datetime.utcnow)
+    timestamp_extracao: datetime = field(default_factory=lambda: datetime.now(timezone.utc))
     erros: List[str] = field(default_factory=list)
 
     def to_dict(self) -> Dict[str, Any]:
@@ -1691,8 +1691,9 @@ class ProjudiScraper:
         advogados = []
 
         # Padrao: Nome do Advogado (OAB/XX 12345)
+        # Captura titulos (Dr., Dra., etc.) e nomes completos
         padrao = re.compile(
-            r'([A-Z][a-zA-Z\s]+)\s*\(?\s*OAB[/\s]*([A-Z]{2})\s*[:\s]*(\d+)',
+            r'((?:Dr\.?|Dra\.?)?\s*[A-Z][a-zA-Z\s\.]+?)\s*\(?\s*OAB[/\s]*([A-Z]{2})\s*[:\s]*(\d+)',
             re.IGNORECASE
         )
 
