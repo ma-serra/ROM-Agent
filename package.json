@@ -47,6 +47,7 @@
     "kb:clean": "node scripts/limpar-kb-fantasmas.js",
     "monitor": "node monitor-site.js",
     "monitor:once": "node monitor-site.js --once",
+    "monitor:api": "node scripts/monitor-api.js",
     "update:deps": "npm update --save && npm audit fix --force || true",
     "update:check": "npm outdated || true",
     "audit": "npm audit",

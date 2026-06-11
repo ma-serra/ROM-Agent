@@ -108,6 +108,107 @@ O projeto está configurado para deploy automático no Render. **NÃO faça push
 
 ---
 
+## 🖥️ MONITORAMENTO E VALIDAÇÃO DA CLI
+
+### Regra Obrigatória para Modificações na CLI
+
+**SEMPRE** que modificar qualquer arquivo relacionado à interface de linha de comando (CLI), você **DEVE** executar comandos de teste para garantir que a CLI não está lançando exceções de inicialização.
+
+### Arquivos da CLI que Requerem Validação
+
+Quando modificar qualquer um destes arquivos:
+- `src/cli.js` - CLI básico
+- `src/cli-advanced.js` - CLI avançado (rom)
+- `lib/cli/` - Módulos da CLI
+- `src/modules/` - Módulos core usados pela CLI
+- Qualquer arquivo importado pela CLI
+
+### Comandos de Teste Obrigatórios
+
+Execute **TODOS** estes comandos após modificar a CLI:
+
+```bash
+# 1. Validar sintaxe da CLI básica
+node --check src/cli.js
+
+# 2. Validar sintaxe da CLI avançada
+node --check src/cli-advanced.js
+
+# 3. Testar inicialização da CLI avançada (versão)
+node src/cli-advanced.js --version
+
+# 4. Testar comando help da CLI avançada
+node src/cli-advanced.js --help
+
+# 5. Testar comando rom via npm (CLI avançada)
+npm run rom -- --version
+
+# 6. Testar inicialização da CLI básica (modo interativo - deve iniciar sem erros)
+timeout 3 node src/cli.js || true
+```
+
+### O Que Verificar
+
+✅ **Sucesso esperado:**
+- CLI inicia sem erros
+- Versão é exibida corretamente
+- Ajuda (--help) é exibida
+- Nenhuma exceção não tratada
+- Nenhum erro de import/export
+
+❌ **Falha - NÃO commitar:**
+- `Error: Cannot find module`
+- `SyntaxError`
+- `ReferenceError`
+- `TypeError` durante inicialização
+- Exceções não tratadas
+- CLI trava ou não responde
+
+### Exemplo de Validação Bem-Sucedida
+
+```bash
+$ node --check src/cli.js
+✅ Sintaxe válida
+
+$ node --check src/cli-advanced.js
+✅ Sintaxe válida
+
+$ node src/cli-advanced.js --version
+ROM Agent CLI Avançado v2.8.0
+Powered by Claude Agent SDK
+
+$ node src/cli-advanced.js --help
+ROM Agent - Assistente de IA para Redação Jurídica
+
+Uso: rom [comando] [opções]
+...
+```
+
+### Workflow Recomendado
+
+1. **Modificar arquivo da CLI**
+2. **Executar comandos de teste** (listados acima)
+3. **Verificar que não há erros**
+4. **Se houver erro**: corrigir antes de continuar
+5. **Apenas após sucesso**: commitar as alterações
+
+### Integração com CI/CD
+
+Os testes da CLI devem ser incluídos no pipeline de CI/CD:
+
+```bash
+# No script de validação
+npm run validate:system  # Já inclui validação de sintaxe
+node src/cli.js --version
+node src/cli-advanced.js --version
+```
+
+### Nota Importante
+
+A CLI é o ponto de entrada principal para muitos usuários. Uma falha na inicialização da CLI pode tornar o sistema **completamente inutilizável** para usuários que dependem da linha de comando. Por isso, esta validação é **CRÍTICA** e **OBRIGATÓRIA**.
+
+---
+
 ## 🔐 ARQUIVOS SENSÍVEIS
 
 **NUNCA commite os seguintes arquivos**:
