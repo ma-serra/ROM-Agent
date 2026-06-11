@@ -138,15 +138,14 @@ jsFiles.forEach(file => {
 
     const content = fs.readFileSync(file, 'utf-8');
 
-    // Verificações básicas
-    const openBraces = (content.match(/\{/g) || []).length;
-    const closeBraces = (content.match(/\}/g) || []).length;
-
-    if (openBraces !== closeBraces) {
-      throw new Error(`Chaves desbalanceadas: ${openBraces} abrir, ${closeBraces} fechar`);
+    // Usar validação sintática nativa do Node.js (mais robusta)
+    try {
+      execSync(`node --check "${file}"`, { encoding: 'utf-8', stdio: 'pipe' });
+    } catch (error) {
+      throw new Error(`Erro de sintaxe detectado pelo Node.js: ${error.message}`);
     }
 
-    // Verificar imports/exports
+    // Verificar imports/exports (apenas para arquivos ES modules)
     if (content.includes('export') || content.includes('import')) {
       if (!content.includes('export default') && !content.includes('export {') &&
           !content.includes('export function') && !content.includes('export const') &&
