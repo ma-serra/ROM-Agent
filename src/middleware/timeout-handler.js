@@ -17,13 +17,13 @@ function classifyRoute(path) {
     return 'fast';
   }
 
-  // Async routes (AI, generation)
-  if (path.match(/\/api\/(chat|generate|ask|complete|stream)/)) {
+  // Async routes (AI, generation, document export)
+  if (path.match(/\/api\/(chat|generate|ask|complete|stream|export)/)) {
     return 'async';
   }
 
   // Long routes (upload, batch)
-  if (path.match(/\/api\/(upload|batch|process|export)/)) {
+  if (path.match(/\/api\/(upload|batch|process)/)) {
     return 'long';
   }
 
