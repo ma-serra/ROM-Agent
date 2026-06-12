@@ -6,11 +6,17 @@
  */
 
 import readline from 'readline';
+import https from 'https';
+import { spawn } from 'child_process';
 import { ROMAgent, CONFIG, TOOLS, processarFerramenta } from './index.js';
 import { SubagentManager, SUBAGENTES } from './modules/subagents.js';
 import dotenv from 'dotenv';
 import fs from 'fs/promises';
 import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 dotenv.config();
 
@@ -133,11 +139,12 @@ ${CORES.cyan}${CORES.bright}USO:${CORES.reset}
 
 ${CORES.cyan}${CORES.bright}COMANDOS:${CORES.reset}
   ${CORES.green}chat${CORES.reset}         Iniciar chat interativo com o ROM
+  ${CORES.green}status${CORES.reset}       Verificar saúde do sistema (API, PostgreSQL, Redis)
+  ${CORES.green}extrair${CORES.reset}      Extrair processo de tribunais (esaj|pje|projudi)
   ${CORES.green}analisar${CORES.reset}     Analisar processo jurídico
   ${CORES.green}resumo${CORES.reset}       Gerar resumo executivo (Camada 1, 2 ou 3)
   ${CORES.green}redigir${CORES.reset}      Redigir peça jurídica
   ${CORES.green}pesquisar${CORES.reset}    Pesquisar jurisprudência
-  ${CORES.green}extrair${CORES.reset}      Extrair texto de PDF (91 ferramentas + 10 processadores)
   ${CORES.green}revisar${CORES.reset}      Revisar português jurídico
   ${CORES.green}contrato${CORES.reset}     Elaborar contrato
   ${CORES.green}agents${CORES.reset}       Gerenciar subagentes
@@ -187,6 +194,15 @@ ${CORES.cyan}${CORES.bright}WORKFLOWS DISPONÍVEIS:${CORES.reset}
 ${CORES.cyan}${CORES.bright}EXEMPLOS:${CORES.reset}
   ${CORES.dim}# Chat interativo${CORES.reset}
   rom chat
+
+  ${CORES.dim}# Verificar saúde do sistema${CORES.reset}
+  rom status
+
+  ${CORES.dim}# Extrair processo do PJe${CORES.reset}
+  rom extrair pje 0001234-56.2023.4.01.3400
+
+  ${CORES.dim}# Extrair processo do ESAJ${CORES.reset}
+  rom extrair esaj 1234567-89.2023.8.26.0100
 
   ${CORES.dim}# Analisar processo com resumo Camada 3${CORES.reset}
   rom analisar processo.pdf --camada 3
@@ -333,6 +349,178 @@ class ROMCLI {
     } catch (error) {
       console.log(`${CORES.red}✗ Erro no workflow: ${error.message}${CORES.reset}`);
     }
+  }
+
+  // Verifica status do sistema
+  async verificarStatus() {
+    console.log(`\n${CORES.cyan}${CORES.bright}Verificando saúde do sistema...${CORES.reset}\n`);
+
+    return new Promise((resolve, reject) => {
+      const startTime = Date.now();
+
+      const req = https.get('https://iarom.com.br/api/health', {
+        timeout: 10000,
+        headers: { 'User-Agent': 'ROM-CLI/2.0' }
+      }, (res) => {
+        let body = '';
+
+        res.on('data', (chunk) => {
+          body += chunk;
+        });
+
+        res.on('end', () => {
+          const responseTime = Date.now() - startTime;
+
+          try {
+            const healthData = JSON.parse(body);
+
+            // Exibir tabela de status
+            console.log(`${CORES.cyan}╔════════════════════════════════════════════════════════════╗${CORES.reset}`);
+            console.log(`${CORES.cyan}║${CORES.reset}  ${CORES.bright}STATUS DO SISTEMA ROM AGENT${CORES.reset}                          ${CORES.cyan}║${CORES.reset}`);
+            console.log(`${CORES.cyan}╚════════════════════════════════════════════════════════════╝${CORES.reset}\n`);
+
+            // Status Geral
+            const statusIcon = healthData.status === 'healthy' ? '✓' : '✗';
+            const statusColor = healthData.status === 'healthy' ? CORES.green : CORES.red;
+            console.log(`  ${statusColor}${statusIcon} Status Geral:${CORES.reset} ${statusColor}${healthData.status.toUpperCase()}${CORES.reset}`);
+            console.log(`  ${CORES.dim}Tempo de resposta: ${responseTime}ms${CORES.reset}\n`);
+
+            // PostgreSQL
+            const pgIcon = healthData.postgres?.available ? '✓' : '✗';
+            const pgColor = healthData.postgres?.available ? CORES.green : CORES.red;
+            const pgStatus = healthData.postgres?.available ? 'Disponível' : 'INDISPONÍVEL';
+            console.log(`  ${pgColor}${pgIcon} PostgreSQL:${CORES.reset} ${pgStatus}`);
+            if (healthData.postgres?.latency !== undefined) {
+              console.log(`    ${CORES.dim}Latência: ${healthData.postgres.latency}ms${CORES.reset}`);
+            }
+
+            // Redis
+            const redisIcon = healthData.redis?.available ? '✓' : '✗';
+            const redisColor = healthData.redis?.available ? CORES.green : CORES.red;
+            const redisStatus = healthData.redis?.available ? 'Disponível' : 'INDISPONÍVEL';
+            console.log(`\n  ${redisColor}${redisIcon} Redis:${CORES.reset} ${redisStatus}`);
+            if (healthData.redis?.latency !== undefined) {
+              console.log(`    ${CORES.dim}Latência: ${healthData.redis.latency}ms${CORES.reset}`);
+            }
+
+            // Memória
+            if (healthData.memory) {
+              console.log(`\n  ${CORES.blue}⚡ Memória:${CORES.reset}`);
+              console.log(`    ${CORES.dim}Heap usado: ${healthData.memory.heapUsed}MB${CORES.reset}`);
+              console.log(`    ${CORES.dim}Heap total: ${healthData.memory.heapTotal}MB${CORES.reset}`);
+              const memPercent = ((healthData.memory.heapUsed / healthData.memory.heapTotal) * 100).toFixed(1);
+              console.log(`    ${CORES.dim}Uso: ${memPercent}%${CORES.reset}`);
+            }
+
+            // Uptime
+            if (healthData.uptime !== undefined) {
+              const hours = Math.floor(healthData.uptime / 3600);
+              const minutes = Math.floor((healthData.uptime % 3600) / 60);
+              console.log(`\n  ${CORES.magenta}⏱  Uptime:${CORES.reset} ${hours}h ${minutes}m`);
+            }
+
+            console.log();
+            resolve(healthData);
+          } catch (error) {
+            console.log(`${CORES.red}✗ Erro ao parsear resposta JSON${CORES.reset}`);
+            console.log(`${CORES.dim}Resposta recebida:${CORES.reset}\n${body}\n`);
+            reject(error);
+          }
+        });
+      });
+
+      req.on('timeout', () => {
+        req.destroy();
+        console.log(`${CORES.red}✗ Timeout: Servidor não respondeu em 10 segundos${CORES.reset}\n`);
+        reject(new Error('Timeout'));
+      });
+
+      req.on('error', (error) => {
+        console.log(`${CORES.red}✗ Erro de conexão: ${error.message}${CORES.reset}\n`);
+        reject(error);
+      });
+
+      req.end();
+    });
+  }
+
+  // Extrai processo de tribunal
+  async extrairProcesso(tribunal, numeroProcesso) {
+    if (!tribunal || !numeroProcesso) {
+      console.log(`${CORES.red}✗ Uso: rom extrair <tribunal> <numero-processo>${CORES.reset}`);
+      console.log(`\n${CORES.yellow}Tribunais suportados:${CORES.reset}`);
+      console.log(`  ${CORES.dim}- esaj     (e-SAJ - Tribunais de Justiça)${CORES.reset}`);
+      console.log(`  ${CORES.dim}- pje      (PJe - Justiça Federal/Trabalhista)${CORES.reset}`);
+      console.log(`  ${CORES.dim}- projudi  (PROJUDI - Tribunais estaduais)${CORES.reset}\n`);
+      return;
+    }
+
+    const tribunalLower = tribunal.toLowerCase();
+    const scraperMap = {
+      'esaj': 'esaj_scraper.py',
+      'pje': 'pje_scraper.py',
+      'projudi': 'projudi_scraper.py'
+    };
+
+    const scraperFile = scraperMap[tribunalLower];
+
+    if (!scraperFile) {
+      console.log(`${CORES.red}✗ Tribunal não suportado: ${tribunal}${CORES.reset}`);
+      console.log(`\n${CORES.yellow}Tribunais disponíveis: esaj, pje, projudi${CORES.reset}\n`);
+      return;
+    }
+
+    console.log(`\n${CORES.cyan}${CORES.bright}Extraindo processo do ${tribunal.toUpperCase()}...${CORES.reset}`);
+    console.log(`${CORES.dim}Número: ${numeroProcesso}${CORES.reset}\n`);
+
+    const scraperPath = path.join(__dirname, '..', 'python-scrapers', scraperFile);
+
+    return new Promise((resolve, reject) => {
+      const pythonProcess = spawn('python3', [scraperPath, numeroProcesso], {
+        cwd: path.join(__dirname, '..', 'python-scrapers')
+      });
+
+      let stdout = '';
+      let stderr = '';
+
+      pythonProcess.stdout.on('data', (data) => {
+        const output = data.toString();
+        stdout += output;
+        // Exibir output em tempo real
+        process.stdout.write(output);
+      });
+
+      pythonProcess.stderr.on('data', (data) => {
+        const output = data.toString();
+        stderr += output;
+        // Exibir erros em vermelho
+        process.stderr.write(`${CORES.red}${output}${CORES.reset}`);
+      });
+
+      pythonProcess.on('close', (code) => {
+        console.log();
+
+        if (code === 0) {
+          console.log(`${CORES.green}✓ Extração concluída com sucesso!${CORES.reset}\n`);
+          resolve({ success: true, output: stdout });
+        } else {
+          console.log(`${CORES.red}✗ Erro na extração (código: ${code})${CORES.reset}\n`);
+          if (stderr) {
+            console.log(`${CORES.yellow}Detalhes do erro:${CORES.reset}\n${stderr}\n`);
+          }
+          reject(new Error(`Python script exited with code ${code}`));
+        }
+      });
+
+      pythonProcess.on('error', (error) => {
+        console.log(`${CORES.red}✗ Erro ao executar scraper: ${error.message}${CORES.reset}`);
+        console.log(`\n${CORES.yellow}Verifique se:${CORES.reset}`);
+        console.log(`  ${CORES.dim}1. Python 3 está instalado (python3 --version)${CORES.reset}`);
+        console.log(`  ${CORES.dim}2. Dependências instaladas (pip install -r requirements.txt)${CORES.reset}`);
+        console.log(`  ${CORES.dim}3. Scraper existe em: ${scraperPath}${CORES.reset}\n`);
+        reject(error);
+      });
+    });
   }
 
   // Processa comando interativo
@@ -501,6 +689,18 @@ async function main() {
   switch (command) {
     case 'chat':
       await cli.chat();
+      break;
+
+    case 'status':
+      await cli.verificarStatus();
+      break;
+
+    case 'extrair':
+      if (parsed.subcommand && parsed.positional.length > 0) {
+        await cli.extrairProcesso(parsed.subcommand, parsed.positional[0]);
+      } else {
+        await cli.extrairProcesso(null, null);
+      }
       break;
 
     case 'agents':
