@@ -66,6 +66,7 @@ import diagnosticBedrockRoutes from './routes/diagnostic-bedrock.js';
 import diagnosticUsersRoutes from './routes/diagnostic-users.js';
 import diagnosticModelsRoutes from './routes/diagnostic-models.js';
 import exportRoutes from './routes/export.js';
+import exportStreamRoutes from './routes/export-stream.js';
 import uploadProgressRoutes from './routes/upload-progress.js';
 console.log('🔍 [IMPORT] uploadProgressRoutes carregado:', typeof uploadProgressRoutes);
 import cacheStatsRoutes from './routes/cache-stats.js';
@@ -625,6 +626,7 @@ app.use('/api/diagnostic/models', diagnosticModelsRoutes);
 
 // Rotas de Exportação (DOCX, PDF, HTML, Markdown, TXT)
 app.use('/api/export', exportRoutes);
+app.use('/api/export', exportStreamRoutes);  // Streaming SSE (coexiste com rota tradicional)
 
 // Rotas de Progresso de Upload (SSE) - path específico para evitar conflito
 app.use('/api/upload-progress', uploadProgressRoutes);
