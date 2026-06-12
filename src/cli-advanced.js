@@ -523,6 +523,288 @@ class ROMCLI {
     });
   }
 
+  // Analisa processo jurídico (e parecer como alias)
+  async analisarProcesso(input, flags = {}) {
+    const isParecer = flags.parecer || false;
+    const titulo = isParecer ? 'PARECER JURÍDICO' : 'ANÁLISE PROCESSUAL';
+
+    console.log(`\n${CORES.cyan}${CORES.bright}${titulo}${CORES.reset}\n`);
+
+    if (!input) {
+      console.log(`${CORES.red}✗ Uso: rom analisar <arquivo_ou_texto>${CORES.reset}`);
+      console.log(`${CORES.dim}       rom parecer <arquivo_ou_texto>${CORES.reset}\n`);
+      console.log(`${CORES.yellow}Exemplos:${CORES.reset}`);
+      console.log(`  ${CORES.dim}rom analisar processo.pdf${CORES.reset}`);
+      console.log(`  ${CORES.dim}rom analisar "processo 123-45.2023.8.26.0100"${CORES.reset}`);
+      console.log(`  ${CORES.dim}rom parecer caso.txt  # Com foco em conclusões de risco${CORES.reset}\n`);
+      return;
+    }
+
+    try {
+      // Verificar se é arquivo
+      let conteudo = input;
+      try {
+        const stat = await fs.stat(input);
+        if (stat.isFile()) {
+          console.log(`${CORES.dim}📄 Lendo arquivo: ${input}${CORES.reset}\n`);
+          conteudo = await fs.readFile(input, 'utf-8');
+        }
+      } catch {
+        // Não é arquivo, usar como texto direto
+      }
+
+      // Construir prompt específico
+      const promptBase = isParecer
+        ? `Analise o seguinte caso e emita um PARECER JURÍDICO conclusivo, com foco em RISCOS, CHANCES DE ÊXITO e RECOMENDAÇÕES ESTRATÉGICAS:\n\n${conteudo}`
+        : `Analise exaustivamente o seguinte processo jurídico:\n\n${conteudo}`;
+
+      console.log(`${CORES.yellow}⚙️  Processando com subagente: analise-processual...${CORES.reset}\n`);
+
+      const resultado = await this.subagentManager.invocarSubagente(
+        'analise-processual',
+        promptBase
+      );
+
+      // Exibir resultado formatado
+      console.log(`${CORES.cyan}╔════════════════════════════════════════════════════════════╗${CORES.reset}`);
+      console.log(`${CORES.cyan}║${CORES.reset}  ${CORES.bright}${titulo}${CORES.reset}                                    ${CORES.cyan}║${CORES.reset}`);
+      console.log(`${CORES.cyan}╚════════════════════════════════════════════════════════════╝${CORES.reset}\n`);
+
+      console.log(resultado.content[0].text);
+      console.log();
+
+      return resultado;
+    } catch (error) {
+      console.log(`${CORES.red}✗ Erro na análise: ${error.message}${CORES.reset}\n`);
+      throw error;
+    }
+  }
+
+  // Gera resumo executivo em 3 camadas
+  async gerarResumo(input, flags = {}) {
+    const camada = parseInt(flags.camada || flags.l || '2');
+
+    if (camada < 1 || camada > 3) {
+      console.log(`${CORES.red}✗ Camada inválida. Use 1, 2 ou 3${CORES.reset}\n`);
+      return;
+    }
+
+    console.log(`\n${CORES.cyan}${CORES.bright}RESUMO EXECUTIVO - CAMADA ${camada}${CORES.reset}\n`);
+
+    if (!input) {
+      console.log(`${CORES.red}✗ Uso: rom resumo <arquivo_ou_texto> --camada <1|2|3>${CORES.reset}\n`);
+      console.log(`${CORES.yellow}Camadas:${CORES.reset}`);
+      console.log(`  ${CORES.dim}1 - BÁSICO:     Síntese fática + pedidos${CORES.reset}`);
+      console.log(`  ${CORES.dim}2 - DENSO:      Camada 1 + jurisprudência + estratégia${CORES.reset}`);
+      console.log(`  ${CORES.dim}3 - APRIMORADO: Camada 2 + prequestionamento + leading cases + riscos${CORES.reset}\n`);
+      console.log(`${CORES.yellow}Exemplo:${CORES.reset}`);
+      console.log(`  ${CORES.dim}rom resumo processo.pdf --camada 3${CORES.reset}\n`);
+      return;
+    }
+
+    try {
+      // Verificar se é arquivo
+      let conteudo = input;
+      try {
+        const stat = await fs.stat(input);
+        if (stat.isFile()) {
+          console.log(`${CORES.dim}📄 Lendo arquivo: ${input}${CORES.reset}\n`);
+          conteudo = await fs.readFile(input, 'utf-8');
+        }
+      } catch {
+        // Não é arquivo, usar como texto direto
+      }
+
+      const prompt = `Gere um RESUMO EXECUTIVO em CAMADA ${camada} do seguinte processo:\n\n${conteudo}`;
+
+      console.log(`${CORES.yellow}⚙️  Processando com subagente: resumo-executivo (Camada ${camada})...${CORES.reset}\n`);
+
+      const resultado = await this.subagentManager.invocarSubagente(
+        'resumo-executivo',
+        prompt
+      );
+
+      // Exibir resultado formatado
+      console.log(`${CORES.cyan}╔════════════════════════════════════════════════════════════╗${CORES.reset}`);
+      console.log(`${CORES.cyan}║${CORES.reset}  ${CORES.bright}RESUMO EXECUTIVO - CAMADA ${camada}${CORES.reset}                           ${CORES.cyan}║${CORES.reset}`);
+      console.log(`${CORES.cyan}╚════════════════════════════════════════════════════════════╝${CORES.reset}\n`);
+
+      console.log(resultado.content[0].text);
+      console.log();
+
+      return resultado;
+    } catch (error) {
+      console.log(`${CORES.red}✗ Erro ao gerar resumo: ${error.message}${CORES.reset}\n`);
+      throw error;
+    }
+  }
+
+  // Redigir peça jurídica
+  async redigirPeca(flags = {}, contexto = '') {
+    const tipoPeca = flags['tipo-peca'] || flags.p;
+
+    if (!tipoPeca) {
+      console.log(`${CORES.red}✗ Uso: rom redigir --tipo-peca <tipo> [contexto]${CORES.reset}\n`);
+      console.log(`${CORES.yellow}Tipos disponíveis:${CORES.reset}`);
+      console.log(`  ${CORES.dim}CÍVEIS:       peticao_inicial, contestacao, apelacao, agravo, etc${CORES.reset}`);
+      console.log(`  ${CORES.dim}CRIMINAIS:    habeas_corpus, resposta_acusacao, alegacoes_finais${CORES.reset}`);
+      console.log(`  ${CORES.dim}TRABALHISTAS: reclamacao_trabalhista, recurso_ordinario${CORES.reset}\n`);
+      console.log(`${CORES.yellow}Exemplo:${CORES.reset}`);
+      console.log(`  ${CORES.dim}rom redigir --tipo-peca apelacao "cliente perdeu em 1ª instância"${CORES.reset}\n`);
+      return;
+    }
+
+    // Determinar o redator apropriado baseado no tipo de peça
+    let subagentId = 'redator-civel';
+    const tipoLower = tipoPeca.toLowerCase();
+
+    if (tipoLower.includes('criminal') || tipoLower.includes('habeas') ||
+        tipoLower.includes('penal') || tipoLower.includes('rese')) {
+      subagentId = 'redator-criminal';
+    } else if (tipoLower.includes('trabalhista') || tipoLower.includes('reclamacao') ||
+               tipoLower.includes('recurso_ordinario') || tipoLower.includes('tst')) {
+      subagentId = 'redator-trabalhista';
+    }
+
+    console.log(`\n${CORES.cyan}${CORES.bright}REDAÇÃO DE PEÇA: ${tipoPeca.toUpperCase()}${CORES.reset}\n`);
+    console.log(`${CORES.dim}Usando: ${subagentId}${CORES.reset}\n`);
+
+    const prompt = `Redija uma ${tipoPeca} com base no seguinte contexto:\n\n${contexto || 'Peça padrão sem contexto específico'}`;
+
+    try {
+      console.log(`${CORES.yellow}⚙️  Redigindo com subagente: ${subagentId}...${CORES.reset}\n`);
+
+      const resultado = await this.subagentManager.invocarSubagente(subagentId, prompt);
+
+      console.log(`${CORES.cyan}╔════════════════════════════════════════════════════════════╗${CORES.reset}`);
+      console.log(`${CORES.cyan}║${CORES.reset}  ${CORES.bright}PEÇA REDIGIDA: ${tipoPeca.toUpperCase()}${CORES.reset}                      ${CORES.cyan}║${CORES.reset}`);
+      console.log(`${CORES.cyan}╚════════════════════════════════════════════════════════════╝${CORES.reset}\n`);
+
+      console.log(resultado.content[0].text);
+      console.log();
+
+      return resultado;
+    } catch (error) {
+      console.log(`${CORES.red}✗ Erro ao redigir peça: ${error.message}${CORES.reset}\n`);
+      throw error;
+    }
+  }
+
+  // Pesquisa jurisprudência com anti-alucinação
+  async pesquisarJurisprudencia(termo, flags = {}) {
+    if (!termo) {
+      console.log(`${CORES.red}✗ Uso: rom pesquisar <termo_jurisprudencial> [--tribunal <sigla>]${CORES.reset}\n`);
+      console.log(`${CORES.yellow}Exemplos:${CORES.reset}`);
+      console.log(`  ${CORES.dim}rom pesquisar "dano moral" --tribunal STJ${CORES.reset}`);
+      console.log(`  ${CORES.dim}rom pesquisar "prescrição tributária"${CORES.reset}\n`);
+      return;
+    }
+
+    const tribunal = flags.tribunal || 'TODOS';
+
+    console.log(`\n${CORES.cyan}${CORES.bright}PESQUISA DE JURISPRUDÊNCIA${CORES.reset}\n`);
+    console.log(`${CORES.dim}Termo: ${termo}${CORES.reset}`);
+    console.log(`${CORES.dim}Tribunal: ${tribunal}${CORES.reset}\n`);
+
+    // Prompt com regra ANTI-ALUCINAÇÃO IMPOSTA
+    const promptComAntiAlucinacao = `REGRA CRÍTICA DE SEGURANÇA - ANTI-ALUCINAÇÃO:
+Você está PROIBIDO de parafrasear, resumir ou criar ementas.
+Você DEVE transcrever LITERALMENTE os blocos de texto encontrados nas buscas.
+Se não encontrar resultado concreto, retorne: "❌ NENHUM RESULTADO LOCALIZADO - BUSCA VAZIA"
+Se detectar discrepância de dados ou incerteza, BLOQUEIE a resposta com: "⚠️ BLOQUEIO DE SEGURANÇA: Dados inconsistentes detectados"
+
+Pesquise jurisprudência sobre: ${termo}
+${tribunal !== 'TODOS' ? `Tribunal: ${tribunal}` : 'Em todos os tribunais'}
+
+RETORNE APENAS:
+1. Tribunal/Órgão/Número do acórdão (literal)
+2. Relator e Data (literal)
+3. Ementa COMPLETA (transcrição literal)
+4. Tese fixada (se houver - literal)
+
+NÃO PARAFRASEIE. NÃO RESUMA. TRANSCREVA LITERALMENTE OU BLOQUEIE.`;
+
+    try {
+      console.log(`${CORES.yellow}⚙️  Pesquisando com subagente: jurisprudencia (modo anti-alucinação)...${CORES.reset}\n`);
+
+      const resultado = await this.subagentManager.invocarSubagente(
+        'jurisprudencia',
+        promptComAntiAlucinacao
+      );
+
+      console.log(`${CORES.cyan}╔════════════════════════════════════════════════════════════╗${CORES.reset}`);
+      console.log(`${CORES.cyan}║${CORES.reset}  ${CORES.bright}JURISPRUDÊNCIA: ${termo.toUpperCase()}${CORES.reset}                    ${CORES.cyan}║${CORES.reset}`);
+      console.log(`${CORES.cyan}╚════════════════════════════════════════════════════════════╝${CORES.reset}\n`);
+
+      console.log(resultado.content[0].text);
+      console.log();
+
+      return resultado;
+    } catch (error) {
+      console.log(`${CORES.red}✗ Erro na pesquisa: ${error.message}${CORES.reset}\n`);
+      throw error;
+    }
+  }
+
+  // Gera prognóstico combinando análise + prazos
+  async gerarPrognostico(caso) {
+    if (!caso) {
+      console.log(`${CORES.red}✗ Uso: rom prognostico <caso>${CORES.reset}\n`);
+      console.log(`${CORES.yellow}Exemplo:${CORES.reset}`);
+      console.log(`  ${CORES.dim}rom prognostico processo.pdf${CORES.reset}`);
+      console.log(`  ${CORES.dim}rom prognostico "ação trabalhista de horas extras"${CORES.reset}\n`);
+      return;
+    }
+
+    console.log(`\n${CORES.cyan}${CORES.bright}PROGNÓSTICO JURÍDICO${CORES.reset}\n`);
+
+    try {
+      // Verificar se é arquivo
+      let conteudo = caso;
+      try {
+        const stat = await fs.stat(caso);
+        if (stat.isFile()) {
+          console.log(`${CORES.dim}📄 Lendo arquivo: ${caso}${CORES.reset}\n`);
+          conteudo = await fs.readFile(caso, 'utf-8');
+        }
+      } catch {
+        // Não é arquivo, usar como texto direto
+      }
+
+      // ETAPA 1: Análise processual
+      console.log(`${CORES.yellow}⚙️  [1/2] Analisando caso...${CORES.reset}`);
+      const analise = await this.subagentManager.invocarSubagente(
+        'analise-processual',
+        `Analise este caso para prognóstico de êxito:\n\n${conteudo}`
+      );
+
+      const textoAnalise = analise.content[0].text;
+
+      // ETAPA 2: Análise de prazos e riscos
+      console.log(`${CORES.yellow}⚙️  [2/2] Avaliando prazos e riscos...${CORES.reset}\n`);
+      const prazos = await this.subagentManager.invocarSubagente(
+        'prazos',
+        `Com base na seguinte análise, avalie PRESCRIÇÃO, DECADÊNCIA, PRECLUSÃO e RISCOS TEMPORAIS:\n\n${textoAnalise}`
+      );
+
+      // Combinar resultados
+      console.log(`${CORES.cyan}╔════════════════════════════════════════════════════════════╗${CORES.reset}`);
+      console.log(`${CORES.cyan}║${CORES.reset}  ${CORES.bright}PROGNÓSTICO JURÍDICO${CORES.reset}                                   ${CORES.cyan}║${CORES.reset}`);
+      console.log(`${CORES.cyan}╚════════════════════════════════════════════════════════════╝${CORES.reset}\n`);
+
+      console.log(`${CORES.green}${CORES.bright}═══ ANÁLISE DO CASO ═══${CORES.reset}\n`);
+      console.log(textoAnalise);
+      console.log(`\n${CORES.yellow}${CORES.bright}═══ PRAZOS E RISCOS ═══${CORES.reset}\n`);
+      console.log(prazos.content[0].text);
+      console.log();
+
+      return { analise, prazos };
+    } catch (error) {
+      console.log(`${CORES.red}✗ Erro ao gerar prognóstico: ${error.message}${CORES.reset}\n`);
+      throw error;
+    }
+  }
+
   // Processa comando interativo
   async processarComando(input) {
     const cmd = input.toLowerCase().split(' ')[0];
@@ -721,6 +1003,30 @@ async function main() {
       } else {
         cli.listarWorkflows();
       }
+      break;
+
+    case 'analisar':
+      await cli.analisarProcesso(parsed.subcommand || parsed.positional.join(' '), parsed.flags);
+      break;
+
+    case 'parecer':
+      await cli.analisarProcesso(parsed.subcommand || parsed.positional.join(' '), { ...parsed.flags, parecer: true });
+      break;
+
+    case 'resumo':
+      await cli.gerarResumo(parsed.subcommand || parsed.positional.join(' '), parsed.flags);
+      break;
+
+    case 'redigir':
+      await cli.redigirPeca(parsed.flags, parsed.positional.join(' '));
+      break;
+
+    case 'pesquisar':
+      await cli.pesquisarJurisprudencia(parsed.subcommand || parsed.positional.join(' '), parsed.flags);
+      break;
+
+    case 'prognostico':
+      await cli.gerarPrognostico(parsed.subcommand || parsed.positional.join(' '));
       break;
 
     default:
