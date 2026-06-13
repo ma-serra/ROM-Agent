@@ -805,6 +805,154 @@ NÃO PARAFRASEIE. NÃO RESUMA. TRANSCREVA LITERALMENTE OU BLOQUEIE.`;
     }
   }
 
+  // Revisa português jurídico
+  async revisarTexto(input) {
+    console.log(`\n${CORES.cyan}${CORES.bright}REVISÃO DE PORTUGUÊS JURÍDICO${CORES.reset}\n`);
+
+    if (!input) {
+      console.log(`${CORES.red}✗ Uso: rom revisar <texto_ou_arquivo>${CORES.reset}\n`);
+      console.log(`${CORES.yellow}Aspectos revisados:${CORES.reset}`);
+      console.log(`  ${CORES.dim}- Ortografia e acentuação${CORES.reset}`);
+      console.log(`  ${CORES.dim}- Concordância verbal e nominal${CORES.reset}`);
+      console.log(`  ${CORES.dim}- Regência e crase${CORES.reset}`);
+      console.log(`  ${CORES.dim}- Pontuação e coesão textual${CORES.reset}`);
+      console.log(`  ${CORES.dim}- Estilo jurídico e latinismos${CORES.reset}\n`);
+      console.log(`${CORES.yellow}Exemplos:${CORES.reset}`);
+      console.log(`  ${CORES.dim}rom revisar peca.txt${CORES.reset}`);
+      console.log(`  ${CORES.dim}rom revisar "A empresa não cumpriu o contrato"${CORES.reset}\n`);
+      return;
+    }
+
+    try {
+      // Verificar se é arquivo
+      let conteudo = input;
+      try {
+        const stat = await fs.stat(input);
+        if (stat.isFile()) {
+          console.log(`${CORES.dim}📄 Lendo arquivo: ${input}${CORES.reset}\n`);
+          conteudo = await fs.readFile(input, 'utf-8');
+        }
+      } catch {
+        // Não é arquivo, usar como texto direto
+      }
+
+      const prompt = `Revise o seguinte texto jurídico aplicando as normas do português culto e do estilo jurídico formal:
+
+${conteudo}
+
+IMPORTANTE:
+1. Identifique TODOS os erros ortográficos, gramaticais e de estilo
+2. Para cada erro, explique:
+   - O que está errado
+   - Por que está errado (regra gramatical)
+   - A correção adequada
+3. Avalie a coesão, coerência e clareza do texto
+4. Sugira melhorias de estilo jurídico
+5. Apresente o texto corrigido ao final
+
+Seja RIGOROSO e TÉCNICO na análise.`;
+
+      console.log(`${CORES.yellow}⚙️  Processando com subagente: revisor-portugues...${CORES.reset}\n`);
+
+      const resultado = await this.subagentManager.invocarSubagente(
+        'revisor-portugues',
+        prompt
+      );
+
+      // Exibir resultado formatado
+      console.log(`${CORES.cyan}╔════════════════════════════════════════════════════════════╗${CORES.reset}`);
+      console.log(`${CORES.cyan}║${CORES.reset}  ${CORES.bright}REVISÃO DE PORTUGUÊS JURÍDICO${CORES.reset}                          ${CORES.cyan}║${CORES.reset}`);
+      console.log(`${CORES.cyan}╚════════════════════════════════════════════════════════════╝${CORES.reset}\n`);
+
+      console.log(resultado.content[0].text);
+      console.log();
+
+      return resultado;
+    } catch (error) {
+      console.log(`${CORES.red}✗ Erro na revisão: ${error.message}${CORES.reset}\n`);
+      throw error;
+    }
+  }
+
+  // Elabora contratos
+  async elaborarContrato(tipo, contexto = '') {
+    console.log(`\n${CORES.cyan}${CORES.bright}ELABORAÇÃO DE CONTRATO${CORES.reset}\n`);
+
+    if (!tipo) {
+      console.log(`${CORES.red}✗ Uso: rom contrato <tipo_do_contrato> [contexto]${CORES.reset}\n`);
+      console.log(`${CORES.yellow}Tipos de contratos disponíveis:${CORES.reset}`);
+      console.log(`  ${CORES.dim}NEGÓCIOS:${CORES.reset}`);
+      console.log(`    ${CORES.dim}- compra_venda, locacao, prestacao_servicos${CORES.reset}`);
+      console.log(`  ${CORES.dim}SOCIETÁRIOS:${CORES.reset}`);
+      console.log(`    ${CORES.dim}- sociedade, acordo_socios, franquia, distribuicao${CORES.reset}`);
+      console.log(`  ${CORES.dim}PROFISSIONAIS:${CORES.reset}`);
+      console.log(`    ${CORES.dim}- honorarios, nda, confidencialidade${CORES.reset}`);
+      console.log(`  ${CORES.dim}IMOBILIÁRIOS:${CORES.reset}`);
+      console.log(`    ${CORES.dim}- locacao_residencial, locacao_comercial${CORES.reset}\n`);
+      console.log(`${CORES.yellow}Exemplos:${CORES.reset}`);
+      console.log(`  ${CORES.dim}rom contrato compra_venda "Venda de veículo usado"${CORES.reset}`);
+      console.log(`  ${CORES.dim}rom contrato honorarios "Defesa cível com 20% de êxito"${CORES.reset}`);
+      console.log(`  ${CORES.dim}rom contrato nda "Confidencialidade de projeto tecnológico"${CORES.reset}\n`);
+      return;
+    }
+
+    const tipoFormatado = tipo.replace(/_/g, ' ').toUpperCase();
+    console.log(`${CORES.dim}Tipo de contrato: ${tipoFormatado}${CORES.reset}\n`);
+
+    const prompt = `Elabore uma MINUTA DE CONTRATO de ${tipo.replace(/_/g, ' ')} COMPLETA e ROBUSTA.
+
+${contexto ? `CONTEXTO ESPECÍFICO:\n${contexto}\n\n` : ''}
+
+ESTRUTURA OBRIGATÓRIA:
+1. TÍTULO E IDENTIFICAÇÃO
+2. QUALIFICAÇÃO COMPLETA DAS PARTES (com campos [COMPLETAR])
+3. OBJETO DO CONTRATO (claro e determinado)
+4. CLÁUSULAS ESSENCIAIS:
+   - Preço e forma de pagamento
+   - Prazo e vigência
+   - Obrigações de cada parte
+   - Garantias (se aplicável)
+   - Multas e penalidades
+   - Hipóteses de rescisão
+   - Confidencialidade (se aplicável)
+   - Foro de eleição
+5. CLÁUSULAS COMPLEMENTARES (conforme o tipo)
+6. DISPOSIÇÕES FINAIS
+7. DATA E ASSINATURAS
+
+REQUISITOS TÉCNICOS:
+- Linguagem jurídica formal e precisa
+- Cláusulas numeradas sequencialmente
+- Redação clara e inequívoca
+- Proteção equilibrada de ambas as partes
+- Conformidade com CC/2002 e legislação específica
+- Campos [COMPLETAR] onde necessário personalização
+
+Elabore o contrato COMPLETO e PRONTO PARA USO.`;
+
+    try {
+      console.log(`${CORES.yellow}⚙️  Processando com subagente: contratos...${CORES.reset}\n`);
+
+      const resultado = await this.subagentManager.invocarSubagente(
+        'contratos',
+        prompt
+      );
+
+      // Exibir resultado formatado
+      console.log(`${CORES.cyan}╔════════════════════════════════════════════════════════════╗${CORES.reset}`);
+      console.log(`${CORES.cyan}║${CORES.reset}  ${CORES.bright}MINUTA DE CONTRATO: ${tipoFormatado}${CORES.reset}                ${CORES.cyan}║${CORES.reset}`);
+      console.log(`${CORES.cyan}╚════════════════════════════════════════════════════════════╝${CORES.reset}\n`);
+
+      console.log(resultado.content[0].text);
+      console.log();
+
+      return resultado;
+    } catch (error) {
+      console.log(`${CORES.red}✗ Erro na elaboração do contrato: ${error.message}${CORES.reset}\n`);
+      throw error;
+    }
+  }
+
   // Processa comando interativo
   async processarComando(input) {
     const cmd = input.toLowerCase().split(' ')[0];
@@ -1027,6 +1175,14 @@ async function main() {
 
     case 'prognostico':
       await cli.gerarPrognostico(parsed.subcommand || parsed.positional.join(' '));
+      break;
+
+    case 'revisar':
+      await cli.revisarTexto(parsed.subcommand || parsed.positional.join(' '));
+      break;
+
+    case 'contrato':
+      await cli.elaborarContrato(parsed.subcommand, parsed.positional.join(' '));
       break;
 
     default:
