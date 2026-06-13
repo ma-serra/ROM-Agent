@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-04-24T05:08:50.850Z",
+  "timestamp": "2026-06-13T01:43:58.673Z",
   "environment": "http://localhost:3000",
-  "duration": "3.05s",
+  "duration": "3.04s",
   "summary": {
     "total": 20,
     "passed": 1,
@@ -13,12 +13,12 @@
     "health": {
       "Server responde": {
         "passed": false,
-        "duration": 25,
+        "duration": 19,
         "error": ""
       },
       "Health check endpoint": {
         "passed": false,
-        "duration": 2,
+        "duration": 1,
         "error": ""
       }
     },
@@ -45,7 +45,7 @@
       },
       "Feature Flags By Category": {
         "passed": false,
-        "duration": 1,
+        "duration": 0,
         "error": ""
       },
       "Spell Check Info": {
@@ -74,12 +74,12 @@
       },
       "Analytics Dashboard": {
         "passed": false,
-        "duration": 1,
+        "duration": 0,
         "error": ""
       },
       "Analytics Usage": {
         "passed": false,
-        "duration": 0,
+        "duration": 1,
         "error": ""
       },
       "Stats General": {
@@ -91,7 +91,7 @@
     "performance": {
       "Response time: /api/health": {
         "passed": false,
-        "duration": 1,
+        "duration": 0,
         "error": ""
       },
       "Response time: /api/feature-flags": {

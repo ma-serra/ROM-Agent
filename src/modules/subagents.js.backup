@@ -480,10 +480,6 @@ export class SubagentManager {
     this.client = new Anthropic({ apiKey });
     this.activeSubagents = new Map();
     this.conversationHistory = new Map();
-    // Sistema de autoregeneração de prompts
-    this.promptAdaptations = new Map(); // Adaptações dinâmicas por subagente
-    this.errorPatterns = new Map(); // Padrões de erro detectados
-    this.regenerationCount = new Map(); // Contador de regenerações
   }
 
   // Listar subagentes disponíveis
@@ -501,378 +497,7 @@ export class SubagentManager {
     return SUBAGENTES[id] || null;
   }
 
-  // ============================================================================
-  // SISTEMA DE AUTOREGENERAÇÃO E AUTOATUALIZAÇÃO DE PROMPTS
-  // ============================================================================
-
-  /**
-   * Busca histórico recente de conversas do subagente
-   * @param {string} subagentId - ID do subagente
-   * @param {number} limit - Número de mensagens recentes
-   * @returns {Array} Histórico recente
-   */
-  buscarHistoricoRecente(subagentId, limit = 10) {
-    const historico = this.conversationHistory.get(subagentId) || [];
-    // Retornar últimas N mensagens (pares user/assistant)
-    return historico.slice(-limit);
-  }
-
-  /**
-   * Analisa histórico para detectar feedback negativo do usuário
-   * @param {Array} historico - Histórico de mensagens
-   * @returns {Object} Feedback detectado
-   */
-  analisarFeedbackUsuario(historico) {
-    const feedback = {
-      temCorrecao: false,
-      correcoes: [],
-      errosApontados: [],
-      palavrasChave: []
-    };
-
-    // Palavras-chave que indicam correção ou erro
-    const indicadoresCorrecao = [
-      'está errado', 'incorreto', 'erro', 'falha', 'não é assim',
-      'na verdade', 'correto é', 'deveria ser', 'faltou', 'esqueceu',
-      'não mencione', 'não faça', 'evite', 'nunca', 'sempre',
-      'alucinação', 'inventou', 'não existe', 'fictício'
-    ];
-
-    // Analisar mensagens do usuário
-    for (let i = 0; i < historico.length; i++) {
-      const msg = historico[i];
-
-      if (msg.role === 'user') {
-        const conteudoLower = msg.content.toLowerCase();
-
-        // Detectar indicadores de correção
-        for (const indicador of indicadoresCorrecao) {
-          if (conteudoLower.includes(indicador)) {
-            feedback.temCorrecao = true;
-            feedback.correcoes.push({
-              mensagem: msg.content,
-              indicador: indicador,
-              contexto: i > 0 ? historico[i-1].content.substring(0, 200) : ''
-            });
-            break;
-          }
-        }
-
-        // Detectar padrões específicos de erro
-        if (conteudoLower.includes('não') && (conteudoLower.includes('faça') || conteudoLower.includes('mencione'))) {
-          feedback.errosApontados.push(`Proibição: ${msg.content.substring(0, 150)}`);
-        }
-      }
-    }
-
-    return feedback;
-  }
-
-  /**
-   * Extrai regras de correção do feedback do usuário
-   * @param {Object} feedback - Feedback analisado
-   * @returns {Array} Regras extraídas
-   */
-  extrairRegrasDeCorrecao(feedback) {
-    const regras = [];
-
-    if (!feedback.temCorrecao) {
-      return regras;
-    }
-
-    // Processar cada correção
-    for (const correcao of feedback.correcoes) {
-      const msg = correcao.mensagem;
-
-      // Regra: Se usuário disse "não faça X"
-      if (msg.toLowerCase().includes('não') && msg.toLowerCase().includes('faça')) {
-        regras.push({
-          tipo: 'PROIBIÇÃO',
-          descricao: `NUNCA: ${msg.substring(0, 200)}`,
-          prioridade: 'ALTA'
-        });
-      }
-
-      // Regra: Se usuário corrigiu informação
-      if (msg.toLowerCase().includes('correto é') || msg.toLowerCase().includes('na verdade')) {
-        regras.push({
-          tipo: 'CORREÇÃO',
-          descricao: `SEMPRE: ${msg.substring(0, 200)}`,
-          prioridade: 'ALTA'
-        });
-      }
-
-      // Regra: Se usuário apontou alucinação
-      if (msg.toLowerCase().includes('alucinação') || msg.toLowerCase().includes('inventou') || msg.toLowerCase().includes('não existe')) {
-        regras.push({
-          tipo: 'ANTI-ALUCINAÇÃO',
-          descricao: `BLOQUEIO CRÍTICO: ${msg.substring(0, 200)}`,
-          prioridade: 'CRÍTICA'
-        });
-      }
-
-      // Regra: Se usuário disse "sempre" ou "nunca"
-      if (msg.toLowerCase().includes('sempre')) {
-        regras.push({
-          tipo: 'OBRIGAÇÃO',
-          descricao: `OBRIGATÓRIO: ${msg.substring(0, 200)}`,
-          prioridade: 'ALTA'
-        });
-      }
-    }
-
-    // Adicionar erros apontados como regras
-    for (const erro of feedback.errosApontados) {
-      regras.push({
-        tipo: 'PROIBIÇÃO',
-        descricao: erro,
-        prioridade: 'ALTA'
-      });
-    }
-
-    return regras;
-  }
-
-  /**
-   * Adapta o system prompt dinamicamente com base em regras de correção
-   * @param {string} subagentId - ID do subagente
-   * @param {string} systemPromptOriginal - Prompt original
-   * @param {Array} regras - Regras de adaptação
-   * @returns {string} Prompt adaptado
-   */
-  adaptarSystemPrompt(subagentId, systemPromptOriginal, regras) {
-    if (!regras || regras.length === 0) {
-      return systemPromptOriginal;
-    }
-
-    console.log(`\x1b[35m🔄 Autoatualização de Prompt ATIVA: ${regras.length} regras dinâmicas detectadas\x1b[0m`);
-
-    // Construir seção de regras dinâmicas
-    let secaoRegras = '\n\n' + '='.repeat(80) + '\n';
-    secaoRegras += '⚠️  REGRAS DINÂMICAS APRENDIDAS (AUTOATUALIZAÇÃO ATIVA)\n';
-    secaoRegras += '='.repeat(80) + '\n\n';
-
-    // Agrupar regras por prioridade
-    const regrasCriticas = regras.filter(r => r.prioridade === 'CRÍTICA');
-    const regrasAltas = regras.filter(r => r.prioridade === 'ALTA');
-
-    // Regras CRÍTICAS primeiro
-    if (regrasCriticas.length > 0) {
-      secaoRegras += '🚨 REGRAS CRÍTICAS (PRIORIDADE MÁXIMA):\n\n';
-      for (const regra of regrasCriticas) {
-        secaoRegras += `[${regra.tipo}] ${regra.descricao}\n\n`;
-      }
-    }
-
-    // Regras ALTAS
-    if (regrasAltas.length > 0) {
-      secaoRegras += '⚠️  REGRAS DE ALTA PRIORIDADE:\n\n';
-      for (const regra of regrasAltas) {
-        secaoRegras += `[${regra.tipo}] ${regra.descricao}\n\n`;
-      }
-    }
-
-    secaoRegras += '='.repeat(80) + '\n';
-    secaoRegras += 'ESTAS REGRAS SOBRESCREVEM QUALQUER INSTRUÇÃO ANTERIOR\n';
-    secaoRegras += '='.repeat(80) + '\n\n';
-
-    // Injetar regras no início do prompt (prioridade máxima)
-    const promptAdaptado = secaoRegras + systemPromptOriginal;
-
-    // Salvar adaptações para tracking
-    if (!this.promptAdaptations.has(subagentId)) {
-      this.promptAdaptations.set(subagentId, []);
-    }
-    this.promptAdaptations.get(subagentId).push({
-      timestamp: new Date().toISOString(),
-      regras: regras,
-      promptLength: promptAdaptado.length
-    });
-
-    return promptAdaptado;
-  }
-
-  /**
-   * Valida resposta para detectar alucinação
-   * @param {string} resposta - Resposta do subagente
-   * @param {string} subagentId - ID do subagente
-   * @returns {Object} Resultado da validação
-   */
-  validarResposta(resposta, subagentId) {
-    const validacao = {
-      valida: true,
-      problemas: [],
-      score: 1.0
-    };
-
-    // Validação específica para jurisprudência (anti-alucinação crítico)
-    if (subagentId === 'jurisprudencia') {
-      // Verificar se há números de processo sem formato correto
-      const numerosProcesso = resposta.match(/processo\s+n[°º]?\s*[\d.-]+/gi) || [];
-
-      for (const num of numerosProcesso) {
-        // Formato esperado: NNNNNNN-DD.AAAA.J.TR.OOOO
-        const temFormatoCorreto = /\d{7}-\d{2}\.\d{4}\.\d\.\d{2}\.\d{4}/.test(num);
-
-        if (!temFormatoCorreto) {
-          validacao.valida = false;
-          validacao.problemas.push({
-            tipo: 'FORMATO_PROCESSO_INVALIDO',
-            descricao: `Número de processo com formato suspeito: ${num}`,
-            gravidade: 'ALTA'
-          });
-          validacao.score -= 0.3;
-        }
-      }
-
-      // Verificar se há citações sem fonte
-      const temCitacoes = resposta.includes('STF') || resposta.includes('STJ') ||
-                          resposta.includes('Tribunal') || resposta.includes('Acórdão');
-      const temNumeroProcesso = numerosProcesso.length > 0;
-
-      if (temCitacoes && !temNumeroProcesso) {
-        validacao.valida = false;
-        validacao.problemas.push({
-          tipo: 'CITACAO_SEM_FONTE',
-          descricao: 'Citação de jurisprudência sem número de processo/acórdão',
-          gravidade: 'CRÍTICA'
-        });
-        validacao.score -= 0.5;
-      }
-
-      // Detectar frases genéricas suspeitas
-      const frasesGenericas = [
-        'segundo jurisprudência pacífica',
-        'conforme entendimento consolidado',
-        'diversos precedentes',
-        'inúmeros julgados'
-      ];
-
-      for (const frase of frasesGenericas) {
-        if (resposta.toLowerCase().includes(frase.toLowerCase()) && !temNumeroProcesso) {
-          validacao.problemas.push({
-            tipo: 'FRASE_GENERICA_SUSPEITA',
-            descricao: `Frase genérica sem citação concreta: "${frase}"`,
-            gravidade: 'MÉDIA'
-          });
-          validacao.score -= 0.2;
-        }
-      }
-    }
-
-    // Validação geral: resposta muito curta
-    if (resposta.length < 100) {
-      validacao.problemas.push({
-        tipo: 'RESPOSTA_MUITO_CURTA',
-        descricao: `Resposta tem apenas ${resposta.length} caracteres`,
-        gravidade: 'BAIXA'
-      });
-      validacao.score -= 0.1;
-    }
-
-    // Validação geral: resposta suspeitamente repetitiva
-    const palavras = resposta.toLowerCase().split(/\s+/);
-    const palavrasUnicas = new Set(palavras);
-    const taxaRepet = palavrasUnicas.size / palavras.length;
-
-    if (taxaRepet < 0.3) {
-      validacao.problemas.push({
-        tipo: 'RESPOSTA_REPETITIVA',
-        descricao: `Taxa de repetição suspeita: ${(taxaRepet * 100).toFixed(1)}%`,
-        gravidade: 'MÉDIA'
-      });
-      validacao.score -= 0.15;
-    }
-
-    // Ajustar score final
-    validacao.score = Math.max(0, Math.min(1, validacao.score));
-
-    return validacao;
-  }
-
-  /**
-   * Regenera prompt após detecção de problema
-   * @param {string} subagentId - ID do subagente
-   * @param {Object} validacao - Resultado da validação
-   * @returns {Promise<Array>} Novas regras geradas
-   */
-  async regenerarPromptComBloqueio(subagentId, validacao) {
-    console.log(`\x1b[31m🔴 BLOQUEIO ANTI-ALUCINAÇÃO ATIVADO para ${subagentId}\x1b[0m`);
-    console.log(`\x1b[33m   Problemas detectados: ${validacao.problemas.length}\x1b[0m`);
-
-    const novasRegras = [];
-
-    // Incrementar contador de regeneração
-    const contagem = (this.regenerationCount.get(subagentId) || 0) + 1;
-    this.regenerationCount.set(subagentId, contagem);
-
-    // Gerar regras baseadas nos problemas detectados
-    for (const problema of validacao.problemas) {
-      let regra = null;
-
-      switch (problema.tipo) {
-        case 'FORMATO_PROCESSO_INVALIDO':
-          regra = {
-            tipo: 'ANTI-ALUCINAÇÃO',
-            descricao: `BLOQUEIO CRÍTICO: NUNCA invente números de processo. Se não tiver número correto no formato NNNNNNN-DD.AAAA.J.TR.OOOO, retorne "❌ NENHUM RESULTADO LOCALIZADO".`,
-            prioridade: 'CRÍTICA'
-          };
-          break;
-
-        case 'CITACAO_SEM_FONTE':
-          regra = {
-            tipo: 'ANTI-ALUCINAÇÃO',
-            descricao: `BLOQUEIO CRÍTICO: NUNCA cite jurisprudência sem número de processo ou acórdão. Transcrição literal obrigatória.`,
-            prioridade: 'CRÍTICA'
-          };
-          break;
-
-        case 'FRASE_GENERICA_SUSPEITA':
-          regra = {
-            tipo: 'ANTI-ALUCINAÇÃO',
-            descricao: `PROIBIDO usar frases genéricas como "jurisprudência pacífica" sem citação concreta com número de processo.`,
-            prioridade: 'ALTA'
-          };
-          break;
-
-        case 'RESPOSTA_MUITO_CURTA':
-          regra = {
-            tipo: 'QUALIDADE',
-            descricao: `Respostas devem ter no mínimo 200 caracteres com conteúdo substancial.`,
-            prioridade: 'ALTA'
-          };
-          break;
-
-        case 'RESPOSTA_REPETITIVA':
-          regra = {
-            tipo: 'QUALIDADE',
-            descricao: `Evite repetições excessivas. Cada parágrafo deve trazer informação nova.`,
-            prioridade: 'ALTA'
-          };
-          break;
-      }
-
-      if (regra) {
-        novasRegras.push(regra);
-      }
-    }
-
-    // Salvar padrões de erro
-    if (!this.errorPatterns.has(subagentId)) {
-      this.errorPatterns.set(subagentId, []);
-    }
-    this.errorPatterns.get(subagentId).push({
-      timestamp: new Date().toISOString(),
-      validacao: validacao,
-      regrasGeradas: novasRegras.length
-    });
-
-    console.log(`\x1b[35m🔄 ${novasRegras.length} novas regras geradas automaticamente (Regeneração #${contagem})\x1b[0m\n`);
-
-    return novasRegras;
-  }
-
-  // Invocar subagente com autoregeneração e autoatualização
+  // Invocar subagente
   async invocarSubagente(subagentId, prompt, context = {}) {
     const subagent = SUBAGENTES[subagentId];
 
@@ -880,68 +505,14 @@ export class SubagentManager {
       throw new Error(`Subagente não encontrado: ${subagentId}`);
     }
 
-    // ========================================================================
-    // FASE 1: BUSCAR HISTÓRICO RECENTE E ANALISAR FEEDBACK
-    // ========================================================================
-
-    console.log(`\x1b[36m🔍 Analisando histórico recente de ${subagentId}...\x1b[0m`);
-
-    // Buscar histórico recente automaticamente
-    const historicoRecente = this.buscarHistoricoRecente(subagentId, 10);
-
-    // Analisar feedback do usuário
-    const feedback = this.analisarFeedbackUsuario(historicoRecente);
-
-    // Extrair regras de correção se houver feedback
-    let regrasCorrecao = [];
-    if (feedback.temCorrecao) {
-      console.log(`\x1b[33m⚠️  Feedback negativo detectado no histórico! Adaptando comportamento...\x1b[0m`);
-      regrasCorrecao = this.extrairRegrasDeCorrecao(feedback);
-    }
-
-    // Adicionar regras de erros anteriores se houver
-    const padroesErro = this.errorPatterns.get(subagentId) || [];
-    if (padroesErro.length > 0) {
-      console.log(`\x1b[35m🔄 ${padroesErro.length} padrões de erro anteriores detectados. Aplicando correções...\x1b[0m`);
-
-      // Adicionar regras das regenerações anteriores
-      for (const adaptacao of (this.promptAdaptations.get(subagentId) || [])) {
-        if (adaptacao.regras) {
-          regrasCorrecao.push(...adaptacao.regras);
-        }
-      }
-    }
-
-    // ========================================================================
-    // FASE 2: ADAPTAR SYSTEM PROMPT DINAMICAMENTE
-    // ========================================================================
-
-    let systemPromptFinal = subagent.systemPrompt;
-
-    if (regrasCorrecao.length > 0) {
-      systemPromptFinal = this.adaptarSystemPrompt(subagentId, subagent.systemPrompt, regrasCorrecao);
-    } else {
-      console.log(`\x1b[32m✓ Nenhuma adaptação necessária. Usando prompt padrão.\x1b[0m`);
-    }
-
-    // ========================================================================
-    // FASE 3: CONSTRUIR MENSAGENS COM HISTÓRICO AUTOMÁTICO
-    // ========================================================================
-
+    // Construir mensagens
     const messages = [];
 
-    // IMPORTANTE: Usar histórico automaticamente (corrige problema da auditoria)
-    if (historicoRecente.length > 0 && !context.noHistory) {
-      console.log(`\x1b[36m📚 Injetando ${historicoRecente.length} mensagens de contexto histórico\x1b[0m`);
-      messages.push(...historicoRecente);
-    }
-
-    // Adicionar contexto adicional se fornecido
+    // Adicionar contexto se fornecido
     if (context.previousMessages) {
       messages.push(...context.previousMessages);
     }
 
-    // Adicionar prompt atual
     messages.push({
       role: 'user',
       content: prompt
@@ -952,14 +523,11 @@ export class SubagentManager {
       subagentId === 'analise-processual' ||
       subagentId === 'prazos';
 
-    // ========================================================================
-    // FASE 4: CONFIGURAR E EXECUTAR CHAMADA À API
-    // ========================================================================
-
+    // Configurar parâmetros da API
     const apiParams = {
       model: SUBAGENT_CONFIG.model,
       max_tokens: SUBAGENT_CONFIG.maxTokens,
-      system: systemPromptFinal, // ← Prompt adaptado dinamicamente
+      system: subagent.systemPrompt,
       messages
     };
 
@@ -982,74 +550,7 @@ export class SubagentManager {
         .map(block => block.text)
         .join('\n');
 
-      // ========================================================================
-      // FASE 5: VALIDAR RESPOSTA (ANTI-ALUCINAÇÃO)
-      // ========================================================================
-
-      console.log(`\x1b[36m🔍 Validando resposta com detector anti-alucinação...\x1b[0m`);
-      const validacao = this.validarResposta(resposta, subagentId);
-
-      if (!validacao.valida && validacao.score < 0.5) {
-        console.log(`\x1b[31m⚠️  VALIDAÇÃO FALHOU! Score: ${validacao.score.toFixed(2)}\x1b[0m`);
-
-        // Regenerar prompt automaticamente
-        const novasRegras = await this.regenerarPromptComBloqueio(subagentId, validacao);
-
-        // Tentar novamente com prompt regenerado
-        if (novasRegras.length > 0) {
-          console.log(`\x1b[35m🔄 Tentando novamente com prompt autorregenerado...\x1b[0m\n`);
-
-          const systemPromptRegenerado = this.adaptarSystemPrompt(
-            subagentId,
-            subagent.systemPrompt,
-            [...regrasCorrecao, ...novasRegras]
-          );
-
-          const responseRegenerada = await this.client.messages.create({
-            ...apiParams,
-            system: systemPromptRegenerado
-          });
-
-          const respostaRegenerada = responseRegenerada.content
-            .filter(block => block.type === 'text')
-            .map(block => block.text)
-            .join('\n');
-
-          // Validar novamente
-          const validacaoRegenerada = this.validarResposta(respostaRegenerada, subagentId);
-
-          console.log(`\x1b[32m✓ Resposta regenerada. Novo score: ${validacaoRegenerada.score.toFixed(2)}\x1b[0m\n`);
-
-          // Usar resposta regenerada
-          const respostaFinal = respostaRegenerada;
-
-          // Salvar no histórico
-          if (!this.conversationHistory.has(subagentId)) {
-            this.conversationHistory.set(subagentId, []);
-          }
-          this.conversationHistory.get(subagentId).push(
-            { role: 'user', content: prompt },
-            { role: 'assistant', content: respostaFinal }
-          );
-
-          return {
-            subagent: subagent.name,
-            type: subagent.type,
-            response: respostaFinal,
-            tokens: responseRegenerada.usage,
-            model: SUBAGENT_CONFIG.model,
-            regenerated: true,
-            validationScore: validacaoRegenerada.score
-          };
-        }
-      } else {
-        console.log(`\x1b[32m✓ Validação passou. Score: ${validacao.score.toFixed(2)}\x1b[0m\n`);
-      }
-
-      // ========================================================================
-      // FASE 6: SALVAR NO HISTÓRICO
-      // ========================================================================
-
+      // Salvar no histórico
       if (!this.conversationHistory.has(subagentId)) {
         this.conversationHistory.set(subagentId, []);
       }
@@ -1063,9 +564,7 @@ export class SubagentManager {
         type: subagent.type,
         response: resposta,
         tokens: response.usage,
-        model: SUBAGENT_CONFIG.model,
-        validationScore: validacao.score,
-        adaptedPrompt: regrasCorrecao.length > 0
+        model: SUBAGENT_CONFIG.model
       };
 
     } catch (error) {

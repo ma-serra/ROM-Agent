@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-24T05:01:43.669Z",
+  "timestamp": "2026-06-13T01:35:00.475Z",
   "region": "us-east-1",
   "totalModels": 29,
   "successful": 12,
@@ -17,19 +17,19 @@
       "modelId": "amazon.nova-pro-v1:0",
       "description": "Nova Pro (Balanced)",
       "success": true,
-      "duration": 834
+      "duration": 876
     },
     {
       "modelId": "amazon.nova-lite-v1:0",
       "description": "Nova Lite (Fast)",
       "success": true,
-      "duration": 726
+      "duration": 830
     },
     {
       "modelId": "amazon.nova-micro-v1:0",
       "description": "Nova Micro (Ultra Fast)",
       "success": true,
-      "duration": 671
+      "duration": 919
     },
     {
       "modelId": "amazon.titan-text-express-v1",
@@ -49,14 +49,14 @@
       "modelId": "anthropic.claude-opus-4-20250514-v1:0",
       "description": "Claude Opus 4",
       "success": false,
-      "error": "ValidationException",
-      "errorMessage": "Invocation of model ID anthropic.claude-opus-4-20250514-v1:0 with on-demand throughput isn’t supported. Retry your request with the ID or ARN of an inference profile that contains this model."
+      "error": "ResourceNotFoundException",
+      "errorMessage": "This model version has reached the end of its life. Please refer to the AWS documentation for more details."
     },
     {
       "modelId": "anthropic.claude-sonnet-4-5-20250929-v1:0",
       "description": "Claude Sonnet 4.5 (Default)",
       "success": true,
-      "duration": 1933
+      "duration": 1668
     },
     {
       "modelId": "anthropic.claude-sonnet-4-20250514-v1:0",
@@ -111,19 +111,19 @@
       "modelId": "meta.llama4-scout-17b-instruct-v1:0",
       "description": "Llama 4 Scout 17B",
       "success": true,
-      "duration": 609
+      "duration": 710
     },
     {
       "modelId": "meta.llama4-maverick-17b-instruct-v1:0",
       "description": "Llama 4 Maverick 17B",
       "success": true,
-      "duration": 714
+      "duration": 781
     },
     {
       "modelId": "meta.llama3-3-70b-instruct-v1:0",
       "description": "Llama 3.3 70B",
       "success": true,
-      "duration": 629
+      "duration": 808
     },
     {
       "modelId": "meta.llama3-2-90b-instruct-v1:0",
@@ -143,19 +143,19 @@
       "modelId": "meta.llama3-1-70b-instruct-v1:0",
       "description": "Llama 3.1 70B",
       "success": true,
-      "duration": 972
+      "duration": 1019
     },
     {
       "modelId": "meta.llama3-1-8b-instruct-v1:0",
       "description": "Llama 3.1 8B",
       "success": true,
-      "duration": 678
+      "duration": 679
     },
     {
       "modelId": "mistral.mistral-large-3-675b-instruct",
       "description": "Mistral Large 3 (675B)",
       "success": true,
-      "duration": 646
+      "duration": 737
     },
     {
       "modelId": "mistral.pixtral-large-2502-v1:0",
@@ -168,13 +168,13 @@
       "modelId": "mistral.ministral-3-14b-instruct",
       "description": "Ministral 3 14B",
       "success": true,
-      "duration": 666
+      "duration": 755
     },
     {
       "modelId": "mistral.ministral-3-8b-instruct",
       "description": "Ministral 3 8B",
       "success": true,
-      "duration": 628
+      "duration": 680
     },
     {
       "modelId": "deepseek.r1-v1:0",

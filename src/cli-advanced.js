@@ -14,6 +14,7 @@ import dotenv from 'dotenv';
 import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { exportarResultado, validarFormato, normalizarFormato } from './utils/output-exporter.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -248,6 +249,51 @@ class ROMCLI {
     this.subagentManager = new SubagentManager(apiKey);
     this.currentAgent = null;
     this.verbose = false;
+  }
+
+  // Processa salvamento de resultado (--output e --format)
+  async processarSalvamentoResultado(resultado, flags, comando) {
+    if (!flags.output && !flags.o) {
+      // Sem flag de output, não salvar
+      return;
+    }
+
+    const outputPath = flags.output || flags.o;
+    const format = normalizarFormato(flags.format || flags.f || 'md');
+
+    // Validar formato
+    if (!validarFormato(format)) {
+      console.log(`${CORES.yellow}⚠ Formato inválido: ${format}. Usando MD como padrão.${CORES.reset}`);
+    }
+
+    // Extrair conteúdo textual do resultado
+    let conteudo = '';
+    if (typeof resultado === 'string') {
+      conteudo = resultado;
+    } else if (resultado?.response) {
+      conteudo = resultado.response;
+    } else if (resultado?.content?.[0]?.text) {
+      conteudo = resultado.content[0].text;
+    } else {
+      console.log(`${CORES.red}✗ Não foi possível extrair conteúdo do resultado${CORES.reset}\n`);
+      return;
+    }
+
+    // Exportar resultado
+    try {
+      await exportarResultado({
+        conteudo,
+        outputPath,
+        format,
+        titulo: `Resultado: ${comando}`,
+        comando: `rom ${comando}`,
+        metadata: {
+          palavrasChave: [comando]
+        }
+      });
+    } catch (error) {
+      console.log(`${CORES.red}✗ Erro ao salvar arquivo: ${error.message}${CORES.reset}\n`);
+    }
   }
 
   // Lista subagentes
@@ -560,9 +606,13 @@ class ROMCLI {
 
       console.log(`${CORES.yellow}⚙️  Processando com subagente: analise-processual...${CORES.reset}\n`);
 
+      // Ativar pensamento estendido para parecer (comando complexo)
+      const context = isParecer ? { enableThinking: true } : {};
+
       const resultado = await this.subagentManager.invocarSubagente(
         'analise-processual',
-        promptBase
+        promptBase,
+        context
       );
 
       // Exibir resultado formatado
@@ -570,8 +620,11 @@ class ROMCLI {
       console.log(`${CORES.cyan}║${CORES.reset}  ${CORES.bright}${titulo}${CORES.reset}                                    ${CORES.cyan}║${CORES.reset}`);
       console.log(`${CORES.cyan}╚════════════════════════════════════════════════════════════╝${CORES.reset}\n`);
 
-      console.log(resultado.content[0].text);
+      console.log(resultado.response);
       console.log();
+
+      // Salvar resultado se --output foi especificado
+      await this.processarSalvamentoResultado(resultado.response, flags, isParecer ? 'parecer' : 'analisar');
 
       return resultado;
     } catch (error) {
@@ -736,8 +789,11 @@ NÃO PARAFRASEIE. NÃO RESUMA. TRANSCREVA LITERALMENTE OU BLOQUEIE.`;
       console.log(`${CORES.cyan}║${CORES.reset}  ${CORES.bright}JURISPRUDÊNCIA: ${termo.toUpperCase()}${CORES.reset}                    ${CORES.cyan}║${CORES.reset}`);
       console.log(`${CORES.cyan}╚════════════════════════════════════════════════════════════╝${CORES.reset}\n`);
 
-      console.log(resultado.content[0].text);
+      console.log(resultado.response);
       console.log();
+
+      // Salvar resultado se --output foi especificado
+      await this.processarSalvamentoResultado(resultado.response, flags, 'pesquisar');
 
       return resultado;
     } catch (error) {
@@ -747,12 +803,13 @@ NÃO PARAFRASEIE. NÃO RESUMA. TRANSCREVA LITERALMENTE OU BLOQUEIE.`;
   }
 
   // Gera prognóstico combinando análise + prazos
-  async gerarPrognostico(caso) {
+  async gerarPrognostico(caso, flags = {}) {
     if (!caso) {
-      console.log(`${CORES.red}✗ Uso: rom prognostico <caso>${CORES.reset}\n`);
+      console.log(`${CORES.red}✗ Uso: rom prognostico <caso> [--output <arquivo>] [--format <md|docx>]${CORES.reset}\n`);
       console.log(`${CORES.yellow}Exemplo:${CORES.reset}`);
       console.log(`  ${CORES.dim}rom prognostico processo.pdf${CORES.reset}`);
-      console.log(`  ${CORES.dim}rom prognostico "ação trabalhista de horas extras"${CORES.reset}\n`);
+      console.log(`  ${CORES.dim}rom prognostico "ação trabalhista de horas extras"${CORES.reset}`);
+      console.log(`  ${CORES.dim}rom prognostico processo.pdf --output prognostico.docx --format docx${CORES.reset}\n`);
       return;
     }
 
@@ -771,20 +828,22 @@ NÃO PARAFRASEIE. NÃO RESUMA. TRANSCREVA LITERALMENTE OU BLOQUEIE.`;
         // Não é arquivo, usar como texto direto
       }
 
-      // ETAPA 1: Análise processual
+      // ETAPA 1: Análise processual (com pensamento estendido)
       console.log(`${CORES.yellow}⚙️  [1/2] Analisando caso...${CORES.reset}`);
       const analise = await this.subagentManager.invocarSubagente(
         'analise-processual',
-        `Analise este caso para prognóstico de êxito:\n\n${conteudo}`
+        `Analise este caso para prognóstico de êxito:\n\n${conteudo}`,
+        { enableThinking: true }
       );
 
-      const textoAnalise = analise.content[0].text;
+      const textoAnalise = analise.response;
 
-      // ETAPA 2: Análise de prazos e riscos
+      // ETAPA 2: Análise de prazos e riscos (com pensamento estendido)
       console.log(`${CORES.yellow}⚙️  [2/2] Avaliando prazos e riscos...${CORES.reset}\n`);
       const prazos = await this.subagentManager.invocarSubagente(
         'prazos',
-        `Com base na seguinte análise, avalie PRESCRIÇÃO, DECADÊNCIA, PRECLUSÃO e RISCOS TEMPORAIS:\n\n${textoAnalise}`
+        `Com base na seguinte análise, avalie PRESCRIÇÃO, DECADÊNCIA, PRECLUSÃO e RISCOS TEMPORAIS:\n\n${textoAnalise}`,
+        { enableThinking: true }
       );
 
       // Combinar resultados
@@ -795,8 +854,14 @@ NÃO PARAFRASEIE. NÃO RESUMA. TRANSCREVA LITERALMENTE OU BLOQUEIE.`;
       console.log(`${CORES.green}${CORES.bright}═══ ANÁLISE DO CASO ═══${CORES.reset}\n`);
       console.log(textoAnalise);
       console.log(`\n${CORES.yellow}${CORES.bright}═══ PRAZOS E RISCOS ═══${CORES.reset}\n`);
-      console.log(prazos.content[0].text);
+      console.log(prazos.response);
       console.log();
+
+      // Combinar resultados para salvar
+      const resultadoCombinado = `═══ ANÁLISE DO CASO ═══\n\n${textoAnalise}\n\n═══ PRAZOS E RISCOS ═══\n\n${prazos.response}`;
+
+      // Salvar resultado se --output foi especificado
+      await this.processarSalvamentoResultado(resultadoCombinado, flags, 'prognostico');
 
       return { analise, prazos };
     } catch (error) {
@@ -806,11 +871,11 @@ NÃO PARAFRASEIE. NÃO RESUMA. TRANSCREVA LITERALMENTE OU BLOQUEIE.`;
   }
 
   // Revisa português jurídico
-  async revisarTexto(input) {
+  async revisarTexto(input, flags = {}) {
     console.log(`\n${CORES.cyan}${CORES.bright}REVISÃO DE PORTUGUÊS JURÍDICO${CORES.reset}\n`);
 
     if (!input) {
-      console.log(`${CORES.red}✗ Uso: rom revisar <texto_ou_arquivo>${CORES.reset}\n`);
+      console.log(`${CORES.red}✗ Uso: rom revisar <texto_ou_arquivo> [--output <arquivo>] [--format <md|docx>]${CORES.reset}\n`);
       console.log(`${CORES.yellow}Aspectos revisados:${CORES.reset}`);
       console.log(`  ${CORES.dim}- Ortografia e acentuação${CORES.reset}`);
       console.log(`  ${CORES.dim}- Concordância verbal e nominal${CORES.reset}`);
@@ -819,7 +884,8 @@ NÃO PARAFRASEIE. NÃO RESUMA. TRANSCREVA LITERALMENTE OU BLOQUEIE.`;
       console.log(`  ${CORES.dim}- Estilo jurídico e latinismos${CORES.reset}\n`);
       console.log(`${CORES.yellow}Exemplos:${CORES.reset}`);
       console.log(`  ${CORES.dim}rom revisar peca.txt${CORES.reset}`);
-      console.log(`  ${CORES.dim}rom revisar "A empresa não cumpriu o contrato"${CORES.reset}\n`);
+      console.log(`  ${CORES.dim}rom revisar "A empresa não cumpriu o contrato"${CORES.reset}`);
+      console.log(`  ${CORES.dim}rom revisar peca.txt --output revisao.docx --format docx${CORES.reset}\n`);
       return;
     }
 
@@ -864,8 +930,11 @@ Seja RIGOROSO e TÉCNICO na análise.`;
       console.log(`${CORES.cyan}║${CORES.reset}  ${CORES.bright}REVISÃO DE PORTUGUÊS JURÍDICO${CORES.reset}                          ${CORES.cyan}║${CORES.reset}`);
       console.log(`${CORES.cyan}╚════════════════════════════════════════════════════════════╝${CORES.reset}\n`);
 
-      console.log(resultado.content[0].text);
+      console.log(resultado.response);
       console.log();
+
+      // Salvar resultado se --output foi especificado
+      await this.processarSalvamentoResultado(resultado.response, flags, 'revisar');
 
       return resultado;
     } catch (error) {
@@ -875,11 +944,11 @@ Seja RIGOROSO e TÉCNICO na análise.`;
   }
 
   // Elabora contratos
-  async elaborarContrato(tipo, contexto = '') {
+  async elaborarContrato(tipo, contexto = '', flags = {}) {
     console.log(`\n${CORES.cyan}${CORES.bright}ELABORAÇÃO DE CONTRATO${CORES.reset}\n`);
 
     if (!tipo) {
-      console.log(`${CORES.red}✗ Uso: rom contrato <tipo_do_contrato> [contexto]${CORES.reset}\n`);
+      console.log(`${CORES.red}✗ Uso: rom contrato <tipo_do_contrato> [contexto] [--output <arquivo>] [--format <md|docx>]${CORES.reset}\n`);
       console.log(`${CORES.yellow}Tipos de contratos disponíveis:${CORES.reset}`);
       console.log(`  ${CORES.dim}NEGÓCIOS:${CORES.reset}`);
       console.log(`    ${CORES.dim}- compra_venda, locacao, prestacao_servicos${CORES.reset}`);
@@ -943,8 +1012,11 @@ Elabore o contrato COMPLETO e PRONTO PARA USO.`;
       console.log(`${CORES.cyan}║${CORES.reset}  ${CORES.bright}MINUTA DE CONTRATO: ${tipoFormatado}${CORES.reset}                ${CORES.cyan}║${CORES.reset}`);
       console.log(`${CORES.cyan}╚════════════════════════════════════════════════════════════╝${CORES.reset}\n`);
 
-      console.log(resultado.content[0].text);
+      console.log(resultado.response);
       console.log();
+
+      // Salvar resultado se --output foi especificado
+      await this.processarSalvamentoResultado(resultado.response, flags, 'contrato');
 
       return resultado;
     } catch (error) {
@@ -1174,15 +1246,15 @@ async function main() {
       break;
 
     case 'prognostico':
-      await cli.gerarPrognostico(parsed.subcommand || parsed.positional.join(' '));
+      await cli.gerarPrognostico(parsed.subcommand || parsed.positional.join(' '), parsed.flags);
       break;
 
     case 'revisar':
-      await cli.revisarTexto(parsed.subcommand || parsed.positional.join(' '));
+      await cli.revisarTexto(parsed.subcommand || parsed.positional.join(' '), parsed.flags);
       break;
 
     case 'contrato':
-      await cli.elaborarContrato(parsed.subcommand, parsed.positional.join(' '));
+      await cli.elaborarContrato(parsed.subcommand, parsed.positional.join(' '), parsed.flags);
       break;
 
     default:
