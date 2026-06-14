@@ -448,4 +448,20 @@ class StateManager {
   }
 }
 
+// Singleton instance
+let stateManagerInstance = null;
+
+/**
+ * Get or create StateManager singleton instance
+ * @param {Object} db - PostgreSQL connection pool
+ * @param {Object} redisConfig - Optional Redis configuration
+ * @returns {StateManager}
+ */
+export function getStateManager(db = null, redisConfig = null) {
+  if (!stateManagerInstance) {
+    stateManagerInstance = new StateManager(db, redisConfig);
+  }
+  return stateManagerInstance;
+}
+
 export { StateManager };

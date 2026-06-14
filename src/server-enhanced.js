@@ -3722,10 +3722,12 @@ app.post('/api/upload-documents', requireAuth, upload.array('files', 20), async 
     }
 
     console.log(`📤 Upload de ${req.files.length} arquivo(s) para extração automática...`);
+    console.log(`🚀 PARALELO: Processando ${req.files.length} arquivos simultaneamente`);
 
-    const extractions = [];
-
-    for (const file of req.files) {
+    // 🔥 FIX CRÍTICO #1: PARALELIZAÇÃO REAL com Promise.all()
+    // Antes: loop sequencial (10 arquivos = 10x tempo)
+    // Agora: processamento paralelo (10 arquivos = 1x tempo + overhead)
+    const processingPromises = req.files.map(async (file) => {
       try {
         console.log(`🔍 Processando: ${file.originalname} com 91 ferramentas + documentos estruturados...`);
 
@@ -3796,17 +3798,15 @@ app.post('/api/upload-documents', requireAuth, upload.array('files', 20), async 
             console.log(`   ⚠️ DUPLICATA DETECTADA: ${file.originalname}`);
             console.log(`   📄 Original: ${original.filename} (${original.uploadedAt})`);
 
-            extractions.push({
-              filename: file.originalname,
+            // Retornar objeto de duplicata (em vez de continue, pois estamos em map())
+            return {
               success: false,
+              filename: file.originalname,
               skipped: true,
               reason: 'duplicate',
               originalDocument: original.filename,
               message: `Documento duplicado. Original: "${original.filename}" enviado em ${new Date(original.uploadedAt).toLocaleString('pt-BR')}`
-            });
-
-            // Pular para próximo arquivo
-            continue;
+            };
           }
 
           // Criar nome único para KB (remover extensão se já houver .txt)
@@ -3940,26 +3940,108 @@ app.post('/api/upload-documents', requireAuth, upload.array('files', 20), async 
           logger.warn('Falha ao copiar para KB', { error: kbError.message, file: file.originalname });
         }
 
-        extractions.push(extractedData);
-        console.log(`✅ Processado: ${file.originalname} (${processResult.extraction?.wordCount} palavras, ${processResult.structuredDocuments?.filesGenerated || 0} docs estruturados)`)
+        console.log(`✅ Processado: ${file.originalname} (${processResult.extraction?.wordCount} palavras, ${processResult.structuredDocuments?.filesGenerated || 0} docs estruturados)`);
+
+        // 🔥 FIX CRÍTICO #2: INTEGRAÇÃO COM EVENTBUS
+        // Publicar evento document.extracted para notificar o sistema
+        try {
+          const { getEventBus } = await import('./services/event-bus.js');
+          const eventBus = getEventBus();
+
+          await eventBus.publish('document.extracted', {
+            documentId: kbDoc.id,
+            filename: file.originalname,
+            userId: req.session?.user?.id || 'web-upload',
+            textLength: processResult.extraction?.charCount || 0,
+            wordCount: processResult.extraction?.wordCount || 0,
+            structuredDocuments: structuredDocs.length
+          }, {
+            source: 'upload-service',
+            timestamp: new Date().toISOString()
+          });
+
+          console.log(`   📡 EventBus: Evento 'document.extracted' publicado`);
+        } catch (eventError) {
+          console.warn(`   ⚠️  EventBus publish failed: ${eventError.message}`);
+        }
+
+        // 🔥 FIX CRÍTICO #3: INTEGRAÇÃO COM STATEMANAGER (PostgreSQL)
+        // Persistir metadados de upload para auditoria e recuperação pós-restart
+        try {
+          const { getStateManager } = await import('./services/state-manager.js');
+          const stateManager = getStateManager();
+
+          if (stateManager) {
+            await stateManager.saveAgentMetric(
+              'upload-service',
+              'document_uploaded',
+              processResult.extraction?.charCount || 0,
+              {
+                filename: file.originalname,
+                userId: req.session?.user?.id || 'web-upload',
+                documentId: kbDoc.id,
+                wordCount: processResult.extraction?.wordCount || 0,
+                structuredDocs: structuredDocs.length,
+                toolsUsed: processResult.toolsUsed?.length || 0
+              }
+            );
+
+            console.log(`   💾 StateManager: Metadados persistidos no PostgreSQL`);
+          }
+        } catch (stateError) {
+          console.warn(`   ⚠️  StateManager persist failed: ${stateError.message}`);
+        }
+
+        return {
+          success: true,
+          ...extractedData
+        };
+
       } catch (fileError) {
         console.error(`❌ Erro ao processar ${file.originalname}:`, fileError);
-        extractions.push({
+        return {
+          success: false,
           filename: file.originalname,
           error: fileError.message,
           data: {
             'Status': `❌ Erro: ${fileError.message}`
           }
-        });
+        };
       }
-    }
+    });
 
-    console.log(`✅ Upload concluído: ${extractions.length} arquivo(s) processado(s)`);
+    // Aguardar TODOS os arquivos em paralelo (Promise.allSettled não falha se um falhar)
+    const results = await Promise.allSettled(processingPromises);
+
+    // Extrair resultados
+    const extractions = results.map((result, index) => {
+      if (result.status === 'fulfilled') {
+        return result.value;
+      } else {
+        return {
+          success: false,
+          filename: req.files[index].originalname,
+          error: result.reason?.message || 'Unknown error',
+          data: {
+            'Status': `❌ Erro: ${result.reason?.message || 'Unknown error'}`
+          }
+        };
+      }
+    });
+
+    const successCount = extractions.filter(e => e.success !== false && !e.skipped).length;
+    const skipCount = extractions.filter(e => e.skipped).length;
+    const errorCount = extractions.filter(e => e.success === false).length;
+
+    console.log(`✅ Upload concluído: ${successCount} sucesso, ${skipCount} duplicatas, ${errorCount} erros`);
 
     res.json({
       success: true,
       message: `${req.files.length} arquivo(s) processado(s) com sucesso`,
       filesCount: req.files.length,
+      successCount,
+      skipCount,
+      errorCount,
       extractions: extractions
     });
 
@@ -6474,7 +6556,10 @@ app.get('/api/kb/documents', requireAuth, (req, res) => {
     logger.info(`   📊 Distribuição por userId:`, byUserId);
     logger.info(`   🔍 Primeiros 5 docs filtrados:`, userDocs.slice(0, 5).map(d => ({ id: d.id, name: d.name, userId: d.userId })));
 
-    // Retornar documentos formatados
+    // 🔥 FIX CRÍTICO #4: Retornar extractedText para que chat possa acessar
+    // OTIMIZAÇÃO: Truncar textos muito grandes (max 50KB por documento)
+    const MAX_TEXT_LENGTH = 50000; // 50KB por documento
+
     const documents = userDocs.map(doc => ({
       id: doc.id,
       name: doc.name,
@@ -6484,7 +6569,14 @@ app.get('/api/kb/documents', requireAuth, (req, res) => {
       textLength: doc.textLength,
       userId: doc.userId, // ✅ FIX: Incluir userId na resposta
       path: doc.path, // ✅ FIX: Incluir path para análise V2 poder ler o arquivo
-      metadata: doc.metadata
+      metadata: doc.metadata,
+      // 🔥 NOVO: Retornar texto extraído (truncado se muito grande)
+      extractedText: doc.extractedText
+        ? (doc.extractedText.length > MAX_TEXT_LENGTH
+            ? doc.extractedText.substring(0, MAX_TEXT_LENGTH) + '\n\n[... texto truncado para otimização ...]'
+            : doc.extractedText)
+        : null,
+      truncated: doc.extractedText && doc.extractedText.length > MAX_TEXT_LENGTH
     }));
 
     // 🔥 FIX: No-cache headers para sempre pegar dados frescos

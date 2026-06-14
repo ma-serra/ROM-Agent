@@ -252,4 +252,19 @@ class EventBus extends EventEmitter {
   }
 }
 
+// Singleton instance
+let eventBusInstance = null;
+
+/**
+ * Get or create EventBus singleton instance
+ * @param {Object} redisConfig - Optional Redis configuration
+ * @returns {EventBus}
+ */
+export function getEventBus(redisConfig = null) {
+  if (!eventBusInstance) {
+    eventBusInstance = new EventBus(redisConfig);
+  }
+  return eventBusInstance;
+}
+
 export { EventBus };

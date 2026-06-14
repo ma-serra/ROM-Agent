@@ -105,7 +105,7 @@ router.post('/stream', async (req, res) => {
   let heartbeatInterval = null; // Declarar fora do try para cleanup no catch
 
   try {
-    const {
+    let {
       message,
       modelo,
       model, // Aceitar tanto 'modelo' quanto 'model'
@@ -128,6 +128,55 @@ router.post('/stream', async (req, res) => {
     // Extrair conversationId e userId do request
     const conversationId = req.body.conversationId || req.body.conversation_id;
     const userId = req.session?.user?.id || req.body.userId || 'anonymous';
+
+    // 🔥 FIX CRÍTICO #5: BUSCA ATIVA DE DOCUMENTOS DA KB
+    // Se kbContext não foi enviado pelo frontend E usuário está autenticado,
+    // buscar AUTOMATICAMENTE os documentos do usuário
+    if (!kbContext && userId && userId !== 'anonymous') {
+      try {
+        logger.info(`[${requestId}] KB Context vazio - buscando documentos ativamente para userId=${userId}`);
+
+        // Usar kbCache para busca rápida (já em memória)
+        const kbCache = (await import('../lib/kb-cache.js')).default;
+        const allDocs = kbCache.getAll();
+
+        // Filtrar documentos do usuário atual + compartilhados
+        const userDocs = allDocs.filter(doc =>
+          doc.userId === userId || doc.userId === 'web-upload'
+        );
+
+        if (userDocs.length > 0) {
+          logger.info(`[${requestId}] Encontrados ${userDocs.length} documentos na KB`);
+
+          // Consolidar textos extraídos (priorizar documentos principais, ignorar estruturados)
+          const mainDocs = userDocs.filter(doc => !doc.metadata?.isStructuredDocument);
+
+          // Truncar cada documento individual (max 30KB por documento)
+          const MAX_DOC_LENGTH = 30000;
+          const docTexts = mainDocs
+            .map(doc => {
+              if (!doc.extractedText) return null;
+
+              const text = doc.extractedText.length > MAX_DOC_LENGTH
+                ? doc.extractedText.substring(0, MAX_DOC_LENGTH) + '\n[... truncado ...]'
+                : doc.extractedText;
+
+              return `### Documento: ${doc.name}\n${text}`;
+            })
+            .filter(Boolean);
+
+          // Consolidar em contexto único
+          kbContext = docTexts.join('\n\n---\n\n');
+
+          logger.info(`[${requestId}] KB Context construído: ${kbContext.length} chars de ${mainDocs.length} documentos`);
+        } else {
+          logger.info(`[${requestId}] Nenhum documento encontrado na KB para userId=${userId}`);
+        }
+      } catch (kbError) {
+        logger.error(`[${requestId}] Erro ao buscar KB:`, kbError.message);
+        // Continuar sem kbContext em caso de erro
+      }
+    }
 
     // Unificar histórico (aceitar messages ou historico)
     const conversationHistory = messages.length > 0 ? messages : historico;
