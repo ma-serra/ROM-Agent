@@ -45,6 +45,10 @@ import { setupSyncPromptsRoutes } from '../lib/api-routes-sync-prompts.js';
 // Usability Analytics routes
 import analyticsRoutes from './routes/analytics.js';
 
+// Orchestrator Dashboard routes
+import orchestratorDashboardRoutes from './routes/orchestrator-dashboard.js';
+import { initializeOrchestrator } from './config/orchestrator-setup.js';
+
 dotenv.config();
 
 const __filename = fileURLToPath(import.meta.url);
@@ -96,6 +100,9 @@ setupSyncPromptsRoutes(app);
 
 // Rotas de Analytics de Usabilidade
 app.use('/api/analytics', analyticsRoutes);
+
+// Rotas do Dashboard Orquestrador
+app.use('/api/orchestrator', orchestratorDashboardRoutes);
 
 // Instância do agente
 let agent = null;
@@ -1697,6 +1704,26 @@ app.listen(PORT, () => {
     })
     .catch(error => {
       logger.error('Erro ao inicializar Projeto ROM:', error);
+    });
+
+  // Inicializar MasterOrchestrator (sistema multi-agente)
+  logger.info('Inicializando MasterOrchestrator...');
+  initializeOrchestrator({ db: null, redisConfig: null })
+    .then((instances) => {
+      if (instances.masterOrchestrator) {
+        // Adicionar instâncias ao app.locals para uso nas rotas
+        app.locals.masterOrchestrator = instances.masterOrchestrator;
+        app.locals.stateManager = instances.stateManager;
+        app.locals.eventBus = instances.eventBus;
+
+        logger.info('✅ MasterOrchestrator inicializado com sucesso');
+        logger.info(`📊 Dashboard disponível em: http://localhost:${PORT}/dashboard-orchestrator.html`);
+      } else {
+        logger.warn('⚠️ MasterOrchestrator não foi inicializado (DB não configurado). Dashboard indisponível.');
+      }
+    })
+    .catch(error => {
+      logger.error('Erro ao inicializar MasterOrchestrator:', error);
     });
 
   // Ativar sistema de auto-atualização e aprendizado
