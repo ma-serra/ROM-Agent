@@ -152,6 +152,12 @@ ${CORES.cyan}${CORES.bright}COMANDOS:${CORES.reset}
   ${CORES.green}workflow${CORES.reset}     Executar workflow completo
   ${CORES.green}config${CORES.reset}       Gerenciar configurações
 
+${CORES.cyan}${CORES.bright}COMANDOS ROM-COMPLETO (PROJETO INTEGRADO):${CORES.reset}
+  ${CORES.green}diagnostico${CORES.reset}  Diagnóstico de admissibilidade de recursos
+  ${CORES.green}jurimetria${CORES.reset}   Análise estatística de jurisprudência
+  ${CORES.green}auditar${CORES.reset}      Auditoria pré-protocolo (3 validadores)
+  ${CORES.green}pipeline${CORES.reset}     Pipeline ROM completo (5 etapas)
+
 ${CORES.cyan}${CORES.bright}FLAGS GLOBAIS:${CORES.reset}
   ${CORES.yellow}-h, --help${CORES.reset}              Exibe ajuda
   ${CORES.yellow}-v, --version${CORES.reset}           Exibe versão
@@ -173,6 +179,7 @@ ${CORES.cyan}${CORES.bright}FLAGS DE DOCUMENTO:${CORES.reset}
   ${CORES.yellow}--tribunal${CORES.reset} <sigla>      Tribunal para pesquisa
 
 ${CORES.cyan}${CORES.bright}SUBAGENTES DISPONÍVEIS:${CORES.reset}
+  ${CORES.dim}ORIGINAIS:${CORES.reset}
   analise-processual    Análise exaustiva de processos
   resumo-executivo      Resumos em 3 camadas
   jurisprudencia        Pesquisa de jurisprudência
@@ -186,6 +193,15 @@ ${CORES.cyan}${CORES.bright}SUBAGENTES DISPONÍVEIS:${CORES.reset}
   revisor-portugues     Revisão de português
   extrator              Extração de PDFs
   calculista            Cálculos judiciais
+
+  ${CORES.dim}ROM-COMPLETO (INTEGRADOS):${CORES.reset}
+  auditor-admissibilidade  Auditoria de barreiras de admissibilidade
+  analista-jurimetrico     Análise estatística de jurisprudência
+  revisor-fidedignidade    Verificação de fidelidade aos autos
+  extrator-acordao         Extração estruturada de acórdãos
+  leitor-autos             Leitura integral de processos
+  verificador-citacoes     Validação de citações em fontes oficiais
+  orquestrador-rom         Pipeline ROM ponta a ponta
 
 ${CORES.cyan}${CORES.bright}WORKFLOWS DISPONÍVEIS:${CORES.reset}
   analise-completa      Pipeline completo de análise
@@ -220,6 +236,18 @@ ${CORES.cyan}${CORES.bright}EXEMPLOS:${CORES.reset}
   ${CORES.dim}# Executar workflow completo${CORES.reset}
   rom workflow analise-completa processo.pdf
 
+  ${CORES.dim}# Diagnóstico de admissibilidade${CORES.reset}
+  rom diagnostico minuta_resp.docx
+
+  ${CORES.dim}# Análise jurimétrica${CORES.reset}
+  rom jurimetria "dano moral STJ 2024"
+
+  ${CORES.dim}# Auditoria pré-protocolo${CORES.reset}
+  rom auditar peca_final.docx --output auditoria.md
+
+  ${CORES.dim}# Pipeline ROM completo${CORES.reset}
+  rom pipeline processo.pdf --tipo recurso-especial --output resultado.md
+
 ${CORES.cyan}${CORES.bright}COMANDOS INTERATIVOS:${CORES.reset}
   /ajuda       Exibe ajuda
   /limpar      Limpa histórico
@@ -235,7 +263,7 @@ ${CORES.cyan}${CORES.bright}COMANDOS INTERATIVOS:${CORES.reset}
 function exibirVersao() {
   console.log(`ROM - Redator de Obras Magistrais v${VERSION}`);
   console.log('Clone do Claude AI Reference Implementation');
-  console.log('Ferramentas SDK: 41 | Subagentes: 14 | Workflows: 3');
+  console.log('Ferramentas SDK: 41 | Subagentes: 20 (13 originais + 7 ROM-Completo) | Workflows: 3');
 }
 
 // ============================================================================
@@ -1025,6 +1053,255 @@ Elabore o contrato COMPLETO e PRONTO PARA USO.`;
     }
   }
 
+  // === COMANDOS ROM-COMPLETO ===
+
+  // Diagnostico de admissibilidade
+  async diagnosticoAdmissibilidade(input, flags = {}) {
+    console.log(`\n${CORES.cyan}${CORES.bright}DIAGNÓSTICO DE ADMISSIBILIDADE${CORES.reset}\n`);
+
+    if (!input) {
+      console.log(`${CORES.red}✗ Uso: rom diagnostico <arquivo_ou_minuta>${CORES.reset}\n`);
+      console.log(`${CORES.yellow}Exemplos:${CORES.reset}`);
+      console.log(`  ${CORES.dim}rom diagnostico minuta_resp.docx${CORES.reset}`);
+      console.log(`  ${CORES.dim}rom diagnostico "Minuta de recurso especial..."${CORES.reset}\n`);
+      return;
+    }
+
+    try {
+      // Verificar se é arquivo
+      let conteudo = input;
+      try {
+        const stat = await fs.stat(input);
+        if (stat.isFile()) {
+          console.log(`${CORES.dim}📄 Lendo arquivo: ${input}${CORES.reset}\n`);
+          conteudo = await fs.readFile(input, 'utf-8');
+        }
+      } catch {
+        // Não é arquivo, usar como texto direto
+      }
+
+      console.log(`${CORES.yellow}⚙️  Executando auditoria de admissibilidade (Extended Thinking)...${CORES.reset}\n`);
+
+      const resultado = await this.subagentManager.invocarSubagente(
+        'auditor-admissibilidade',
+        conteudo,
+        { enableThinking: true }
+      );
+
+      // Exibir resultado formatado
+      console.log(`${CORES.cyan}╔════════════════════════════════════════════════════════════╗${CORES.reset}`);
+      console.log(`${CORES.cyan}║${CORES.reset}  ${CORES.bright}DIAGNÓSTICO DE ADMISSIBILIDADE${CORES.reset}                        ${CORES.cyan}║${CORES.reset}`);
+      console.log(`${CORES.cyan}╚════════════════════════════════════════════════════════════╝${CORES.reset}\n`);
+
+      console.log(resultado.response);
+      console.log();
+
+      // Salvar resultado
+      await this.processarSalvamentoResultado(resultado.response, flags, 'diagnostico');
+
+      return resultado;
+    } catch (error) {
+      console.log(`${CORES.red}✗ Erro no diagnóstico: ${error.message}${CORES.reset}\n`);
+      throw error;
+    }
+  }
+
+  // Análise jurimétrica
+  async executarJurimetria(input, flags = {}) {
+    console.log(`\n${CORES.cyan}${CORES.bright}ANÁLISE JURIMÉTRICA${CORES.reset}\n`);
+
+    if (!input) {
+      console.log(`${CORES.red}✗ Uso: rom jurimetria <termo_ou_tribunal>${CORES.reset}\n`);
+      console.log(`${CORES.yellow}Exemplos:${CORES.reset}`);
+      console.log(`  ${CORES.dim}rom jurimetria "dano moral STJ"${CORES.reset}`);
+      console.log(`  ${CORES.dim}rom jurimetria "taxa de sucesso TJ-SP 2024" --output relatorio.md${CORES.reset}\n`);
+      return;
+    }
+
+    try {
+      console.log(`${CORES.yellow}⚙️  Executando análise jurimétrica (Extended Thinking)...${CORES.reset}\n`);
+
+      const resultado = await this.subagentManager.invocarSubagente(
+        'analista-jurimetrico',
+        input,
+        { enableThinking: true }
+      );
+
+      // Exibir resultado formatado
+      console.log(`${CORES.cyan}╔════════════════════════════════════════════════════════════╗${CORES.reset}`);
+      console.log(`${CORES.cyan}║${CORES.reset}  ${CORES.bright}ANÁLISE JURIMÉTRICA${CORES.reset}                                   ${CORES.cyan}║${CORES.reset}`);
+      console.log(`${CORES.cyan}╚════════════════════════════════════════════════════════════╝${CORES.reset}\n`);
+
+      console.log(resultado.response);
+      console.log();
+
+      // Salvar resultado
+      await this.processarSalvamentoResultado(resultado.response, flags, 'jurimetria');
+
+      return resultado;
+    } catch (error) {
+      console.log(`${CORES.red}✗ Erro na análise jurimétrica: ${error.message}${CORES.reset}\n`);
+      throw error;
+    }
+  }
+
+  // Auditoria pré-protocolo (3 agentes em paralelo)
+  async auditarPeca(input, flags = {}) {
+    console.log(`\n${CORES.cyan}${CORES.bright}AUDITORIA PRÉ-PROTOCOLO${CORES.reset}\n`);
+
+    if (!input) {
+      console.log(`${CORES.red}✗ Uso: rom auditar <arquivo_ou_peca>${CORES.reset}\n`);
+      console.log(`${CORES.yellow}Exemplos:${CORES.reset}`);
+      console.log(`  ${CORES.dim}rom auditar minuta_final.docx${CORES.reset}`);
+      console.log(`  ${CORES.dim}rom auditar "Peça jurídica completa..." --output auditoria.md${CORES.reset}\n`);
+      return;
+    }
+
+    try {
+      // Verificar se é arquivo
+      let conteudo = input;
+      try {
+        const stat = await fs.stat(input);
+        if (stat.isFile()) {
+          console.log(`${CORES.dim}📄 Lendo arquivo: ${input}${CORES.reset}\n`);
+          conteudo = await fs.readFile(input, 'utf-8');
+        }
+      } catch {
+        // Não é arquivo, usar como texto direto
+      }
+
+      console.log(`${CORES.yellow}⚙️  Executando auditoria em paralelo (3 agentes)...${CORES.reset}\n`);
+
+      // Executar 3 auditores em paralelo
+      const auditorias = await Promise.allSettled([
+        this.subagentManager.invocarSubagente('auditor-admissibilidade', conteudo),
+        this.subagentManager.invocarSubagente('verificador-citacoes', conteudo),
+        this.subagentManager.invocarSubagente('revisor-fidedignidade', conteudo)
+      ]);
+
+      const relatorioAuditoria = {
+        admissibilidade: auditorias[0].status === 'fulfilled' ? auditorias[0].value.response : `❌ FALHOU: ${auditorias[0].reason?.message || 'Erro desconhecido'}`,
+        citacoes: auditorias[1].status === 'fulfilled' ? auditorias[1].value.response : `❌ FALHOU: ${auditorias[1].reason?.message || 'Erro desconhecido'}`,
+        fidedignidade: auditorias[2].status === 'fulfilled' ? auditorias[2].value.response : `❌ FALHOU: ${auditorias[2].reason?.message || 'Erro desconhecido'}`,
+        aprovado: auditorias.every(a => a.status === 'fulfilled' &&
+                  !a.value.response.toLowerCase().includes('reprovado') &&
+                  !a.value.response.toLowerCase().includes('não verificado'))
+      };
+
+      // Exibir resultados
+      console.log(`${CORES.cyan}╔════════════════════════════════════════════════════════════╗${CORES.reset}`);
+      console.log(`${CORES.cyan}║${CORES.reset}  ${CORES.bright}RELATÓRIO DE AUDITORIA PRÉ-PROTOCOLO${CORES.reset}                  ${CORES.cyan}║${CORES.reset}`);
+      console.log(`${CORES.cyan}╚════════════════════════════════════════════════════════════╝${CORES.reset}\n`);
+
+      console.log(`${CORES.yellow}📋 ADMISSIBILIDADE:${CORES.reset}\n${relatorioAuditoria.admissibilidade}\n`);
+      console.log(`${CORES.yellow}🔗 CITAÇÕES:${CORES.reset}\n${relatorioAuditoria.citacoes}\n`);
+      console.log(`${CORES.yellow}📄 FIDEDIGNIDADE:${CORES.reset}\n${relatorioAuditoria.fidedignidade}\n`);
+
+      // Veredicto final
+      if (relatorioAuditoria.aprovado) {
+        console.log(`${CORES.green}${CORES.bright}✅ APROVADO PARA PROTOCOLO${CORES.reset}\n`);
+      } else {
+        console.log(`${CORES.red}${CORES.bright}❌ REPROVADO - CORRIGIR ANTES DE PROTOCOLAR${CORES.reset}\n`);
+      }
+
+      // Salvar resultado
+      const relatorioTexto = `# RELATÓRIO DE AUDITORIA PRÉ-PROTOCOLO\n\n## 📋 Admissibilidade\n\n${relatorioAuditoria.admissibilidade}\n\n## 🔗 Citações\n\n${relatorioAuditoria.citacoes}\n\n## 📄 Fidedignidade\n\n${relatorioAuditoria.fidedignidade}\n\n## Veredicto\n\n${relatorioAuditoria.aprovado ? '✅ **APROVADO PARA PROTOCOLO**' : '❌ **REPROVADO - CORRIGIR ANTES DE PROTOCOLAR**'}`;
+
+      await this.processarSalvamentoResultado(relatorioTexto, flags, 'auditoria');
+
+      return relatorioAuditoria;
+    } catch (error) {
+      console.log(`${CORES.red}✗ Erro na auditoria: ${error.message}${CORES.reset}\n`);
+      throw error;
+    }
+  }
+
+  // Pipeline ROM completo (5 etapas)
+  async executarPipelineROM(input, flags = {}) {
+    console.log(`\n${CORES.cyan}${CORES.bright}PIPELINE ROM COMPLETO (5 ETAPAS)${CORES.reset}\n`);
+
+    if (!input) {
+      console.log(`${CORES.red}✗ Uso: rom pipeline <arquivo_ou_caso>${CORES.reset}\n`);
+      console.log(`${CORES.yellow}Opções:${CORES.reset}`);
+      console.log(`  ${CORES.yellow}--tipo${CORES.reset} <tipo>         Tipo de peça (recurso-especial, apelacao, etc.)${CORES.reset}`);
+      console.log(`  ${CORES.yellow}--documentos${CORES.reset} <lista>  Lista de documentos separados por vírgula${CORES.reset}\n`);
+      console.log(`${CORES.yellow}Exemplos:${CORES.reset}`);
+      console.log(`  ${CORES.dim}rom pipeline processo.pdf --tipo recurso-especial${CORES.reset}`);
+      console.log(`  ${CORES.dim}rom pipeline caso.txt --tipo apelacao --output resultado.md${CORES.reset}\n`);
+      return;
+    }
+
+    try {
+      // Verificar se é arquivo
+      let conteudo = input;
+      try {
+        const stat = await fs.stat(input);
+        if (stat.isFile()) {
+          console.log(`${CORES.dim}📄 Lendo arquivo: ${input}${CORES.reset}\n`);
+          conteudo = await fs.readFile(input, 'utf-8');
+        }
+      } catch {
+        // Não é arquivo, usar como texto direto
+      }
+
+      console.log(`${CORES.yellow}⚙️  Executando pipeline ROM completo...${CORES.reset}`);
+      console.log(`${CORES.dim}    Etapas: Leitura → Extração → Diagnóstico → Redação → Auditoria${CORES.reset}\n`);
+
+      // Importar MasterOrchestrator dinamicamente
+      const { MasterOrchestrator } = await import('./services/master-orchestrator.js');
+
+      // Inicializar MasterOrchestrator (sem DB/Redis por enquanto - modo standalone)
+      const orchestrator = new MasterOrchestrator(this.apiKey, null, null);
+
+      const pipelineResult = await orchestrator.executeHybridWorkflow({
+        type: flags.tipo || flags.type || 'recurso',
+        input: conteudo,
+        context: {
+          enableThinking: true,
+          documents: flags.documentos ? flags.documentos.split(',') : []
+        }
+      });
+
+      // Exibir resultado
+      console.log(`${CORES.cyan}╔════════════════════════════════════════════════════════════╗${CORES.reset}`);
+      console.log(`${CORES.cyan}║${CORES.reset}  ${CORES.bright}RESULTADO DO PIPELINE ROM${CORES.reset}                              ${CORES.cyan}║${CORES.reset}`);
+      console.log(`${CORES.cyan}╚════════════════════════════════════════════════════════════╝${CORES.reset}\n`);
+
+      console.log(`${CORES.green}✓ Workflow ID:${CORES.reset} ${pipelineResult.workflowId}`);
+      console.log(`${CORES.green}✓ Etapas executadas:${CORES.reset} ${pipelineResult.stages.length}\n`);
+
+      // Exibir resultado de cada etapa
+      pipelineResult.stages.forEach((stage, index) => {
+        console.log(`${CORES.yellow}${index + 1}. ${stage.stage.toUpperCase()}${CORES.reset}`);
+        console.log(`${CORES.dim}${stage.result?.response?.substring(0, 200) || 'Sem resposta'}...${CORES.reset}\n`);
+      });
+
+      console.log(`${CORES.cyan}${CORES.bright}RESULTADO FINAL:${CORES.reset}\n`);
+      console.log(pipelineResult.finalResult?.response || 'Sem resultado final');
+      console.log();
+
+      console.log(`${CORES.cyan}${CORES.bright}AUDITORIA:${CORES.reset}`);
+      pipelineResult.auditoria?.forEach((aud, i) => {
+        const status = aud.status === 'fulfilled' ? '✅' : '❌';
+        console.log(`  ${status} ${aud.agent}: ${aud.status}`);
+      });
+      console.log();
+
+      // Salvar resultado
+      const resultadoTexto = `# PIPELINE ROM - Workflow ${pipelineResult.workflowId}\n\n## Etapas Executadas (${pipelineResult.stages.length})\n\n${pipelineResult.stages.map((s, i) => `### ${i + 1}. ${s.stage.toUpperCase()}\n\n${s.result?.response || 'Sem resposta'}\n`).join('\n')}\n\n## Resultado Final\n\n${pipelineResult.finalResult?.response || 'Sem resultado'}\n\n## Auditoria\n\n${pipelineResult.auditoria?.map(a => `- ${a.status === 'fulfilled' ? '✅' : '❌'} **${a.agent}**: ${a.status}`).join('\n')}`;
+
+      await this.processarSalvamentoResultado(resultadoTexto, flags, 'pipeline');
+
+      return pipelineResult;
+    } catch (error) {
+      console.log(`${CORES.red}✗ Erro no pipeline ROM: ${error.message}${CORES.reset}\n`);
+      if (this.verbose) {
+        console.log(`${CORES.dim}${error.stack}${CORES.reset}\n`);
+      }
+      throw error;
+    }
+  }
+
   // Processa comando interativo
   async processarComando(input) {
     const cmd = input.toLowerCase().split(' ')[0];
@@ -1255,6 +1532,41 @@ async function main() {
 
     case 'contrato':
       await cli.elaborarContrato(parsed.subcommand, parsed.positional.join(' '), parsed.flags);
+      break;
+
+    // === COMANDOS ROM-COMPLETO ===
+
+    case 'diagnostico':
+    case 'diagnostico-admissibilidade':
+      await cli.diagnosticoAdmissibilidade(parsed.subcommand || parsed.positional.join(' '), parsed.flags);
+      break;
+
+    case 'jurimetria':
+      await cli.executarJurimetria(parsed.subcommand || parsed.positional.join(' '), parsed.flags);
+      break;
+
+    case 'verificar-citacoes':
+      // Atalho direto para verificador de citações
+      console.log(`\n${CORES.cyan}${CORES.bright}VERIFICAÇÃO DE CITAÇÕES${CORES.reset}\n`);
+      const inputCitacoes = parsed.subcommand || parsed.positional.join(' ');
+      if (!inputCitacoes) {
+        console.log(`${CORES.red}✗ Uso: rom verificar-citacoes <arquivo_ou_texto>${CORES.reset}\n`);
+      } else {
+        const resultadoCitacoes = await cli.subagentManager.invocarSubagente('verificador-citacoes', inputCitacoes);
+        console.log(resultadoCitacoes.response);
+        await cli.processarSalvamentoResultado(resultadoCitacoes.response, parsed.flags, 'verificacao-citacoes');
+      }
+      break;
+
+    case 'auditar':
+    case 'pre-protocolo':
+      await cli.auditarPeca(parsed.subcommand || parsed.positional.join(' '), parsed.flags);
+      break;
+
+    case 'rom':
+    case 'pipeline':
+    case 'workflow-rom':
+      await cli.executarPipelineROM(parsed.subcommand || parsed.positional.join(' '), parsed.flags);
       break;
 
     default:
