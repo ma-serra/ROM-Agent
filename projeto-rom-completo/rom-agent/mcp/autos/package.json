@@ -1,0 +1,11 @@
+{
+  "name": "autos-mcp-server",
+  "version": "1.0.0",
+  "description": "Servidor MCP do ROM: inventário de autos via MNI (PJe/eproc/Projudi/ESAJ) para a ferramenta de extração do agente, e TRAVA DE INTEGRIDADE (sem rollback/sem retrocesso) sobre a análise integral.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": { "autos-mcp-server": "dist/index.js" },
+  "scripts": { "build": "tsc", "start": "node dist/index.js", "test": "node --test dist/lib.test.js" },
+  "dependencies": { "@modelcontextprotocol/sdk": "^1.29.0", "zod": "^3.23.3" },
+  "devDependencies": { "typescript": "^5.6.0", "@types/node": "^22.0.0" }
+}

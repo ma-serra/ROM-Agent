@@ -1,0 +1,14 @@
+# Registro de citações verificadas em fonte oficial (uma por linha).
+# O hook verificar-citacoes libera a gravação quando a citação consta aqui
+# OU está marcada no texto como ⚠️[NÃO VERIFICADO: ...].
+# Exemplos (confirme antes de usar):
+Súmula 7
+Súmula 5
+Súmula 83
+Súmula 211
+Súmula 182
+Súmula 279
+Súmula 282
+Súmula 284
+Súmula 356
+Súmula 636

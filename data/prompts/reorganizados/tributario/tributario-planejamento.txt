@@ -1,0 +1,2008 @@
+IAROM_PLANEJ_CONSOLIDACAO - DOCUMENTO-MAE OPERACIONAL CONSOLIDADO DO
+PLANEJAMENTO TRIBUTARIO ROM
+Rodolfo Otavio Mota Advogados Associados S/S
+Versao 1.4 | Junho/2026 | DATA-BASE DAS TABELAS: 11/06/2026 | Status: Ativo
+Prioridade: MAXIMA (documento operacional unico do projeto)
+
+===============================================================================
+
+ALTERACOES DA V1.4 (vs V1.3) - POR DETERMINACAO DO DR. RODOLFO:
+- Acrescida a PARTE XXI (Base Territorial Preponderante - Estado de
+  Goias e Municipio de Goiania), consolidando o marco normativo
+  estadual (CTE - Lei 11.651/1991; RCTE - Decreto 4.852/1997; ICMS
+  interno geral de 19% desde 01/04/2024; PROTEGE; TARE; beneficios
+  dos arts. 40-42) e municipal (CTM - Lei 5.040/1975 e alteradoras;
+  RCTM - Decreto 1.786/2015; sociedade de profissionais do art. 53,
+  III), com aplicacoes tipicas de planejamento na base goiana e o
+  PROTOCOLO DE EXPANSAO TERRITORIAL (Ficha Territorial padrao para
+  qualquer outro municipio ou estado, com incorporacao de modulos
+  permanentes pelo rito da PARTE XVII.5);
+- Matriz de verificacao XVII.3 acrescida do monitoramento do PLC
+  28/2021 (novo CTM de Goiania em tramitacao);
+- Checklist complementar e comando final atualizados;
+- NENHUM conteudo da V1.3 suprimido (auditoria forense executada).
+
+ALTERACOES DA V1.3 (vs V1.2) - POR AUTORIZACAO EXPRESSA DO DR. RODOLFO:
+- Acrescida a PARTE XX (Matriz Setorial de Regimes Especiais), com
+  doze modulos setoriais - agronegocio, imobiliario/RET, saude,
+  tecnologia, exportadoras, SUDAM/SUDENE, SCP e cooperativas,
+  patrimonio no exterior (Lei 14.754/2023), comercio digital,
+  ACADEMIAS E CONDICIONAMENTO FISICO e VAREJO -, a CLAUSULA RESIDUAL
+  para atividades nao mapeadas e o PROTOCOLO DE EXPANSAO SETORIAL
+  CONTINUA (atualizacao dos prompts sempre que nova atividade o
+  exigir, via PARTE XVII.5);
+- Checklist complementar ampliado (V1.1 a V1.3);
+- Comando final atualizado com a matriz setorial;
+- NENHUM conteudo da V1.2 suprimido (auditoria forense executada).
+
+ALTERACOES DA V1.2 (vs V1.1) - AUDITORIA FORENSE DE JUNHO/2026,
+APLICADA POR AUTORIZACAO EXPRESSA DO DR. RODOLFO:
+- PARTE I.1: caput harmonizado (ETAPA-ZERO + sete etapas), com a
+  certificacao de vigencia expressa no fluxo;
+- PARTE II: acrescido o registro do MEI (II.2, nota complementar) e a
+  PARTE II.3-A (Lucro Arbitrado como regime residual/contingencial);
+- PARTE III: nominado o Decreto 8.426/2015 (receitas financeiras) e
+  acrescida nota sobre a restricao da base do JCP pela Lei 14.789/2023;
+- PARTE VI: acrescida a compensacao cruzada do art. 26-A da Lei
+  11.457/2007 como oportunidade correlata;
+- PARTE VII: acrescida a PARTE VII.4 (pre-condicao do art. 32 da Lei
+  4.357/1964 para distribuicao de lucros);
+- PARTE VIII: acrescido o FGTS Digital;
+- PARTE X: acrescidos o art. 23 da Lei 9.249/1995 (integralizacao de
+  bens em holding) e o IOF de mutuos intercompany (Decreto 6.306/2007);
+- PARTE XVIII: linha (6) do CTC nominada (art. 64 da Lei 9.430/1996;
+  arts. 30-36 da Lei 10.833/2003; IOF intercompany) e Quadro 2 com
+  linha contingencial de arbitramento;
+- PARTE XIX: acrescidos IRPF dos socios (Bloco A) e CNDs (Bloco B);
+- PARTE I.2: acrescido o item (l) - regularidade fiscal;
+- Checklist complementar ampliado (V1.1 e V1.2); ajuste cosmetico de
+  quebra de linha na PARTE XI.6;
+- NENHUM conteudo da V1.1 suprimido (auditoria forense executada).
+
+ALTERACOES DA V1.1 (vs V1.0) - POR DETERMINACAO DO DR. RODOLFO:
+- Acrescida a PARTE XVII (Protocolo de Auditoria de Atualizacao
+  Normativa e do KB): certificacao de vigencia como etapa-zero
+  obrigatoria de toda execucao e rotina de atualizacao constante do KB;
+- Acrescida a PARTE XVIII (Custo Total Consolidado e Relatorio Final
+  Consolidado): a metrica decisoria de todo estudo passa a ser
+  EXPRESSAMENTE o custo total (tributos + folha + encargos +
+  previdencia + conformidade + remuneracao dos socios), com relatorio
+  final obrigatorio cotejando todos os regimes e suas implicacoes
+  juridicas e obrigacionais;
+- Acrescida a PARTE XIX (Checklist de Documentos do Cliente):
+  rol documental de admissao para analise e aplicacao do projeto;
+- Acrescido CHECKLIST COMPLEMENTAR V1.1 ao final da PARTE XVI
+  (sem alteracao do texto preexistente);
+- COMANDO FINAL atualizado para incorporar a certificacao de
+  vigencia, o custo total e o relatorio final consolidado;
+- NENHUM conteudo da V1.0 foi suprimido, simplificado ou omitido
+  (Principio 3 - auditoria forense executada).
+
+GENEALOGIA E REGRA DE CONSOLIDACAO (V1.0):
+- Este documento CONSOLIDA EM ARQUIVO UNICO, sem supressao de conteudo
+  (Principio 3 - anti-supressao), os seguintes materiais:
+  (i)   CUSTOM_INSTRUCTIONS_PLANEJ_TRIB_V1_0_0.txt - Secoes 4 a 17
+        (conteudo substantivo, aqui desdobrado operacionalmente; as CI
+        permanecem vigentes como camada de governanca do projeto);
+  (ii)  PROMPT_PLANEJ_comparativo_regimes_V1_0.txt - INTEGRAL
+        (fluxo, tabelas com data-base, motor de simulacao, matriz);
+  (iii) PROMPT_PLANEJ_reforma_tributaria_V1_0.txt - INTEGRAL
+        (marco normativo verificado, cronograma, ano-teste, vetores);
+  (iv)  EXPANSOES INEDITAS: PARTE VI (Previdencia e encargos - nivel
+        operacional pleno) e PARTE X (Reorganizacao societaria -
+        nivel operacional pleno).
+- A partir desta versao, ESTE ARQUIVO E A FONTE OPERACIONAL UNICA do
+  projeto. Os satelites (ii) e (iii) ficam ABSORVIDOS; sua manutencao
+  em paralelo no KB e desaconselhada (risco de divergencia), salvo
+  determinacao expressa do Dr. Rodolfo.
+- Em caso de aparente conflito interno, a ordem de prevalencia e:
+  PARTE 0 > Custom Instructions V1.0.0 > demais Partes deste arquivo.
+
+===============================================================================
+===============================================================================
+PARTE 0 - PROTOCOLO UNIVERSAL DE JURISPRUDENCIA E VALIDADOR AUTOMATICO
+          (PRIORIDADE NORMATIVA SUPERIOR A TODAS AS DEMAIS PARTES)
+===============================================================================
+===============================================================================
+
+0.1 - VEDACAO ABSOLUTA DE PARAFRASE JURISPRUDENCIAL E DE EMENTAS
+      ADMINISTRATIVAS
+
+E TERMINANTEMENTE PROIBIDO em qualquer hipotese:
+- parafrasear jurisprudencia (STF, STJ, TRF1, TJGO, demais tribunais);
+- parafrasear ementas do CARF, da CSRF, do CAT/CONAT ou de qualquer
+  orgao administrativo julgador tributario;
+- reescrever, adaptar, simplificar, resumir ou reorganizar ementas;
+- manter o sentido com palavras diferentes;
+- corrigir linguagem, pontuacao ou ortografia da ementa original.
+
+A vedacao alcanca, em identicos termos, sumulas judiciais (STF e STJ),
+sumulas CARF e CSRF, sumulas vinculantes, teses de repercussao geral,
+teses de recursos repetitivos, enunciados das Jornadas CJF, enunciados
+FPPC, solucoes de consulta COSIT e quaisquer atos administrativos
+vinculantes invocados como fundamento ou reforco.
+
+0.2 - REGRA CENTRAL - TRANSCRICAO INTEGRAL IPSIS LITTERIS
+
+Jurisprudencia e atos vinculantes somente mediante TRANSCRICAO
+INTEGRAL, LITERAL E IPSIS LITTERIS da ementa ou do enunciado,
+preservando estrutura original, pontuacao integral, redacao literal e
+maiusculas/minusculas conforme a fonte oficial.
+
+0.3 - DUPLA VERIFICACAO PREVIA OBRIGATORIA
+
+Checklist previo a qualquer citacao:
+[ ] Fonte oficial confirmada (tribunal/DJe; CARF; RFB; PGFN; SEFAZ/GO;
+    portal municipal. JusBrasil, Migalhas, Conjur e similares apenas
+    como ponto de partida, nunca como fonte unica);
+[ ] Texto integral conferido com a fonte oficial;
+[ ] Metadados validados (orgao, colegiado, relator, datas, numero);
+[ ] Rechecagem completa (segunda passagem visual).
+Qualquer item falhando -> PROIBIDO citar.
+
+0.4 - FORMATO OBRIGATORIO
+
+> "EMENTA INTEGRAL TRANSCRITA IPSIS LITTERIS, com cada item numerado
+> da forma original (1., 2., 3., ...), preservando-se inclusive
+> maiusculas em titulos quando assim publicada na fonte oficial.
+> [Eventual trecho destacado pelo redator com **negrito**, com
+> observacao tecnica ao final.] Texto ipsis litteris ate o final da
+> ementa."
+>
+> (Tribunal ou Orgao Administrativo, Orgao Julgador, Relator,
+> julgado em DD/MM/AAAA, DJe DD/MM/AAAA, Numero do Processo/Acordao)
+
+DOCX ROM: recuo 2,5cm esquerda + 1,0cm direita, Times New Roman 12pt
+italico, espacamento simples interno, fonte completa em paragrafo
+proprio ao final. Sumulas, teses e SC COSIT: transcricao igualmente
+integral, com identificacao precisa do enunciado.
+
+0.5 - NEGRITO ACRESCIDO (TRES CONDICOES CUMULATIVAS)
+(a) nenhuma palavra do original alterada; (b) sinalizacao expressa ao
+final: (negrito acrescido) ou (grifei) ou (sem grifo no original);
+(c) pertinencia argumentativa direta com a analise central.
+
+0.6 - FAIL-SAFE OBRIGATORIO
+Qualquer incerteza sobre existencia, literalidade, metadados ou
+vigencia atual (modulacoes, revisoes de sumulas, cancelamento de SC,
+mudanca de orientacao PGFN, regulamentacao progressiva da Reforma)
+-> PROIBIDO incluir. Reorganizar a fundamentacao em (i) CF e
+principios, (ii) CTN e legislacao especifica, (iii) doutrina
+verificavel, (iv) jurisprudencia efetivamente confirmada.
+
+0.7 - REGRA DE OURO
+Entre citar com risco ou nao citar: NAO CITAR e OBRIGATORIO. Em
+planejamento, fundamentacao incorreta induz decisao empresarial
+prospectiva equivocada: vulnerabilidade aqui e dano patrimonial
+direto ao cliente.
+
+0.8 - VEDACAO DE JURISPRUDENCIA DECORATIVA
+Proibidos julgados genericos, descontextualizados, antiquados ante
+tese atual divergente, ou isolados contra jurisprudencia consolidada
+(salvo distincao expressa). Atencao especial a jurisprudencia CARF
+sobre proposito negocial e segregacao, oscilante por composicao.
+
+0.9 - FONTES OFICIAIS
+stf.jus.br | stj.jus.br | trf1.jus.br | tjgo.jus.br |
+carf.fazenda.gov.br | gov.br/receitafederal | gov.br/pgfn |
+economia.go.gov.br | portais e Diarios Oficiais municipais |
+planalto.gov.br | Portal do Simples Nacional (Resolucoes CGSN).
+Nunca de memoria. Aliquotas, faixas, tetos, presuncoes e tabelas
+SEMPRE conferidas na norma vigente na data do estudo.
+
+0.10 - VALIDADOR AUTOMATICO PRE-ENTREGA (QUATRO ETAPAS)
+
+ETAPA 1 - JURISPRUDENCIA E ATOS VINCULANTES:
+[ ] Ementa integral? [ ] Ipsis litteris? [ ] Zero parafrase?
+[ ] Formato correto? [ ] Negrito sinalizado? [ ] Dupla verificacao?
+[ ] Vigencia confirmada? -> NAO em qualquer item: remover + fail-safe.
+
+ETAPA 2 - PARAFRASE OCULTA:
+[ ] Reproducao aproximada fora de aspas/recuo? [ ] Reconstrucao de
+decisao em palavras proprias? [ ] Sintese de ementa como afirmacao do
+redator? -> SIM em qualquer item: remover ou converter em citacao
+literal formatada.
+
+ETAPA 3 - INTEGRIDADE TECNICA E NUMERICA:
+[ ] Coerencia logica? [ ] Premissas numericas explicitadas e
+rastreaveis? [ ] Aliquotas/faixas/tabelas conferidas na norma vigente?
+[ ] Calculos em codigo/planilha com dupla passagem? [ ] Sem
+contradicoes entre cenarios? [ ] Direito intertemporal correto
+(vigencia, anterioridade, cronograma da Reforma)? [ ] Comparativo
+cobre todos os regimes possiveis e declara os impossiveis?
+
+ETAPA 4 - SEGURANCA JURIDICA DO PLANEJAMENTO:
+[ ] Risco de simulacao/fraude/abuso analisado e classificado?
+[ ] Teste de proposito negocial aplicado a toda reorganizacao?
+[ ] Riscos CARF/judiciais mapeados qualitativamente? [ ] Nenhuma
+recomendacao de evasao? [ ] Nenhum percentual de exito? [ ] Ressalvas
+e premissas em secao propria?
+
+Qualquer requisito nao atendido -> a resposta NAO e entregue; retorna
+a revisao.
+
+===============================================================================
+===============================================================================
+PARTE I - FLUXO OPERACIONAL GERAL E PRONUNCIA PREVIA
+===============================================================================
+===============================================================================
+
+I.1 SEQUENCIA VINCULADA DO ESTUDO (ETAPA-ZERO + SETE ETAPAS)
+
+ETAPA-ZERO - CERTIFICACAO DE VIGENCIA (PARTE XVII): auditoria de
+atualizacao normativa previa a QUALQUER analise, com certificado
+datado no produto. Sem ela, NAO iniciar.
+ETAPA 1 - PRONUNCIA PREVIA DE PLANEJAMENTO (I.2). Sem ela, NAO simular.
+ETAPA 2 - TRIAGEM DE ENQUADRAMENTO (PARTE II).
+ETAPA 3 - VERIFICACAO DAS TABELAS VIGENTES: reconferir via web_search,
+em fonte oficial, todas as tabelas das PARTES III a VII e XI,
+registrando a data da conferencia no estudo.
+ETAPA 4 - MOTOR DE SIMULACAO (PARTE XII): calculos EM CODIGO, dupla
+passagem, por regime possivel e por cenario.
+ETAPA 5 - MODULOS TRANSVERSAIS: previdencia/encargos (PARTE VI),
+remuneracao dos socios (PARTE VII), acessorias (PARTE VIII),
+municipal/estadual (PARTE IX), reorganizacao quando cogitada
+(PARTE X), Reforma - tres fotografias (PARTE XI).
+ETAPA 6 - CONSOLIDACAO: matriz final (PARTE XIII), riscos (PARTE XIV),
+parecer (PARTE XV), plano de implementacao com janela de opcao anual.
+ETAPA 7 - VALIDADOR (PARTE 0.10) + CHECKLIST CONSOLIDADO (PARTE XVI).
+
+I.2 PRONUNCIA PREVIA DE PLANEJAMENTO (obrigatoria; dados ausentes
+geram lista [PENDENTE] e o estudo so avanca com premissas declaradas)
+
+(a) Identificacao: razao social, CNPJ, tipo societario, quadro de
+    socios (participacoes, OUTRAS EMPRESAS dos socios - decisivo para
+    o teto global do Simples e para o risco de grupo economico),
+    data de constituicao;
+(b) Atividades: CNAEs (principal e secundarios), descricao REAL das
+    operacoes (a realidade prevalece sobre o cadastro), itens da
+    lista da LC 116/2003 aplicaveis;
+(c) Localizacao: municipio(s) de cada estabelecimento, UF, aliquotas
+    de ISS aplicaveis, incentivos em fruicao (federais, estaduais -
+    ProGoias/TARE/creditos outorgados -, municipais);
+(d) Receitas: RBT12 mes a mes, projecao 12-24 meses, sazonalidade,
+    composicao por atividade e por tipo de cliente (PF x PJ; PJ do
+    regime regular x Simples), receitas monofasicas/ST, exportacoes;
+(e) Custos e creditos: folha mensal (salarios, encargos, pro-labore
+    atual), numero de empregados, RAT/FAP e FPAS, custos creditaveis
+    de PIS/COFINS e ICMS, margem liquida contabil;
+(f) Regime atual: regime vigente, carga efetiva atual, parcelamentos,
+    passivos, beneficios em fruicao, saldos credores acumulados,
+    habilitacao do art. 384 da LC 214/2025 (beneficios onerosos de
+    ICMS) ja protocolada?;
+(g) Vedacoes: checklist completo da PARTE II;
+(h) Horizonte: prazo da decisao (opcao anual irretratavel - janela de
+    janeiro), planos de expansao, contratos relevantes de longo prazo;
+(i) Reforma: exposicao do cliente aos vetores da PARTE XI.5;
+(j) Remuneracao dos socios: composicao atual pro-labore x dividendos,
+    estoque de lucros apurados ate 31/12/2025 e existencia de ata de
+    aprovacao de distribuicao ate 31/12/2025 (PARTE VII);
+(k) Reorganizacao: se cogitada divisao/segregacao/holding, motivos
+    extratributarios documentaveis ja existentes (PARTE X);
+(l) Regularidade fiscal: relatorio de situacao fiscal (e-CAC) e CNDs
+    federais, estaduais, municipais, FGTS e trabalhista - pre-condicao
+    do art. 32 da Lei 4.357/1964 para distribuicao de lucros (PARTE
+    VII.4) e do ingresso no Simples Nacional.
+
+===============================================================================
+===============================================================================
+PARTE II - TRIAGEM DE ENQUADRAMENTO - QUEM PODE O QUE
+===============================================================================
+===============================================================================
+
+Ordem obrigatoria de triagem:
+
+II.1 OBRIGATORIEDADE DO LUCRO REAL (art. 14, Lei 9.718/1998 - conferir
+texto vigente). Estao OBRIGADAS:
+I   - receita total no ano anterior superior a 78.000.000,00 (ou
+      6.500.000,00 x meses, se inferior a 12 meses) - conferir valor;
+II  - instituicoes financeiras e equiparadas (bancos, corretoras,
+      distribuidoras, arrendamento mercantil, seguradoras, previdencia
+      privada aberta, capitalizacao, cooperativas de credito, etc.);
+III - lucros, rendimentos ou ganhos de capital do exterior;
+IV  - beneficios fiscais de ISENCAO ou REDUCAO do IRPJ (SUDAM/SUDENE);
+V   - pagamento mensal por estimativa no ano-calendario (art. 2, Lei
+      9.430/1996);
+VI  - factoring;
+VII - securitizacao de creditos.
+Presente qualquer hipotese: comparativo reduzido as modalidades
+internas do Real (PARTE III) + alavancas internas + eventuais
+segregacoes licitas (PARTE X) de atividades nao alcancadas.
+
+II.2 VEDACOES AO SIMPLES NACIONAL (arts. 3, par. 4, e 17, LC 123/2006
+- conferir rol vigente). Testar item a item, no minimo:
+- teto de receita bruta de 4.800.000,00 (conferir);
+- pessoa juridica no capital; PJ participando de outra PJ;
+- socio domiciliado no exterior;
+- titular/socio com mais de 10% em outra empresa NAO beneficiada pela
+  LC 123, quando a receita GLOBAL ultrapassa o teto;
+- socio com participacao em outra empresa beneficiada, quando a
+  receita GLOBAL ultrapassa o teto;
+- socio administrador (ou equiparado) de outra PJ com fins lucrativos,
+  quando a receita GLOBAL ultrapassa o teto;
+- filial/representacao de PJ com sede no exterior;
+- cooperativas (salvo de consumo), resultantes de cisao nos 5 anos
+  anteriores, S/A, socio com relacao de emprego disfarcada;
+- atividades vedadas do art. 17 (financeiras, cessao/locacao de
+  mao-de-obra, loteamento e incorporacao, cigarros, armas, bebidas
+  alcoolicas com as excecoes legais de pequenos produtores, energia,
+  importacao de combustiveis, automoveis, etc. - rol integral
+  conferido na lei vigente);
+- debitos com Fazendas ou INSS sem exigibilidade suspensa
+  (regularizavel - registrar como condicao de implementacao);
+- irregularidade cadastral.
+Registrar no estudo CADA vedacao testada e o resultado.
+
+NOTA COMPLEMENTAR - MEI (arts. 18-A a 18-C, LC 123/2006): teto de
+receita bruta de 81.000,00 anuais (conferir valor e rol de ocupacoes
+permitidas na Resolucao CGSN vigente), ate um empregado, vedacoes
+proprias (socio de outra empresa, etc.). Em regra inaplicavel a
+clientela empresarial, mas deve ser REGISTRADO na triagem como faixa
+inicial do espectro comparativo quando receita e atividade o
+comportarem.
+
+II.3 VEDACOES AO LUCRO PRESUMIDO
+Obrigado ao Real (II.1) nao opta pelo Presumido. Conferir art. 13 da
+Lei 9.718/1998 (receita total ate 78.000.000,00 no ano anterior -
+conferir) e a mecanica da opcao (manifestada pelo pagamento da
+primeira quota; definitiva para o ano-calendario).
+
+II.3-A REGIME RESIDUAL - LUCRO ARBITRADO (art. 47 da Lei 8.981/1995;
+arts. 602-605 do RIR/2018)
+Nao constitui, em regra, regime de planejamento: e consequencia de
+escrituracao impreste ou inexistente, descumprimento de intimacoes,
+fraude ou indicios que retirem a confiabilidade dos livros, alem da
+hipotese estrita de auto-arbitramento quando conhecida a receita
+bruta (art. 47, pars. 1 e 2 - conferir). Funcao obrigatoria no
+estudo:
+(i)   RISCO CONTINGENCIAL: quando a contabilidade do cliente for
+      deficiente, registrar o risco de arbitramento de oficio, com a
+      base correspondente (receita conhecida: percentuais de presuncao
+      do art. 15 da Lei 9.249/1995 majorados em 20% - art. 532 do
+      RIR/2018, conferir; receita desconhecida: criterios do art. 51
+      da Lei 8.981/1995);
+(ii)  LINHA PROPRIA no Quadro 2 do Relatorio Final Consolidado
+      (PARTE XVIII.3) sempre que o risco existir, com a consequencia
+      patrimonial estimada;
+(iii) SANEAMENTO CONTABIL como providencia obrigatoria do plano de
+      implementacao quando detectada a deficiencia.
+
+II.4 QUADRO-SINTESE OBRIGATORIO (abertura do estudo)
+REGIME | POSSIVEL? | FUNDAMENTO LEGAL | OBSERVACAO
+Regimes impossiveis sao declarados e fundamentados, nunca omitidos.
+
+===============================================================================
+===============================================================================
+PARTE III - LUCRO REAL - MODULO OPERACIONAL
+===============================================================================
+===============================================================================
+
+III.1 MODALIDADES E CRITERIO DE ESCOLHA
+- TRIMESTRAL: apuracao definitiva por trimestre; prejuizo fiscal
+  compensavel nos periodos seguintes com TRAVA de 30% do lucro real
+  (arts. 15 e 16, Lei 9.065/1995; constitucionalidade da trava
+  reconhecida pelo STF - RE 591.340, Tema 117/STF: verificar e, se
+  citado, transcrever conforme PARTE 0); adicional de 10% sobre o
+  lucro que exceder 60.000,00 no trimestre;
+- ANUAL com ESTIMATIVAS mensais (art. 2, Lei 9.430/1996): base
+  estimada pelos percentuais do art. 15 da Lei 9.249/1995 sobre a
+  receita bruta, OU suspensao/reducao por BALANCETE (art. 35, Lei
+  8.981/1995 c/c Lei 9.430/1996 - conferir consolidacao), demonstrando
+  que o imposto devido acumulado e inferior ao pago; ajuste anual em
+  31/12; prejuizo do proprio ano absorvido integralmente dentro do
+  ano (sem trava intra-anual).
+Criterio: lucro sazonal/concentrado -> anual com balancetes; lucro
+estavel -> trimestral pode bastar; risco de prejuizos intercalados ->
+anual (evita a trava entre trimestres do mesmo ano).
+
+III.2 TRIBUTOS E ALIQUOTAS (data-base 11/06/2026; conferir)
+- IRPJ 15% + adicional 10% (excedente de 20.000,00/mes);
+- CSLL 9% (majoradas para setor financeiro - conferir art. 3 da Lei
+  7.689/1988 vigente);
+- PIS 1,65% e COFINS 7,6% NAO-CUMULATIVOS (Leis 10.637/2002 e
+  10.833/2003), creditos do art. 3 de ambas; criterio de INSUMOS:
+  essencialidade e relevancia - Tema 779/STJ (REsp 1.221.170:
+  verificar e transcrever conforme PARTE 0 quando citado);
+- Receitas financeiras no regime nao-cumulativo: PIS 0,65% e COFINS
+  4% (Decreto 8.426/2015 - conferir vigencia e alteracoes);
+- IPI, ICMS, ISS conforme atividade.
+
+III.3 MATRIZ DE CREDITOS PIS/COFINS (montar expressamente no estudo)
+Linhas minimas: insumos (bens e servicos essenciais/relevantes ao
+processo produtivo ou a prestacao), energia eletrica, alugueis de
+predios/maquinas pagos a PJ, arrendamento mercantil, depreciacao de
+maquinas/equipamentos/edificacoes do ativo imobilizado utilizados na
+producao, fretes na operacao de venda, armazenagem, devolucoes,
+combustiveis e lubrificantes empregados na atividade. Cada linha
+rastreada ao dado contabil do cliente. Vedacoes (mao-de-obra PF,
+bens de revenda no regime monofasico, etc.) registradas.
+
+III.4 ALAVANCAS INTERNAS LICITAS
+- Compensacao de prejuizos fiscais e base negativa de CSLL (trava 30%;
+  ATENCAO: jurisprudencia sobre a trava na EXTINCAO da PJ por
+  incorporacao - verificar estado atual no STJ/CARF antes de planejar
+  aproveitamento em reorganizacao, conforme PARTE 0);
+- JCP (art. 9, Lei 9.249/1995): dedutibilidade limitada a variacao da
+  TJLP pro rata sobre as contas do patrimonio liquido autorizadas, e
+  ao maior entre 50% do lucro do exercicio (antes do JCP) e 50% de
+  lucros acumulados + reservas de lucros; IRRF de 15% na fonte;
+  conferir via web_search alteracoes legislativas no regime do JCP
+  (a Lei 14.789/2023 restringiu as contas do patrimonio liquido
+  computaveis na base - conferir a redacao vigente do art. 9);
+- Depreciacao acelerada contabil (turnos) e incentivada (verificar
+  leis setoriais vigentes);
+- Lei do Bem (Lei 11.196/2005, cap. III - inovacao tecnologica):
+  exclusao adicional de 60% a 100% dos dispendios de P&D - requisitos:
+  lucro real e regularidade fiscal (conferir);
+- PAT, doacoes e patrocinios incentivados (limites do RIR/2018);
+- Subvencoes para investimento: regime da Lei 14.789/2023 (credito
+  fiscal de subvencao, em substituicao a exclusao da base) - verificar
+  estado atual da legislacao, da jurisprudencia (Tema 1182/STJ e
+  desdobramentos pos-2023) e das adesoes/transacoes correlatas, com
+  citacao conforme PARTE 0;
+- Agio por rentabilidade futura e mais-valia (Lei 12.973/2014):
+  amortizacao fiscal apos evento de incorporacao/fusao/cisao entre
+  partes NAO dependentes - mapa de riscos obrigatorio (PARTE X.5);
+- Revisao de adicoes/exclusoes recorrentes (multas, provisoes,
+  brindes, perdas no recebimento de creditos - art. 9 da Lei
+  9.430/1996).
+
+===============================================================================
+===============================================================================
+PARTE IV - LUCRO PRESUMIDO - MODULO OPERACIONAL
+===============================================================================
+===============================================================================
+
+IV.1 PRESUNCOES DO IRPJ (art. 15, Lei 9.249/1995 - conferir)
+- 8%   : regra geral - comercio, industria, transporte de carga,
+         servicos hospitalares e de atencao a saude conforme
+         requisitos normativos e jurisprudenciais (organizacao
+         empresarial, registro sanitario - conferir IN vigente e
+         jurisprudencia do STJ sobre o conceito, citando conforme
+         PARTE 0), atividade imobiliaria de venda;
+- 1,6% : revenda, para consumo, de combustiveis derivados de petroleo,
+         alcool etilico carburante e gas natural;
+- 16%  : transporte de passageiros; servicos em geral de PJ com
+         receita bruta anual ate 120.000,00 (exceto profissoes
+         regulamentadas, hospitalares e transporte);
+- 32%  : servicos em geral, intermediacao de negocios, administracao,
+         locacao ou cessao de bens moveis/imoveis e direitos.
+
+IV.2 PRESUNCOES DA CSLL (art. 20, Lei 9.249/1995)
+- 12% regra geral; 32% servicos, intermediacao, administracao/locacao.
+
+IV.3 TRIBUTOS E MECANICA
+- IRPJ 15% + adicional 10% sobre a base presumida que exceder
+  60.000,00 no trimestre; CSLL 9%;
+- PIS 0,65% e COFINS 3% cumulativos (Lei 9.718/1998), sem creditos;
+  exclusoes de base conforme legislacao e jurisprudencia vigentes
+  (citacao conforme PARTE 0);
+- Ganhos de capital e demais receitas: acrescidos integralmente;
+- Apuracao trimestral; opcao por regime de CAIXA ou COMPETENCIA
+  (IN RFB vigente - conferir) - caixa recomendado para servicos com
+  inadimplencia ou recebimento alongado;
+- ICMS/ISS conforme atividade; encargos da folha integrais (PARTE VI).
+
+IV.4 SINALIZADORES DE VANTAGEM
+- Margem liquida efetiva SUPERIOR a presuncao (servicos > 32%;
+  comercio > 8%); folha baixa relativamente a receita; poucos
+  creditos de PIS/COFINS; clientes que nao exigem credito;
+- CONTRAINDICADOR ESTRUTURAL (Reforma): em 2027 o subsistema
+  PIS/COFINS cumulativo desaparece - prestadores no Presumido
+  enfrentarao a CBS por aliquota cheia (com reducoes de 30%/60%
+  quando enquadrados) - simular o salto de carga 2026 -> 2027
+  (PARTE XI.5), fator capaz de inverter a recomendacao ja na janela
+  de opcao de 2027.
+
+===============================================================================
+===============================================================================
+PARTE V - SIMPLES NACIONAL - MODULO OPERACIONAL
+===============================================================================
+===============================================================================
+
+V.1 TABELAS DOS ANEXOS I A V (LC 123/2006, redacao da LC 155/2016;
+vigentes desde 01/01/2018; data-base 11/06/2026 - conferir Resolucoes
+CGSN e eventual lei alteradora antes de cada uso)
+
+Faixas de RBT12 (receita bruta acumulada nos 12 meses anteriores):
+1a: ate 180.000,00 | 2a: 180.000,01-360.000,00 |
+3a: 360.000,01-720.000,00 | 4a: 720.000,01-1.800.000,00 |
+5a: 1.800.000,01-3.600.000,00 | 6a: 3.600.000,01-4.800.000,00
+
+ANEXO I - COMERCIO
+| Faixa | Aliquota nominal | Parcela a deduzir (R$) |
+| 1a    | 4,00%            | 0,00                   |
+| 2a    | 7,30%            | 5.940,00               |
+| 3a    | 9,50%            | 13.860,00              |
+| 4a    | 10,70%           | 22.500,00              |
+| 5a    | 14,30%           | 87.300,00              |
+| 6a    | 19,00%           | 378.000,00             |
+
+ANEXO II - INDUSTRIA
+| Faixa | Aliquota nominal | Parcela a deduzir (R$) |
+| 1a    | 4,50%            | 0,00                   |
+| 2a    | 7,80%            | 5.940,00               |
+| 3a    | 10,00%           | 13.860,00              |
+| 4a    | 11,20%           | 22.500,00              |
+| 5a    | 14,70%           | 85.500,00              |
+| 6a    | 30,00%           | 720.000,00             |
+
+ANEXO III - SERVICOS (art. 18, par. 5-B, 5-D e correlatos; e
+atividades do Anexo V com FATOR R >= 28%)
+| Faixa | Aliquota nominal | Parcela a deduzir (R$) |
+| 1a    | 6,00%            | 0,00                   |
+| 2a    | 11,20%           | 9.360,00               |
+| 3a    | 13,50%           | 17.640,00              |
+| 4a    | 16,00%           | 35.640,00              |
+| 5a    | 21,00%           | 125.640,00             |
+| 6a    | 33,00%           | 648.000,00             |
+
+ANEXO IV - SERVICOS DO ART. 18, PAR. 5-C (construcao de imoveis e
+obras de engenharia, vigilancia, limpeza, conservacao, advocacia) -
+CPP RECOLHIDA POR FORA do DAS
+| Faixa | Aliquota nominal | Parcela a deduzir (R$) |
+| 1a    | 4,50%            | 0,00                   |
+| 2a    | 9,00%            | 8.100,00               |
+| 3a    | 10,20%           | 12.420,00              |
+| 4a    | 14,00%           | 39.780,00              |
+| 5a    | 22,00%           | 183.780,00             |
+| 6a    | 33,00%           | 828.000,00             |
+
+ANEXO V - SERVICOS DO ART. 18, PAR. 5-I (intelectuais, tecnologia,
+auditoria, engenharia, medicina quando nao noutro anexo, etc.),
+quando FATOR R < 28%
+| Faixa | Aliquota nominal | Parcela a deduzir (R$) |
+| 1a    | 15,50%           | 0,00                   |
+| 2a    | 18,00%           | 4.500,00               |
+| 3a    | 19,50%           | 9.900,00               |
+| 4a    | 20,50%           | 17.100,00              |
+| 5a    | 23,00%           | 62.100,00              |
+| 6a    | 30,50%           | 540.000,00             |
+
+V.2 REGRAS OPERACIONAIS
+- ALIQUOTA EFETIVA (art. 18, par. 1-A):
+  AliqEfetiva = [(RBT12 x AliqNominal) - ParcelaDeduzir] / RBT12
+  DAS do mes = receita do mes x AliqEfetiva, por anexo e por tipo de
+  receita segregada; RBT12 movel mes a mes; NUNCA usar a nominal;
+- REPARTICAO interna do DAS por tributo (IRPJ, CSLL, COFINS, PIS, CPP,
+  ICMS/IPI/ISS): percentuais por faixa nas tabelas da LC 123/2006 -
+  TRANSCREVER da fonte oficial quando o estudo exigir decomposicao
+  (segregacao de monofasicos, ISS limitado a 5%, sublimite);
+- SUBLIMITE de 3.600.000,00: excedido, ICMS e ISS saem do DAS e vao
+  ao regime normal (arts. 13-A, 19 e 20, LC 123/2006) - SEMPRE simular
+  o regime hibrido quando a projecao superar o sublimite;
+- TETO de 4.800.000,00: excesso ate 20% -> exclusao no ano seguinte;
+  excesso superior a 20% -> efeitos retroativos ao mes seguinte ao
+  excesso (art. 3, pars. 9 a 12 - conferir); inicio de atividade:
+  limites proporcionais;
+- FATOR R (art. 18, pars. 5-J e 5-K):
+  FatorR = (folha de salarios + encargos + pro-labore dos 12 meses
+  anteriores) / RBT12; >= 0,28 -> Anexo V tributa pelo Anexo III;
+  composicao da folha conforme Resolucao CGSN vigente (conferir);
+- MONOFASICOS/ST: segregar no PGDAS-D as receitas de produtos
+  monofasicos de PIS/COFINS e sujeitas a ST de ICMS (art. 18, pars.
+  4-A e 12) - verificar a pratica do cliente; recolhimento a maior
+  nos ultimos 5 anos = OPORTUNIDADE CORRELATA de recuperacao
+  (registrar e remeter ao projeto contencioso);
+- DISTRIBUICAO DE LUCROS (art. 14, LC 123/2006): isencao limitada a
+  presuncao do IRPJ sobre a receita, SALVO escrituracao contabil
+  completa demonstrando lucro superior - recomendar escrituracao
+  completa; interacao com a Lei 15.270/2025 na PARTE VII;
+- ISS retido na fonte, DIFAL e particularidades conforme municipio.
+
+V.3 SINALIZADORES
+Vantagem: primeiras faixas; folha alta (Anexo III - CPP dentro do
+DAS); clientes PF; conformidade barata. Contraindicadores: clientes
+PJ do regime regular que exigem credito (agravado na Reforma - avaliar
+IBS/CBS por fora, PARTE XI.5); margem altissima com folha baixa em
+Anexo V; receita proxima do teto com crescimento projetado.
+
+===============================================================================
+===============================================================================
+PARTE VI - PREVIDENCIA E ENCARGOS SOBRE A FOLHA - MODULO EXPANDIDO
+===============================================================================
+===============================================================================
+
+VI.1 REGIME GERAL FORA DO SIMPLES (Lei 8.212/1991 - conferir)
+- CPP 20% (art. 22, I) sobre remuneracoes de EMPREGADOS e avulsos;
+- CPP 20% (art. 22, III) sobre remuneracoes de CONTRIBUINTES
+  INDIVIDUAIS (pro-labore de socios, autonomos);
+- RAT/GILRAT (art. 22, II): 1%, 2% ou 3% conforme grau de risco da
+  ATIVIDADE PREPONDERANTE (CNAE x Anexo V do Decreto 3.048/1999 -
+  conferir), multiplicado pelo FAP (0,5 a 2,0) -> RAT ajustado de
+  0,5% a 6%; a aferição por estabelecimento (CNPJ) e materia sumulada
+  no STJ - verificar e transcrever a sumula pertinente conforme
+  PARTE 0 quando o tema for relevante ao caso; FAP e contestavel
+  administrativamente (oportunidade correlata - registrar);
+- TERCEIROS (FPAS): salario-educacao 2,5% + Sistema S + INCRA,
+  totalizando em regra ate 5,8% conforme o codigo FPAS da atividade
+  (conferir tabela vigente); ATENCAO ao limite de base discutido
+  judicialmente (Tema 1079/STJ - verificar estado atual e modulacao,
+  citando conforme PARTE 0) - oportunidade correlata, nao premissa;
+- FGTS 8% (custo nao tributario que integra a matriz);
+- INSS do segurado: retencao conforme tabela progressiva vigente
+  (conferir faixas e teto do ano do estudo);
+- RETENCAO DE 11% na cessao de mao-de-obra e empreitada (art. 31,
+  Lei 8.212/1991; 3,5% para optantes da CPRB - conferir): mapear
+  quando o cliente presta ou toma servicos com cessao de mao-de-obra
+  (impacto de caixa e de conformidade; vedacao do Simples para
+  cessao, salvo as excecoes do art. 18, par. 5-H, tributadas pelo
+  Anexo IV);
+- Construcao civil: matricula CNO, aferição indireta e
+  responsabilidades proprias (modulo de risco quando aplicavel);
+- Desoneracoes setoriais e regimes substitutivos diversos (agroindus-
+  tria - FUNRURAL sobre receita; associacoes desportivas; etc.):
+  identificar o regime substitutivo proprio do setor do cliente e
+  conferir a legislacao vigente;
+- Compensacao cruzada de creditos fazendarios com debitos
+  previdenciarios e vice-versa (art. 26-A da Lei 11.457/2007, para o
+  periodo de apuracao pelo eSocial/DCTFWeb): registrar como
+  OPORTUNIDADE CORRELATA quando houver creditos, com remessa ao
+  projeto contencioso se litigiosa.
+
+VI.2 SIMPLES NACIONAL
+- Anexos I, II, III e V: CPP, RAT e terceiros SUBSTITUIDOS pelo DAS
+  (art. 13, VI, LC 123/2006) - a economia previdenciaria e
+  frequentemente o fator decisivo para folhas altas;
+- ANEXO IV: CPP e RAT POR FORA (20% + RAT ajustado), sem terceiros
+  (conferir art. 13, VI, e a disciplina da Resolucao CGSN) - simular
+  sempre em apartado;
+- FGTS e INSS retido dos empregados permanecem em todos os anexos.
+
+VI.3 REONERACAO GRADUAL DA FOLHA - SETORES DA CPRB (Lei 12.546/2011,
+alterada pela Lei 14.973/2024; data-base 11/06/2026)
+| Ano  | CPRB (% da aliquota original) | CPP (% da aliquota de 20%) |
+| 2025 | 80%                           | 25% (= 5% sobre a folha)   |
+| 2026 | 60%                           | 50% (= 10% sobre a folha)  |
+| 2027 | 40%                           | 75% (= 15% sobre a folha)  |
+| 2028 | extinta                       | 100% (= 20% sobre a folha) |
+Regras: opcao manifestada no recolhimento de janeiro, irretratavel no
+ano-calendario; durante a transicao o 13o salario sofre CPP integral
+(conferir texto vigente); RAT e terceiros permanecem integrais sobre
+a folha; verificar via web_search o estado da jurisprudencia do STF
+sobre as leis de prorrogacao da CPRB (decisao de 2026 preservou
+efeitos preteritos - confirmar alcance, citando conforme PARTE 0).
+
+VI.4 ESTRUTURAS DE CONTRATACAO E PEJOTIZACAO
+- Contratacao de PJ prestadora (art. 129, Lei 11.196/2005): possivel
+  para servicos intelectuais em carater personalissimo, SEM
+  subordinacao, pessoalidade, habitualidade e onerosidade tipicas do
+  vinculo empregaticio;
+- VERIFICAR via web_search o estado atual no STF (repercussao geral
+  sobre licitude da pejotizacao e competencia, com suspensao nacional
+  determinada em 2025 - conferir julgamento e tese) e no TST, citando
+  conforme PARTE 0;
+- Riscos: reconhecimento de vinculo, contribuicoes retroativas com
+  multa qualificada, solidariedade, reflexos trabalhistas -
+  classificacao qualitativa obrigatoria (PARTE XIV);
+- VEDADO recomendar pejotizacao de funcoes subordinadas tipicas
+  (Principio 8 das CI - licitude absoluta).
+
+VI.5 SAIDA DO MODULO
+Tabela obrigatoria por cenario: CPP | RAT ajustado | Terceiros |
+CPRB hibrida (se setor desonerado) | FGTS | Retencoes aplicaveis |
+CUSTO PREVIDENCIARIO TOTAL | % sobre a folha | % sobre a receita.
+
+===============================================================================
+===============================================================================
+PARTE VII - REMUNERACAO DOS SOCIOS POS-LEI 15.270/2025 - MODULO
+            OBRIGATORIO
+===============================================================================
+===============================================================================
+
+VII.1 QUADRO NORMATIVO (vigencia 01/01/2026; data-base 11/06/2026 -
+conferir regulamentacao RFB)
+- IRPF: imposto zerado para rendimentos tributaveis mensais ate
+  5.000,00 e reducao decrescente ate 7.350,00 (redutor legal -
+  conferir tabela e mecanica vigentes);
+- DIVIDENDOS: IRRF de 10% sobre o TOTAL pago no mes quando uma MESMA
+  PJ pagar a uma MESMA PF residente mais de 50.000,00 no mes (art.
+  6-A, Lei 7.713/1988, incluido pela Lei 15.270/2025); remessas ao
+  exterior: 10% independentemente de valor (conferir excecoes);
+- IRPFM (tributacao minima anual): rendimentos anuais acima de
+  600.000,00, aliquota progressiva ate 10% (teto a partir de
+  1.200.000,00); IRRF mensal como antecipacao; mecanismo REDUTOR
+  quando a carga conjunta PJ+PF exceder 34% (40%/45% para setores
+  financeiros - conferir arts. 16-A/16-B e regulamentacao);
+- TRANSICAO: lucros apurados ate 31/12/2025 com distribuicao APROVADA
+  pelo orgao societario ate 31/12/2025 permanecem isentos, ainda que
+  pagos posteriormente (conferir condicoes e prazo final de pagamento
+  na norma e na regulamentacao) - a ATA de aprovacao e a salvaguarda
+  documental central: verificar existencia e regularidade;
+- SOCIOS DO SIMPLES: alcancados pela retencao de 10% acima de
+  50.000,00/mes (conferir interacao com o art. 14 da LC 123/2006).
+
+VII.2 SIMULACAO OBRIGATORIA (tres composicoes por cenario de regime)
+(i)   pro-labore minimo legal + maximo de dividendos;
+(ii)  pro-labore calibrado (Fator R 28%, quando Anexo V em jogo);
+(iii) composicao mista otimizada.
+Computar em cada composicao: CPP da empresa sobre o pro-labore (quando
+devida por fora), INSS do socio (11% ate o teto), IRPF do pro-labore
+(com o redutor ate 5.000,00/7.350,00 - a nova isencao BARATEOU a
+calibragem do Fator R ate esse patamar), IRRF de 10% sobre dividendos
+mensais acima de 50.000,00 por socio (avaliar o ESCALONAMENTO LICITO
+de distribuicoes dentro do ano como variavel de simulacao, com
+registro de risco e da incidencia do IRPFM anual, que captura a renda
+global e neutraliza diferimentos meramente formais), e projecao do
+IRPFM anual com o redutor de carga conjunta (34%).
+Saida: tabela CARGA TOTAL EMPRESA + SOCIO por composicao.
+
+VII.3 ESTOQUES DE LUCROS PRETERITOS
+Mapear lucros acumulados ate 31/12/2025 e a existencia/regularidade
+da ata de aprovacao; quando inexistente a deliberacao tempestiva,
+analisar o regime aplicavel a distribuicao futura SEM recomendar
+retrodatacao de atos (vedacao absoluta - Principio 8: documento
+retrodatado e simulacao/falsidade).
+
+VII.4 PRE-CONDICAO LEGAL DE TODA DISTRIBUICAO - ART. 32 DA LEI
+4.357/1964
+A pessoa juridica com debito NAO GARANTIDO para com a Uniao e suas
+autarquias de previdencia e assistencia social nao pode distribuir
+bonificacoes ou lucros a socios e acionistas, sob pena de multa a
+empresa e aos administradores (percentuais e limites conforme a
+redacao vigente do art. 32 e paragrafos, dada pela Lei 11.051/2004 -
+conferir). VERIFICACAO OBRIGATORIA previa a qualquer recomendacao de
+distribuicao: relatorio de situacao fiscal (e-CAC) e CNDs (PARTE XIX,
+Bloco B). Detectado debito em aberto: a distribuicao recomendada fica
+CONDICIONADA a regularizacao (pagamento, parcelamento ou garantia),
+inserida como providencia previa no plano de implementacao, com
+registro do risco no Quadro 2 do Relatorio Final.
+
+===============================================================================
+===============================================================================
+PARTE VIII - OBRIGACOES ACESSORIAS E CUSTO DE CONFORMIDADE
+===============================================================================
+===============================================================================
+
+Mapear SEMPRE, em tabela, as obrigacoes de cada cenario (conferir
+vigencia e calendario na RFB, SEFAZ/GO e municipio - quadro em mutacao
+com a Reforma e a unificacao de declaracoes):
+
+| Obrigacao            | Real | Presumido | Simples | Observacao        |
+| ECD                  | Sim  | Condic.   | Nao(*)  | (*)salvo opcao/   |
+|                      |      |           |         | exigencia legal   |
+| ECF                  | Sim  | Sim       | Nao     | DEFIS no Simples  |
+| EFD-Contribuicoes    | Sim  | Sim       | Nao     | ate a extincao    |
+|                      |      |           |         | com a CBS (2027)  |
+| EFD ICMS/IPI         | Conf. atividade/UF       | Sublimite: atencao|
+| EFD-Reinf            | Sim  | Sim       | Sim     | conforme eventos  |
+| eSocial              | Sim  | Sim       | Sim     |                   |
+| DCTFWeb              | Sim  | Sim       | Sim     | conforme regras   |
+| PGDAS-D / DEFIS      | Nao  | Nao       | Sim     |                   |
+| DIRBI                | Conforme fruicao de beneficios (IN RFB     |
+|                      | 2.198/2024 - conferir rol vigente)         |
+| NF-e/NFC-e/NFS-e     | Todos, conforme atividade e municipio      |
+| DFe com campos       | Todos os contribuintes de IBS/CBS - NT     |
+| IBS/CBS (Reforma)    | vigente e Ato Conjunto RFB/CGIBS 1/2025    |
+
+Regras do modulo:
+- Custo de conformidade (honorarios contabeis, sistemas, equipe)
+  entra na matriz comparativa como linha propria, com valores do
+  cliente ou [PENDENTE];
+- 2026: o cumprimento das acessorias de IBS/CBS CONDICIONA a dispensa
+  de recolhimento do ano-teste (PARTE XI.4) - alertar expressamente;
+- Multas por descumprimento integram o mapa de riscos;
+- Escrituracao contabil completa recomendada inclusive no Simples
+  (lastro da distribuicao de lucros acima da presuncao - PARTE V.2);
+- Recolhimento do FGTS pelo FGTS DIGITAL (guia unificada mensal,
+  integrada ao eSocial - conferir calendario e regras vigentes),
+  computado na rotina de conformidade de todos os regimes.
+
+===============================================================================
+===============================================================================
+PARTE IX - DIMENSAO MUNICIPAL E ESTADUAL
+===============================================================================
+===============================================================================
+
+IX.1 ISS (obrigatorio quando houver servicos)
+- Aliquotas: piso de 2% (art. 8-A, LC 116/2003, incluido pela LC
+  157/2016 - nulidade de beneficio que resulte em carga inferior,
+  ressalvadas as excecoes legais) e teto de 5%; aliquota CONCRETA
+  verificada SEMPRE na lei do municipio competente, item a item da
+  lista anexa a LC 116/2003;
+- Local da incidencia: regra do ESTABELECIMENTO PRESTADOR (art. 3)
+  com as excecoes taxativas dos incisos (construcao, limpeza,
+  vigilancia, etc.) e as regras de tomador da LC 157/2016 e
+  legislacao superveniente (planos de saude, cartoes, leasing, fundos
+  - verificar estado atual, inclusive decisoes do STF sobre o tema,
+  conforme PARTE 0);
+- Retencoes na fonte: mapa de tomadores e municipios;
+- SOCIEDADE UNIPROFISSIONAL - ISS FIXO (art. 9, pars. 1 e 3, DL
+  406/1968): verificar recepcao e regulamentacao no municipio
+  concreto, requisitos (responsabilidade pessoal dos profissionais,
+  ausencia de carater empresarial) e jurisprudencia atual sobre
+  sociedades limitadas e sobre a descaracterizacao (citacao conforme
+  PARTE 0) - alavanca relevante para profissoes regulamentadas,
+  SEMPRE com mapa de risco e quantificacao ISS fixo x ISS sobre
+  faturamento x reflexo no PIS/COFINS/IRPJ;
+- COMPARATIVO ENTRE MUNICIPIOS: licito apenas com estabelecimento
+  REAL (estrutura fisica, pessoal, gestao efetiva); VEDADO recomendar
+  sede formal/caixa postal (simulacao - Principio 8); registrar os
+  requisitos de substancia no estudo;
+- REFORMA: vantagens locacionais de ISS decaem com a transicao ao IBS
+  no destino (2029-2033) - CURVA DE PERDA obrigatoria (PARTE XI.5).
+
+IX.2 ICMS/GO E REGIMES ESPECIAIS
+- RCTE/GO (Decreto 4.852/1997): aliquotas, ST, creditos outorgados;
+- Incentivos goianos (ProGoias e congeneres, TARE/regimes especiais):
+  verificar vigencia, requisitos, contrapartidas e o regime de
+  transicao da Reforma (Fundo de Compensacao; habilitacao do art. 384
+  da LC 214/2025 - PARTE XI.4) antes de incluir em cenario;
+- DIFAL (LC 190/2022) nas vendas interestaduais a consumidor final;
+- Teses de recuperacao (ICMS na base de PIS/COFINS e correlatas):
+  registrar como OPORTUNIDADE CORRELATA e remeter ao projeto
+  contencioso, sem desenvolvimento neste projeto.
+
+IX.3 MULTIPLOS ESTABELECIMENTOS
+Matriz/filial: ISS (estabelecimento prestador), ICMS (inscricoes e
+creditos por estabelecimento), Simples (receita global consolidada),
+RAT (atividade preponderante), acessorias. Centralizacao x
+descentralizacao logistica e fiscal: simular.
+
+===============================================================================
+===============================================================================
+PARTE X - REORGANIZACAO SOCIETARIA E SEGREGACAO DE ATIVIDADES -
+          MODULO EXPANDIDO
+===============================================================================
+===============================================================================
+
+X.1 INSTRUMENTOS TIPICOS E DISCIPLINA BASICA
+- CISAO total/parcial, INCORPORACAO, FUSAO (arts. 220-234, Lei
+  6.404/1976; arts. 1.113-1.122, CC): neutralidade fiscal quando a
+  valores contabeis; SUCESSAO TRIBUTARIA do art. 132 do CTN
+  (incorporacao/fusao/transformacao) e, na cisao, responsabilidade
+  conforme o ato de cisao e o art. 233 da Lei 6.404/1976 (solidarie-
+  dade, com possibilidade de estipulacao em contrario oponivel nos
+  limites legais - mapear sempre, inclusive a jurisprudencia sobre a
+  extensao da responsabilidade na cisao parcial, citada conforme
+  PARTE 0);
+- TRESPASSE de estabelecimento: responsabilidade do adquirente
+  (art. 133, CTN - integral ou subsidiaria conforme a continuidade
+  da exploracao pelo alienante) - due diligence obrigatoria;
+- DROP DOWN (integralizacao de ativos/estabelecimento em subsidiaria);
+- SEGREGACAO de atividades em PJs distintas (industria x comercio x
+  servicos; operacao x patrimonio; marcas e ativos intangiveis);
+- HOLDING patrimonial e familiar: locacao/administracao de bens
+  proprios (Presumido 32%/CSLL 32% sobre locacao x IRPF carne-leao do
+  socio PF - simular), organizacao sucessoria; integralizacao de bens
+  da PF pelo valor constante da declaracao de bens OU pelo valor de
+  mercado, com ganho de capital tributavel na segunda hipotese
+  (art. 23 da Lei 9.249/1995) - decisao central do plano, a simular
+  (custo imediato do ganho de capital x base de custo/depreciacao
+  futura na PJ); ITBI na integralizacao
+  de imoveis: imunidade do art. 156, par. 2, I, CF e o alcance fixado
+  pelo STF no Tema 796 (excesso do valor integralizado sobre o
+  capital - verificar e transcrever conforme PARTE 0) + legislacao
+  municipal concreta; ITCMD: progressividade e alteracoes da EC
+  132/2023 e da legislacao estadual goiana - verificar estado atual
+  (vetor de URGENCIA ou de cautela no planejamento sucessorio);
+- TRANSFORMACAO de tipo societario e reenquadramento de regime;
+- ATENCAO LC 123: PJ resultante de CISAO ou qualquer forma de
+  desmembramento e VEDADA no Simples por 5 anos (art. 3, par. 4, IX -
+  conferir) - trava decisiva em planos de segregacao com destino ao
+  Simples.
+
+X.2 TESTE DE LICITUDE - APLICAR A TODA REORGANIZACAO (CUMULATIVO)
+(a) ANTERIORIDADE: a estrutura precede os fatos geradores que
+    pretende alcancar?
+(b) SUBSTANCIA: cada PJ resultante tem existencia material propria -
+    estabelecimento, pessoal proprio ou rateio formalizado, gestao,
+    contabilidade, clientela, ativos compativeis?
+(c) PROPOSITO NEGOCIAL: razoes extratributarias documentaveis
+    (segregacao de risco, governanca, sucessao, logistica, mercado,
+    exigencia regulatoria, atracao de investidor)? A economia fiscal
+    pode ser UM motivo, mas a estrutura deve sustentar-se sem ele;
+(d) AUSENCIA DE DISSIMULACAO: forma juridica correspondente a
+    realidade (art. 116, par. unico, CTN - verificar estado da
+    regulamentacao e da ADI 2.446/STF conforme PARTE 0; art. 167, CC);
+(e) INDEPENDENCIA OPERACIONAL REAL: precos internos compativeis com
+    mercado, sem confusao patrimonial, caixa unico, empregados
+    compartilhados sem rateio formal, ou mesmo endereco sem separacao
+    funcional;
+(f) LIMITES PENAIS: nenhuma conduta da Lei 8.137/1990.
+Reprovado qualquer item -> estrutura NAO recomendada; apresentar
+alternativa licita.
+
+X.3 SEGREGACAO DE ATIVIDADES - PARAMETROS OPERACIONAIS
+Criterios praticos de defensabilidade (a documentar no plano):
+- atividades efetivamente DISTINTAS (objetos, mercados, riscos);
+- quadros funcionais proprios ou contratos formais de rateio de
+  custos (cost sharing) com criterio objetivo e sem margem;
+- contratos escritos entre as PJs com precos de mercado
+  (atencao a distribuicao disfarcada de lucros - X.5);
+- contabilidades, caixas, sistemas e enderecos (ou areas) separados;
+- atas e memorandos REGISTRANDO o proposito negocial CONTEMPORANEOS
+  a implementacao (prova pre-constituida);
+- vedacao de faturamento dirigido (alocar receita conforme o cliente
+  "convem" ao regime) - indicio classico de unicidade.
+
+X.4 ZONAS DE RISCO CONSOLIDADAS (mapear expressamente; jurisprudencia
+CARF/judicial SEMPRE verificada e transcrita conforme PARTE 0)
+- Segregacao artificial para multiplicar tetos do Simples/Presumido:
+  grupo economico de fato, art. 124, I, CTN (solidariedade por
+  interesse comum), desconsideracao administrativa e judicial;
+- Pejotizacao massiva e "quarteirizacao" da folha (PARTE VI.4);
+- AGIO INTERNO e empresa-veiculo: vedacao de aproveitamento entre
+  partes dependentes pela Lei 12.973/2014 (arts. 20 e 22 do DL
+  1.598/1977 com a redacao vigente; conceito de partes dependentes -
+  art. 25 da Lei 12.973/2014); estoque de autuacoes CARF;
+- DISTRIBUICAO DISFARCADA DE LUCROS (arts. 60-62, DL 1.598/1977;
+  RIR/2018): negocios entre PJ e pessoas ligadas fora de condicoes de
+  mercado (alienacao por valor notoriamente inferior, aquisicao por
+  valor superior, alugueis e royalties desproporcionais);
+- INCORPORACAO AS AVESSAS e aproveitamento de prejuizos fiscais sem
+  proposito negocial; trava de 30% na extincao da incorporada
+  (verificar estado atual no CARF/STJ conforme PARTE 0);
+- Subcapitalizacao e operacoes com vinculadas no exterior (arts. 24
+  a 26 da Lei 12.249/2010; precos de transferencia - Lei 14.596/2023
+  quando houver transacoes internacionais - conferir);
+- Mutuos e operacoes de credito intercompany: incidencia de IOF
+  (Decreto 6.306/2007, art. 13 - mutuos entre pessoas juridicas ou
+  entre PJ e PF), custo recorrentemente ignorado em grupos
+  segregados; computar na linha (6) do CTC e formalizar os contratos
+  de mutuo com encargos compativeis (interface com a DDL);
+- MULTA QUALIFICADA (sonegacao, fraude, conluio - arts. 71-73, Lei
+  4.502/1964): patamares vigentes conforme Lei 14.689/2023 (100%,
+  com majoracao em reincidencia - conferir) + representacao fiscal
+  para fins penais;
+- Responsabilizacao de socios e administradores (art. 135, III, CTN)
+  e de grupo (art. 124) em caso de desconsideracao.
+
+X.5 PRODUTO DO MODULO
+Para cada estrutura proposta: organograma societario ANTES/DEPOIS;
+quadro de carga tributaria comparada (com e sem a reorganizacao, nos
+mesmos cenarios da PARTE XIII); teste de licitude (X.2) documentado
+item a item; mapa de riscos com classificacao qualitativa (PARTE XIV)
+e consequencia patrimonial estimada de autuacao (tributo + multa +
+juros); plano de implementacao com cronograma, atos societarios,
+avaliacoes (quando exigidas), registros (Junta, cartorios, fiscos),
+e SALVAGUARDAS DOCUMENTAIS (contratos intercompany, rateios, atas de
+proposito negocial, laudos).
+
+===============================================================================
+===============================================================================
+PARTE XI - REFORMA TRIBUTARIA DO CONSUMO - MODULO OBRIGATORIO
+           (EC 132/2023, LC 214/2025 E CORRELATAS)
+===============================================================================
+===============================================================================
+
+ADVERTENCIA DE VOLATILIDADE MAXIMA: regulamentacao em construcao
+continua. TODO item desta Parte deve ser reconferido via web_search em
+fonte oficial a cada estudo, com registro da data da conferencia.
+
+XI.1 MARCO NORMATIVO (estado verificado em 11/06/2026)
+- EC 132/2023: IBS (arts. 156-A e 156-B, CF), CBS (art. 195, V, CF),
+  Imposto Seletivo (art. 153, VIII, CF); transicao nos arts. 124-133
+  do ADCT;
+- LC 214/2025 (16/01/2025): institui IBS, CBS e IS; regimes
+  diferenciados e especificos; cashback; transicao; art. 348 (ano-
+  teste de 2026);
+- LC 227/2026: alteradora da LC 214/2025 (entre outras providencias,
+  par. 3 do art. 348 - prazo de regularizacao de acessorias com
+  extincao de penalidades); conferir inteiro teor ao utiliza-la;
+- Regulamentos do IBS e da CBS: publicados ao final de abril/2026
+  (conferir numeros, artigos e versoes vigentes antes de citar);
+- Ato Conjunto RFB/CGIBS no 1, de 22/12/2025: acessorias transitorias
+  de 2026 (DFe em todas as operacoes; apuracao informativa);
+- NT 2025.002-RTC (v. 1.33, de 02/12/2025, postergou a validacao
+  UB12-10): campos de IBS/CBS sem rejeicao do DFe na fase inicial -
+  conferir versao e estagio de obrigatoriedade vigentes;
+- Comunicados e orientacoes RFB/CGIBS (gov.br/receitafederal -
+  "Orientacoes da Reforma Tributaria para 2026");
+- CGIBS instalado e operante em atos conjuntos com a RFB;
+- Aliquotas: 2026 = CBS 0,9% e IBS 0,1% (art. 348); aliquotas de
+  referencia do regime definitivo dependem de Resolucao do Senado -
+  VERIFICAR se editada e o percentual; na ausencia, usar a estimativa
+  oficial mais recente DECLARADA como premissa.
+
+XI.2 CRONOGRAMA DA TRANSICAO (conferir a cada uso)
+| Periodo   | Evento                                                      |
+| 2026      | Ano-teste: CBS 0,9% + IBS 0,1%; destaque informativo nos   |
+|           | DFe; dispensa condicionada (art. 348); valores recolhidos  |
+|           | compensaveis com PIS/COFINS ou ressarciveis; convivencia   |
+|           | integral com o sistema atual                               |
+| 2027      | CBS em aliquota cheia; EXTINCAO de PIS e COFINS; IPI       |
+|           | reduzido a zero (ressalvada a ZFM); inicio do Imposto      |
+|           | Seletivo; IBS em aliquota minima                           |
+| 2028      | Consolidacao CBS/IS; IBS ainda minimo (conferir percen-    |
+|           | tuais do bienio 2027-2028)                                 |
+| 2029-2032 | Transicao ICMS/ISS -> IBS em proporcoes decrescentes       |
+|           | (90%/80%/70%/60% - conferir art. 128 do ADCT e regula-     |
+|           | mentacao), com reducao proporcional dos beneficios de      |
+|           | ICMS e atuacao do Fundo de Compensacao                     |
+| 2033      | Regime integral: IBS e CBS plenos; extincao de ICMS e ISS  |
+
+XI.3 REGRAS OPERACIONAIS DO ANO-TESTE (2026)
+- DISPENSA CONDICIONADA: cumpridas as acessorias (DFe conforme NTs
+  vigentes e declaracoes de regimes especificos), dispensado o
+  recolhimento de IBS/CBS sobre fatos geradores de 2026; dispensados
+  tambem aqueles sem acessoria definida (art. 348; Comunicado
+  Conjunto RFB/CGIBS de dezembro/2025); prazo de regularizacao com
+  extincao de penalidades (par. 3 do art. 348, via LC 227/2026 -
+  conferir alcance sobre principal e juros, materia com lacunas);
+- CONFORMIDADE E O TRIBUTO DE 2026: adaptacao de sistemas, cadastros,
+  CST/cClassTrib e rotinas de emissao - linha propria de custo;
+- REF (regime mais gravoso de fiscalizacao) para condutas tipificadas
+  (art. 338, LC 214/2025 e regulamentos) - quadro de riscos;
+- HABILITACAO DE BENEFICIOS ONEROSOS DE ICMS (art. 384, LC 214/2025):
+  requerimentos desde janeiro/2026 via e-CAC/SISEN - item OBRIGATORIO
+  da pronuncia previa para clientes goianos com ProGoias, creditos
+  outorgados ou TARE; a omissao pode comprometer a compensacao futura;
+- SALDOS CREDORES acumulados (ICMS, PIS/COFINS): estrategia de
+  consumo, ressarcimento, homologacao ou transferencia ANTES da
+  extincao das bases - quantificar e cronogramar.
+
+XI.4 REGIMES DIFERENCIADOS, ESPECIFICOS E FAVORECIDOS (LC 214/2025 -
+enquadramento obrigatorio do cliente; conferir rol, percentuais e
+condicoes na lei e regulamentos vigentes)
+- Reducao de 60%: servicos de saude, educacao, dispositivos medicos e
+  de acessibilidade, medicamentos, alimentos ao consumo humano,
+  produtos e insumos agropecuarios, producoes artisticas/culturais/
+  jornalisticas, atividades desportivas, entre outros dos anexos;
+- Reducao de 30%: servicos de profissao intelectual de natureza
+  cientifica, literaria ou artistica sob fiscalizacao de conselho
+  profissional (advocacia inclusive) - relevancia direta para
+  clientes prestadores regulamentados;
+- Aliquota zero/cesta basica nacional e hipoteses especificas;
+- Isencoes e imunidades (exportacoes com manutencao de creditos;
+  livros; templos; entes);
+- Regimes especificos: combustiveis, servicos financeiros, planos de
+  saude, prognosticos, bens imoveis (redutores social e de ajuste),
+  cooperativas, hotelaria, bares e restaurantes, transporte, SAF,
+  agencias de viagem, entre outros;
+- Cashback para baixa renda (impacto setorial);
+- SIMPLES NACIONAL: mantido; opcao de apuracao de IBS/CBS POR FORA do
+  DAS para transferir credito integral ao adquirente (XI.5);
+- Nanoempreendedor e plataformas digitais, quando aplicaveis.
+
+XI.5 VETORES DE IMPACTO SOBRE OS PLANEJAMENTOS (analise obrigatoria)
+(1) NAO-CUMULATIVIDADE AMPLA (credito financeiro): estruturas montadas
+    para capturar credito fisico de ICMS ou de insumos de PIS/COFINS
+    perdem razao de ser; reavaliar verticalizacoes e segregacoes
+    fundadas exclusivamente em credito;
+(2) DESTINO E FIM DA GUERRA FISCAL: planejamentos de LOCALIZACAO
+    (municipio de ISS menor; estado com beneficio de ICMS) tem prazo
+    de validade - vantagem decai a partir de 2029 e extingue-se em
+    2033; produto obrigatorio: CURVA DE PERDA ano a ano 2026-2033,
+    com o Fundo de Compensacao como mitigante a quantificar;
+(3) SPLIT PAYMENT e fluxo de caixa: simular impacto de capital de
+    giro do cenario recomendado no regime integral (premissas
+    declaradas; regulamentacao em evolucao - conferir);
+(4) SIMPLES B2B: carteira com adquirentes do regime regular -> simular
+    IBS/CBS por fora (credito integral ao cliente) x permanencia no
+    DAS (credito limitado); perda de competitividade do fornecedor
+    Simples sem credito pleno e vetor novo de migracao de regime;
+(5) PRESUMIDO 2027: fim do PIS/COFINS cumulativo -> CBS por aliquota
+    cheia (com reducoes de 30%/60% quando enquadrado) - simular o
+    salto de carga 2026 -> 2027 (pode inverter a recomendacao ja na
+    janela de 2027);
+(6) CONTRATOS DE LONGO PRAZO: clausulas de reequilibrio tributario,
+    repasse e revisao de precos - auditoria contratual no plano de
+    implementacao;
+(7) BENEFICIOS DE ICMS GOIANOS: transicao, habilitacao do art. 384 e
+    Fundo de Compensacao - caso a caso, com a legislacao estadual
+    vigente.
+
+XI.6 METODOLOGIA DAS TRES FOTOGRAFIAS TEMPORAIS
+Para o cenario recomendado (e o segundo colocado, quando relevante):
+FOTOGRAFIA 1 - SISTEMA ATUAL (ano do estudo): carga do motor da PARTE
+XII (tributos atuais + aliquotas-teste informativas + custo de
+conformidade 2026 destacado);
+FOTOGRAFIA 2 - MEIO DA TRANSICAO (2029-2031): CBS plena + IBS
+crescente + ICMS/ISS decrescentes (proporcoes do ADCT); beneficios de
+ICMS proporcionalmente reduzidos; aliquotas de referencia vigentes ou
+premissa oficial declarada;
+FOTOGRAFIA 3 - REGIME INTEGRAL (2033): IBS/CBS plenos com os
+enquadramentos da XI.4; sem ICMS/ISS/PIS/COFINS; split payment;
+creditos amplos.
+Regras: premissas e aliquotas declaradas em cada fotografia; ressalva
+expressa de regulamentacao pendente; tabela final FOTOGRAFIA | CARGA
+TOTAL | ALIQUOTA EFETIVA | VARIACAO vs ATUAL | OBSERVACOES;
+recomendacao de REAVALIACAO PERIODICA (antes de cada janela anual de
+opcao e a cada marco normativo da transicao).
+
+XI.7 VERIFICACOES OBRIGATORIAS A CADA USO DESTA PARTE
+[ ] LC 214/2025 com alteracoes vigentes (LC 227/2026 e
+    supervenientes)? [ ] Regulamentos IBS/CBS - versao vigente?
+[ ] NT de DFe vigente e estagio de obrigatoriedade? [ ] Resolucao do
+    Senado sobre aliquotas de referencia - editada? Percentual?
+[ ] Atos CGIBS e conjuntos supervenientes? [ ] Split payment -
+    estagio? [ ] Beneficios de ICMS do cliente e art. 384?
+[ ] Jurisprudencia sobre a Reforma (ADIs, temas) conferida e, se
+    citada, transcrita conforme PARTE 0? [ ] Data da conferencia
+    registrada?
+
+===============================================================================
+===============================================================================
+PARTE XII - MOTOR DE SIMULACAO - FORMULAS E ALGORITMOS
+===============================================================================
+===============================================================================
+
+XII.1 ALIQUOTA EFETIVA DO SIMPLES (art. 18, par. 1-A, LC 123/2006)
+AliqEfetiva = [(RBT12 x AliqNominal) - ParcelaDeduzir] / RBT12
+DAS do mes = Receita do mes x AliqEfetiva (por anexo e por tipo de
+receita segregada). Calcular mes a mes com RBT12 movel; em projecao
+anual, por competencia. NUNCA usar a aliquota nominal.
+
+XII.2 SIMULACAO DO LUCRO PRESUMIDO (por trimestre)
+BaseIRPJ = Receita x %presuncao + ganhos de capital + demais receitas
+IRPJ = 15% x BaseIRPJ + 10% x max(0, BaseIRPJ - 60.000)
+BaseCSLL = Receita x %presuncaoCSLL + demais receitas
+CSLL = 9% x BaseCSLL
+PIS+COFINS = 3,65% x receita (exclusoes de base conforme legislacao e
+jurisprudencia vigentes, citadas conforme PARTE 0)
++ ISS ou ICMS conforme atividade + encargos da folha (PARTE VI).
+
+XII.3 SIMULACAO DO LUCRO REAL
+LucroReal = Lucro contabil +/- adicoes/exclusoes relevantes mapeadas
+IRPJ = 15% x LucroReal + 10% x excedente; CSLL = 9%
+PIS/COFINS = 9,25% x receita tributavel - 9,25% x creditos admitidos
+(matriz de creditos da PARTE III.3, rastreada aos dados do cliente)
++ ISS/ICMS/IPI + encargos da folha (PARTE VI).
+Simular SEMPRE: trimestral x anual/estimativa com balancetes
+(sensibilidade a sazonalidade do lucro).
+
+XII.4 PONTOS DE EQUILIBRIO (calcular SEMPRE com os numeros do caso)
+(a) MARGEM de equilibrio Real x Presumido (IRPJ/CSLL): margem liquida
+    ajustada = presuncao ponderada da atividade -> abaixo dela, Real
+    vence no par IRPJ/CSLL;
+(b) CREDITOS de equilibrio PIS/COFINS: creditos/receita =
+    1 - (3,65/9,25) = 60,54% -> custos creditaveis acima de 60,54% da
+    receita favorecem o nao-cumulativo no par PIS/COFINS isoladamente
+    (REFAZER com a base efetiva do caso, consideradas exclusoes de
+    base distintas em cada regime - referencia, nunca conclusao);
+(c) FATOR R de equilibrio: custo previdenciario e de IRPF do
+    pro-labore adicional para atingir 0,28 x economia Anexo V -> III
+    (tabela propria - PARTE VII.2);
+(d) SUBLIMITE: receita em que o Simples hibrido (ICMS/ISS por fora)
+    perde para o Presumido;
+(e) CONSOLIDACAO: vence o regime de MENOR CARGA TOTAL (tributos +
+    previdencia + conformidade), nunca o vencedor de um unico tributo.
+
+XII.5 REGRAS DE EXECUCAO NUMERICA
+- Todo calculo em codigo/planilha, com memoria de calculo exportavel;
+- Dupla passagem de conferencia; valores com duas casas decimais;
+- Toda tabela declara premissas, dispositivo legal de cada aliquota e
+  data-base da conferencia;
+- Divergencia entre fontes -> prevalece a oficial; persistindo duvida
+  -> [PENDENTE] + fail-safe (PARTE 0.6).
+
+===============================================================================
+===============================================================================
+PARTE XIII - MATRIZ CONSOLIDADA E CENARIOS (MODELO DE SAIDA)
+===============================================================================
+===============================================================================
+
+XIII.1 TABELA-SINTESE OBRIGATORIA (por cenario de faturamento)
+REGIME | IRPJ | CSLL | PIS | COFINS | ICMS | ISS | IPI | DAS |
+PREVIDENCIA (CPP+RAT+TERCEIROS ou CPRB hibrida) | CONFORMIDADE |
+CARGA ANUAL TOTAL | ALIQUOTA EFETIVA GLOBAL | RANKING
+
+XIII.2 CENARIOS MINIMOS
+- Conservador (realizado dos ultimos 12 meses);
+- Base (projecao declarada pelo cliente);
+- Expansao (crescimento projetado, testando teto e sublimite do
+  Simples e a faixa do adicional de IRPJ).
+Quando houver reorganizacao cogitada (PARTE X): cada cenario simulado
+COM e SEM a estrutura proposta.
+
+XIII.3 FOTOGRAFIAS TEMPORAIS DA REFORMA
+Para o cenario recomendado, aplicar a PARTE XI.6.
+
+XIII.4 SAIDA DOCUMENTAL
+Parecer no padrao da PARTE XV (docx ROM) + planilha de memoria de
+calculo (xlsx) quando solicitada. Fase 2 aplicada: nenhuma referencia
+metodologica interna no produto final.
+
+===============================================================================
+===============================================================================
+PARTE XIV - CLASSIFICACAO QUALITATIVA DE RISCO (SEM PERCENTUAIS)
+===============================================================================
+===============================================================================
+
+- RISCO REMOTO: texto legal expresso + jurisprudencia vinculante
+  favoravel consolidada (verificada conforme PARTE 0);
+- RISCO POSSIVEL: amparo legal razoavel; jurisprudencia administrativa
+  ou judicial oscilante ou nao consolidada;
+- RISCO PROVAVEL: orientacao dominante do CARF ou dos tribunais
+  contraria, ainda que existam decisoes favoraveis; ou dependencia de
+  tese pendente com repercussao;
+- VEDADO: conduta ilicita (evasao, simulacao, fraude) - nao integra
+  cenario em hipotese alguma (Principio 8 das CI).
+
+Regras: (i) classificacao de CADA item relevante do plano, com a
+consequencia patrimonial estimada de autuacao (tributo + multa +
+juros, em valores, quando houver dados); (ii) itens de risco PROVAVEL
+so integram a recomendacao com alerta destacado e decisao expressa do
+cliente; (iii) a classificacao nunca e substituida por percentuais ou
+promessas de exito.
+
+===============================================================================
+===============================================================================
+PARTE XV - ESTRUTURA PADRAO DO PARECER/ESTUDO DE PLANEJAMENTO
+===============================================================================
+===============================================================================
+
+I    - DA CONSULTA E DO OBJETO
+II   - DOS FATOS E DADOS RELEVANTES (base da pronuncia previa +
+       pendencias/premissas)
+III  - DA TRIAGEM DE ENQUADRAMENTO (quadro da PARTE II.4)
+IV   - DO ENQUADRAMENTO NORMATIVO (federal, estadual, municipal;
+       jurisprudencia e atos vinculantes conforme PARTE 0)
+V    - DAS SIMULACOES COMPARATIVAS (PARTES XII-XIII, regime a regime,
+       com memoria de calculo)
+VI   - DA ANALISE PREVIDENCIARIA E DE ENCARGOS (PARTE VI)
+VII  - DA REMUNERACAO DOS SOCIOS (PARTE VII)
+VIII - DAS OBRIGACOES ACESSORIAS E DO CUSTO DE CONFORMIDADE
+       (PARTE VIII)
+IX   - DA DIMENSAO MUNICIPAL E ESTADUAL (PARTE IX)
+X    - [SE APLICAVEL] DA REORGANIZACAO SOCIETARIA PROPOSTA (PARTE X,
+       com teste de licitude documentado)
+XI   - DO IMPACTO DA REFORMA TRIBUTARIA (PARTE XI - obrigatoria)
+XII  - DOS RISCOS IDENTIFICADOS (PARTE XIV; sem percentuais)
+XIII - DA CONCLUSAO E DA RECOMENDACAO (cenario recomendado, economia
+       projetada com premissas, condicoes de validade)
+XIV  - DO PLANO DE IMPLEMENTACAO (cronograma, janela de opcao anual,
+       atos societarios, comunicacoes fiscais, salvaguardas
+       documentais)
+XV   - DAS RESSALVAS (premissas, pendencias, mutabilidade legislativa,
+       reavaliacao anual antes da janela de opcao e a cada marco da
+       transicao da Reforma)
+
+===============================================================================
+===============================================================================
+PARTE XVI - CHECKLIST CONSOLIDADO DE QUALIDADE FINAL
+            (EXECUTAR APOS O VALIDADOR DA PARTE 0.10)
+===============================================================================
+===============================================================================
+
+TRIAGEM E DADOS
+[ ] Pronuncia previa (I.2) completa ou pendencias listadas?
+[ ] Triagem da PARTE II com quadro-sintese fundamentado?
+[ ] Vedacoes do Simples testadas item a item (inclusive participacoes
+    dos socios e vedacao de 5 anos pos-cisao)?
+[ ] Obrigatoriedade do Lucro Real testada hipotese a hipotese?
+
+NUMEROS
+[ ] Aliquotas, faixas, tetos e tabelas conferidas em fonte oficial
+    vigente, com data da conferencia registrada?
+[ ] Calculos em codigo/planilha com dupla passagem?
+[ ] Aliquota efetiva do Simples pela formula, faixa a faixa, RBT12
+    movel? [ ] Sublimite e teto testados?
+[ ] Fator R simulado (atual e calibrado) com custo-beneficio?
+[ ] Monofasicos/ST segregados e oportunidade correlata registrada?
+[ ] Real nas duas modalidades (trimestral x anual)?
+[ ] Matriz de creditos PIS/COFINS rastreada?
+[ ] Previdencia com RAT/FAP e FPAS do cliente (PARTE VI.5)?
+[ ] Reoneracao da folha com os percentuais do ano (VI.3)?
+[ ] Camada de remuneracao dos socios com as tres composicoes e a Lei
+    15.270/2025 integral (PARTE VII)?
+[ ] Regra de transicao dos dividendos (atas 31/12/2025) verificada?
+[ ] Pontos de equilibrio (XII.4) calculados?
+[ ] Custo de conformidade incluido?
+[ ] Fotografias temporais da Reforma (XI.6) anexadas?
+
+JURIDICO
+[ ] PARTE 0 integralmente cumprida (ipsis litteris, dupla verificacao,
+    fail-safe)? [ ] Vigencia confirmada para toda norma citada
+    (inclusive municipal e estadual)?
+[ ] Teste de licitude (X.2) aplicado e documentado em toda
+    reorganizacao? [ ] Parametros de defensabilidade (X.3) atendidos?
+[ ] Riscos classificados qualitativamente (PARTE XIV), sem
+    percentuais? [ ] Nenhuma recomendacao vedada pelo Principio 8?
+[ ] Habilitacao do art. 384 (beneficios onerosos de ICMS) verificada
+    para clientes goianos com incentivos?
+[ ] Oportunidades contenciosas correlatas apenas REGISTRADAS e
+    remetidas ao projeto contencioso?
+[ ] Janela temporal da opcao e cronograma de implementacao indicados?
+
+FORMA
+[ ] Nenhum emoji, travessao ou marcador de IA? [ ] Formatacao ROM
+    padrao? [ ] Citacoes literais com recuo 2,5cm/1,0cm, italico,
+    espacamento simples? [ ] Linguagem de certeza nas conclusoes, sem
+    promessas de resultado? [ ] Fase 2 aplicada?
+===============================================================================
+===============================================================================
+PARTE XVII - PROTOCOLO DE AUDITORIA DE ATUALIZACAO NORMATIVA E DO KB
+             (CERTIFICACAO DE VIGENCIA - ETAPA-ZERO DE TODA EXECUCAO)
+===============================================================================
+===============================================================================
+
+XVII.1 PRINCIPIO
+Nenhum estudo, simulacao, parecer ou resposta de merito e iniciado sem
+a CERTIFICACAO DE VIGENCIA: verificacao, via web_search em fontes
+oficiais, de que as normas, tabelas, aliquotas e teses empregadas
+permanecem vigentes na data da execucao. A certificacao antecede
+inclusive a Etapa 1 do fluxo da PARTE I.1 (passa a ser a ETAPA-ZERO).
+
+XVII.2 GATILHOS DA AUDITORIA
+(a) A CADA EXECUCAO (obrigatorio): certificacao dos itens da matriz
+    XVII.3 efetivamente empregados no estudo;
+(b) PERIODICO (recomendado mensal; obrigatorio trimestral e sempre em
+    dezembro/janeiro, antes da janela de opcao): varredura completa
+    da matriz XVII.3, com relatorio do modelo XVII.6;
+(c) POR EVENTO NORMATIVO: publicacao de lei, LC, MP, decreto,
+    regulamento da Reforma, Resolucao do Senado (aliquotas de
+    referencia), Resolucao CGSN, IN RFB, NT de DFe, ato PGFN/CGIBS,
+    decisao vinculante do STF/STJ, sumula CARF, lei estadual goiana
+    ou lei municipal de interesse de cliente ativo.
+
+XVII.3 MATRIZ DE VERIFICACAO (ITEM | FONTE OFICIAL | VOLATILIDADE |
+PARTE AFETADA)
+| Tabelas e faixas do Simples (Anexos I-V)  | LC 123 + CGSN      | Media   | V, XII   |
+| Sublimite, teto e vedacoes do Simples     | LC 123 + CGSN      | Media   | II, V    |
+| Hipoteses do art. 14 (Real obrigatorio)   | Lei 9.718/Planalto | Baixa   | II       |
+| Presuncoes (arts. 15 e 20, Lei 9.249)     | Planalto/RFB       | Baixa   | IV       |
+| Aliquotas IRPJ/CSLL/PIS/COFINS e creditos | Planalto/RFB (IN)  | Media   | III, IV  |
+| Reoneracao da folha (Lei 14.973/2024)     | Planalto/RFB       | ALTA    | VI       |
+| RAT/FAP/FPAS e tabela INSS do ano         | RFB/MPS            | ALTA    | VI       |
+| Lei 15.270/2025 e regulamentacao RFB      | Planalto/RFB       | MAXIMA  | VII      |
+| LC 214/2025 + LC 227/2026 + regulamentos  | Planalto/RFB/CGIBS | MAXIMA  | XI       |
+| NTs de DFe (campos IBS/CBS)               | Portal NF-e/SEFAZ  | MAXIMA  | VIII, XI |
+| Resolucao do Senado (aliquota referencia) | Senado/Planalto    | MAXIMA  | XI       |
+| RCTE/GO, ProGoias, TARE, creditos outorg. | SEFAZ-GO/economia  | ALTA    | IX       |
+| ISS do(s) municipio(s) do caso            | Portal municipal   | ALTA    | IX       |
+| Teses vinculantes STF/STJ e sumulas CARF  | Tribunais/CARF     | ALTA    | Todas    |
+| Novo CTM de Goiania (PLC 28/2021)         | Camara de Goiania  | ALTA    | IX, XXI  |
+| Calendario de acessorias                  | RFB/CGIBS/SEFAZ    | ALTA    | VIII     |
+
+XVII.4 PROCEDIMENTO DA CERTIFICACAO
+(a) Identificar os itens da matriz empregados no estudo;
+(b) web_search dirigida a fonte oficial de cada item;
+(c) Confirmada a vigencia -> registrar; detectada alteracao ->
+    aplicar a norma nova ao estudo E acionar o procedimento XVII.5;
+(d) Lavrar no produto o CERTIFICADO DE VIGENCIA:
+    "CERTIFICACAO DE VIGENCIA: as normas, tabelas e aliquotas
+    empregadas neste estudo foram conferidas em fontes oficiais em
+    [DD/MM/AAAA], constatando-se [a vigencia integral / as alteracoes
+    a seguir incorporadas: ...]."
+    No parecer final (Fase 2), o certificado integra a Secao de
+    Ressalvas, sem mencao a mecanica interna de verificacao.
+
+XVII.5 ATUALIZACAO CONSTANTE DO KB
+(a) Toda divergencia entre o KB e a norma vigente gera PROPOSTA DE
+    ATUALIZACAO: novo arquivo com versao incrementada, changelog
+    descrevendo a alteracao normativa (diploma, data, efeito) e
+    NOVA DATA-BASE;
+(b) A substituicao no KB depende de AUTORIZACAO EXPRESSA do
+    Dr. Rodolfo (Principio 3);
+(c) Apos cada atualizacao: AUDITORIA FORENSE anti-supressao,
+    comparando a integralidade das Partes com a versao anterior
+    (tamanho e conteudo), com resultado reportado;
+(d) Versoes substituidas vao a arquivo morto local, nunca permanecem
+    no KB ativo (vetor de divergencia);
+(e) Enquanto a atualizacao do KB nao for autorizada, os estudos
+    aplicam a NORMA VIGENTE (que prevalece sempre sobre o KB) com
+    registro expresso da divergencia pendente.
+
+XVII.6 RELATORIO DE AUDITORIA PERIODICA (modelo)
+"AUDITORIA DE ATUALIZACAO NORMATIVA - [MM/AAAA]
+1. Itens verificados: [matriz XVII.3 integral].
+2. Alteracoes detectadas: [diploma | data | efeito | Partes afetadas].
+3. Propostas de atualizacao do KB: [arquivo | versao proposta |
+   sintese do changelog].
+4. Estudos entregues no periodo potencialmente afetados: [lista, com
+   recomendacao de reavaliacao quando a alteracao impactar conclusao].
+5. Pendencias de autorizacao: [lista]."
+
+===============================================================================
+===============================================================================
+PARTE XVIII - CUSTO TOTAL CONSOLIDADO (CTC) E RELATORIO FINAL
+              CONSOLIDADO OBRIGATORIO
+===============================================================================
+===============================================================================
+
+XVIII.1 REGRA DO CUSTO TOTAL (metrica decisoria unica)
+TODA analise, comparacao e recomendacao deste projeto fixa-se no
+CUSTO TOTAL CONSOLIDADO (CTC), assim composto:
+
+CTC = (1) Tributos sobre receita e resultado (IRPJ, CSLL, PIS, COFINS,
+          ICMS, ISS, IPI ou DAS, e IBS/CBS/IS conforme a fotografia
+          temporal)
+    + (2) Carga previdenciaria patronal completa (CPP ou CPRB hibrida,
+          RAT ajustado, terceiros)
+    + (3) FGTS e provisoes trabalhistas (13o, ferias + 1/3, e
+          respectivos encargos)
+    + (4) Custo bruto da folha (salarios) e pro-labore - exibido como
+          linha propria, para que a carga incidente seja lida sobre o
+          custo real de pessoal
+    + (5) Tributos da remuneracao dos socios (INSS do contribuinte
+          individual, IRPF do pro-labore, IRRF de 10% sobre dividendos
+          acima de 50.000,00/mes, projecao do IRPFM)
+    + (6) Retencoes sofridas com efeito financeiro relevante (art. 31
+          da Lei 8.212/1991; IRRF do art. 64 da Lei 9.430/1996 e CSRF
+          dos arts. 30 a 36 da Lei 10.833/2003, nas operacoes com
+          orgaos publicos e entre PJs; ISS retido) e IOF de mutuos
+          intercompany (Decreto 6.306/2007)
+    + (7) Custo de conformidade (honorarios contabeis, sistemas,
+          equipe fiscal, adaptacao IBS/CBS).
+
+E VEDADO recomendar regime ou estrutura com base em tributo isolado
+ou em comparacao parcial. A leitura conclusiva e SEMPRE: CTC anual,
+CTC mensal medio, CTC como % da receita bruta e CTC como % do
+resultado, por regime e por cenario.
+
+XVIII.2 TABELA-PADRAO DO CTC (linhas fixas, por regime e por cenario)
+| Linha                                   | R$/ano | % receita |
+| Receita bruta (base)                    |        | 100,00    |
+| (1) Tributos sobre receita/resultado    |        |           |
+|     - detalhamento por tributo          |        |           |
+| (2) Previdencia patronal                |        |           |
+| (3) FGTS + provisoes trabalhistas       |        |           |
+| (4) Folha bruta + pro-labore            |        |           |
+| (5) Tributos da remuneracao dos socios  |        |           |
+| (6) Retencoes com efeito financeiro     |        |           |
+| (7) Custo de conformidade               |        |           |
+| CTC TOTAL                               |        |           |
+| CTC TRIBUTARIO-PREVIDENCIARIO (1+2+5+6) |        |           |
+| Resultado liquido disponivel ao socio   |        |           |
+Notas obrigatorias: premissas, fontes normativas datadas, data-base.
+
+XVIII.3 RELATORIO FINAL CONSOLIDADO (produto obrigatorio de TODO
+estudo - fecho do parecer, antes da conclusao)
+
+Estrutura vinculada, em quatro quadros:
+
+QUADRO 1 - COTEJO GERAL ENTRE TODOS OS REGIMES
+Uma coluna por regime juridicamente possivel + coluna do REGIME ATUAL
+(baseline) + registro dos regimes impossiveis (com fundamento da
+vedacao). Linhas: as da tabela XVIII.2, encerrando com:
+- DIFERENCA vs regime atual (R$ e %);
+- DIFERENCA vs melhor colocado (R$ e %);
+- RANKING final por CTC.
+
+QUADRO 2 - IMPLICACOES JURIDICAS POR REGIME
+Por regime cotejado: fundamento legal da opcao | condicoes de
+ingresso e permanencia | vedacoes incidentes | janela e mecanica da
+opcao | irretratabilidade | riscos juridicos classificados (PARTE
+XIV) | jurisprudencia/atos vinculantes pertinentes (conforme PARTE 0).
+Quando presente o risco contingencial de ARBITRAMENTO (PARTE II.3-A),
+incluir linha propria com a consequencia patrimonial estimada. Quando
+houver debito nao garantido, incluir linha do art. 32 da Lei
+4.357/1964 (PARTE VII.4).
+
+QUADRO 3 - IMPLICACOES OBRIGACIONAIS POR REGIME
+Por regime cotejado: obrigacoes acessorias exigidas (PARTE VIII) |
+periodicidade e prazos | custo de conformidade estimado | obrigacoes
+da transicao da Reforma | penalidades tipicas por descumprimento.
+
+QUADRO 4 - SINTESE EXECUTIVA (uma pagina)
+Regime recomendado | economia anual vs atual (R$ e %) | tres
+condicoes de validade mais sensiveis | tres riscos mais relevantes
+com classificacao | tres primeiras providencias do plano de
+implementacao | data da proxima reavaliacao obrigatoria.
+
+XVIII.4 REGRAS DE COTEJAMENTO
+(a) O regime ATUAL do cliente e sempre o baseline, ainda que vedado
+    prospectivamente (registrar a vedacao);
+(b) Diferencas sempre em valor absoluto E percentual;
+(c) Cenarios (conservador/base/expansao) cotejados no mesmo padrao;
+(d) Quando houver reorganizacao (PARTE X): colunas adicionais COM a
+    estrutura, mantidas as colunas SEM ela;
+(e) As fotografias temporais da Reforma (PARTE XI.6) compoem secao
+    propria do relatorio, no mesmo formato de cotejo.
+
+===============================================================================
+===============================================================================
+PARTE XIX - CHECKLIST DE DOCUMENTOS DO CLIENTE PARA ANALISE E
+            APLICACAO DO PLANEJAMENTO
+===============================================================================
+===============================================================================
+
+Regras: (i) o checklist e remetido ao cliente na abertura do trabalho;
+(ii) cada item recebe status RECEBIDO / PENDENTE / INAPLICAVEL no
+quadro documental do parecer (Secao II); (iii) pendencias viram
+[PENDENTE] na pronuncia previa e condicionam as conclusoes; (iv) o
+estudo NAO e concluido sem os itens marcados como ESSENCIAIS (*).
+
+BLOCO A - SOCIETARIO E CADASTRAL
+[ ] (*) Contrato social/estatuto consolidado e ultimas alteracoes;
+[ ] (*) Cartao CNPJ atualizado (matriz e filiais) com CNAEs;
+[ ] (*) Quadro de socios com participacoes em OUTRAS empresas
+        (CNPJs, percentuais, condicao de administrador);
+[ ] (*) Declaracoes de IRPF dos socios (ultimo exercicio entregue) -
+        indispensaveis a projecao do IRPFM (Lei 15.270/2025), que
+        considera a renda GLOBAL da pessoa fisica;
+[ ] Atas/deliberacoes societarias relevantes, INCLUSIVE a ata de
+    aprovacao de distribuicao de lucros apurados ate 31/12/2025;
+[ ] Procuracoes vigentes; certidao simplificada da Junta.
+
+BLOCO B - FISCAL FEDERAL
+[ ] (*) Comprovante de opcao e regime atual (Simples: extrato do
+        portal; demais: ECF transmitida);
+[ ] (*) ECF dos ultimos 2 exercicios; ECD, se entregue;
+[ ] (*) Guias pagas dos ultimos 12 meses (DAS ou DARFs por tributo);
+[ ] EFD-Contribuicoes e DCTFWeb do periodo;
+[ ] PGDAS-D e DEFIS (se Simples), com segregacoes praticadas;
+[ ] (*) Relatorio de situacao fiscal (e-CAC) e parcelamentos
+        vigentes;
+[ ] (*) CNDs/CPENs: federal (RFB/PGFN), estadual, municipal, FGTS
+        (CRF) e trabalhista (CNDT) - condicao de ingresso/permanencia
+        no Simples e pre-condicao do art. 32 da Lei 4.357/1964
+        (PARTE VII.4);
+[ ] PER/DCOMPs e creditos em discussao; DIRBI (se beneficios).
+
+BLOCO C - CONTABIL
+[ ] (*) Balancetes mensais dos ultimos 12-24 meses;
+[ ] (*) Balanco patrimonial e DRE dos 2 ultimos exercicios;
+[ ] Razao das contas de receita, custos e despesas relevantes
+    (lastro da matriz de creditos PIS/COFINS);
+[ ] Composicao da margem por linha de negocio;
+[ ] Lucros acumulados/reservas (estoque pre-2026).
+
+BLOCO D - FATURAMENTO E OPERACAO
+[ ] (*) Faturamento mensal dos ultimos 12-24 meses, segregado por
+        atividade/CNAE e por perfil de cliente (PF x PJ; PJ regime
+        regular x Simples; mercado interno x exportacao);
+[ ] Relacao de produtos/servicos com NCM/item LC 116, destacando
+    monofasicos e ST;
+[ ] Projecao de faturamento 12-24 meses e sazonalidade;
+[ ] Amostra de notas fiscais emitidas (parametrizacao, inclusive
+    campos IBS/CBS).
+
+BLOCO E - FOLHA E PREVIDENCIA
+[ ] (*) Resumo mensal da folha dos ultimos 12 meses (salarios,
+        encargos, numero de empregados) e pro-labore atual por socio;
+[ ] CNAE preponderante, RAT aplicado e FAP vigente (extrato);
+[ ] FPAS/codigo de terceiros;
+[ ] Contratos com prestadores PJ (avaliacao de pejotizacao);
+[ ] Se setor desonerado: opcao CPRB do ano e calculos.
+
+BLOCO F - ESTADUAL E MUNICIPAL
+[ ] Inscricao estadual e apuracoes de ICMS do periodo (se aplicavel);
+[ ] (*) Regimes especiais/TARE/ProGoias: termos, contrapartidas,
+        situacao de regularidade e comprovante da habilitacao do
+        art. 384 da LC 214/2025 (se protocolada);
+[ ] Saldos credores acumulados (ICMS, PIS/COFINS) - memoria;
+[ ] Inscricao municipal, alvara e guias de ISS; retencoes sofridas;
+[ ] Municipio(s) de cada estabelecimento e enquadramento na lista
+    da LC 116.
+
+BLOCO G - CONTRATOS E OPERACOES RELEVANTES
+[ ] Principais contratos com clientes e fornecedores (clausulas
+    tributarias, reajuste, retencoes, prazo);
+[ ] Contratos de locacao e intercompany existentes;
+[ ] Operacoes com partes ligadas (precos praticados).
+
+BLOCO H - ESPECIFICO PARA REORGANIZACAO (quando cogitada)
+[ ] Organograma atual do grupo (formal e de fato);
+[ ] Matriculas de imoveis e documentos de ativos a segregar;
+[ ] Laudos/avaliacoes existentes;
+[ ] Certidoes fiscais e trabalhistas das PJs envolvidas;
+[ ] Documentos que comprovem os motivos negociais ja existentes
+    (atas, e-mails institucionais, exigencias de mercado/regulatorias).
+
+===============================================================================
+===============================================================================
+PARTE XX - MATRIZ SETORIAL DE REGIMES ESPECIAIS E CLAUSULA RESIDUAL
+           (COBERTURA DE TODA E QUALQUER ATIVIDADE)
+===============================================================================
+===============================================================================
+
+XX.1 FUNCAO, CLAUSULA RESIDUAL E PROTOCOLO DE EXPANSAO CONTINUA
+
+(a) FUNCAO: antes de simular, identificar se a atividade do cliente
+    possui regime, presuncao, beneficio ou tributacao ESPECIAL que
+    altere a estrutura do comparativo. A matriz abaixo cobre os
+    setores recorrentes; cada modulo opera com mandado de conferencia
+    na norma vigente (PARTE XVII).
+(b) CLAUSULA RESIDUAL (garantia de cobertura universal): atividade
+    NAO mapeada nesta matriz -> OBRIGATORIA pesquisa normativa
+    especifica (web_search em fontes oficiais: lei de regencia,
+    regime de PIS/COFINS proprio, presuncao aplicavel, ICMS/ISS,
+    regime na LC 214/2025, regime previdenciario substitutivo,
+    acessorias setoriais) ANTES de qualquer simulacao, com registro
+    da pesquisa e das fontes no estudo. E VEDADO simular atividade
+    nao mapeada pelo regime geral sem essa pesquisa documentada.
+(c) PROTOCOLO DE EXPANSAO SETORIAL CONTINUA: sempre que (i) a
+    clausula residual for acionada para atividade nova, ou (ii) o
+    Dr. Rodolfo determinar a inclusao de atividade, sera gerada
+    PROPOSTA DE ATUALIZACAO desta PARTE XX (novo modulo setorial,
+    nos moldes dos existentes), processada pelo rito da PARTE XVII.5
+    (nova versao + changelog + auditoria forense + autorizacao
+    expressa). A matriz e, por definicao, ABERTA E INCREMENTAL.
+
+XX.2 AGRONEGOCIO
+- Produtor rural PESSOA FISICA: resultado da atividade rural (Lei
+  8.023/1990; livro-caixa; opcao pelo resultado presumido de 20% da
+  receita bruta - conferir), compensacao integral de prejuizos da
+  atividade; comparar SEMPRE com a constituicao de PJ rural;
+- PJ rural: Real (com beneficios proprios de depreciacao integral de
+  ativos rurais - conferir art. 325 e correlatos do RIR/2018) x
+  Presumido (8%/12% na producao) x Simples (quando cabivel);
+- FUNRURAL: contribuicao sobre a RECEITA da comercializacao (PF:
+  art. 25 da Lei 8.212/1991; PJ rural: art. 25 da Lei 8.870/1994) x
+  OPCAO anual pela folha (art. 25, pars. 13, Lei 8.212/1991 -
+  conferir mecanica vigente) - simular as duas bases;
+- SENAR, GILRAT rural, ITR (arrendamento x parceria), e regime do
+  produtor na LC 214/2025 (reducao de 60% para insumos e produtos
+  agropecuarios; produtor com receita ate o limite legal como nao
+  contribuinte, com credito presumido ao adquirente - conferir).
+
+XX.3 IMOBILIARIO E INCORPORACAO
+- RET com patrimonio de afetacao (Lei 10.931/2004): 4% unificados
+  sobre a receita mensal recebida (1% nas hipoteses habitacionais
+  legais - conferir percentuais e condicoes vigentes), por
+  incorporacao afetada - simular contra Presumido/Real projeto a
+  projeto;
+- Presumido imobiliario: venda de imoveis 8%/12%; locacao de imoveis
+  proprios 32%/32%; permuta no Presumido (tributacao do valor do
+  imovel recebido - verificar jurisprudencia do STJ, conforme
+  PARTE 0) x permuta no Real (neutralidade contabil);
+- Regime especifico de bens imoveis na LC 214/2025 (redutor de
+  ajuste, redutor social, locacao com reducao propria - conferir);
+- ITBI, ITCMD e interface com holdings (PARTE X).
+
+XX.4 SAUDE
+- EQUIPARACAO HOSPITALAR: presuncao de 8% (IRPJ) e 12% (CSLL) para
+  servicos hospitalares e de auxilio diagnostico/terapia prestados
+  por sociedade EMPRESARIA com atendimento as normas da ANVISA
+  (requisitos e rol conforme a IN RFB vigente e a tese do STJ em
+  repetitivo sobre o conceito - verificar e transcrever conforme
+  PARTE 0) x 32% dos servicos em geral - alavanca central do setor;
+- Reducao de 60% da CBS/IBS para servicos de saude (LC 214/2025,
+  anexos - conferir rol);
+- Simples: anexos III/V conforme atividade e Fator R (clinicas);
+- ISS municipal por item da lista (4.01 a 4.23).
+
+XX.5 TECNOLOGIA E INOVACAO
+- Lei do Bem (Lei 11.196/2005): exclusoes adicionais de P&D no Real;
+- Licenciamento/SaaS: enquadramento atual (ISS - itens 1.03/1.05/1.09)
+  e enquadramento na LC 214/2025; exportacao de servicos de TI
+  (imunidade/isencao - conferir requisitos de resultado no exterior);
+- Anexos III/V do Simples conforme Fator R (desenvolvimento).
+
+XX.6 EXPORTADORAS
+- Imunidade de exportacao (PIS/COFINS, ICMS-LC 87, IPI; IBS/CBS com
+  manutencao integral de creditos na LC 214/2025);
+- REINTEGRA (Lei 13.043/2014 - percentual vigente a conferir),
+  drawback, regimes aduaneiros especiais;
+- Acumulo estrutural de creditos: estrategia de ressarcimento/
+  compensacao como componente do CTC.
+
+XX.7 AREAS INCENTIVADAS - SUDAM/SUDENE
+- Reducao de 75% do IRPJ sobre o lucro da exploracao (legislacao de
+  regencia e prazos vigentes - conferir), que OBRIGA ao Lucro Real
+  (art. 14, IV, Lei 9.718/1998 - PARTE II.1);
+- Calculo proprio do lucro da exploracao, reinvestimento, vedacao de
+  distribuicao do valor do beneficio aos socios (capitalizacao da
+  reserva de incentivo - conferir art. 19 do DL 1.598/1977 e Lei
+  14.789/2023).
+
+XX.8 VEICULOS SOCIETARIOS ESPECIAIS - SCP E COOPERATIVAS
+- SCP (arts. 991-996 do CC): equiparada a PJ para IRPJ/CSLL (RIR/2018
+  - apuracao propria, inclusive opcao de regime distinta da do socio
+  ostensivo - conferir IN vigente); instrumento legitimo de
+  estruturacao de projetos e de participacao de investidores, com
+  teste de licitude da PARTE X.2 integral;
+- Cooperativas: adequado tratamento do ato cooperativo (art. 146,
+  III, "c", CF; Lei 5.764/1971), incidencias sobre atos nao
+  cooperativos, regime proprio na LC 214/2025 - conferir.
+
+XX.9 PATRIMONIO DOS SOCIOS NO EXTERIOR - LEI 14.754/2023
+- Tributacao ANUAL automatica dos lucros de offshores (entidades
+  controladas em paraisos ou com renda passiva qualificada) e regime
+  dos fundos fechados da PF (come-cotas) - conferir regulamentacao
+  vigente;
+- Integracao OBRIGATORIA com a projecao do IRPFM (PARTE VII): a
+  renda global do socio inclui esses rendimentos;
+- Opcoes de transparencia/opacidade da entidade e atualizacao de
+  custo - registrar como modulo de analise da PF quando os documentos
+  do Bloco A (IRPF dos socios) revelarem ativos no exterior.
+
+XX.10 COMERCIO DIGITAL E PLATAFORMAS
+- Marketplaces: responsabilidade tributaria das plataformas (ICMS
+  estadual onde instituida; IBS/CBS - responsabilidade das
+  plataformas digitais na LC 214/2025, inclusive estrangeiras -
+  conferir);
+- DIFAL nas vendas interestaduais B2C (LC 190/2022); NFC-e;
+- Receita propria x intermediacao (comissao) - segregacao correta da
+  base (erro recorrente: tributar o repasse como receita propria).
+
+XX.11 ACADEMIAS E CONDICIONAMENTO FISICO
+- Enquadramento Simples: atividades de academias (ginastica, danca,
+  artes marciais, natacao, escolas de esportes) sao expressamente
+  tributadas pelo ANEXO III INDEPENDENTEMENTE DO FATOR R (art. 18,
+  par. 5-B, V e VI, LC 123/2006 - conferir), o que, somado a folha
+  tipicamente alta (CPP dentro do DAS) e a clientela B2C (credito
+  irrelevante ao cliente), torna o Simples frequentemente dominante
+  ate as faixas superiores - simular contra o Presumido (32%/32%)
+  com atencao ao sublimite do ISS;
+- ISS: item 6.04 da lista da LC 116/2003 (ginastica, danca, esportes,
+  natacao, artes marciais e congeneres) - aliquota municipal a
+  conferir; sem ICMS sobre as mensalidades (venda de suplementos/
+  produtos na recepcao = receita de COMERCIO, segregada por anexo/
+  presuncao propria e com ICMS - mapear SEMPRE a segregacao);
+- Receitas a segregar corretamente: mensalidades e planos
+  (competencia x caixa no Presumido - planos anuais antecipados),
+  repasses de agregadores/plataformas de beneficio corporativo
+  (receita propria x intermediacao - conferir contrato), locacao de
+  espaco a personal trainers (receita de locacao - presuncao de 32%;
+  formalizar contratos; vedacao de relacao de emprego disfarcada),
+  day use e diarias;
+- Personal trainers PJ atuando dentro da academia: aplicar PARTE
+  VI.4 (pejotizacao) com rigor - subordinacao e pessoalidade
+  descaracterizam; locacao de espaco e o desenho licito tipico;
+- Reforma: servicos de academias em regra na aliquota-padrao do
+  IBS/CBS (B2C sem repasse de credito - simular o salto 2026 -> 2027
+  e a curva ate 2033); conferir na LC 214/2025 e regulamentos
+  eventual enquadramento em reducao setorial (pratica desportiva)
+  antes de qualquer premissa;
+- Previdencia: RAT/FAP do CNAE 9313-1/00 e congeneres a conferir;
+  professores e instrutores CLT x cooperativas x PJ - mapa de risco.
+
+XX.12 VAREJO
+- Simples: ANEXO I; segregacao OBRIGATORIA das receitas de produtos
+  MONOFASICOS de PIS/COFINS (combustiveis, farmacos, perfumaria,
+  autopecas, bebidas frias - conferir rol vigente) e de mercadorias
+  com ICMS-ST ja retido (art. 18, pars. 4-A e 12, LC 123/2006):
+  recolhimento a maior por falta de segregacao e a falha mais
+  recorrente do setor (recuperacao dos ultimos 5 anos = oportunidade
+  correlata - remeter ao contencioso);
+- Presumido: 8%/12% com PIS/COFINS cumulativo 3,65% x Real: no
+  varejo, as aquisicoes para REVENDA geram credito integral de
+  PIS/COFINS (art. 3, I, das Leis 10.637/2002 e 10.833/2003, exceto
+  monofasicos/ST), elevando a proporcao de creditos sobre a receita -
+  o break-even da PARTE XII.4(b) e tipicamente decidido pela MARGEM
+  (margens estreitas favorecem o nao-cumulativo/Real; conferir caso
+  a caso com a matriz de creditos);
+- ICMS: ST e antecipacoes (MVA), creditos na entrada, regimes
+  goianos (atacadista x varejista - creditos outorgados, conferir),
+  DIFAL nas compras interestaduais para revenda x uso/consumo;
+- Quebras, perdas e furtos de estoque: tratamento no Real (conferir
+  condicoes de dedutibilidade) x irrelevancia no Presumido/Simples;
+- Taxas de cartoes e antecipacao de recebiveis: custo financeiro no
+  CTC; verificar o estado da jurisprudencia sobre a base de calculo
+  (conforme PARTE 0) sem adota-la como premissa;
+- Reforma: extincao progressiva da ST com o IBS/CBS, split payment
+  no B2C, cashback (impacto em publico de baixa renda), credito
+  amplo nas aquisicoes - simular as tres fotografias com atencao ao
+  capital de giro (PARTE XI.5).
+
+XX.13 REGISTRO DE COBERTURA
+O estudo declara, em topico proprio da triagem, QUAL modulo setorial
+foi aplicado OU que a clausula residual (XX.1.b) foi acionada, com as
+fontes da pesquisa especifica. A ausencia desse registro reprova o
+estudo no checklist.
+
+===============================================================================
+===============================================================================
+PARTE XXI - BASE TERRITORIAL PREPONDERANTE: ESTADO DE GOIAS E
+            MUNICIPIO DE GOIANIA + PROTOCOLO DE EXPANSAO TERRITORIAL
+===============================================================================
+===============================================================================
+
+XXI.1 FUNCAO
+Goiania/GO e o Estado de Goias sao as areas territoriais
+preponderantes da atuacao ROM. Esta Parte consolida o marco normativo
+LOCAL de regencia do planejamento (data-base 11/06/2026; reconferir
+conforme PARTE XVII), e institui o protocolo para QUALQUER outro
+municipio ou estado (XXI.5). A PARTE IX (regras gerais de ISS/ICMS)
+permanece integra; esta Parte a especializa territorialmente.
+
+XXI.2 MARCO NORMATIVO ESTADUAL - GOIAS (conferir vigencia a cada uso)
+- CTE - Codigo Tributario do Estado de Goias: Lei 11.651/1991
+  (ICMS, ITCD, IPVA, taxas); RCTE: Decreto 4.852/1997 e Anexos
+  (Anexo VIII - substituicao tributaria; demais anexos de isencoes,
+  reducoes de base, creditos outorgados);
+- ICMS - aliquotas: interna GERAL de 19% desde 01/04/2024 (art. 27,
+  I, CTE, na redacao da Lei 22.460/2023), com aliquotas
+  diferenciadas nos demais incisos do art. 27 (conferir item a item
+  para o produto/servico do caso) e ADICIONAL de 2 pontos percentuais
+  destinado ao PROTEGE GOIAS nas hipoteses legais (pars. do art. 27 -
+  conferir rol vigente de mercadorias alcancadas);
+- Beneficios fiscais: regime dos arts. 40 a 42 do CTE (isencao,
+  reducao de base, credito outorgado, manutencao e devolucao -
+  rol EXCLUSIVO, com equiparacao do art. 42 para qualquer vantagem
+  que dilate prazo ou exonere o ICMS); creditos outorgados e
+  reducoes do RCTE (Anexo IX - conferir item aplicavel, condicoes e
+  contrapartidas, inclusive contribuicoes a fundos estaduais
+  exigidas como condicao de fruicao - PROTEGE/FUNDEINFRA, conferir
+  legislacao vigente);
+- ProGoias (lei estadual de regencia e regulamentacao - conferir
+  versao vigente, percentuais de credito outorgado por regiao,
+  contrapartidas e interface com a habilitacao do art. 384 da
+  LC 214/2025 - PARTE XI.3);
+- TARE - Termo de Acordo de Regime Especial e Termos de
+  Credenciamento (inclusive para ST - RCTE, Anexo VIII): mapear os
+  vigentes do cliente, prazos, contrapartidas e riscos de
+  descumprimento;
+- Substituicao tributaria estadual: Anexo VIII do RCTE (segmentos,
+  MVAs, credenciamentos) - decisiva no varejo (PARTE XX.12);
+- DIFAL e antecipacoes nas aquisicoes interestaduais (conferir
+  regime vigente para optantes e nao optantes do Simples);
+- ITCD GOIAS (CTE, arts. proprios): aliquotas e progressividade
+  vigentes a conferir DIRETAMENTE no CTE atualizado - parametro
+  central da janela sucessoria das holdings (PARTE X), inclusive
+  ante a diretriz de progressividade da EC 132/2023;
+- IPVA e taxas estaduais: computar no CTC quando relevantes (frotas);
+- Contencioso administrativo estadual: CAT/CONAT (remissao ao
+  projeto contencioso); consultas fiscais a SEFAZ/GO como
+  instrumento de seguranca (efeito vinculante da resposta - conferir
+  disciplina vigente) - considerar consulta formal como salvaguarda
+  do plano quando houver duvida interpretativa estadual relevante.
+
+XXI.3 MARCO NORMATIVO MUNICIPAL - GOIANIA (conferir vigencia a cada
+uso)
+- CTM - Codigo Tributario do Municipio de Goiania: Lei 5.040/1975,
+  com alteracoes relevantes das LCs 107/2001, 146/2005 e 211/2011,
+  entre outras; RCTM: Decreto 1.786/2015 (que revogou o Decreto
+  2.273/1996);
+- ALERTA DE MONITORAMENTO PERMANENTE: tramita na Camara Municipal o
+  PLC 28/2021 (novo Codigo Tributario de Goiania) - VERIFICAR o
+  estagio a cada estudo (item proprio na matriz XVII.3); aprovacao
+  superveniente impoe revisao integral deste modulo;
+- ISS Goiania: lista de servicos e regras dos arts. 52 e seguintes
+  do CTM; ALIQUOTAS por item conforme o art. 57 do CTM (redacao da
+  LC 146/2005 e alteradoras) - CONFERIR a tabela vigente item a item
+  no CTM atualizado/portal da Secretaria Municipal de Financas antes
+  de qualquer simulacao (piso de 2% e teto de 5% da LC 116/2003 e
+  do art. 8-A como moldura);
+- SOCIEDADE DE PROFISSIONAIS EM GOIANIA (ISS por profissional):
+  art. 53, III, do CTM (redacao da LC 211/2011) - sociedade civil e
+  de trabalho pessoal, de carater especializado, registrada no orgao
+  de classe, organizada para servicos dos itens 4.01, 4.06, 4.08,
+  4.10, 4.11, 4.12, 4.13, 4.14, 4.16, 5.01, 7.01, 17.13, 17.15 e
+  17.18 da lista (rol que alcanca medicina e saude, veterinaria,
+  engenharia e ADVOCACIA - conferir redacao vigente e requisitos
+  regulamentares, inclusive obrigacoes acessorias proprias do
+  regime); alavanca municipal central para clientes de profissoes
+  regulamentadas - SEMPRE simular ISS fixo por profissional x ISS
+  sobre o faturamento, com o mapa de risco de descaracterizacao
+  (carater empresarial) e a jurisprudencia atual (conforme PARTE 0);
+- Retencao na fonte/substituicao do ISS em Goiania: regime dos
+  tomadores eleitos pelo CTM (redacoes das LCs 107/2001 e
+  alteradoras - conferir rol vigente de substitutos) - mapear a
+  carteira de tomadores do cliente;
+- IPTU/ITU Goiania (CTM, arts. proprios): planta de valores,
+  lancamento anual - computar no CTC de estruturas imobiliarias;
+- ITBI Goiania: aliquota e regulamentacao vigentes a conferir;
+  interface obrigatoria com a imunidade do art. 156, par. 2, I, CF e
+  o Tema 796/STF na integralizacao de imoveis em holding (PARTE X);
+- NFS-e e obrigacoes acessorias municipais: padrao vigente e
+  adesao ao ambiente nacional da NFS-e (conferir estagio), alem das
+  declaracoes municipais aplicaveis;
+- Beneficios e incentivos municipais (reducoes setoriais, programas
+  de desenvolvimento local): conferir existencia e vigencia no
+  portal oficial antes de incluir em cenario - observada a moldura
+  do art. 8-A da LC 116/2003.
+
+XXI.4 APLICACOES TIPICAS DE PLANEJAMENTO NA BASE GOIANA
+(a) Sociedades de profissionais em Goiania (XXI.3): ISS fixo x
+    faturamento, cumulado com o comparativo federal (Simples Anexo
+    IV para advocacia; III/V para saude e engenharia conforme Fator
+    R) - simulacao integrada obrigatoria;
+(b) Industria e atacado em Goias: creditos outorgados do Anexo IX
+    do RCTE, ProGoias e TARE - sempre com a curva de transicao da
+    Reforma (PARTE XI.5) e a habilitacao do art. 384;
+(c) Varejo goiano: ST do Anexo VIII (MVAs) e regimes de atacadista
+    x varejista (PARTE XX.12);
+(d) Comparativo intermunicipal na regiao metropolitana (Goiania x
+    Aparecida de Goiania x Senador Canedo etc.): admissivel SOMENTE
+    com estabelecimento real e substancia (PARTE IX.1), mediante
+    Ficha Territorial (XXI.5) do municipio cotejado e curva de perda
+    da Reforma;
+(e) Sucessao patrimonial goiana: ITCD do CTE (aliquotas/
+    progressividade vigentes) + ITBI municipal + Tema 796/STF -
+    janela de oportunidade a quantificar na PARTE X;
+(f) Consulta fiscal formal (SEFAZ/GO e Secretaria Municipal de
+    Financas) como salvaguarda de teses interpretativas locais.
+
+XXI.5 PROTOCOLO DE EXPANSAO TERRITORIAL (OUTRO MUNICIPIO OU ESTADO)
+
+(a) GATILHO: estabelecimento, cliente, tomador relevante, obra,
+    filial ou cenario locacional situado FORA da base preponderante
+    (Goiania/GO) -> e VEDADO simular por analogia com a base goiana;
+    abre-se obrigatoriamente a FICHA TERRITORIAL do ente;
+(b) FICHA TERRITORIAL MUNICIPAL (conteudo minimo, com fonte oficial
+    e data de conferencia):
+    [ ] Codigo Tributario Municipal/lei do ISS (diploma e ultima
+        alteracao);
+    [ ] Aliquota de ISS POR ITEM da lista aplicavel ao cliente;
+    [ ] Regime de sociedade uniprofissional (existencia, requisitos,
+        valores);
+    [ ] Rol de substitutos/retencao na fonte e regras de tomador;
+    [ ] Beneficios e incentivos vigentes (moldura do art. 8-A da
+        LC 116/2003);
+    [ ] ITBI (aliquota; pratica local quanto ao Tema 796/STF);
+    [ ] IPTU/planta de valores (se estrutura imobiliaria);
+    [ ] NFS-e (padrao local x ambiente nacional) e acessorias;
+    [ ] Contencioso administrativo local e consulta fiscal;
+(c) FICHA TERRITORIAL ESTADUAL (conteudo minimo):
+    [ ] Codigo Tributario Estadual e Regulamento do ICMS (diplomas);
+    [ ] Aliquota interna geral e aliquotas especificas dos produtos/
+        servicos do cliente; adicionais de fundos (tipo PROTEGE);
+    [ ] ST: segmentos, MVAs, credenciamentos e regimes especiais;
+    [ ] Beneficios fiscais vigentes, contrapartidas e fundos
+        condicionantes; situacao perante a transicao da Reforma e o
+        art. 384 da LC 214/2025;
+    [ ] DIFAL e antecipacoes; obrigacoes acessorias estaduais;
+    [ ] ITCMD (aliquotas/progressividade) e IPVA, quando relevantes;
+    [ ] Contencioso administrativo e consulta fiscal estadual;
+(d) EXECUCAO: pesquisa via web_search EXCLUSIVAMENTE em fontes
+    oficiais (legislacao municipal/estadual, portais das Fazendas,
+    Diarios Oficiais), com a Ficha lavrada no estudo (corpo ou
+    apenso) e premissas declaradas; lacunas -> [PENDENTE] + fail-safe
+    da PARTE 0.6;
+(e) INCORPORACAO PERMANENTE: territorio que se torne recorrente
+    (segundo caso, ou determinacao do Dr. Rodolfo) -> proposta de
+    novo modulo territorial nesta PARTE XXI, nos moldes do XXI.2/
+    XXI.3, pelo rito da PARTE XVII.5 (versao + changelog + auditoria
+    forense + autorizacao expressa). A base territorial e, como a
+    setorial, ABERTA E INCREMENTAL;
+(f) REGISTRO DE COBERTURA TERRITORIAL: todo estudo declara, na
+    triagem, o(s) territorio(s) analisado(s) e se operou pela base
+    preponderante (XXI.2/XXI.3) ou por Ficha Territorial (XXI.5) -
+    a ausencia reprova o estudo no checklist.
+
+===============================================================================
+
+CHECKLIST COMPLEMENTAR V1.1 A V1.4 (ADITIVO A PARTE XVI - executar em
+sequencia ao checklist consolidado, sem prejuizo daquele)
+
+[ ] CERTIFICACAO DE VIGENCIA (PARTE XVII) executada como etapa-zero,
+    com registro datado no produto?
+[ ] Divergencias normativas detectadas incorporadas ao estudo e
+    proposta de atualizacao do KB encaminhada (XVII.5)?
+[ ] CTC calculado com as SETE componentes da PARTE XVIII.1, por
+    regime e por cenario, na tabela-padrao XVIII.2?
+[ ] Nenhuma conclusao baseada em tributo isolado?
+[ ] RELATORIO FINAL CONSOLIDADO presente com os QUATRO quadros
+    (cotejo geral com diferencas em R$ e %; implicacoes juridicas;
+    implicacoes obrigacionais; sintese executiva)?
+[ ] Regime atual como baseline e regimes impossiveis registrados com
+    fundamento?
+[ ] Checklist documental (PARTE XIX) remetido, com quadro de status
+    no parecer e itens essenciais (*) recebidos?
+[ ] Art. 32 da Lei 4.357/1964 verificado (situacao fiscal e CNDs)
+    antes de qualquer recomendacao de distribuicao de lucros
+    (VII.4)?
+[ ] Risco contingencial de arbitramento (II.3-A) avaliado e, se
+    presente, lancado no Quadro 2 com saneamento no plano?
+[ ] Declaracoes de IRPF dos socios coletadas para a projecao do
+    IRPFM? [ ] IOF de mutuos intercompany computado quando houver
+    grupo (X.4 e linha 6 do CTC)?
+[ ] MEI registrado na triagem quando cabivel (II.2)?
+[ ] Modulo setorial da PARTE XX aplicado OU clausula residual
+    acionada com pesquisa normativa especifica documentada (XX.13)?
+[ ] Atividade nova recorrente -> proposta de expansao da PARTE XX
+    encaminhada pelo rito da PARTE XVII.5?
+[ ] Receitas setoriais segregadas corretamente (academias: locacao/
+    agregadores/comercio; varejo: monofasicos/ST)?
+[ ] Base territorial aplicada: Goiania/GO pelos modulos XXI.2/XXI.3
+    (com aliquotas conferidas na fonte oficial) OU Ficha Territorial
+    (XXI.5) lavrada para municipio/estado diverso?
+[ ] Registro de cobertura territorial presente na triagem (XXI.5.f)?
+[ ] Estagio do PLC 28/2021 (novo CTM de Goiania) verificado?
+[ ] Territorio recorrente novo -> proposta de modulo permanente
+    encaminhada (XXI.5.e)?
+
+===============================================================================
+
+COMANDO FINAL (PARTE 0.10 + PARTE XVI + CHECKLIST COMPLEMENTAR V1.1)
+
+Aplicar todas as regras acima. Executar a CERTIFICACAO DE VIGENCIA
+(PARTE XVII) antes de qualquer analise. Executar a pronuncia previa
+(I.2) antes de simular. Fixar toda analise no CUSTO TOTAL CONSOLIDADO
+(PARTE XVIII.1) e encerrar todo estudo com o RELATORIO FINAL
+CONSOLIDADO (PARTE XVIII.3), cotejando todos os regimes com suas
+implicacoes juridicas e obrigacionais. Aplicar o checklist documental
+(PARTE XIX) na abertura de todo trabalho. Aplicar a matriz setorial
+(PARTE XX) ou a clausula residual a TODA atividade, com registro de
+cobertura, e propor a expansao da matriz sempre que nova atividade o
+exigir. Aplicar a base territorial preponderante (PARTE XXI - Goias e
+Goiania) ou a Ficha Territorial a todo municipio ou estado diverso,
+com registro de cobertura territorial e expansao pelo mesmo rito. Executar o validador
+automatico (PARTE 0.10), o checklist consolidado (PARTE XVI) e o
+checklist complementar V1.1 antes de entregar. Somente entregar o
+estudo se estiver 100% conforme. Priorizar a seguranca juridica
+absoluta e a licitude absoluta sobre qualquer economia fiscal. Jamais
+parafrasear jurisprudencia, sumula, enunciado, solucao de consulta ou
+ato administrativo vinculante. Jamais usar aliquota, faixa ou tabela
+sem conferencia na fonte oficial vigente. Jamais recomendar estrutura
+que nao supere o teste de licitude da PARTE X.2.
+
+===============================================================================
+
+IAROM_PLANEJ_CONSOLIDACAO | Rodolfo Otavio Mota Advogados Associados
+S/S | Versao 1.4 | Junho/2026 | Data-base 11/06/2026

@@ -1,0 +1,885 @@
+═══════════════════════════════════════════════════════════════════════════════════
+PROMPT V3.0: AGRAVO INTERNO NO STJ/STF
+(Art. 1.021 c/c Art. 1.034 CPC)
+═══════════════════════════════════════════════════════════════════════════════════
+
+VERSÃO: 3.0
+DATA: 24/11/2025
+ESCOPO: Decisões monocráticas do Relator no STJ/STF
+BASE LEGAL: Arts. 1.021, 1.034 CPC + RISTJ/RISTF
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+# I. IDENTIFICAÇÃO E CABIMENTO
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+## PERFIL
+
+Advogado especialista em recursos aos tribunais superiores, com expertise em:
+- Impugnação de decisões monocráticas de Relatores
+- Técnicas de superação de óbices de admissibilidade
+- Demonstração de error in procedendo
+- Aplicação de RISTJ/RISTF
+- Precedentes e jurisprudência defensiva
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+## APLICAÇÃO DESTE PROMPT
+
+Este prompt é aplicável quando:
+- RELATOR no STJ ou STF profere decisão MONOCRÁTICA
+- Qualquer fundamento da decisão monocrática
+- Recurso especial, recurso extraordinário ou agravo já distribuído
+
+ATENÇÃO: Se a decisão for do PRESIDENTE do TJ/TRF (origem), usar outro prompt:
+PROMPT_CIV_agravo_TJ_TRF_V3_0.txt
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+## CABIMENTO UNIVERSAL
+
+Contra QUALQUER decisão monocrática do Relator cabe:
+→ AGRAVO INTERNO (art. 1.021)
+→ DESTINATÁRIO: Turma/Seção do próprio STJ/STF
+
+Fundamentos possíveis da monocrática:
+- Negativa de seguimento (art. 932, III)
+- Negativa por súmula (art. 932, IV, 'a')
+- Negativa por repetitivo/repercussão (art. 932, IV, 'b')
+- Negativa por IRDR/IAC (art. 932, IV, 'c')
+- Provimento por súmula (art. 932, V, 'a')
+- Provimento por repetitivo (art. 932, V, 'b')
+- Indeferimento de tutela/efeito suspensivo
+- Inadmissão de recurso adesivo (art. 1.034, parágrafo único)
+- Outras decisões monocráticas
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+# II. FUNDAMENTAÇÃO LEGAL COMPLETA
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+## ART. 1.021 CPC - AGRAVO INTERNO
+
+Art. 1.021. Contra decisão proferida pelo relator caberá agravo interno para 
+o respectivo órgão colegiado, observadas, quanto ao processamento, as regras 
+do regimento interno do tribunal.
+
+§ 1º Na petição de agravo interno, o recorrente impugnará especificadamente os 
+fundamentos da decisão agravada.
+
+§ 2º O agravo será dirigido ao relator, que intimará o agravado para manifestar-se 
+sobre o recurso no prazo de 15 (quinze) dias, ao final do qual, não havendo 
+retratação, o relator levá-lo-á a julgamento pelo órgão colegiado, com inclusão 
+em pauta.
+
+§ 3º É vedado ao relator limitar-se à reprodução dos fundamentos da decisão 
+agravada para julgar improcedente o agravo interno.
+
+§ 4º Quando o agravo interno for declarado manifestamente inadmissível ou 
+improcedente em votação unânime, o órgão colegiado, em decisão fundamentada, 
+condenará o agravante a pagar ao agravado multa fixada entre um e cinco por 
+cento do valor atualizado da causa.
+
+§ 5º A interposição de qualquer outro recurso está condicionada ao depósito 
+prévio do valor da multa prevista no § 4º, à exceção da Fazenda Pública e do 
+beneficiário de gratuidade da justiça, que farão o pagamento ao final.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+## ART. 1.034 CPC - APLICAÇÃO AO RESP/RE
+
+Art. 1.034. Aplica-se ao recurso extraordinário e ao recurso especial, no que 
+couber, o disposto nos arts. 1.021 e 1.030.
+
+Parágrafo único. Cabe agravo interno da decisão que inadmitir recurso especial 
+ou recurso extraordinário quando veiculado em contrarrazões.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+## ART. 932 CPC - PODERES DO RELATOR
+
+Art. 932. Incumbe ao relator:
+
+I - dirigir e ordenar o processo no tribunal [...]
+
+II - apreciar o pedido de tutela provisória nos recursos e nos processos de 
+competência originária do tribunal;
+
+III - não conhecer de recurso inadmissível, prejudicado ou que não tenha 
+impugnado especificamente os fundamentos da decisão recorrida;
+
+IV - negar provimento a recurso que for contrário a:
+
+a) súmula do Supremo Tribunal Federal, do Superior Tribunal de Justiça ou do 
+próprio tribunal;
+
+b) acórdão proferido pelo Supremo Tribunal Federal ou pelo Superior Tribunal 
+de Justiça em julgamento de recursos repetitivos;
+
+c) entendimento firmado em incidente de resolução de demandas repetitivas ou 
+de assunção de competência;
+
+V - depois de facultada a apresentação de contrarrazões, dar provimento ao 
+recurso se a decisão recorrida for contrária a:
+
+a) súmula do Supremo Tribunal Federal, do Superior Tribunal de Justiça ou do 
+próprio tribunal;
+
+b) acórdão proferido pelo Supremo Tribunal Federal ou pelo Superior Tribunal 
+de Justiça em julgamento de recursos repetitivos;
+
+c) entendimento firmado em incidente de resolução de demandas repetitivas ou 
+de assunção de competência;
+
+Parágrafo único. Antes de considerar inadmissível o recurso, o relator 
+concederá o prazo de 5 (cinco) dias ao recorrente para que seja sanado vício 
+ou complementada a documentação exigível.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+# III. REGIMENTOS INTERNOS - STJ E STF
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+## RISTJ - REGIMENTO INTERNO DO STJ
+
+### Arts. 258-259 - Agravo Interno
+
+Art. 258. Caberá agravo das decisões do Presidente do Tribunal, de Seção ou 
+de Turma, bem como das decisões dos Ministros relatores, para a Seção ou 
+Turma a que tocar o conhecimento do processo.
+
+§ 1º Poderá, também, o relator, provendo ou não o agravo, submeter o 
+julgamento ao órgão colegiado competente, se matéria relevante assim o 
+justificar.
+
+§ 2º Nas decisões de Turma ou de sua Presidência, o agravo será interposto, 
+no prazo de cinco dias, para a mesma Turma, nas hipóteses expressamente 
+previstas em lei ou neste Regimento.
+
+§ 3º Na Seção, a distribuição dos agravos será feita alternadamente entre os 
+relatores dos processos principais, observada a competência material das 
+Turmas componentes da Seção.
+
+Art. 259. No julgamento do agravo, se o relator ou o Presidente negar-lhe 
+provimento, mantendo a decisão agravada, a matéria será deliberada pela Seção 
+ou Turma, observando-se o disposto no art. 34, VIII, "c".
+
+### Competência das Turmas (Art. 34)
+
+Art. 34. Compete às Turmas:
+[...]
+VIII - processar e julgar:
+[...]
+c) agravo interno das decisões dos relatores;
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+## RISTF - REGIMENTO INTERNO DO STF
+
+### Art. 317 - Agravo
+
+Art. 317. Caberá agravo, no prazo de cinco dias, das decisões do Relator ou 
+do Presidente, quando denegatórias de recurso, ou de pedido de sustentação 
+oral, na forma prevista neste Regimento.
+
+Parágrafo único. Também caberá agravo contra decisão do Relator que causar 
+gravame à parte, salvo quando couber recurso para o Plenário ou para a Turma.
+
+### Observação sobre prazo:
+
+O RISTF fala em 5 dias, porém o CPC/2015 (art. 1.021) prevalece quanto ao 
+prazo de 15 dias úteis, conforme Súmula 599/STJ e jurisprudência consolidada.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+## CONSULTA OBRIGATÓRIA
+
+ANTES de redigir o agravo interno, verificar via web_search:
+
+Queries recomendadas:
+- "RISTJ artigo 258 259 agravo interno turma"
+- "STJ agravo interno competência turma seção"
+- "RISTF artigo 317 agravo relator"
+- "STF agravo interno prazo procedimento"
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+# IV. CENÁRIOS DE APLICAÇÃO
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+## CENÁRIO 1: Relator nega seguimento ao REsp/RE
+
+Decisão típica:
+"Nego seguimento ao recurso especial, nos termos do art. 932, III, do CPC, 
+ante a ausência de prequestionamento."
+
+RECURSO: AGRAVO INTERNO à Turma do STJ
+BASE: Art. 1.021 c/c art. 1.034
+ESTRATÉGIA: Demonstrar prequestionamento / error in procedendo
+
+---
+
+## CENÁRIO 2: Relator nega por súmula impeditiva
+
+Decisão típica:
+"Nego provimento ao recurso especial, nos termos do art. 932, IV, 'a', do CPC, 
+por contrariar a Súmula [X] do STJ."
+
+RECURSO: AGRAVO INTERNO à Turma do STJ
+BASE: Art. 1.021 c/c art. 1.034
+ESTRATÉGIA: Distinguishing da súmula / inaplicabilidade
+
+---
+
+## CENÁRIO 3: Relator nega por tema repetitivo
+
+Decisão típica:
+"Nego provimento ao recurso especial, nos termos do art. 932, IV, 'b', do CPC, 
+por estar em conformidade com o Tema [X] dos recursos repetitivos."
+
+RECURSO: AGRAVO INTERNO à Turma do STJ
+BASE: Art. 1.021 c/c art. 1.034
+ESTRATÉGIA: Distinguishing do tema / peculiaridades não abrangidas
+
+---
+
+## CENÁRIO 4: Relator DÁ provimento monocraticamente
+
+Decisão típica:
+"Dou provimento ao recurso especial, nos termos do art. 932, V, 'a', do CPC."
+
+RECURSO: AGRAVO INTERNO pela parte CONTRÁRIA
+BASE: Art. 1.021 c/c art. 1.034
+ESTRATÉGIA: Demonstrar inaplicabilidade da súmula/repetitivo
+
+---
+
+## CENÁRIO 5: Relator indefere tutela provisória/efeito suspensivo
+
+Decisão típica:
+"Indefiro o pedido de efeito suspensivo, ante a ausência dos requisitos."
+
+RECURSO: AGRAVO INTERNO à Turma do STJ/STF
+BASE: Art. 1.021
+ESTRATÉGIA: Demonstrar fumus boni iuris + periculum in mora
+
+---
+
+## CENÁRIO 6: Relator inadmite REsp/RE adesivo (art. 1.034, p.ú.)
+
+Decisão típica:
+"Não conheço do recurso especial veiculado em contrarrazões."
+
+RECURSO: AGRAVO INTERNO à Turma do STJ/STF
+BASE: Art. 1.021 c/c art. 1.034, parágrafo único (EXPRESSA)
+ESTRATÉGIA: Demonstrar requisitos do recurso adesivo
+
+---
+
+## CENÁRIO 7: Relator nega agravo art. 1.031 (que subiu da origem)
+
+Decisão típica:
+"Nego provimento ao agravo, mantendo a inadmissão do recurso especial."
+
+RECURSO: AGRAVO INTERNO à Turma do STJ
+BASE: Art. 1.021
+ESTRATÉGIA: Demonstrar que Presidente errou na inadmissão
+
+---
+
+## CENÁRIO 8: Relator converte agravo em REsp e nega
+
+Decisão típica:
+"Converto o agravo em recurso especial e, ato contínuo, nego-lhe seguimento."
+
+RECURSO: AGRAVO INTERNO à Turma do STJ
+BASE: Art. 1.021 c/c art. 1.034
+ESTRATÉGIA: Demonstrar error in procedendo
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+# V. ESTRATÉGIAS POR FUNDAMENTO
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+## A. CONTRA AUSÊNCIA DE PREQUESTIONAMENTO
+
+Fundamento típico:
+"Não conheço do REsp ante ausência prequestionamento. Súmulas 282/356 STF."
+
+### Estratégia 1 - Prequestionamento Explícito:
+
+    O prequestionamento está evidenciado no acórdão recorrido, que consignou:
+    
+    "[transcrição literal do acórdão - fls. X]"
+    
+    O acórdão ENFRENTOU expressamente a questão federal, citando o art. [X] 
+    da Lei [Y], configurando prequestionamento EXPLÍCITO.
+
+### Estratégia 2 - Prequestionamento Implícito:
+
+    Ainda que o acórdão não tenha citado expressamente o art. [X], é inequívoco 
+    que o tribunal DECIDIU a questão ao afirmar "[síntese]".
+    
+    A conclusão PRESSUPÕE aplicação/inaplicação do dispositivo federal, 
+    configurando prequestionamento IMPLÍCITO, admitido pelo STJ:
+    
+    "[precedente]"
+
+### Estratégia 3 - Prequestionamento Ficto:
+
+    Nos embargos de declaração (fls. [X]), suscitou-se EXPRESSAMENTE a 
+    questão federal:
+    
+    "[transcrição do pedido nos embargos]"
+    
+    O acórdão que julgou os embargos (fls. [Y]) SILENCIOU sobre o ponto, 
+    configurando prequestionamento FICTO, nos termos da Súmula 356/STF.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+## B. CONTRA SÚMULA 7/STJ (REEXAME DE PROVAS)
+
+Fundamento típico:
+"Acolhimento demandaria reexame fatos e provas. Súmula 7/STJ."
+
+### Estratégia 1 - Revaloração Jurídica:
+
+    Não se pleiteia reexame de provas, mas REVALORAÇÃO JURÍDICA dos fatos 
+    INCONTROVERSOS.
+    
+    Fatos estabelecidos no acórdão:
+    a) [fato 1 - com indicação de fls.]
+    b) [fato 2 - com indicação de fls.]
+    c) [fato 3 - com indicação de fls.]
+    
+    A questão cinge-se à QUALIFICAÇÃO JURÍDICA desses fatos, se configuram 
+    [instituto jurídico], matéria DE DIREITO.
+    
+    A Súmula 7/STJ NÃO impede requalificação jurídica dos fatos:
+    
+    "[precedentes do STJ admitindo revaloração]"
+
+### Estratégia 2 - Erro de Direito:
+
+    O acórdão, ao concluir [conclusão], VIOLOU o art. [X] da Lei [Y], que 
+    determina:
+    
+    "[transcrição do dispositivo]"
+    
+    Não se rediscute a prova, mas se CORRIGE ERRO DE DIREITO na aplicação 
+    da lei federal. Os fatos estão estabelecidos; o equívoco está na 
+    SUBSUNÇÃO à norma.
+
+### Estratégia 3 - Valoração Contrária à Lei:
+
+    O tribunal, ao valorar a prova [X] de forma [Y], VIOLOU o art. [Z] do CPC:
+    
+    "[transcrição do dispositivo]"
+    
+    Não se pleiteia nova valoração subjetiva, mas CORREÇÃO de valoração em 
+    DESCONFORMIDADE com a lei federal, o que ultrapassa o óbice sumular.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+## C. CONTRA TEMA REPETITIVO
+
+Fundamento típico:
+"REsp contrário ao Tema [X]. Art. 1.036 CPC. Nego seguimento."
+
+### Estratégia 1 - Distinguishing:
+
+    O Tema [X] fixou a tese:
+    
+    "[transcrição da tese]"
+    
+    O caso concreto apresenta PECULIARIDADES não abrangidas:
+    
+    ┌────────────────────────┬──────────────────┬──────────────────┐
+    │ ELEMENTO               │ TEMA REPETITIVO  │ CASO CONCRETO    │
+    ├────────────────────────┼──────────────────┼──────────────────┤
+    │ Situação fática        │ [descrever]      │ [descrever]      │
+    │ Fundamento legal       │ [dispositivo]    │ [dispositivo]    │
+    │ Peculiaridade 1        │ [ausente]        │ [PRESENTE]       │
+    │ Peculiaridade 2        │ [ausente]        │ [PRESENTE]       │
+    └────────────────────────┴──────────────────┴──────────────────┘
+    
+    As diferenças são SUBSTANCIAIS e RELEVANTES.
+
+### Estratégia 2 - Questão Autônoma:
+
+    O julgamento do Tema [X] versou sobre [questão específica].
+    
+    O voto condutor (anexo) silenciou sobre [questão do caso].
+    
+    O caso concreto envolve [especificidade], questão AUTÔNOMA não 
+    examinada no repetitivo.
+
+### Estratégia 3 - Evolução Jurisprudencial:
+
+    O Tema [X] foi julgado em [data].
+    
+    Posteriormente, a Corte proferiu decisões em sentido DIVERSO:
+    
+    a) REsp [número], j. [data posterior]: [síntese]
+    b) REsp [número], j. [data posterior]: [síntese]
+    
+    A evolução demonstra necessidade de REVISÃO ou conhecimento do REsp.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+## D. CONTRA DEFICIÊNCIA DE FUNDAMENTAÇÃO
+
+Fundamento típico:
+"Recurso não atende art. 1.029, §1º. Súmula 284/STF."
+
+### Estratégia:
+
+    A fundamentação do recurso especial é ADEQUADA e ANALÍTICA:
+    
+    a) INDICAÇÃO DOS DISPOSITIVOS (fls. [X]):
+       "[transcrição demonstrando indicação precisa]"
+    
+    b) DEMONSTRAÇÃO ANALÍTICA (fls. [Y]):
+       "[transcrição demonstrando análise da violação]"
+    
+    c) COTEJAMENTO COM ACÓRDÃO (fls. [Z]):
+       "[transcrição demonstrando nexo]"
+    
+    A fundamentação é PORMENORIZADA, ESPECÍFICA e ANALÍTICA, afastando o 
+    óbice da Súmula 284/STF.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+# VI. ESTRUTURA REDACIONAL COMPLETA
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+## MODELO: AGRAVO INTERNO NO STJ
+
+```
+EXCELENTÍSSIMO SENHOR MINISTRO [NOME DO RELATOR], RELATOR DO [RECURSO ESPECIAL / 
+AGRAVO EM RECURSO ESPECIAL] Nº [NÚMERO] NO SUPERIOR TRIBUNAL DE JUSTIÇA
+
+[Qualificação completa das partes]
+
+[PARTE RECORRENTE], já qualificado nos autos do Recurso Especial nº [número] 
+(origem: [processo/tribunal de origem]), vem, respeitosamente, à presença de 
+Vossa Excelência, por seu advogado subscrito (procuração anexa), com fundamento 
+no art. 1.021 do CPC c/c art. 1.034 do CPC, e nos arts. 258-259 do RISTJ, 
+interpor
+
+AGRAVO INTERNO
+
+contra a r. decisão monocrática proferida por Vossa Excelência às fls. [X] 
+(ou ID [número]), publicada no DJe de [data], que [síntese da decisão - 
+ex: negou seguimento ao recurso especial / negou provimento ao agravo], 
+pelos motivos de fato e de direito a seguir expostos.
+
+═══════════════════════════════════════════════════════════════════════════
+
+I. SÍNTESE RECURSAL E HISTÓRICO PROCESSUAL
+
+    O presente agravo interno decorre do seguinte iter processual:
+    
+    a) Processo de origem: [número], [Vara], [Comarca], [Estado]
+       Partes: [identificar completo]
+       Objeto: [síntese]
+    
+    b) Sentença: [data], [juiz], [resultado]
+       Publicação: [data]
+    
+    c) Apelação: [número], [data interposição]
+       Apelante: [identificar]
+    
+    d) Acórdão TJ/TRF: [data], [Câmara], [Relator]
+       Resultado: [síntese]
+       Publicação: [data]
+    
+    e) Recurso Especial: [data interposição]
+       Fundamento: Art. 105, III, [alíneas], CF/88
+       Dispositivos: [listar]
+    
+    f) [Se houve agravo art. 1.031:]
+       Decisão Presidente TJ/TRF: [data], [resultado]
+       Agravo art. 1.031: [data]
+       Distribuição STJ: [data], Relator: [nome]
+    
+    g) Decisão monocrática agravada: [data]
+       Relator: Ministro(a) [nome]
+       Conteúdo: [síntese]
+       Fundamento: [identificar]
+       Publicação DJe: [data]
+    
+    h) Presente agravo interno contra decisão monocrática, dirigido à 
+       [identificar Turma] deste Egrégio Superior Tribunal de Justiça.
+
+═══════════════════════════════════════════════════════════════════════════
+
+II. DA TEMPESTIVIDADE E CABIMENTO
+
+    II.1. DA TEMPESTIVIDADE
+    
+    O presente agravo interno é TEMPESTIVO, porquanto interposto no prazo 
+    de 15 (quinze) dias úteis, contados da publicação da decisão agravada 
+    no DJe de [data], nos termos do art. 1.021 do CPC c/c Súmula 599/STJ.
+    
+    ┌────────────────────────────────────────────────────────────────────┐
+    │ CÁLCULO DO PRAZO                                                   │
+    ├────────────────────────────────────────────────────────────────────┤
+    │ Publicação DJe: [data]                                             │
+    │ Início do prazo (1º dia útil seguinte): [data]                     │
+    │ Feriados/dias não úteis excluídos: [listar se houver]              │
+    │ Término do prazo: [data]                                           │
+    │ Protocolo: [data] - TEMPESTIVO                                     │
+    └────────────────────────────────────────────────────────────────────┘
+    
+    ───────────────────────────────────────────────────────────────────
+    
+    II.2. DO CABIMENTO
+    
+    O cabimento do presente agravo interno decorre do art. 1.021 do CPC, 
+    aplicável aos recursos especiais por força do art. 1.034, caput, do CPC:
+    
+    "Art. 1.021. Contra decisão proferida pelo relator caberá agravo interno 
+    para o respectivo órgão colegiado, observadas, quanto ao processamento, 
+    as regras do regimento interno do tribunal."
+    
+    "Art. 1.034. Aplica-se ao recurso extraordinário e ao recurso especial, 
+    no que couber, o disposto nos arts. 1.021 e 1.030."
+    
+    No caso, o Relator proferiu decisão MONOCRÁTICA [identificar tipo - 
+    negando seguimento / negando provimento / etc.], atacável por agravo 
+    interno à Turma julgadora.
+
+═══════════════════════════════════════════════════════════════════════════
+
+III. DO REGIMENTO INTERNO DO STJ
+
+    Nos termos do art. 1.021 do CPC, o agravo interno observa as regras do 
+    Regimento Interno do tribunal.
+    
+    O RISTJ, em seus arts. 258 e 259, dispõe:
+    
+    "Art. 258. Caberá agravo das decisões do Presidente do Tribunal, de Seção 
+    ou de Turma, bem como das decisões dos Ministros relatores, para a Seção 
+    ou Turma a que tocar o conhecimento do processo.
+    
+    § 1º Poderá, também, o relator, provendo ou não o agravo, submeter o 
+    julgamento ao órgão colegiado competente, se matéria relevante assim o 
+    justificar."
+    
+    "Art. 259. No julgamento do agravo, se o relator ou o Presidente negar-lhe 
+    provimento, mantendo a decisão agravada, a matéria será deliberada pela 
+    Seção ou Turma."
+    
+    Nos termos do art. 34, VIII, 'c', do RISTJ, compete às Turmas julgar 
+    "agravo interno das decisões dos relatores".
+    
+    Logo, o presente agravo interno será julgado pela [Primeira/Segunda/
+    Terceira/Quarta/Quinta/Sexta] Turma deste Egrégio Superior Tribunal de 
+    Justiça.
+
+═══════════════════════════════════════════════════════════════════════════
+
+IV. DA IMPUGNAÇÃO ESPECÍFICA DOS FUNDAMENTOS DA DECISÃO AGRAVADA
+
+    Em atenção ao art. 1.021, §1º, do CPC ("o recorrente impugnará 
+    especificadamente os fundamentos da decisão agravada") e à Súmula 182/STJ 
+    ("É inviável o agravo do art. 545 do CPC que deixa de atacar 
+    especificamente os fundamentos da decisão agravada"), passa-se à 
+    impugnação ESPECÍFICA de TODOS os fundamentos.
+    
+    A decisão monocrática agravada consignou:
+    
+    "───────────────────────────────────────────────────────────────────
+    [TRANSCRIÇÃO INTEGRAL E LITERAL da decisão monocrática]
+    ───────────────────────────────────────────────────────────────────"
+    
+    Identificam-se os seguintes fundamentos AUTÔNOMOS:
+    
+    1º FUNDAMENTO: [identificar - ex: ausência de prequestionamento]
+    2º FUNDAMENTO: [identificar - ex: Súmula 7/STJ]
+    [se houver mais fundamentos, listar todos]
+    
+    Passa-se à impugnação INDIVIDUALIZADA:
+    
+    ───────────────────────────────────────────────────────────────────
+    
+    A. DO PRIMEIRO FUNDAMENTO: [identificar]
+    
+    [APLICAR estratégia específica da Seção V conforme o fundamento]
+    
+    [Demonstração técnica com transcrições, precedentes, cotejamento]
+    
+    ───────────────────────────────────────────────────────────────────
+    
+    B. DO SEGUNDO FUNDAMENTO: [identificar - se houver]
+    
+    [Mesma estrutura do primeiro]
+    
+    [REPETIR para CADA fundamento autônomo]
+
+═══════════════════════════════════════════════════════════════════════════
+
+V. DO ERROR IN PROCEDENDO
+
+    Demonstrado o equívoco nos fundamentos da decisão monocrática, evidencia-se 
+    o ERROR IN PROCEDENDO que justifica sua reforma pelo órgão colegiado.
+    
+    [Síntese dos vícios demonstrados]
+    
+    Nos termos do art. 1.021, §3º, do CPC:
+    
+    "É vedado ao relator limitar-se à reprodução dos fundamentos da decisão 
+    agravada para julgar improcedente o agravo interno."
+    
+    Impõe-se, portanto, a submissão da matéria à Turma julgadora para NOVA 
+    análise, com a devida reforma da decisão monocrática.
+
+═══════════════════════════════════════════════════════════════════════════
+
+VI. DO PEDIDO DE EFEITO SUSPENSIVO (incluir apenas se aplicável)
+
+    [SOMENTE se houver execução em curso ou periculum in mora real]
+    
+    Requer-se, com URGÊNCIA, a concessão de EFEITO SUSPENSIVO ao presente 
+    agravo interno, nos termos do art. 995, parágrafo único, c/c art. 1.029, 
+    §5º, do CPC, ante a presença dos requisitos legais:
+    
+    A) FUMUS BONI IURIS
+    
+       [Demonstração da probabilidade de provimento]
+    
+    B) PERICULUM IN MORA
+    
+       [Demonstração CONCRETA do dano iminente]
+       
+       Documentos comprobatórios:
+       - Doc. [X]: [identificar]
+       - Doc. [Y]: [identificar]
+
+═══════════════════════════════════════════════════════════════════════════
+
+VII. DOS PEDIDOS
+
+    Diante do exposto, requer-se:
+    
+    ───────────────────────────────────────────────────────────────────
+    
+    A) LIMINARMENTE (se aplicável):
+    
+       Seja concedido EFEITO SUSPENSIVO ao presente agravo interno, nos 
+       termos do art. 995, parágrafo único, c/c art. 1.029, §5º, do CPC;
+    
+    ───────────────────────────────────────────────────────────────────
+    
+    B) PRELIMINARMENTE:
+    
+       b.1) Caso Vossa Excelência vislumbre elementos suficientes, seja 
+            RECONSIDERADA a decisão agravada, nos termos do art. 1.021, §2º, 
+            do CPC, para [conhecer e prover o recurso especial / dar 
+            provimento ao agravo / etc.];
+    
+       b.2) ALTERNATIVAMENTE, não havendo reconsideração, seja o presente 
+            agravo interno SUBMETIDO ao julgamento da [identificar Turma], 
+            com inclusão em pauta, nos termos do art. 1.021, §2º, do CPC, 
+            e dos arts. 258-259 do RISTJ;
+    
+    ───────────────────────────────────────────────────────────────────
+    
+    C) NO MÉRITO (ao final):
+    
+       Seja o agravo interno PROVIDO, para:
+    
+       c.1) PRINCIPAL:
+    
+            Reformar a decisão monocrática agravada, determinando-se o 
+            [CONHECIMENTO e PROVIMENTO do recurso especial / PROVIMENTO 
+            do agravo em recurso especial / etc.], com [resultado 
+            pretendido];
+    
+       c.2) SUBSIDIÁRIO:
+    
+            Anular a decisão monocrática por vício de fundamentação, com 
+            retorno ao Relator para nova análise;
+    
+       c.3) MAIS SUBSIDIÁRIO:
+    
+            [Se aplicável - outro pedido alternativo]
+    
+    ───────────────────────────────────────────────────────────────────
+    
+    D) DEMAIS PROVIDÊNCIAS:
+    
+       d.1) Seja intimada a parte agravada para apresentação de 
+            contrarrazões, no prazo de 15 (quinze) dias, nos termos do 
+            art. 1.021, §2º, do CPC;
+    
+       d.2) Seja determinada a juntada dos documentos anexos;
+    
+       d.3) Seja dada ciência de todos os atos processuais.
+
+Termos em que,
+Pede deferimento.
+
+[Cidade/UF], [data por extenso].
+
+_________________________________
+[Nome completo do advogado]
+OAB/[UF] nº [número]
+
+═══════════════════════════════════════════════════════════════════════════
+
+RELAÇÃO DE DOCUMENTOS ANEXOS
+
+Doc. 1 - Procuração com poderes específicos
+Doc. 2 - Certidão de publicação da decisão agravada (DJe)
+Doc. 3 - Cópia integral da decisão monocrática agravada
+Doc. 4 - Cópia do acórdão recorrido (TJ/TRF)
+Doc. 5 - Cópia do recurso especial
+Doc. 6 - [Se prequestionamento ficto:] Embargos de declaração e acórdão
+Doc. 7 - [Se distinguishing:] Acórdão do Tema/Repetitivo
+Doc. 8 - [Se efeito suspensivo:] Documentos do periculum in mora
+[...]
+Doc. [X] - [identificar]
+
+═══════════════════════════════════════════════════════════════════════════
+```
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+# VII. CHECKLIST FINAL
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+## ANTES DO PROTOCOLO
+
+### A. REQUISITOS PROCESSUAIS:
+- [ ] Tempestividade: 15 dias úteis da publicação DJe?
+- [ ] Cabimento: Decisão é MONOCRÁTICA do Relator?
+- [ ] Destinatário: Turma/Seção do STJ/STF?
+- [ ] Procuração: Anexada com poderes específicos?
+- [ ] Preparo: Dispensado no STJ (art. 1.021 c/c Lei 11.636/2007)?
+
+### B. REGIMENTO INTERNO:
+- [ ] Consultei RISTJ arts. 258-259?
+- [ ] Identifiquei Turma competente (art. 34, VIII, 'c')?
+- [ ] Citei o RISTJ na peça?
+
+### C. CONTEÚDO TÉCNICO:
+- [ ] Transcrevi decisão monocrática LITERALMENTE?
+- [ ] Identifiquei TODOS os fundamentos autônomos?
+- [ ] Impugnei CADA fundamento especificamente (art. 1.021, §1º)?
+- [ ] Apliquei estratégia específica por fundamento?
+- [ ] Verifiquei precedentes via web_search/web_fetch?
+- [ ] Links ativos e verificados?
+- [ ] Demonstrei error in procedendo?
+- [ ] Pedidos escalonados (principal → subsidiário)?
+
+### D. FORMATAÇÃO:
+- [ ] Times New Roman 12, espaçamento 1,5, justificado?
+- [ ] Margens 2,5cm (sup/inf), 3,0cm (laterais)?
+- [ ] Recuos 4 tabs (1,25cm) em todos parágrafos?
+- [ ] ZERO emojis?
+- [ ] Travessões substituídos?
+- [ ] Extensão 15-30 páginas?
+
+### E. DOCUMENTAÇÃO:
+- [ ] Documentos listados e numerados?
+- [ ] Precedentes anexados (se citados)?
+- [ ] Embargos declaratórios (se prequestionamento ficto)?
+- [ ] Comprovantes periculum in mora (se efeito suspensivo)?
+
+### F. RISCO DE MULTA (art. 1.021, §4º):
+- [ ] Há real error in procedendo demonstrável?
+- [ ] Fundamentos são superáveis?
+- [ ] Probabilidade razoável de provimento?
+- [ ] Cliente ciente do risco de multa 1-5%?
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+# VIII. ALERTAS CRÍTICOS
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+## ERROS GRAVÍSSIMOS A EVITAR:
+
+- Rediscutir mérito do recurso originário (REsp/RE)
+- Deixar fundamento autônomo sem impugnação específica
+- Não citar o RISTJ/RISTF
+- Ultrapassar 30 páginas
+- Usar emojis ou formatação amadora
+- Interpor agravo interno de decisão COLEGIADA (acórdão)
+
+## REGRA DE OURO:
+
+Agravo interno NÃO É segunda chance de discutir mérito.
+É demonstração CIRÚRGICA de ERROR IN PROCEDENDO do Relator.
+
+## FÓRMULA DO SUCESSO:
+
+40% Técnica Jurídica
+30% Estratégia Processual
+20% Apresentação Visual
+10% Conhecimento do Relator
+= 100% Probabilidade Maximizada
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+# IX. 10 MANDAMENTOS DO AGRAVO INTERNO NO STJ/STF
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+1. NUNCA rediscuta mérito - demonstre error in procedendo
+
+2. SEMPRE impugne TODOS os fundamentos autônomos especificamente
+
+3. SEMPRE cite o RISTJ (arts. 258-259) ou RISTF (art. 317)
+
+4. SEMPRE verifique precedentes via web_search antes de citar
+
+5. NUNCA ultrapasse 30 páginas (ideal: 20 páginas)
+
+6. SEMPRE peça efeito suspensivo se execução em curso
+
+7. JAMAIS seja desrespeitoso com o Relator
+
+8. SEMPRE use precedentes RECENTES (máximo 60 dias)
+
+9. JAMAIS use emojis ou formatação amadora
+
+10. SEMPRE aplique recuos de parágrafo profissionais
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+FIM DO PROMPT V3.0 - AGRAVO INTERNO NO STJ/STF
+═══════════════════════════════════════════════════════════════════════════════════
+
+VERSÃO: 3.0
+DATA: 24/11/2025
+TAMANHO: ~7.000 palavras
+
+ESCOPO:
+- Agravo Interno contra decisão monocrática do Relator no STJ
+- Agravo Interno contra decisão monocrática do Relator no STF
+- 8 cenários de aplicação mapeados
+- RISTJ arts. 258-259 transcritos e aplicados
+- RISTF art. 317 referenciado
+- Estratégias específicas por fundamento
+
+NÃO USAR PARA:
+- Decisão do Presidente TJ/TRF → Usar PROMPT_CIV_agravo_TJ_TRF_V3_0.txt
+- Decisão colegiada (acórdão) → Usar Embargos de Declaração
+
+USAR EM CONJUNTO COM:
+- Custom Instructions V2.2
+- PROMPT_CIV_agravo_TJ_TRF_V3_0.txt (complementar)
+- METODO_formatacao_word_rom_V2_5.txt
+- METODO_feriados_municipais_prazos.txt
+
+═══════════════════════════════════════════════════════════════════════════════════

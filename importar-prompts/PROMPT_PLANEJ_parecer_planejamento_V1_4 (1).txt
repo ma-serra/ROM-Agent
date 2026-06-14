@@ -1,0 +1,426 @@
+PROMPT_PLANEJ_PARECER_PLANEJAMENTO - MODELO REDACIONAL DO PARECER/
+ESTUDO DE PLANEJAMENTO TRIBUTARIO ROM
+Rodolfo Otavio Mota Advogados Associados S/S
+Versao 1.4 | Junho/2026 | Status: Ativo
+
+ALTERACOES DA V1.4 (vs V1.3):
+- Vinculacao atualizada ao consolidado V1.4 (PARTES XII a XXI);
+- Secao III ganha o REGISTRO DE COBERTURA TERRITORIAL (PARTE XXI.5.f);
+- Secao IX passa a exigir, para territorio diverso de Goiania/GO, a
+  FICHA TERRITORIAL como apenso; checklist ampliado; nada suprimido.
+
+ALTERACOES DA V1.3 (vs V1.2):
+- Vinculacao atualizada ao consolidado V1.3 (PARTES XII a XX);
+- Secao III (Triagem) ganha o REGISTRO DE COBERTURA SETORIAL
+  (PARTE XX.13 do consolidado);
+- Checklist redacional ampliado; nada suprimido.
+
+ALTERACOES DA V1.2 (vs V1.1) - auditoria forense de junho/2026:
+- Secao VII ganha a pre-condicao do art. 32 da Lei 4.357/1964
+  (paragrafo-modelo proprio);
+- Tabela 11 (Quadro 2) passa a contemplar as linhas contingenciais
+  de arbitramento e do art. 32, quando presentes;
+- Checklist redacional (PARTE D) ampliado;
+- Vinculacao atualizada ao consolidado V1.2; nada suprimido.
+
+ALTERACOES DA V1.1 (vs V1.0):
+- Secao II ganha o QUADRO DE CONFERENCIA DOCUMENTAL vinculado a
+  PARTE XIX do consolidado V1.1;
+- Acrescida a Secao XII-A (RELATORIO FINAL CONSOLIDADO), com a
+  Tabela 10 de cotejo geral entre todos os regimes e os quadros de
+  implicacoes juridicas e obrigacionais (PARTE XVIII.3);
+- A Secao XIII (Conclusao) passa a extrair-se EXPRESSAMENTE do
+  Relatorio Final Consolidado e do Custo Total Consolidado (CTC);
+- Ressalvas (Secao XV) incorporam o CERTIFICADO DE VIGENCIA
+  (PARTE XVII.4);
+- Checklist redacional (PARTE D) ampliado;
+- Nenhum conteudo da V1.0 suprimido.
+
+VINCULACAO NORMATIVA: opera SOB as Custom Instructions V1.0.0 e SOB o
+IAROM_PLANEJ_CONSOLIDACAO_V1_4.txt (em especial PARTE 0, prevalente, e
+PARTES XII a XXI). Este arquivo NAO contem regras novas de merito:
+contem a MOLDURA REDACIONAL do produto final. Os colchetes [ ] indicam
+campos a preencher com dados reais do caso; jamais entregues vazios
+(Principio 4 - completude imediata) salvo como [PENDENTE: descricao].
+
+===============================================================================
+PARTE A - REGRAS REDACIONAIS DO PARECER
+===============================================================================
+
+A.1 IDENTIDADE DO DOCUMENTO
+- Titulo: "PARECER JURIDICO-TRIBUTARIO" ou "ESTUDO DE PLANEJAMENTO
+  TRIBUTARIO", seguido de numeracao interna [PT-AAAA-NNN] e da
+  identificacao do cliente;
+- Autoria: Dr. Rodolfo Otavio Pereira da Mota Oliveira - OAB/GO 21.841
+  (e co-autores do caso, conforme designacao);
+- Formatacao ROM: Times New Roman 12pt, espacamento 1,5, justificado,
+  margens 2,5cm sup/inf e 3,0cm laterais, recuo 1,25cm; citacoes
+  literais com recuo 2,5cm/1,0cm, italico, espacamento simples;
+  sem emojis; sem travessoes (hifens simples); tabelas com bordas
+  simples e fonte 10-11pt quando necessario ao enquadramento;
+- Linguagem: tecnica, serena, assertiva. Conclusoes com linguagem de
+  certeza condicionada a premissas ("demonstra-se que", "impoe-se
+  concluir que", "a carga apurada e de"), NUNCA promessas de exito
+  nem percentuais de probabilidade;
+- Fase 2: nenhuma referencia a metodologia interna, a blocos, a
+  "Partes" do KB ou a instrumentos de IA. As tecnicas sao aplicadas,
+  nao explicadas.
+
+A.2 NUMEROS NO CORPO DO TEXTO
+- Valores monetarios por extenso na primeira ocorrencia relevante de
+  cada secao conclusiva ("R$ 412.380,00 (quatrocentos e doze mil,
+  trezentos e oitenta reais)");
+- Toda tabela com: titulo numerado, premissas em nota ao pe da
+  tabela, dispositivo legal de cada aliquota e DATA-BASE da
+  conferencia normativa;
+- Memoria de calculo: sintetizada no corpo; integral em APENSO
+  (planilha xlsx ou anexo ao docx), referenciado no texto.
+
+A.3 CITACOES
+Jurisprudencia, sumulas, SC COSIT e atos vinculantes exclusivamente
+conforme a PARTE 0 do consolidado (transcricao integral ipsis
+litteris, com fonte completa em paragrafo proprio). Legislacao:
+indicar diploma, artigo, paragrafo, inciso e redacao vigente
+("art. 14, I, da Lei 9.718/1998, na redacao vigente").
+
+===============================================================================
+PARTE B - MOLDURA REDACIONAL SECAO A SECAO
+===============================================================================
+
+[CABECALHO]
+
+PARECER JURIDICO-TRIBUTARIO [PT-AAAA-NNN]
+
+CONSULENTE: [razao social], pessoa juridica de direito privado,
+inscrita no CNPJ sob o no [ ], com sede em [endereco completo,
+municipio/UF], neste ato representada por [ ].
+OBJETO: [sintese em uma frase: "analise comparativa dos regimes de
+tributacao e avaliacao de reorganizacao societaria, com projecao dos
+efeitos da Reforma Tributaria do consumo"].
+DATA-BASE NORMATIVA: [DD/MM/AAAA]. DADOS ECONOMICOS: [periodo].
+
+-------------------------------------------------------------------------------
+
+I - DA CONSULTA E DO OBJETO
+
+Paragrafo-modelo:
+"A Consulente submeteu a exame deste escritorio a definicao do regime
+de tributacao mais eficiente para o exercicio de [AAAA], bem como a
+avaliacao de [reorganizacao societaria / segregacao de atividades /
+estrutura de remuneracao dos socios], considerados os dados economicos
+do periodo de [ ] a [ ] e o cenario normativo vigente na data-base
+deste parecer, inclusive o regime de transicao instituido pela Emenda
+Constitucional no 132/2023 e pela Lei Complementar no 214/2025."
+
+II - DOS FATOS E DADOS RELEVANTES
+
+Conteudo obrigatorio: quadro societario (com participacoes dos socios
+em outras empresas), CNAEs e descricao REAL das atividades,
+estabelecimentos e municipios, receita bruta dos ultimos 12 meses
+(tabela mensal), composicao da receita por atividade e por perfil de
+cliente (PF/PJ; regime regular/Simples), folha e pro-labore, margem,
+creditos, regime atual e carga efetiva atual, beneficios em fruicao,
+saldos credores, estoque de lucros ate 31/12/2025 e respectiva ata.
+Incluir o QUADRO DE CONFERENCIA DOCUMENTAL (PARTE XIX do
+consolidado): Tabela - BLOCO/ITEM | STATUS (RECEBIDO / PENDENTE /
+INAPLICAVEL) | OBSERVACAO. Itens essenciais (*) pendentes impedem a
+conclusao do estudo (registrar).
+Fechar com:
+"Os dados acima foram fornecidos pela Consulente e por sua
+contabilidade, constituindo premissas deste parecer. Os documentos
+recebidos e pendentes constam do quadro de conferencia documental;
+as pendencias listadas na Secao XV condicionam as conclusoes
+correspondentes."
+
+III - DA TRIAGEM DE ENQUADRAMENTO
+
+Tabela 1 - REGIME | POSSIVEL? | FUNDAMENTO LEGAL | OBSERVACAO
+Paragrafo-modelo (exemplo de vedacao):
+"A Consulente nao esta obrigada a apuracao pelo lucro real, porquanto
+nao incide qualquer das hipoteses do art. 14 da Lei no 9.718/1998,
+conforme verificacao individualizada: [enumerar I a VII com o
+resultado]. De outro lado, verifica-se impedimento ao Simples
+Nacional, por forca do art. 3, par. 4, [inciso], da Lei Complementar
+no 123/2006, uma vez que [fato concreto]."
+Encerrar a triagem com o REGISTRO DE COBERTURA SETORIAL (PARTE XX.13
+do consolidado), em paragrafo proprio:
+"A atividade da Consulente foi examinada sob o modulo setorial de
+[setor] / mediante pesquisa normativa especifica, cujas fontes
+constam de [nota/apenso], inexistindo regime especial nao considerado
+neste estudo."
+E com o REGISTRO DE COBERTURA TERRITORIAL (PARTE XXI.5.f):
+"A analise territorial operou pela base preponderante de Goiania/GO
+(CTM - Lei no 5.040/1975 e CTE - Lei estadual no 11.651/1991, com as
+aliquotas conferidas nas fontes oficiais em [data]) / pela Ficha
+Territorial de [municipio/UF], anexa, elaborada em fontes oficiais
+em [data]."
+
+IV - DO ENQUADRAMENTO NORMATIVO
+
+Sequencia: CF (principios e EC 132/2023) -> CTN -> legislacao federal
+especifica -> legislacao estadual -> legislacao municipal ->
+jurisprudencia e atos vinculantes (PARTE 0). Apenas as normas
+EFETIVAMENTE empregadas nas simulacoes e recomendacoes.
+
+V - DAS SIMULACOES COMPARATIVAS
+
+Tabela 2 (por cenario) - estrutura da PARTE XIII.1 do consolidado.
+Paragrafo-modelo de leitura:
+"No cenario-base, a carga anual total apurada e de R$ [ ] no Simples
+Nacional (aliquota efetiva global de [ ]%), R$ [ ] no lucro presumido
+([ ]%) e R$ [ ] no lucro real ([ ]%), ja computados os encargos
+previdenciarios e o custo de conformidade de cada regime. O ponto de
+equilibrio entre o lucro real e o presumido situa-se na margem liquida
+de [ ]%, ao passo que a margem efetiva da Consulente e de [ ]%, o que
+[favorece/desfavorece] o regime presumido."
+Subsecoes obrigatorias: V.1 cenario conservador; V.2 cenario-base;
+V.3 cenario de expansao (com teste de teto e sublimite); V.4 pontos
+de equilibrio; V.5 [se houver] comparativo COM e SEM a reorganizacao.
+
+VI - DA ANALISE PREVIDENCIARIA E DE ENCARGOS
+
+Tabela 3 - saida da PARTE VI.5 do consolidado.
+Paragrafo-modelo:
+"Sobre a folha de R$ [ ]/mes incidem, fora do Simples Nacional,
+contribuicao patronal de 20% (art. 22, I e III, da Lei no 8.212/1991),
+RAT ajustado de [ ]% (grau de risco [ ] x FAP [ ]) e contribuicoes a
+terceiros de [ ]% (FPAS [ ]), alem do FGTS de 8%, totalizando custo
+de [ ]% sobre a folha. No Simples Nacional, Anexos I, II, III e V, a
+contribuicao patronal e substituida pelo recolhimento unificado, do
+que resulta economia previdenciaria anual de R$ [ ]."
+
+VII - DA REMUNERACAO DOS SOCIOS
+
+Tabela 4 - tres composicoes (PARTE VII.2 do consolidado): carga total
+empresa + socio.
+Paragrafo-modelo:
+"A partir de 1/1/2026, por forca do art. 6-A da Lei no 7.713/1988,
+incluido pela Lei no 15.270/2025, a distribuicao de lucros superior a
+R$ 50.000,00 mensais ao mesmo socio sujeita-se a retencao de 10%,
+computavel na tributacao minima anual. Na composicao recomendada,
+o pro-labore de R$ [ ] [atende ao Fator R de 28% / minimiza a carga
+conjunta], resultando custo total anual de R$ [ ], contra R$ [ ] da
+composicao atual."
+[Quando houver estoque pre-2026:] "Os lucros apurados ate 31/12/2025,
+cuja distribuicao foi aprovada pela ata de [data], permanecem regidos
+pela isencao anterior, observadas as condicoes legais de pagamento."
+Paragrafo-modelo da pre-condicao (art. 32 da Lei 4.357/1964):
+"Registra-se, como pressuposto de toda distribuicao de lucros aqui
+recomendada, a inexistencia de debito nao garantido perante a Uniao e
+suas autarquias previdenciarias, nos termos do art. 32 da Lei no
+4.357/1964, conforme [relatorio de situacao fiscal/certidoes] de
+[data]. [Se houver debito:] A distribuicao fica condicionada a previa
+regularizacao do debito apontado, mediante [pagamento/parcelamento/
+garantia], inserida como providencia inaugural do plano de
+implementacao."
+
+VIII - DAS OBRIGACOES ACESSORIAS E DO CUSTO DE CONFORMIDADE
+
+Tabela 5 - obrigacoes por regime (PARTE VIII do consolidado) + linha
+de custo anual estimado. Alerta-padrao de 2026:
+"Registra-se que o cumprimento das obrigacoes acessorias relativas ao
+IBS e a CBS condiciona, no exercicio de 2026, a dispensa de
+recolhimento prevista no art. 348 da Lei Complementar no 214/2025,
+impondo-se a adequacao imediata dos documentos fiscais eletronicos da
+Consulente as notas tecnicas vigentes."
+
+IX - DA DIMENSAO MUNICIPAL E ESTADUAL
+
+Conteudo: aliquota concreta de ISS por item de servico e municipio
+(Goiania: art. 57 do CTM, tabela vigente conferida), retencoes,
+[se aplicavel] regime de sociedade de profissionais (Goiania: art.
+53, III, do CTM) com quantificacao e mapa de risco, ICMS/GO (CTE/
+RCTE, aliquota interna vigente, ST, TARE, creditos outorgados,
+ProGoias) e incentivos com situacao da habilitacao do art. 384 da
+LC 214/2025. Para territorio diverso da base preponderante: FICHA
+TERRITORIAL (PARTE XXI.5) obrigatoriamente apensada e referida.
+
+X - DA REORGANIZACAO SOCIETARIA [SE APLICAVEL]
+
+Conteudo vinculado a PARTE X do consolidado: descricao da estrutura
+ANTES/DEPOIS; quadro comparativo de carga; TESTE DE LICITUDE
+documentado item a item (anterioridade, substancia, proposito
+negocial, ausencia de dissimulacao, independencia operacional,
+limites penais); salvaguardas documentais.
+Paragrafo-modelo do proposito negocial:
+"A segregacao proposta sustenta-se em razoes negociais autonomas e
+documentaveis, a saber: [enumerar - segregacao de riscos operacionais,
+governanca, sucessao, exigencia de mercado], as quais subsistem
+independentemente do efeito tributario, este legitimamente decorrente
+da liberdade de auto-organizacao empresarial (art. 170 da CF/88),
+exercida ANTES da ocorrencia dos fatos geradores e mediante estruturas
+dotadas de substancia propria."
+
+XI - DO IMPACTO DA REFORMA TRIBUTARIA
+
+Tabela 6 - tres fotografias temporais (PARTE XI.6 do consolidado):
+FOTOGRAFIA | CARGA TOTAL | ALIQUOTA EFETIVA | VARIACAO vs ATUAL |
+OBSERVACOES. [Se houver vantagem locacional ou de credito:] Tabela 7 -
+curva de perda ano a ano 2026-2033.
+Ressalva-padrao:
+"As projecoes das fotografias 2 e 3 adotam, como premissa declarada,
+[as aliquotas de referencia fixadas pela Resolucao do Senado no ... /
+a estimativa oficial mais recente, de ...%], sujeitando-se a revisao
+conforme a regulamentacao superveniente da Lei Complementar no
+214/2025."
+
+XII - DOS RISCOS IDENTIFICADOS
+
+Tabela 8 - ITEM DO PLANO | CLASSIFICACAO (REMOTO/POSSIVEL/PROVAVEL) |
+FUNDAMENTO | CONSEQUENCIA PATRIMONIAL ESTIMADA DE AUTUACAO (tributo +
+multa + juros) | SALVAGUARDA.
+Sem percentuais de exito. Itens de risco PROVAVEL: paragrafo de alerta
+destacado + registro de que a adocao depende de decisao expressa da
+Consulente (modelo de termo na PARTE C).
+
+XII-A - DO RELATORIO FINAL CONSOLIDADO
+
+Conteudo vinculado a PARTE XVIII.3 do consolidado - QUATRO quadros
+obrigatorios:
+
+Tabela 10 - COTEJO GERAL ENTRE TODOS OS REGIMES (Quadro 1): uma
+coluna por regime juridicamente possivel + coluna do REGIME ATUAL
+(baseline) + registro dos regimes impossiveis com o fundamento da
+vedacao; linhas da tabela-padrao do CTC (PARTE XVIII.2: tributos,
+previdencia patronal, FGTS e provisoes, folha bruta e pro-labore,
+tributos da remuneracao dos socios, retencoes, conformidade, CTC
+TOTAL, CTC tributario-previdenciario, resultado liquido disponivel),
+encerrando com DIFERENCA vs regime atual (R$ e %), DIFERENCA vs
+melhor colocado (R$ e %) e RANKING.
+
+Tabela 11 - IMPLICACOES JURIDICAS POR REGIME (Quadro 2): fundamento
+legal da opcao | condicoes de ingresso e permanencia | vedacoes |
+janela e mecanica da opcao | irretratabilidade | riscos classificados
+| jurisprudencia/atos vinculantes pertinentes (conforme PARTE 0).
+Linhas contingenciais quando presentes: risco de ARBITRAMENTO (PARTE
+II.3-A do consolidado) e vedacao do art. 32 da Lei 4.357/1964 (PARTE
+VII.4 do consolidado), ambas com consequencia patrimonial estimada.
+
+Tabela 12 - IMPLICACOES OBRIGACIONAIS POR REGIME (Quadro 3):
+obrigacoes acessorias | periodicidade e prazos | custo de
+conformidade | obrigacoes da transicao da Reforma | penalidades
+tipicas.
+
+SINTESE EXECUTIVA (Quadro 4 - uma pagina): regime recomendado |
+economia anual vs atual (R$ e %) | tres condicoes de validade mais
+sensiveis | tres riscos mais relevantes com classificacao | tres
+primeiras providencias do plano | data da proxima reavaliacao.
+
+Paragrafo-modelo de leitura:
+"O cotejo consolidado da Tabela 10 demonstra que o custo total
+consolidado anual - compreendendo tributos, encargos previdenciarios
+e trabalhistas, folha, tributacao da remuneracao dos socios,
+retencoes e custo de conformidade - e de R$ [ ] no [regime A], R$ [ ]
+no [regime B] e R$ [ ] no [regime C], contra R$ [ ] no regime atual,
+do que resulta diferenca de R$ [ ] ([ ]%) em favor do [regime
+vencedor], com as implicacoes juridicas e obrigacionais discriminadas
+nas Tabelas 11 e 12."
+
+XIII - DA CONCLUSAO E DA RECOMENDACAO
+
+Paragrafo-modelo:
+"Diante do exposto, e com esteio no Relatorio Final Consolidado da
+Secao XII-A, impoe-se concluir que, mantidas as premissas da
+Secao II, o regime de MENOR CUSTO TOTAL CONSOLIDADO para o exercicio
+de [AAAA] e o [regime], com CTC anual projetado de R$ [ ] e economia
+de R$ [ ] ([ ]%) em relacao ao regime atual, ja consideradas a folha
+e seus encargos, a carga previdenciaria integral, a tributacao da
+remuneracao dos socios, as obrigacoes acessorias e o custo de
+conformidade.
+A recomendacao e valida nas seguintes condicoes: [enumerar - faixas
+de faturamento, manutencao do quadro societario, implementacao das
+salvaguardas da Secao X]."
+
+XIV - DO PLANO DE IMPLEMENTACAO
+
+Tabela 9 - ATO | RESPONSAVEL | PRAZO/JANELA | OBSERVACAO. Itens
+minimos: janela de opcao anual (janeiro - pagamento da primeira quota
+ou PGDAS), atos societarios e registros, comunicacoes fiscais,
+adequacao de DFe (IBS/CBS), habilitacao do art. 384 (se aplicavel),
+contratos intercompany e atas de proposito negocial (se aplicavel),
+calendario de reavaliacao.
+
+XV - DAS RESSALVAS
+
+Texto-padrao (abre com o CERTIFICADO DE VIGENCIA - PARTE XVII.4):
+"As normas, tabelas e aliquotas empregadas neste parecer foram
+conferidas em fontes oficiais em [DD/MM/AAAA], constatando-se [a
+vigencia integral / as alteracoes incorporadas: ...]. Este parecer
+baseia-se nos dados fornecidos pela Consulente,
+relacionados na Secao II, e na legislacao vigente na data-base
+indicada. Permanecem pendentes: [lista]. A materia tributaria
+encontra-se em transicao normativa intensa, notadamente quanto a
+regulamentacao da Lei Complementar no 214/2025 e da Lei no
+15.270/2025, recomendando-se a reavaliacao deste estudo antes de cada
+janela anual de opcao de regime e a cada marco relevante da transicao.
+Este parecer nao constitui garantia de resultado em eventual
+contencioso, refletindo a avaliacao tecnica fundamentada na data de
+sua emissao."
+
+[FECHO]
+"E o parecer. Goiania/GO, [data por extenso].
+[Assinaturas - titular e co-autores, com OAB]"
+
+===============================================================================
+PARTE C - PECAS ACESSORIAS DO PARECER (MODELOS)
+===============================================================================
+
+C.1 TERMO DE CIENCIA E DECISAO (itens de risco PROVAVEL)
+"TERMO DE CIENCIA - A Consulente declara haver recebido e compreendido
+o Parecer [PT-AAAA-NNN], em especial a Secao XII, que classifica o item
+[descricao] como de risco provavel de questionamento pela
+administracao tributaria, com consequencia patrimonial estimada de
+R$ [ ] em caso de autuacao, e, ciente das alternativas apresentadas,
+DECIDE [adotar/nao adotar] a estrutura, assumindo a decisao
+empresarial correspondente. Local, data, assinatura do representante."
+
+C.2 ATA-MODELO DE REGISTRO DE PROPOSITO NEGOCIAL (reorganizacoes)
+Conteudo minimo: data REAL da deliberacao, presentes, exposicao dos
+motivos negociais (riscos, governanca, sucessao, mercado), aprovacao
+da estrutura, autorizacoes para os atos de implementacao. VEDADA
+qualquer retrodatacao (Principio 8).
+
+C.3 APENSO DE MEMORIA DE CALCULO
+Planilha xlsx com: aba de premissas e fontes normativas datadas; aba
+por regime simulado; aba de cenarios; aba de fotografias da Reforma;
+aba de remuneracao dos socios. Valores rastreaveis as tabelas do
+parecer celula a celula.
+
+===============================================================================
+PARTE D - CHECKLIST REDACIONAL FINAL (APOS PARTE 0.10 E PARTE XVI DO
+CONSOLIDADO)
+===============================================================================
+
+[ ] Todas as Secoes I a XV presentes (X e tabelas condicionais apenas
+    quando aplicaveis, com registro de inaplicabilidade quando nao)?
+[ ] Nenhum colchete vazio; pendencias apenas como [PENDENTE] na
+    Secao XV?
+[ ] Tabelas numeradas, com premissas, fontes e data-base?
+[ ] Citacoes conforme PARTE 0 (ipsis litteris, recuo, fonte completa)?
+[ ] Linguagem de certeza condicionada; zero percentuais de exito?
+[ ] Termo de ciencia preparado para todo item de risco provavel?
+[ ] Fase 2 aplicada (nenhuma referencia metodologica interna)?
+[ ] Formatacao ROM integral no docx; apenso xlsx consistente?
+[ ] Quadro de conferencia documental presente na Secao II, com itens
+    essenciais (*) recebidos?
+[ ] Secao XII-A presente com os quatro quadros (Tabelas 10-12 +
+    sintese executiva), diferencas em R$ e % e regime atual como
+    baseline?
+[ ] Conclusao extraida expressamente do CTC e do Relatorio Final
+    Consolidado?
+[ ] Certificado de vigencia datado na abertura das Ressalvas?
+[ ] Pre-condicao do art. 32 da Lei 4.357/1964 verificada e lancada na
+    Secao VII (e na Tabela 11, se houver debito)?
+[ ] Linha contingencial de arbitramento na Tabela 11, quando a
+    contabilidade for deficiente?
+[ ] Declaracoes de IRPF dos socios refletidas na projecao do IRPFM
+    (Secao VII)?
+[ ] Registro de cobertura setorial presente no fecho da Secao III
+    (modulo da PARTE XX aplicado ou clausula residual com fontes)?
+[ ] Registro de cobertura territorial presente (base Goiania/GO com
+    aliquotas conferidas ou Ficha Territorial apensada)?
+
+===============================================================================
+
+PROMPT_PLANEJ_parecer_planejamento | Rodolfo Otavio Mota Advogados
+Associados S/S | Versao 1.4 | Junho/2026

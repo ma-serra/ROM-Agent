@@ -1,0 +1,21 @@
+{
+  "name": "tribunais-2grau-mcp-server",
+  "version": "1.0.0",
+  "description": "Servidor MCP do ROM: roteia decisões de qualquer tribunal brasileiro (TJ/TRF/TRT) pelo número CNJ, consulta DataJud e DJEN, e monta o rol de anexos (inteiro teor, voto, certidão de julgamento).",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": { "tribunais-2grau-mcp-server": "dist/index.js" },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "node --test dist/lib.test.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.23.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "@types/node": "^22.0.0"
+  }
+}

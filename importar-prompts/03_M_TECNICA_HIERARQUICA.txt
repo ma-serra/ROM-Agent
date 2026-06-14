@@ -1,0 +1,637 @@
+===============================================================================
+MODULO: TECNICA ARGUMENTATIVA HIERARQUICA
+SISTEMA ROM V3.0 — RODOLFO OTAVIO MOTA ADVOGADOS ASSOCIADOS
+03_M_TECNICA_HIERARQUICA.txt
+===============================================================================
+
+ARQUIVO:  03_M_TECNICA_HIERARQUICA.txt
+VERSAO:   3.0
+DATA:     30/03/2026
+AUTOR:    Dr. Rodolfo Otavio Pereira da Mota Oliveira — OAB/GO 21.841
+STATUS:   COMPLETO
+ESCOPO:   Criminal — estrutura argumentativa hierarquica para todas as
+          pecas do sistema ROM V3.0
+
+DESCRICAO:
+Este modulo define a estrutura argumentativa e a logica de construcao de
+toda peca criminal do escritorio. Todo prompt especifico deve obedecer
+esta tecnica antes de estruturar qualquer secao de merito.
+
+DEPENDENCIAS: 01_MASTER_ROM_V3.txt (principios gerais), prompt especifico
+da peca em elaboracao.
+
+===============================================================================
+SUMARIO
+===============================================================================
+
+PARTE I   — ESTRUTURA PIRAMIDAL: LOGICA GERAL
+PARTE II  — HIERARQUIA OBRIGATORIA DA PECA
+PARTE III — TECNICA DE CADA NIVEL HIERARQUICO
+PARTE IV  — MODELOS DE ARGUMENTACAO POR TIPO DE TESE
+PARTE V   — TECNICA ANTI-SUMULA 7/STJ
+PARTE VI  — DISTINGUISHING E OVERRULING
+PARTE VII — ESCALONAMENTO DE PEDIDOS SEM REDUNDANCIAS
+PARTE VIII— CHECKLIST DE ESTRUTURA ARGUMENTATIVA
+
+===============================================================================
+PARTE I — ESTRUTURA PIRAMIDAL: LOGICA GERAL
+===============================================================================
+
+I. PRINCIPIO FUNDAMENTAL
+
+A argumentacao criminal segue estrutura piramidal: do mais amplo (mais
+favoravel ao reu — prejudica totalmente a acusacao) para o mais restrito
+(menos favoravel ao reu — corrijo apenas um aspecto da condenacao).
+
+Cada nivel e subsidiario do anterior: so se chega ao nivel inferior se o
+nivel superior nao for acolhido. Nenhum nivel pode ser omitido se houver
+fundamento para ele.
+
+II. MAPA PIRAMIDAL UNIVERSAL
+
+NIVEL 1 — INADMISSIBILIDADE / EXTINCAO DA PUNIBILIDADE
+          (elimina o processo sem julgamento de merito)
+          Prescricao, decadencia, perempção, abolitio criminis,
+          amnistia, morte do agente, inepcia da denuncia,
+          incompetencia absoluta.
+
+NIVEL 2 — NULIDADES ABSOLUTAS
+          (anulam o processo desde o vicio, sem julgamento de merito)
+          Falta de defesa tecnica efetiva, prova ilicita determinante,
+          ausencia de exame de corpo de delito obrigatorio (art. 158, CPP),
+          violacao do contraditorio em ato essential, reconhecimento nulo.
+
+NIVEL 3 — ABSOLVICAO POR MERITO
+          (absolvem sem nova instrucao)
+          Atipicidade formal, atipicidade material (insignificancia),
+          excludentes de ilicitude, excludentes de culpabilidade,
+          falta de prova da autoria, falta de prova da materialidade,
+          in dubio pro reo (art. 386, VII, CPP).
+
+NIVEL 4 — DESCLASSIFICACAO
+          (mantem condenacao mas para tipo menos grave)
+          Crime doloso → culposo; qualificado → simples;
+          roubo → furto; trafico → uso; lesao grave → leve.
+
+NIVEL 5 — DOSIMETRIA DA PENA
+          (mantem condenacao e tipificacao, corrige a pena)
+          Pena-base (art. 59, CP), agravantes/atenuantes (arts. 61-66, CP),
+          causas de aumento/diminuicao, regime, substituicao, sursis.
+
+III. REGRA DE SUBSIDIARIEDADE
+
+Cada nivel e apresentado sob a formula "subsidiariamente" ou "na hipotese
+de nao ser acolhido o pedido anterior" — nunca "mais subsidiariamente" ou
+"ainda mais subsidiariamente" (vedado pelo sistema ROM — ver Parte VII).
+
+IV. HIERARQUIA INTERNA EM CADA NIVEL
+
+Dentro de cada nivel, os argumentos tambem seguem ordem:
+a) Do mais antigo no tempo processual ao mais recente
+   (vicio na denuncia antes de vicio na instrucao)
+b) Do mais grave ao menos grave (nulidade absoluta antes de relativa)
+c) Do mais favoravel ao reu ao menos favoravel
+
+===============================================================================
+PARTE II — HIERARQUIA OBRIGATORIA DA PECA
+===============================================================================
+
+I. ESTRUTURA-PADRAO DA RAZOES DE MERITO
+
+CAPITULO I — ADMISSIBILIDADE
+   I.A — Tempestividade (com demonstracao de datas e contagem)
+   I.B — Legitimidade ativa
+   I.C — Cabimento (recurso adequado para a decisao impugnada)
+   I.D — Dialeticidade (impugnacao especifica dos fundamentos)
+
+CAPITULO II — MATERIAS DE ORDEM PUBLICA (se presentes)
+   II.A — Prescricao em todas as formas (analise obrigatoria)
+   II.B — Outras causas de extincao da punibilidade
+   II.C — Inepcia da denuncia
+   II.D — Incompetencia absoluta
+
+CAPITULO III — NULIDADES
+   III.A — Nulidades absolutas (nao precluem — arguiveis a qualquer tempo)
+   III.B — Nulidades relativas (arguidas tempestivamente)
+   [Para cada nulidade: (1) fundamento legal, (2) demonstracao,
+    (3) prejuizo, (4) efeito pretendido]
+
+CAPITULO IV — MERITO: ABSOLVICAO
+   IV.A — Atipicidade formal ou material
+   IV.B — Excludentes de ilicitude (art. 23, CP)
+   IV.C — Excludentes de culpabilidade (arts. 22, 26, 28, CP)
+   IV.D — Insuficiencia probatoria (in dubio pro reo — art. 386, VII, CPP)
+
+CAPITULO V — MERITO: DESCLASSIFICACAO (subsidiario ao IV)
+   [Somente se a absolvicao nao for acolhida]
+
+CAPITULO VI — DOSIMETRIA (subsidiario ao V)
+   VI.A — Primeira fase: circunstancias judiciais (art. 59, CP)
+   VI.B — Segunda fase: agravantes e atenuantes (arts. 61-66, CP)
+   VI.C — Terceira fase: causas de aumento e de diminuicao
+   VI.D — Regime inicial de cumprimento (art. 33, CP)
+   VI.E — Substituicao por penas restritivas (art. 44, CP) ou sursis
+
+CAPITULO VII — PREQUESTIONAMENTO EXPLICITO
+   [Todos os dispositivos CF, CPP, CP, leis especiais e tratados]
+
+II. REGRA DO FUNDAMENTO AUTONOMO
+
+Se a sentenca tem mais de um fundamento autonomo para a condenacao (ex.:
+prova testemunhal E prova documental, cada uma suficiente por si so para
+condenar), CADA fundamento autonomo deve ser impugnado individualmente.
+A nao impugnacao de fundamento autonomo mantem a condenacao intacta,
+tornando inutil o provimento dos demais argumentos.
+Analogia: Sumula 283/STF aplicada ao ambito criminal.
+
+===============================================================================
+PARTE III — TECNICA DE CADA NIVEL HIERARQUICO
+===============================================================================
+
+I. TECNICA PARA NULIDADES
+
+Para cada nulidade, a argumentacao deve conter obrigatoriamente:
+
+ELEMENTO 1 — FUNDAMENTO LEGAL:
+"O art. [X] do CPP/CP/CF determina que [transcricao do dispositivo]."
+
+ELEMENTO 2 — DEMONSTRACAO DO VICIO:
+"No presente caso, [descrever exatamente como o vicio ocorreu], conforme
+se verifica [nas fls. X / no ID do movimento X / na certidao de X]."
+
+ELEMENTO 3 — PREJUIZO CONCRETO:
+"O prejuizo decorrente do vicio e [especificar concretamente]: se o
+vicio nao tivesse ocorrido, [demonstrar como o resultado seria diferente].
+A ausencia de prejuizo nao se presume — e demonstrada pelos proprios
+autos [fundamento]."
+[ATENCAO: nulidades absolutas — o prejuizo e presumido em algumas;
+verificar posicao do STJ via web_search antes de arguir]
+
+ELEMENTO 4 — EFEITO PRETENDIDO:
+"A nulidade e de carater absoluto / relativo, e o seu reconhecimento
+deve acarretar [anulacao desde X ato / anulacao da prova / anulacao
+da sentenca], com [determinacao de novo julgamento / absolvicao /
+exclusao da prova do conjunto probatorio]."
+
+II. TECNICA PARA ABSOLVICAO POR MERITO
+
+PASSO 1: Identificar o artigo especifico do art. 386 do CPP:
+   I   — nao haver prova da existencia do fato
+   II  — nao haver prova de ter o reu concorrido para a infração
+   III — nao constituir o fato infração penal
+   IV  — estar provado que o reu nao concorreu para a infração
+   V   — nao existir prova de ter o reu concorrido para a infração
+   VI  — existirem circunstancias que excluam o crime ou isentem o reu
+   VII — nao existir prova suficiente para a condenacao
+
+PASSO 2: Demonstrar o requisito do inciso com dados concretos dos autos.
+
+PASSO 3: Citar precedente do STJ ou STF que aplique o inciso ao tipo
+de situacao do caso. (web_search obrigatorio)
+
+PASSO 4: Concluir com a formula:
+"[Demonstracao concreta]. Dessa forma, a absolvicao e medida que se
+impoe, nos termos do art. 386, [inciso], do Codigo de Processo Penal."
+
+III. TECNICA PARA DOSIMETRIA
+
+Para cada vicio de dosimetria, a argumentacao deve conter:
+
+ELEMENTO 1 — IDENTIFICACAO DO VICIO:
+"Na [1a / 2a / 3a] fase da dosimetria, a r. sentenca [descrever o vicio:
+valorou negativamente sem fundamento / incorreu em bis in idem /
+nao reconheceu atenuante obrigatoria / aplicou fracao incorreta]."
+
+ELEMENTO 2 — LOCALIZACAO NA SENTENCA:
+"Conforme consta da sentenca a fls. [X] (ou ID de movimento [X]):
+'[transcricao literal do trecho da sentenca que contem o vicio]'."
+
+ELEMENTO 3 — FUNDAMENTO DA IMPUGNACAO:
+"A referida valoracao e ilegal, pois [norma violada — art. 59, 61, 65,
+etc., CP + fundamentacao juridica detalhada]. O STJ [citar precedente —
+web_search] firmou o entendimento de que [descrever a posicao do STJ]."
+
+ELEMENTO 4 — CALCULO CORRETO:
+"Com a correcao do vicio, a pena [base/intermediaria/definitiva] deve
+ser fixada em [X anos e X meses], correspondente a [calculo detalhado]."
+
+IV. TECNICA PARA PRESCRICAO
+
+Ver 01_MASTER_ROM_V3.txt — Modulo 11.
+Adicionar ao argumento:
+
+FORMULA PADRAO M1 (transcricao literal adaptavel):
+"A pretensao punitiva estatal encontra-se prescrita pela pena concreta
+aplicada na sentenca. Nos termos do art. 110, par. 1o, do Codigo Penal,
+a prescricao retroativa e calculada pela pena em concreto imposta, com
+marco inicial na data do recebimento da denuncia ([DATA]) e marco final
+na data da publicacao da sentenca ([DATA]). A pena aplicada de [X anos]
+corresponde ao prazo prescricional de [Y anos] (art. 109, [inciso], do CP).
+O periodo entre [marco 1] e [marco 2] foi de [Z anos e Z meses], superior
+ao prazo prescricional, razao pela qual a extincao da punibilidade deve ser
+reconhecida com fundamento no art. 107, IV, do Codigo Penal."
+
+===============================================================================
+PARTE IV — MODELOS DE ARGUMENTACAO POR TIPO DE TESE
+===============================================================================
+
+I. INEPCIA DA DENUNCIA POR GENERICIDADE
+
+"A denuncia e inepta por ausencia de narrativa minima dos fatos com as
+circunstancias exigidas pelo art. 41 do Codigo de Processo Penal. A peca
+acusatoria nao descreve [especificar: a data exata / o local especifico /
+o modo de execucao / as elementares do tipo penal]. A genericidade da
+narrativa impossibilita tecnicamente: (a) a aplicacao da norma material
+correta a data dos fatos, para verificar se ha lei mais benigna; (b) a
+analise da prescricao concreta, pois sem data precisa o calculo e inviavel;
+(c) a dosimetria correta, pois as circunstancias do crime nao foram
+descritas; (d) a verificacao da continuidade delitiva, pois as condicoes
+de tempo, lugar e modo de execucao sao imprecisas. A inepcia, que acarreta
+ofensa ao contraditorio e a ampla defesa (CF, art. 5o, LV), e materia de
+ordem publica, nao sujeita a preclusao, reconhecivel a qualquer tempo."
+
+II. AUSENCIA DE EXAME DE CORPO DE DELITO
+
+"Nos termos do art. 158 do Codigo de Processo Penal, quando a infração
+deixar vestigios, e indispensavel o exame de corpo de delito, direto ou
+indireto, nao podendo supri-lo a confissao do acusado. No presente caso,
+o crime de [tipo penal] deixa vestigios [especificar], e o exame de corpo
+de delito nao foi realizado [ou foi realizado de forma incompleta —
+especificar a incompletude]. A ausencia do exame pericial obrigatorio
+constitui nulidade do processo, reconhecivel de oficio, devendo ser
+declarada com fundamento no art. 158 c/c arts. 564, III, 'b', e 573
+do CPP."
+
+III. PROVA ILICITA — TEORIA DOS FRUTOS DA ARVORE ENVENENADA
+
+"A prova [especificar] e ilicita por violacao ao [especificar direito:
+inviolabilidade de domicilio — art. 5o, XI, CF; sigilo das comunicacoes —
+art. 5o, XII, CF; integridade fisica — art. 5o, III, CF]. Conforme se
+verifica a fls. [X], [descrever como a prova foi obtida e demonstrar a
+violacao concreta]. A prova ilicita contamina todas as provas dela derivadas
+(teoria dos frutos da arvore envenenada), quais sejam: [especificar as
+provas derivadas], nos termos do art. 5o, LVI, da CF/88 e do art. 157,
+par. 1o, do CPP. O nexo causal entre a prova ilicita e as provas derivadas
+e demonstrado por [especificar]. Nao se aplica a teoria da fonte
+independente, pois [refutar a excecao]. Excluidas a prova ilicita e suas
+derivadas, o acervo probatorio remanescente e insuficiente para sustentar
+a condenacao, impondo-se a absolvicao nos termos do art. 386, [II ou VII],
+do CPP."
+
+IV. FALTA DE FUNDAMENTACAO DA SENTENCA
+
+"A r. sentenca recorrida viola o dever constitucional de fundamentacao
+previsto no art. 93, IX, da Constituicao Federal e no art. 381, III, do
+Codigo de Processo Penal, ao deixar de enfrentar o argumento [descrever
+com precisao — fls./ID onde foi suscitado], que, se apreciado, seria
+plenamente capaz de alterar o resultado do julgamento, pois [demonstrar
+o impacto concreto]. A utilizacao de fundamentacao per relationem,
+limitando-se a remeter a [ato anterior], configura vicio insanavel por
+carecer de motivacao propria [se aplicavel]. A exigencia de fundamentacao
+adequada nao e mera formalidade processual, mas garantia constitucional
+derivada do art. 93, IX, da Constituicao Federal, cuja violacao acarreta
+a nulidade da decisao."
+
+V. INSUFICIENCIA PROBATORIA — IN DUBIO PRO REO
+
+"A condenacao nao encontra respaldo em provas seguras e suficientes. O
+acervo probatorio resume-se a [descrever brevemente as provas existentes],
+sem qualquer elemento tecnico ou pericial que vincule o Apelante ao crime
+de forma segura. Ha hipoteses alternativas razoaveis que a acusacao nao
+descartou: [especificar as hipoteses]. No processo penal democratico, a
+condenacao exige prova alem de duvida razoavel — standard que nao foi
+atingido. Na presenca de duvida razoavel, o principio in dubio pro reo
+impoe a absolvicao, nos termos do art. 386, VII, do Codigo de Processo
+Penal. A conduta do juiz a quo, ao condenar diante de prova fragil e
+contraditoria, viola o standard probatorio exigido pela presuncao de
+inocencia (CF, art. 5o, LVII) e pelo art. 386, VII, do CPP."
+
+VI. RECONHECIMENTO IRREGULAR
+
+"O reconhecimento do [Apelante/Paciente] como autor do crime nao observou
+as formalidades do art. 226 do Codigo de Processo Penal. A norma exige
+procedimento escalonado: (I) descricao previa da pessoa a ser reconhecida;
+(II) apresentacao do suspeito ao lado de outras pessoas que com ele tenham
+qualquer semelhanca; (III) lavratura de auto pormenorizado. No caso, [descrever
+com precisao qual formalidade foi descumprida — ex.: 'o suspeito foi
+apresentado isoladamente, sem outras pessoas para o processo de reconhecimento;
+nao houve descricao previa pela testemunha']. O STJ, no julgamento do HC
+598.886/SC [verificar dados via web_search], operou mudanca paradigmatica ao
+consagrar que o descumprimento das formalidades do art. 226 invalida o
+reconhecimento — que passa a ser prova nula, e nao apenas de menor valor.
+O reconhecimento irregular nao pode ser utilizado como prova da autoria.
+Sendo este o unico elemento que vincula o [Apelante/Paciente] ao fato, a
+absolvicao e medida que se impoe por falta de prova da autoria."
+
+VII. BIS IN IDEM NA DOSIMETRIA
+
+"A r. sentenca incorreu em dupla valoracao proibida (bis in idem) ao
+utilizar [circunstancia X] tanto como [elemento do tipo / qualificadora /
+agravante] quanto como [circunstancia judicial da 1a fase / agravante /
+causa de aumento da 3a fase]. Uma mesma circunstancia nao pode ser
+utilizada mais de uma vez para prejudicar o reu na dosimetria — e o que
+vedada expressamente pela jurisprudencia consolidada do STJ [citar
+precedente verificado via web_search]. Com a exclusao do bis in idem,
+a pena [base/intermediaria/definitiva] deve ser reduzida de [X] para
+[Y]."
+
+VIII. CONFISSAO NAO RECONHECIDA COMO ATENUANTE
+
+"O [Apelante/Reu] confessou espontaneamente a pratica do crime em seu
+interrogatorio judicial (fls. [X], ID de movimento [X]). A confissao
+espontanea, nos termos do art. 65, III, 'd', do Codigo Penal, e
+circunstancia atenuante obrigatoria, que deve ser reconhecida
+independentemente de ser parcial ou de o reu tentar justificar sua
+conduta — conforme assentado na Sumula [numero]/STJ [verificar via
+web_search]. A r. sentenca nao reconheceu a atenuante, o que configura
+erro na segunda fase da dosimetria, devendo a pena intermediaria ser
+reduzida de [X] para [Y], em conformidade com o art. 65, III, 'd', do
+Codigo Penal."
+
+IX. REGIME INICIAL — FUNDAMENTACAO INSUFICIENTE
+
+"O regime [semiaberto/fechado] fixado na sentenca e inadequado. A pena
+definitiva de [X anos] [autoriza regime aberto/semiaberto], nos termos
+do art. 33, [paragrafo], do Codigo Penal. A fixacao de regime mais
+gravoso exige fundamentacao concreta e especifica que demonstre a
+necessidade da medida no caso concreto — o que nao ocorreu. A r. sentenca
+[nao fundamentou / fundamento-se genericamente na gravidade abstrata do
+crime — vedada pelo STF]. Sao aplicaveis a Sumula 718/STF ('e inadmissivel
+a fixacao de pena substitutiva, quando nao fundamentada') e a Sumula
+719/STF ('a imposicao do regime de cumprimento mais severo do que a
+pena aplicada permitir exige motivacao idônea') [verificar vigencia via
+web_search]. O regime adequado e o [aberto/semiaberto], devendo a sentenca
+ser reformada nesse ponto."
+
+X. COLABORACAO PREMIADA — CORROBORACAO INSUFICIENTE
+
+"A condenacao fundou-se, em parte essencial, nas declaracoes do
+colaborador [nome], sem que tais declaracoes tenham sido corroboradas
+por provas independentes. O art. 4o, par. 16, da Lei 12.850/2013 e
+expresso: nenhuma sentenca condenatoria sera proferida com fundamento
+apenas nas declaracoes de agente colaborador. O STJ [citar precedente
+verificado via web_search] exige que as declaracoes do colaborador
+sejam amparadas por elementos extrinsecamente corroborativos. No caso,
+[demonstrar que as outras provas sao insuficientes ou que decorrem das
+proprias declaracoes do colaborador]. A ausencia de corroboracao
+suficiente impede que a colaboracao premiada sirva de fundamento
+exclusivo ou preponderante para a condenacao."
+
+XI. DESCLASSIFICACAO — AUSENCIA DE QUALIFICADORA
+
+"A qualificadora [especificar] reconhecida na sentenca nao encontra
+amparo probatorio nos autos. Para sua configuracao, e necessario
+demonstrar [elementares especificas da qualificadora]. No caso, a propria
+sentenca registra que [transcricao literal do fato admitido pela sentenca
+que contradiz a qualificadora]. A conclusao juridica de que haveria
+[qualificadora] a partir desse fato incontroverso e juridicamente
+equivocada, pois [razao juridica detalhada]. Nao se trata de rever a
+prova produzida nos autos, mas de qualificar juridicamente o que a
+propria sentenca admitiu como comprovado — tecnica que supera o obice
+da Sumula 7/STJ. Com o afastamento da qualificadora [ou da causa de
+aumento], a conduta subsume-se ao tipo basico [especificar artigo e
+paragrafo], com a consequente reducao da pena."
+
+XII. ATIPICIDADE — PRINCIPIO DA INSIGNIFICANCIA
+
+"O fato imputado ao [Apelante/Paciente] e materialmente atipico pela
+aplicacao do principio da insignificancia, que funciona como causa de
+exclusao da tipicidade material. O STF consolidou o entendimento de
+que a insignificancia exige a presenca cumulativa de: (I) minima
+ofensividade da conduta; (II) ausencia de periculosidade social da acao;
+(III) reduzido grau de reprovabilidade do comportamento; (IV)
+inexpressividade da lesao ao bem juridico. No presente caso: (I) [dados
+concretos]; (II) [dados concretos]; (III) [dados concretos]; (IV) [dados
+concretos: valor do bem, contexto do fato, condicao do agente]. O STF
+[citar precedente especifico para o tipo de crime — web_search] admite
+a insignificancia em casos de [caracteristicas similares]. A absolvicao
+e medida que se impoe nos termos do art. 386, III, do CPP."
+
+===============================================================================
+PARTE V — TECNICA ANTI-SUMULA 7/STJ
+===============================================================================
+
+I. O PROBLEMA
+
+A Sumula 7/STJ veda o reexame de prova em recurso especial. Ao atacar
+uma sentenca ou acordao por erro na avaliacao da prova, o advogado arrisca
+ver seu recurso nao conhecido por alegada violacao da Sumula 7.
+
+II. A TECNICA DE CONTORNO OBRIGATORIA
+
+Nunca usar:
+- "os fatos demonstram que..."
+- "o reexame das provas seria necessario para..."
+- "a analise do conjunto probatorio indica..."
+- "as provas constantes dos autos revelam..."
+
+Sempre usar:
+- "a revalorar juridicamente os fatos incontroversos..."
+- "a qualificacao juridica dos fatos narrados na propria sentenca..."
+- "os proprios fatos admitidos pela sentenca nao sao suficientes para
+  configurar [elemento do tipo / qualificadora / agravante]..."
+- "nao se trata de rever a prova, mas de qualificar juridicamente
+  o que a propria sentenca registrou..."
+
+III. FORMULA PADRAO
+
+"A propria sentenca admite que [fato X — transcrever trecho da sentenca
+entre aspas, com indicacao de fls.]. A conclusao juridica extraida desse
+fato incontroverso — de que haveria [elemento do tipo / qualificadora /
+agravante] — e juridicamente equivocada, pois [razao juridica detalhada].
+Nao se trata de rever a prova produzida nos autos, mas de qualificar
+juridicamente o que a propria sentenca registrou como comprovado. A questao
+e, portanto, de direito — nao de fato —, superando-se o obice da Sumula
+7 desta Corte."
+
+IV. APLICACAO NA APELACAO (pre-RE sp)
+
+Mesmo na apelacao, usar a formula acima: ela semeia o prequestionamento
+correto para o REsp futuro e demonstra ao TJGO que o argumento e juridico,
+nao factual.
+
+===============================================================================
+PARTE VI — DISTINGUISHING E OVERRULING
+===============================================================================
+
+I. DISTINGUISHING — AFASTAR PRECEDENTE CONTRARIO AO REU
+
+Quando a acusacao citar ou o acordao invocar precedente desfavoravel,
+demonstrar que o caso concreto nao se amolda ao paradigma.
+
+TIPOS DE DISTINGUISHING:
+
+A. DISTINGUISHING FATUAL:
+   "O precedente [tribunal, numero] versa sobre situacao fativa distinta
+   da dos presentes autos. Naquele caso, [descrever a diferenca concreta
+   de fatos]. No caso concreto, [descrever os fatos distintos]. A diferenca
+   fativa impede a aplicacao do mesmo raciocinio juridico."
+
+B. DISTINGUISHING JURIDICO:
+   "O precedente [tribunal, numero] foi proferido sob a vigencia de [lei X],
+   ja alterada pela [lei Y], que modificou [descrever a alteracao]. O quadro
+   normativo atual e diverso e conduz a conclusao oposta."
+
+C. DISTINGUISHING TELEOLOGICO:
+   "A ratio decidendi do precedente [tribunal, numero] visava tutelar
+   [bem juridico X]. No caso concreto, [demonstrar que o bem juridico
+   tutelado e diferente ou que a tutela ja foi assegurada por outro meio].
+   A extensao do precedente ao caso concreto contrariaria a propria
+   finalidade da norma."
+
+II. OVERRULING — DEMONSTRAR SUPERACAO DE PRECEDENTE
+
+Quando o precedente invocado estiver desatualizado ou superado:
+
+A. OVERRULING EXPRESSO:
+   "O precedente [tribunal, numero] foi expressamente superado pelo
+   julgamento posterior de [tribunal, numero, data], no qual [descrever
+   a nova posicao]. O entendimento atual do [STJ/STF/TJGO] e, portanto,
+   diverso do invocado."
+
+B. OVERRULING IMPLICITO:
+   "A edicao da [lei X / sumula Y / tese Z] implicitamente afastou o
+   fundamento do precedente [tribunal, numero], que nao mais se sustenta
+   diante do novo quadro normativo ou jurisprudencial."
+
+C. OVERRULING ANTICIPATORIO:
+   "Ha fundamentos sobejantes para que este Tribunal reveja o entendimento
+   firmado em [precedente], por [razao: mudanca social, nova lei, inconsistencia
+   com principios constitucionais, evolucao doutrinaria]. [Desenvolver os
+   fundamentos para a superacao]."
+
+III. COTEJAMENTO ANALITICO PARA DISSIDIO
+
+Para demonstrar dissidio jurisprudencial (REsp por divergencia):
+
+ESTRUTURA:
+1. Transcrever ementa do acordao recorrido (tese contraria ao reu)
+2. Transcrever ementa do acordao paradigma (tese favoravel ao reu)
+3. Demonstrar identidade fativa: "[no acordao recorrido], a situacao
+   era [X]. [No acordao paradigma], a situacao era [Y]. As situacoes
+   sao identicas no que toca a [elemento central]."
+4. Demonstrar divergencia: "Apesar da identidade fativa e normativa,
+   os tribunais chegaram a conclusoes opostas."
+5. Indicar a tese correta: "A tese do [acordao paradigma] e a que
+   melhor se harmoniza com [lei federal / principio constitucional],
+   devendo prevalecer."
+
+===============================================================================
+PARTE VII — ESCALONAMENTO DE PEDIDOS SEM REDUNDANCIAS
+===============================================================================
+
+I. VEDACOES ABSOLUTAS
+
+NUNCA usar em nenhuma peca do escritorio:
+- "Mais subsidiariamente"
+- "Ainda mais subsidiariamente"
+- "Em terceiro lugar, subsidiariamente"
+- "De forma mais subsidiaria"
+- Qualquer expressao que reduplique "subsidiario"
+
+II. FORMULAS CORRETAS DE ESCALONAMENTO
+
+PEDIDO PRINCIPAL:
+"Requer-se, em carater principal, [pedido mais favoravel ao reu]."
+
+PEDIDO ALTERNATIVO (mesmo nivel — fundamento distinto):
+"Requer-se, alternativamente ao pedido principal, [pedido com
+fundamento autonomo, de igual amplitude]."
+
+PEDIDO RESIDUAL (nivel inferior — mantida a condenacao):
+"Na hipotese de nao acolhimento do pedido principal [e do alternativo],
+requer-se [pedido de nivel inferior]."
+
+PEDIDO ESPECIFICO (dentro de nivel inferior):
+"Na hipotese de manutencao da condenacao pelo crime imputado, requer-se
+a correcao da dosimetria nos seguintes termos especificos: [listar]."
+
+III. MODELO COMPLETO
+
+DOS PEDIDOS
+
+Diante de todo o exposto, requer o [Apelante/Paciente/Impetrante]:
+
+a) Em carater principal: [pedido mais amplo — ex.: absolvicao, art. 386,
+   VII, CPP], pelas razoes expostas no Capitulo [X];
+
+b) Alternativamente ao pedido principal, caso nao acolhido: [pedido
+   alternativo com fundamento autonomo distinto — ex.: absolvicao por
+   atipicidade, art. 386, III, CPP], pelas razoes do Capitulo [Y];
+
+c) Na hipotese de nao ser acolhido nenhum dos pedidos anteriores:
+   [pedido de nivel inferior — ex.: desclassificacao para [tipo], com
+   fundamento em [artigo]], pelas razoes do Capitulo [Z];
+
+d) Na hipotese de manutencao da condenacao pelo crime imputado: a correcao
+   da dosimetria da pena, para os seguintes ajustes especificos:
+   (i)  [vicio 1 — fundamento — resultado pretendido];
+   (ii) [vicio 2 — fundamento — resultado pretendido];
+   (iii) [vicio 3 — regime — substituicao];
+   resultando em pena final de [X anos e X meses], regime [Y], com
+   [substituicao / sursis — se aplicavel];
+
+e) Em qualquer hipotese: o reconhecimento e a extensao ao [co-reu — nome],
+   nos termos do art. 580 do CPP, dos fundamentos de carater objetivo [se
+   aplicavel];
+
+f) Intimacao de todos os atos processuais no endereco do advogado
+   infrassinado.
+
+Termos em que,
+Pede deferimento.
+
+[Local], [data por extenso].
+
+DR. RODOLFO OTAVIO PEREIRA DA MOTA OLIVEIRA
+OAB/GO 21.841
+[Endereco do escritorio para intimacoes]
+
+===============================================================================
+PARTE VIII — CHECKLIST DE ESTRUTURA ARGUMENTATIVA
+===============================================================================
+
+Aplicar antes de entregar qualquer peca ao Dr. Rodolfo:
+
+ESTRUTURA PIRAMIDAL
+[ ] A peca segue a hierarquia: extinção/inadmissibilidade > nulidades >
+    absolvicao > desclassificacao > dosimetria?
+[ ] Cada nivel e subsidiario do anterior?
+[ ] Todos os fundamentos autonomos da decisao impugnada foram atacados?
+[ ] Ha fundamento autonomo nao impugnado que manteria o resultado
+    adverso mesmo com provimento dos demais? (risco Sumula 283/STF)
+
+TECNICA POR TIPO DE TESE
+[ ] Nulidades: fundamento + demonstracao + prejuizo + efeito — todos presentes?
+[ ] Absolvicao: inciso especifico do art. 386 do CPP identificado?
+[ ] Dosimetria: vicio + localizacao na sentenca + fundamento + calculo correto?
+[ ] Prescricao: todos os 11 passos do Modulo 11 do MASTER percorridos?
+
+TECNICA ANTI-SUMULA 7/STJ
+[ ] Nenhuma expressao proibida foi usada (reexame de provas, fatos demonstram)?
+[ ] Formula "revalorar juridicamente os fatos incontroversos" aplicada onde
+    necessario?
+[ ] Fatos citados com referencia a propria sentenca (transcricao)?
+
+PRECEDENTES
+[ ] Todos os precedentes verificados via web_search + web_fetch?
+[ ] Formato de citacao correto (tribunal, tipo, numero, relator, turma, data)?
+[ ] Ha precedente especifico do relator designado no TJGO?
+
+PEDIDOS
+[ ] Pedidos escalonados na ordem correta (principal > alternativo > residual)?
+[ ] Nenhuma expressao redundante de escalonamento?
+[ ] Todos os niveis piramidais com fundamento foram contemplados nos pedidos?
+[ ] Pedido de extensao a co-reus (art. 580, CPP) incluido quando aplicavel?
+[ ] Pedido de intimacao no endereco do advogado incluido?
+
+===============================================================================
+FIM DO 03_M_TECNICA_HIERARQUICA.txt
+===============================================================================
+
+ARQUIVO:  03_M_TECNICA_HIERARQUICA.txt
+VERSAO:   3.0
+DATA:     30/03/2026
+PALAVRAS: ~3.800
+STATUS:   COMPLETO
+CONFORMIDADE ROM V3.0: 100%

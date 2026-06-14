@@ -1,0 +1,11 @@
+{
+  "_nota": "datajud_alias segue a regra api_publica_<sigla> (confiável). jurisprudencia_url/consulta_url/sistema variam por tribunal e mudam com o tempo: confirmar na fonte e marcar ⚠️[NÃO VERIFICADO] o que não for conferido. DJEN (comunica.pje.jus.br) é fallback nacional para ementa/dispositivo/intimações.",
+  "TJGO": {"nome":"TJ de Goiás","segmento":"Estadual","datajud_alias":"api_publica_tjgo","sistema":"Projudi/PJe","jurisprudencia_url":"https://www.tjgo.jus.br/jurisprudencia/","consulta_url":"https://www.tjgo.jus.br/ (consulta processual)","observacao":"Confirmar URLs vigentes."},
+  "TJES": {"nome":"TJ do Espírito Santo","segmento":"Estadual","datajud_alias":"api_publica_tjes","sistema":"PJe","jurisprudencia_url":"⚠️[NÃO VERIFICADO]","consulta_url":"⚠️[NÃO VERIFICADO]"},
+  "TJSP": {"nome":"TJ de São Paulo","segmento":"Estadual","datajud_alias":"api_publica_tjsp","sistema":"ESAJ/SAJ","jurisprudencia_url":"https://esaj.tjsp.jus.br/cjsg/","consulta_url":"https://esaj.tjsp.jus.br/cpopg/","observacao":"ESAJ expõe acórdão/ementa; confirmar."},
+  "TJRJ": {"nome":"TJ do Rio de Janeiro","segmento":"Estadual","datajud_alias":"api_publica_tjrj","sistema":"PJe/eproc","jurisprudencia_url":"⚠️[NÃO VERIFICADO]","consulta_url":"⚠️[NÃO VERIFICADO]"},
+  "TJMG": {"nome":"TJ de Minas Gerais","segmento":"Estadual","datajud_alias":"api_publica_tjmg","sistema":"PJe","jurisprudencia_url":"⚠️[NÃO VERIFICADO]","consulta_url":"⚠️[NÃO VERIFICADO]"},
+  "TJDFT": {"nome":"TJ do DF e Territórios","segmento":"Estadual","datajud_alias":"api_publica_tjdft","sistema":"PJe","jurisprudencia_url":"⚠️[NÃO VERIFICADO]","consulta_url":"⚠️[NÃO VERIFICADO]"},
+  "TRF1": {"nome":"TRF da 1ª Região","segmento":"Federal","datajud_alias":"api_publica_trf1","sistema":"PJe","jurisprudencia_url":"⚠️[NÃO VERIFICADO]","consulta_url":"⚠️[NÃO VERIFICADO]"},
+  "TRF4": {"nome":"TRF da 4ª Região","segmento":"Federal","datajud_alias":"api_publica_trf4","sistema":"eproc","jurisprudencia_url":"⚠️[NÃO VERIFICADO]","consulta_url":"⚠️[NÃO VERIFICADO]"}
+}

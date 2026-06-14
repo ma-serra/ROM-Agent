@@ -1,0 +1,28 @@
+{
+  "_nota": "Camada multi-escritório (multi-tenant) e multiusuário. Cada escritório isola seus dados em data/<escritorio>/. Acrescentar escritório = nova entrada + nova pasta; jamais alterar dados de tenants existentes (aditivo, sem rollback).",
+  "escritorios": {
+    "rom-goiania": {
+      "nome": "Rodolfo Otávio Mota Advogados Associados S/S",
+      "uf": "GO",
+      "data_dir": "data/rom-goiania",
+      "usuarios": ["rodolfo", "steffanny", "isabella", "mayckon", "ariana", "giovanna"],
+      "segredos": {
+        "DATAJUD_APIKEY": "<por-escritorio-ou-compartilhado>",
+        "REGISTRO_MNI": "<json-por-tribunal-do-escritorio>"
+      }
+    },
+    "escritorio-exemplo-2": {
+      "nome": "<Novo escritório a acrescentar>",
+      "uf": "<UF>",
+      "data_dir": "data/escritorio-exemplo-2",
+      "usuarios": [],
+      "segredos": {}
+    }
+  },
+  "convencao_de_caminhos": {
+    "citacoes": "data/<escritorio>/citacoes-verificadas.txt",
+    "selos_integridade": "data/<escritorio>/selos-integridade.jsonl",
+    "corpus_jurimetria": "data/<escritorio>/jurimetria/corpus.csv",
+    "gasto_sessao": "data/<escritorio>/<usuario>/gasto-sessao.jsonl"
+  }
+}

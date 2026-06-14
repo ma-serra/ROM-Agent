@@ -1,0 +1,68 @@
+{
+  "mcpServers": {
+    "datajud-cnj": {
+      "command": "node",
+      "args": [
+        "./mcp/datajud/server.js"
+      ],
+      "env": {
+        "DATAJUD_BASE": "https://api-publica.datajud.cnj.jus.br",
+        "DATAJUD_ALIAS_EXEMPLOS": "api_publica_stj,api_publica_tjgo,api_publica_trf1",
+        "DATAJUD_APIKEY": "OBTER_CHAVE_PUBLICA_NA_WIKI_CNJ",
+        "_nota": "Backend Elasticsearch. Metadados+movimentos para jurimetria e tempo de tramitação. Limite ~10000/consulta; paginar com from/size ou search_after. Chave pode mudar; conferir na wiki oficial."
+      }
+    },
+    "djen-comunica-cnj": {
+      "command": "node",
+      "args": [
+        "./mcp/djen/server.js"
+      ],
+      "env": {
+        "DJEN_CONSULTA": "https://comunica.pje.jus.br",
+        "_nota": "Publicações oficiais (Res. CNJ 455/2022): despachos, dispositivo de sentenças, EMENTA de acórdãos e intimações. Alimenta corpus de jurimetria e monitora prazos. Só dá ementa, não o voto."
+      }
+    },
+    "verificador-citacoes-rom": {
+      "command": "node",
+      "args": [
+        "./mcp/verificador/server.js"
+      ],
+      "env": {
+        "FONTES_OFICIAIS": "planalto.gov.br,stj.jus.br,stf.jus.br"
+      }
+    },
+    "tribunais-2grau": {
+      "command": "node",
+      "args": [
+        "./mcp/tribunais2grau/dist/index.js"
+      ],
+      "env": {
+        "REGISTRO": "./skills/segundo-grau-nacional/registro-tribunais.json",
+        "DATAJUD_APIKEY": "OBTER_CHAVE_PUBLICA_NA_WIKI_CNJ",
+        "_nota": "Servidor MCP TypeScript (stdio). Ferramentas: tribunais_resolver_processo, tribunais_buscar_datajud, tribunais_montar_anexos. Antes do uso: cd mcp/tribunais2grau && npm install && npm run build."
+      }
+    },
+    "jurisprudencia": {
+      "command": "node",
+      "args": [
+        "./mcp/jurisprudencia/dist/index.js"
+      ],
+      "env": {
+        "DJEN_API": "https://comunicaapi.pje.jus.br/api/v1/comunicacao",
+        "_nota": "Servidor MCP TypeScript (stdio). Ferramentas: jurisprudencia_resolver_links, jurisprudencia_buscar_djen, jurisprudencia_portal_inteiro_teor. resolver_links alimenta tribunais_montar_anexos. Antes do uso: cd mcp/jurisprudencia && npm install && npm run build. Confirmar endpoint DJEN vigente."
+      }
+    },
+    "autos": {
+      "command": "node",
+      "args": [
+        "./mcp/autos/dist/index.js"
+      ],
+      "env": {
+        "TRAVA_SCRIPT": "./skills/analise-integral-documentos/trava-integridade.py",
+        "LEDGER": "./selos-integridade.jsonl",
+        "REGISTRO_MNI": "{}",
+        "_nota": "Inventario de autos via MNI (consultarProcesso) p/ a ferramenta de extracao do agente + TRAVA de integridade (sem rollback/sem retrocesso). Cadastrar endpoints/credenciais por tribunal em REGISTRO_MNI (procurador vinculado). MNI exige credenciamento e cobertura varia. Antes do uso: cd mcp/autos && npm install && npm run build."
+      }
+    }
+  }
+}

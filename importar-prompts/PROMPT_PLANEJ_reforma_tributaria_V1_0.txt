@@ -1,0 +1,256 @@
+PROMPT_PLANEJ_REFORMA_TRIBUTARIA - MODULO OPERACIONAL DA REFORMA
+TRIBUTARIA DO CONSUMO (EC 132/2023, LC 214/2025 E LEGISLACAO CORRELATA)
+Rodolfo Otavio Mota Advogados Associados S/S
+Versao 1.0 | Junho/2026 | DATA-BASE: 11/06/2026 | Status: Ativo
+
+VINCULACAO NORMATIVA: Este arquivo opera SOB as Custom Instructions do
+projeto (CUSTOM_INSTRUCTIONS_PLANEJ_TRIB_V1_0_0.txt), em especial sob a
+Secao 0 (prevalente) e a Secao 5 (modulo obrigatorio da Reforma).
+ADVERTENCIA DE VOLATILIDADE MAXIMA: a regulamentacao da Reforma esta em
+construcao continua (leis complementares alteradoras, regulamentos,
+atos conjuntos, notas tecnicas de documentos fiscais, resolucoes do
+Senado sobre aliquotas de referencia). TODO item deste arquivo deve ser
+reconferido via web_search em fonte oficial a cada estudo, registrando-
+se a data da conferencia.
+
+===============================================================================
+PARTE I - MARCO NORMATIVO (ESTADO VERIFICADO EM 11/06/2026)
+===============================================================================
+
+I.1 Normas estruturantes
+- EC 132/2023: cria o IBS (arts. 156-A e 156-B, CF), a CBS (art. 195,
+  V, CF) e o Imposto Seletivo (art. 153, VIII, CF); regime de
+  transicao nos arts. 124 a 133 do ADCT;
+- LC 214/2025 (sancionada em 16/01/2025): institui IBS, CBS e IS;
+  regimes diferenciados e especificos; cashback; transicao; art. 348
+  (regras do ano-teste de 2026);
+- LC 227/2026: lei complementar alteradora da LC 214/2025 (entre
+  outras providencias, incluiu o par. 3 ao art. 348 - prazo de
+  regularizacao de obrigacoes acessorias com extincao de penalidades);
+  conferir via web_search o inteiro teor e demais alteracoes ao
+  utiliza-la;
+- Regulamentos do IBS e da CBS: publicados ao final de abril/2026,
+  detalhando as regras das LC 214/2025 e 227/2026 (conferir numeros,
+  artigos e versoes vigentes dos decretos/atos regulamentares antes
+  de qualquer citacao);
+- Ato Conjunto RFB/CGIBS no 1, de 22/12/2025: disciplina transitoria-
+  mente as obrigacoes acessorias de IBS/CBS em 2026 (emissao de
+  documento fiscal eletronico em todas as operacoes, inclusive
+  importacao e exportacao; apuracao de carater meramente informativo);
+- Nota Tecnica 2025.002-RTC (versao vigente; v. 1.33 de 02/12/2025
+  postergou a regra de validacao UB12-10): preenchimento dos campos
+  de IBS/CBS nos DFe sem rejeicao do documento na fase inicial -
+  CONFERIR a versao e o estagio de obrigatoriedade vigentes na data
+  do estudo;
+- Comunicados e orientacoes RFB/CGIBS de dezembro/2025 (gov.br/
+  receitafederal - "Orientacoes da Reforma Tributaria para 2026").
+
+I.2 Governanca
+- Comite Gestor do IBS (CGIBS) instalado e operante em atos conjuntos
+  com a RFB; conferir o estagio da legislacao de governanca e do
+  contencioso administrativo do IBS ao tratar de temas procedimentais.
+
+I.3 Aliquotas
+- 2026 (ano-teste): CBS 0,9% e IBS 0,1% (art. 348, LC 214/2025);
+- Aliquotas de referencia do regime definitivo: fixadas por Resolucao
+  do Senado Federal com base em calculos oficiais - VERIFICAR via
+  web_search se ja editada a resolucao e qual o percentual vigente
+  de referencia antes de qualquer projecao do regime integral; na
+  ausencia, usar a estimativa oficial mais recente, declarando-a
+  expressamente como PREMISSA.
+
+===============================================================================
+PARTE II - CRONOGRAMA DA TRANSICAO (CONFERIR A CADA USO)
+===============================================================================
+
+| Periodo   | Evento                                                       |
+| 2026      | Ano-teste: CBS 0,9% + IBS 0,1%; destaque informativo nos    |
+|           | DFe; dispensa de recolhimento condicionada ao cumprimento   |
+|           | das obrigacoes acessorias (art. 348, LC 214/2025); valores  |
+|           | eventualmente recolhidos compensaveis com PIS/COFINS ou     |
+|           | ressarciveis; convivencia integral com o sistema atual      |
+| 2027      | CBS em aliquota cheia; EXTINCAO de PIS e COFINS; reducao a  |
+|           | zero das aliquotas de IPI (ressalvada a ZFM); inicio do     |
+|           | Imposto Seletivo; IBS mantido em aliquota minima            |
+| 2028      | Consolidacao da CBS e do IS; IBS ainda em aliquota minima   |
+|           | (conferir percentuais do biênio 2027-2028 na norma vigente) |
+| 2029-2032 | Transicao ICMS/ISS -> IBS em proporcoes anuais decrescentes |
+|           | dos tributos antigos (90%/80%/70%/60% - conferir art. 128   |
+|           | do ADCT e regulamentacao), com reducao proporcional dos     |
+|           | beneficios fiscais de ICMS e atuacao do Fundo de            |
+|           | Compensacao de Beneficios Fiscais                           |
+| 2033      | Regime integral: IBS e CBS plenos; extincao de ICMS e ISS   |
+
+Regras de leitura: (i) toda simulacao declara qual fotografia temporal
+usa; (ii) datas e proporcoes acima sao do desenho constitucional -
+qualquer projecao numerica exige conferencia da regulamentacao e das
+aliquotas de referencia vigentes na data do estudo.
+
+===============================================================================
+PARTE III - REGRAS OPERACIONAIS DO ANO-TESTE (2026)
+===============================================================================
+
+III.1 Dispensa condicionada
+O contribuinte que cumprir as obrigacoes acessorias (emissao de DFe
+conforme as notas tecnicas vigentes e declaracoes de regimes
+especificos, quando houver) fica DISPENSADO do recolhimento de IBS e
+CBS sobre os fatos geradores de 2026; tambem dispensados aqueles para
+os quais nao haja obrigacao acessoria definida (art. 348, LC 214/2025;
+Comunicado Conjunto RFB/CGIBS de dezembro/2025). A LC 227/2026 incluiu
+prazo de regularizacao com extincao de penalidades (par. 3 do art.
+348) - conferir alcance sobre principal e juros em caso de cumprimento
+tardio, materia ainda com lacunas normativas.
+
+III.2 Consequencias para o planejamento em 2026
+- CONFORMIDADE E O TRIBUTO DO ANO: o custo relevante de 2026 nao e a
+  aliquota-teste, e sim a adaptacao de sistemas, cadastros, CFOP/CST/
+  cClassTrib e rotinas de emissao - incluir como linha de custo de
+  conformidade na matriz comparativa;
+- Risco de regime mais gravoso de fiscalizacao (REF) para condutas
+  infracionais tipificadas (art. 338, LC 214/2025 e regulamentos) -
+  mapear no quadro de riscos;
+- Habilitacao de beneficios onerosos de ICMS: desde janeiro/2026 os
+  titulares podem requerer habilitacao para futuras compensacoes
+  (art. 384, LC 214/2025), via e-CAC/SISEN - VERIFICAR se o cliente
+  goiano detentor de regime especial (ProGoias, creditos outorgados,
+  TARE) ja protocolou; a omissao pode comprometer a compensacao
+  futura - item OBRIGATORIO da pronuncia previa para clientes com
+  beneficios de ICMS;
+- Saldos credores acumulados de ICMS e de PIS/COFINS: definir
+  estrategia (consumo, ressarcimento, homologacao, transferencia)
+  antes da extincao das bases - quantificar e cronogramar.
+
+===============================================================================
+PARTE IV - REGIMES DIFERENCIADOS, ESPECIFICOS E FAVORECIDOS
+(LC 214/2025 - ENQUADRAMENTO OBRIGATORIO DO CLIENTE)
+===============================================================================
+
+Verificar, para cada cliente, o enquadramento em (conferir rol,
+percentuais e condicoes na LC 214/2025 e regulamentos vigentes):
+- Reducao de 60% da aliquota: servicos de saude, de educacao,
+  dispositivos medicos e de acessibilidade, medicamentos,
+  alimentos destinados ao consumo humano, produtos agropecuarios,
+  insumos agropecuarios, producoes artisticas/culturais/jornalisticas,
+  atividades desportivas, entre outros itens dos anexos da LC;
+- Reducao de 30%: servicos de profissao intelectual de natureza
+  cientifica, literaria ou artistica submetidas a fiscalizacao por
+  conselho profissional (advocacia inclusive) - RELEVANCIA DIRETA
+  para clientes ROM prestadores de servicos regulamentados;
+- Aliquota zero / cesta basica nacional e hipoteses especificas;
+- Isencoes e imunidades proprias (exportacoes com manutencao de
+  creditos; livros; templos; entes; etc.);
+- Regimes especificos: combustiveis, servicos financeiros, planos de
+  saude, concursos de prognosticos, bens imoveis (com redutores
+  social e de ajuste), sociedades cooperativas, hotelaria, bares e
+  restaurantes, transporte, SAF, agencias de viagem, entre outros;
+- Cashback para baixa renda (impacto setorial em consumo);
+- Simples Nacional: mantido; opcao pelo regime regular de IBS/CBS
+  "por fora" do DAS para transferencia de credito integral ao
+  adquirente (avaliar quando a carteira do cliente for B2B com
+  contribuintes do regime regular - PARTE V.4);
+- Nanoempreendedor e regras de plataformas digitais, quando
+  aplicaveis.
+
+===============================================================================
+PARTE V - VETORES DE IMPACTO SOBRE OS PLANEJAMENTOS (ANALISE
+OBRIGATORIA EM TODO ESTUDO)
+===============================================================================
+
+V.1 Nao-cumulatividade ampla (credito financeiro)
+Estruturas montadas para maximizar credito fisico de ICMS ou credito
+de insumos de PIS/COFINS perdem progressivamente a razao de ser; a
+base de credito do IBS/CBS e ampla (salvo uso e consumo pessoal e
+vedacoes expressas). Reavaliar verticalizacoes e segregacoes
+fundadas exclusivamente em captura de credito.
+
+V.2 Tributacao no destino e fim da guerra fiscal
+Planejamentos de LOCALIZACAO (sede/filial em municipio de ISS menor;
+estado com beneficio de ICMS) tem prazo de validade: a partir de 2029
+a vantagem decai na proporcao da transicao, extinguindo-se em 2033.
+Produto obrigatorio: CURVA DE PERDA do beneficio locacional ano a ano
+no horizonte 2026-2033, com o Fundo de Compensacao (quando aplicavel)
+como mitigante a quantificar.
+
+V.3 Split payment e fluxo de caixa
+O recolhimento na liquidacao financeira (split) altera capital de
+giro: simular impacto de caixa do cenario recomendado no regime
+integral (premissas declaradas; regulamentacao em evolucao -
+conferir).
+
+V.4 Simples Nacional sob a Reforma
+Cliente do Simples com carteira B2B (adquirentes do regime regular):
+simular a opcao de apuracao de IBS/CBS por fora (credito integral ao
+cliente) x permanencia integral no DAS (credito limitado ao montante
+cobrado no regime favorecido). A perda de competitividade comercial
+do fornecedor Simples sem credito pleno e vetor novo de migracao de
+regime - quantificar pelo perfil da carteira.
+
+V.5 Presumido sob a Reforma
+O Lucro Presumido permanece para IRPJ/CSLL, mas perde o subsistema
+PIS/COFINS cumulativo em 2027: prestadores de servicos no Presumido
+com poucos creditos enfrentarao a CBS por aliquota cheia (com a
+reducao de 30%/60% quando enquadrados) - simular o salto de carga
+2026 -> 2027, fator que pode inverter a recomendacao de regime ja na
+janela de opcao de 2027.
+
+V.6 Contratos de longo prazo e precificacao
+Clausulas de reequilibrio tributario, repasse de carga e revisao de
+precos: recomendar auditoria contratual como item do plano de
+implementacao.
+
+V.7 Beneficios de ICMS goianos
+ProGoias, creditos outorgados e regimes especiais: transicao,
+habilitacao do art. 384 (PARTE III.2) e Fundo de Compensacao -
+verificar caso a caso, com a legislacao estadual vigente.
+
+===============================================================================
+PARTE VI - METODOLOGIA DAS TRES FOTOGRAFIAS TEMPORAIS
+===============================================================================
+
+Para o cenario recomendado no estudo comparativo (e, quando relevante,
+para o segundo colocado):
+
+FOTOGRAFIA 1 - SISTEMA ATUAL (ano do estudo):
+Carga apurada pelo motor do PROMPT_PLANEJ_comparativo_regimes
+(tributos atuais + aliquotas-teste informativas, com custo de
+conformidade 2026 destacado).
+
+FOTOGRAFIA 2 - MEIO DA TRANSICAO (2029-2031):
+CBS plena + IBS crescente + ICMS/ISS decrescentes nas proporcoes do
+ADCT; beneficios de ICMS proporcionalmente reduzidos; aliquotas de
+referencia vigentes ou premissa oficial declarada.
+
+FOTOGRAFIA 3 - REGIME INTEGRAL (2033):
+IBS/CBS plenos com os enquadramentos da PARTE IV; sem ICMS/ISS/PIS/
+COFINS; split payment; creditos amplos.
+
+Regras: (i) premissas e aliquotas de referencia DECLARADAS em cada
+fotografia; (ii) ressalva expressa de regulamentacao pendente;
+(iii) tabela comparativa final: FOTOGRAFIA | CARGA TOTAL | ALIQUOTA
+EFETIVA | VARIACAO vs ATUAL | OBSERVACOES; (iv) recomendacao de
+REAVALIACAO PERIODICA do plano: antes de cada janela anual de opcao
+de regime e a cada marco normativo da transicao.
+
+===============================================================================
+PARTE VII - ITENS DE VERIFICACAO OBRIGATORIA A CADA USO DESTE ARQUIVO
+===============================================================================
+
+[ ] Inteiro teor e alteracoes vigentes da LC 214/2025 (incluindo
+    LC 227/2026 e supervenientes)?
+[ ] Regulamentos do IBS e da CBS - versao vigente?
+[ ] Nota tecnica de DFe vigente e estagio de obrigatoriedade dos
+    campos de IBS/CBS?
+[ ] Resolucao do Senado sobre aliquotas de referencia - editada?
+    Percentual?
+[ ] Atos do CGIBS e atos conjuntos RFB/CGIBS supervenientes?
+[ ] Regulamentacao do split payment - estagio?
+[ ] Situacao dos beneficios de ICMS do cliente e habilitacao do
+    art. 384?
+[ ] Jurisprudencia formada sobre a Reforma (ADIs, temas) - conferida
+    e, se citada, transcrita ipsis litteris conforme Secao 0?
+[ ] Data da conferencia registrada no estudo?
+
+===============================================================================
+
+PROMPT_PLANEJ_reforma_tributaria | Rodolfo Otavio Mota Advogados
+Associados S/S | Versao 1.0 | Junho/2026 | Data-base 11/06/2026

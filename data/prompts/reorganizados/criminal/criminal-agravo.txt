@@ -1,0 +1,2474 @@
+===============================================================================
+PROMPT: AGRAVO REGIMENTAL / AGRAVO INTERNO CRIMINAL — FRAMEWORK COMPLETO
+SISTEMA ROM V3.0 — RODOLFO OTAVIO MOTA ADVOGADOS ASSOCIADOS
+===============================================================================
+
+ARQUIVO:  PROMPT_CRIM_agravo_regimental_V5_0.txt
+VERSAO:   5.0
+DATA:     18/05/2026
+AREA:     Direito Processual Penal — Agravo Regimental (art. 258 RISTJ /
+          art. 317 RISTF) e Agravo Interno (art. 259 RISTJ / art. 1.021 CPC)
+AUTOR:    Dr. Rodolfo Otavio Pereira da Mota Oliveira — OAB/GO 21.841
+STATUS:   COMPLETO — Substitui integralmente a V4.0 (que substituiu
+          V3.0/V2.0/V1.0).
+
+NOVIDADES DA V5.0 EM RELACAO A V4.0 (FOCO: VERTICES OPERACIONAIS E
+TECNICA REDACIONAL DE EXCELENCIA):
+- Parte VI-B (nova): INSTRUCAO DO AGRAVO E COMPROVACAO DOCUMENTAL DA
+  TEMPESTIVIDADE — rol de pecas essenciais a compreensao da controversia;
+  prova documental do termo inicial; vicio material que gera nao
+  conhecimento independentemente da qualidade dos argumentos.
+- Parte VI-C (nova): PLURALIDADE SUBJETIVA E EXTENSAO DE EFEITOS (ART. 580
+  CPP) — corres/litisconsorcio penal; extensao do efeito benefico; fórmula
+  propria; legitimidade quando o vicio atinge mais de um.
+- Parte IX-A (nova): TECNICA REDACIONAL DE EXCELENCIA E QUADROS DE
+  COTEJAMENTO — padrao redacional ROM (densidade, transcricao ipsis
+  litteris, quadros OOXML para cotejamento analitico e distinguishing),
+  CALIBRADO para a concisao cirurgica do agravo (nunca a extensao de uma
+  revisao criminal); regra de quando usar quadro x prosa.
+- Parte XVI-A (nova): PROTOCOLO DE FECHAMENTO FASE 2 ESPECIFICO DO RECURSO
+  — conversao de remissoes internas em texto corrido; resolucao de
+  [PENDENTE]; espelhamento da numeracao; checklist de fechamento.
+- Ajustes menores integrados: sustentacao oral no agravo (PARTE VIII);
+  retratacao parcial do relator e prosseguimento quanto ao remanescente
+  (PARTE VIII).
+- Checklist ampliado de 240 -> 270 pontos; nova categoria M; novos
+  bloqueios de saida.
+
+NOVIDADES DA V4.0 EM RELACAO A V3.0 (FOCO: PADROES ESTRUTURAIS DA CLASSE
+"HC ORIGINARIO INADMITIDO LIMINARMENTE COM ED REJEITADOS"):
+- Parte III-C (nova): CADEIA COATIVA ESCALONADA E DUPLA AUTORIDADE COATORA
+  — preservacao do alcance do provimento sobre os atos encadeados (decisao
+  de 1o grau + acordao confirmatorio) pela teoria do ato complexo.
+- Parte III-D (nova): CIRCULO FECHADO DE OBICES FORMAIS — encadeamento de
+  bloqueios que jamais permitiu exame meritorio, como tese propria de
+  cabimento excepcional.
+- Parte III-E (nova): CONCURSO DE NULIDADES ABSOLUTAS E CONTAMINACAO
+  SISTEMICA — efeito isolado de cada vicio + efeito de concurso/sistemico.
+- Parte VIII-A (nova): DEVOLUCAO EM CAMADAS — agravo contra ED rejeitados
+  monocraticamente devolve o vicio declaratorio E a decisao originaria;
+  fundamento que nasce na propria decisao de ED.
+- Parte XI-B (nova): PRIORIDADE DE TRAMITACAO E REITERACAO DA LIMINAR NO
+  AGRAVO — idoso/enfermo/gestante; periculum libertatis; tutela de urgencia
+  ao colegiado quando a liminar nunca foi apreciada.
+- Parte XI-C (nova): FUNDAMENTO AUTONOMO DE ORDEM PUBLICA QUE SOBREVIVE
+  ISOLADO — excesso de prazo/duracao razoavel e congeneres; tecnica de
+  blindagem ("ainda que rejeitados todos os demais").
+- Parte XIII-A (nova): ROTEIRO RECURSAL POS-AGRAVO — RHC x RE ao STF apos o
+  julgamento colegiado; criterios de escolha; exaurimento.
+- Modelos argumentativos ampliados (AR-1 a AR-22).
+- Checklist ampliado de 200 -> 240 pontos; novos bloqueios de saida.
+
+NOVIDADES DA V3.0 EM RELACAO A V2.0 (FOCO: SUPERACAO DE SUMULAS E
+JURISPRUDENCIA DEFENSIVA):
+- Parte VII-A (nova): VEDACAO A INOVACAO RECURSAL E DELIMITACAO DO EFEITO
+  DEVOLUTIVO — o agravo regimental nao admite tese nova; so rebate os
+  fundamentos da decisao dentro dos limites do que ja foi deduzido (STJ:
+  inovacao recursal = nao apreciacao). Protocolo de delimitacao.
+- Parte VII-B (nova): TABELA OPERACIONAL DE OBICES SUMULARES COM REFUTACAO
+  PRONTA — Sumulas 7, 83, 182, 211, 280, 282, 284, 356, 440, 518, 568/STJ;
+  283, 284, 287, 356, 399/STF; gatilho de incidencia + formula de superacao
+  especifica para materia criminal. Coracao da estrategia de superacao.
+- Parte VII-C (nova): TECNICA DE COTEJO ANALITICO ANTI-SUMULA 7/STJ —
+  cotejo fato-a-fato entre o quadro factico fixado e a tese; demonstracao
+  de que a tese e qualificacao juridica / cotejo documental, nao reexame.
+- Parte VII-D (nova): SUPERACAO DE SUMULA OBSTATIVA E JURISPRUDENCIA
+  DOMINANTE (SUMULA 568/STJ) — distinguishing do enunciado; overruling com
+  arestos MAIS RECENTES do que os citados na decisao; superacao por
+  precedente vinculante superveniente; tecnica de demonstracao fundamentada.
+- Parte XI-A (nova): TESTE DE TERATOLOGIA / FLAGRANTE ILEGALIDADE (SUMULA
+  691/STF) — checklist dos tres gatilhos taxativos (flagrante ilegalidade,
+  abuso de poder, teratologia); enquadramento na hipotese excepcional.
+- Parte XII expandida: DUPLA SUPRESSAO DE INSTANCIA E PREQUESTIONAMENTO DE
+  NULIDADE ABSOLUTA — refutacao propria (nulidade absoluta nao preclui e
+  dispensa prequestionamento); cadeia de exaurimento para o STF.
+- Parte XIV-B (nova): ANTECIPACAO E NEUTRALIZACAO DO PARECER DO MP — o
+  relator frequentemente acolhe o parecer ministerial; antecipar e refutar
+  os argumentos tipicos do Parquet (nao conhecimento, supressao, Sumula
+  182, ausencia de flagrante ilegalidade).
+- Parte VII consolidada: integracao com os novos modulos VII-A a VII-D.
+- Modelos argumentativos ampliados (AR-1 a AR-18).
+- Checklist ampliado de 150 -> 200 pontos com novos blocos.
+
+NOVIDADES DA V2.0 EM RELACAO A V1.0:
+- Parte III-A (nova): MODULO INDEFERIMENTO LIMINAR DE ADMISSIBILIDADE DO HC
+  — anatomia da decisao do art. 210 RISTJ; HC substitutivo; unirrecorribilidade;
+  Sumula 691/STF aplicada analogicamente; estrategia de reversao integral da
+  inadmissao
+- Parte III-B (nova): MODULO DISTINGUISHING E COTEJAMENTO ANALITICO
+  HC x RE/REsp — tabela comparativa de 5 colunas (ato coator, fundamento
+  constitucional, objeto material, tribunal destinatario, pedido); demonstracao
+  de ausencia de identidade de objeto; refutacao da unirrecorribilidade por
+  inexistencia do seu pressuposto logico
+- Parte VI-A (nova): TOPICO DE ADMISSIBILIDADE PERFEITO — requisitos
+  extrinsecos e intrinsecos do proprio agravo regimental, exaustivamente
+  topificados, com formulas redacionais para garantir o CONHECIMENTO
+- Parte VII expandida: tecnica redacional anti-nao-conhecimento (alem da
+  Sumula 182/STJ: dialeticidade total, espelhamento de fundamentos,
+  vedacao a reproducao do HC, Manual STJ/2025)
+- Parte XII expandida: PREQUESTIONAMENTO PARA O RECURSO PROPRIO — combinacao
+  obrigatoria arts. 1.022 + 1.025 CPC; 9 vicios do dispositivo (Sumula
+  284/STF) na versao criminal; CADH/PIDCP como parametro de
+  convencionalidade e fundamento de RE (nunca de REsp pela alinea a);
+  exaurimento de instancia para RE/RHC ao STF
+- Parte XIV-A (nova): MODULO MANUAL STJ/2025 — juizo de conformidade e
+  primazia sobre admissibilidade; tempestividade como vicio sanavel (QO no
+  AREsp 2.638.376/MG, Corte Especial, 2025); erro grosseiro (agravo contra
+  acordao); rebatimento de todos os fundamentos autonomos (Sumulas 283/STF
+  e 126/STJ); DJEN e Resolucao CNJ 455/2022
+- Modelo completo de peca reescrito com os novos topicos
+- Checklist ampliado de 100 -> 150 pontos com novos blocos
+
+DEPENDENCIAS OBRIGATORIAS:
+- 01_MASTER_ROM_V3.txt ............... documento-mae
+- 04_M_FERIADOS_PRAZOS.txt ........... contagem do prazo (5 dias CORRIDOS)
+- 03_M_TECNICA_HIERARQUICA.txt ....... escalonamento de teses e pedidos
+- 05_M_DIRETRIZES_REDACIONAIS_UNIVERSAIS.txt . padrao redacional
+- PROTOCOLO UNIVERSAL DE JURISPRUDENCIA (PARTE VI do metodo consolidado V2.0)
+  ................................... forca normativa superior
+
+REGRA DE PRECEDENCIA: prevalece o 01_MASTER_ROM_V3.txt em caso de conflito;
+em materia de citacao jurisprudencial prevalece o Protocolo Universal;
+instrucoes expressas do Dr. Rodolfo na sessao tem prioridade maxima.
+
+===============================================================================
+SUMARIO
+===============================================================================
+
+PARTE I     — NATUREZA E FINALIDADE DO RECURSO
+PARTE II    — CABIMENTO: AGRAVO REGIMENTAL x AGRAVO INTERNO x ART. 1.042
+PARTE III   — A EXCECAO DO ART. 258 RISTJ (LIMINAR EM HC)
+PARTE III-A — MODULO: INDEFERIMENTO LIMINAR DE ADMISSIBILIDADE DO HC
+PARTE III-B — MODULO: DISTINGUISHING E COTEJAMENTO ANALITICO HC x RE/REsp
+PARTE III-C — CADEIA COATIVA ESCALONADA E DUPLA AUTORIDADE COATORA
+PARTE III-D — CIRCULO FECHADO DE OBICES FORMAIS
+PARTE III-E — CONCURSO DE NULIDADES ABSOLUTAS E CONTAMINACAO SISTEMICA
+PARTE IV    — COMPETENCIA E ORGAO JULGADOR
+PARTE V     — PRAZO: 5 DIAS CORRIDOS (REGRA DE OURO)
+PARTE VI    — LEGITIMIDADE E INTERESSE RECURSAL
+PARTE VI-A  — TOPICO DE ADMISSIBILIDADE PERFEITO (EXTRINSECOS/INTRINSECOS)
+PARTE VI-B  — INSTRUCAO DO AGRAVO E COMPROVACAO DA TEMPESTIVIDADE
+PARTE VI-C  — PLURALIDADE SUBJETIVA E EXTENSAO DE EFEITOS (ART. 580 CPP)
+PARTE VII   — DIALETICIDADE E TECNICA ANTI-NAO-CONHECIMENTO (SUMULA 182/STJ)
+PARTE VII-A — VEDACAO A INOVACAO RECURSAL E EFEITO DEVOLUTIVO
+PARTE VII-B — TABELA OPERACIONAL DE OBICES SUMULARES (REFUTACAO PRONTA)
+PARTE VII-C — TECNICA DE COTEJO ANALITICO ANTI-SUMULA 7/STJ
+PARTE VII-D — SUPERACAO DE SUMULA OBSTATIVA E JURISPRUDENCIA DOMINANTE
+PARTE VIII  — JUIZO DE RETRATACAO E EFEITO DO RECURSO
+PARTE VIII-A— DEVOLUCAO EM CAMADAS (ED REJEITADOS + DECISAO ORIGINARIA)
+PARTE IX    — ESTRUTURA REDACIONAL DA PECA
+PARTE IX-A  — TECNICA REDACIONAL DE EXCELENCIA E QUADROS DE COTEJAMENTO
+PARTE X     — MODELOS ARGUMENTATIVOS (AR-1 a AR-22)
+PARTE XI    — CONCESSAO DA ORDEM DE OFICIO (HC) — ART. 654, §2o, CPP
+PARTE XI-A  — TESTE DE TERATOLOGIA / FLAGRANTE ILEGALIDADE (SUMULA 691/STF)
+PARTE XI-B  — PRIORIDADE DE TRAMITACAO E REITERACAO DA LIMINAR NO AGRAVO
+PARTE XI-C  — FUNDAMENTO AUTONOMO DE ORDEM PUBLICA QUE SOBREVIVE ISOLADO
+PARTE XII   — PREQUESTIONAMENTO PARA O RECURSO PROPRIO (RE/RHC)
+PARTE XIII  — DIFERENCAS RISTJ x RISTF E FUNGIBILIDADE RECURSAL
+PARTE XIII-A— ROTEIRO RECURSAL POS-AGRAVO (RHC x RE AO STF)
+PARTE XIV   — PESQUISA OBRIGATORIA (REGIMENTO + JURISPRUDENCIA)
+PARTE XIV-A — MODULO MANUAL STJ/2025 CRIMINAL
+PARTE XIV-B — ANTECIPACAO E NEUTRALIZACAO DO PARECER DO MP
+PARTE XV    — MODELO COMPLETO DE PECA (TEMPLATE COM CAMPOS)
+PARTE XVI   — CHECKLIST DE QUALIDADE FINAL (270 PONTOS)
+PARTE XVI-A — PROTOCOLO DE FECHAMENTO FASE 2 ESPECIFICO DO RECURSO
+PARTE XVII  — VERSIONAMENTO E CONTROLE
+
+===============================================================================
+PARTE I — NATUREZA E FINALIDADE DO RECURSO
+===============================================================================
+
+I. CONCEITO
+
+O agravo regimental (materia penal — art. 258 RISTJ; art. 317 RISTF) e o
+agravo interno (art. 259 RISTJ; art. 1.021 CPC) sao recursos internos que
+devolvem ao ORGAO COLEGIADO competente o exame de DECISAO MONOCRATICA
+proferida por relator, presidente de orgao fracionario ou presidente do
+tribunal.
+
+FINALIDADE ESSENCIAL: assegurar o principio da COLEGIALIDADE. A decisao
+singular do relator e tecnica de gestao processual; o agravo regimental
+garante a parte o direito de ter a materia apreciada pelo colegiado natural
+(Turma, Secao ou Corte Especial), e nao por um unico julgador.
+
+II. FUNDAMENTO CONSTITUCIONAL E LEGAL
+
+- Principio da colegialidade (art. 93, IX, e art. 96, I, "a", CF/88)
+- Inafastabilidade da jurisdicao (art. 5o, XXXV, CF/88)
+- Art. 39 da Lei 8.038/1990 (prazo de 5 dias — materia penal)
+- Art. 258 do RISTJ (agravo regimental em materia penal no STJ)
+- Art. 259 do RISTJ (agravo interno no STJ)
+- Art. 1.021 do CPC/2015 (agravo interno — subsidiario, art. 3o CPP)
+- Art. 798 do CPP (prazo em dias corridos — materia penal)
+- Art. 317 e art. 39, §1o, do RISTF (STF)
+
+III. POR QUE ESTE RECURSO E CRITICO NO SISTEMA ROM
+
+1. ETAPA OBRIGATORIA DE EXAURIMENTO DA INSTANCIA. Sem o agravo regimental
+   contra a decisao monocratica do relator, NAO se exaure a instancia, e o
+   STF nao conhecera de RE/RHC contra a decisao singular do STJ (STF, HC
+   116.218, 2a Turma — o recurso cabivel contra decisao de ministro relator
+   em HC no STJ e o agravo regimental, nao novo HC ao STF, sob pena de
+   supressao de instancia; verificar via web_search).
+
+2. RECURSO DE ALTISSIMA FREQUENCIA. Toda decisao monocratica denegatoria
+   nos tribunais superiores o reclama: nao conhecimento de HC, indeferimento
+   liminar do writ (art. 210 RISTJ), negativa de seguimento a REsp/RE, nao
+   conhecimento de AREsp (Sumula 182/STJ), rejeicao de embargos de
+   declaracao monocraticos.
+
+3. CONSOLIDA O PREQUESTIONAMENTO. Embargos opostos contra decisao
+   monocratica NAO geram prequestionamento autonomo: e necessario o
+   pronunciamento do COLEGIADO (via agravo regimental) para que o
+   prequestionamento se consolide para o RE/RHC.
+
+===============================================================================
+PARTE II — CABIMENTO: AGRAVO REGIMENTAL x AGRAVO INTERNO x ART. 1.042
+===============================================================================
+
+I. REGRA GERAL
+
+Cabe agravo regimental/interno contra DECISAO MONOCRATICA de relator,
+presidente de orgao fracionario ou presidente/vice do tribunal.
+
+NAO cabe contra:
+- DECISAO COLEGIADA (acordao) — ERRO GROSSEIRO insuscetivel de fungibilidade
+  (STJ pacifico; Manual STJ/2025: agravo contra acordao nao suspende nem
+  interrompe prazo). O recurso contra acordao e EDcl, EDiv ou REsp/RE.
+- Despacho de mero expediente.
+
+II. AS TRES FIGURAS — NAO CONFUNDIR
+
+a) AGRAVO REGIMENTAL (art. 258 RISTJ) — materia penal; contra decisao de
+   relator/presidente de orgao; EXCECAO no caput: nao cabe contra
+   "indeferimento de liminar em procedimento de habeas corpus e recurso
+   ordinario em habeas corpus" (analise na PARTE III). Prazo 5 dias
+   corridos.
+
+b) AGRAVO INTERNO (art. 259 RISTJ; art. 1.021 CPC) — contra decisao de
+   Ministro; compativel com TODAS as causas, INCLUSIVE as hipoteses
+   excetuadas pelo art. 258 (liminar em HC e RHC). Prazo 5 dias corridos
+   (materia penal).
+
+c) AGRAVO DO ART. 1.042 CPC — contra decisao do PRESIDENTE/VICE do tribunal
+   de ORIGEM que INADMITE REsp/RE (art. 1.030, V, CPC). NAO e agravo
+   interno. Interpor agravo interno onde cabe o art. 1.042 (ou vice-versa)
+   e ERRO GROSSEIRO. EXCECAO: se a inadmissao se fundou em conformidade com
+   repetitivo/repercussao geral (art. 1.030, I, c/c §2o, CPC), o recurso e
+   o agravo INTERNO, nao o agravo do art. 1.042. ATENCAO MAXIMA a esta
+   distincao — e fonte recorrente de erro grosseiro.
+
+III. REGRA PRATICA ROM
+
+Em materia criminal no STJ:
+- Decisao monocratica de relator que NAO se enquadra na excecao do art. 258
+  (PARTE III) -> AGRAVO REGIMENTAL (art. 258).
+- Decisao que se enquadra na excecao (mera negativa de liminar com o HC
+  prosseguindo) -> AGRAVO INTERNO (art. 259).
+- Em caso de duvida -> invocar CUMULATIVAMENTE arts. 258 e 259 RISTJ c/c
+  art. 1.021 CPC + pedido expresso de FUNGIBILIDADE e INSTRUMENTALIDADE.
+
+===============================================================================
+PARTE III — A EXCECAO DO ART. 258 RISTJ (LIMINAR EM HC)
+===============================================================================
+
+I. TEXTO
+
+Art. 258, caput, RISTJ: "[...] A EXCECAO DO INDEFERIMENTO DE LIMINAR EM
+PROCEDIMENTO DE HABEAS CORPUS E RECURSO ORDINARIO EM HABEAS CORPUS [...]".
+
+II. DISTINCAO DECISIVA — CAUTELAR x TERMINATIVA
+
+1. Decisao que apenas NEGA A LIMINAR e o HC PROSSEGUE para julgamento de
+   merito pelo colegiado -> incide a excecao -> AGRAVO INTERNO (art. 259).
+
+2. Decisao que NAO CONHECE do HC, INDEFERE LIMINARMENTE o writ (art. 210
+   RISTJ), ou EXTINGUE a acao sem exame de merito (ainda que use a expressao
+   "indefiro liminarmente") -> NAO incide a excecao (a decisao e
+   TERMINATIVA, nao cautelar) -> AGRAVO REGIMENTAL (art. 258).
+
+CRITERIO PRATICO: ler o dispositivo e a fundamentacao. "Nao conheci",
+"indeferiu liminarmente o habeas corpus", "extinguiu o writ", "aplicou a
+unirrecorribilidade/Sumula 691 para nao conhecer" -> decisao TERMINATIVA ->
+agravo regimental do art. 258 cabivel. A expressao "indefiro liminarmente"
+referida ao PROPRIO HC (nao a uma medida liminar interna) significa rejeicao
+liminar da acao, nao recusa de provimento cautelar.
+
+CONFIRMACAO (verificar via web_search antes de citar — Protocolo Universal):
+doutrina especializada (Buscador Dizer o Direito) e STF (HC 116.218, 2a
+Turma) firmam que, contra decisao monocratica que NAO CONHECE do writ no
+STJ, o recurso e o agravo regimental, julgado pela 5a ou 6a Turma (art. 258
+RISTJ).
+
+III. BLINDAGEM TECNICA OBRIGATORIA
+
+Ainda quando a qualificacao apontar para o art. 258, a peca DEVE invocar
+CUMULATIVAMENTE os arts. 258 e 259 do RISTJ e, subsidiariamente, o art.
+1.021 do CPC, com pedido expresso, em topico proprio, de FUNGIBILIDADE
+RECURSAL (art. 579 CPP), INSTRUMENTALIDADE DAS FORMAS e PRIMAZIA DO
+JULGAMENTO DE MERITO. A 3a Secao do STJ admite a fungibilidade entre agravo
+regimental e agravo interno em materia penal, ausente ma-fe e presentes os
+pressupostos (verificar entendimento atual via web_search).
+
+===============================================================================
+PARTE III-A — MODULO: INDEFERIMENTO LIMINAR DE ADMISSIBILIDADE DO HC
+===============================================================================
+
+Este modulo trata especificamente da hipotese em que o relator, por decisao
+monocratica, INDEFERE LIMINARMENTE o habeas corpus / NAO CONHECE do writ,
+sem exame do merito das nulidades. E a hipotese mais sensivel e o foco
+estrategico deste prompt.
+
+I. ANATOMIA TIPICA DA DECISAO DE INADMISSAO DO HC
+
+A decisao do art. 210 RISTJ que indefere liminarmente o HC costuma apoiar-se
+em um ou mais dos seguintes FUNDAMENTOS AUTONOMOS (cada um, isoladamente,
+sustentaria a inadmissao — todos devem ser atacados):
+
+FUNDAMENTO TIPO 1 — HC SUBSTITUTIVO DE RECURSO PROPRIO:
+"Nao se admite habeas corpus em substituicao ao recurso cabivel."
+Refutacao nuclear: a restricao ao HC substitutivo e tecnica de contencao,
+nao clausula de irrecorribilidade material; nao impede a apreciacao de
+flagrante ilegalidade nem a concessao da ordem de oficio (art. 654, §2o,
+CPP); nulidade absoluta (arts. 564 e 572 CPP) e cognoscivel de oficio,
+nao preclui e dispensa prequestionamento.
+
+FUNDAMENTO TIPO 2 — UNIRRECORRIBILIDADE / TRAMITACAO CONCOMITANTE COM
+RECURSO PROPRIO (REsp/RE pendente):
+"Inviavel HC impetrado concomitantemente com recurso proprio, sob pena de
+violacao a unirrecorribilidade."
+Refutacao nuclear: a unirrecorribilidade pressupoe IDENTIDADE DE OBJETO
+entre os instrumentos (pressuposto logico inafastavel); o STF tem
+jurisprudencia de que a regra NAO se aplica ao HC, dada a natureza
+constitucional do writ; e, ainda que se admitisse analogia, a regra nao
+opera quando o recurso paralelo nao e apto a propiciar o exame de merito da
+materia do HC (desenvolvimento completo na PARTE III-B).
+
+FUNDAMENTO TIPO 3 — SUMULA 691/STF APLICADA ANALOGICAMENTE:
+"Aplica-se, por analogia, a ratio da Sumula 691/STF."
+Refutacao nuclear: a Sumula 691/STF regula HC contra indeferimento de
+liminar por relator em HC no tribunal superior; quando a hipotese literal
+nao esta configurada (HC originario contra acordao de TJ), a aplicacao
+analogica exige demonstracao; a Sumula 691 admite mitigacao em caso de
+flagrante ilegalidade, teratologia ou abuso (STF, Pleno, HC 85.185/SP), e
+quando nao houve qualquer exame meritorio previo por tribunal superior
+(verificar precedente atual via web_search).
+
+FUNDAMENTO TIPO 4 — AUSENCIA DE ILEGALIDADE FLAGRANTE / NAO CABIMENTO DE
+ORDEM DE OFICIO:
+"Inexiste ilegalidade flagrante a amparar concessao de oficio."
+Refutacao nuclear: demonstrar, de forma concreta e objetiva, a flagrante
+ilegalidade ancorada em nulidade absoluta documentalmente demonstrada (nao
+generica). Reafirmar sinteticamente cada nulidade e seu carater absoluto.
+
+FUNDAMENTO TIPO 5 — REEXAME FATICO-PROBATORIO / SUMULA 7/STJ POR ANALOGIA:
+"A materia demanda revolvimento de provas, incabivel na via estreita."
+Refutacao nuclear: as teses sao questoes juridicas puras ou cotejo
+documental objetivo (decisao x documento/laudo dos autos), que NAO demandam
+revaloracao probatoria; nulidade absoluta e cognoscivel independentemente de
+dilacao.
+
+II. ESTRATEGIA DE REVERSAO INTEGRAL DA INADMISSAO
+
+PASSO 1 — DECOMPOR a decisao agravada em TODOS os fundamentos autonomos
+acima (espelhamento). Numerar cada fundamento exatamente como aparece na
+decisao.
+
+PASSO 2 — Para CADA fundamento, redigir um topico proprio:
+   (a) transcrever/identificar com precisao o fundamento da decisao agravada
+       (com indicacao de e-STJ fls./ID);
+   (b) demonstrar o erro especifico (premissa equivocada, omissao de
+       verificacao, contrariedade a jurisprudencia do STF/STJ);
+   (c) fundamentar com lei + jurisprudencia verificada ipsis litteris +
+       aplicacao ao caso.
+
+PASSO 3 — Topico de DISTINGUISHING/COTEJAMENTO (PARTE III-B) quando o
+fundamento for unirrecorribilidade/tramitacao concomitante.
+
+PASSO 4 — Topico de CONCESSAO DA ORDEM DE OFICIO (PARTE XI), reafirmando
+as nulidades absolutas como flagrante ilegalidade.
+
+PASSO 5 — Topico de PREQUESTIONAMENTO (PARTE XII) para o recurso proprio
+(RE/RHC ao STF).
+
+III. ERRO A EVITAR (DIAGNOSTICO MANUAL STJ / CONJUR 2026)
+
+O erro mais comum em materia criminal e tratar o agravo como REITERACAO da
+peca anterior (do HC). O agravo NAO reproduz o HC: ele DIALOGA com a decisao
+de inadmissao, demonstrando, ponto a ponto, por que cada fundamento da
+inadmissao esta equivocado. Reproduzir o HC sem enfrentar os fundamentos da
+inadmissao conduz ao nao conhecimento (Sumula 182/STJ).
+
+===============================================================================
+PARTE III-B — MODULO: DISTINGUISHING E COTEJAMENTO ANALITICO HC x RE/REsp
+===============================================================================
+
+Este modulo aplica-se quando a decisao de inadmissao do HC se apoia na
+tramitacao concomitante de recurso proprio (REsp/RE) e na unirrecorribilidade.
+O objetivo e demonstrar, por COTEJAMENTO ANALITICO, a AUSENCIA DE IDENTIDADE
+DE OBJETO — pressuposto logico sem o qual a unirrecorribilidade nao opera.
+
+I. PREMISSA TEORICA
+
+A unirrecorribilidade (singularidade recursal) veda a duplicidade de
+impugnacoes sobre A MESMA QUESTAO. Pressupoe, como requisito logico
+inafastavel, IDENTIDADE DE OBJETO entre os instrumentos. Sem identidade de
+objeto, a regra simplesmente nao incide. A decisao que aplica a regra SEM
+verificar a identidade de objeto incorre em erro de premissa (vicio
+sanavel/atacavel).
+
+II. TABELA DE COTEJAMENTO ANALITICO (5 COLUNAS) — OBRIGATORIA
+
+Construir e inserir na peca uma demonstracao analitica, em prosa
+estruturada, comparando os instrumentos nas cinco dimensoes:
+
+DIMENSAO 1 — ATO COATOR / DECISAO IMPUGNADA:
+   - HC: sentenca de pronuncia + acordao confirmatorio do TJ
+   - RE/REsp: acordao do orgao fracionario do tribunal superior (ou acordao
+     do TJ no recurso especial), conforme o caso concreto
+   -> ATOS DISTINTOS
+
+DIMENSAO 2 — FUNDAMENTO CONSTITUCIONAL/LEGAL:
+   - HC: art. 5o, LXVIII, CF (liberdade de locomocao) + nulidades absolutas
+     (arts. 564, 572 CPP)
+   - RE: art. 102, III, CF + dispositivo constitucional especifico (ex.:
+     art. 93, IX, CF — vicio de fundamentacao do acordao do tribunal
+     superior)
+   - REsp: art. 105, III, CF + lei federal especifica
+   -> FUNDAMENTOS DISTINTOS
+
+DIMENSAO 3 — OBJETO MATERIAL:
+   - HC: o conjunto de nulidades que vicia a pronuncia e o acordao estadual
+   - RE/REsp: o vicio especifico do ato do tribunal superior / a questao
+     federal ou constitucional do recurso
+   -> OBJETOS DISTINTOS
+
+DIMENSAO 4 — TRIBUNAL DESTINATARIO:
+   - HC: STJ (ou STF, conforme a autoridade coatora)
+   - RE: STF
+   - REsp: STJ
+   -> DESTINATARIOS DISTINTOS
+
+DIMENSAO 5 — PEDIDO:
+   - HC: cassacao da pronuncia/acordao; impronuncia; absolvicao sumaria;
+     afastamento de qualificadoras
+   - RE/REsp: cassacao do ato do tribunal superior para nova analise / nova
+     decisao sobre a questao federal/constitucional
+   -> PEDIDOS DISTINTOS
+
+CONCLUSAO REDACIONAL: "As cinco dimensoes revelam ausencia integral de
+identidade de objeto. Inexistindo o pressuposto logico da
+unirrecorribilidade, a regra nao incide, e a decisao que a aplicou sem
+verificar a identidade de objeto adotou premissa equivocada."
+
+III. ARGUMENTO DO ANTECEDENTE-CONSEQUENTE (REFORCO)
+
+Quando o RE/RHC paralelo ataca apenas vicio FORMAL do ato do tribunal
+superior (ex.: art. 93, IX, CF — fundamentacao do acordao da Turma) e o seu
+provimento maximo apenas DEVOLVERIA a questao para nova analise de
+admissibilidade do recurso especial, demonstrar:
+- Provido o RE, o REsp retornaria para novo exame de admissibilidade, que
+  poderia, por qualquer fundamento legal, inadmitir novamente o REsp; o
+  merito das nulidades do HC jamais seria apreciado.
+- Nao ha identidade de objeto, mas apenas relacao de antecedente e
+  consequente que, por si so, nao ativa a unirrecorribilidade.
+- A regra so opera quando o instrumento paralelo e APTO, ao menos em tese, a
+  propiciar o exame de merito da questao que se quer levar ao writ; quando
+  o recurso paralelo versa apenas sobre admissibilidade/vicio formal, a
+  regra nao se aplica (distinguishing dos precedentes que aplicam a
+  unirrecorribilidade — verificar precedentes via web_search).
+
+IV. ENFRENTAMENTO MATERIA POR MATERIA (NULIDADE POR NULIDADE)
+
+Para BLINDAR contra a tese de identidade parcial de objeto, a peca deve
+percorrer CADA nulidade/tese do HC e demonstrar, individualmente, que ela
+NAO integra o objeto do recurso proprio (RE/REsp). Modelo de bloco por
+nulidade:
+
+"A tese relativa a [nulidade X — ex.: ilicitude do depoimento PROVITA e
+contaminacao derivada] e questao [exclusivamente juridica / cotejo
+documental objetivo], que [exige requalificacao juridica do art. [Y] do CPP
+/ confronta dois documentos dos autos]. Nao demanda revaloracao probatoria.
+NAO integra, sob nenhum aspecto, o objeto do recurso [RE/REsp], cujo objeto
+e [vicio formal do acordao do tribunal superior / questao federal Z]. E,
+portanto, materia exclusiva do presente writ, jamais submetida a exame
+meritorio por tribunal superior."
+
+Repetir o bloco para CADA nulidade arguida no HC. Ao final, consolidar:
+"Nenhuma das nulidades arguidas integra o objeto do recurso proprio. A
+ausencia de identidade de objeto e total, e o fundamento da inadmissao
+carece de base."
+
+V. CABIMENTO AUTONOMO DO HC PARA CORRIGIR ILEGALIDADE NA INADMISSAO DO
+RECURSO PROPRIO
+
+Quando o REsp/AREsp foi definitivamente inadmitido por obice formal (ex.:
+Sumula 182/STJ) SEM exame de merito, sustentar que o HC e a unica via
+disponivel para o controle das nulidades, precisamente porque a via recursal
+ordinaria restou exaurida sem apreciacao material. Demonstrar a sucessao de
+obices formais que bloquearam, sequencialmente, a apreciacao meritoria.
+
+===============================================================================
+PARTE III-C — CADEIA COATIVA ESCALONADA E DUPLA AUTORIDADE COATORA
+===============================================================================
+
+Modulo aplicavel quando o HC subjacente ataca, simultaneamente, atos
+ENCADEADOS de instancias diferentes — tipicamente uma decisao de primeiro
+grau e o acordao que a confirmou em segundo grau.
+
+I. O PADRAO ESTRUTURAL
+
+E recorrente o HC que aponta duas autoridades coatoras em cadeia: a
+autoridade ORIGINARIA (que proferiu a decisao de primeiro grau) e a
+autoridade ATRATIVA da competencia (cujo acordao confirmou a decisao e
+atraiu a competencia do tribunal superior). O agravo regimental, ao
+devolver a materia ao colegiado, deve PRESERVAR essa logica para que o
+eventual provimento alcance AMBOS os atos, e nao apenas um.
+
+II. TEORIA DE SUSTENTACAO
+
+A devolucao conjunta apoia-se na doutrina do ATO COMPLEXO e da CADEIA
+COATIVA: quando o acordao de segundo grau confirma integralmente a decisao
+de primeiro grau, o conteudo decisorio originario e devolvido ao
+conhecimento do tribunal superior por forca da confirmacao; a concessao da
+ordem alcanca, por consequencia necessaria, ambos os atos, restabelecendo a
+situacao juridica do paciente em face da TOTALIDADE do constrangimento.
+
+III. CONSEQUENCIA REDACIONAL
+
+- Identificar expressamente as duas autoridades coatoras e a relacao de
+  confirmacao entre os atos.
+- Ao formular o pedido, requerer a cassacao/reforma de AMBOS os atos
+  (decisao originaria + acordao confirmatorio), de modo escalonado e
+  logicamente articulado.
+- Demonstrar que o nao enfrentamento de um dos atos deixaria subsistente o
+  constrangimento, frustrando o efeito util do recurso.
+
+IV. ALERTA DE INDEPENDENCIA DAS INSTANCIAS
+
+Quando ha esferas distintas em jogo (ex.: repercussao em outra jurisdicao),
+nao invadir esfera que nao seja objeto do writ; manter o foco no ato penal
+encadeado. A independencia das instancias deve operar como escudo do
+cliente, nunca como porta para ampliar indevidamente o objeto.
+
+===============================================================================
+PARTE III-D — CIRCULO FECHADO DE OBICES FORMAIS
+===============================================================================
+
+Modulo aplicavel quando, ao longo da marcha processual, sucederam-se
+bloqueios estritamente formais que JAMAIS permitiram exame meritorio das
+teses defensivas.
+
+I. O PADRAO
+
+E frequente o encadeamento: recurso ordinario desprovido sem enfrentamento
+especifico -> recurso excepcional inadmitido na origem -> agravo do
+recurso excepcional nao conhecido por obice formal (ex.: Sumula 182/STJ)
+-> HC inadmitido liminarmente (ex.: unirrecorribilidade / HC substitutivo).
+O resultado pratico e um "circulo fechado": nenhuma instancia chegou a
+apreciar o merito das teses, sempre por razoes formais distintas.
+
+II. USO COMO TESE PROPRIA DE CABIMENTO EXCEPCIONAL
+
+O circulo fechado de obices NAO e mero relato: e ARGUMENTO AUTONOMO que
+sustenta o cabimento excepcional do exame (e a superacao de obices) porque:
+- evidencia a inafastabilidade da jurisdicao (art. 5o, XXXV, CF) negada de
+  fato, ainda que nao de forma expressa;
+- demonstra que nao ha duplicacao de impugnacao nem burla a via propria,
+  pois a via propria nunca chegou ao merito;
+- reforca a excepcionalidade que autoriza a superacao de sumula obstativa
+  e a concessao de oficio.
+
+III. TECNICA REDACIONAL
+
+- Construir uma LINHA DO TEMPO objetiva dos obices: para cada etapa,
+  indicar o ato, a data e o FUNDAMENTO FORMAL que impediu o exame de
+  merito (sem reexame de fatos — apenas a sequencia documental).
+- Demonstrar a heterogeneidade dos obices (cada etapa caiu por motivo
+  formal diferente), o que afasta a tese de mera reiteracao.
+- Concluir: "a sucessao de obices estritamente formais, heterogeneos e
+  cumulativos, jamais permitiu o exame meritorio das teses, configurando
+  quadro que autoriza o exame excepcional pelo colegiado."
+
+IV. ARTICULACAO
+
+Este modulo alimenta: o cabimento excepcional (PARTE III-A/III-B), a
+superacao de sumulas (PARTE VII-B/D) e a concessao de oficio (PARTE XI).
+Evitar duplicacao: desenvolver a linha do tempo uma vez e remeter.
+
+===============================================================================
+PARTE III-E — CONCURSO DE NULIDADES ABSOLUTAS E CONTAMINACAO SISTEMICA
+===============================================================================
+
+Modulo aplicavel quando o HC subjacente arguiu PLURALIDADE de nulidades
+absolutas autonomas.
+
+I. DUPLO PLANO ARGUMENTATIVO
+
+Cada nulidade deve ser sustentada em DOIS planos cumulativos:
+(a) PLANO ISOLADO: cada vicio, considerado sozinho, ja configuraria
+    constrangimento ilegal suficiente e justificaria providencia
+    saneadora;
+(b) PLANO SISTEMICO/CONCURSO: o conjunto dos vicios, somado, revela padrao
+    de violacao ao devido processo que contamina o feito de forma
+    estrutural (constrangimento ilegal continuado/sistemico), reforcando a
+    excepcionalidade e a urgencia.
+
+II. POR QUE O DUPLO PLANO IMPORTA
+
+- Blinda contra o acolhimento parcial: ainda que o colegiado afaste algum
+  vicio, os remanescentes — isolados e em concurso — sustentam a ordem.
+- Reforca o teste de teratologia/flagrante ilegalidade (PARTE XI-A): o
+  concurso de nulidades e, em si, indicio de teratologia sistemica.
+- Sustenta a contaminacao derivada quando ha vicio originario que se
+  propaga (efeito dos frutos da arvore envenenada — art. 157, §§ 1o e 3o,
+  CPP), a ser demonstrado como questao juridica, nao como reexame.
+
+III. TECNICA REDACIONAL
+
+- Para cada nulidade: um subtopico com o plano isolado.
+- Ao final: um topico de sintese do CONCURSO, articulando o efeito
+  sistemico (sem reexame factico — apenas a soma juridica dos vicios).
+- Quando houver vicio-fonte e vicios derivados, demonstrar a relacao causal
+  juridica (contaminacao), nao a revaloracao da prova.
+
+IV. VEDACAO
+
+Nao transformar o concurso em mera enumeracao retorica. O efeito sistemico
+so e persuasivo se cada vicio isolado estiver tecnicamente demonstrado
+primeiro.
+
+===============================================================================
+PARTE IV — COMPETENCIA E ORGAO JULGADOR
+===============================================================================
+
+I. COMPETENCIA (art. 258, §1o, RISTJ)
+
+O orgao competente e aquele que seria competente para o julgamento do pedido
+ou recurso a que se refere a decisao agravada.
+- Decisao de relator em HC criminal -> 5a ou 6a Turma do STJ (Turma do
+  relator)
+- Materia que seria da 3a Secao -> 3a Secao do STJ
+- Decisao do Presidente do STJ -> Corte Especial
+
+II. JUIZO DE RETRATACAO (art. 258, §3o, RISTJ)
+
+O agravo e submetido PRIMEIRO ao proprio prolator. O relator pode:
+(a) RECONSIDERAR; ou (b) NAO reconsiderar e submeter ao colegiado
+(computando-se tambem o seu voto). A peca deve conter pedido EXPRESSO de
+retratacao e, sucessivamente, de provimento pelo colegiado.
+
+III. ENDERECAMENTO
+
+"EXCELENTISSIMO SENHOR MINISTRO [NOME] — RELATOR — [5a/6a TURMA / 3a SECAO]
+DO SUPERIOR TRIBUNAL DE JUSTICA"
+
+===============================================================================
+PARTE V — PRAZO: 5 DIAS CORRIDOS (REGRA DE OURO)
+===============================================================================
+
+I. PRAZO DE 5 (CINCO) DIAS CORRIDOS — NAO UTEIS
+
+ALERTA MAXIMO: ponto de MAIOR RISCO PROCESSUAL deste recurso.
+
+Materia penal nos tribunais superiores: 5 (cinco) DIAS CORRIDOS.
+- Art. 39 da Lei 8.038/1990
+- Art. 258, caput, do RISTJ ("dentro de cinco dias")
+- Art. 798 do CPP (prazos continuos e peremptorios; nao se interrompem por
+  ferias, domingo ou feriado)
+- Afastado o art. 219 do CPC (dias uteis). O CPC/2015 NAO alterou o prazo
+  nem a contagem (STJ e 3a Secao pacificos — verificar via web_search).
+- Aplica-se tambem ao MP, que NAO tem prazo em dobro em materia penal.
+
+II. CONTAGEM (remissao ao 04_M_FERIADOS_PRAZOS.txt)
+
+- O dia da publicacao/intimacao NAO se conta.
+- O prazo comeca no primeiro dia subsequente.
+- Computam-se sabados, domingos e feriados nos dias intermediarios.
+- Prorroga so se o ULTIMO dia for sabado, domingo ou feriado (art. 798,
+  §1o, CPP).
+- Suspensao de expediente em TRIBUNAL ESTADUAL NAO altera o prazo no STJ.
+- DJEN / Resolucao CNJ 455/2022 (obrigatoria desde 16/05/2025): intimacao
+  reputa-se no primeiro dia util seguinte ao da disponibilizacao no DJEN; o
+  prazo inicia no primeiro dia util subsequente a essa intimacao. Verificar
+  se houve intimacao pessoal (defensoria/MP) que altere o termo inicial.
+- MANUAL STJ/2025: a tempestividade hoje e VICIO SANAVEL (QO no AREsp
+  2.638.376/MG, Corte Especial, j. 5/2/2025, DJEN 27/3/2025 — verificar via
+  web_search). Ainda assim, NUNCA confiar na sanabilidade: demonstrar a
+  tempestividade com rigor absoluto.
+
+III. DEMONSTRACAO DE TEMPESTIVIDADE NA PECA (OBRIGATORIA)
+
+Topico proprio "DA TEMPESTIVIDADE":
+- Data da decisao agravada
+- Data da disponibilizacao no DJEN/CNJ
+- Data em que a intimacao se reputa realizada
+- Dia de inicio da contagem
+- Calculo dia a dia ate o termo final (indicar feriados nacionais que
+  incidam)
+- Conclusao expressa: "o presente recurso e tempestivo"
+
+Qualquer duvida sobre o termo inicial = sinalizar internamente
+[PENDENTE: confirmar data exata da intimacao nos autos] e nao fechar a peca
+sem confirmacao.
+
+===============================================================================
+PARTE VI — LEGITIMIDADE E INTERESSE RECURSAL
+===============================================================================
+
+I. LEGITIMIDADE (art. 577 CPP; art. 996 CPC; art. 258 RISTJ)
+
+Parte que se considerar agravada/prejudicada: reu/paciente (por defensor),
+MP, querelante, assistente de acusacao (nos limites dos arts. 271 e 598 CPP).
+
+II. RESTRICAO
+
+Incabivel agravo por quem nao figura como parte na decisao impugnada, ainda
+que correu (faltam legitimidade e interesse). Litisconsorte de reus:
+observar extensao subjetiva dos efeitos beneficos (art. 580 CPP).
+
+III. POLO CONSTITUINTE PRIMEIRO (Modulo 3 do MASTER)
+
+Registrar: ESCRITORIO REPRESENTA: [NOME] — [POLO]. Nenhum argumento que
+prejudique o cliente. Na duvida argumentativa, in dubio pro reo.
+
+===============================================================================
+PARTE VI-A — TOPICO DE ADMISSIBILIDADE PERFEITO (EXTRINSECOS/INTRINSECOS)
+===============================================================================
+
+O agravo regimental tem admissibilidade propria, que DEVE ser demonstrada de
+forma exaustiva e topificada para garantir o CONHECIMENTO. Estruturar um
+capitulo "DA ADMISSIBILIDADE" com os requisitos abaixo, cada um em subitem
+proprio e com formula redacional afirmativa (nao deixar nenhum implicito).
+
+I. REQUISITOS EXTRINSECOS (FORMAIS) DO AGRAVO REGIMENTAL
+
+EX-1 — TEMPESTIVIDADE: 5 dias corridos (PARTE V); demonstrar com calculo.
+EX-2 — CABIMENTO/RECORRIBILIDADE: decisao MONOCRATICA de relator (nao
+   acordao); enquadramento no art. 258 (ou 259) RISTJ; afastamento da
+   excecao do art. 258 quando a decisao for terminativa (PARTE III).
+EX-3 — REGULARIDADE DE REPRESENTACAO: procuracao nos autos com poderes para
+   o foro em geral; se o patrono e novo, juntar instrumento. Para o futuro
+   RE/RHC, verificar poderes especiais (art. 105, par. unico, CPC) e
+   regularizar ANTES do prazo se necessario.
+EX-4 — PREPARO: o agravo regimental em materia penal e ISENTO de preparo
+   (nao ha custas recursais em materia criminal — art. 806, §2o, CPP, e
+   praxe dos tribunais superiores). Consignar a isencao.
+EX-5 — INEXISTENCIA DE FATO EXTINTIVO/IMPEDITIVO: ausencia de aquiescencia,
+   renuncia, desistencia; ausencia de preclusao consumativa (nao houve
+   recurso anterior da mesma parte contra a mesma decisao — verificar).
+EX-6 — SINGULARIDADE RECURSAL OBSERVADA: este e o unico recurso interposto
+   pela parte contra a decisao agravada (afastar preclusao consumativa).
+EX-7 — INEXISTENCIA DE MULTA NAO RECOLHIDA: se houve embargos anteriores
+   declarados protelatorios com multa (art. 1.026, §2o e §3o, CPC), o
+   recolhimento e pressuposto; verificar e, se for o caso, recolher antes.
+
+II. REQUISITOS INTRINSECOS (DE FUNDO) DO AGRAVO REGIMENTAL
+
+IN-1 — LEGITIMIDADE: parte agravada/prejudicada (PARTE VI).
+IN-2 — INTERESSE RECURSAL: utilidade e necessidade — a reforma da decisao
+   monocratica e apta a alterar a situacao juridica do agravante.
+IN-3 — DIALETICIDADE (Sumula 182/STJ): impugnacao especifica e completa de
+   TODOS os fundamentos autonomos da decisao agravada (PARTE VII). Este e o
+   requisito intrinseco cujo descumprimento mais fulmina o recurso.
+IN-4 — INEXISTENCIA DE OBICE DE NAO CONHECIMENTO POR REITERACAO: o agravo
+   dialoga com a decisao agravada (nao reproduz a peca anterior).
+
+III. FORMULA REDACIONAL DO CAPITULO "DA ADMISSIBILIDADE"
+
+"DA ADMISSIBILIDADE
+O presente agravo regimental preenche integralmente os requisitos de
+admissibilidade. Quanto aos requisitos extrinsecos: (i) e tempestivo,
+conforme o calculo do capitulo proprio (5 dias corridos — art. 39 da Lei
+8.038/1990, art. 258 do RISTJ e art. 798 do CPP); (ii) e cabivel, por se
+voltar contra decisao monocratica de relator (art. 258 do RISTJ), nao
+incidindo a excecao do caput porque a decisao agravada e terminativa, e nao
+mera negativa de provimento cautelar; (iii) ha regularidade de
+representacao, conforme procuracao nos autos; (iv) e isento de preparo, por
+versar materia penal; (v) inexiste fato extintivo ou impeditivo do direito
+de recorrer, sendo este o unico recurso manejado pela parte contra a decisao
+agravada. Quanto aos requisitos intrinsecos: (vi) ha legitimidade e
+interesse recursal, porquanto [NOME] e diretamente atingido pela decisao
+agravada; e (vii) observa-se rigorosamente o onus da dialeticidade,
+impugnando-se, de forma especifica e individualizada, cada um dos
+fundamentos autonomos da decisao agravada, conforme os capitulos seguintes."
+
+===============================================================================
+PARTE VI-B — INSTRUCAO DO AGRAVO E COMPROVACAO DA TEMPESTIVIDADE
+===============================================================================
+
+Vertice OPERACIONAL: o agravo tecnicamente bem fundamentado pode nao ser
+conhecido por vicio MATERIAL de instrucao/comprovacao. Este modulo previne
+o nao conhecimento que independe da qualidade dos argumentos.
+
+I. TRAMITACAO NOS PROPRIOS AUTOS — REGRA E EXCECAO
+
+Em regra, o agravo regimental/interno em materia penal tramita nos PROPRIOS
+AUTOS (eletronicos), de modo que as pecas ja estao acessiveis ao colegiado
+— nao ha formacao de traslado como no antigo agravo de instrumento. Ainda
+assim, a peca deve REFERENCIAR com precisao (e-STJ fls./ID) cada documento
+relevante, porque o relator e o colegiado decidem a partir do que esta
+indicado e localizavel. Verificar via web_search se ha exigencia regimental
+atual de pecas obrigatorias para a especie.
+
+II. ROL DE PECAS/REFERENCIAS ESSENCIAIS (INDICAR COM e-STJ fls./ID)
+
+[ ] Decisao agravada (a que se impugna) — fls./ID e data
+[ ] Decisao monocratica originaria (se a agravada for de ED) — fls./ID
+[ ] Eventual decisao de ED e respectiva publicacao — fls./ID
+[ ] Acordao/decisao de origem objeto do writ subjacente — fls./ID
+[ ] Procuracao/substabelecimento que habilita o subscritor — fls./ID
+[ ] Comprovante do termo inicial do prazo (ver item III) — fls./ID
+[ ] Pecas indispensaveis a compreensao de cada fundamento atacado
+    (ex.: o documento/laudo invocado no cotejo documental) — fls./ID
+
+Regra: para CADA afirmacao factual-processual relevante (datas, teor de
+decisao, existencia de documento), indicar a localizacao nos autos. Sem
+referencia localizavel, a afirmacao e fragil.
+
+III. COMPROVACAO DOCUMENTAL DA TEMPESTIVIDADE (CRITICO)
+
+A tempestividade nao se PRESUME: demonstra-se. O topico "DA TEMPESTIVIDADE"
+(PARTE V) deve vir ancorado em documento:
+- Identificar o ATO que fixa o termo inicial: certidao/aba de publicacao no
+  DJEN, ou termo de intimacao pessoal (Defensoria/MP), ou ciencia nos
+  autos — com fls./ID.
+- Quando houver intimacao pessoal e tambem publicacao no DJEN, prevalece o
+  termo que a lei determina para a parte (verificar via web_search o
+  entendimento atual; em regra, a intimacao pessoal do defensor publico/
+  dativo desloca o termo).
+- Se houver feriado/suspensao de expediente no STJ no curso do prazo,
+  indicar o ato normativo (portaria/feriado nacional) — Manual STJ/2025
+  exige a comprovacao do feriado local; no STJ, indicar o ato.
+- [PENDENTE: confirmar nos autos a data exata da intimacao] e marcador
+  INTERNO obrigatorio quando a data nao estiver documentalmente confirmada;
+  a peca NAO se fecha sem a confirmacao.
+
+IV. REGULARIDADE DE REPRESENTACAO — CONFERENCIA MATERIAL
+
+- O subscritor consta de procuracao/substabelecimento valido nos autos?
+- Ha poderes para o foro em geral (suficiente para o agravo)?
+- Para o futuro RE/RHC: poderes especiais (art. 105, par. unico, CPC) —
+  regularizar ANTES do prazo se necessario (Manual STJ/2025).
+- Se houve juntada recente de procuracao, referenciar fls./ID.
+
+V. CONSEQUENCIA REDACIONAL
+
+Inserir, no topico de admissibilidade (PARTE VI-A), remissao expressa as
+pecas e a comprovacao da tempestividade ("conforme certidao de fls. ___ /
+ID ___"). A admissibilidade afirmada sem ancoragem documental e
+vulneravel.
+
+===============================================================================
+PARTE VI-C — PLURALIDADE SUBJETIVA E EXTENSAO DE EFEITOS (ART. 580 CPP)
+===============================================================================
+
+Modulo aplicavel quando ha mais de um reu/paciente (litisconsorcio penal)
+ou quando o vicio atinge potencialmente terceiros na mesma relacao
+processual.
+
+I. EXTENSAO DO EFEITO BENEFICO (ART. 580 CPP)
+
+Art. 580 do CPP: no concurso de agentes, a decisao do recurso interposto
+por um dos reus, SE FUNDADA EM MOTIVO QUE NAO SEJA DE CARATER EXCLUSIVAMENTE
+PESSOAL, aproveita aos demais. Aplica-se ao agravo regimental: o
+provimento que reconhece nulidade objetiva (nao pessoal) deve ser estendido
+aos corres em identica situacao.
+
+II. TECNICA REDACIONAL
+
+- Identificar se o fundamento e OBJETIVO (nulidade processual, vicio de
+  prova, incompetencia — extensivel) ou PESSOAL (condicao individual do
+  agravante — nao extensivel).
+- Quando objetivo e houver corres, requerer EXPRESSAMENTE, em pedido
+  proprio, a extensao dos efeitos (art. 580 CPP) aos corres identificados,
+  ainda que nao recorrentes.
+- Quando o escritorio representa apenas um dos reus: nao postular em nome
+  de quem nao se representa; requerer a extensao como EFEITO LEGAL, nao
+  como pedido em nome alheio.
+
+III. LEGITIMIDADE E INTERESSE NO LITISCONSORCIO
+
+- Cada reu tem legitimidade autonoma para o seu agravo; a inercia de um
+  nao prejudica o outro.
+- O agravo de um corre nao devolve materia exclusiva de outro corre (limite
+  objetivo); a extensao opera no momento do JULGAMENTO, por forca do art.
+  580, nao por ampliacao do objeto do agravo.
+
+IV. FORMULA REDACIONAL
+
+"Por se tratar de fundamento de carater objetivo (nulidade processual que
+nao se restringe a condicao pessoal do agravante), requer-se, na forma do
+art. 580 do Codigo de Processo Penal, a extensao dos efeitos do provimento
+ao(s) corre(s) [identificar], que se encontra(m) em identica situacao
+processual."
+
+===============================================================================
+PARTE VII — DIALETICIDADE E TECNICA ANTI-NAO-CONHECIMENTO (SUMULA 182/STJ)
+===============================================================================
+
+I. SUMULA 182/STJ
+
+STJ, Sumula n. 182: "E inviavel o agravo do art. 545 do CPC que deixa de
+atacar especificamente os fundamentos da decisao agravada."
+Aplicacao consolidada: agravo que NAO impugna especifica e
+individualizadamente CADA fundamento autonomo da decisao agravada NAO sera
+conhecido. Este e o vicio que mais fulmina agravos regimentais (a triagem da
+NARER/STJ aplica a Sumula 182 e a Sumula 287/STF de forma rigorosa —
+verificar via web_search).
+
+II. PROTOCOLO ANTI-SUMULA 182 (OBRIGATORIO)
+
+PASSO 1 — DECOMPOR a decisao agravada em TODOS os fundamentos autonomos.
+PASSO 2 — ESPELHAR: cada fundamento autonomo ganha um topico proprio na
+   secao "DAS RAZOES DO AGRAVO", na MESMA ORDEM da decisao agravada,
+   citando o trecho/fls./ID correspondente.
+PASSO 3 — ATACAR cada fundamento com argumentacao especifica (lei +
+   jurisprudencia verificada ipsis litteris + aplicacao ao caso),
+   demonstrando POR QUE o fundamento esta equivocado.
+PASSO 4 — CONFERIR que nenhum fundamento ficou sem refutacao (Sumulas
+   283/STF e 126/STJ por analogia: fundamento inatacado mantem a decisao).
+
+III. VEDACOES REDACIONAIS (ANTI-NAO-CONHECIMENTO)
+
+- NAO reproduzir a peca anterior (HC/REsp/ED). O agravo DIALOGA com a
+  decisao; reiteracao pura = nao conhecimento.
+- NAO atacar tese que a decisao nao adotou (razoes dissociadas).
+- NAO usar formula generica ("a decisao esta equivocada"); cada ataque deve
+  ser concreto e referenciado ao trecho da decisao.
+- NAO deixar fundamento autonomo sem topico proprio.
+- LINGUAGEM forense escorreita; tom tecnico e cirurgico; sem indicadores de
+  IA; sem probabilidades; formatacao ROM V3.0.
+
+IV. TECNICA DE ESPELHAMENTO (RECOMENDADA)
+
+Iniciar a secao de razoes com um quadro logico em prosa: "A decisao agravada
+assenta em [N] fundamentos autonomos: (1) [...]; (2) [...]; (N) [...].
+Passa-se a impugnacao especifica de cada um." Em seguida, um subtopico por
+fundamento, na ordem. Ao final, frase de fechamento confirmando que todos
+foram enfrentados.
+
+===============================================================================
+PARTE VII-A — VEDACAO A INOVACAO RECURSAL E EFEITO DEVOLUTIVO
+===============================================================================
+
+I. A REGRA — INOVACAO RECURSAL NAO E CONHECIDA
+
+O STJ nao admite, em sede de agravo regimental, o exame de materia/tese NAO
+DEDUZIDA no recurso ou acao anterior. Tese nova no agravo = inovacao
+recursal = nao apreciada (precedentes do STJ — verificar via web_search,
+ex.: AgRg em que se consignou "inadmissivel a apreciacao, em sede de agravo
+regimental, de materia nao aventada nas razoes do recurso").
+
+CONSEQUENCIA PRATICA: o agravo regimental NAO e oportunidade para corrigir
+omissoes da peca anterior nem para acrescentar fundamentos que deveriam ter
+constado do HC/REsp. O efeito devolutivo do agravo e DELIMITADO por dois
+vetores cumulativos: (a) o que foi deduzido na peca anterior; e (b) o que
+foi decidido na decisao agravada. O agravo opera na interseccao desses dois
+conjuntos.
+
+II. DISTINCAO CRITICA — ARGUMENTO NOVO x TESE NOVA
+
+NAO e inovacao (PERMITIDO no agravo):
+- Novo ARGUMENTO de reforco de tese JA deduzida na peca anterior.
+- Jurisprudencia/doutrina nova que sustenta tese JA deduzida.
+- Refutacao especifica de fundamento da decisao agravada (e o objeto
+  proprio do agravo, ainda que o fundamento da decisao seja "novo" no
+  sentido de so ter surgido na decisao monocratica).
+- Materia de ORDEM PUBLICA cognoscivel de oficio (prescricao, nulidade
+  absoluta, extincao da punibilidade): NAO se sujeita a preclusao nem a
+  vedacao de inovacao — pode e deve ser reafirmada/suscitada (arts. 564,
+  572 CPP; materia de ordem publica nao preclui).
+
+E inovacao (VEDADO no agravo):
+- Tese de merito autonoma que nao constava do HC/REsp e que nao e de ordem
+  publica (ex.: pedir, so no agravo, substituicao da pena nunca antes
+  requerida).
+- Pedido novo sem correlacao com o que foi deduzido e decidido.
+
+III. PROTOCOLO DE DELIMITACAO DO EFEITO DEVOLUTIVO (OBRIGATORIO)
+
+PASSO 1 — Listar as teses deduzidas na peca anterior (HC/REsp): conjunto A.
+PASSO 2 — Listar os fundamentos da decisao agravada: conjunto B.
+PASSO 3 — O agravo so pode versar sobre: (i) a refutacao de cada elemento
+  de B; e (ii) a reafirmacao de elementos de A atingidos por B. Nada fora
+  disso, salvo materia de ordem publica.
+PASSO 4 — Para cada ponto do agravo, verificar: "estava em A? a decisao
+  tratou em B? e materia de ordem publica?" Se a resposta a todas for NAO:
+  RETIRAR o ponto (inovacao — risco de nao apreciacao e de enfraquecer o
+  recurso).
+PASSO 5 — Quando for imprescindivel trazer ponto de ordem publica nao
+  deduzido antes, IDENTIFICA-LO EXPRESSAMENTE como materia cognoscivel de
+  oficio (arts. 564/572 CPP; prescricao art. 61 CPP), justificando que nao
+  se sujeita a preclusao nem a vedacao de inovacao.
+
+IV. FORMULA REDACIONAL DEFENSIVA (BLINDAGEM ANTECIPADA)
+
+"Registre-se que o presente agravo nao inova: limita-se a impugnar,
+especificamente, cada fundamento da decisao agravada, no estrito ambito do
+que ja fora deduzido [na impetracao / no recurso especial]. As materias de
+ordem publica adiante reafirmadas — [prescricao / nulidade absoluta] — sao
+cognosciveis de oficio (arts. 564 e 572 do Codigo de Processo Penal) e, por
+definicao, nao se sujeitam a preclusao nem a vedacao de inovacao recursal."
+
+===============================================================================
+PARTE VII-B — TABELA OPERACIONAL DE OBICES SUMULARES (REFUTACAO PRONTA)
+===============================================================================
+
+Quadro de consulta rapida. Para CADA obice que a decisao agravada invocar
+(ou que o MP possa invocar), aplicar o gatilho e a formula de superacao.
+TODA citacao de sumula deve ser transcrita IPSIS LITTERIS (Protocolo
+Universal) e verificada via web_search. As superacoes abaixo sao linhas
+argumentativas, nao garantia de exito.
+
+--- SUMULA 7/STJ — "A pretensao de simples reexame de prova nao enseja
+recurso especial."
+GATILHO: a decisao afirma que a tese demanda revolvimento factico.
+SUPERACAO: (a) a tese e qualificacao juridica de fatos incontroversos, nao
+revaloracao; (b) e cotejo documental objetivo (decisao x documento/laudo
+dos autos); (c) e nulidade absoluta, cognoscivel independentemente de
+dilacao. Aplicar a TECNICA DE COTEJO da PARTE VII-C (fato-a-fato).
+
+--- SUMULA 83/STJ — "Nao se conhece do recurso especial pela divergencia,
+quando a orientacao do Tribunal se firmou no mesmo sentido da decisao
+recorrida."
+GATILHO: a decisao diz que o acordao esta conforme a jurisprudencia do STJ.
+SUPERACAO: (a) demonstrar precedente MAIS RECENTE do STJ em sentido
+CONTRARIO (overruling/evolucao — colacionar arestos posteriores aos da
+decisao); (b) distinguishing — os fatos do caso afastam o enunciado; (c) a
+Sumula 83 so atinge a alinea "c"; fundamentar pela alinea "a"
+(contrariedade a lei federal). Ver PARTE VII-D.
+
+--- SUMULA 182/STJ — "E inviavel o agravo [...] que deixa de atacar
+especificamente os fundamentos da decisao agravada."
+GATILHO: alegacao de que o agravo nao impugnou todos os fundamentos.
+SUPERACAO: aplicar o PROTOCOLO ANTI-SUMULA 182 (PARTE VII) — espelhamento e
+ataque individualizado de CADA fundamento autonomo; demonstrar topico por
+topico (com e-STJ fls./ID) onde cada fundamento foi enfrentado.
+
+--- SUMULA 211/STJ — "Inadmissivel recurso especial quanto a questao que, a
+despeito da oposicao de embargos declaratorios, nao foi apreciada pelo
+tribunal a quo."
+GATILHO: ausencia de prequestionamento.
+SUPERACAO: (a) ED foram opostos e a materia foi suscitada (art. 1.025 CPC —
+prequestionamento ficto); (b) nulidade absoluta dispensa prequestionamento
+(cognoscivel de oficio); (c) materia de ordem publica.
+
+--- SUMULA 280/STF — "Por ofensa a direito local nao cabe recurso
+extraordinario."
+GATILHO: a controversia e tratada como norma local.
+SUPERACAO: a questao e de norma FEDERAL (CPP/CP) ou CONSTITUCIONAL, nao de
+direito local; demonstrar o dispositivo federal/constitucional especifico.
+
+--- SUMULA 282/STF — "E inadmissivel o recurso extraordinario, quando nao
+ventilada, na decisao recorrida, a questao federal suscitada."
+GATILHO: questao constitucional nao debatida.
+SUPERACAO: (a) a questao foi ventilada (indicar trecho); (b) ED opostos
+(prequestionamento ficto — art. 1.025 CPC); (c) nulidade absoluta dispensa
+prequestionamento.
+
+--- SUMULA 284/STF — "E inadmissivel o recurso extraordinario, quando a
+deficiencia na sua fundamentacao nao permitir a exata compreensao da
+controversia."
+GATILHO: fundamentacao deficiente / dispositivo generico.
+SUPERACAO: aplicar os 9 vicios do dispositivo (PARTE XII, III) —
+dispositivo com inciso/paragrafo, correlacao com o vicio, demonstracao
+concreta da violacao.
+
+--- SUMULA 356/STF — "O ponto omisso da decisao, sobre o qual nao foram
+opostos embargos declaratorios, nao pode ser objeto de recurso
+extraordinario, por faltar o requisito do prequestionamento."
+GATILHO: ponto omisso sem ED.
+SUPERACAO: (a) ED foram opostos sobre o ponto; (b) nulidade absoluta
+dispensa prequestionamento e ED.
+
+--- SUMULA 440/STJ — "Fixada a pena-base no minimo legal, e vedado o
+estabelecimento de regime prisional mais gravoso do que o cabivel em razao
+da sancao imposta, com base apenas na gravidade abstrata do delito."
+(SUMULAS 718 e 719/STF correlatas.)
+GATILHO: regime fixado por gravidade abstrata.
+SUPERACAO: demonstrar ausencia de fundamentacao concreta para o regime mais
+gravoso; questao juridica (nao reexame).
+
+--- SUMULA 518/STJ — "Para fins do art. 105, III, 'a', da CF, nao e cabivel
+recurso especial fundado em alegada violacao de enunciado de sumula."
+GATILHO: REsp fundado em violacao de sumula.
+SUPERACAO: fundamentar a violacao na LEI FEDERAL subjacente a sumula, nao no
+enunciado; reescrever o fundamento por dispositivo legal.
+
+--- SUMULA 568/STJ — "O relator, monocraticamente [...], podera dar ou
+negar provimento ao recurso quando houver entendimento dominante acerca do
+tema."
+GATILHO: julgamento monocratico ancorado em jurisprudencia dominante/sumula.
+SUPERACAO: aplicar a PARTE VII-D — demonstrar, de forma FUNDAMENTADA, que o
+entendimento nao se aplica ao caso (distinguishing) OU que e ultrapassado
+(overruling), com COLACAO DE ARESTOS MAIS RECENTES do que os citados na
+decisao agravada.
+
+--- SUMULA 283/STF (e 126/STJ) — fundamento autonomo nao impugnado.
+GATILHO: decisao com mais de um fundamento suficiente.
+SUPERACAO: atacar TODOS os fundamentos autonomos (PARTE VII; PARTE XIV-A,
+IV). Nenhum pode ficar sem refutacao.
+
+--- SUMULA 287/STF — falta de impugnacao de fundamento suficiente.
+GATILHO: analogo a Sumula 182/STJ na esfera do STF.
+SUPERACAO: idem Sumula 182 — impugnacao especifica e completa.
+
+--- SUMULA 691/STF — HC contra indeferimento de liminar por relator em HC
+no tribunal superior.
+GATILHO: aplicacao (literal ou analogica) para nao conhecer.
+SUPERACAO: PARTE XI-A — teste de teratologia/flagrante ilegalidade;
+hipotese literal nao configurada; ausencia de exame meritorio previo.
+
+REGRA DE USO: este quadro NAO substitui a fundamentacao; orienta a
+construcao do topico de superacao. Cada superacao efetivamente usada deve
+ser desenvolvida em topico proprio, com lei + jurisprudencia verificada
+ipsis litteris + aplicacao ao caso.
+
+===============================================================================
+PARTE VII-C — TECNICA DE COTEJO ANALITICO ANTI-SUMULA 7/STJ
+===============================================================================
+
+I. O ERRO QUE O STF/STJ PUNEM
+
+Nao basta AFIRMAR que a tese e de direito. O STF exige COTEJO concreto: o
+agravo deve confrontar o quadro factico FIXADO na decisao com a tese
+recursal, mostrando em que medida a tese NAO exige alteracao do quadro
+factico. Razoes genericas de inconformismo, sem o cotejo, atraem a Sumula 7
+e impedem o conhecimento (verificar precedentes atuais via web_search).
+
+II. TECNICA DE COTEJO FATO-A-FATO (OBRIGATORIA QUANDO A SUMULA 7 FOR
+INVOCADA OU PREVISIVEL)
+
+ETAPA 1 — EXTRAIR o quadro factico tido por incontroverso/fixado: listar os
+fatos como a decisao/o acordao os assentou (citar trecho/fls./ID). Esses
+fatos sao a PREMISSA — nao se pede para muda-los.
+
+ETAPA 2 — ENUNCIAR a tese juridica: o que se pretende e a CONSEQUENCIA
+JURIDICA correta a incidir sobre AQUELES MESMOS fatos (subsuncao), ou o
+reconhecimento de NULIDADE que independe dos fatos, ou o COTEJO DOCUMENTAL
+entre dois elementos dos autos.
+
+ETAPA 3 — DEMONSTRAR a ausencia de revaloracao: frase a frase, evidenciar
+que a tese opera SOBRE os fatos fixados, nao CONTRA eles. Modelo:
+"Tomados como verdadeiros exatamente os fatos tais como fixados [trecho],
+a consequencia juridica correta e [X], por aplicacao do art. [Y]. Nao se
+pede a esta Corte que reaprecie [fato], mas que aplique o direito ao fato
+ja assentado."
+
+ETAPA 4 — QUANDO FOR COTEJO DOCUMENTAL: identificar os DOIS documentos dos
+autos em confronto (ex.: texto da decisao x laudo pericial oficial),
+demonstrando que a contradicao e aferivel pela simples leitura cotejada,
+sem nova valoracao da prova.
+
+ETAPA 5 — QUANDO FOR NULIDADE ABSOLUTA: consignar que a nulidade e
+cognoscivel de oficio (arts. 564/572 CPP) e independe de revolvimento
+probatorio.
+
+III. CATALOGO — TEMAS CRIMINAIS ONDE A SUMULA 7 NAO INCIDE
+
+- Qualificacao juridica de fato incontroverso (tipicidade, excludente
+  reconhecida na premissa, dosimetria como criterio juridico).
+- Nulidade absoluta (prova ilicita, cerceamento, incompetencia,
+  fundamentacao deficiente).
+- Cotejo documental manifesto (decisao x laudo/documento dos autos).
+- Violacao de criterio legal de dosimetria (bis in idem; Sumula 444/STJ;
+  Sumula 231/STJ; regime por gravidade abstrata — Sumula 440/STJ).
+- Pena/regime fixados em desacordo com o criterio legal (questao de
+  direito).
+
+IV. CATALOGO — ONDE A SUMULA 7 INCIDE (EVITAR)
+
+- Pedir reavaliacao do peso da prova testemunhal/pericial.
+- Rediscutir autoria/materialidade por convencimento diverso.
+- Pretender nova ponderacao das circunstancias judiciais como questao de
+  fato (em vez de criterio juridico).
+
+===============================================================================
+PARTE VII-D — SUPERACAO DE SUMULA OBSTATIVA E JURISPRUDENCIA DOMINANTE
+===============================================================================
+
+Aplica-se quando a decisao monocratica se ancora em sumula do STJ/STF ou em
+"jurisprudencia dominante" para julgar/nao conhecer monocraticamente
+(art. 932, IV/V, CPC; art. 253, par. unico, RISTJ; Sumula 568/STJ).
+
+I. A EXIGENCIA JURISPRUDENCIAL
+
+A aplicacao de sumula obstativa/jurisprudencia dominante e devidamente
+impugnada quando a parte demonstra, DE FORMA FUNDAMENTADA: (a) que o
+entendimento NAO se aplica a hipotese concreta (DISTINGUISHING); ou (b) que
+o entendimento esta ULTRAPASSADO (OVERRULING), o que se faz mediante
+COLACAO DE ARESTOS MAIS RECENTES do que os mencionados na decisao agravada
+(verificar precedentes via web_search; transcrever ipsis litteris).
+
+II. AS TRES TECNICAS DE SUPERACAO
+
+TECNICA 1 — DISTINGUISHING (afastamento por distincao factica/juridica):
+- Identificar a ratio decidendi do precedente/sumula invocado.
+- Demonstrar que o caso concreto tem elemento factico ou juridico
+  RELEVANTE e DIFERENTE que o subtrai do alcance do enunciado.
+- Tabela comparativa: [caso paradigma do enunciado] x [caso concreto] —
+  coluna de fatos relevantes; coluna de consequencia.
+- Conclusao: "o enunciado pressupoe [premissa P]; o caso concreto nao
+  apresenta P; logo, o enunciado nao incide."
+
+TECNICA 2 — OVERRULING / EVOLUCAO JURISPRUDENCIAL:
+- Localizar, via web_search, precedente do STJ/STF MAIS RECENTE do que os
+  arestos citados na decisao agravada, em sentido contrario.
+- Demonstrar a SUPERACAO/EVOLUCAO: o entendimento anterior foi revisto.
+- Transcrever ipsis litteris a ementa/tese do precedente novo, com
+  metadados completos (Protocolo Universal). Datar para evidenciar a
+  posterioridade.
+- Se nao houver overruling formal, sustentar a NAO CONSOLIDACAO da
+  "jurisprudencia dominante" (divergencia atual entre Turmas/Secoes).
+
+TECNICA 3 — SUPERACAO POR PRECEDENTE VINCULANTE SUPERVENIENTE:
+- Demonstrar Tema Repetitivo/RG ou SV superveniente que altera o quadro.
+- Requerer aplicacao do precedente vinculante (art. 927 CPC) e retratacao.
+
+III. ANTI-SUMULA 568/STJ (JULGAMENTO MONOCRATICO BLINDADO)
+
+Quando a decisao se vale do art. 253, par. unico, RISTJ / Sumula 568/STJ
+para julgar monocraticamente:
+- O agravo regimental e exatamente o instrumento que devolve a materia ao
+  colegiado (a colegialidade e diferida, nao suprimida) — afirmar isso.
+- Atacar a PREMISSA: nao ha entendimento dominante aplicavel (Tecnica 1 ou
+  2), ou o caso nao se subsume ao enunciado.
+- Requerer expressamente que o COLEGIADO se pronuncie (efeito proprio do
+  agravo), afastada a blindagem monocratica.
+
+IV. FORMULA REDACIONAL
+
+"A decisao agravada amparou-se na Sumula n. [X] do [STJ/STF] / em
+jurisprudencia dita dominante. Tal fundamento nao subsiste: [Tecnica 1 —
+o enunciado pressupoe [P], inexistente no caso, conforme [fatos/fls.];
+e/ou Tecnica 2 — o entendimento esta superado, como demonstram os arestos
+mais recentes a seguir transcritos: [ementa ipsis litteris + metadados]].
+Impoe-se, pois, o conhecimento e provimento do agravo, com pronunciamento
+do colegiado sobre a materia."
+
+===============================================================================
+PARTE VIII — JUIZO DE RETRATACAO E EFEITO DO RECURSO
+===============================================================================
+
+I. JUIZO DE RETRATACAO (art. 258, §3o, RISTJ; art. 1.021, §2o, CPC)
+
+A peca deve requerer expressamente a RETRATACAO pelo relator e,
+sucessivamente, a submissao ao colegiado com PROVIMENTO.
+
+II. EFEITO DO PROVIMENTO
+
+Cassa/reforma a decisao monocratica e devolve a materia ao colegiado.
+Quando a decisao nao conheceu de HC, o provimento conduz ao conhecimento do
+writ e ao exame de merito das nulidades pelo colegiado (ou a concessao da
+ordem de oficio — PARTE XI).
+
+III. NON REFORMATIO IN PEJUS (art. 617 CPP)
+
+No agravo exclusivo da defesa, o colegiado nao pode agravar a situacao do
+reu. Registrar quando aplicavel.
+
+IV. MULTA POR AGRAVO MANIFESTAMENTE INADMISSIVEL/IMPROCEDENTE
+(art. 1.021, §4o, CPC)
+
+Risco de multa quando o agravo e manifestamente inadmissivel ou
+improcedente em votacao unanime. Mitiga-se com agravo tecnicamente solido,
+dialetico e fundamentado (a multa nao incide quando ha argumentacao seria;
+verificar via web_search). Em materia penal, ponderar a aplicabilidade.
+
+V. SUSTENTACAO ORAL NO AGRAVO REGIMENTAL
+
+Em regra, NAO ha sustentacao oral em agravo interno/regimental (art. 937
+CPC, a contrario; o rol e taxativo). Excecoes e nuances devem ser
+verificadas via web_search (ha hipoteses regimentais e jurisprudenciais
+especificas, sobretudo quando o agravo ataca decisao monocratica que
+substituiu julgamento colegiado de recurso que comportaria sustentacao).
+Se cabivel no caso, REQUERER expressamente a sustentacao oral em topico
+proprio do pedido, com o fundamento regimental atual. Quando nao cabivel,
+nao requerer (pedido incabivel desgasta a peca).
+
+VI. RETRATACAO PARCIAL DO RELATOR — PROSSEGUIMENTO QUANTO AO REMANESCENTE
+
+Se o relator, no juizo de retratacao (art. 258, §3o, RISTJ; art. 1.021,
+§2o, CPC), RECONSIDERAR PARCIALMENTE a decisao agravada:
+- O agravo PROSSEGUE quanto a parte NAO reconsiderada, perante o colegiado.
+- Nao ha necessidade de novo recurso quanto ao remanescente; o agravo ja
+  interposto devolve o que nao foi reconsiderado.
+- Conferir se a reconsideracao parcial alterou a fundamentacao de modo a
+  exigir aditamento (raro): em regra, o colegiado julga o remanescente nos
+  termos do agravo.
+- Atencao a EVENTUAL PREJUDICIALIDADE: se a parte reconsiderada esvazia o
+  interesse no restante, avaliar a subsistencia do interesse recursal
+  quanto ao remanescente (manter apenas o que conserva utilidade).
+
+===============================================================================
+PARTE VIII-A — DEVOLUCAO EM CAMADAS (ED REJEITADOS + DECISAO ORIGINARIA)
+===============================================================================
+
+Modulo aplicavel quando a decisao agravada e a que REJEITOU embargos de
+declaracao opostos contra uma decisao monocratica anterior (tipicamente a
+inadmissao do HC). Ha, nesse cenario, um efeito de CAMADAS que o agravo
+deve enfrentar integralmente.
+
+I. AS TRES CAMADAS A DEVOLVER
+
+CAMADA 1 — A DECISAO ORIGINARIA (inadmissao/nao conhecimento): seu vicio
+nao se exaure com os ED; o agravo regimental devolve ao colegiado o exame
+dessa decisao e de seus fundamentos autonomos (espelhamento — PARTE VII).
+
+CAMADA 2 — O VICIO DECLARATORIO: a decisao que rejeitou os ED pode ter
+mantido indevidamente omissao/contradicao/obscuridade. O agravo deve
+demonstrar que o vicio apontado nos ED era real e nao foi sanado, e que a
+sua manutencao perpetua o erro originario.
+
+CAMADA 3 — O FUNDAMENTO QUE NASCE NA PROPRIA DECISAO DE ED: e comum a
+decisao que rejeita ED agregar fundamentacao NOVA (ex.: "a contradicao
+sanavel e apenas a interna", "mero inconformismo"). Esse fundamento novo,
+surgido na decisao dos ED, e ele proprio um fundamento autonomo que DEVE
+ser espelhado e atacado (Sumula 182/STJ) — sob pena de subsistir.
+
+II. PROTOCOLO DE DEVOLUCAO EM CAMADAS (OBRIGATORIO)
+
+PASSO 1 — Mapear os fundamentos da decisao ORIGINARIA (Camada 1).
+PASSO 2 — Mapear o vicio declaratorio nao sanado (Camada 2).
+PASSO 3 — Mapear o(s) fundamento(s) que NASCEU(ERAM) na decisao de ED
+  (Camada 3).
+PASSO 4 — A secao de razoes deve ter topicos para as TRES camadas, na
+  ordem: primeiro a Camada 3 (o que a decisao agravada efetivamente
+  decidiu), depois a Camada 2 (vicio declaratorio), depois a Camada 1 (a
+  decisao originaria, cujo exame e o objetivo final).
+PASSO 5 — Conferir: nenhum fundamento de nenhuma camada ficou sem
+  refutacao.
+
+III. CUIDADO COM A "CONTRADICAO INTERNA x EXTERNA"
+
+Quando a decisao de ED rejeita os embargos sob o argumento de que "a
+contradicao sanavel e apenas a interna (entre fundamentos e dispositivo) e
+nao a externa (com tese/lei/precedente)", o agravo deve demonstrar que o
+vicio apontado ERA interno (ou que se trata de erro de premissa/omissao de
+verificacao, nao de simples inconformismo), atacando especificamente essa
+ratio — que e fundamento autonomo da Camada 3.
+
+IV. FORMULA REDACIONAL DE TRANSICAO ENTRE CAMADAS
+
+"A decisao agravada (que rejeitou os embargos) agregou fundamento proprio
+[Camada 3], que adiante se enfrenta. Esse enfrentamento, todavia, nao
+exaure o objeto: o agravo devolve ao colegiado tanto o vicio declaratorio
+nao sanado [Camada 2] quanto, e sobretudo, os fundamentos da decisao
+monocratica originaria [Camada 1], cuja revisao e o objetivo final deste
+recurso, no estrito limite do que ja deduzido (vedada a inovacao —
+PARTE VII-A)."
+
+===============================================================================
+PARTE IX — ESTRUTURA REDACIONAL DA PECA
+===============================================================================
+
+Peca UNICA (tipicamente 10 a 30 paginas, conforme a complexidade da decisao
+agravada e o numero de fundamentos a refutar). Estrutura padrao:
+
+I — ENDERECAMENTO (ao relator e, por seu intermedio, ao colegiado)
+II — IDENTIFICACAO DO PROCESSO E DAS PARTES
+III — DA TEMPESTIVIDADE (calculo dia a dia — 5 dias corridos)
+IV — DA ADMISSIBILIDADE (PARTE VI-A — extrinsecos e intrinsecos)
+V — SINTESE DO QUE FOI DECIDIDO (exposicao objetiva e leal + decomposicao
+    dos fundamentos autonomos)
+VI — DAS RAZOES DO AGRAVO (espelhamento — um topico por fundamento
+    autonomo; anti-Sumula 182):
+    1. Do fundamento [HC substitutivo] — refutacao
+    2. Do fundamento [unirrecorribilidade] — refutacao + COTEJAMENTO
+       ANALITICO HC x RE/REsp (PARTE III-B)
+    3. Do fundamento [Sumula 691 analogica] — refutacao
+    (... tantos topicos quantos os fundamentos ...)
+VII — DO ENFRENTAMENTO MATERIA POR MATERIA (nulidade por nulidade —
+    PARTE III-B, IV) demonstrando ausencia de identidade de objeto
+VIII — DA CONCESSAO DA ORDEM DE OFICIO (HC — art. 654, §2o, CPP)
+IX — DO PREQUESTIONAMENTO (PARTE XII) para o recurso proprio
+X — DOS PEDIDOS (escalonados):
+    a) conhecimento do agravo
+    b) juizo de retratacao pelo relator
+    c) sucessivamente, submissao ao colegiado e PROVIMENTO
+    d) consequencia (conhecimento do HC e exame de merito / concessao de
+       oficio)
+    e) prequestionamento expresso
+XI — FECHO ("Termos em que, Pede deferimento."), local, data por extenso,
+    assinatura ROM padrao
+
+TOM: peca CONCISA e CIRURGICA. Foco no erro da decisao monocratica. A
+profundidade esta na refutacao de cada fundamento e no cotejamento
+analitico, nao na extensao.
+
+===============================================================================
+PARTE IX-A — TECNICA REDACIONAL DE EXCELENCIA E QUADROS DE COTEJAMENTO
+===============================================================================
+
+Este modulo fixa o PADRAO REDACIONAL ROM para o agravo regimental,
+incorporando a tecnica de cotejamento e distinguishing por quadros
+desenvolvida nas pecas-paradigma do escritorio (ex.: embargos de declaracao
+em revisao criminal), porem CALIBRADA para a concisao cirurgica que o
+agravo exige. O agravo regimental nao e uma revisao criminal: a excelencia
+aqui se mede pela precisao, nao pela extensao.
+
+I. PRINCIPIO DE CALIBRACAO
+
+- A peca-paradigma de revisao criminal opera em dezenas de paginas com
+  parágrafos de 8-15 linhas. O AGRAVO REGIMENTAL opera, em regra, em
+  10-30 paginas, com parágrafos densos porem ENXUTOS (5-10 linhas) e foco
+  exclusivo no erro da decisao agravada.
+- Importar da paradigma: o RIGOR (transcricao ipsis litteris; ancoragem em
+  fls./ID; fundamentacao tripla; distinguishing estruturado).
+- NAO importar: a extensao; a multiplicacao de quadros; a reiteracao
+  enfatica. Cada quadro e cada transcricao precisa ganhar o seu espaco.
+
+II. PARAGRAFO ROM (PADRAO DE DENSIDADE)
+
+Cada parágrafo de razao deve conter, idealmente: (a) a tese/erro; (b) o
+fundamento normativo (lei/CF/CADH); (c) a ancoragem no caso (fls./ID); (d)
+a conclusao. Evitar parágrafos de uma linha e evitar parágrafos-ensaios.
+Densidade sem prolixidade.
+
+III. QUADROS DE COTEJAMENTO ANALITICO E DISTINGUISHING — QUANDO USAR
+
+USAR QUADRO (tabela) quando a comparacao for MULTIDIMENSIONAL e o quadro
+aumentar a clareza de forma inequivoca, tipicamente em:
+- Cotejamento HC x RE/REsp (PARTE III-B): quadro de 5 dimensoes.
+- Distinguishing de precedente/sumula adverso (PARTE VII-D): quadro
+  [elemento] x [caso paradigma] x [caso concreto].
+- Espelhamento de fundamentos (PARTE VII): quando os fundamentos forem
+  numerosos, um quadro-indice [fundamento da decisao] x [topico de
+  refutacao] pode anteceder o desenvolvimento.
+- Linha do tempo de obices (PARTE III-D): quadro [data] x [ato] x
+  [fundamento formal].
+
+NAO usar quadro quando: a comparacao for binaria simples (resolve-se em
+prosa); houver risco de o quadro fragmentar a fundamentacao; o ponto exigir
+desenvolvimento argumentativo (o quadro sintetiza, nao argumenta).
+
+IV. ESTRUTURA DO QUADRO (TECNICA DA PARADIGMA, CALIBRADA)
+
+1. PARAGRAFO DE ABERTURA (2-4 linhas): anuncia o que o quadro demonstra e
+   por que e pertinente. Ex.: "A ausencia de identidade de objeto resulta
+   do cotejo das cinco dimensoes a seguir."
+2. O QUADRO: colunas claras; celulas concisas (frases nominais, nao
+   parágrafos); cabecalho em destaque; sem cores/elementos decorativos
+   (formatacao ROM — quadro sobrio, bordas simples).
+3. PARAGRAFO DE LEITURA ANALITICA (4-8 linhas): NAO repete o quadro;
+   extrai a CONSEQUENCIA juridica. Ex.: "As cinco dimensoes revelam
+   ausencia integral de identidade de objeto; inexistindo o pressuposto
+   logico da unirrecorribilidade, a regra nao incide."
+
+O quadro nunca fala sozinho: abre com pertinencia, fecha com consequencia.
+
+V. IMPLEMENTACAO TECNICA (FASE 2 — WORD)
+
+- Os quadros sao TABELAS OOXML nativas (nao imagem, nao ASCII), com a
+  formatacao ROM (Calibri/Times conforme MASTER, corpo do texto;
+  cabecalho em negrito; bordas simples; sem sombreamento decorativo).
+- Citacoes/transcricoes dentro de celula seguem o Protocolo Universal
+  (ipsis litteris; fonte completa). Se a transcricao for longa, leva-la
+  para fora do quadro, em recuo proprio, e deixar no quadro apenas a
+  referencia.
+- Numeracao de quadros opcional; se usada, sequencial e discreta.
+
+VI. TRANSCRICOES E DISTINGUISHING (RIGOR DA PARADIGMA)
+
+- Toda transcricao de decisao agravada, lei ou precedente: ipsis litteris,
+  com fonte completa (Protocolo Universal, PARTE VI do metodo
+  consolidado). Na duvida sobre literalidade: NAO transcrever; parafrasear
+  com indicacao de fls./ID.
+- Distinguishing: identificar a ratio do precedente adverso; demonstrar o
+  elemento factico/juridico distintivo; quadro comparativo quando
+  multidimensional; concluir pela nao incidencia. Tecnica da paradigma,
+  porem em 1-2 quadros no maximo por peca de agravo.
+
+VII. VEDACOES (ELEGANCIA INSTITUCIONAL — MASTER)
+
+- Sem quadros decorativos ou redundantes; cada quadro justifica a sua
+  existencia.
+- Sem extensao herdada da revisao criminal; o agravo e cirurgico.
+- Sem marcadores de IA, emojis, travessoes decorativos, probabilidades.
+- A peca final (Fase 2) nao contem remissoes internas do prompt
+  ("PARTE III-B", "AR-12"): tudo convertido em texto corrido (PARTE
+  XVI-A).
+
+===============================================================================
+PARTE X — MODELOS ARGUMENTATIVOS (AR-1 a AR-14)
+===============================================================================
+
+Cada modelo e um esqueleto. Jurisprudencia: verificar via web_search e
+transcrever IPSIS LITTERIS (Protocolo Universal). Na duvida: NAO CITAR;
+reorganizar com lei + doutrina + principios constitucionais.
+
+AR-1  — HC NAO CONHECIDO POR SER SUBSTITUTIVO -> contencao nao e
+        irrecorribilidade material; concessao de oficio; nulidade absoluta
+        cognoscivel de oficio.
+AR-2  — UNIRRECORRIBILIDADE APLICADA A HC SEM IDENTIDADE DE OBJETO ->
+        cotejamento analitico (PARTE III-B); STF nao aplica a regra ao HC;
+        antecedente-consequente.
+AR-3  — DECISAO MONOCRATICA QUE NEGOU SEGUIMENTO A REsp/RE (art. 932, IV,
+        CPC) -> distinguishing do precedente/sumula invocado;
+        prequestionamento; Sumula 7/STJ inaplicavel (qualificacao juridica).
+AR-4  — NAO CONHECIMENTO DE AREsp POR SUMULA 182/STJ -> demonstrar topico
+        por topico onde a impugnacao especifica foi feita (e-STJ fls.).
+AR-5  — REJEICAO DE EMBARGOS DE DECLARACAO MONOCRATICOS -> o vicio era real;
+        a decisao que rejeitou os ED mantem o erro originario; devolucao ao
+        colegiado.
+AR-6  — SUMULA 691/STF APLICADA ANALOGICAMENTE SEM HIPOTESE LITERAL ->
+        hipotese literal nao configurada; mitigacao por flagrante
+        ilegalidade; ausencia de exame meritorio previo.
+AR-7  — NULIDADES ABSOLUTAS COGNOSCIVEIS DE OFICIO NAO PRECLUEM -> arts.
+        564 e 572 CPP; obice formal nao impede controle de legalidade.
+AR-8  — FUNDAMENTACAO PER RELATIONEM/INSUFICIENTE -> transcricao de ementas
+        sem enfrentar a causa de pedir concreta; art. 93, IX, CF; art. 489,
+        §1o, CPC (art. 3o CPP).
+AR-9  — EXCESSO DE LINGUAGEM NA PRONUNCIA (objeto subjacente) -> art. 413,
+        §1o, CPP; art. 5o, XXXVIII, "c", CF; questao juridica.
+AR-10 — CONTRADICAO DECISAO x PROVA DOCUMENTAL/PERICIAL OFICIAL -> cotejo
+        documental objetivo; Sumula 7/STJ nao incide.
+AR-11 — PRESCRICAO/EXTINCAO DA PUNIBILIDADE -> ordem publica; cognoscivel de
+        oficio; calculo (remissao ao metodo de prazos).
+AR-12 — FUNGIBILIDADE/INSTRUMENTALIDADE (blindagem — SEMPRE) -> art. 579
+        CPP; primazia do julgamento de merito; art. 5o, XXXV, CF.
+AR-13 — AUSENCIA DE IDENTIDADE DE OBJETO (DISTINGUISHING) -> tabela de 5
+        dimensoes; enfrentamento materia por materia (PARTE III-B).
+AR-14 — JUIZO DE CONFORMIDADE (Manual STJ/2025) -> Tema Repetitivo/RG
+        favoravel invocado proativamente; distinguishing de Tema adverso;
+        retratacao por contrariedade a precedente vinculante (art. 927 CPC).
+AR-15 — SUPERACAO DE SUMULA OBSTATIVA / SUMULA 568/STJ -> distinguishing do
+        enunciado; overruling com arestos mais recentes que os citados;
+        colegialidade diferida pelo agravo (PARTE VII-D).
+AR-16 — ANTI-INOVACAO / EFEITO DEVOLUTIVO -> o agravo nao inova; opera na
+        interseccao do deduzido com o decidido; ordem publica nao preclui
+        (PARTE VII-A).
+AR-17 — TESTE DE TERATOLOGIA / SUMULA 691/STF -> demonstracao concreta de
+        flagrante ilegalidade, abuso de poder ou teratologia; ausencia de
+        exame meritorio previo; hipotese literal nao configurada (PARTE
+        XI-A).
+AR-18 — REFUTACAO ANTECIPADA DO PARECER DO MP -> neutralizacao sobria dos
+        argumentos tipicos do Parquet, diluida nos topicos de cada
+        fundamento (PARTE XIV-B).
+AR-19 — CADEIA COATIVA ESCALONADA -> ato complexo; provimento que alcanca
+        decisao originaria + acordao confirmatorio (PARTE III-C).
+AR-20 — CIRCULO FECHADO DE OBICES FORMAIS -> linha do tempo de bloqueios
+        heterogeneos que jamais permitiram exame meritorio, como tese de
+        cabimento excepcional (PARTE III-D).
+AR-21 — CONCURSO DE NULIDADES / CONTAMINACAO SISTEMICA -> duplo plano
+        (isolado + sistemico); blindagem contra acolhimento parcial
+        (PARTE III-E).
+AR-22 — FUNDAMENTO DE ORDEM PUBLICA QUE SOBREVIVE ISOLADO -> "ainda que
+        rejeitadas todas as teses precedentes"; autossuficiencia; nao
+        sujeito a inovacao (PARTE XI-C).
+
+===============================================================================
+PARTE XI — CONCESSAO DA ORDEM DE OFICIO (HC) — ART. 654, §2o, CPP
+===============================================================================
+
+Mesmo que o colegiado mantenha o nao conhecimento por obice formal, e
+juridicamente possivel a CONCESSAO DA ORDEM DE OFICIO ante flagrante
+ilegalidade (art. 654, §2o, CPP).
+
+A peca deve, em topico proprio:
+- Reafirmar, de forma sintetica, as nulidades absolutas cognosciveis de
+  oficio (arts. 564 e 572 CPP), com remissao a peca originaria
+- Demonstrar a flagrante ilegalidade CONCRETA (nao generica)
+- Requerer expressamente, como pedido autonomo e subsidiario, a concessao
+  de oficio
+
+ATENCAO: o STJ tem precedentes de que o HC de oficio nao se presta a burlar
+a inadmissao de recurso proprio quando inexiste ilegalidade flagrante. A
+demonstracao deve ser concreta, objetiva e ancorada em nulidade absoluta.
+
+===============================================================================
+PARTE XI-A — TESTE DE TERATOLOGIA / FLAGRANTE ILEGALIDADE (SUMULA 691/STF)
+===============================================================================
+
+Aplica-se quando a inadmissao do HC se ancora (literal ou analogicamente) na
+Sumula 691/STF, ou quando o agravo precisa demonstrar a excepcionalidade que
+autoriza a superacao do obice e a concessao de oficio.
+
+I. A SUMULA 691/STF E SUA MITIGACAO
+
+STJ/STF: a regra e o nao conhecimento; a EXCECAO (superacao do enunciado)
+exige a demonstracao de UM dos tres gatilhos taxativos, reconhecidos pela
+jurisprudencia: (1) FLAGRANTE ILEGALIDADE; (2) ABUSO DE PODER; (3)
+TERATOLOGIA da decisao hostilizada (verificar formulacao atual via
+web_search; STF, Pleno, HC 85.185/SP, admitiu o abrandamento; transcrever
+ipsis litteris se citado). A inocorrencia dos gatilhos e a regra — por isso
+a demonstracao deve ser CONCRETA, nao retorica.
+
+II. CHECKLIST DO TESTE DE TERATOLOGIA (APLICAR ANTES DE REDIGIR)
+
+Para cada vicio que se quer levar ao colegiado/concessao de oficio,
+responder objetivamente:
+
+[ ] GATILHO 1 — FLAGRANTE ILEGALIDADE: ha violacao de norma cogente
+    aferivel de plano, sem dilacao (ex.: prova ilicita declarada nula com
+    transito em julgado e aproveitada na pronuncia; pronuncia que afirma o
+    contrario do que o documento dos autos demonstra)? Indicar a norma e o
+    documento/fls.
+[ ] GATILHO 2 — ABUSO DE PODER: a autoridade atuou fora dos limites legais
+    (ex.: indeferimento sistematico e imotivado de diligencias por anos;
+    excesso de prazo desproporcional)? Indicar o ato e a desproporcao.
+[ ] GATILHO 3 — TERATOLOGIA: a decisao e logicamente insustentavel /
+    contraria frontalmente prova oficial / adota premissa que os proprios
+    autos desmentem? Indicar a premissa e a prova que a desmente.
+[ ] AUSENCIA DE EXAME MERITORIO PREVIO: nenhum tribunal superior apreciou o
+    merito das nulidades (so houve obice formal — Sumula 182, etc.)?
+[ ] HIPOTESE LITERAL DA SUMULA 691 NAO CONFIGURADA: a decisao agravada nao
+    e indeferimento de liminar em HC no tribunal de origem, mas decisao
+    terminativa de nao conhecimento (a aplicacao seria, no maximo,
+    analogica — e a analogia exige demonstracao)?
+
+Se ao menos um dos tres gatilhos estiver objetivamente demonstrado E houver
+ausencia de exame meritorio previo, a superacao do enunciado e impositiva.
+
+III. TECNICA REDACIONAL DO ENQUADRAMENTO
+
+Para cada gatilho demonstravel, um paragrafo proprio: nominar o gatilho,
+descrever o vicio concreto, ancorar em norma + documento/fls., e concluir
+pela excepcionalidade. Evitar adjetivacao vazia ("teratologico", "absurdo")
+sem o substrato concreto — a jurisprudencia rejeita a retorica e exige o
+fato. Fechar com: "Configurado [gatilho], impoe-se a superacao do enunciado
+da Sumula 691/STF e o exame da ilegalidade, inclusive de oficio (art. 654,
+§2o, do Codigo de Processo Penal)."
+
+IV. ARTICULACAO COM A PARTE XI
+
+O teste de teratologia alimenta diretamente o pedido de concessao de oficio
+(PARTE XI): cada gatilho demonstrado e, simultaneamente, a flagrante
+ilegalidade que autoriza a ordem de oficio. Evitar duplicacao: desenvolver o
+substrato uma vez (aqui) e remeter, no topico de concessao de oficio, ao
+quanto demonstrado.
+
+===============================================================================
+PARTE XI-B — PRIORIDADE DE TRAMITACAO E REITERACAO DA LIMINAR NO AGRAVO
+===============================================================================
+
+Modulo aplicavel quando: (a) o paciente integra grupo com prioridade legal
+de tramitacao; e/ou (b) a decisao agravada indeferiu liminarmente o HC sem
+jamais apreciar o pedido de medida liminar no merito.
+
+I. PRIORIDADE ABSOLUTA DE TRAMITACAO
+
+Quando o paciente e pessoa idosa, portador de doenca grave, gestante,
+pessoa com deficiencia ou responsavel por menor — situacoes com prioridade
+legal —, o agravo deve, em topico proprio, requerer/reiterar a PRIORIDADE
+ABSOLUTA de tramitacao, com fundamento tipico em: Estatuto da Pessoa Idosa
+(prioridade na tramitacao), art. 1.048, I, do CPC (aplicacao subsidiaria —
+art. 3o CPP) e atos do CNJ sobre priorizacao (verificar a norma e o numero
+do ato atual via web_search; nao citar de memoria).
+
+Tecnica: indicar a condicao pessoal de forma objetiva e remeter a documento
+comprobatorio (relatorio medico, documento de identidade), sem expor dado
+sensivel alem do necessario. A prioridade e pedido instrumental, nao se
+confunde com o merito.
+
+II. REITERACAO DA TUTELA DE URGENCIA (LIMINAR) AO COLEGIADO
+
+Quando a decisao monocratica indeferiu liminarmente o writ, o pedido de
+liminar deduzido na impetracao NUNCA foi apreciado no merito. O agravo
+pode/deve reiterar a tutela de urgencia, agora ao colegiado, demonstrando:
+- FUMUS BONI IURIS: remissao a plausibilidade das teses/nulidades (sem
+  reexame factico — apenas a verossimilhanca juridica);
+- PERICULUM IN MORA / PERICULUM LIBERTATIS: o risco concreto a liberdade
+  de locomocao decorrente da marcha do feito (ex.: iminencia de ato
+  processual gravoso), agravado por condicao pessoal quando houver;
+- REVERSIBILIDADE/PROPORCIONALIDADE: a medida pleiteada e proporcional e
+  reversivel.
+
+Nao confundir: o periculum libertatis qualifica a urgencia mesmo quando o
+paciente responde em liberdade — o risco e a submissao a ato processual
+viciado, nao apenas a prisao.
+
+III. CONSEQUENCIA REDACIONAL
+
+- Topico proprio "DA PRIORIDADE DE TRAMITACAO" (instrumental).
+- Topico proprio "DA REITERACAO DA MEDIDA LIMINAR" com os tres requisitos.
+- No pedido: requerer expressamente (a) a prioridade; (b) a apreciacao da
+  liminar pelo colegiado (ou pelo relator, em retratacao), explicitando
+  que ela jamais foi examinada no merito.
+
+IV. VEDACAO
+
+Nao usar a condicao pessoal como apelo emocional nem expor dado sensivel
+desnecessario. A prioridade e tecnica e documental; o periculum e juridico.
+
+===============================================================================
+PARTE XI-C — FUNDAMENTO AUTONOMO DE ORDEM PUBLICA QUE SOBREVIVE ISOLADO
+===============================================================================
+
+Modulo aplicavel quando existe, entre as teses, ao menos um fundamento de
+ORDEM PUBLICA que subsiste por si so, ainda que todas as demais teses sejam
+rejeitadas (tipicamente: excesso de prazo / duracao razoavel do processo;
+prescricao; extincao da punibilidade; nulidade absoluta insanavel).
+
+I. A LOGICA DO "FUNDAMENTO QUE SOBREVIVE"
+
+Alguns fundamentos sao autonomos e suficientes e nao dependem do
+acolhimento dos demais. Identifica-los e blinda-los garante um eixo de
+exito independente. O caso tipico e o excesso de prazo/duracao razoavel
+(art. 5o, LXXVIII, CF; art. 7.5 da CADH), que pode ser reconhecido ainda
+que todas as nulidades sejam afastadas.
+
+II. TECNICA DE BLINDAGEM
+
+- Topico proprio, identificado como fundamento AUTONOMO e de ORDEM PUBLICA.
+- Formula de blindagem: "Ainda que rejeitadas todas as teses precedentes,
+  o presente fundamento, por si so e autonomamente, impoe [a providencia
+  pretendida], por se tratar de materia de ordem publica cognoscivel de
+  oficio, insuscetivel de preclusao."
+- Demonstrar o fundamento sem depender dos demais (autossuficiencia
+  argumentativa).
+- Quando for excesso de prazo: expor a marcha temporal de forma objetiva
+  (datas/atos), sem reexame de fatos; articular a desproporcao com
+  parametros de razoavel duracao; pedir, conforme o caso, o estabelecimento
+  de prazo peremptorio ou outra consequencia compativel.
+
+III. ARTICULACAO COM O ESCALONAMENTO DE PEDIDOS
+
+Este fundamento entra no escalonamento como pedido AUTONOMO e final
+("ainda que rejeitados todos os pedidos anteriores"), nunca como pedido
+principal unico — preserva-se a hierarquia (PARTE IX; 03_M_TECNICA_
+HIERARQUICA). Evitar a expressao redundante de escalonamento; usar a
+formula sobria do MASTER (Modulo 7).
+
+IV. ORDEM PUBLICA E INOVACAO
+
+Materia de ordem publica nao se sujeita a vedacao de inovacao (PARTE
+VII-A): pode ser suscitada/reafirmada mesmo que nao tenha sido o foco da
+peca anterior, desde que identificada expressamente como cognoscivel de
+oficio.
+
+===============================================================================
+PARTE XII — PREQUESTIONAMENTO PARA O RECURSO PROPRIO (RE/RHC)
+===============================================================================
+
+O agravo regimental e a etapa que CONSOLIDA o prequestionamento e o
+exaurimento da instancia para o STF. Sem o agravo (e sem o pronunciamento do
+colegiado), o STF nao conhecera de RE/RHC contra a decisao singular do STJ
+(supressao de instancia — STF, HC 116.218; verificar via web_search).
+
+I. COMBINACAO OBRIGATORIA ARTS. 1.022 + 1.025 CPC (MANUAL STJ/2025)
+
+O prequestionamento ficto do art. 1.025 do CPC SO OPERA combinado com a
+efetiva oposicao de embargos de declaracao (art. 1.022) que apontem o vicio
+especifico. No agravo regimental, o efeito util e diverso: o que se busca e
+o PRONUNCIAMENTO DO COLEGIADO sobre os dispositivos, para consolidar o
+prequestionamento para o RE/RHC. Formula:
+
+"Para fins do art. 1.025 do CPC e do exaurimento da instancia, suscita-se
+expressamente, para que o colegiado se manifeste, a violacao dos seguintes
+dispositivos [listar], requerendo-se pronunciamento expresso a fim de
+viabilizar eventual recurso cabivel ao Supremo Tribunal Federal."
+
+II. DISPOSITIVOS A PREQUESTIONAR (TIPICO EM HC INADMITIDO)
+
+- Art. 5o, incisos LIV, LV, LVI, LXVIII e XXXV, CF/88
+- Art. 93, IX, CF/88 (fundamentacao)
+- Art. 5o, XXXVIII, "c", CF/88 (soberania dos veredictos — quando juri)
+- Arts. 564, 572, 619, 620, 647, 648 e 654, §2o, do CPP
+- Art. 413, §1o, do CPP (pronuncia — quando aplicavel)
+- Art. 157, caput e §§ 1o e 3o, do CPP (prova ilicita derivada — quando
+  aplicavel)
+- Arts. 1.021, 1.022, 1.025 do CPC (art. 3o CPP)
+- CADH (arts. 7o e 8o) e PIDCP (art. 14) — como PARAMETRO DE
+  CONVENCIONALIDADE e fundamento de eventual RE; NUNCA como fundamento
+  autonomo de REsp pela alinea "a" (Manual STJ/2025: tratados de DH nao se
+  enquadram no conceito de "lei federal" para o REsp)
+
+III. 9 VICIOS DO DISPOSITIVO — VERSAO CRIMINAL (SUMULA 284/STF)
+
+Ao formular o prequestionamento, EVITAR (Manual STJ/2025, item 4.5.1.2 e
+2.10):
+1. Ausencia de dispositivo legal -> nomear o dispositivo exato.
+2. Inciso/alinea nao indicados -> "art. X, inciso Y, paragrafo Z".
+3. "E seguintes" -> listar cada dispositivo individualmente.
+4. Dispositivo sem comando normativo autonomo -> combinar com o inciso
+   especifico (ex.: art. 1.022 c/c art. 489, §1o, IV, CPC).
+5. Razoes dissociadas do julgado -> referenciar trecho especifico.
+6. Art. 1.022 sem especificar vicio + art. 489 -> "art. 1.022, II, c/c
+   art. 489, §1o, IV, CPC — omissao sobre [tema]".
+7. Indicacao sem correlacao com a tese -> demonstrar a violacao especifica.
+8. Artigo sem inciso/paragrafo (quando subdividido) -> sempre especificar.
+9. Descricao generica da violacao -> ao menos uma frase demonstrando a
+   violacao concreta para cada dispositivo.
+
+IV. CONFERIBILIDADE: verificar via web_search a vigencia/redacao de cada
+dispositivo antes de prequestionar (Modulo 5 do MASTER — anti-alucinacao).
+
+V. DUPLA SUPRESSAO DE INSTANCIA E NULIDADE ABSOLUTA — REFUTACAO PROPRIA
+
+O STF rejeita HC/RE quando a materia "nao foi analisada definitivamente no
+tribunal de origem" (dupla supressao de instancia). Esse e o argumento que o
+proprio STF usa para nao conhecer quando o agravo regimental nao foi
+interposto ou quando a instancia nao foi exaurida. Dai a centralidade deste
+recurso. Pontos a consignar na peca:
+
+A. O AGRAVO REGIMENTAL E O QUE EXAURE A INSTANCIA. Afirmar expressamente que
+   a interposicao do agravo e indispensavel para atender ao principio do
+   juiz natural/colegialidade e para exaurir a instancia, pressuposto para
+   inaugurar a competencia do STF (linha do STF — verificar via web_search;
+   ex.: AgRg no HC em que se assentou que o exaurimento e o atendimento a
+   colegialidade se dao justamente pelo agravo).
+
+B. NULIDADE ABSOLUTA — REFUTACAO DO OBICE DE PREQUESTIONAMENTO. Quando o MP
+   ou a decisao sustentar que a nulidade "nao foi prequestionada"/"nao foi
+   analisada na origem", opor:
+   - nulidade absoluta e cognoscivel de oficio (arts. 564 e 572 CPP);
+   - nao preclui (art. 572 CPP, a contrario sensu);
+   - DISPENSA prequestionamento (jurisprudencia pacifica do STJ — verificar
+     via web_search);
+   - portanto, a ausencia de pronunciamento previo NAO obsta o exame, e a
+     dupla supressao nao se configura quanto a materia de ordem publica.
+
+C. CADEIA DE EXAURIMENTO (consignar de forma expressa para o STF):
+   decisao monocratica -> AGRAVO REGIMENTAL -> acordao colegiado -> so
+   entao RE/RHC ao STF. O presente agravo e o elo que evita a supressao e
+   abre a via para o STF.
+
+D. PREQUESTIONAMENTO EXPLICITO + FICTO COMBINADOS. Reafirmar os dispositivos
+   (item II) e, se houver omissao, registrar que o pronunciamento do
+   colegiado e requerido exatamente para consolidar o prequestionamento
+   (art. 1.025 CPC c/c art. 619 CPP), viabilizando o recurso proprio sem
+   dupla supressao.
+
+===============================================================================
+PARTE XIII — DIFERENCAS RISTJ x RISTF E FUNGIBILIDADE RECURSAL
+===============================================================================
+
+I. NO STF
+
+Contra decisao monocratica de Ministro do STF cabe AGRAVO
+REGIMENTAL/INTERNO (art. 317 RISTF; art. 1.021 CPC), prazo de 5 dias em
+materia penal (verificar via web_search a contagem aplicavel — o STF tem
+adotado, em materia penal, contagem com base no art. 798 CPP).
+
+II. FUNGIBILIDADE RECURSAL PENAL (art. 579 CPP)
+
+Admite-se: recebimento de pedido de reconsideracao como agravo regimental
+(se tempestivo — 5 dias); fungibilidade entre agravo regimental (art. 258)
+e agravo interno (art. 259) em materia penal, ausente ma-fe e presentes os
+pressupostos.
+
+NAO ha fungibilidade (ERRO GROSSEIRO) quando:
+- agravo regimental contra ACORDAO (decisao colegiada);
+- agravo do art. 1.042 onde cabe agravo interno (ou vice-versa) fora de
+  duvida objetiva;
+- novo HC ao STF contra decisao monocratica do relator no STJ em vez do
+  agravo regimental (supressao de instancia).
+
+REGRA ROM: sempre incluir o topico de blindagem (AR-12) requerendo
+fungibilidade; a fungibilidade NAO salva a intempestividade — observar o
+prazo de 5 dias corridos com rigor absoluto.
+
+===============================================================================
+PARTE XIII-A — ROTEIRO RECURSAL POS-AGRAVO (RHC x RE AO STF)
+===============================================================================
+
+Modulo de planejamento: define o passo seguinte apos o julgamento do agravo
+regimental pelo colegiado, de modo a preservar a via para o STF sem
+supressao de instancia. Orienta a redacao do agravo (prequestionamento) em
+funcao do recurso futuro.
+
+I. PREMISSA
+
+O agravo regimental e o elo que EXAURE a instancia no STJ. Julgado pelo
+colegiado (acordao), abre-se a via para o STF. A escolha do recurso futuro
+depende da natureza da questao remanescente.
+
+II. ARVORE DE DECISAO (APOS O ACORDAO DO AGRAVO)
+
+A. ACORDAO QUE NEGA PROVIMENTO AO AGRAVO EM HC ORIGINARIO DO STJ:
+   - Se a questao e CONSTITUCIONAL e o coator, na origem do writ, e
+     tribunal sujeito a jurisdicao do STF: avaliar RECURSO ORDINARIO EM HC
+     (RHC) ao STF (art. 102, II, "a", CF) — cabivel contra acordao
+     DENEGATORIO de HC proferido em unica instancia por tribunal superior.
+     Prazo e rito proprios (verificar via web_search; RHC nao exige
+     prequestionamento por ser, na essencia, desdobramento da acao).
+   - Se a questao e estritamente de ilegalidade e ha flagrancia: avaliar
+     novo HC ao STF apenas nas hipoteses excepcionais admitidas (cautela
+     com supressao de instancia e com a Sumula 691/STF).
+
+B. ACORDAO QUE ENVOLVE QUESTAO CONSTITUCIONAL EM RECURSO (nao HC):
+   - RECURSO EXTRAORDINARIO (art. 102, III, CF), com repercussao geral e
+     prequestionamento — daí a importancia da PARTE XII.
+
+C. OMISSAO/CONTRADICAO NO ACORDAO DO AGRAVO:
+   - EMBARGOS DE DECLARACAO (prazo do CPP em materia penal — 2 dias
+     corridos; verificar) ANTES do RHC/RE, para sanar vicio e consolidar
+     prequestionamento (art. 1.025 CPC c/c art. 619 CPP).
+
+III. CRITERIOS DE ESCOLHA RHC x RE
+
+- RHC: via propria contra acordao que DENEGA HC; devolve amplamente a
+  materia; nao depende de repercussao geral; foco em ilegalidade/coacao.
+- RE: cabivel quando ha questao CONSTITUCIONAL especifica decidida no
+  acordao; exige repercussao geral e prequestionamento rigoroso.
+- Quando houver duvida objetiva, avaliar a interposicao do recurso
+  proprio segundo a natureza predominante da questao; nao manejar novo HC
+  ao STF como substitutivo (supressao de instancia).
+
+IV. IMPACTO NA REDACAO DO AGRAVO (RETROALIMENTACAO)
+
+Saber o recurso futuro orienta o agravo a:
+- prequestionar os dispositivos corretos (CF para RHC/RE; lei federal
+  quando pertinente) — PARTE XII;
+- requerer pronunciamento expresso do colegiado sobre cada dispositivo
+  (consolidacao do prequestionamento);
+- consignar a cadeia de exaurimento (PARTE XII, V) para afastar dupla
+  supressao no STF.
+
+V. CONFERIBILIDADE
+
+Antes de definir a via futura, verificar via web_search o cabimento, o
+prazo e o rito atuais do RHC/RE ao STF em materia penal e o entendimento
+vigente sobre supressao de instancia (precedentes a transcrever ipsis
+litteris — Protocolo Universal).
+
+===============================================================================
+PARTE XIV — PESQUISA OBRIGATORIA (REGIMENTO + JURISPRUDENCIA)
+===============================================================================
+
+ANTES de redigir (Protocolo Anti-Alucinacao — Modulo 5 do MASTER):
+
+1. Confirmar o texto vigente dos arts. 258 e 259 do RISTJ (ou art. 317
+   RISTF) no site oficial do tribunal — verificar emendas regimentais
+   posteriores.
+2. Verificar o entendimento atual sobre o prazo de 5 dias corridos em
+   materia penal (art. 798 CPP x art. 219 CPC).
+3. Verificar jurisprudencia atual sobre cabimento do agravo regimental
+   contra decisao monocratica que nao conhece de HC (Buscador Dizer o
+   Direito; STF HC 116.218; precedentes do STJ).
+4. Verificar jurisprudencia atual sobre fungibilidade agravo regimental x
+   agravo interno em materia penal (3a Secao do STJ).
+5. Verificar a posicao do STF sobre inaplicabilidade da unirrecorribilidade
+   ao HC e sobre a mitigacao da Sumula 691/STF.
+6. Verificar cada precedente de merito a citar — transcricao IPSIS LITTERIS,
+   metadados completos (Protocolo Universal, PARTE VI). Na duvida: NAO
+   CITAR.
+
+Queries sugeridas:
+- "RISTJ art 258 agravo regimental materia penal prazo"
+- "STJ agravo regimental decisao monocratica nao conhecimento habeas corpus"
+- "STJ fungibilidade agravo regimental agravo interno penal"
+- "STF HC 116218 colegialidade decisao monocratica STJ"
+- "STF unirrecorribilidade habeas corpus recurso especial concomitante"
+- "Manual STJ 2025 admissibilidade recurso especial FONAVICE"
+
+===============================================================================
+PARTE XIV-A — MODULO MANUAL STJ/2025 CRIMINAL
+===============================================================================
+
+Integra o Manual para Analise do Recurso Especial nos Tribunais de Segunda
+Instancia (STJ/FONAVICE, 2025), adaptado ao agravo regimental criminal.
+
+I. JUIZO DE CONFORMIDADE E PRIMAZIA SOBRE A ADMISSIBILIDADE
+
+O juizo de conformidade (art. 1.030, I-III, CPC) precede e tem PRIMAZIA
+sobre o juizo de admissibilidade. Aplicado ao agravo regimental quando o
+objeto subjacente envolve REsp/RE:
+- HA TEMA REPETITIVO/RG FAVORAVEL: invocar proativamente para forcar
+  aplicacao do art. 1.030, I, CPC; demonstrar que o acordao contraria tese
+  vinculante.
+- HA TEMA ADVERSO: preparar o DISTINGUISHING do caso concreto em relacao ao
+  paradigma do Tema.
+- TEMA PENDENTE: arguir sobrestamento (art. 1.030, III, CPC), quando o
+  resultado provavel do Tema for favoravel.
+- RETRATACAO PROATIVA: requerer que o colegiado aplique o Tema e se retrate
+  por contrariedade a precedente vinculante (art. 927, III, CPC).
+  web_search: "STJ Tema Repetitivo [numero] [tema criminal] tese fixada".
+
+II. TEMPESTIVIDADE COMO VICIO SANAVEL
+
+QO no AREsp 2.638.376/MG, Corte Especial, j. 5/2/2025, DJEN 27/3/2025: a
+tempestividade hoje e vicio sanavel (verificar via web_search). NAO confiar
+na sanabilidade: demonstrar a tempestividade com rigor (PARTE V).
+
+III. ERRO GROSSEIRO — AGRAVO CONTRA ACORDAO
+
+A interposicao de agravo regimental/interno contra DECISAO COLEGIADA e erro
+grosseiro e NAO suspende nem interrompe o prazo recursal (Manual STJ/2025,
+com base em precedentes da Corte Especial — verificar via web_search).
+Confirmar SEMPRE que a decisao agravada e monocratica.
+
+IV. REBATIMENTO DE TODOS OS FUNDAMENTOS AUTONOMOS (SUMULAS 283/STF E 126/STJ)
+
+Se a decisao agravada assenta em mais de um fundamento autonomo e suficiente,
+o agravo (e o futuro RE/RHC) DEVE atacar TODOS. Protocolo:
+1. Listar TODOS os fundamentos da decisao agravada.
+2. Identificar os autonomos e suficientes.
+3. Verificar se o agravo ataca CADA um.
+4. Se algum nao for atacado: incluir o ataque ou justificar a nao
+   necessidade.
+
+V. DJEN E RESOLUCAO CNJ 455/2022
+
+Desde 16/05/2025 o DJEN e o veiculo oficial. Intimacao = primeiro dia util
+seguinte a disponibilizacao; prazo inicia no primeiro dia util subsequente.
+Verificar intimacao pessoal (defensoria/MP) que altere o termo.
+
+VI. CHECKLIST MANUAL STJ — PRE-PROTOCOLO
+
+[ ] A decisao agravada e monocratica (nao acordao)?
+[ ] Todos os fundamentos autonomos foram atacados (Sumulas 283/126)?
+[ ] A tempestividade foi demonstrada (5 dias corridos)?
+[ ] Ha Tema Repetitivo/RG favoravel a invocar? Adverso a distinguir?
+[ ] O prequestionamento usa art. 1.022 + 1.025 quando aplicavel?
+[ ] Os dispositivos incluem inciso/paragrafo/alinea (9 vicios)?
+[ ] Tratados de DH invocados como parametro convencional + RE (nao REsp)?
+[ ] A procuracao cobre o agravo e o futuro RE/RHC (poderes especiais)?
+[ ] Ha multa anterior nao recolhida (obice — art. 1.026, §3o, CPC)?
+
+===============================================================================
+PARTE XIV-B — ANTECIPACAO E NEUTRALIZACAO DO PARECER DO MP
+===============================================================================
+
+No agravo regimental criminal, o Ministerio Publico Federal (Subprocuradoria-
+Geral da Republica) usualmente oferece parecer, e o relator com frequencia o
+acolhe. Antecipar e neutralizar os argumentos tipicos do Parquet aumenta a
+chance de conhecimento e provimento.
+
+I. PRINCIPIO — REFUTACAO ANTECIPADA SEM CRIAR O PROBLEMA
+
+Antecipar a objecao e neutraliza-la, sem reforcar o argumento adverso nem
+introduzir tese que o MP nao levantou. Formula sobria: "Poder-se-ia
+sustentar que [objecao]. A tese, contudo, nao prospera, porquanto
+[refutacao com lei + jurisprudencia + autos]."
+
+II. CATALOGO DOS ARGUMENTOS TIPICOS DO MP E NEUTRALIZACAO
+
+MP-1 — "HC substitutivo / agravo nao deve ser conhecido."
+Neutralizacao: o agravo e o recurso proprio contra decisao monocratica
+(art. 258 RISTJ), nao substitutivo; a colegialidade e diferida, nao
+suprimida; nulidade absoluta cognoscivel de oficio (PARTE III-A; PARTE XI).
+
+MP-2 — "Supressao de instancia."
+Neutralizacao: o agravo e exatamente o que EXAURE a instancia e atende a
+colegialidade (PARTE XII, V); nao ha supressao — ha o elo que abre a via.
+
+MP-3 — "Sumula 182/STJ — fundamentos nao impugnados."
+Neutralizacao: demonstrar o espelhamento e o ataque individualizado de
+todos os fundamentos (PARTE VII; PARTE VII-B), indicando topico e fls.
+
+MP-4 — "Sumula 7/STJ — reexame de prova."
+Neutralizacao: cotejo fato-a-fato (PARTE VII-C); qualificacao juridica /
+cotejo documental / nulidade absoluta.
+
+MP-5 — "Ausencia de flagrante ilegalidade; inviavel ordem de oficio."
+Neutralizacao: teste de teratologia com substrato concreto (PARTE XI-A);
+ancorar em norma + documento/fls.
+
+MP-6 — "Materia ja decidida / inovacao recursal."
+Neutralizacao: o agravo nao inova — opera na interseccao do deduzido com o
+decidido; materia de ordem publica nao preclui (PARTE VII-A).
+
+MP-7 — "Jurisprudencia dominante / Sumula 568/STJ ampara a decisao."
+Neutralizacao: distinguishing/overruling com arestos mais recentes
+(PARTE VII-D).
+
+III. POSICIONAMENTO NA PECA
+
+A refutacao antecipada do MP NAO e topico autonomo: distribui-se nos topicos
+de cada fundamento (Parte de RAZOES) como paragrafo de "refutacao
+antecipada" ao final do ataque a cada fundamento, quando pertinente. Evitar
+um capitulo "contra o MP" — diluir e mais elegante e tecnico.
+
+IV. QUANDO O PARECER JA FOI JUNTADO
+
+Se o parecer do MP ja consta dos autos antes do julgamento do agravo (ou em
+eventual aditamento), enfrenta-lo nominalmente e ponto a ponto, com a mesma
+tecnica de dialeticidade (PARTE VII), referenciando fls./ID do parecer.
+
+===============================================================================
+PARTE XV — MODELO COMPLETO DE PECA (TEMPLATE COM CAMPOS)
+===============================================================================
+
+(Formatacao ROM V3.0 do MASTER. Substituir [CAMPOS]. Na Fase 2 — Word —
+remover TODAS as instrucoes inline. A peca final nao contem marcador
+metodologico.)
+
+-------------------------------------------------------------------------------
+
+EXCELENTISSIMO SENHOR MINISTRO [NOME DO RELATOR] — RELATOR — [5a/6a TURMA /
+3a SECAO] DO SUPERIOR TRIBUNAL DE JUSTICA
+
+Processo: [TIPO E NUMERO — ex.: Habeas Corpus n. XXX.XXX/GO
+(AAAA/XXXXXXX-X)]
+Agravante: [NOME COMPLETO — POLO]
+Agravado: [MINISTERIO PUBLICO FEDERAL / ESTADUAL]
+[Paciente / Impetrado, quando HC]
+
+[NOME DO CLIENTE / IMPETRANTE], ja qualificado nos autos em epigrafe, por
+seus advogados infrassinados, vem, respeitosamente, perante Vossa
+Excelencia, com fundamento nos artigos 258 e 259 do Regimento Interno do
+Superior Tribunal de Justica, no artigo 39 da Lei n. 8.038/1990, no artigo
+1.021 do Codigo de Processo Civil (aplicavel subsidiariamente por forca do
+artigo 3o do Codigo de Processo Penal) e no artigo 798 do Codigo de Processo
+Penal, interpor o presente
+
+AGRAVO REGIMENTAL
+
+contra a decisao monocratica de [DATA], publicada no DJEN/CNJ em [DATA],
+pelas razoes de fato e de direito a seguir expostas.
+
+I — DA TEMPESTIVIDADE
+[Decisao agravada em DD/MM/AAAA. Disponibilizada no DJEN/CNJ em DD/MM/AAAA.
+Intimacao reputada realizada em DD/MM/AAAA. Inicio da contagem em
+DD/MM/AAAA. Prazo de cinco dias corridos (art. 39, Lei 8.038/1990; art. 258
+RISTJ; art. 798 CPP). Termo final em DD/MM/AAAA. Protocolo em DD/MM/AAAA.
+Tempestivo.]
+
+II — DA ADMISSIBILIDADE
+[Formula da PARTE VI-A, item III — extrinsecos (i a v) e intrinsecos (vi e
+vii), com afastamento da excecao do art. 258 e invocacao cumulativa dos
+arts. 258/259 RISTJ c/c art. 1.021 CPC e da fungibilidade (art. 579 CPP).]
+
+III — DO QUE FOI DECIDIDO
+[Exposicao objetiva e leal da decisao agravada e DECOMPOSICAO de seus
+fundamentos autonomos — Fundamento 1, Fundamento 2, ... com e-STJ fls./ID.]
+
+IV — DAS RAZOES DO AGRAVO (espelhamento — anti-Sumula 182)
+[Quadro logico: "A decisao agravada assenta em [N] fundamentos autonomos:
+(1) [...]; (2) [...]." Em seguida, um subtopico por fundamento, na ordem:]
+1. Do fundamento [HC substitutivo] — refutacao
+2. Do fundamento [unirrecorribilidade] — refutacao
+   2.1. Da inaplicabilidade da unirrecorribilidade ao habeas corpus (STF)
+   2.2. Do cotejamento analitico HC x RE/REsp (ausencia de identidade de
+        objeto — 5 dimensoes)
+   2.3. Do argumento antecedente-consequente
+3. Do fundamento [Sumula 691 analogica] — refutacao
+[... tantos quantos os fundamentos ...]
+
+V — DO ENFRENTAMENTO MATERIA POR MATERIA
+[Para CADA nulidade/tese do HC, bloco demonstrando que nao integra o objeto
+do recurso proprio (PARTE III-B, IV). Consolidacao final.]
+
+VI — DA CONCESSAO DA ORDEM DE OFICIO [quando HC]
+[Reafirmacao sintetica das nulidades absolutas cognosciveis de oficio
+(arts. 564 e 572 CPP); flagrante ilegalidade concreta; pedido autonomo
+(art. 654, §2o, CPP).]
+
+VII — DO PREQUESTIONAMENTO
+[Formula da PARTE XII; dispositivos com inciso/paragrafo; CADH/PIDCP como
+parametro convencional + RE.]
+
+VIII — DOS PEDIDOS
+Requer-se:
+a) o conhecimento do presente agravo regimental, tempestivo e cabivel;
+b) o JUIZO DE RETRATACAO por Vossa Excelencia (art. 258, §3o, RISTJ);
+c) sucessivamente, nao havendo retratacao, a submissao do feito ao
+   colegiado competente e o PROVIMENTO do agravo para cassar/reformar a
+   decisao agravada;
+d) por consequencia, [o conhecimento do habeas corpus e o exame de merito
+   das nulidades pelo colegiado / a concessao da ordem de oficio
+   (art. 654, §2o, CPP)];
+e) o pronunciamento expresso sobre os dispositivos prequestionados, para
+   fins de eventual recurso cabivel ao Supremo Tribunal Federal.
+
+Termos em que,
+Pede deferimento.
+
+[Cidade], [data por extenso].
+
+DR. RODOLFO OTAVIO PEREIRA DA MOTA OLIVEIRA
+OAB/GO 21.841
+
+[Coautor(es) quando houver — ex.: RICARDO SILVA NAVES — OAB/GO 9.993]
+
+[Endereco do escritorio para intimacoes]
+
+-------------------------------------------------------------------------------
+
+===============================================================================
+PARTE XVI — CHECKLIST DE QUALIDADE FINAL (240 PONTOS)
+===============================================================================
+
+CATEGORIA A — ADMISSIBILIDADE EXTRINSECA (30)
+[ ] A1  Decisao agravada e MONOCRATICA, nao acordao (erro grosseiro) [6]
+[ ] A2  Recurso correto (regimental x interno x art. 1.042) [5]
+[ ] A3  Excecao do art. 258 analisada (terminativa x cautelar) [5]
+[ ] A4  Invocacao cumulativa arts. 258/259 RISTJ + art. 1.021 CPC [3]
+[ ] A5  Topico de tempestividade com calculo dia a dia [4]
+[ ] A6  Prazo de 5 dias CORRIDOS (nao uteis) aplicado [4]
+[ ] A7  Termo inicial confirmado (DJEN/intimacao pessoal) [3]
+
+CATEGORIA B — ADMISSIBILIDADE INTRINSECA (15)
+[ ] B1  Legitimidade e interesse recursal demonstrados [4]
+[ ] B2  Capitulo "DA ADMISSIBILIDADE" topificado (extrinsecos+intrinsecos) [5]
+[ ] B3  Isencao de preparo consignada (materia penal) [2]
+[ ] B4  Ausencia de preclusao consumativa verificada [2]
+[ ] B5  Multa anterior (se houver) recolhida (art. 1.026, §3o) [2]
+
+CATEGORIA C — DIALETICIDADE (30)
+[ ] C1  Todos os fundamentos autonomos decompostos [7]
+[ ] C2  Cada fundamento atacado em topico proprio (espelhamento) [8]
+[ ] C3  Refutacao especifica (nao reproducao do HC/peca anterior) [8]
+[ ] C4  Nenhum fundamento autonomo sem refutacao (Sumulas 283/126) [7]
+
+CATEGORIA D — INADMISSAO DO HC E DISTINGUISHING (25)
+[ ] D1  Fundamentos tipicos da inadmissao mapeados (PARTE III-A) [5]
+[ ] D2  Cotejamento analitico HC x RE/REsp — 5 dimensoes [6]
+[ ] D3  Enfrentamento materia por materia (nulidade por nulidade) [6]
+[ ] D4  Argumento antecedente-consequente articulado [4]
+[ ] D5  Cabimento autonomo do HC (recurso proprio inadmitido) [4]
+
+CATEGORIA E — MERITO E ORDEM PUBLICA (15)
+[ ] E1  Nulidades absolutas reafirmadas (HC) [3]
+[ ] E2  Concessao de oficio requerida (art. 654, §2o) [3]
+[ ] E3  Prescricao/extincao verificada (ordem publica) [3]
+[ ] E4  Cada precedente verificado via web_search [3]
+[ ] E5  Jurisprudencia IPSIS LITTERIS (Protocolo Universal) [3]
+
+CATEGORIA F — PREQUESTIONAMENTO E MANUAL STJ (15)
+[ ] F1  Topico de prequestionamento explicito [3]
+[ ] F2  Dispositivos com inciso/paragrafo (9 vicios evitados) [3]
+[ ] F3  Arts. 1.022 + 1.025 combinados quando aplicavel [2]
+[ ] F4  CADH/PIDCP como parametro convencional + RE (nao REsp) [2]
+[ ] F5  Juizo de conformidade/Tema Repetitivo verificado [2]
+[ ] F6  Exaurimento de instancia para RE/RHC ao STF consignado [3]
+
+CATEGORIA G — SUPERACAO DE SUMULAS E JURISPRUDENCIA DEFENSIVA (25)
+[ ] G1  Cada obice sumular invocado refutado com formula propria
+        (PARTE VII-B) [6]
+[ ] G2  Cotejo fato-a-fato anti-Sumula 7/STJ aplicado quando cabivel
+        (PARTE VII-C) [6]
+[ ] G3  Sumula obstativa/568 superada por distinguishing ou overruling
+        com arestos mais recentes (PARTE VII-D) [6]
+[ ] G4  Teste de teratologia/Sumula 691 com substrato concreto
+        (PARTE XI-A) [4]
+[ ] G5  Colegialidade diferida (nao suprimida) afirmada contra o
+        julgamento monocratico blindado [3]
+
+CATEGORIA H — INOVACAO RECURSAL E DUPLA SUPRESSAO (10)
+[ ] H1  Efeito devolutivo delimitado (interseccao deduzido x decidido)
+        (PARTE VII-A) [3]
+[ ] H2  Materia de ordem publica identificada como nao preclusa [3]
+[ ] H3  Dupla supressao refutada; nulidade absoluta dispensa
+        prequestionamento (PARTE XII, V) [4]
+
+CATEGORIA I — ANTECIPACAO DO MP (10)
+[ ] I1  Argumentos tipicos do MP antecipados e neutralizados
+        (PARTE XIV-B) [4]
+[ ] I2  Refutacao diluida nos topicos (nao capitulo "contra o MP") [3]
+[ ] I3  Parecer ja juntado (se houver) enfrentado ponto a ponto [3]
+
+CATEGORIA L — PADROES ESTRUTURAIS DA CLASSE (V4.0) (40)
+[ ] L1  Cadeia coativa escalonada: provimento alcanca decisao originaria
+        + acordao confirmatorio (PARTE III-C) [6]
+[ ] L2  Independencia das instancias preservada como escudo (sem invadir
+        esfera estranha ao writ) [3]
+[ ] L3  Circulo fechado de obices: linha do tempo de bloqueios
+        heterogeneos como tese de cabimento (PARTE III-D) [6]
+[ ] L4  Concurso de nulidades: duplo plano isolado + sistemico
+        (PARTE III-E) [5]
+[ ] L5  Devolucao em camadas: Camada 3 (fundamento que nasce nos ED) +
+        Camada 2 (vicio declaratorio) + Camada 1 (decisao originaria)
+        (PARTE VIII-A) [6]
+[ ] L6  Contradicao interna x externa enfrentada quando invocada
+        (PARTE VIII-A, III) [3]
+[ ] L7  Prioridade de tramitacao requerida quando cabivel; sem dado
+        sensivel excessivo (PARTE XI-B) [3]
+[ ] L8  Reiteracao da liminar ao colegiado (3 requisitos; periculum
+        libertatis) quando a liminar nunca foi apreciada (PARTE XI-B) [4]
+[ ] L9  Fundamento de ordem publica que sobrevive isolado, com formula
+        de blindagem e no escalonamento (PARTE XI-C) [2]
+[ ] L10 Roteiro pos-agravo coerente (RHC x RE; prequestionamento
+        retroalimentado) (PARTE XIII-A) [2]
+
+CATEGORIA M — VERTICES OPERACIONAIS E REDACAO DE EXCELENCIA (V5.0) (30)
+[ ] M1  Rol de pecas/referencias essenciais indicado com e-STJ fls./ID
+        (PARTE VI-B) [5]
+[ ] M2  Tempestividade comprovada documentalmente (ato do termo inicial
+        com fls./ID), nao apenas calculada (PARTE VI-B) [6]
+[ ] M3  Representacao conferida materialmente; poderes p/ futuro RE/RHC
+        verificados (PARTE VI-B) [3]
+[ ] M4  Pluralidade subjetiva tratada; extensao art. 580 CPP requerida
+        quando fundamento objetivo e ha corres (PARTE VI-C) [4]
+[ ] M5  Quadros usados so quando multidimensionais; abertura de
+        pertinencia + leitura analitica de consequencia (PARTE IX-A) [4]
+[ ] M6  Quadros como tabela OOXML sobria (sem decoracao); transcricoes
+        ipsis litteris dentro/fora do quadro corretas (PARTE IX-A) [3]
+[ ] M7  Densidade ROM sem extensao herdada de revisao criminal;
+        cirurgico (PARTE IX-A) [2]
+[ ] M8  Fechamento Fase 2: remissoes internas convertidas; [PENDENTE]
+        resolvidos; numeracao espelha a decisao agravada (PARTE XVI-A) [3]
+
+CATEGORIA J — FORMATACAO E LINGUAGEM (10)
+[ ] J1  Formatacao ROM V3.0 (MASTER) [2]
+[ ] J2  Zero emojis, markdown, travessoes decorativos [2]
+[ ] J3  Zero expressoes de IA [2]
+[ ] J4  Zero probabilidades/percentuais [2]
+[ ] J5  Linguagem forense escorreita, tom cirurgico [2]
+
+CATEGORIA K — PEDIDOS E FECHO (15)
+[ ] K1  Pedido de conhecimento do agravo [3]
+[ ] K2  Pedido de retratacao pelo relator [3]
+[ ] K3  Pedido de provimento pelo colegiado [3]
+[ ] K4  Pedidos escalonados e consequencia logica [3]
+[ ] K5  Fecho ROM, data por extenso, assinatura [3]
+
+TOTAL: 270 pontos
+(A30 B15 C30 D25 E15 F15 G25 H10 I10 L40 M30 J10 K15).
+
+BLOQUEIO DE SAIDA (falha em qualquer = peca NAO entregue):
+A1 (decisao monocratica), A6 (5 dias corridos), C2 (espelhamento),
+C4 (todos os fundamentos atacados), D2 (cotejamento analitico),
+G1 (refutacao de cada obice sumular invocado),
+H3 (dupla supressao / nulidade absoluta dispensa prequestionamento),
+L1 (cadeia coativa: provimento alcanca ambos os atos quando ha
+encadeamento), L5 (devolucao em camadas integral quando a decisao
+agravada e de ED rejeitados),
+M2 (tempestividade comprovada documentalmente),
+M8 (fechamento Fase 2: nenhuma remissao interna do prompt na peca final).
+
+===============================================================================
+PARTE XVI-A — PROTOCOLO DE FECHAMENTO FASE 2 ESPECIFICO DO RECURSO
+===============================================================================
+
+A Fase 2 (conversao prompt -> peca em Word) e o ponto de falha mais comum.
+O MASTER fixa a regra geral (remover marcadores metodologicos). Este
+protocolo e o checklist ESPECIFICO do agravo regimental, de aplicacao
+obrigatoria antes de declarar a peca pronta.
+
+I. CONVERSAO DE REMISSOES INTERNAS
+
+A peca final NAO pode conter NENHUMA remissao do prompt. Varrer e eliminar:
+- "PARTE III-B", "PARTE VII-D", "AR-12", "Modulo 5 do MASTER", "(PARTE
+  XI-A)" e similares.
+- Cada remissao deve ser substituida pelo CONTEUDO desenvolvido em texto
+  corrido (a tecnica e aplicada, nunca citada — Principio Fase 2).
+Busca obrigatoria por: "PARTE ", "AR-", "Modulo", "MASTER", "ROM V",
+"web_search", "[PENDENTE", "ipsis litteris" (como instrucao), "Protocolo
+Universal" (como instrucao).
+
+II. RESOLUCAO DE [PENDENTE]
+
+Nenhum [PENDENTE] pode constar da peca final. Cada um deve ser:
+(a) RESOLVIDO com o dado real dos autos (datas, fls./ID, qualificacao); ou
+(b) se o dado for genuinamente indisponivel e essencial (ex.: data exata
+    de intimacao), a peca NAO se fecha — retorna-se ao Dr. Rodolfo para
+    obtencao do dado. Nunca "completar por suposicao" (Principio da
+    Fidedignidade — MASTER).
+
+III. ESPELHAMENTO DA NUMERACAO
+
+A numeracao/titulacao dos topicos de razao deve espelhar a ordem e a
+identificacao dos fundamentos da DECISAO AGRAVADA. Conferir:
+- Cada fundamento autonomo da decisao tem topico correspondente.
+- A ordem dos topicos segue a ordem da decisao (ou a logica de camadas —
+  quando ED rejeitados).
+- Nenhum fundamento ficou sem topico (Sumula 182/STJ).
+
+IV. INTEGRIDADE DAS TRANSCRICOES E QUADROS
+
+- Toda transcricao confere com a fonte (ipsis litteris) e tem fonte
+  completa. Na duvida sobre literalidade: substituir por parafrase com
+  fls./ID (Regra de Ouro do Protocolo Universal).
+- Quadros: tabela OOXML, formatacao ROM, abertura de pertinencia + leitura
+  analitica; sem quadro orfao (sem paragrafo de consequencia).
+- Recuos de citacao longa conforme MASTER.
+
+V. CONFERENCIA FINAL DE ADMISSIBILIDADE MATERIAL
+
+- Tempestividade ancorada em documento (fls./ID), nao so calculada.
+- Pecas essenciais referenciadas.
+- Representacao conferida.
+- Pedidos completos (conhecimento, retratacao, provimento, consequencia,
+  prequestionamento, extensao art. 580 se cabivel, prioridade/liminar se
+  cabivel).
+
+VI. CONFERENCIA ANTI-IA E ROM (MASTER)
+
+- Zero marcadores de IA, emojis, travessoes decorativos, markdown.
+- Zero probabilidades/percentuais.
+- Formatacao ROM (fonte, espacamento, margens, recuos) aplicada.
+- Timbrado e assinatura ROM; data por extenso.
+- Linguagem forense escorreita; densidade sem prolixidade.
+
+VII. SELO DE SAIDA
+
+Somente apos os itens I-VI integralmente conferidos a peca pode ser
+declarada pronta para protocolo. Falha em I (remissao interna remanescente)
+ou II ([PENDENTE] nao resolvido) e BLOQUEIO ABSOLUTO de saida.
+
+===============================================================================
+PARTE XVII — VERSIONAMENTO E CONTROLE
+===============================================================================
+
+| Versao | Data       | Alteracoes                                          |
+|--------|------------|-----------------------------------------------------|
+| 1.0    | 18/05/2026 | Versao inaugural. 17 partes. Preenche lacuna do     |
+|        |            | Sistema ROM V3.0.                                   |
+| 2.0    | 18/05/2026 | Expansao substancial. Novos modulos: III-A          |
+|        |            | (inadmissao do HC), III-B (distinguishing/          |
+|        |            | cotejamento HC x RE/REsp), VI-A (admissibilidade    |
+|        |            | perfeita extrinseca/intrinseca), XIV-A (Manual      |
+|        |            | STJ/2025). Parte VII expandida (anti-nao-           |
+|        |            | conhecimento). Parte XII expandida (prequestiona-   |
+|        |            | mento para recurso proprio; 9 vicios; CADH/PIDCP).  |
+|        |            | 14 modelos argumentativos. Template reescrito.      |
+|        |            | Checklist 100 -> 150 pontos. Substitui a V1.0.      |
+| 3.0    | 18/05/2026 | Foco: superacao de sumulas e jurisprudencia         |
+|        |            | defensiva. Novos modulos: VII-A (anti-inovacao/     |
+|        |            | efeito devolutivo), VII-B (tabela operacional de    |
+|        |            | obices sumulares), VII-C (cotejo fato-a-fato anti-  |
+|        |            | Sumula 7), VII-D (superacao de sumula obstativa/    |
+|        |            | Sumula 568 — distinguishing/overruling), XI-A       |
+|        |            | (teste de teratologia/Sumula 691), XIV-B            |
+|        |            | (antecipacao do parecer do MP). Parte XII expandida |
+|        |            | (dupla supressao + nulidade absoluta dispensa       |
+|        |            | prequestionamento). 18 modelos argumentativos.      |
+|        |            | Checklist 150 -> 200 pontos; novos bloqueios de     |
+|        |            | saida (G1, H3). Substitui a V2.0.                   |
+| 4.0    | 18/05/2026 | Foco: padroes estruturais da classe "HC originario  |
+|        |            | inadmitido liminarmente com ED rejeitados". Novos   |
+|        |            | modulos: III-C (cadeia coativa escalonada), III-D   |
+|        |            | (circulo fechado de obices), III-E (concurso de     |
+|        |            | nulidades/contaminacao sistemica), VIII-A           |
+|        |            | (devolucao em camadas), XI-B (prioridade de         |
+|        |            | tramitacao + reiteracao da liminar), XI-C           |
+|        |            | (fundamento de ordem publica que sobrevive          |
+|        |            | isolado), XIII-A (roteiro recursal pos-agravo —     |
+|        |            | RHC x RE). 22 modelos argumentativos. Checklist     |
+|        |            | 200 -> 240 pontos; categoria L; novos bloqueios     |
+|        |            | (L1, L5). Substitui a V3.0.                         |
+| 5.0    | 18/05/2026 | Foco: vertices operacionais e tecnica redacional    |
+|        |            | de excelencia. Novos modulos: VI-B (instrucao do    |
+|        |            | agravo + comprovacao documental da tempestividade), |
+|        |            | VI-C (pluralidade subjetiva / art. 580 CPP), IX-A   |
+|        |            | (tecnica redacional ROM + quadros de cotejamento    |
+|        |            | calibrados para concisao do agravo), XVI-A          |
+|        |            | (protocolo de fechamento Fase 2 especifico).        |
+|        |            | Ajustes na Parte VIII (sustentacao oral; retratacao |
+|        |            | parcial). Checklist 240 -> 270 pontos; categoria M; |
+|        |            | novos bloqueios (M2, M8). Substitui a V4.0.         |
+
+PROXIMA REVISAO: mudanca de emenda regimental RISTJ/RISTF, alteracao de
+entendimento do STJ/STF sobre cabimento/prazo/unirrecorribilidade/sumulas
+de admissibilidade, atualizacao do Manual STJ, ou instrucao do Dr. Rodolfo.
+
+===============================================================================
+FIM DO PROMPT_CRIM_agravo_regimental_V5_0.txt
+===============================================================================
+
+ARQUIVO:  PROMPT_CRIM_agravo_regimental_V5_0.txt
+VERSAO:   5.0
+DATA:     18/05/2026
+AUTOR:    Gerado sob instrucao do Dr. Rodolfo Otavio Pereira da Mota Oliveira
+          OAB/GO 21.841 — Rodolfo Otavio Mota Advogados Associados S/S
+
+CONFORMIDADE ROM V3.0:
+- Fidedignidade: zero invencoes; precedentes a verificar via web_search
+- Conferibilidade: dispositivos regimentais a confirmar no site oficial;
+  Manual STJ/2025 a consultar na fonte oficial (TRF5/FONAVICE)
+- Anti-supressao: conteudo integral preservado (V1.0, V2.0, V3.0 e V4.0
+  integradas)
+- Generalidade: modulos sao padroes abstratos da classe de casos, sem
+  particularidades de caso concreto
+- Excelencia redacional: padrao ROM (densidade, ipsis litteris, quadros
+  OOXML) calibrado para a concisao cirurgica do agravo
+- Linguagem forense: norma culta, sem marcadores de IA
+- Prontidao: pronto para uso por todos os fluxos do sistema ROM
+- Subordinacao: subordina-se ao 01_MASTER_ROM_V3.txt e ao Protocolo
+  Universal de Jurisprudencia (PARTE VI)
+
+===============================================================================

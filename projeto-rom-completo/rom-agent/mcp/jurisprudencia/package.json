@@ -1,0 +1,21 @@
+{
+  "name": "jurisprudencia-mcp-server",
+  "version": "1.0.0",
+  "description": "Servidor MCP do ROM: resolve links oficiais de decisões (inteiro teor, ementa, voto, certidão de julgamento) no STJ, STF e DJEN a partir do número CNJ, e busca publicações/ementas — alimentando o montar_anexos.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": { "jurisprudencia-mcp-server": "dist/index.js" },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "node --test dist/lib.test.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.23.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "@types/node": "^22.0.0"
+  }
+}

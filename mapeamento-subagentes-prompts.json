@@ -1,0 +1,44 @@
+{
+  "redator-civel": {
+    "prompts": [
+      "civel/civel-apelacao.txt",
+      "civel/civel-contestacao.txt"
+    ],
+    "area": "civel"
+  },
+  "redator-criminal": {
+    "prompts": [
+      "criminal/criminal-apelacao.txt",
+      "criminal/criminal-embargos-declaracao-criminal-v.txt"
+    ],
+    "area": "criminal"
+  },
+  "redator-trabalhista": {
+    "prompts": [
+      "trabalhista/trabalhista-trab-embargos-declaracao-v.txt",
+      "trabalhista/trabalhista-generico.rtf"
+    ],
+    "area": "trabalhista"
+  },
+  "analise-processual": {
+    "prompts": [
+      "processual/processual-generico.txt",
+      "tributario/tributario-analise-processo-v.txt"
+    ],
+    "area": "processual"
+  },
+  "leading-case": {
+    "prompts": [
+      "recursos/recursos-generico.txt"
+    ],
+    "area": "recursos"
+  },
+  "planejador-tributario": {
+    "prompts": [
+      "tributario/tributario-planejamento.txt",
+      "tributario/tributario-planejamento.rtf"
+    ],
+    "area": "tributario",
+    "novo": true
+  }
+}

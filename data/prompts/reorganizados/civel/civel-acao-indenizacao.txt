@@ -1,0 +1,399 @@
+===============================================================================
+PROMPT: ACAO DE INDENIZACAO (RESPONSABILIDADE CIVIL)
+===============================================================================
+VERSAO: 2.0 OTIMIZADA | DATA: 27/11/2025
+AUTOR: Dr. Rodolfo Otavio Mota (OAB/GO 21.841)
+SISTEMA: ROM V2.0
+
+AVISO CRITICO: Toda jurisprudencia deve ser verificada via web_search
+antes de citacao. NUNCA citar precedente sem verificar.
+
+USAR EM CONJUNTO COM:
+- ESTILO_REDACIONAL_ROM.txt (estilo do escritorio)
+- METODO_formatacao_word_rom.txt (formatacao)
+
+APLICACAO:
+- Responsabilidade Civil OBJETIVA (art. 37, Â§6, CF + art. 927, par. unico, CC)
+- Responsabilidade Civil SUBJETIVA (arts. 186 e 927, caput, CC)
+- Acidentes de transito, erro medico, defeito produto/servico (CDC)
+- Responsabilidade civil do Estado, danos contratuais/extracontratuais
+===============================================================================
+
+PARTE 1: IDENTIFICACAO E COLETA
+===============================================================================
+
+1.1 DADOS PROCESSUAIS OBRIGATORIOS
+----------------------------------
+- Autor(es) + qualificacao completa
+- Reu(s) + qualificacao completa
+- Foro competente (local do fato, domicilio autor/reu)
+- Valor da causa (danos materiais + morais + esteticos)
+
+1.2 DADOS DO EVENTO DANOSO
+--------------------------
+- Data, hora e local do evento
+- Descricao detalhada dos fatos
+- Testemunhas (nomes, enderecos, contatos)
+- Documentos existentes (BO, laudos, fotos, videos, contratos)
+
+1.3 IDENTIFICAR TIPO DE RESPONSABILIDADE
+----------------------------------------
+[ ] SUBJETIVA (arts. 186 e 927, caput, CC)
+    - Exige prova de CULPA (dolo, imprudencia, negligencia, impericia)
+    - Onus da prova: AUTOR
+
+[ ] OBJETIVA (art. 927, par. unico, CC)
+    - NAO exige prova de culpa
+    - Basta: conduta + dano + nexo causal
+    Hipoteses:
+    - Atividade de risco (art. 927, par. unico)
+    - Responsabilidade do Estado (art. 37, Â§6, CF)
+    - Relacao de consumo (arts. 12, 14 e 17, CDC)
+    - Dano ambiental (art. 14, Â§1, Lei 6.938/81)
+    - Acidente de trabalho (art. 7, XXVIII, CF)
+    - Transporte de pessoas (art. 734, CC)
+
+===============================================================================
+
+PARTE 2: ELEMENTOS DA RESPONSABILIDADE CIVIL
+===============================================================================
+
+2.1 CONDUTA (Acao ou Omissao)
+-----------------------------
+- Comportamento humano voluntario
+- Comissiva (fazer) ou omissiva (nao fazer)
+TECNICA: Descrever PRECISAMENTE a conduta do reu, contextualizando.
+
+2.2 CULPA (apenas na subjetiva)
+-------------------------------
+A) DOLO: Intencao deliberada de causar dano
+
+B) CULPA STRICTO SENSU:
+   - IMPRUDENCIA: Acao precipitada, sem cautela
+   - NEGLIGENCIA: Omissao de cuidado devido
+   - IMPERICIA: Falta de aptidao tecnica
+
+GRAUS: Grave, leve, levissima (art. 944, par. unico - reducao equitativa)
+
+PROVA DA CULPA:
+- Regra: Onus do autor (art. 373, I, CPC)
+- Inversao: CDC (art. 6, VIII), dano ambiental, alguns casos medicos
+- Meios: Documental, testemunhal, pericial, presuncoes
+
+2.3 DANO
+--------
+A) DANO MATERIAL (PATRIMONIAL)
+   - DANOS EMERGENTES: Prejuizo efetivo sofrido
+     Exemplos: Despesas medicas, conserto veiculo, remedios
+     Prova: Notas fiscais, recibos, orcamentos
+
+   - LUCROS CESSANTES: O que deixou de ganhar
+     Exemplos: Salarios perdidos, lucro cessante de empresa
+     Prova: Contracheques, declaracao IR, contabilidade
+
+B) DANO MORAL (EXTRAPATRIMONIAL)
+   - Ofensa a direitos da personalidade
+   - Dor, sofrimento, humilhacao, angustia
+   - In re ipsa: Presumido em certas hipoteses
+   VERIFICAR: web_search "STJ dano moral [tipo de caso] quantum"
+
+C) DANO ESTETICO
+   - Alteracao fisica permanente
+   - Deformidade, cicatriz, perda de membro
+   - CUMULAVEL com dano moral (Sumula 387/STJ)
+   VERIFICAR: web_search "STJ dano estetico cumulacao"
+
+D) PERDA DE UMA CHANCE
+   - Frustacao de oportunidade real e seria
+   - Probabilidade concreta de beneficio futuro
+   VERIFICAR: web_search "STJ perda de uma chance requisitos"
+
+2.4 NEXO CAUSAL
+---------------
+TEORIA ADOTADA: Causalidade adequada
+- Causa IDONEA a produzir o resultado
+- Relacao DIRETA E IMEDIATA entre conduta e dano
+- Considera normalidade e previsibilidade
+
+TECNICA: "A conduta do reu [descrever] foi causa ADEQUADA e DIRETA
+do dano sofrido pelo autor [descrever], inexistindo qualquer
+causa superveniente que pudesse romper o nexo causal."
+
+===============================================================================
+
+PARTE 3: EXCLUDENTES DE RESPONSABILIDADE
+===============================================================================
+
+3.1 CULPA EXCLUSIVA DA VITIMA
+-----------------------------
+- Vitima foi UNICA causadora do dano
+- Onus de prova: do reu
+COMO AFASTAR: Demonstrar participacao do reu na causacao
+
+3.2 CULPA CONCORRENTE
+---------------------
+- Vitima e reu contribuiram para o dano
+- Reducao proporcional da indenizacao (art. 945, CC)
+COMO AFASTAR: Demonstrar que conduta da vitima foi irrelevante
+
+3.3 FATO DE TERCEIRO
+--------------------
+- Terceiro estranho a relacao foi o causador
+- Equipara-se a caso fortuito/forca maior
+COMO AFASTAR: Demonstrar que terceiro atuou a mando ou em beneficio do reu
+
+3.4 CASO FORTUITO E FORCA MAIOR (art. 393, CC)
+----------------------------------------------
+- Evento imprevisivel ou inevitavel
+- Fortuito INTERNO (reu responde) vs EXTERNO (nao responde)
+COMO AFASTAR: Demonstrar previsibilidade ou evitabilidade
+
+3.5 EXERCICIO REGULAR DE DIREITO / LEGITIMA DEFESA
+--------------------------------------------------
+- Conduta praticada dentro dos limites legais
+COMO AFASTAR: Demonstrar excesso ou abuso
+
+===============================================================================
+
+PARTE 4: QUANTIFICACAO DOS DANOS
+===============================================================================
+
+4.1 DANOS MATERIAIS
+-------------------
+DEMONSTRAR COM DOCUMENTOS:
+- Notas fiscais de despesas
+- Orcamentos (minimo 3)
+- Contracheques (lucros cessantes)
+- Declaracao de IR
+- Laudos e pericias
+
+CRIAR TABELA:
+| ITEM | VALOR | DOCUMENTO |
+|------|-------|-----------|
+| Despesas medicas | R$ | Notas fls. X |
+| Conserto veiculo | R$ | Orcamento fls. Y |
+| Lucros cessantes | R$ | Contracheques fls. Z |
+| TOTAL MATERIAL | R$ | |
+
+4.2 DANOS MORAIS
+----------------
+PARAMETROS PARA QUANTIFICACAO:
+- Gravidade do fato
+- Extensao do dano
+- Capacidade economica das partes
+- Carater pedagogico/punitivo
+- Precedentes do tribunal
+VERIFICAR: web_search "STJ dano moral [tipo caso] valor indenizacao"
+
+FAIXAS REFERENCIAIS (verificar atualizacao):
+- Leve: 5-20 salarios minimos
+- Medio: 20-50 salarios minimos
+- Grave: 50-100+ salarios minimos
+- Morte: 200-500+ salarios minimos
+
+4.3 DANOS ESTETICOS
+-------------------
+PARAMETROS:
+- Extensao e visibilidade da lesao
+- Impacto na vida social/profissional
+- Idade da vitima
+- Possibilidade de correcao cirurgica
+
+4.4 PENSIONAMENTO (art. 950, CC)
+--------------------------------
+CALCULO:
+- Base: Rendimento mensal da vitima
+- Percentual: Grau de incapacidade (parcial/total)
+- Termo final: 65/70 anos ou expectativa de vida (IBGE)
+- Constituicao de capital ou pagamento unico
+
+FORMULA:
+Pensao mensal = Rendimento x % incapacidade
+Pensao vitalicia = Pensao mensal x 13 x anos restantes
+
+===============================================================================
+
+PARTE 5: ESTRUTURA HIERARQUICA DA PETICAO
+===============================================================================
+
+I. ENDERECAMENTO
+II. QUALIFICACAO DAS PARTES
+III. DOS FATOS
+    A. Narrativa cronologica
+    B. Descricao do evento danoso
+    C. Consequencias
+IV. DO DIREITO
+    A. Da responsabilidade civil (objetiva ou subjetiva)
+    B. Da conduta ilicita
+    C. Do dano
+    D. Do nexo causal
+    E. Das excludentes (afastar)
+V. DOS DANOS
+    A. Materiais (emergentes + lucros cessantes)
+    B. Morais
+    C. Esteticos (se aplicavel)
+    D. Pensionamento (se aplicavel)
+VI. DA TUTELA DE URGENCIA (se aplicavel)
+VII. DOS PEDIDOS
+VIII. DAS PROVAS
+IX. DO VALOR DA CAUSA
+
+===============================================================================
+
+PARTE 6: TUTELA DE URGENCIA
+===============================================================================
+
+6.1 TUTELA ANTECIPADA (art. 300, CPC)
+-------------------------------------
+Requisitos:
+- Probabilidade do direito
+- Perigo de dano ou risco ao resultado util
+
+HIPOTESES:
+- Despesas medicas urgentes
+- Pensionamento provisorio
+- Custeio de tratamento
+
+MODELO:
+"Requer-se TUTELA DE URGENCIA para [pedido especifico], nos termos do
+art. 300, CPC, uma vez presentes os requisitos:
+a) PROBABILIDADE DO DIREITO: [demonstrar]
+b) PERIGO DE DANO: [demonstrar urgencia]"
+
+===============================================================================
+
+PARTE 7: PEDIDOS ESCALONADOS
+===============================================================================
+
+ESTRUTURA:
+
+A. TUTELA DE URGENCIA (se aplicavel):
+"Requer-se, em carater de URGENCIA, a concessao de tutela provisoria
+para [pedido urgente], nos termos do art. 300, CPC."
+
+B. CITACAO:
+"Requer-se a CITACAO do(s) reu(s) para, querendo, contestar a presente
+acao, sob pena de revelia."
+
+C. PROCEDENCIA DOS PEDIDOS:
+"Requer-se a PROCEDENCIA dos pedidos para CONDENAR o(s) reu(s) ao
+pagamento de:
+a) DANOS MATERIAIS no valor de R$ [valor], acrescidos de correcao
+   monetaria desde o desembolso e juros de 1% ao mes desde a citacao;
+b) DANOS MORAIS no valor de R$ [valor], com correcao monetaria desde
+   o arbitramento (Sumula 362/STJ) e juros desde o evento danoso
+   (Sumula 54/STJ);
+c) DANOS ESTETICOS no valor de R$ [valor] [se aplicavel];
+d) PENSIONAMENTO MENSAL de R$ [valor], constituindo-se capital
+   garantidor (art. 533, CPC)."
+
+D. SUCUMBENCIA:
+"Requer-se a condenacao do(s) reu(s) ao pagamento de custas processuais
+e honorarios advocaticios."
+
+E. PROVAS:
+"Requer-se a producao de todas as provas admitidas em direito,
+especialmente:
+- Prova documental ja juntada;
+- Prova testemunhal [rol anexo];
+- Prova pericial [especificar];
+- Depoimento pessoal do reu."
+
+===============================================================================
+
+PARTE 8: MODULOS ESPECIFICOS
+===============================================================================
+
+8.1 ACIDENTE DE TRANSITO
+------------------------
+Base legal: CTB, CC arts. 927, 932, 186
+Documentos: BO, laudo pericial, orcamentos, fotos
+Responsabilidade:
+- Condutor: subjetiva (regra) ou objetiva (transporte)
+- Proprietario: art. 932, III, CC (presuncao)
+- Empregador: art. 932, III, CC
+VERIFICAR: web_search "STJ responsabilidade acidente transito"
+
+8.2 ERRO MEDICO
+---------------
+Base legal: CC arts. 186, 927, 951; CDC arts. 14, 17
+Responsabilidade:
+- Medico (profissional liberal): SUBJETIVA (art. 14, Â§4, CDC)
+- Hospital: OBJETIVA (art. 14, CDC)
+Prova: Prontuario, exames, parecer tecnico
+VERIFICAR: web_search "STJ erro medico responsabilidade"
+
+8.3 RELACAO DE CONSUMO (CDC)
+----------------------------
+Base legal: CDC arts. 12, 14, 17, 18, 20
+Responsabilidade: OBJETIVA
+Inversao do onus: art. 6, VIII, CDC
+Documentos: Nota fiscal, contrato, reclamacoes
+VERIFICAR: web_search "STJ defeito produto servico CDC"
+
+8.4 RESPONSABILIDADE DO ESTADO (art. 37, Â§6, CF)
+------------------------------------------------
+Base legal: CF art. 37, Â§6; CC art. 43
+Responsabilidade: OBJETIVA (teoria do risco administrativo)
+Excludentes: Culpa exclusiva vitima, caso fortuito, forca maior
+Reu: Pessoa juridica de direito publico
+VERIFICAR: web_search "STF responsabilidade civil Estado"
+
+===============================================================================
+
+PARTE 9: CHECKLIST FINAL
+===============================================================================
+
+ELEMENTOS DA RESPONSABILIDADE:
+[ ] Conduta descrita (acao ou omissao)
+[ ] Culpa demonstrada (se subjetiva)
+[ ] Dano comprovado (material, moral, estetico)
+[ ] Nexo causal estabelecido
+[ ] Excludentes afastadas
+
+QUANTIFICACAO:
+[ ] Danos materiais com documentos
+[ ] Danos morais com parametros e precedentes
+[ ] Danos esteticos (se aplicavel)
+[ ] Pensionamento calculado (se aplicavel)
+[ ] Valor da causa = soma dos pedidos
+
+PROVAS:
+[ ] Documentos juntados e organizados
+[ ] Rol de testemunhas (nome, endereco, contato)
+[ ] Quesitos para pericia (se necessaria)
+
+FUNDAMENTACAO:
+[ ] Base legal completa
+[ ] Precedentes VERIFICADOS via web_search
+[ ] Sumulas aplicaveis (54, 362, 387/STJ, etc.)
+
+FORMATACAO:
+[ ] Aplicado METODO_formatacao_word_rom.txt
+[ ] ZERO emojis / ZERO travessoes decorativos
+[ ] Fonte Calibri 12pt / Espacamento 1,5
+
+===============================================================================
+
+PARTE 10: SUMULAS ESSENCIAIS
+===============================================================================
+
+DANO MORAL:
+- Sumula 37/STJ: Cumulacao dano material e moral
+- Sumula 227/STJ: Pessoa juridica pode sofrer dano moral
+- Sumula 362/STJ: Correcao monetaria desde arbitramento
+- Sumula 387/STJ: Cumulacao dano moral e estetico
+- Sumula 388/STJ: Simples devolucao indevida nao e dano moral
+
+JUROS E CORRECAO:
+- Sumula 54/STJ: Juros moratorios desde o evento danoso (resp. extracontratual)
+- Sumula 362/STJ: Correcao do dano moral desde arbitramento
+
+RESPONSABILIDADE:
+- Sumula 130/STJ: Empresa responde por dano a veiculo em estacionamento
+- Sumula 479/STJ: Banco responde por fraude de terceiro (risco atividade)
+- Sumula 529/STJ: CDC aplica-se a contratos bancarios
+
+===============================================================================
+FIM - ACAO DE INDENIZACAO V2.0 OTIMIZADA
+===============================================================================

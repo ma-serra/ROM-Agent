@@ -1,0 +1,376 @@
+PROMPT IMPUGNACAO A CONTESTACAO - REPLICA DO AUTOR
+=====================================================================
+ARQUIVO: PROMPT_IMPUGNACAO_A_CONTESTACAO_REPLICA_DO_AUTOR.txt
+(antes: 13B_P_REPLICA_IMPUGNACAO_CONTESTACAO_V1_0.txt - renomeado
+ por determinacao do Dr. Rodolfo; conteudo integral preservado,
+ Principio 6 - nao regressao)
+VERSAO: 1.0 | SISTEMA ROM
+FUNDAMENTO: CPC arts. 350, 351, 341, 342, 343, 437, 373, 322,
+            330, 337, 485, 487
+NATUREZA: Manifestacao do AUTOR sobre a contestacao do reu
+ESPELHO DEFENSIVO: 13_P_CONTESTACAO_CIVEL (versao mais recente do KB)
+
+=====================================================================
+GOVERNANCA (remissao, nao reproducao)
+=====================================================================
+Aplicam-se a esta peca, como condicao de validade e por vigencia
+automatica, sem reproducao do texto transversal: a SECAO 0 da CI e o
+ADENDO NORMATIVO V2.6.0 integral (Dispositivos 6-A a 15-A; o
+transversal e aplicado por remissao, NAO reproduzido aqui), a PARTE
+VI do 01_M_METODOS_CONSOLIDADO_ROM_V2 e as
+05_M_DIRETRIZES_REDACIONAIS_UNIVERSAIS. Ordem de prevalencia:
+Dispositivo 8-A.2. Antes de redigir: project_knowledge_search para
+confirmar a versao mais recente DESTE arquivo e do
+13_P_CONTESTACAO_CIVEL (Dispositivo 8-A.3 - vedado redigir com
+estrutura presumida). Destaque transversal aplicavel: 13-A
+(verificacao de citacoes), 14-A (padrao linguistico), 15-A (direito
+intertemporal e regras de transicao).
+
+=====================================================================
+1. DISTINCAO DE INSTITUTOS (Dispositivo 14-A.1 - condicao de
+   validade; vocabulario tecnico preciso)
+=====================================================================
+A REPLICA / IMPUGNACAO A CONTESTACAO (CPC arts. 350 e 351) e
+manifestacao do AUTOR, no processo de conhecimento, sobre a defesa
+do reu. NAO se confunde com:
+(a) IMPUGNACAO AO CUMPRIMENTO DE SENTENCA (CPC art. 525) - defesa
+    do executado; ver 18_P_IMPUGNACAO (versao mais recente);
+(b) EMBARGOS A EXECUCAO (CPC arts. 914-920) - acao autonoma de
+    impugnacao do executado;
+(c) IMPUGNACAO AO VALOR DA CAUSA / A GRATUIDADE - incidentes
+    proprios.
+Identificado o instituto, declarar no Resumo Executivo pre-redacao
+qual peca sera redigida, o polo do cliente (AUTOR) e a base legal
+nuclear. Vedado redigir replica sob estrutura de impugnacao ao
+cumprimento, e vice-versa.
+
+=====================================================================
+2. REGRA ZERO - POLO CONSTITUINTE
+=====================================================================
+O escritorio representa o AUTOR (ou autor-reconvindo). Nenhum
+argumento, tese, precedente ou fato que beneficie o reu ou prejudique
+o autor constituinte entra na peca. Identificar litisconsortes e o
+polo de cada pedido (acao e reconvencao).
+
+=====================================================================
+3. CABIMENTO, NECESSIDADE E PRAZO
+=====================================================================
+3.1 - A replica e necessaria, em regra, quando o reu, na
+contestacao: (a) suscita PRELIMINARES (CPC art. 337); (b) alega
+PREJUDICIAIS (prescricao, decadencia, perempcao); (c) deduz FATOS
+impeditivos, modificativos ou extintivos (CPC art. 350); (d) junta
+DOCUMENTOS novos (CPC art. 437, par. 1o); (e) apresenta RECONVENCAO
+(CPC art. 343).
+3.2 - O juiz determina a manifestacao do autor sobre preliminares e
+documentos (CPC arts. 351 e 437, par. 1o). A ausencia de replica,
+quando necessaria, fragiliza a tese e pode gerar falsa impressao de
+incontroversia: impugnar e ato de prevencao de preclusao.
+3.3 - PRAZO: 15 dias para preliminares (CPC art. 351); 15 dias para
+manifestacao sobre documento (CPC art. 437, par. 1o); ou prazo
+judicialmente assinado. Contagem em dias uteis (CPC art. 219), com
+feriados de Goiania-GO e da comarca conferidos (Dispositivo 6-A;
+metodo de feriados do KB). Reverificar a redacao vigente dos artigos
+no Planalto no momento de redigir (Dispositivo 13-A). Reconvencao:
+contestar no prazo legal, em peca/topico proprio.
+
+=====================================================================
+4. ESTRUTURA HIERARQUICA DA REPLICA (ESPELHO INVERSO DA
+   CONTESTACAO)
+=====================================================================
+A tecnica hierarquica da contestacao (Preliminares -> Prejudiciais
+-> Merito) aplica-se INVERSAMENTE: o autor a percorre para DERRUBAR
+a defesa e RESSALVAR o fato constitutivo, nao para se defender.
+
+I.    SINTESE DA CONTROVERSIA E DELIMITACAO DA IMPUGNACAO
+      - O que o reu alegou; o que se impugna; reafirmacao sintetica
+        da causa de pedir e do pedido (sem reabrir a inicial).
+
+II.   DA TEMPESTIVIDADE DA REPLICA
+      - Intimacao: DD/MM/AAAA; prazo final: DD/MM/AAAA; protocolo:
+        DD/MM/AAAA; dias uteis (CPC art. 219); feriados conferidos.
+
+III.  DAS PRELIMINARES ARGUIDAS PELO REU (CPC art. 337) -
+      REFUTACAO INDIVIDUALIZADA, INCISO A INCISO
+      Enfrentar cada preliminar efetivamente suscitada, entre as do
+      rol vigente do art. 337 (reverificar redacao - Dispositivo
+      13-A): inexistencia/nulidade de citacao em outro processo;
+      incompetencia absoluta ou relativa; incorrecao do valor da
+      causa; inepcia da inicial (CPC art. 330, par. unico - falta de
+      pedido/causa de pedir; ilogicidade; pedido indeterminado;
+      pedidos incompativeis); perempcao; litispendencia; coisa
+      julgada; conexao; incapacidade/irregularidade de
+      representacao/falta de autorizacao; convencao de arbitragem;
+      ausencia de legitimidade ou de interesse processual; falta de
+      caucao/prestacao exigida; indevida concessao de gratuidade.
+      Para cada uma: demonstrar a improcedencia e que nao obsta o
+      conhecimento do merito; quando for materia de ordem publica,
+      registra-lo; objetivo do reu mapeado (extincao sem merito -
+      CPC art. 485) e neutralizado.
+
+III-A. TECNICA DE RESPOSTA ESPECIFICA POR PRELIMINAR (especifico;
+      a refutacao do item III nao e generica - cada preliminar tem
+      contra-argumento proprio; reverificar a redacao vigente de
+      cada artigo, Dispositivo 13-A):
+      - INCOMPETENCIA (absoluta/relativa): defender o foro/juizo;
+        se relativa, lembrar que nao e conhecivel de oficio e segue
+        o regime do art. 64 e par. (alegacao em preliminar de
+        contestacao, decisao, eventual conflito e remessa sem
+        nulidade dos atos decisorios senao quando o juizo for
+        incompetente - art. 64, par. 4o);
+      - INCORRECAO DO VALOR DA CAUSA: responder pelo regime do art.
+        293 (impugnacao em preliminar de contestacao, decisao
+        incidental), demonstrando a correcao do valor atribuido ou,
+        subsidiariamente, a ausencia de prejuizo;
+      - INEPCIA DA INICIAL (art. 330, par. unico): demonstrar que
+        ha pedido e causa de pedir, conclusao logica, pedido
+        determinado e compatibilidade entre pedidos; afastar a
+        extincao do art. 485, I;
+      - ILEGITIMIDADE / FALTA DE INTERESSE: demonstrar
+        pertinencia subjetiva e binomio necessidade-utilidade;
+        distinguir, com rigor (Dispositivo 14-A.1), legitimidade
+        de merito (improcedencia, nao carencia);
+      - LITISPENDENCIA / COISA JULGADA / PEREMPCAO: cotejar triplice
+        identidade (partes, pedido, causa de pedir) e afastar;
+      - CONVENCAO DE ARBITRAGEM: verificar existencia, validade e
+        eficacia da clausula; alegar renuncia tacita se o reu
+        praticou ato incompativel; lembrar que nao e conhecivel de
+        oficio;
+      - CONEXAO/CONTINENCIA: responder pelo regime de reuniao/
+        prevencao (arts. 55-59), demonstrando ausencia de risco de
+        decisoes conflitantes ou ja consumada a sentenca em um dos
+        feitos (Sumula 235/STJ - reverificar estado e teor,
+        Dispositivo 6-A);
+      - INDEVIDA CONCESSAO DE GRATUIDADE: defender a hipossuficiencia
+        com base no art. 99, par. 2o e 3o (presuncao da declaracao
+        da pessoa natural; impugnacao com prova em sentido
+        contrario - reverificar redacao);
+      - INCAPACIDADE/IRREGULARIDADE DE REPRESENTACAO: demonstrar a
+        regularidade ou requerer/comprovar o saneamento (art. 76),
+        afastando extincao.
+
+IV.   DAS PREJUDICIAIS DE MERITO (PRESCRICAO / DECADENCIA /
+      PEREMPCAO) - CPC art. 487, II
+      - Distincao tecnica rigorosa entre os tres institutos
+        (Dispositivo 14-A.1): prescricao (pretensao; suspensao/
+        interrupcao; CC arts. 197-204, reverificar); decadencia
+        (direito potestativo; CC arts. 207-211, reverificar);
+        perempcao (CPC).
+      - Enfrentamento OBRIGATORIO a luz do DIREITO INTERTEMPORAL
+        (Dispositivo 15-A, por remissao): identificar o fato
+        gerador; a NORMA DE REGENCIA VIGENTE A EPOCA; o termo
+        inicial do prazo; causas de impedimento/suspensao/
+        interrupcao; regra de transicao eventual. Demonstrar
+        aplicacao anacronica pela parte adversa, se houver
+        (Dispositivo 15-A.10). Prequestionar CF art. 5o, XXXVI;
+        LINDB art. 6o; CPC arts. 14 e 1.046, alem da norma
+        especifica (Dispositivo 15-A.8).
+
+V.    DO MERITO DA DEFESA - REFUTACAO PONTO A PONTO
+      - Para cada fato impeditivo, modificativo ou extintivo (CPC
+        arts. 350 e 373, II): "O reu sustenta que [sintese - ID/
+        fls.]. A alegacao nao prospera. [Norma corretamente
+        aplicavel; erro de interpretacao do reu; jurisprudencia
+        reverificada conforme PARTE VI e Dispositivos 9-A/13-A]."
+      - Reafirmar o fato constitutivo e o onus do art. 373, I;
+        standard probatorio; inversao do onus se aplicavel (ex.:
+        CDC art. 6o, VIII - reverificar redacao vigente).
+      - Enfrentar tese de direito material do reu com a norma
+        vigente a epoca dos fatos (Dispositivo 15-A).
+
+VI.   DA IMPUGNACAO AOS DOCUMENTOS NOVOS (CPC art. 437, par. 1o)
+      - Autenticidade, pertinencia, tempestividade da juntada,
+        valor probatorio; arguicao de falsidade documental se
+        cabivel (CPC arts. 430 a 433, reverificar).
+
+VII.  DA CONTESTACAO A RECONVENCAO (CPC art. 343), se houver
+      - Em peca/topico proprio; estrutura defensiva completa
+        contra o pedido reconvencional (Preliminares ->
+        Prejudiciais -> Merito), com direito intertemporal
+        (Dispositivo 15-A). O autor-reconvindo aqui assume posicao
+        defensiva: aplicar, por analogia operacional, a tecnica do
+        13_P_CONTESTACAO_CIVEL quanto ao pedido reconvencional.
+
+VIII. DA AUSENCIA DE IMPUGNACAO ESPECIFICA PELO REU
+      - Fatos da inicial nao impugnados especificamente pelo reu:
+        presuncao de veracidade (CPC art. 341), ressalvadas as
+        excecoes do art. 341, par. unico, e a hipotese do art.
+        345. Apontar NOMINALMENTE cada fato tornado incontroverso
+        e extrair a consequencia (julgamento antecipado - CPC art.
+        355, II, quando cabivel; reverificar).
+
+VIII-A. DO FATO OU DIREITO SUPERVENIENTE ALEGADO NA CONTESTACAO
+      (CPC art. 342, III, e art. 493) - especifico
+      - Quando o reu, na defesa considerada em conjunto, traz fato
+        impeditivo, modificativo ou extintivo SUPERVENIENTE, ou
+        invoca direito novo, o autor deve: (a) verificar a
+        admissibilidade da alegacao (fato realmente posterior;
+        nao precluso; conexo a defesa); (b) impugna-lo
+        especificamente quanto a existencia, prova e eficacia
+        juridica; (c) invocar, quando favoravel ao autor, o art.
+        493 - fato constitutivo, modificativo ou extintivo
+        superveniente que o juiz deve considerar de oficio ou a
+        requerimento, com previo contraditorio (art. 493, par.
+        unico); (d) submeter a qualificacao temporal do fato e da
+        norma ao DIREITO INTERTEMPORAL (Dispositivo 15-A, por
+        remissao): a lei de regencia e a vigente a epoca do fato
+        superveniente, nao a da propositura, salvo regra de
+        transicao; demonstrar aplicacao anacronica adversa, se
+        houver (Dispositivo 15-A.10). Vedado, porem, usar o art.
+        493 como via oblíqua para inovar a causa de pedir
+        (estabilizacao da demanda - regra de ouro, item 5).
+
+IX.   DA LITIGANCIA DE MA-FE DO REU, SE CONFIGURADA (CPC arts.
+      80 e 81)
+      - Tipificacao objetiva da conduta (deducao de defesa contra
+        fato incontroverso; alteracao da verdade; uso do processo
+        para fim ilegal; resistencia injustificada; incidente
+        manifestamente infundado). Sem adjetivacao pejorativa
+        (05_M_DIRETRIZES_REDACIONAIS_UNIVERSAIS).
+
+X.    DOS REQUERIMENTOS (escalonados; CPC art. 322, par. 1o -
+      pedidos implicitos preservados: juros, correcao, sucumbencia)
+      a) rejeicao de TODAS as preliminares;
+      b) rejeicao das prejudiciais;
+      c) improcedencia integral da defesa de merito e procedencia
+         do pedido inicial;
+      d) desentranhamento/desconsideracao dos documentos
+         impugnados, conforme o caso;
+      e) improcedencia da reconvencao, se houver;
+      f) producao das provas necessarias a contraposicao (CPC art.
+         350, in fine), ESPECIFICADAS e justificadas (vedado pedido
+         generico de "todas as provas admitidas");
+      g) condenacao do reu por litigancia de ma-fe, se cabivel;
+      h) prosseguimento do feito / julgamento antecipado quando
+         cabivel.
+
+=====================================================================
+5. REGRA DE OURO DA REPLICA
+=====================================================================
+Impugnar ESPECIFICAMENTE cada preliminar, prejudicial, fato e
+documento da contestacao. Nenhum ponto da defesa sem enfrentamento -
+simetria exata com a exigencia que o sistema ROM impoe ao reu na
+contestacao. O silencio do autor diante de fato extintivo articulado
+pode ser lido como reconhecimento; a impugnacao especifica e dever
+tecnico, nao retorica. Vedado, porem, inovar a causa de pedir ou o
+pedido na replica (estabilizacao da demanda - CPC arts. 329 e 141;
+reverificar): a replica RESPONDE a defesa, nao amplia a inicial.
+
+=====================================================================
+6. INTERFACE OBRIGATORIA COM O DIREITO INTERTEMPORAL
+   (Dispositivo 15-A - condicao de validade; aplicado por remissao)
+=====================================================================
+Toda prejudicial de prescricao/decadencia/perempcao e toda tese de
+direito material suscitada na contestacao sao enfrentadas pelos TRES
+EIXOS (material, processual, transicao). Solicitar expressamente a
+conferencia da legislacao vigente a epoca dos fatos; demonstrar
+aplicacao anacronica adversa; prequestionar os dispositivos do
+Dispositivo 15-A.8. O texto integral da regra intertemporal NAO e
+reproduzido aqui - vige pelo Adendo V2.6.0.
+
+=====================================================================
+7. JURISPRUDENCIA, ENUNCIADOS E TESES
+   (Dispositivos 6-A, 9-A, 13-A; PARTE VI - por remissao)
+=====================================================================
+Toda referencia e REFERENCIA METODOLOGICA INTERNA: localizar fonte
+oficial, conferir, transcrever integral e ipsis litteris, anexar
+inteiro teor e certidao de julgamento; nenhuma ementa sem inteiro
+teor anexado; vedada parafrase. Vedado afirmar de memoria estado de
+sumula/tese. Em qualquer falha ou duvida: NAO CITAR (fail-safe;
+reorganizar em lei, doutrina e principios). Atencao a sumulas que o
+reu tipicamente invoca em contestacao (ex.: Sumula 381/STJ -
+abusividade de oficio em contrato bancario; Sumula 385/STJ - dano
+moral e inscricao preexistente): reverificar estado e teor antes de
+enfrentar (Dispositivo 6-A).
+
+=====================================================================
+8. PADRAO LINGUISTICO E VEDACOES (Dispositivo 14-A; 9-A.5/9-A.6 -
+   por remissao)
+=====================================================================
+Condicao de validade: norma culta integral. Estilo classico, formal,
+tecnico, persuasivo, porem objetivo; periodos curtos a medios.
+Revisao linguistica obrigatoria, distinta da tecnica (ETAPA 5 do
+Validador). Vedado qualquer marcador de producao nao manual e
+qualquer mencao ao modo de producao. Vedados emojis, icones, setas,
+codigos de modulo/tese, marcacoes internas, percentuais de exito,
+coloquialismos, hiperboles e adjetivacao pejorativa ao julgador ou a
+parte adversa.
+
+=====================================================================
+9. VALIDADOR DE CINCO ETAPAS (SECAO 0.10) - APLICACAO OBRIGATORIA
+=====================================================================
+ETAPA 1 - Jurisprudencia reverificada via web_search, ementa integral
+ipsis litteris, inteiro teor + certidao anexados; senao, fail-safe.
+ETAPA 2 - Sem parafrase oculta; sem marcador de producao; sem mencao
+ao modo de producao.
+ETAPA 3 - Integridade tecnica: estrutura hierarquica invertida
+cumprida; impugnacao especifica de TODOS os pontos da contestacao;
+direito intertemporal examinado nas prejudiciais e no merito quando
+o caso exige (Dispositivo 15-A); sem inovacao da causa de pedir.
+ETAPA 4 - Seguranca processual: risco de preclusao por impugnacao
+nao especifica - zero; risco de incorrecao jurisprudencial - zero;
+risco de aplicacao anacronica de norma - zero; inovacao indevida da
+demanda - zero; inepcia formal - zero.
+ETAPA 5 - Padrao linguistico inderrogavel conferido (revisao
+linguistica integral; zero desvio de vernaculo).
+Reprovado qualquer item de qualquer etapa: a peca NAO e entregue;
+retorna a revisao.
+
+=====================================================================
+10. AUDITORIA DE ESPELHAMENTO COM 13_P_CONTESTACAO_CIVEL
+    (verificacao de simetria - uso interno, nao reproduzido na peca)
+=====================================================================
+Antes de finalizar, conferir que para CADA arma defensiva prevista
+no 13_P_CONTESTACAO_CIVEL existe, na replica, o enfrentamento
+correspondente:
+(a) cada preliminar do art. 337 -> refutacao em III;
+(b) cada prejudicial (prescricao/decadencia/perempcao) -> IV, com
+    direito intertemporal;
+(c) cada fato extintivo/modificativo/impeditivo -> V, ponto a ponto;
+(d) documentos novos -> VI;
+(e) reconvencao -> VII;
+(f) fatos nao impugnados pelo reu -> VIII (art. 341);
+(g) as 15 modalidades de acao do prompt de contestacao - cobranca,
+    indenizacao, despejo, cobranca de condominio, execucao de titulo
+    extrajudicial, possessoria, rescisao contratual, consignacao em
+    pagamento, declaratoria, monitoria, alimentos, revisao
+    contratual, prestacao de contas, dissolucao de sociedade,
+    responsabilidade civil -> a replica adapta a refutacao a
+    modalidade da acao em curso, com a mesma densidade tecnica da
+    defesa que combate;
+(h) sumulas defensivas tipicas (381/STJ, 385/STJ e outras invocaveis
+    pelo reu) -> enfrentadas em VII/V apos reverificacao.
+Lacuna de simetria detectada: completar antes da entrega. JAMAIS
+entregar replica que deixe qualquer defesa do reu sem enfrentamento.
+
+=====================================================================
+11. EXTENSAO RECOMENDADA
+=====================================================================
+Proporcional a contestacao enfrentada e a complexidade da causa;
+densidade tecnica sem prolixidade (Cap. 3 das Diretrizes). Toda
+defesa enfrentada; nenhuma extensao decorativa.
+
+=====================================================================
+LISTA DE REVERIFICACAO ESPECIFICA NO MOMENTO DE REDIGIR
+(web_search em fonte oficial - Dispositivo 13-A)
+=====================================================================
+1. Redacao vigente de CPC arts. 55-59, 64, 76, 99, 141, 219, 293,
+   322, 329, 330, 337, 341, 342, 343, 345, 350, 351, 355, 373,
+   430-433, 437, 485, 487, 493 - Planalto.
+2. Norma material vigente a epoca dos fatos e suas alteracoes
+   (eixo do Dispositivo 15-A) - Planalto.
+3. CC arts. 197-211 (prescricao/decadencia) - redacao vigente e
+   historica - Planalto.
+4. CPC arts. 14 e 1.046; orientacao atual de STJ/STF sobre
+   isolamento dos atos processuais - portais oficiais.
+5. Sumulas tipicamente invocadas pelo reu (estado e teor) - portais
+   STJ/STF.
+6. Feriados nacionais, estaduais (GO) e da comarca - tempestividade.
+(O direito intertemporal geral, a verificacao de citacoes, o padrao
+linguistico e a admissibilidade aplicam-se por remissao ao Adendo
+V2.6.0 - nao reproduzidos por decisao de arquitetura.)
+
+=====================================================================
+FIM - REPLICA / IMPUGNACAO A CONTESTACAO CIVEL V1.0
+ARQUIVO: 13B_P_REPLICA_IMPUGNACAO_CONTESTACAO_V1_0.txt
+SISTEMA ROM - Rodolfo Otavio Mota Advogados Associados S/S
+=====================================================================

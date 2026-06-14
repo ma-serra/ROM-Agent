@@ -1,0 +1,6 @@
+tribunal,orgao,relator,materia,classe,fundamento_principal,sumula_aplicada,conhecido,resultado,data_distribuicao,data_julgamento,processo,fonte
+STJ,3a Turma,Min. A,consumidor - vicio do produto,REsp,violacao art 18 CDC,,sim,provido,2024-02-10,2024-08-15,REsp 0000001,DJe
+STJ,3a Turma,Min. A,consumidor - vicio do produto,REsp,violacao art 18 CDC,,sim,improvido,2024-03-01,2024-09-20,REsp 0000002,DJe
+STJ,3a Turma,Min. B,consumidor - vicio do produto,REsp,reexame de prova,Sumula 7,nao,improvido,2024-01-15,2024-07-10,REsp 0000003,DJe
+STJ,4a Turma,Min. C,consumidor - vicio do produto,REsp,violacao art 18 CDC,,sim,parcial,2023-11-20,2024-06-05,REsp 0000004,DJe
+STJ,4a Turma,Min. C,consumidor - vicio do produto,REsp,reexame de prova,Sumula 7,nao,improvido,2024-04-01,2024-10-01,REsp 0000005,DJe

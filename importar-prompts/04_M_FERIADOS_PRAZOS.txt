@@ -1,0 +1,616 @@
+===============================================================================
+MODULO: FERIADOS E PRAZOS PROCESSUAIS
+SISTEMA ROM V3.0 — RODOLFO OTAVIO MOTA ADVOGADOS ASSOCIADOS
+04_M_FERIADOS_PRAZOS.txt
+===============================================================================
+
+ARQUIVO:  04_M_FERIADOS_PRAZOS.txt
+VERSAO:   3.0
+DATA:     30/03/2026
+AUTOR:    Dr. Rodolfo Otavio Pereira da Mota Oliveira — OAB/GO 21.841
+STATUS:   COMPLETO
+ESCOPO:   Criminal e subsidiariamente civel — contagem de prazos
+          processuais, feriados, recesso forense e tempestividade para
+          todas as pecas do sistema ROM V3.0
+
+AVISO CRITICO:
+Erros em prazos causam prejuizos irreparaveis ao cliente.
+A contagem deve ser verificada com rigor absoluto em toda peca.
+Nunca presumir tempestividade — demonstrar com datas e calculo.
+
+DEPENDENCIAS: 01_MASTER_ROM_V3.txt (principios gerais), prompt especifico
+da peca (para identificar o prazo correto aplicavel).
+
+===============================================================================
+SUMARIO
+===============================================================================
+
+PARTE I   — REGRA FUNDAMENTAL: DIAS CORRIDOS x DIAS UTEIS
+PARTE II  — TABELA DE PRAZOS CRIMINAIS
+PARTE III — METODOLOGIA DE CONTAGEM PASSO A PASSO
+PARTE IV  — FERIADOS: CLASSIFICACAO E VERIFICACAO
+PARTE V   — RECESSO FORENSE: TJGO E TRIBUNAIS SUPERIORES
+PARTE VI  — PUBLICACAO E INTIMACAO: DJe E SISTEMAS ELETRONICOS
+PARTE VII — PRAZOS EM DOBRO E EXCECOES
+PARTE VIII— APLICACAO TEMPORAL: CPP x CPC
+PARTE IX  — DEMONSTRACAO DE TEMPESTIVIDADE NA PECA
+PARTE X   — EXEMPLOS PRATICOS DE CONTAGEM
+PARTE XI  — CHECKLIST DE TEMPESTIVIDADE
+
+===============================================================================
+PARTE I — REGRA FUNDAMENTAL: DIAS CORRIDOS x DIAS UTEIS
+===============================================================================
+
+I. A DISTINCAO MAIS IMPORTANTE DO SISTEMA ROM
+
+PROCESSO PENAL (CPP): prazos em DIAS CORRIDOS (art. 798, CPP)
+   - Incluem sabados, domingos e feriados na contagem
+   - Prorrogam-se para o proximo dia util APENAS se o ultimo dia
+     for sabado, domingo ou feriado (art. 798, par. 1o, CPP)
+   - Base: art. 798, CPP
+
+PROCESSO CIVIL (CPC/2015): prazos em DIAS UTEIS (art. 219, CPC)
+   - Excluem sabados, domingos e feriados na contagem
+   - Base: art. 219, CPC/2015
+   - Vigencia: a partir de 18/03/2016
+
+CPC APLICADO SUBSIDIARAMENTE AO CPP (art. 3o, CPP):
+Quando o CPP for omisso, o CPC pode ser aplicado subsidiaramente.
+POREM: a regra de contagem do CPP (dias corridos — art. 798) nao e
+revogada pelo CPC. Os prazos do CPP continuam sendo contados em
+dias corridos, mesmo com a vigencia do CPC/2015.
+EXCECAO: prazos do REsp e do RE nos tribunais superiores — aplicam-se
+as regras do RISTJ e RISTF, que adotam a contagem em dias uteis.
+
+II. REGRA DE INICIO DA CONTAGEM
+
+PONTO ZERO: o dia da publicacao/intimacao NAO e contado.
+INICIO: o prazo começa a correr no primeiro dia seguinte a
+publicacao/intimacao.
+Fundamento: art. 798, par. 1o, CPP ("no computo dos prazos, incluir-se-a
+o dia do começo e excluir-se-a o do fim"); ATENCAO: ha divergencia
+interpretativa quanto ao CPP — verificar posicao atual do STJ/STF
+via web_search para o recurso especifico.
+
+Para o CPC: art. 224 — "Salvo disposicao em contrario, os prazos serao
+contados excluindo o dia do começo e incluindo o do vencimento."
+
+REGRA PRATICA (consenso):
+DIA DA INTIMACAO: dia zero (nao conta)
+DIA SEGUINTE: primeiro dia do prazo
+
+III. PRORROGACAO DO PRAZO
+
+Se o ultimo dia do prazo cair em:
+- Sabado → prazo se prorroga para a segunda-feira (ou proximo dia util)
+- Domingo → prazo se prorroga para a segunda-feira (ou proximo dia util)
+- Feriado → prazo se prorroga para o proximo dia util
+- Recesso forense → prazo se prorroga para o proximo dia util apos o
+  termino do recesso
+
+===============================================================================
+PARTE II — TABELA DE PRAZOS CRIMINAIS
+===============================================================================
+
+I. RECURSOS — PRIMEIRO GRAU / SEGUNDO GRAU (CPP — DIAS CORRIDOS)
+
+APELACAO CRIMINAL (art. 593, CPP)
+Prazo:     5 dias CORRIDOS
+Inicio:    Dia seguinte a intimacao/publicacao da sentenca
+Regencia:  CPP (art. 593)
+Obs.:      Em dias corridos — incluem sabado, domingo e feriado na
+           contagem; o prazo so prorroga se o ultimo dia for dia nao util
+
+RECURSO EM SENTIDO ESTRITO — RESE (art. 586, CPP)
+Prazo:     5 dias CORRIDOS
+Inicio:    Dia seguinte a intimacao/publicacao da decisao
+Regencia:  CPP (art. 586)
+
+AGRAVO EM EXECUCAO PENAL (art. 197, LEP)
+Prazo:     5 dias CORRIDOS
+Inicio:    Dia seguinte a intimacao/publicacao da decisao do juiz da execucao
+Regencia:  LEP (art. 197)
+
+EMBARGOS DE DECLARACAO EM PROCESSO PENAL (art. 619, CPP)
+Prazo:     2 dias CORRIDOS
+Inicio:    Dia seguinte a intimacao/publicacao da decisao
+Regencia:  CPP (art. 619)
+ATENCAO:   O art. 619 do CPP NAO foi alterado pelo CPC/2015. O prazo
+           permanece sendo 2 dias CORRIDOS no processo penal.
+
+EMBARGOS INFRINGENTES E DE NULIDADE (art. 609, par. unico, CPP)
+Prazo:     10 dias CORRIDOS
+Inicio:    Dia seguinte a publicacao do acordao
+Regencia:  CPP (art. 609, par. unico)
+Cabimento: Apenas quando ha voto vencido mais favoravel ao reu
+
+II. RECURSOS — TRIBUNAIS SUPERIORES (STJ / STF — DIAS UTEIS)
+
+RECURSO ESPECIAL — REsp (STJ)
+Prazo:     15 dias UTEIS
+Inicio:    Dia seguinte a publicacao do acordao recorrido no DJe
+Regencia:  Art. 1.003, CPC/2015 (aplicacao subsidiaria) + RISTJ
+Obs.:      Nos tribunais superiores o prazo e em dias uteis
+
+RECURSO EXTRAORDINARIO — RE (STF)
+Prazo:     15 dias UTEIS
+Inicio:    Dia seguinte a publicacao do acordao recorrido no DJe
+Regencia:  Art. 1.003, CPC/2015 (aplicacao subsidiaria) + RISTF
+
+AGRAVO INTERNO (STJ e STF)
+Prazo:     15 dias UTEIS
+Regencia:  Art. 1.021, CPC/2015
+
+EMBARGOS DE DECLARACAO NOS TRIBUNAIS SUPERIORES
+Prazo:     5 dias UTEIS (CPC/2015, art. 1.023 — aplicado subsidiariamente)
+Regencia:  CPC/2015
+
+HABEAS CORPUS (HC e RHC)
+Prazo:     Sem prazo — impetrado a qualquer tempo
+Regencia:  CF/88, art. 5o, LXVIII + CPP, arts. 647-667
+
+III. OUTROS PRAZOS RELEVANTES
+
+REVISAO CRIMINAL (arts. 621-631, CPP)
+Prazo:     Sem prazo legal (a qualquer tempo apos transito em julgado)
+
+MANDADO DE SEGURANCA (Lei 12.016/2009)
+Prazo:     120 dias da ciencia do ato ilegal ou abusivo
+Natureza:  Prazo decadencial (nao processual)
+Contagem:  Dias corridos (prazo decadencial — CC, art. 207)
+ATENCAO:   Prazo decadencial — nao se suspende nem se interrompe.
+
+APRESENTACAO DE DEFESA — RESPOSTA A ACUSACAO (art. 396-A, CPP)
+Prazo:     10 dias
+Inicio:    Dia seguinte a citacao
+
+ALEGACOES FINAIS EM AUDIENCIA / MEMORIAIS (art. 403, par. 3o, CPP)
+Prazo:     5 dias
+Regencia:  CPP (dias corridos)
+
+===============================================================================
+PARTE III — METODOLOGIA DE CONTAGEM PASSO A PASSO
+===============================================================================
+
+I. ROTINA OBRIGATORIA ANTES DE CALCULAR QUALQUER PRAZO
+
+PASSO 1: Identificar a natureza do processo
+   a) Processo penal (CPP) → dias corridos
+   b) Execucao penal (LEP) → dias corridos
+   c) Processo nos tribunais superiores → dias uteis (CPC subsidiario)
+   d) Mandado de seguranca → verificar (geralmente dias corridos)
+
+PASSO 2: Identificar o recurso ou ato processual
+   → Consultar Tabela da Parte II para identificar o prazo correto.
+
+PASSO 3: Localizar a data de intimacao ou publicacao
+   → Certidao nos autos (fls. ou ID do movimento)
+   → DJe (data de disponibilizacao e data de publicacao — distintas!)
+   → Sistema eletronico (PJe, e-SAJ, PROJUDI — verificar a data correta)
+
+PASSO 4: Calcular o dia de inicio do prazo
+   → Dia seguinte a intimacao/publicacao (dia zero nao conta)
+
+PASSO 5: Contar os dias conforme a natureza
+   → Dias corridos: contar todos os dias do calendario
+   → Dias uteis: pular sabados, domingos e feriados
+
+PASSO 6: Verificar feriados e recesso no periodo
+   → Ver Partes IV e V deste modulo
+   → Pesquisar feriados locais via web_search se necessario
+
+PASSO 7: Aplicar a prorrogacao se necessario
+   → Se o ultimo dia cair em dia nao util: prorroga para o proximo dia util
+
+PASSO 8: Registrar a data final com certeza
+   → Exemplo: "Prazo expira em [DATA], [dia da semana]."
+
+PASSO 9: Verificar com margem de seguranca
+   → Protocolar preferencialmente um dia antes do limite
+
+II. VERIFICACAO OBRIGATORIA DE FERIADOS
+
+Para cada prazo calculado, executar via web_search:
+   "feriados municipais [municipio/comarca] [ano]"
+   "feriados estaduais Goias [ano]"
+   "recesso forense TJGO [ano]"
+   "recesso forense STJ [ano]" (quando aplicavel)
+   "recesso forense STF [ano]" (quando aplicavel)
+
+===============================================================================
+PARTE IV — FERIADOS: CLASSIFICACAO E VERIFICACAO
+===============================================================================
+
+I. TIPOS DE FERIADOS
+
+A. FERIADOS NACIONAIS (fixos — lei federal)
+
+01 de janeiro — Confraternizacao Universal
+21 de abril — Tiradentes
+01 de maio — Dia do Trabalho
+07 de setembro — Independencia do Brasil
+12 de outubro — Nossa Senhora Aparecida (Padroeira do Brasil)
+02 de novembro — Finados
+15 de novembro — Proclamacao da Republica
+20 de novembro — Dia Nacional de Consciencia Negra (Lei 14.759/2023)
+25 de dezembro — Natal
+
+B. FERIADOS NACIONAIS MOVEIS (variam por ano)
+
+Carnaval — segunda e terca-feira (ponto facultativo nacional, mas
+           suspende prazos forenses — verificar resolucao CNJ)
+Quarta-feira de Cinzas — ate meio-dia (ponto facultativo)
+Sexta-feira da Paixao (Semana Santa) — Sexta antes da Pascoa
+Corpus Christi — Quinta-feira (60 dias apos a Pascoa)
+Pascoa — domingo (nao e dia util de qualquer forma)
+
+DATAS PASCOAIS — VERIFICAR POR ANO (web_search):
+2025: Pascoa em 20/04/2025
+2026: Pascoa em 05/04/2026
+2027: Pascoa em 28/03/2027
+
+C. FERIADOS ESTADUAIS — GOIAS
+
+02 de outubro — Criacao do Estado de Goias
+Verificar outros feriados estaduais via web_search:
+"feriados estaduais Goias [ano]"
+
+D. FERIADOS MUNICIPAIS
+
+Variam por municipio/comarca.
+VERIFICAR SEMPRE via web_search antes de calcular prazo:
+"feriados municipais [nome do municipio] [ano]"
+"decreto feriados [municipio] [ano]"
+
+Municipios frequentes no TJGO:
+Goiania, Aparecida de Goiania, Anapolis, Rio Verde, Catalao, Itumbiara,
+Luziania, Formosa, Jatai, Goianesia — verificar decreto municipal de cada um.
+
+II. FERIADOS FORENSES — REGRA ESPECIAL
+
+Alem dos feriados comuns, os prazos se suspendem nos chamados "feriados
+forenses" — periodos em que o expediente forense e suspenso por resolucao
+do tribunal ou do CNJ.
+
+VERIFICAR SEMPRE:
+- Resolucao do TJGO sobre feriados forenses e pontos facultativos do ano
+- Resolucao do CNJ sobre feriados forenses nacionais
+- Calendario anual do TJGO (disponivel no portal tjgo.jus.br)
+
+web_search: "TJGO calendario feriados [ano]"
+web_search: "CNJ resolucao feriados forenses [ano]"
+
+III. REGRA DO PRAZO EM DIA NAO UTIL (ART. 798, PAR. 1O, CPP)
+
+"No computo dos prazos, incluir-se-a o dia do começo e excluir-se-a o
+do fim. Os prazos nao correm: a) no dia em que for feita a intimacao;
+b) nos dias em que o servico forense estiver suspenso ou quando o
+tribunal funcionar com expediente reduzido." (art. 798, CPP)
+
+Se o ultimo dia do prazo cair em feriado, sabado ou domingo:
+O prazo se prorroga automaticamente para o proximo dia util.
+
+===============================================================================
+PARTE V — RECESSO FORENSE: TJGO E TRIBUNAIS SUPERIORES
+===============================================================================
+
+I. RECESSO FORENSE DO TJGO (Resolucao TJGO)
+
+Recesso de fim de ano: geralmente de 20 de dezembro a 6 de janeiro do
+ano seguinte (verificar datas exatas via web_search por ano:
+"recesso forense TJGO [ano]")
+
+Recesso de meio de ano (julho): em geral nao ha recesso no TJGO —
+verificar via web_search.
+
+SEMANA SANTA: verificar se ha suspensao de expediente ou reducao.
+
+DURANTE O RECESSO: os prazos processuais se suspendem.
+O prazo reinicia no primeiro dia util apos o recesso.
+
+II. RECESSO FORENSE DO STJ
+
+Recesso de fim de ano: geralmente de 20 de dezembro a 6 de janeiro
+(verificar via web_search: "recesso forense STJ [ano]")
+
+Recesso de meio de ano: geralmente a segunda quinzena de julho
+(verificar via web_search)
+
+Regencia: RISTJ + Resolucao STJ aplicavel
+
+III. RECESSO FORENSE DO STF
+
+Recesso de fim de ano: geralmente de 20 de dezembro a 6 de janeiro
+Recesso de meio de ano: geralmente de 2 a 31 de julho
+
+Regencia: RISTF + Resolucao STF aplicavel
+web_search: "recesso forense STF [ano]"
+
+IV. FERIAS COLETIVAS — ENTIDADES DE CLASSE
+
+Advogados: ferias nao suspendem prazos processuais (regra geral).
+EXCECAO: art. 220, CPC — "Suspende-se o curso do prazo processual nos
+dias compreendidos entre 20 de dezembro e 20 de janeiro, inclusive."
+
+ATENCAO CRITICA — ART. 220, CPC:
+Esta regra e do CPC e aplica-se a processos civis.
+No processo penal: o CPP nao tem regra equivalente. Os prazos criminais
+NAO se suspendem pelo art. 220 do CPC — a nao ser que o tribunal tenha
+fechado o servico forense (recesso forense formal).
+Verificar se o TJGO suspendeu o expediente forense naquele periodo
+especifico antes de afirmar que o prazo criminal se suspendeu.
+
+===============================================================================
+PARTE VI — PUBLICACAO E INTIMACAO: DJe E SISTEMAS ELETRONICOS
+===============================================================================
+
+I. DIARIO DA JUSTICA ELETRONICO — DJe
+
+A Lei 11.419/2006 regulamenta a informatizacao do processo judicial.
+As publicacoes no DJe seguem o seguinte fluxo:
+
+DISPONIBILIZACAO: data em que o ato e inserido no sistema eletronico.
+PUBLICACAO: ocorre no dia util SEGUINTE a disponibilizacao.
+INICIO DO PRAZO: começa no dia util SEGUINTE a publicacao.
+
+ATENCAO:
+Disponibilizacao em segunda-feira → Publicacao na terca-feira →
+Inicio do prazo na quarta-feira.
+
+Se a disponibilizacao ocorrer na sexta-feira:
+Publicacao na segunda-feira (proximo dia util) → Inicio do prazo
+na terca-feira.
+
+VERIFICAR SEMPRE: a data exata constante do DJe para cada publicacao.
+Nao confundir data de disponibilizacao com data de publicacao.
+
+II. SISTEMAS ELETRONICOS DOS TRIBUNAIS
+
+PJe (Processo Judicial Eletronico — STJ, TRF, etc.):
+Intimacao automatica. Prazo começa no dia seguinte a consulta do
+advogado OU no dia seguinte ao prazo de 10 dias uteis apos a
+disponibilizacao — o que ocorrer primeiro.
+Verificar o regimento e a resolucao especifica do tribunal.
+
+PROJUDI (TJGO):
+Intimacao pelo portal. Verificar data de disponibilizacao no sistema.
+Prazo: dia seguinte a intimacao.
+Verificar resolucao do TJGO sobre o PROJUDI para os detalhes.
+
+e-SAJ (outros tribunais):
+Verificar data de disponibilizacao e aplicar a mesma logica.
+
+III. INTEGRIDADE DA DATA — VERIFICACAO OBRIGATORIA
+
+Antes de calcular o prazo, verificar nos autos:
+[ ] Qual e a data de disponibilizacao no DJe?
+[ ] Qual e a data de publicacao (dia util seguinte)?
+[ ] Existe certidao de intimacao pessoal nos autos?
+[ ] A intimacao foi por advogado ou pelo reu diretamente?
+[ ] Houve intimacao por edital? (prazo corre apos o termino do edital)
+
+===============================================================================
+PARTE VII — PRAZOS EM DOBRO E EXCECOES
+===============================================================================
+
+I. DEFENSORIA PUBLICA
+
+Prazo em dobro para todas as manifestacoes processuais.
+Fundamento: art. 128, I, da LC 80/1994 + art. 186, CPC.
+ATENCAO: o CPP nao prev prazo em dobro para a Defensoria — a duplicacao
+do prazo decorre da legislacao especifica e do CPC aplicado
+subsidiaramente. Verificar posicao atual do STJ via web_search.
+
+II. MINISTERIO PUBLICO
+
+Prazo em dobro para recursos (art. 46 c/c art. 800, CPP).
+ATENCAO: ha controvérsia doutrinaria e jurisprudencial. Verificar
+posicao atual do STJ para o recurso especifico em questao.
+
+III. LITISCONSORTES COM ADVOGADOS DIFERENTES (CPC, art. 229)
+
+Prazo em dobro para litisconsortes com procuradores de escritorios
+distintos, em processo fisico.
+No processo eletronico: art. 229, par. 2o, CPC — o prazo em dobro
+NAO se aplica quando os autos sao eletronicos.
+Verificar se os autos sao fisicos ou eletronicos (PROJUDI/PJe).
+
+IV. PROCESSO PENAL — NAO HA PRAZO EM DOBRO PARA O REU
+
+Na defesa criminal, o reu e seu advogado nao tem prazo em dobro
+(salvo defensoria publica). O prazo e o mesmo que o do MP.
+
+===============================================================================
+PARTE VIII — APLICACAO TEMPORAL: CPP x CPC
+===============================================================================
+
+I. REGRA GERAL
+
+O prazo e regido pela LEI VIGENTE NO MOMENTO DA INTIMACAO DA DECISAO
+(tempus regit actum).
+
+Se a intimacao ocorreu antes de 18/03/2016: aplica-se o CPP ou o CPC/1973
+conforme o tipo de processo.
+Se a intimacao ocorreu a partir de 18/03/2016: aplica-se o CPP (para processo
+penal — dias corridos) ou o CPC/2015 (para processo civil — dias uteis).
+
+II. MARCOS LEGISLATIVOS RELEVANTES PARA PRAZOS
+
+CPC/1973: vigente ate 17/03/2016
+   Prazos em dias corridos em geral.
+   Embargos de declaracao: 5 dias corridos (art. 536, CPC/1973).
+   Efeito dos embargos sobre o prazo: suspensivo (Lei 8.950/1994).
+
+CPC/2015 (Lei 13.105/2015): vigente desde 18/03/2016
+   Prazos em dias uteis (art. 219, CPC).
+   Embargos de declaracao: 5 dias uteis (art. 1.023, CPC/2015).
+   Efeito dos embargos sobre o prazo: interruptivo (art. 1.026).
+   Prequestionamento ficto: art. 1.025.
+   Prazo em dobro no processo eletronico: nao se aplica (art. 229, par. 2o).
+
+CPP: vigente desde 1941 — sem alteracao relevante na regra geral de prazos.
+   Prazos em dias corridos (art. 798, CPP) — inalterado.
+   Embargos de declaracao: 2 dias corridos (art. 619, CPP) — inalterado.
+
+III. EMBARGOS DE DECLARACAO — EFEITO SOBRE O PRAZO RECURSAL
+
+Embargos interpostos ANTES de 18/03/2016:
+   Efeito: SUSPENSIVO (o prazo recursal retoma do ponto onde parou)
+
+Embargos interpostos A PARTIR de 18/03/2016:
+   Efeito: INTERRUPTIVO (o prazo recursal reinicia por completo apos
+   o julgamento dos embargos)
+
+IMPACTO PRATICO: com o efeito interruptivo (CPC/2015), ao ter os embargos
+julgados, o cliente tem o prazo integral para o recurso seguinte (apelacao,
+REsp, RE). Isso e mais favoravel do que o efeito suspensivo anterior.
+
+===============================================================================
+PARTE IX — DEMONSTRACAO DE TEMPESTIVIDADE NA PECA
+===============================================================================
+
+I. MODELO DE DEMONSTRACAO — APELACAO CRIMINAL
+
+"O presente recurso e tempestivo. A sentenca condenatoria foi publicada
+em [DATA DA PUBLICACAO], conforme certidao de fls. [X] (ou ID do
+Movimento [X]). O prazo de 5 (cinco) dias corridos previsto no art. 593
+do Codigo de Processo Penal iniciou-se em [DATA DE INICIO — dia seguinte
+a publicacao] e expira em [DATA FINAL]. O presente recurso foi interposto
+em [DATA DE PROTOCOLO], dentro, portanto, do prazo legal."
+
+Se houve feriado no periodo:
+"[Observacao: o dia [DATA] corresponde a feriado [municipal/estadual/
+nacional], razao pela qual o prazo foi prorrogado para [DATA FINAL REAL],
+nos termos do art. 798, par. 1o, do CPP.]"
+
+II. MODELO DE DEMONSTRACAO — REsp NO STJ
+
+"O presente recurso e tempestivo. O acordao recorrido foi publicado no
+DJe em [DATA DA PUBLICACAO NO DJe], conforme certidao de fls. [X].
+O prazo de 15 (quinze) dias uteis previsto no art. 1.003 do CPC/2015 (de
+aplicacao subsidiaria) iniciou-se em [DATA DE INICIO — primeiro dia util
+seguinte a publicacao] e expira em [DATA FINAL], excluidos os sabados,
+domingos e feriados [listar se houver no periodo]. O presente recurso foi
+interposto em [DATA DE PROTOCOLO], dentro, portanto, do prazo legal."
+
+III. MODELO DE DEMONSTRACAO — EMBARGOS NO PROCESSO PENAL
+
+"Os presentes embargos de declaracao sao tempestivos. O [acordao / a decisao]
+embargado(a) foi publicado(a) em [DATA], conforme certidao de fls. [X].
+O prazo de 2 (dois) dias corridos previsto no art. 619 do Codigo de Processo
+Penal iniciou-se em [DATA] e expira em [DATA FINAL]. Os presentes embargos
+foram opostos em [DATA DE PROTOCOLO], dentro, portanto, do prazo legal."
+
+IV. MODELO DE DEMONSTRACAO — EMBARGOS NO PROCESSO CIVIL (CPC/2015)
+
+"Os presentes embargos de declaracao sao tempestivos. O acordao embargado
+foi disponibilizado no DJe em [DATA] e publicado em [DATA DO DJe — dia
+util seguinte]. O prazo de 5 (cinco) dias uteis previsto no art. 1.023 do
+CPC/2015 iniciou-se em [DATA — primeiro dia util apos a publicacao] e
+expira em [DATA FINAL], nao se computando os dias [listar dias nao uteis
+do periodo]. Os presentes embargos foram opostos em [DATA], dentro do
+prazo legal."
+
+===============================================================================
+PARTE X — EXEMPLOS PRATICOS DE CONTAGEM
+===============================================================================
+
+I. EXEMPLO 1 — APELACAO CRIMINAL (5 DIAS CORRIDOS)
+
+Sentenca publicada em: terca-feira, 01/04/2026
+Inicio do prazo: quarta-feira, 02/04/2026 (dia seguinte)
+Contagem (corridos): 02, 03, 04, 05, 06
+Ultimo dia: domingo, 06/04/2026 → prorrogado
+Data final: segunda-feira, 07/04/2026
+
+Verificar: ha feriado no municipio entre 02/04 e 07/04? → web_search
+
+II. EXEMPLO 2 — EMBARGOS DE DECLARACAO NO PROCESSO PENAL (2 DIAS CORRIDOS)
+
+Acordao publicado em: sexta-feira, 03/04/2026
+Inicio do prazo: sabado, 04/04/2026
+Contagem (corridos): 04 (sabado), 05 (domingo)
+Ultimo dia: domingo, 05/04/2026 → prorrogado
+Data final: segunda-feira, 06/04/2026
+
+III. EXEMPLO 3 — REsp NO STJ (15 DIAS UTEIS)
+
+Acordao publicado no DJe em: sexta-feira, 03/04/2026
+Inicio do prazo: segunda-feira, 06/04/2026 (proximo dia util)
+Contagem (dias uteis — excluir sabados, domingos e feriados):
+   Semana 1: 06, 07, 08, 09, 10 = 5 dias uteis
+   Semana 2: 13, 14, 15, 16, 17 = 10 dias uteis
+   Semana 3: 20, 21, 22, 23, 24 = 15 dias uteis
+Data final: sexta-feira, 24/04/2026
+
+Verificar: ha feriado de 06/04 a 24/04? → web_search
+   21/04 = Tiradentes (feriado nacional) → pular para 22/04
+   Recalcular: Semana 3: 22, 23, 24, 28 (24 = 15o dia util)
+   → Data final nao muda neste exemplo especifico (24/04)
+   ATENCAO: verificar o calculo real via web_search para confirmar.
+
+IV. EXEMPLO 4 — MANDADO DE SEGURANCA (120 DIAS DA CIENCIA)
+
+Data da ciencia do ato ilegal: 15/01/2026
+Calculo: 15/01/2026 + 120 dias corridos = 15/05/2026
+Verificar: 15/05 e dia util? → web_search
+Se nao for dia util: verificar se ha entendimento de prorrogacao
+para prazo decadencial (posicao atual STJ — web_search).
+
+===============================================================================
+PARTE XI — CHECKLIST DE TEMPESTIVIDADE
+===============================================================================
+
+Aplicar antes de protocolar ou declarar tempestividade em qualquer peca:
+
+IDENTIFICACAO DO PRAZO
+[ ] Qual e o recurso ou ato processual?
+[ ] E processo penal (CPP — dias corridos) ou civil (CPC — dias uteis)?
+[ ] E nos tribunais superiores? (STJ/STF — dias uteis)
+[ ] Qual e o prazo em dias?
+[ ] Ha prazo em dobro aplicavel? (Defensoria, MP, litisconsorte — fisico)
+
+LOCALIZACAO DA DATA DE INICIO
+[ ] Qual e a data exata de publicacao no DJe ou de intimacao?
+[ ] Ha certidao nos autos confirmando a data?
+[ ] Se DJe: qual e a data de disponibilizacao e qual a de publicacao
+    (dia util seguinte a disponibilizacao)?
+[ ] Se sistema eletronico: ha registro de data/hora de abertura
+    pelo advogado?
+
+VERIFICACAO DE FERIADOS
+[ ] Quais sao os feriados nacionais no periodo?
+[ ] Quais sao os feriados estaduais (Goias) no periodo?
+[ ] Quais sao os feriados municipais (comarca especifica) no periodo?
+    → web_search obrigatorio: "feriados [municipio] [ano]"
+[ ] Ha recesso forense do TJGO no periodo?
+    → web_search: "recesso TJGO [ano]"
+[ ] Ha recesso forense do STJ/STF no periodo (se aplicavel)?
+
+CALCULO E VERIFICACAO
+[ ] O prazo foi calculado em dias corridos (CPP) ou uteis (CPC)?
+[ ] O dia da intimacao/publicacao foi excluido (dia zero)?
+[ ] O ultimo dia foi verificado? Cai em dia util?
+[ ] Se cai em dia nao util: o prazo foi prorrogado corretamente?
+[ ] Ha margem de seguranca (protocolar ao menos 1 dia antes)?
+
+DEMONSTRACAO NA PECA
+[ ] A tempestividade foi demonstrada com datas e fundamento legal?
+[ ] A certidao de intimacao/publicacao foi citada (fls. ou ID)?
+[ ] Feriados eventuais foram mencionados?
+[ ] Data de protocolo foi indicada?
+
+===============================================================================
+FIM DO 04_M_FERIADOS_PRAZOS.txt
+===============================================================================
+
+ARQUIVO:  04_M_FERIADOS_PRAZOS.txt
+VERSAO:   3.0
+DATA:     30/03/2026
+PALAVRAS: ~3.500
+STATUS:   COMPLETO
+CONFORMIDADE ROM V3.0: 100%
+
+NOTA: Feriados municipais, estaduais e recessos forenses mudam anualmente.
+Sempre verificar via web_search antes de calcular qualquer prazo.
+Nao confiar em listas estaticas — o calendario varia por ano e por municipio.

@@ -1,0 +1,172 @@
+PROMPT: MEMORIAIS
+=================
+VERSAO: 3.0 | SISTEMA ROM
+FUNDAMENTO: CPC art. 364 (civel) / CPP (criminal)
+PRAZO: 15 dias (civel) / fixado pelo juiz (criminal)
+
+USAR COM: 00_MASTER_ROM_V3.txt
+
+=================
+PRINCIPIO FUNDAMENTAL
+=================
+
+MEMORIAIS = RESUMO DA QUIZILA NO MINIMO DE PAGINAS
+
+NAO SAO:
+- Nova inicial ou contestacao
+- Repeticao mecanica do ja dito
+- Desenvolvimento de teses ineditas
+- Narracao completa dos fatos
+- Transcricao de todas as provas
+
+SAO:
+- Sintese estrategica dos argumentos
+- Destaque das provas determinantes
+- Facilitacao do trabalho do julgador
+
+=================
+MOMENTO PROCESSUAL
+=================
+
+CIVEL (CPC):
+- Apos instrucao (memoriais finais - art. 364)
+- Substituicao alegacoes finais orais
+- Antes da sentenca
+
+CRIMINAL (CPP):
+- Apos instrucao, antes sentenca
+- Alegacoes finais escritas
+
+TRABALHISTA (CLT):
+- 15 min orais OU escrito se autorizado
+
+=================
+EXTENSAO RIGOROSA
+=================
+
+IDEAL: 8-10 paginas
+MAXIMO: 12 paginas
+EXCEPCIONAL: 15-20 paginas (casos complexos)
+
+Memoriais LONGOS demonstram falta de tecnica.
+
+=================
+TECNICAS DE SINTESE
+=================
+
+REMISSOES EFICIENTES:
+NAO: "Conforme narrado na inicial, em 15/01/2020..."
+SIM: "Conforme contrato fls. 15/18 e alegacoes (item II.1)..."
+
+SUPRESSAO DO SECUNDARIO:
+Pergunte sempre:
+- Este argumento e DETERMINANTE?
+- Esta prova e ESSENCIAL?
+- Este fato e RELEVANTE?
+Se NAO â†’ SUPRIMA
+
+QUADROS SINOTICOS:
+Em vez de paragrafos, use cronologia:
+15/01/2020 - Celebracao contrato (fls. 15/18)
+10/03/2020 - Primeira parcela nao paga (fls. 45)
+15/03/2020 - Notificacao extrajudicial (fls. 50)
+
+CITACAO SELETIVA:
+NAO: 10 ementas completas (5 paginas)
+SIM: 2-3 precedentes essenciais (1 pagina)
+
+=================
+ESTRUTURA ENXUTA
+=================
+
+I. SINTESE DOS FATOS (1-2 paginas MAX)
+- Cronologia essencial
+- Quadro sinotico
+- Remissao aos autos
+
+II. SINTESE DAS PROVAS (1-2 paginas MAX)
+- 3-5 provas DETERMINANTES
+- Localizacao exata nos autos
+- Conexao com tese
+
+III. FUNDAMENTACAO JURIDICA (3-5 paginas)
+A) Tese principal
+   - Fundamento legal
+   - Precedentes (2-3)
+   - Aplicacao ao caso
+B) Tese subsidiaria (se houver)
+
+IV. PEDIDOS (1/2 pagina)
+- Objetivos e precisos
+- Congruentes com fundamentacao
+
+=================
+DIFERENCIACAO POR AREA
+=================
+
+MEMORIAIS CIVEIS:
+- Prazo: 15 dias (art. 364, par.2)
+- Foco: questoes de direito e fato
+- Objetivo: influenciar sentenca
+
+MEMORIAIS CRIMINAIS:
+- Prazo: fixado pelo juiz (5-15 dias)
+- Foco: tese defensiva, provas, dosimetria
+- Objetivo: absolvicao ou condenacao minima
+
+MEMORIAIS TRABALHISTAS:
+- Prazo: imediato ou autorizado
+- Foco: pedidos, provas orais
+- Objetivo: sintese para sentenca imediata
+
+=================
+VEDACOES
+=================
+
+NAO repita mecanicamente inicial/contestacao
+NAO narre todos os fatos novamente
+NAO transcreva todas as provas
+NAO desenvolva teses ineditas
+NAO exceda 12 paginas sem justificativa
+
+=================
+CHECKLIST MEMORIAIS
+=================
+
+SINTESE:
+[ ] Maximo 12 paginas?
+[ ] Suprimiu argumentos secundarios?
+[ ] Usou remissoes?
+[ ] Empregou quadros sinoticos?
+
+CONTEUDO:
+[ ] Questoes controvertidas identificadas?
+[ ] 3-5 provas determinantes com localizacao?
+[ ] 2-3 precedentes essenciais?
+[ ] Tese juridica clara?
+[ ] Pedidos precisos?
+
+FORMA:
+[ ] Paragrafos enxutos (3-5 linhas)?
+[ ] Negrito apenas no essencial?
+[ ] Sem repeticoes?
+
+=================
+TECNICAS ESPECIFICAS
+=================
+
+ABERTURA:
+"Apos a instrucao processual, apresenta MEMORIAIS
+com sintese dos argumentos essenciais para julgamento."
+
+TRANSICAO PROVAS-DIREITO:
+"As provas acima demonstram [fato], o que conduz
+a aplicacao do art. [X], conforme fundamentacao."
+
+FECHAMENTO:
+"Em sintese, os elementos probatorios (fls. X, Y, Z)
+demonstram [conclusao], impondo-se [pedido]."
+
+=================
+FIM - MEMORIAIS V3.0
+=================

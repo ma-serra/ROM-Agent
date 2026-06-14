@@ -1,0 +1,543 @@
+{
+  "consolidados": [
+    {
+      "original": "00_LEIA-ME_UPLOAD.md",
+      "novo": "recursos-apelacao.md",
+      "area": "recursos",
+      "tipo": "apelacao",
+      "versao": 0,
+      "isGenerico": true
+    },
+    {
+      "original": "00_LEIA-ME_UPLOAD_PLANEJ (1).md",
+      "novo": "tributario-planejamento.md",
+      "area": "tributario",
+      "tipo": "planejamento",
+      "versao": 1,
+      "isGenerico": true
+    },
+    {
+      "original": "PROMPT_CRIM_apelacao_V6_3.txt",
+      "novo": "criminal-apelacao.txt",
+      "area": "criminal",
+      "tipo": "apelacao",
+      "versao": 6.3,
+      "isGenerico": false
+    },
+    {
+      "original": "01_M_METODOS_CONSOLIDADO_ROM_V3_0 (1).txt",
+      "novo": "processual-generico.txt",
+      "area": "processual",
+      "tipo": "generico",
+      "versao": 3,
+      "isGenerico": true
+    },
+    {
+      "original": "PROMPT_CRIM_rese_V5_1.txt",
+      "novo": "criminal-generico.txt",
+      "area": "criminal",
+      "tipo": "generico",
+      "versao": 5.1,
+      "isGenerico": false
+    },
+    {
+      "original": "05_M_DIRETRIZES_REDACIONAIS_UNIVERSAIS (4).txt",
+      "novo": "metodos-metodos.txt",
+      "area": "trabalhista",
+      "tipo": "metodos",
+      "versao": 4,
+      "isGenerico": true
+    },
+    {
+      "original": "07_P_ANALISE_PROCESSO_V3_4.txt",
+      "novo": "tributario-analise-processo-v.txt",
+      "area": "tributario",
+      "tipo": "analise-processo-v",
+      "versao": 3.4,
+      "isGenerico": false
+    },
+    {
+      "original": "08_analise_temporal.md",
+      "novo": "geral-generico.md",
+      "area": "geral",
+      "tipo": "generico",
+      "versao": 0,
+      "isGenerico": true
+    },
+    {
+      "original": "09_P_APELACAO_CIVEL_V12_3.txt",
+      "novo": "civel-apelacao.txt",
+      "area": "civel",
+      "tipo": "apelacao",
+      "versao": 12.3,
+      "isGenerico": false
+    },
+    {
+      "original": "13_P_CONTESTACAO_CIVEL.txt",
+      "novo": "civel-contestacao.txt",
+      "area": "civel",
+      "tipo": "contestacao",
+      "versao": 0,
+      "isGenerico": false
+    },
+    {
+      "original": "14_P_ACAO_INDENIZACAO.txt",
+      "novo": "civel-acao-indenizacao.txt",
+      "area": "civel",
+      "tipo": "acao-indenizacao",
+      "versao": 0,
+      "isGenerico": false
+    },
+    {
+      "original": "15_P_EMBARGOS_DECLARACAO_V8_0.txt",
+      "novo": "metodos-diretrizes.txt",
+      "area": "recursos",
+      "tipo": "diretrizes",
+      "versao": 8,
+      "isGenerico": false
+    },
+    {
+      "original": "15_P_EMBARGOS_DECLARACAO_V8_5 (1).txt",
+      "novo": "recursos-agravo.txt",
+      "area": "recursos",
+      "tipo": "agravo",
+      "versao": 8.5,
+      "isGenerico": false
+    },
+    {
+      "original": "15_P_TRAB_EMBARGOS_DECLARACAO_V1_8.txt",
+      "novo": "trabalhista-trab-embargos-declaracao-v.txt",
+      "area": "trabalhista",
+      "tipo": "trab-embargos-declaracao-v",
+      "versao": 1.8,
+      "isGenerico": false
+    },
+    {
+      "original": "16_P_AGRAVO_INTERNO_STJ_STF.txt",
+      "novo": "tributario-agravo.txt",
+      "area": "tributario",
+      "tipo": "agravo",
+      "versao": 0,
+      "isGenerico": false
+    },
+    {
+      "original": "19_P_MEMORIAIS.txt",
+      "novo": "criminal-contestacao.txt",
+      "area": "criminal",
+      "tipo": "contestacao",
+      "versao": 0,
+      "isGenerico": false
+    },
+    {
+      "original": "20_P_EMBARGOS_DECLARACAO_CRIMINAL_V4_0.txt",
+      "novo": "criminal-embargos-declaracao-criminal-v.txt",
+      "area": "criminal",
+      "tipo": "embargos-declaracao-criminal-v",
+      "versao": 4,
+      "isGenerico": false
+    },
+    {
+      "original": "23_P_AGRAVO_INSTRUMENTO_TJ_TRF_V5_0.txt",
+      "novo": "civel-agravo.txt",
+      "area": "civel",
+      "tipo": "agravo",
+      "versao": 5,
+      "isGenerico": false
+    },
+    {
+      "original": "PROMPT_TRIB_execucao_fiscal_V5_0.txt",
+      "novo": "tributario-generico.txt",
+      "area": "tributario",
+      "tipo": "generico",
+      "versao": 5,
+      "isGenerico": false
+    },
+    {
+      "original": "CUSTOM INSTRUCTIONS — REDATOR EXCEPCIONAL JURÍDICO CRIMINAL.rtf",
+      "novo": "criminal-agravo.rtf",
+      "area": "criminal",
+      "tipo": "agravo",
+      "versao": 0,
+      "isGenerico": false
+    },
+    {
+      "original": "CUSTOM_INSTRUCTIONS_PROJETO_ANALISE.txt",
+      "novo": "criminal-analise.txt",
+      "area": "criminal",
+      "tipo": "analise",
+      "versao": 0,
+      "isGenerico": false
+    },
+    {
+      "original": "Custom Instructions PLANEJADOR TRIBUTARIO ROM - ANALISTA EXCEPCIONAL DE PLANEJAMENTO TRIBUTARIO.rtf",
+      "novo": "tributario-planejamento.rtf",
+      "area": "tributario",
+      "tipo": "planejamento",
+      "versao": 0,
+      "isGenerico": false
+    },
+    {
+      "original": "IAROM_IN001_CONSOLIDACAO_V5_0.txt",
+      "novo": "recursos-generico.txt",
+      "area": "recursos",
+      "tipo": "generico",
+      "versao": 5,
+      "isGenerico": false
+    },
+    {
+      "original": "IAROM_PLANEJ_CONSOLIDACAO_V1_4 (1).txt",
+      "novo": "tributario-planejamento.txt",
+      "area": "tributario",
+      "tipo": "planejamento",
+      "versao": 1.4,
+      "isGenerico": false
+    },
+    {
+      "original": "PROMPT_CRIM_agravo_regimental_V5_0.txt",
+      "novo": "criminal-agravo.txt",
+      "area": "criminal",
+      "tipo": "agravo",
+      "versao": 5,
+      "isGenerico": false
+    },
+    {
+      "original": "PROMPT_CIV_desconsideracao_personalidade.rtf",
+      "novo": "recursos-agravo.rtf",
+      "area": "recursos",
+      "tipo": "agravo",
+      "versao": 0,
+      "isGenerico": false
+    },
+    {
+      "original": "PROMPT_CRIM_mandado_seguranca_V5_1.txt",
+      "novo": "civel-habeas-corpus.txt",
+      "area": "civel",
+      "tipo": "habeas-corpus",
+      "versao": 5.1,
+      "isGenerico": false
+    },
+    {
+      "original": "PROMPT_CRIM_re_stf_V5_6_CONSOLIDADO.txt",
+      "novo": "civel-generico.txt",
+      "area": "civel",
+      "tipo": "generico",
+      "versao": 5.6,
+      "isGenerico": false
+    },
+    {
+      "original": "PROMPT_FAZ_liquidacao_cumprimento_sentenca_fazenda_publica_V9_1.txt",
+      "novo": "metodos-generico.txt",
+      "area": "metodos",
+      "tipo": "generico",
+      "versao": 9.1,
+      "isGenerico": true
+    },
+    {
+      "original": "PROMPT_IMPUGNACAO_A_CONTESTACAO_REPLICA_DO_AUTOR.txt",
+      "novo": "tributario-contestacao.txt",
+      "area": "tributario",
+      "tipo": "contestacao",
+      "versao": 0,
+      "isGenerico": false
+    },
+    {
+      "original": "PROMPT_PLANEJ_parecer_planejamento_V1_4 (1).txt",
+      "novo": "metodos-planejamento.txt",
+      "area": "metodos",
+      "tipo": "planejamento",
+      "versao": 1.4,
+      "isGenerico": true
+    },
+    {
+      "original": "USTOM INSTRUCTIONS - Versao 1.8.0 TRABALHISTA.rtf",
+      "novo": "trabalhista-generico.rtf",
+      "area": "trabalhista",
+      "tipo": "generico",
+      "versao": 0,
+      "isGenerico": false
+    }
+  ],
+  "duplicadosRemovidos": [
+    {
+      "arquivo": "00_LEIA-ME_UPLOAD_PLANEJ.md",
+      "versaoRemovida": 0,
+      "versaoMantida": 1,
+      "novoNome": "tributario-planejamento.md"
+    },
+    {
+      "arquivo": "PROMPT_CRIM_agravo_execucao_V5_1.txt",
+      "versaoRemovida": 5.1,
+      "versaoMantida": 6.3,
+      "novoNome": "criminal-apelacao.txt"
+    },
+    {
+      "arquivo": "PROMPT_CRIM_habeas_corpus_V5_1_ATUALIZADO_08042026.txt",
+      "versaoRemovida": 5.1,
+      "versaoMantida": 6.3,
+      "novoNome": "criminal-apelacao.txt"
+    },
+    {
+      "arquivo": "PROMPT_CRIM_resposta_acusacao_V5_1.txt",
+      "versaoRemovida": 5.1,
+      "versaoMantida": 6.3,
+      "novoNome": "criminal-apelacao.txt"
+    },
+    {
+      "arquivo": "PROMPT_CRIM_revisao_criminal_V5_1.txt",
+      "versaoRemovida": 5.1,
+      "versaoMantida": 6.3,
+      "novoNome": "criminal-apelacao.txt"
+    },
+    {
+      "arquivo": "PROMPT_CRIM_suplemento_stj_V5_0.txt",
+      "versaoRemovida": 5,
+      "versaoMantida": 6.3,
+      "novoNome": "criminal-apelacao.txt"
+    },
+    {
+      "arquivo": "01_MASTER_ROM_V3.txt",
+      "versaoRemovida": 0,
+      "versaoMantida": 6.3,
+      "novoNome": "criminal-apelacao.txt"
+    },
+    {
+      "arquivo": "01_M_METODOS_CONSOLIDADO_ROM_V3_0 (2).txt",
+      "versaoRemovida": 3,
+      "versaoMantida": 3,
+      "novoNome": "processual-generico.txt"
+    },
+    {
+      "arquivo": "01_M_METODOS_CONSOLIDADO_ROM_V3_0.txt",
+      "versaoRemovida": 3,
+      "versaoMantida": 3,
+      "novoNome": "processual-generico.txt"
+    },
+    {
+      "arquivo": "01_M_METODOS_CONSOLIDADO_ROM_V2.txt",
+      "versaoRemovida": 0,
+      "versaoMantida": 3,
+      "novoNome": "processual-generico.txt"
+    },
+    {
+      "arquivo": "PROMPT_PLANEJ_reforma_tributaria_V1_0.txt",
+      "versaoRemovida": 1,
+      "versaoMantida": 5.1,
+      "novoNome": "criminal-generico.txt"
+    },
+    {
+      "arquivo": "03_M_TECNICA_HIERARQUICA.txt",
+      "versaoRemovida": 0,
+      "versaoMantida": 5.1,
+      "novoNome": "criminal-generico.txt"
+    },
+    {
+      "arquivo": "05_M_DIRETRIZES_REDACIONAIS_UNIVERSAIS (3).txt",
+      "versaoRemovida": 3,
+      "versaoMantida": 4,
+      "novoNome": "metodos-metodos.txt"
+    },
+    {
+      "arquivo": "05_M_DIRETRIZES_REDACIONAIS_UNIVERSAIS (2).txt",
+      "versaoRemovida": 2,
+      "versaoMantida": 4,
+      "novoNome": "metodos-metodos.txt"
+    },
+    {
+      "arquivo": "05_M_DIRETRIZES_REDACIONAIS_UNIVERSAIS (1).txt",
+      "versaoRemovida": 1,
+      "versaoMantida": 4,
+      "novoNome": "metodos-metodos.txt"
+    },
+    {
+      "arquivo": "04_M_FERIADOS_PRAZOS.txt",
+      "versaoRemovida": 0,
+      "versaoMantida": 4,
+      "novoNome": "metodos-metodos.txt"
+    },
+    {
+      "arquivo": "05_M_DIRETRIZES_REDACIONAIS_UNIVERSAIS.txt",
+      "versaoRemovida": 0,
+      "versaoMantida": 4,
+      "novoNome": "metodos-metodos.txt"
+    },
+    {
+      "arquivo": "07_P_ANALISE_PROCESSO_V3_3.txt",
+      "versaoRemovida": 3.3,
+      "versaoMantida": 3.4,
+      "novoNome": "tributario-analise-processo-v.txt"
+    },
+    {
+      "arquivo": "10_P_CONTRARRAZOES_APELACAO_CIVEL_V12_0.txt",
+      "versaoRemovida": 12,
+      "versaoMantida": 12.3,
+      "novoNome": "civel-apelacao.txt"
+    },
+    {
+      "arquivo": "PROMPT_CRIM_embargos_declaracao_V5_3 (1).txt",
+      "versaoRemovida": 5.3,
+      "versaoMantida": 12.3,
+      "novoNome": "civel-apelacao.txt"
+    },
+    {
+      "arquivo": "PROMPT_CRIM_embargos_declaracao_V5_3.txt",
+      "versaoRemovida": 5.3,
+      "versaoMantida": 12.3,
+      "novoNome": "civel-apelacao.txt"
+    },
+    {
+      "arquivo": "PROMPT_CRIM_alegacoes_finais_V5_1.txt",
+      "versaoRemovida": 5.1,
+      "versaoMantida": 12.3,
+      "novoNome": "civel-apelacao.txt"
+    },
+    {
+      "arquivo": "PROMPT_CIV_re_stf_V5_8.txt",
+      "versaoRemovida": 5.8,
+      "versaoMantida": 8,
+      "novoNome": "metodos-diretrizes.txt"
+    },
+    {
+      "arquivo": "PROMPT_CIV_resp_stj_V5_8.txt",
+      "versaoRemovida": 5.8,
+      "versaoMantida": 8,
+      "novoNome": "metodos-diretrizes.txt"
+    },
+    {
+      "arquivo": "15_P_EMBARGOS_DECLARACAO_V8_5.txt",
+      "versaoRemovida": 8.5,
+      "versaoMantida": 8.5,
+      "novoNome": "recursos-agravo.txt"
+    },
+    {
+      "arquivo": "17_P_AGRAVO_TJ_TRF.txt",
+      "versaoRemovida": 0,
+      "versaoMantida": 0,
+      "novoNome": "tributario-agravo.txt"
+    },
+    {
+      "arquivo": "MANUAL_STJ_RESUMO_OPERACIONAL_ADVOGADO.txt",
+      "versaoRemovida": 0,
+      "versaoMantida": 5,
+      "novoNome": "civel-agravo.txt"
+    },
+    {
+      "arquivo": "CI_V3_0_1_TEXTO_UNIFICADO.txt",
+      "versaoRemovida": 3,
+      "versaoMantida": 5,
+      "novoNome": "tributario-generico.txt"
+    },
+    {
+      "arquivo": "PROMPT_IMPUGNACAO_AO_CUMPRIMENTO_DE_SENTENCA.txt",
+      "versaoRemovida": 0,
+      "versaoMantida": 5,
+      "novoNome": "tributario-generico.txt"
+    },
+    {
+      "arquivo": "CUSTOM_INSTRUCTIONS_Projeto_Analise_Processual_Sistema_ROM_V1.0.txt",
+      "versaoRemovida": 0,
+      "versaoMantida": 0,
+      "novoNome": "criminal-analise.txt"
+    },
+    {
+      "arquivo": "IAROM_PLANEJ_CONSOLIDACAO_V1_4.txt",
+      "versaoRemovida": 1.4,
+      "versaoMantida": 1.4,
+      "novoNome": "tributario-planejamento.txt"
+    },
+    {
+      "arquivo": "PROMPT_CIV_CRIM_agravos_STJ_UNIFICADO_V4_0.txt",
+      "versaoRemovida": 4,
+      "versaoMantida": 5,
+      "novoNome": "criminal-agravo.txt"
+    },
+    {
+      "arquivo": "PROMPT_CRIM_resp_stj_V5_2.txt",
+      "versaoRemovida": 5.2,
+      "versaoMantida": 5.6,
+      "novoNome": "civel-generico.txt"
+    },
+    {
+      "arquivo": "PROMPT_PLANEJ_parecer_planejamento_V1_4.txt",
+      "versaoRemovida": 1.4,
+      "versaoMantida": 1.4,
+      "novoNome": "metodos-planejamento.txt"
+    },
+    {
+      "arquivo": "PROMPT_PLANEJ_parecer_planejamento_V1_4__1_.txt",
+      "versaoRemovida": 1.4,
+      "versaoMantida": 1.4,
+      "novoNome": "metodos-planejamento.txt"
+    }
+  ],
+  "regrasGenericas": [
+    {
+      "arquivo": "00_LEIA-ME_UPLOAD.md",
+      "tipo": "apelacao"
+    },
+    {
+      "arquivo": "00_LEIA-ME_UPLOAD_PLANEJ (1).md",
+      "tipo": "planejamento"
+    },
+    {
+      "arquivo": "00_LEIA-ME_UPLOAD_PLANEJ.md",
+      "tipo": "planejamento"
+    },
+    {
+      "arquivo": "01_M_METODOS_CONSOLIDADO_ROM_V2.txt",
+      "tipo": "generico"
+    },
+    {
+      "arquivo": "01_M_METODOS_CONSOLIDADO_ROM_V3_0 (1).txt",
+      "tipo": "generico"
+    },
+    {
+      "arquivo": "01_M_METODOS_CONSOLIDADO_ROM_V3_0 (2).txt",
+      "tipo": "generico"
+    },
+    {
+      "arquivo": "01_M_METODOS_CONSOLIDADO_ROM_V3_0.txt",
+      "tipo": "generico"
+    },
+    {
+      "arquivo": "05_M_DIRETRIZES_REDACIONAIS_UNIVERSAIS (1).txt",
+      "tipo": "metodos"
+    },
+    {
+      "arquivo": "05_M_DIRETRIZES_REDACIONAIS_UNIVERSAIS (2).txt",
+      "tipo": "metodos"
+    },
+    {
+      "arquivo": "05_M_DIRETRIZES_REDACIONAIS_UNIVERSAIS (3).txt",
+      "tipo": "metodos"
+    },
+    {
+      "arquivo": "05_M_DIRETRIZES_REDACIONAIS_UNIVERSAIS (4).txt",
+      "tipo": "metodos"
+    },
+    {
+      "arquivo": "05_M_DIRETRIZES_REDACIONAIS_UNIVERSAIS.txt",
+      "tipo": "metodos"
+    },
+    {
+      "arquivo": "08_analise_temporal.md",
+      "tipo": "generico"
+    },
+    {
+      "arquivo": "PROMPT_FAZ_liquidacao_cumprimento_sentenca_fazenda_publica_V9_1.txt",
+      "tipo": "generico"
+    },
+    {
+      "arquivo": "PROMPT_PLANEJ_parecer_planejamento_V1_4 (1).txt",
+      "tipo": "planejamento"
+    },
+    {
+      "arquivo": "PROMPT_PLANEJ_parecer_planejamento_V1_4.txt",
+      "tipo": "planejamento"
+    },
+    {
+      "arquivo": "PROMPT_PLANEJ_parecer_planejamento_V1_4__1_.txt",
+      "tipo": "planejamento"
+    }
+  ],
+  "timestamp": "2026-06-14T23:02:39.464Z"
+}

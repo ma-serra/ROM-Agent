@@ -1,0 +1,2845 @@
+===============================================================================
+MANUAL STJ - EXTRATO OPERACIONAL PARA O ADVOGADO
+ADMISSIBILIDADE DO RECURSO ESPECIAL E TECNICA REDACIONAL
+===============================================================================
+ARQUIVO:   MANUAL_STJ_RESUMO_OPERACIONAL_ADVOGADO.txt
+VERSAO:    1.4 (Condensacao focada em pratica forense)
+DATA:      23/04/2026
+SISTEMA:   ROM - Rodolfo Otavio Mota Advogados Associados S/S
+FONTE:     Manual para Analise do Recurso Especial nos Tribunais de
+           Segunda Instancia - STJ/FONAVICE - Versao 1.0 - Julho/2025
+ESCOPO:    Condensacao do Manual STJ preservando o conteudo operacionalmente
+           util ao advogado redator, com foco em:
+           (a) como escrever REsp que nao seja inadmitido na origem
+           (b) como rebater obices de admissibilidade em AREsp e agravo interno
+           (c) como construir distinguishing, cotejo analitico e prequestionamento
+           (d) como identificar decisao mista/hibrida e acionar dupla impugnacao
+           (e) como confrontar os modelos-padrao de decisao negativa usados pelo
+               TJ/TRF (Parte X - novidade da V1.3)
+
+===============================================================================
+PLURIMATERIALIDADE - APLICABILIDADE A TODAS AS AREAS DO DIREITO
+===============================================================================
+
+Este extrato e APLICAVEL A TODAS AS AREAS DO DIREITO cujo recurso cabivel
+seja o Recurso Especial para o STJ. As regras de admissibilidade, obices,
+sumulas e estrategias aqui sistematizadas sao TRANSVERSAIS e valem para:
+
+DIREITO CIVEL: responsabilidade civil, contratos, familia, sucessoes,
+reais, obrigacoes, direito do consumidor, direito empresarial, locacao.
+
+DIREITO PROCESSUAL CIVIL: em todas as modalidades de processo (conhecimento,
+execucao, cumprimento de sentenca, tutelas provisorias, mandado de seguranca
+civel).
+
+DIREITO PENAL E PROCESSUAL PENAL: prazo de 15 dias CORRIDOS (art. 798 CPP);
+violacao generica do ART. 619 CPP (analoga ao art. 1.022 CPC) - ver Parte
+III.4; Sumula 7/STJ aplicada a teses sobre autoria, materialidade,
+dosimetria, dolo, trafico privilegiado, prisao preventiva - ver Parte
+III.5.11 e X.9.
+
+DIREITO TRIBUTARIO: verificar se o dispositivo invocado e LEI FEDERAL (nao
+lei estadual sob Sumula 280/STF); verificar se a questao e realmente
+infraconstitucional (imunidade tributaria, p.ex., e materia constitucional
+via RE - Sumula 126/STJ); diferimento de custas local nao se aplica as
+custas do STJ.
+
+DIREITO ADMINISTRATIVO: improbidade administrativa (Sumula 7/STJ aplicada a
+revisao de sancoes); servidor publico (natureza remuneratoria/indenizatoria
+e questao juridica, escape da Sumula 7); concurso publico; processo
+administrativo disciplinar.
+
+DIREITO PREVIDENCIARIO: classificacao de documento como INICIO DE PROVA
+MATERIAL e QUESTAO JURIDICA (escape da Sumula 7 - ver Parte III.5.11);
+natureza remuneratoria/indenizatoria de verba e questao juridica; beneficios
+concedidos e revisoes.
+
+DIREITO DO TRABALHO: quando excepcionalmente o STJ atua (conflitos de
+competencia, acoes rescisorias conexas).
+
+DIREITO EMPRESARIAL E RECUPERACIONAL: massa falida (isencao especifica -
+Parte II.3); recuperacao judicial.
+
+Em toda area, os 13 itens do preparo (Parte II.3), as regras de
+representacao processual (Parte II.2 - incluindo Sumula 115/STJ), o
+prequestionamento (Parte III.7) e o rebatimento de todos os fundamentos
+(Parte III.6 - Sumulas 283/STF e 126/STJ) sao APLICAVEIS DE MODO IDENTICO.
+
+===============================================================================
+CRITERIO DE CONSOLIDACAO APLICADO:
+Excluidos apenas trechos que nao tem utilidade redacional para o advogado:
+- Secoes 4.1.1 a 4.1.4 (procedimento interno do magistrado no juizo de
+  conformidade: como negar seguimento, devolver para retratacao, sobrestar
+  - incorporado o que afeta o advogado na Parte II.6 e VI)
+- Secao 4.2.1 (atribuicoes do NUGEPNAC e selecao de RRC)
+- Texto institucional de apresentacao, composicao ministerial do STJ, dados
+  de catalogacao, apresentacao do Ministro Salomao, ficha catalografica
+- Duplicacao integral do conteudo extraido via metodo "pdfplumber" (o arquivo
+  original continha duas extracoes completas, espelhadas; mantida uma)
+
+INCLUIDOS A PARTIR DA V1.3:
+- PARTE X (BANCO DE MODELOS DE DECISAO DO STJ): os modelos-padrao usados
+  pelo TJ/TRF para inadmitir REsp, agora apresentados em formato estrategico
+  (modelo-padrao + leitura tatica + rebatimento) - sao o ARSENAL DO ADVOGADO
+  para confrontar decisoes negativas em AREsp (art. 1.042 CPC) e agravo
+  interno (art. 1.021 CPC).
+
+PRINCIPIO DUPLO:
+1. O que aparece aqui EM FORMA DE OBICE DE INADMISSAO e, para o advogado,
+   um ROTEIRO DO QUE DEVE SER EVITADO NA REDACAO DA PECA.
+2. O que aparece aqui EM FORMA DE MODELO DE DECISAO NEGATIVA e, para o
+   advogado, um MAPA DE REBATIMENTO a ser usado em AREsp e agravo interno.
+Cada obice do magistrado corresponde a uma regra de redacao para o advogado.
+Cada modelo de decisao corresponde a uma linha de ataque tatico.
+===============================================================================
+
+                              SUMARIO
+
+===============================================================================
+
+PARTE 0   - METODOLOGIA E ROTEIRO DE ANALISE DO RESP
+            Passo 1 - Diagnostico do acordao recorrido
+            Passo 2 - Juizo de conformidade (primario)
+            Passo 3 - Juizo de admissibilidade (secundario)
+            Passo 4 - Instrumentos argumentativos avancados (distinguishing,
+                      cotejo, standard probatorio, ponderacao)
+            Passo 5 - Prequestionamento estrategico
+            Passo 6 - Redacao com blindagem preventiva
+            Passo 7 - Acompanhamento pos-protocolo
+            Passo 8 - Casos especiais (criminal, previdenciario, tributario,
+                      administrativo/improbidade)
+
+PARTE I   - CABIMENTO CONSTITUCIONAL DO REsp
+            I.1 Art. 105, III, CF/1988 - alineas a, b e c
+            I.2 Processamento inicial do REsp no tribunal de origem
+                (competencia, contrarrazoes, efeito suspensivo incidental,
+                EDcl da parte contraria)
+
+PARTE II  - PRESSUPOSTOS EXTRINSECOS (FORMAIS)
+            II.1 Tempestividade
+            II.2 Representacao processual
+            II.3 Preparo - Sumula 187/STJ (lista de 13 itens de regularidade
+                 e logica dos paragrafos 2o, 4o e 7o do art. 1.007 CPC)
+            II.4 Exaurimento da instancia - Sumula 281/STF
+            II.5 Recolhimento de multas (EDcl e AgInt)
+            II.6 Primazia do juizo de conformidade sobre o de admissibilidade
+
+PARTE III - PRESSUPOSTOS INTRINSECOS (MATERIAIS)
+            III.1 Permissivo constitucional (Sumula 284/STF)
+            III.2 Dispositivo legal violado - alinea "a"
+            III.3 Dispositivo objeto do dissidio - alinea "c"
+            III.4 Argumentacao pertinente e individualizada (Sumula 284/STF)
+            III.5 Hipoteses de nao cabimento do REsp
+                  III.5.1 Norma diversa de tratado ou lei federal
+                  III.5.2 Tese eminentemente constitucional
+                  III.5.3 Violacao reflexa de lei federal
+                  III.5.4 Indicacao de ofensa a Constituicao Federal
+                  III.5.5 Lei federal nao recepcionada ou em vacatio legis
+                  III.5.6 Sumula 518/STJ - violacao a enunciado de sumula
+                  III.5.7 Sumula 280/STF - violacao de lei local (estadual/
+                          municipal)
+                  III.5.8 Sumula 203/STJ - decisoes de Juizados Especiais e TNU
+                  III.5.9 Sumula 735/STF - decisoes em cautelares
+                  III.5.10 Sumula 5/STJ - interpretacao de clausula contratual
+                  III.5.11 Sumula 7/STJ - reexame fatico-probatorio (com
+                           distincao reexame x nova valoracao, 6 hipoteses de
+                           nao-aplicacao, excecoes para valores irrisorios/
+                           excessivos)
+                  III.5.12 Sumula 83/STJ - consonancia com jurisprudencia
+            III.6 Rebatimento de todos os fundamentos (Sumulas 283/STF e 126/STJ)
+            III.7 Prequestionamento (Sumulas 211/STJ, 282/STF, 356/STF, art. 1.025 CPC)
+            III.8 Outras restricoes consolidadas (paradigmas alinea "c",
+                  documentacao do paradigma)
+
+PARTE IV  - COTEJO ANALITICO - ALINEA "c"
+            Tecnica rigorosa para comprovar dissidio jurisprudencial
+
+PARTE V   - TECNICA REDACIONAL CONSOLIDADA - CHECKLIST DO ADVOGADO
+
+PARTE VI  - RECORRIBILIDADE E DECISOES MISTAS
+            VI.1 Recurso cabivel por ato impugnado
+            VI.2 Decisoes mistas ou hibridas - dupla impugnacao simultanea
+            VI.3 AREsp - agravo em REsp (art. 1.042 CPC)
+            VI.4 Recursos repetitivos, RRC, IRDR e tema de repercussao geral
+                 VI.4.1 Tema de repercussao geral do STF aplicado ao REsp
+                 VI.4.2 IRDR como oportunidade de RRC
+                 VI.4.3 Como maximizar chances de selecao como RRC
+                 VI.4.4 Sobrestamento - regras especiais (impossibilidade de
+                        cisao, sucumbencia reciproca/litisconsorcio)
+                 VI.4.5 Pos-julgamento do acordao paradigma (art. 1.040 CPC)
+                 VI.4.6 Modulacao de efeitos
+
+PARTE VII - TUTELAS NO REsp
+            Efeito suspensivo, tutela provisoria, fumus + periculum
+
+PARTE VIII- SUMULAS CONSOLIDADAS DE ADMISSIBILIDADE (REFERENCIA RAPIDA)
+
+PARTE IX  - ENLACE COM CUSTOM INSTRUCTIONS ROM
+
+PARTE X   - BANCO DE MODELOS DE DECISAO DO STJ
+            (PARA CONFRONTACAO, CRITICA E REBATIMENTO)
+            X.1  Tempestividade (civel e criminal)
+            X.2  Representacao processual (Sumula 115/STJ)
+            X.3  Preparo (codigo de barras, agendamento, diferimento,
+                 gratuidade)
+            X.4  Exaurimento de instancia (acordao + EDcl monocratico)
+            X.5  Permissivo constitucional (Sumula 284/STF)
+            X.6  Dispositivo legal violado (alinea "a" - Sumula 284/STF)
+            X.7  Violacao generica do art. 1.022 CPC / art. 619 CPP
+            X.8  Ausencia de comando normativo
+            X.9  Sumula 7/STJ (reexame - com 6 hipoteses de escape)
+            X.10 Sumula 5/STJ (clausula contratual)
+            X.11 Divergencia jurisprudencial (cotejo, paradigma inadequado)
+            X.12 Prequestionamento (Sumula 211/STJ)
+            X.13 Sumulas 283/STF e 126/STJ (fundamentos autonomos)
+            X.14 AREsp - hipoteses de erro grosseiro
+            X.15 Roteiro geral de confrontacao de decisao negativa
+
+
+===============================================================================
+===============================================================================
+PARTE 0 - METODOLOGIA E ROTEIRO DE ANALISE DO RESP
+===============================================================================
+===============================================================================
+
+Esta Parte 0 estabelece a SEQUENCIA METODOLOGICA que o advogado deve
+seguir ao analisar, redigir ou confrontar um REsp. A ordem reflete
+exatamente como o TJ/TRF analisa o recurso e como o STJ revisa.
+
+PASSO 1 - DIAGNOSTICO DO ACORDAO RECORRIDO:
+a) E acordao COLEGIADO? (se monocratico: nao cabe REsp - opor agravo
+   interno primeiro - ver Parte II.4);
+b) Quais sao TODOS OS FUNDAMENTOS do acordao (para mapear Sumulas 283/STF
+   e 126/STJ - Parte III.6)?
+c) Cada fundamento e AUTONOMO ou de mero reforco?
+d) Ha fundamento CONSTITUCIONAL autonomo? (se sim, interpor RE paralelo);
+e) O acordao foi proferido em IRDR? (avaliar RRC - Parte VI.4.2);
+f) Houve omissao de ponto relevante? (opor EDcl ANTES de REsp - Parte
+   III.7).
+
+PASSO 2 - JUIZO DE CONFORMIDADE (PRIMARIO - pela ordem do art. 1.030 CPC):
+a) Ha tema de RECURSO REPETITIVO do STJ aplicado a materia?
+   - Se acordao ALINHADO ao tema -> negativa de seguimento provavel;
+     construir DISTINGUISHING ou OVERRULING;
+   - Se acordao CONTRARIO ao tema -> possibilidade de retratacao.
+b) Ha tema de REPERCUSSAO GERAL do STF aplicado a materia?
+   - Mesma logica, aplicada por pratica consolidada do STJ (Parte VI.4.1).
+c) Ha controversia AFETADA mas nao julgada? -> possivel sobrestamento
+   (Parte VI.4.4).
+d) Ha SUMULA 83/STJ aplicavel (jurisprudencia dominante contra a tese do
+   cliente)? -> mesma necessidade de distinguishing/overruling (Parte
+   III.5.12).
+
+PASSO 3 - JUIZO DE ADMISSIBILIDADE (SECUNDARIO - por ordem legal):
+a) PRESSUPOSTOS EXTRINSECOS (Parte II):
+   1. Tempestividade (II.1);
+   2. Representacao processual (II.2);
+   3. Preparo (II.3);
+   4. Exaurimento da instancia (II.4);
+   5. Recolhimento de multas (II.5).
+b) PRESSUPOSTOS INTRINSECOS (Parte III):
+   1. Permissivo constitucional expresso (III.1);
+   2. Dispositivo legal violado (III.2);
+   3. Dispositivo objeto do dissidio, se alinea "c" (III.3);
+   4. Argumentacao pertinente e individualizada (III.4);
+   5. Hipoteses de nao cabimento (III.5.1 a III.5.12);
+   6. Rebatimento de todos os fundamentos (III.6);
+   7. Prequestionamento (III.7);
+   8. Outras restricoes sobre paradigmas na alinea "c" (III.8).
+
+PASSO 4 - APLICACAO DOS INSTRUMENTOS ARGUMENTATIVOS AVANCADOS
+(Secao 11 das Custom Instructions ROM):
+a) DISTINGUISHING de precedente adverso (11.1);
+b) COTEJO ANALITICO rigoroso para alinea "c" (11.2 + Parte IV deste
+   extrato);
+c) STANDARD PROBATORIO QUALIFICADO (11.3);
+d) PONDERACAO ALEXYANA em caso de colisao de direitos fundamentais (11.4).
+
+PASSO 5 - PREQUESTIONAMENTO ESTRATEGICO
+(Secao 12 das Custom Instructions ROM + Parte III.7 deste extrato):
+a) Ventilar expressamente cada dispositivo na peca de origem;
+b) Opor EDcl se houve omissao;
+c) Alegar violacao do art. 1.022 CPC + requerer aplicacao do art. 1.025
+   CPC (ficto);
+d) Capitulo final de prequestionamento expresso;
+e) RE paralelo para dispositivos constitucionais.
+
+PASSO 6 - REDACAO COM BLINDAGEM PREVENTIVA:
+Aplicar CHECKLIST da Parte V contra todos os obices da Parte III
+(antecipar e blindar cada possivel inadmissao).
+
+PASSO 7 - ACOMPANHAMENTO POS-PROTOCOLO:
+a) CONTRARRAZOES da parte contraria (se cliente e recorrente) ou
+   CONTRARRAZOES proprias (se cliente e recorrido);
+b) Pedido de efeito suspensivo incidental (Parte VII);
+c) Decisao do presidente/vice-presidente no tribunal de origem;
+d) Se INADMISSAO: AREsp (art. 1.042 CPC) com aplicacao da Parte X
+   (modelos de confrontacao);
+e) Se NEGATIVA DE SEGUIMENTO (repetitivo): agravo interno (art. 1.021
+   CPC);
+f) Se DECISAO MISTA: dupla impugnacao (Parte VI.2).
+
+PASSO 8 - CASOS ESPECIAIS:
+a) REsp CRIMINAL: prazo 15 dias CORRIDOS (art. 798 CPP); art. 619 CPP
+   para omissao (analogo ao 1.022 CPC); contagem diferenciada;
+b) REsp PREVIDENCIARIO: documento como inicio de prova material e
+   QUESTAO JURIDICA (escape da Sumula 7 - Parte III.5.11);
+c) REsp TRIBUTARIO: cuidado com violacao reflexa (Parte III.5.3) e lei
+   local (Sumula 280/STF - Parte III.5.7);
+d) REsp de ADMINISTRATIVO/IMPROBIDADE: natureza das sancoes e questao
+   juridica; onus probatorio qualificado (Standard probatorio - 11.3
+   das Custom Instructions).
+
+PRINCIPIO REITOR: a DERROTA DO REsp por inadmissibilidade no TJ/TRF e a
+pior das derrotas para o cliente, pois sequer permite discussao de merito.
+O advogado ROM deve esgotar TODOS os passos 1 a 8 antes do protocolo -
+cada obice desta Parte 0 deve ser individualmente VERIFICADO E BLINDADO
+na redacao da peca. Este extrato e seu arsenal completo.
+
+===============================================================================
+===============================================================================
+PARTE I - CABIMENTO CONSTITUCIONAL DO RESP
+===============================================================================
+===============================================================================
+
+BASE NORMATIVA: art. 105, III, CF/1988
+
+O REsp cabe contra as causas decididas, em unica ou ultima instancia, pelos
+Tribunais Regionais Federais ou pelos Tribunais de Justica dos Estados, do
+Distrito Federal e Territorios, quando a decisao recorrida:
+
+a) contrariar tratado ou lei federal, ou negar-lhes vigencia;
+b) julgar valido ato de governo local contestado em face de lei federal;
+c) der a lei federal interpretacao divergente da que lhe haja atribuido outro
+   tribunal.
+
+O fundamento-base de cabimento do REsp e o previsto na alinea "a"
+(contrariedade a lei federal). As hipoteses das alineas "b" e "c" sao
+decorrentes do fundamento previsto na alinea "a".
+
+FILTRO DE RELEVANCIA (EC 125/2022 - arts. 105, paragrafos 2o e 3o, CF):
+O STJ editou o Enunciado Administrativo n. 8 afirmando que "A indicacao no
+recurso especial dos fundamentos de relevancia da questao de direito federal
+infraconstitucional somente sera exigida em recursos interpostos contra
+acordaos publicados apos a data de entrada em vigor da lei regulamentadora
+prevista no art. 105, paragrafo 2o, da Constituicao Federal."
+
+PROCESSAMENTO (art. 1.029 CPC):
+O REsp deve ser interposto perante o presidente ou vice-presidente do
+tribunal recorrido, em peticao propria, contendo:
+- exposicao do fato e do direito
+- demonstracao do cabimento do recurso
+- razoes do pedido de reforma ou cassacao do acordao recorrido
+
+Quando fundado em dissidio jurisprudencial (alinea "c"), o REsp deve conter
+ainda documentos e formalidades proprias (ver Parte IV).
+
+VICIO FORMAL SANAVEL (art. 1.029, paragrafo 3o, CPC):
+A possibilidade de desconsiderar ou determinar a correcao de vicio formal de
+recurso tempestivo nao reputado grave SOMENTE PODE SER REALIZADA PELO RELATOR
+NO STJ, nao podendo ser invocada no juizo de viabilidade exercido pelo TJ/TRF.
+
+===============================================================================
+I.2 PROCESSAMENTO INICIAL DO RESP NO TRIBUNAL DE ORIGEM
+===============================================================================
+
+COMPETENCIA NO TRIBUNAL DE ORIGEM (art. 1.029, caput, CPC):
+- REsp deve ser interposto perante o PRESIDENTE ou VICE-PRESIDENTE do
+  tribunal recorrido (TJ/TRF).
+- O regimento interno de cada tribunal define a competencia especifica -
+  tipicamente atribuida a Vice-Presidencia.
+- Impedimento ou suspeicao do Presidente/Vice: competencia transferida ao
+  outro; se ambos impedidos, o regimento fixa criterio de substituicao.
+
+IMPORTANTE - IMPEDIMENTO DO DESEMBARGADOR-PRESIDENTE:
+O STJ possui entendimento consolidado de que a eventual assuncao de
+desembargador para o cargo de presidente ou vice-presidente NAO GERA
+IMPEDIMENTO para apreciacao do juizo de viabilidade do REsp em feitos em
+que tenha atuado como relator ou vogal.
+
+ESGOTAMENTO DA JURISDICAO DO TRIBUNAL DE ORIGEM - PRE-REQUISITO:
+O processamento do REsp somente pode ocorrer APOS o esgotamento da
+prestacao jurisdicional perante o tribunal. Hipoteses em que o processo
+deve continuar seu fluxo antes do envio ao STJ:
+
+EXEMPLO CRITICO - EDcl INTERPOSTOS PELA PARTE CONTRARIA:
+Se uma parte interpoe REsp contra o acordao e a OUTRA PARTE interpoe
+embargos de declaracao, e NECESSARIO que primeiro sejam apreciados os
+ACLARATORIOS. So apos o julgamento dos EDcl e aberto o prazo para
+contrarrazoes do REsp.
+
+ESTRATEGIA PARA O ADVOGADO:
+- Se o cliente quer recorrer e a parte contraria opoe EDcl: aguardar o
+  julgamento dos EDcl antes de interpor REsp (ou, se ja interposto,
+  compreender que o processamento sera adiado);
+- Se o cliente e o recorrido e ha EDcl da parte contraria: o prazo para
+  contrarrazoes ao REsp so inicia apos o julgamento dos EDcl.
+
+ANALISES PREPARATORIAS NO TRIBUNAL (rotina do presidente/vice-presidente):
+- Verificacao de esgotamento da jurisdicao do orgao de origem;
+- Verificacao se a peticao e realmente um REsp destinado ao STJ (o advogado
+  pode classificar equivocadamente no sistema eletronico);
+- Verificacao de impedimento/suspeicao (arts. 144 e 145 CPC).
+
+PROCEDIMENTO DE CONTRARRAZOES (art. 1.030, caput, CPC):
+- Apos interposicao do REsp, abre-se vista para CONTRARRAZOES pelo prazo
+  de 15 DIAS UTEIS (civel) ou 15 DIAS CORRIDOS (criminal).
+- Apos decorrido o prazo, os autos sao conclusos ao presidente/
+  vice-presidente para juizo de viabilidade.
+
+IMPORTANCIA ESTRATEGICA DAS CONTRARRAZOES (para o advogado do recorrido):
+Contrarrazoes robustas sao arma estrategica. O STJ, em RRC, valoriza a
+"maior quantidade de argumentos nas razoes e contrarrazoes de recurso", 
+pois permite amplo debate sobre a controversia perante o STJ. Contrarrazoes
+detalhadas:
+a) Aumentam chances do acordao recorrido ser mantido por fundamento
+   adicional (reforcando Sumula 283/STF e 126/STJ contra a parte
+   recorrente);
+b) Afastam eventual selecao como RRC se a tese do recorrente nao e robusta;
+c) Ampliam o espectro de defesa em caso de futura sustentacao oral.
+
+CONTEUDO TIPICO DE CONTRARRAZOES APTAS:
+1. PRELIMINARES DE ADMISSIBILIDADE: apontar todos os obices a admissao do
+   REsp (intempestividade, deficiencia de fundamentacao, Sumula 7/STJ,
+   Sumula 5/STJ, falta de prequestionamento, paradigma inadequado, etc.);
+2. REFORCO DOS FUNDAMENTOS AUTONOMOS do acordao recorrido (para Sumulas
+   283/STF e 126/STJ);
+3. DEMONSTRACAO DE QUE A TESE DO RECORRENTE NAO TEM RESPALDO no STJ
+   (invocando Sumula 83/STJ se aplicavel);
+4. MERITO: contraditar ponto-a-ponto as razoes recursais.
+
+PEDIDO DE EFEITO SUSPENSIVO INCIDENTAL - TIMING ESTRATEGICO:
+- Competencia entre interposicao do REsp e publicacao da decisao de
+  admissao: tribunal de origem;
+- Apos publicacao da decisao de admissao: relator no STJ.
+- O pedido so deve ir concluso APOS o prazo de contrarrazoes (o magistrado
+  pode apreciar o juizo de viabilidade e o pedido urgente em conjunto).
+- Se o REsp for inadmitido ou tiver seguimento negado: o pedido de efeito
+  suspensivo esta PREJUDICADO por falta do requisito da probabilidade de
+  exito.
+- ESTRATEGIA DO ADVOGADO: se ha URGENCIA REAL, ajustar a petição de REsp
+  de modo a demonstrar INEQUIVOCA admissibilidade (blindagem contra
+  todos os obices da Parte II e III), fortalecendo a probabilidade de
+  exito do pedido de efeito suspensivo.
+
+===============================================================================
+===============================================================================
+PARTE II - PRESSUPOSTOS EXTRINSECOS (FORMAIS)
+===============================================================================
+===============================================================================
+
+===============================================================================
+II.1 TEMPESTIVIDADE
+===============================================================================
+
+PRAZO CIVEL: 15 dias UTEIS
+Base: art. 994, VI, c/c arts. 1.003, paragrafo 5o, 1.029 e 219, caput, CPC.
+
+PRAZO CRIMINAL: 15 dias CORRIDOS
+Base: art. 994, VI, c/c arts. 1.003, paragrafo 5o, e 1.029 CPC, e art. 798 CPP.
+
+REGRAS CRITICAS PARA O ADVOGADO:
+- Tempestividade e vicio SANAVEL (QO no AREsp 2.638.376/MG, Corte Especial,
+  julgado em 05/02/2025, DJEN de 27/03/2025).
+- Agravo interno/regimental contra decisao COLEGIADA e erro grosseiro e
+  NAO interrompe prazo do REsp.
+- Embargos de declaracao INTEMPESTIVOS nao interrompem prazo do REsp.
+- Recesso forense (20/12 a 06/01): nao se praticam atos processuais.
+- Suspensao de prazos de 07 a 20 de janeiro: ha expediente normal e e
+  possivel a publicacao e intimacao eletronica de decisoes.
+- Feriado local x encerramento antecipado de expediente: feriado local
+  SUSPENDE integralmente a contagem; encerramento antecipado apenas prorroga
+  inicio ou fim do prazo para o dia util seguinte (art. 224, paragrafo 1o, CPC).
+
+DOCUMENTO IDONEO PARA COMPROVAR TEMPESTIVIDADE (FERIADO LOCAL):
+- Copia do ato normativo ou administrativo.
+- Certidao do tribunal de origem atestando o feriado local.
+- STJ nao aceita prints, imagens extraidas da internet, andamento processual
+  ou links (EAREsp 1.759.860/PI; AgInt no AREsp 2.744.511/DF; AgInt no AREsp
+  2.357.170/PR; EDcl no AgInt no AREsp 2.590.049/GO; AgInt no AREsp 2.625.971/
+  GO; EDcl no AgInt no AREsp 2.710.297/PR).
+
+INTIMACAO ELETRONICA vs DJE - A PARTIR DE 16/05/2025:
+- O DJEN tornou-se obrigatorio para todos os tribunais desde 16/05/2025
+  (Resolucao CNJ 455/2022, arts. 11, caput, e 13, II).
+- Os prazos processuais passaram a ser contados exclusivamente por
+  publicacoes no DJEN (regra geral).
+
+PREVALENCIA EM CASO DE DUPLICIDADE DE INTIMACAO:
+
+a) REGRA ANTERIOR ao DJEN (jurisprudencia consolidada pela Corte Especial):
+   Havendo duplicidade entre intimacao via sistema eletronico do proprio
+   tribunal e publicacao no DJE/DJEN, PREVALECE A INTIMACAO VIA SISTEMA DO
+   TRIBUNAL (art. 5o, paragrafo 6o, da Lei 11.419/2006 - Lei do Processo
+   Eletronico - equipara a intimacao via sistema a intimacao pessoal),
+   privilegiando a boa-fe processual e a confianca dos operadores juridicos
+   nos sistemas informatizados de processo eletronico (EAREsp 1.663.952/RJ,
+   Corte Especial, DJe 09/06/2021).
+
+b) APOS 16/05/2025 - ORIENTACAO INICIAL (em formacao):
+   A tendencia e pela prevalencia do DJEN sobre a intimacao via sistema do
+   tribunal, por forca da obrigatoriedade instituida pela Resolucao CNJ
+   455/2022. A materia esta afetada ao TEMA 1180/STJ para consolidacao
+   definitiva.
+
+REGRA PRATICA:
+- Enquanto o Tema 1180/STJ nao for julgado, o advogado deve considerar
+  AMBOS os prazos (via sistema e via DJEN) e adotar o MAIS PROXIMO (primeiro
+  a vencer), sob pena de intempestividade.
+- Em caso de contradicao entre as duas, alegar boa-fe e princípio da
+  confianca nos sistemas eletronicos, apresentando documentacao de AMBAS as
+  intimacoes.
+
+DOMICILIO JUDICIAL ELETRONICO (DJE) - Resolucao CNJ 455/2022:
+- Criado para recebimento CENTRALIZADO de citacoes e intimacoes
+  eletronicas.
+- OBRIGATORIO: Fazenda Publica e empresas.
+- FACULTATIVO: pessoas fisicas.
+
+===============================================================================
+II.2 REPRESENTACAO PROCESSUAL
+===============================================================================
+
+Vicio NAO GRAVE, sanavel. Deve ser aberto prazo para regularizacao (AgInt no
+AREsp 2.347.107/SC, 4a Turma, 27/05/2024).
+
+REGRA: o advogado subscritor do REsp deve comprovar poderes por procuracao
+ou substabelecimento acompanhado da procuracao original do substabelecente.
+Excecao: substabelecimento publico tem validade por si so, desde que
+reproduza expressamente os poderes da procuracao originaria (EDcl no AgRg no
+Ag 747.183/SP, 3a Turma, 12/09/2006).
+
+DISPENSA DE PROCURACAO:
+- Membros do MP.
+- Defensores Publicos.
+- Procuradores de entes publicos e algumas autarquias e fundacoes.
+- Advogado dativo.
+- Advogado em causa propria.
+- Sindico da massa falida quando advogado.
+- No processo penal, advogado nomeado em audiencia ou por termo judicial
+  (AgRg no Ag 1.051.794/RS).
+
+RESTRICOES IMPORTANTES DA DISPENSA:
+a) CONSELHOS DE CLASSE: so dispensados quando representados por
+   PROCURADORES PROPRIOS (quadro funcional). Se atuarem por advogados
+   particulares, EXIGE-SE procuracao.
+b) OAB: deve SEMPRE apresentar procuracao.
+c) NUCLEOS DE PRATICA JURIDICA: precisam apresentar procuracao OU nomeacao,
+   pois nao se equiparam integralmente a Defensoria Publica (AgRg no AREsp
+   726.885/DF).
+
+SUMULA 115/STJ: "Na instancia especial e inexistente recurso interposto
+por advogado sem procuracao nos autos."
+
+A ausencia da CADEIA COMPLETA DE PROCURACOES impossibilita o conhecimento
+do recurso (Sumula 115/STJ). Se o advogado subscritor recebeu poderes por
+substabelecimento, precisa comprovar toda a cadeia: procuracao original ->
+substabelecimentos intermediarios -> substabelecimento que lhe conferiu
+poderes. Cadeia interrompida = recurso nao conhecido.
+
+DISPENSA DO ART. 1.017, PARAGRAFO 5o, CPC:
+Aplica-se apenas a interposicao de AGRAVO DE INSTRUMENTO para o tribunal a
+quo (primeiro e segundo graus que compartilham o mesmo sistema eletronico) -
+NAO SE APLICA AO REsp (EDcl no AgInt no AREsp 2.730.239/RJ, 3a Turma,
+23/06/2025).
+
+PROCURACAO COM DATA POSTERIOR AO REsp:
+Tendencia inicial do STJ: nao se conhecia do recurso (AgInt no AREsp
+2.566.857/SP, 2a Turma, 15/08/2024).
+Julgados recentes mitigaram: possivel ratificacao tacita, nos termos do
+art. 662 do CC, desde que a conduta posterior do mandante constitua ato
+inequivoco de confirmacao (AgInt no AREsp 2.713.514/SP, 4a Turma, 23/06/2025).
+
+===============================================================================
+II.3 PREPARO - SUMULA 187/STJ
+===============================================================================
+
+SUMULA 187/STJ: "E deserto o recurso interposto para o Superior Tribunal de
+Justica, quando o recorrente nao recolhe, na origem, a importancia das
+despesas de remessa e retorno dos autos."
+
+COMPROVANTE DE PAGAMENTO - REQUISITOS DO STJ (afastar desercao):
+i. conter codigo de barras;
+ii. indicar o valor efetivamente pago;
+iii. constar expressamente como "comprovante de pagamento" (nao se aceita
+     agendamento, aviso de lancamento, ordem bancaria, extrato, nota SIAFI,
+     DOC);
+iv. nao trazer observacoes que condicionem a compensacao a evento futuro.
+
+DIFERIMENTO DE CUSTAS (pagamento ao final):
+STJ NAO reconhece diferimento previsto em legislacao estadual, por vedacao
+constitucional de isencao heteronoma reversa. Se nao forem juntadas as
+custas devidas no protocolo do REsp, configura-se desercao (AgInt no REsp
+1.668.251/SP, 1a Turma, 24/08/2018; AgInt no AREsp 1.216.172/SP, 3a Turma,
+24/08/2018).
+
+EXCECAO: Massas Falidas e Empresas em Recuperacao Judicial (art. 5o, II, c/c
+art. 84, IV, da Lei 11.101/05).
+
+AGENTES POLITICOS EM ACOES DE IMPROBIDADE:
+A prerrogativa do art. 23-B da Lei 8.429/92 (isencao de custas) destina-se
+exclusivamente ao AUTOR da acao, nao se estendendo ao reu (AgInt no AREsp
+2.514.401/BA, 2a Turma, 18/06/2025).
+
+GRATUIDADE DE JUSTICA - CONSOLIDADO PELO STJ:
+- Pedido pode ser formulado na propria peticao recursal (EREsp 1.222.355/MG,
+  DJe 25/11/2015).
+- Se ja deferido na origem, nao precisa ser reiterado (EAREsp 86.915/SP,
+  DJe 04/03/2015).
+- Dispensado o preparo quando o merito do recurso discute o direito ao
+  beneficio (EREsp 1.222.355/MG).
+- Omissao judicial implica deferimento tacito (AgRg nos EAREsp 440.971/RS,
+  DJe 17/03/2016).
+- A simples alegacao nao basta: necessaria prova documental idonea (AgInt no
+  AREsp 1.160.301/SP, DJe 30/05/2018).
+- Patrocinio pela Defensoria NAO gera presuncao de gratuidade (AgRg no
+  AREsp 772.756/RS, DJe 12/09/2016).
+
+GRATUIDADE DA PARTE NAO SE ESTENDE AO ADVOGADO quando o REsp versar
+EXCLUSIVAMENTE sobre honorarios, salvo comprovacao do direito a gratuidade
+pelo proprio advogado (art. 99, paragrafo 5o, CPC; AgInt no REsp 2.191.420/
+SP, 3a Turma, 12/08/2025). A Lei 15.109/2025 nao alterou essa orientacao
+para casos em que a questao dos honorarios surgiu apenas em sede recursal.
+
+PROCEDIMENTO DA DUPLA INTIMACAO (arts. 99 e 1.007 CPC):
+1. Se o pedido de gratuidade veio sem prova, deve ser dada oportunidade
+   para comprovar (art. 99, paragrafo 2o, CPC).
+2. Se indeferida a gratuidade, intima-se para recolher custas de forma
+   simples (art. 99, paragrafo 7o, CPC).
+3. Apos denegacao ou revogacao confirmada, o relator ou colegiado determina
+   o recolhimento em 5 dias, sob pena de nao conhecimento (art. 101,
+   paragrafo 2o, CPC).
+
+PREPARO NAO JUNTADO NO PROTOCOLO (arts. 1.007, par. 2o e 4o, CPC):
+Se a parte nao trouxe nenhum comprovante, sera intimada para recolher EM
+DOBRO. Se antes dessa intimacao a parte espontaneamente recolhe de forma
+SIMPLES, devera ser intimada novamente para complementar a "dobra". Nao
+complementando, recurso desertado.
+
+LISTA DE REGULARIDADE DO PREPARO - 13 ITENS DE VERIFICACAO:
+
+O preparo e composto por TRES VERBAS: custas do STJ + porte de remessa e
+retorno + custas locais. A falta de qualquer uma leva a desercao. Itens de
+regularidade conferidos pelo STJ/tribunal de origem:
+
+i.    Guia de recolhimento das custas E respectivo comprovante de pagamento
+      foram juntados?
+ii.   Houve erro no TIPO DE GUIA escolhido (GRU simples x GRU cobranca)?
+iii.  Houve erro no TIPO DE ACAO OU RECURSO escolhido na GRU cobranca?
+iv.   Houve erro no preenchimento do NUMERO DE REFERENCIA da GRU simples ou
+      do NUMERO DO PROCESSO NA ORIGEM da GRU cobranca (campo alterado em
+      24/10/2018 para "Numero do Processo que Consta no Acordao Recorrido")?
+v.    A guia e/ou o comprovante de pagamento juntados estao ILEGIVEIS?
+vi.   A parte deixou de efetuar o pagamento no MESMO MOMENTO da interposicao
+      do REsp?
+vii.  A parte juntou apenas COMPROVANTE DE AGENDAMENTO (nao efetivo
+      "comprovante de pagamento") ou qualquer outra forma de pagamento?
+viii. Houve erro no preenchimento dos CODIGOS DO PREPARO na GRU simples?
+ix.   O CODIGO DE BARRAS do comprovante e DIFERENTE do que consta da guia de
+      recolhimento (configurando falta de correspondencia que leva a
+      desercao - AgInt no AREsp 1.449.432/SP, 4a Turma, DJe 12/05/2020)?
+x.    A parte alega ser beneficiaria da justica gratuita, MAS nao ha
+      COMPROVACAO nos autos?
+xi.   O OBJETO da GRU cobranca NAO refere-se a interposicao do REsp?
+xii.  A DATA DO PAGAMENTO esta FORA do prazo adequado (posterior a
+      interposicao)?
+xiii. O NOME constante na guia NAO e o das partes do processo?
+
+LOGICA DOS PARAGRAFOS DO ART. 1.007 CPC - STJ:
+
+O STJ estabelece padrao/logica nas intimacoes conforme o vicio:
+
+a) PARAGRAFO 2o (INSUFICIENCIA DO RECOLHIMENTO):
+   Aplicado quando a verba foi recolhida A MENOR, OU quando alguma das
+   verbas (custas STJ, porte, custas locais) foi recolhida corretamente mas
+   outra nao foi. Intimacao para COMPLEMENTAR.
+
+b) PARAGRAFO 4o (AUSENCIA DE RECOLHIMENTO):
+   Aplicado quando nao ha NENHUM documento nos autos comprovando o
+   recolhimento no ato da interposicao do REsp. E indiferente se a parte
+   recolheu antes mas nao juntou: a ratio e a COMPROVACAO nos autos, nao o
+   recolhimento em si. Sancao: intimacao para recolher EM DOBRO.
+
+c) PARAGRAFO 7o (ERRO NO PREENCHIMENTO DA GUIA):
+   Aplicado quando ha erro nos dados da guia (codigo, numero de referencia,
+   tipo de acao etc). Intimacao para SANAR o erro de preenchimento.
+
+COMBINACAO DE FUNDAMENTOS - PARAGRAFO 2o C/C PARAGRAFO 4o:
+Hipotese especifica: a parte nao trouxe nenhum comprovante (paragrafo 4o),
+mas, ANTES de ser intimada para recolher em dobro, ESPONTANEAMENTE recolhe
+de forma SIMPLES. Nesse caso:
+1. Cumpriu parcialmente o paragrafo 4o.
+2. Mas falta a "dobra" prevista como sancao.
+3. Sera intimada NOVAMENTE para complementar (paragrafo 2o) a dobra.
+4. Se nao complementar, recurso desertado.
+
+REGRA CRITICA: sem INTIMACAO previa, nao ha desercao automatica - o art.
+1.007 CPC consagra a desercao como vicio SANAVEL. A parte sempre sera
+intimada antes de ter seu recurso declarado deserto por irregularidade do
+preparo.
+
+REGRA PRATICA: o advogado deve ANTEVER os 13 itens acima ANTES de protocolar
+o REsp. Checklist obrigatorio:
+- Juntar guia + comprovante (ambos legiveis)
+- Conferir tipo de guia (GRU cobranca com numero do processo do acordao)
+- Conferir codigos do preparo
+- Conferir correspondencia entre codigo de barras da guia e do comprovante
+- Conferir que o comprovante e de efetivo pagamento (nao agendamento)
+- Conferir que a data do pagamento e anterior a interposicao
+- Conferir que o nome na guia corresponde a parte do processo
+- Se gratuidade: juntar comprovacao idonea ou requerer o beneficio na
+  peticao recursal
+
+===============================================================================
+II.4 EXAURIMENTO DA INSTANCIA - SUMULA 281/STF
+===============================================================================
+
+SUMULA 281/STF: "E inadmissivel o recurso extraordinario, quando couber na
+justica de origem, recurso ordinario da decisao impugnada."
+
+Aplica-se ao REsp: e necessario esgotar todos os recursos ordinarios na
+justica de origem antes de buscar a instancia especial.
+
+HIPOTESES CRITICAS PARA O ADVOGADO:
+a) REsp contra DECISAO MONOCRATICA do tribunal: INVIAVEL. E preciso opor
+   agravo interno antes.
+b) EDcl contra acordao julgados MONOCRATICAMENTE pelo relator, com REsp
+   interposto diretamente contra essa decisao singular: INVIAVEL.
+c) Decisao monocratica do relator + EDcl julgados por acordao: ainda assim
+   INVIAVEL, pois a materia original nao passou pelo colegiado (AgInt no
+   AREsp 1.557.971/SP, 3a Turma, 20/11/2019).
+d) Interposicao SIMULTANEA de Agravo Interno e REsp contra a mesma decisao
+   monocratica: viola o principio da unicidade/singularidade recursal; o
+   REsp nao sera conhecido (AgRg nos EDcl no AREsp 708.576/RS, 1a Turma,
+   28/11/2019).
+
+REGRA PRATICA: o REsp SOMENTE pode ser interposto contra ACORDAO COLEGIADO
+do tribunal de origem. Se houver decisao monocratica, opoe-se primeiro o
+agravo interno do art. 1.021 CPC; apenas do acordao do colegiado que julgar
+esse agravo interno cabe REsp.
+
+===============================================================================
+II.5 RECOLHIMENTO DE MULTAS (EDcl e AgInt)
+===============================================================================
+
+BASE: art. 1.021, paragrafo 5o, CPC (AgInt manifestamente inadmissivel) e
+art. 1.026, paragrafo 3o, CPC (EDcl manifestamente protelatorios).
+
+CONSEQUENCIAS:
+- Multa do agravo interno: na 1a aplicacao, o nao recolhimento impede a
+  interposicao de qualquer novo recurso.
+- Multa dos EDcl: somente a partir da 2a aplicacao (reiteracao) o nao
+  recolhimento impede novos recursos.
+
+NAO ALCANCA: Fazenda Publica e beneficiarios da gratuidade de justica.
+
+NATUREZA JURIDICA: sancao por ato atentatorio a boa-fe processual (valor
+destinado a parte contraria). Por isso e VICIO INSANAVEL (nao ha previsao
+legal para regularizacao posterior). Distingue-se do preparo, que e taxa
+destinada ao Poder Judiciario (pressuposto de admissibilidade recursal).
+
+===============================================================================
+II.6 PRIMAZIA DO JUIZO DE CONFORMIDADE SOBRE O JUIZO DE ADMISSIBILIDADE
+===============================================================================
+
+CONTEXTO OPERACIONAL PARA O ADVOGADO:
+O tribunal de origem tem DUAS ETAPAS de analise do REsp:
+1. JUIZO DE CONFORMIDADE (art. 1.030, I a III, CPC): aplicacao de temas de
+   recursos repetitivos ou repercussao geral;
+2. JUIZO DE ADMISSIBILIDADE (art. 1.030, IV e V, CPC): afericao dos
+   requisitos recursais.
+
+REGRA DA PRIMAZIA: a ordem legal e PRIMEIRO conformidade, DEPOIS
+admissibilidade. A analise dos requisitos de admissibilidade so deve ser
+realizada nas TRES HIPOTESES do art. 1.030, V, CPC:
+a) materia nao submetida ao rito dos repetitivos ou repercussao geral;
+b) recurso selecionado como RRC;
+c) refutacao do juizo de retratacao pelo orgao colegiado.
+
+EXCECAO UNICA AUTORIZADA PELO CPC: o UNICO VICIO DO RESP que o CPC autoriza
+o tribunal a SALTAR o juizo de conformidade e analisar diretamente a
+admissibilidade e a TEMPESTIVIDADE, nos termos do art. 1.036, paragrafo 3o,
+CPC (permite retirada do sobrestamento de recurso intempestivo para
+inadmissao direta).
+
+IMPLICACOES PARA O ADVOGADO:
+- REsp INTEMPESTIVO: sera inadmitido mesmo em materia afetada ao rito dos
+  repetitivos - nao ha salvacao.
+- Outros vicios de admissibilidade (preparo, representacao, prequestionamento
+  etc): podem, em tese, ser superados se a materia estiver em consonancia
+  com tema repetitivo ja julgado pelo STJ - mas essa e excecao excepcional
+  (a criterio do magistrado), nao garantia. Melhor nao contar com isso.
+- Se a materia esta sobrestada por afetacao a rito repetitivo, o REsp nao
+  sera analisado quanto aos requisitos de admissibilidade ate o julgamento
+  do tema-mae.
+
+ESTRATEGIA: quando o advogado identifica que a materia do caso concreto esta
+afetada a rito repetitivo, pode:
+a) aguardar o julgamento do tema-mae e retomar o REsp sobrestado;
+b) peticionar DISTINCAO demonstrando que o caso concreto e materialmente
+   diverso da questao afetada (art. 1.037, paragrafos 9o e 10, III, CPC) -
+   com objetivo de liberar o processo do sobrestamento e permitir juizo
+   imediato do caso concreto.
+
+===============================================================================
+===============================================================================
+PARTE III - PRESSUPOSTOS INTRINSECOS (MATERIAIS)
+===============================================================================
+===============================================================================
+
+===============================================================================
+III.1 PERMISSIVO CONSTITUCIONAL (SUMULA 284/STF)
+===============================================================================
+
+Na peticao de interposicao do REsp o recorrente deve evidenciar de forma
+EXPLICITA e ESPECIFICA em qual ou quais dos permissivos constitucionais esta
+fundado o recurso, com indicacao expressa da alinea do dispositivo
+autorizador.
+
+Base: art. 1.029, II, CPC - "demonstracao do cabimento do recurso interposto"
+
+Ausencia de indicacao expressa atrai a Sumula 284/STF: "E inadmissivel o
+recurso extraordinario, quando a deficiencia na sua fundamentacao nao
+permitir a exata compreensao da controversia".
+
+MITIGACAO RECENTE DO STJ:
+"A falta de indicacao expressa da norma constitucional que autoriza a
+interposicao do recurso especial (alineas a, b e c do inciso III do art. 105)
+implica o seu nao conhecimento pela incidencia da Sumula n. 284 do STF,
+salvo, em carater excepcional, se as razoes recursais conseguem demonstrar,
+de forma inequivoca, a hipotese de seu cabimento" (EAREsp 1.672.966/MG,
+Corte Especial, DJe 11/05/2022).
+
+REGRA PRATICA PARA O ADVOGADO: NUNCA deixar de indicar a alinea (a, b ou c)
+do art. 105, III, CF, na peticao de interposicao. Indicar, com precisao, se
+o fundamento e violacao a lei federal (alinea "a"), declaracao de validade
+de ato de governo local contestado (alinea "b"), ou dissidio jurisprudencial
+(alinea "c"), ou combinacao destas.
+
+===============================================================================
+III.2 DISPOSITIVO LEGAL VIOLADO - ALINEA "a"
+===============================================================================
+
+O recorrente deve indicar, com precisao, os dispositivos legais tidos por
+violados. Alegacao GENERICA de violacao a lei federal, sem particularizar
+qual artigo, paragrafo ou alinea teria sido violado, atrai a Sumula 284/STF
+(AgInt no REsp 1.475.626/RS, 3a Turma, 04/12/2017).
+
+REGRA CRITICA:
+A indicacao GENERICA do artigo tido por contrariado induz a compreensao de
+que a violacao alegada e somente de seu CAPUT. A ofensa aos desdobramentos
+(paragrafos, incisos, alineas) tambem deve ser indicada EXPRESSAMENTE (REsp
+1.798.903/RJ, 3a Secao, DJe 30/10/2019; AgRg no AREsp 1.280.513/RJ, 6a
+Turma, DJe 27/05/2019).
+
+REGRA PRATICA: para cada tese, listar o(s) dispositivo(s) violado(s) com
+precisao maxima - art., paragrafo, inciso, alinea - e demonstrar em que
+medida o acordao recorrido vulnerou cada um deles.
+
+===============================================================================
+III.3 DISPOSITIVO OBJETO DO DISSIDIO - ALINEA "c"
+===============================================================================
+
+Quando o REsp e interposto pela alinea "c" do art. 105, III, CF (dissidio
+jurisprudencial), a peca recursal deve indicar, com PRECISAO, quais
+dispositivos legais seriam objeto de dissidio interpretativo, sob pena de
+Sumula 284/STF (AgRg no REsp 1.346.588/DF, Corte Especial, DJe 17/03/2014).
+
+A ausencia de indicacao expressa dos dispositivos de lei federal acerca dos
+quais supostamente ha dissidio jurisprudencial leva ao nao conhecimento do
+recurso por deficiencia de fundamentacao.
+
+===============================================================================
+III.4 ARGUMENTACAO PERTINENTE E INDIVIDUALIZADA (SUMULA 284/STF)
+===============================================================================
+
+Da mesma forma que a peticao inicial pode ser inepta, o REsp tambem pode.
+Na peticao de REsp deve haver ARGUMENTACAO PERTINENTE E INDIVIDUALIZADA aos
+fundamentos do acordao recorrido, sob pena de inaptidao (Sumula 284/STF).
+
+HIPOTESES EM QUE INCIDE A SUMULA 284/STF (para o advogado evitar):
+
+1. RAZOES DEFICIENTES (GENERICAS):
+Peticao sem sentido textual logico, que se limita a tecer ilacoes confusas,
+sem desenvolvimento logico, sem concatenacao de ideias, clareza ou
+coerencia (REsp 650.070/RS, 3a Turma, DJe 17/09/2007).
+
+2. INTERPOSICAO PELA ALINEA "a" SEM FUNDAMENTACAO RELACIONADA:
+O recorrente invoca a alinea "a" mas nao apresenta qualquer fundamentacao
+relacionada a violacao de lei federal.
+
+3. RAZOES DISSOCIADAS DO ACORDAO RECORRIDO:
+As razoes do REsp encontram-se dissociadas, parciais ou totalmente, dos
+fundamentos utilizados no aresto impugnado (AgRg no AREsp 1.394.624/RJ, 5a
+Turma, DJe 19/03/2019).
+
+4. INDICACAO DE DISPOSITIVOS SEM CORRELACAO COM A TESE:
+A parte recorrente indica os artigos de lei federal que teriam sido
+violados, mas nao desenvolve argumentacao suficiente a demonstrar a
+inequivoca ofensa aos dispositivos mencionados (AgInt no REsp 2.059.001/RS,
+1a Turma, DJEN 23/12/2024).
+
+5. ALEGACAO DE VIOLACAO DO ART. 1.022 CPC SEM PREVIA OPOSICAO DE EDcl:
+O exame da alegacao de violacao do art. 1.022 depende da previa oposicao de
+embargos de declaracao para provocar manifestacao sobre o ponto omisso,
+contraditorio ou obscuro (AgInt no REsp 2.099.012/AM, 1a Turma, DJEN
+27/02/2025).
+
+6. INOVACAO RECURSAL NOS EDcl DA ORIGEM:
+Constitui vedada inovacao recursal a pretensao de discutir em EDcl, na
+origem, materia que nao foi objeto do recurso anterior (apelacao, agravo de
+instrumento ou agravo interno). Incabivel a alegacao de ofensa ao art. 1.022
+CPC fundada nessa inovacao (AgInt no AREsp 1.720.743/SP, 4a Turma, DJe
+07/04/2021).
+
+7. VIOLACAO GENERICA DO ART. 1.022 CPC (OU ART. 535 CPC/73):
+Incide a Sumula 284/STF quando a parte aponta violacao do art. 1.022 CPC:
+a) sem especificar quais INCISOS foram contrariados (omissao, contradicao,
+   obscuridade, erro material - todos do art. 1.022);
+b) sem demonstrar ESPECIFICAMENTE quais os VICIOS do acordao recorrido;
+c) sem demonstrar a RELEVANCIA dos vicios para a solucao da controversia.
+
+"E deficiente a fundamentacao do recurso especial em que a alegada ofensa
+aos arts. 489, paragrafo 1o, e 1.022 do CPC/2015 se faz sem a demonstracao
+objetiva dos pontos omitidos pelo acordao recorrido, individualizando o
+erro, a obscuridade, a contradicao ou a omissao supostamente ocorridos,
+bem como sua relevancia para a solucao da controversia" (REsp 1.653.926/PR,
+2a Turma, DJe 26/09/2018).
+
+REGRA ADICIONAL: quando se invoca conjuntamente violacao dos arts. 489,
+paragrafo 1o, e 1.022 CPC, o recorrente DEVE indicar EXPRESSAMENTE em qual
+das hipoteses do art. 489, paragrafo 1o, CPC, incorreu o acordao recorrido
+(incisos I, II, III, IV, V ou VI). A mera invocacao do art. 1.022, II,
+sem correlacao com art. 489, paragrafo 1o, atrai a Sumula 284/STF.
+
+8. ART. 619 CPP NA VIA CRIMINAL (Sumula 284/STF - analogo ao art. 1.022 CPC):
+No REsp criminal, a alegacao generica de violacao do art. 619 CPP (embargos
+de declaracao na esfera penal), sem indicar qual o ponto omisso,
+contraditorio ou obscuro do acordao e sua relevancia para o deslinde da
+controversia, atrai Sumula 284/STF (AgRg no AREsp 1.828.858/MG, 5a Turma,
+DJe 10/06/2020).
+
+Nao basta afirmar que "os embargos de declaracao foram opostos para fins de
+prequestionamento": o recorrente deve apresentar OS ARGUMENTOS pelos quais
+os dispositivos legais deveriam ter sido analisados pela Corte a quo, a fim
+de que pudessem influenciar no resultado do julgamento (AgRg no REsp
+1.960.845/SC, 5a Turma, DJe 30/06/2022).
+
+9. AUSENCIA DE COMANDO NORMATIVO DO DISPOSITIVO INVOCADO:
+Hipotese AUTONOMA de Sumula 284/STF (distinta das razoes dissociadas e da
+argumentacao generica): o dispositivo legal apontado como violado deve ter
+COMANDO NORMATIVO SUFICIENTE para amparar a tese recursal ou infirmar os
+fundamentos do acordao recorrido.
+
+Tres situacoes em que o obice incide (jurisprudencia consolidada do STJ):
+a) O dispositivo nao tem CORRELACAO com a controversia recursal, por versar
+   sobre tema diverso;
+b) O dispositivo tem CARATER GENERICO (ex: "art. 5o do CDC") e sua mera
+   indicacao nao e apta, por si so, a sustentar a tese;
+c) O dispositivo tem comando especifico mas exigiria COMBINACAO com outros
+   dispositivos legais, e o recorrente nao os indica.
+
+"Nao se conhece do recurso especial, quando o dispositivo apontado como
+violado nao contem comando normativo para sustentar a tese defendida ou
+infirmar os fundamentos do acordao recorrido, em face do obice contido na
+Sumula 284/STF" (AgInt no REsp 1.788.417/SC, 1a Turma, DJe 06/06/2019; AgInt
+no AREsp 2.586.505/RJ, 3a Turma, DJe 29/08/2024).
+
+ESPECIFICO PARA ART. 1.022, PARAGRAFO UNICO, II, CPC:
+O proprio inciso II do paragrafo unico do art. 1.022 CPC NAO tem comando
+normativo SUFICIENTE sozinho para sustentar tese recursal de omissao: e
+necessario que o recorrente indique CONJUNTAMENTE, de forma expressa, clara
+e precisa, em qual das hipoteses do art. 489, paragrafo 1o, CPC incorreu o
+acordao (combinacao obrigatoria por remissao).
+
+10. PROLIXIDADE E FALTA DE OBJETIVIDADE:
+"Peticao prolixa e sem objetividade nao ajuda para a admissao do recurso
+especial." As argumentacoes devem ser desenvolvidas de forma DIRETA, CLARA E
+ESPECIFICA, demonstrando como o acordao recorrido violou o dispositivo de
+lei federal apontado.
+
+"Argumentacao recursal em torno de normas infraconstitucionais nao pode ser
+meramente generica, sem o desenvolvimento de teses efetivamente vinculadas a
+elas e sem a demonstracao objetiva de como o acordao recorrido as teria
+violado. Incidencia da Sumula 284/STF" (REsp 1.293.548/SP, 2a Turma, DJe
+26/06/2018).
+
+REGRA PRATICA: na redacao do REsp, cada tese deve:
+a) apontar o trecho especifico do acordao recorrido impugnado;
+b) identificar o(s) dispositivo(s) legal(is) violado(s), com precisao
+   maxima (art./paragrafo/inciso/alinea);
+c) demonstrar IN CONCRETO em que medida o acordao violou cada dispositivo;
+d) apresentar argumentacao individualizada, nao generica;
+e) se a tese e violacao do art. 1.022 CPC: (i) confirmar que EDcl foi
+   previamente oposto na origem; (ii) especificar quais incisos do art.
+   1.022 foram contrariados; (iii) demonstrar quais vicios concretos
+   ocorreram; (iv) apontar a relevancia dos vicios para a solucao da
+   controversia; (v) se combinado com art. 489, paragrafo 1o, CPC, indicar
+   em qual hipotese daquele dispositivo o acordao incorreu;
+f) se a tese e violacao do art. 619 CPP (criminal): mesma exigencia de
+   especificidade e relevancia;
+g) nao suscitar em EDcl/REsp materia que nao estava no recurso ordinario
+   anterior (inovacao recursal vedada);
+h) verificar se o dispositivo invocado tem COMANDO NORMATIVO suficiente
+   para amparar a tese (correlacao com a controversia, nao-genericidade,
+   auto-suficiencia ou combinacao indicada com outros dispositivos);
+i) preferir texto direto e objetivo a peticoes prolixas; cada paragrafo
+   deve agregar tese juridica, nao se limitar a reafirmacoes.
+
+===============================================================================
+III.5 HIPOTESES DE NAO CABIMENTO DO RESP
+===============================================================================
+
+III.5.1 NORMA DIVERSA DE TRATADO OU LEI FEDERAL
+
+O art. 105, III, CF exige contrariedade a TRATADO ou LEI FEDERAL.
+
+LEI FEDERAL, para fins do REsp, sao as especies normativas do art. 59 CF:
+emendas constitucionais, leis complementares, leis ordinarias, leis
+delegadas, medidas provisorias, decretos legislativos e resolucoes. Somem-se
+os tratados internacionais que nao sejam de direitos humanos.
+
+NAO E CABIVEL REsp que alega violacao a:
+- resolucoes (administrativas)
+- portarias
+- regimentos internos
+- instrucoes normativas
+- circulares
+- comunicados
+- convenios interestaduais (salvo excecoes)
+- provimentos
+- principios
+- tratados internacionais de DIREITOS HUMANOS
+- decretos (salvo excecoes - ver abaixo)
+- regulamentos
+- sumulas dos tribunais (AgInt no AREsp 1.320.968/SP, 2a Turma, DJe
+  19/03/2019).
+
+DECRETOS DO PRESIDENTE DA REPUBLICA - REGRAS OBJETIVAS DO STJ:
+- Decretos ANTERIORES A CF/1988: PODEM ser objeto de REsp (o Executivo
+  legislava autonomamente por decreto com forca de lei).
+- Decretos POSTERIORES A 1988: analisar o fundamento constitucional no
+  preambulo do decreto.
+  a) Fundamento EXCLUSIVO no art. 84, IV, CF: decreto meramente
+     regulamentar, NORMA SECUNDARIA - NAO cabe REsp.
+  b) Fundamento no art. 84, VI, CF, ou combinado com IV e VI: decreto
+     autonomo, NORMA PRIMARIA - CABE REsp.
+
+III.5.2 TESE EMINENTEMENTE CONSTITUCIONAL
+
+Mesmo que a parte alegue violacao a normas federais, se a tese recursal for
+EMINENTEMENTE CONSTITUCIONAL, nao cabe REsp (competencia do STF via RE).
+
+HIPOTESES PARADIGMATICAS:
+- Tese fundada em julgado do STF no exercicio da jurisdicao constitucional.
+- Discussao de imunidade tributaria.
+- Competencia da justica federal.
+- Garantias, direitos e principios eminentemente constitucionais.
+- Competencias dos entes publicos.
+- Expedicao de precatorios.
+
+Ainda que haja lei federal que de alguma forma regule a questao, se a
+controversia se resolve diretamente a luz do texto constitucional, nao cabe
+REsp (REsp 1.756.473/RO, 2a Turma, DJe 29/08/2018; REsp 1.655.968/PE, 2a
+Turma, DJe 02/05/2017).
+
+III.5.3 VIOLACAO REFLEXA DE LEI FEDERAL
+
+Hipotese autonoma de nao cabimento: a pretensao do recorrente deve configurar
+VIOLACAO DIRETA de lei federal. Se a violacao direta e a norma CONSTITUCIONAL,
+LOCAL ou INFRALEGAL, e a lei federal somente e reflexamente atingida, nao
+cabe REsp.
+
+METODOLOGIA DO STJ PARA IDENTIFICAR VIOLACAO REFLEXA:
+1. Exigir que a parte indique, necessariamente, dispositivo de LEI FEDERAL
+   violado.
+2. Analisar a pretensao do recorrente para verificar se, de fato, o que se
+   busca esta disciplinado em lei federal.
+3. Se o pretendido pela parte esta efetivamente previsto em norma
+   CONSTITUCIONAL, LOCAL ou INFRALEGAL, trata-se de violacao reflexa -
+   incabivel o REsp.
+
+REGRA PRATICA: o advogado deve verificar, antes da redacao, se a tese que
+pretende sustentar encontra solucao DIRETAMENTE na lei federal ou se a
+solucao esta na Constituicao (RE/STF), em lei estadual/municipal (nao cabe
+REsp) ou em ato normativo infralegal (nao cabe REsp).
+
+III.5.4 INDICACAO DE OFENSA A CONSTITUICAO FEDERAL
+
+E INCABIVEL o REsp que visa discutir violacao de norma constitucional. Isso
+e materia propria do RE para o STF (art. 102, III, CF).
+
+"Nao cabe ao Superior Tribunal de Justica, em recurso especial, o exame de
+eventual ofensa a dispositivo da Constituicao Federal, AINDA QUE PARA O FIM
+DE PREQUESTIONAMENTO, sob pena de usurpacao da competencia reservada ao
+Supremo Tribunal Federal" (AgInt nos EREsp 1.082.463/DF, 2a Secao, DJe
+01/02/2019).
+
+REGRA PRATICA: dispositivos constitucionais nao devem ser invocados como
+violados no REsp, nem mesmo sob pretexto de prequestionamento. Para
+prequestionar dispositivo constitucional, deve-se interpor RE paralelo ao
+STF (ver tambem Parte III.6 - Sumulas 283/STF e 126/STJ).
+
+III.5.5 LEI FEDERAL NAO RECEPCIONADA PELA CF/88 OU EM VACATIO LEGIS
+
+O STJ uniformiza a interpretacao da legislacao federal EM VIGOR. Portanto,
+NAO CABE REsp nas seguintes hipoteses:
+
+a) NORMA NAO RECEPCIONADA: dispositivo de norma anterior a CF/1988 que nao
+   foi recepcionado pela nova ordem constitucional - nao tem mais vigencia
+   (REsp 1.637.880/SP, 3a Turma, DJe 19/10/2017; AgRg no AREsp 613.524/SP,
+   3a Turma, DJe 13/02/2015).
+
+b) NORMA EM VACATIO LEGIS: dispositivo publicado mas que ainda nao esta em
+   pleno vigor (entre a publicacao e a entrada em vigor). Nao cabe REsp para
+   alegar ofensa a norma que ainda nao e aplicavel (EDcl no AgRg no AREsp
+   817.110/MG, 3a Turma, DJe 24/05/2016).
+
+c) NORMA JA REVOGADA: dispositivo revogado antes da questao factica ou
+   juridica surgir, ou revogado durante o curso processual. "Nao e cabivel a
+   interposicao de recurso especial fundado em dispositivo de lei federal
+   nao vigente, seja em razao de a questao fatica ou juridica ter surgido
+   apos a sua revogacao, seja por ser anterior a sua entrada em vigor" (AgInt
+   no AREsp 2.180.882/RJ, 2a Turma, DJe 19/12/2022).
+
+REGRA PRATICA: antes de invocar dispositivo como violado, verificar sua
+VIGENCIA e RECEPCAO CONSTITUCIONAL. Conferir via Planalto ou legislacao
+oficial do ente federativo se o dispositivo esta em plena vigencia na data
+de ocorrencia dos fatos do caso concreto.
+
+III.5.6 SUMULA 518/STJ - VIOLACAO A ENUNCIADO DE SUMULA (INCLUSIVE VINCULANTE)
+
+SUMULA 518/STJ: "Para fins do art. 105, III, 'a', da Constituicao Federal,
+nao e cabivel recurso especial fundado em alegada violacao de enunciado de
+sumula."
+
+NAO CABE REsp que alegue ofensa a enunciado de sumula de qualquer tribunal,
+inclusive SUMULAS VINCULANTES DO STF (REsp 1.806.438/DF, 3a Turma, DJe
+19/10/2020). Sumulas nao se enquadram no conceito de lei federal previsto
+no art. 105, III, "a", CF/88.
+
+REGRA PRATICA: se o acordao recorrido violou entendimento sumulado, o REsp
+deve apontar violacao aos DISPOSITIVOS LEGAIS que fundamentaram a sumula
+(e nao a propria sumula) e aos precedentes que a originaram. Nunca
+estruturar a tese recursal apontando violacao da sumula em si.
+
+III.5.7 SUMULA 280/STF (ANALOGIA) - VIOLACAO DE LEI LOCAL (ESTADUAL OU MUNICIPAL)
+
+SUMULA 280/STF: "Por ofensa a direito local nao cabe recurso extraordinario."
+
+Aplicada por ANALOGIA ao REsp: nao cabe REsp que aponte ofensa a dispositivo
+de lei ESTADUAL ou MUNICIPAL. O STJ uniformiza apenas lei federal.
+
+Inclui: codigos, decretos, leis organicas, regulamentos e demais atos
+normativos de ente federativo local (Estados, DF, Municipios).
+
+REGRA PRATICA: quando a questao envolver lei local (p.ex., legislacao
+tributaria estadual, lei de organizacao judiciaria estadual, lei municipal
+de uso do solo), nao cabe REsp. Identificar se a mesma questao pode ser
+reconduzida a dispositivo de lei federal correlato (ex: CTN para tributos
+estaduais gerais; CPC para organizacao de atos processuais estaduais).
+
+III.5.8 SUMULA 203/STJ - DECISOES DE JUIZADOS ESPECIAIS E TNU
+
+SUMULA 203/STJ: "Nao cabe recurso especial contra decisao proferida por
+orgao de segundo grau dos Juizados Especiais."
+
+O art. 105, III, CF, refere-se a Tribunais Regionais Federais e Tribunais
+dos Estados/DF/Territorios. Orgaos de segundo grau de Juizados Especiais
+(Turmas Recursais) nao sao Tribunais, logo nao cabe REsp contra suas
+decisoes.
+
+Extensao: tambem nao cabe REsp contra decisoes da TNU - Turma Nacional de
+Uniformizacao (AgInt no AREsp 1.580.799/DF, 2a Turma, DJe 06/05/2020).
+
+REGRA PRATICA: contra decisao de Turma Recursal de JEC, o instrumento
+cabivel e:
+- RE ao STF (se houver materia constitucional com repercussao geral);
+- Reclamacao ao STJ se a decisao contrariar jurisprudencia do STJ (RE
+  571.572/BA);
+- MS quando houver decisao tera/orada.
+
+III.5.9 SUMULA 735/STF - DECISOES EM CAUTELARES
+
+SUMULA 735/STF: "Nao cabe recurso extraordinario contra acordao que defere
+medida liminar". Aplicada por analogia ao REsp: o juizo de valor precario
+emitido em antecipacao de tutela ou cautelar nao enseja REsp.
+
+III.5.10 SUMULA 5/STJ - INTERPRETACAO DE CLAUSULA CONTRATUAL
+
+SUMULA 5/STJ: "A simples interpretacao de clausula contratual nao enseja
+Recurso Especial".
+
+Exclui a possibilidade de discussoes no STJ sobre a adequada interpretacao
+de clausulas negociais, desde que incidentes sobre as bases faticas da
+pactuacao.
+
+EXCECAO DOUTRINARIA/JURISPRUDENCIAL: quando se trata de CLAUSULAS NEGOCIAIS
+TIPICAS de vasta utilizacao no trafego juridico (p.ex., fixacao de
+abusividade ou nao de clausula inserida em contratos de adesao), o STJ pode
+e deve se pronunciar como corte de interpretacao e precedentes.
+
+III.5.11 SUMULA 7/STJ - REEXAME FATICO-PROBATORIO
+
+SUMULA 7/STJ: "A pretensao de simples reexame de prova nao enseja recurso
+especial".
+
+O REsp NAO SERA CABIVEL quando a analise da pretensao recursal exigir o
+reexame do quadro fatico-probatorio (AgRg no REsp 1.773.075/SP, 5a Turma,
+DJe 07/03/2019).
+
+TEMAS RECORRENTES EM QUE O STJ APLICA A SUMULA 7 (AUTO-CENSURA DO ADVOGADO):
+- Valor dos danos morais.
+- Valor dos honorarios advocaticios.
+- Sucumbencia reciproca.
+- Existencia de coisa julgada.
+- Revisao de premissa fatica quanto a identidade dos elementos
+  caracterizadores da coisa julgada.
+- Distribuicao do onus probatorio.
+- Gratuidade de justica.
+- Litigancia de ma-fe.
+- Elementos configuradores do dano moral.
+- Elemento subjetivo (dolo ou culpa).
+- Ocorrencia de dano ao erario e revisao de sancoes na Improbidade
+  Administrativa.
+- Discussao sobre justa causa em acao penal.
+- Tipicidade, dolo, erro de tipo e atipicidade da conduta em causas
+  criminais.
+- Necessidade/desnecessidade de juntada de prova, indeferimento de pericia.
+
+DISTINCAO CRUCIAL (para o advogado escapar da Sumula 7):
+- REEXAME DE PROVA (vedado): pedir ao STJ que revise o conjunto
+  fatico-probatorio como se fosse uma terceira instancia.
+- REVALORACAO JURIDICA DOS FATOS INCONTROVERSOS (permitido): partir dos
+  FATOS COMO DESCRITOS NO ACORDAO RECORRIDO e sustentar que, a partir deles,
+  o tribunal aplicou incorretamente a norma federal.
+
+CONCEITO DOUTRINARIO DE NOVA VALORACAO (ALVIM/DANTAS):
+"Se o juizo fizer incidir sobre os fatos o dispositivo de lei errado,
+estar-se-a diante de uma ilegalidade de raiz, e tudo o que dela derivar sera
+tambem ilegal. Portanto, a SUBSUNCAO pode e deve ser corrigida pelos
+tribunais superiores, porque e, ontologicamente, questao de direito."
+
+REQUISITOS PARA A NOVA VALORACAO PELO STJ:
+1. A DESCRICAO FATICA deve estar BEM DELINEADA no acordao recorrido.
+2. Os DADOS devem estar EXPLICITAMENTE ADMITIDOS pelas instancias
+   ordinarias (fatos incontroversos reconhecidos na origem).
+3. A ILEGALIDADE/INCONSTITUCIONALIDADE na "escolha" da norma deve ser
+   perceptivel pela MERA LEITURA DO ACORDAO, sem necessidade de revolver
+   provas.
+
+REGRA PRATICA: na redacao, SEMPRE iniciar cada tese transcrevendo o trecho
+factico do acordao recorrido. A partir dos fatos la fixados (incontroversos
+para fins de REsp), sustentar a incorrecao da subsuncao juridica. Nunca
+pedir ao STJ que "reveja" prova, testemunha, documento ou pericia.
+
+HIPOTESES EM QUE A SUMULA 7/STJ NAO SE APLICA (OPORTUNIDADES ESTRATEGICAS):
+
+A Sumula 7/STJ visa impedir processos que busquem apenas a analise de fatos
+e provas. Ela e aplicavel quando a parte recorrente procura ESTABELECER
+DIVERGENCIA QUANTO AOS FATOS E AS PROVAS narrados no acordao recorrido.
+Consequentemente, NAO SE APLICA a Sumula 7/STJ nas seguintes situacoes (que
+o advogado deve dominar para escapar do obice):
+
+1. DISCUSSAO SOBRE NATUREZA JURIDICA:
+Nao ha reexame de prova quando se discute a natureza juridica de um
+instituto (ex: prescricao do fundo de direito x quinquenal; natureza
+remuneratoria/salarial x indenizatoria de uma verba; natureza contratual x
+extracontratual da relacao).
+
+2. CLASSIFICACAO DE DOCUMENTO COMO INICIO DE PROVA MATERIAL:
+Questoes previdenciarias e similares: discutir se determinado tipo de
+documento CONSTITUI ou nao inicio de prova material e questao JURIDICA,
+nao reexame de prova.
+
+3. CLASSIFICACAO DE VERBA COMO REMUNERATORIA OU INDENIZATORIA:
+A natureza juridica de uma verba (remuneratoria/salarial vs indenizatoria)
+para fins tributarios, previdenciarios, trabalhistas ou patrimoniais e
+QUESTAO DE DIREITO.
+
+4. APLICACAO DE INSTITUTOS DE PRESUNCAO (DANO IN RE IPSA):
+Discutir se determinado fato gera DANO PRESUMIDO (in re ipsa) nao demanda
+revolvimento probatorio. A aplicacao da presuncao a partir de um fato
+incontroverso (inscricao indevida em cadastro de inadimplentes, extravio
+de bagagem, negativa indevida de cobertura de plano de saude, etc.) e
+aplicacao de tese juridica.
+
+5. DIREITO A PROVA MALFERIDO (CERCEAMENTO DE DEFESA):
+E possivel examinar no REsp se o direito a prova foi violado - se as
+instancias ordinarias NEGARAM a produção de prova que a parte tinha
+direito a produzir. Isso e questao juridica (violacao do direito ao
+contraditorio e ampla defesa, art. 5o, LV, CF, e arts. 369 e 370 CPC).
+
+6. PRINCIPIO DO LIVRE CONVENCIMENTO VIOLADO:
+O livre convencimento do magistrado nao o exime do dever de decidir
+segundo o BOM SENSO, a LOGICA e a EXPERIENCIA. Quando a apreciacao da
+prova e IMOTIVADA, ARBITRARIA ou CONTRARIA as regras de experiencia
+comum, a materia e suscetivel de REsp (violacao do dever de motivacao,
+art. 93, IX, CF, e art. 489 CPC).
+
+REGRA PRATICA PARA O ADVOGADO: ao enfrentar a Sumula 7/STJ, verificar se a
+tese pode ser RECLASSIFICADA em alguma das 6 hipoteses acima. A reclassificacao
+nao e retorica: exige adequar a redacao para enfatizar a QUESTAO DE DIREITO
+(subsuncao, classificacao juridica, aplicacao de presuncao, violacao a
+direito de prova), evitando qualquer frase que sugira revisao factica.
+
+EXCECOES A SUMULA 7/STJ - QUANDO O STJ ADMITE REVISAO (OPORTUNIDADES PARA O
+ADVOGADO):
+
+1. DANOS MORAIS - VALORES IRRISORIOS OU EXCESSIVOS:
+O STJ admite, EM HIPOTESES EXCEPCIONAIS, o afastamento da Sumula 7/STJ para
+revisao do valor dos danos morais quando arbitrados na origem em valores
+IRRISORIOS ou EXORBITANTES. "Apenas em hipoteses excepcionais, quando
+irrisorio ou exorbitante o valor da indenizacao por danos morais arbitrado
+na origem, a jurisprudencia desta Corte permite o afastamento da Sumula
+n. 7/STJ, para possibilitar a revisao" (AgInt no REsp 2.144.733/RJ, 4a
+Turma, DJEN 09/12/2024).
+
+2. HONORARIOS ADVOCATICIOS - VALORES IRRISORIOS OU EXCESSIVOS:
+Mesma logica aplicada aos honorarios: "Em regra, nao se mostra possivel, em
+recurso especial, a revisao dos valores fixados a titulo de honorarios
+advocaticios e astreintes, pois tal providencia exigiria novo exame do
+contexto fatico-probatorio constante dos autos, o que e vedado pela Sumula
+7/STJ. Todavia, o obice da referida sumula pode ser afastado em situacoes
+excepcionais, quando for verificado excesso ou insignificancia das
+importancias arbitradas, ficando evidenciada ofensa aos principios da
+RAZOABILIDADE e da PROPORCIONALIDADE" (AgInt no AREsp 1.340.926/PE, 1a
+Turma, DJe 28/02/2019).
+
+REGRA PRATICA: quando o valor arbitrado em 2a instancia for manifestamente
+desproporcional (irrisorio ou excessivo), o advogado DEVE invocar essa
+excecao. Estrategia redacional:
+a) transcrever o valor fixado;
+b) comparar com parametros do proprio STJ em casos analogos (citar
+   precedentes com valores semelhantes);
+c) demonstrar a OFENSA a razoabilidade e proporcionalidade (principios
+   constitucionais);
+d) invocar o caso excepcional como afastamento da Sumula 7/STJ;
+e) ao formular o pedido, apontar o valor que seria adequado segundo a
+   jurisprudencia do STJ.
+
+III.5.12 SUMULA 83/STJ - CONSONANCIA COM A JURISPRUDENCIA DO STJ
+
+SUMULA 83/STJ: "Nao se conhece do recurso especial pela divergencia, quando
+a orientacao do Tribunal se firmou no mesmo sentido da decisao recorrida."
+
+HIPOTESE CRITICA PARA O ADVOGADO: embora o texto literal da sumula refira-se
+a divergencia (alinea "c"), o STJ a aplica tambem para inadmissao de REsp
+interposto pela alinea "a", quando o acordao recorrido esta em CONSONANCIA
+com a jurisprudencia dominante do STJ.
+
+INTERPRETACAO DA SUMULA 123/STJ PELO STJ: o tribunal de origem PODE examinar
+tangencialmente o merito recursal para concluir pela INVIABILIDADE do REsp,
+sem que isso signifique usurpacao de competencia ou apreciacao do merito.
+
+NA PRATICA, O TRIBUNAL DE ORIGEM PODE INADMITIR O RESP:
+a) por AUSENCIA DE VIOLACAO AO ART. 1.022 CPC, quando nao identificar
+   qualquer omissao, contradicao ou obscuridade passivel de correcao por
+   EDcl;
+b) quando CONCLUIR que o acordao recorrido decidiu no MESMO SENTIDO da
+   jurisprudencia pacificada do STJ (Sumula 83/STJ), fora do rito dos
+   repetitivos.
+
+REGRA PRATICA PARA O ADVOGADO: antes de interpor o REsp, verificar se a tese
+que se pretende sustentar ja tem entendimento CONSOLIDADO do STJ em sentido
+OPOSTO ao do recorrente. Se tem, o REsp sera inadmitido na origem por
+Sumula 83/STJ, salvo se:
+a) o advogado conseguir demonstrar DISTINGUISHING entre o caso concreto e os
+   precedentes invocados (Secao 11.1 das Custom Instructions ROM); ou
+b) o advogado construir tese de OVERRULING, demonstrando que o entendimento
+   do STJ deve ser superado por razoes tecnicas supervenientes.
+
+E inutil interpor REsp que reproduza mecanicamente tese ja rechacada pelo
+STJ, sem fazer o esforco de distinguishing ou overruling.
+
+===============================================================================
+III.6 REBATIMENTO DE TODOS OS FUNDAMENTOS (SUMULAS 283/STF e 126/STJ)
+===============================================================================
+
+QUESTAO CENTRAL: de que adianta conhecer o REsp por um fundamento se outro
+fundamento do acordao, igualmente importante, nao foi atacado?
+
+IMPRESCINDIVEL haver no REsp o rebatimento DE TODOS os fundamentos do
+acordao recorrido que sejam AUTONOMOS E SUFICIENTES para manter o
+entendimento do tribunal de origem.
+
+SUMULA 283/STF: "E inadmissivel o recurso extraordinario, quando a decisao
+recorrida assenta em mais de um fundamento suficiente e o recurso nao
+abrange todos eles."
+
+Se a parte deixar de atacar fundamento INFRACONSTITUCIONAL, autonomo e
+suficiente para manter o julgado, incide a Sumula 283/STF (AgInt nos EDcl no
+AREsp 1.317.285/MG, 4a Turma, DJe 19/12/2018).
+
+SUMULA 126/STJ: "E inadmissivel recurso especial, quando o acordao recorrido
+assenta em fundamentos constitucional e infraconstitucional, qualquer deles
+suficiente, por si so, para mante-lo, e a parte vencida nao manifesta recurso
+extraordinario."
+
+Se a parte deixar de atacar fundamento CONSTITUCIONAL autonomo e suficiente
+para manter o julgado, por meio de RE, incide a Sumula 126/STJ (AgInt no
+AREsp 1.288.579/SP, 2a Turma, DJe 25/09/2018; AgInt no AREsp 1.581.363/RN,
+2a Turma, DJe 21/08/2020).
+
+REGRA PRATICA CRUCIAL:
+1. Mapear TODOS os fundamentos do acordao recorrido.
+2. Classificar cada fundamento em: (a) infraconstitucional autonomo e
+   suficiente; (b) constitucional autonomo e suficiente; (c) mero reforco
+   argumentativo.
+3. Para cada fundamento infraconstitucional autonomo: interpor REsp e
+   rebater.
+4. Para cada fundamento constitucional autonomo: interpor RE e rebater.
+5. Dupla fundamentacao (constitucional + infraconstitucional, cada uma
+   suficiente): interpor SIMULTANEAMENTE REsp E RE; se deixar de interpor um
+   deles, o outro nao sera conhecido.
+
+===============================================================================
+III.7 PREQUESTIONAMENTO (SUMULAS 211/STJ, 282/STF, 356/STF; art. 1.025 CPC)
+===============================================================================
+
+CONCEITO: o exaurimento de instancia e o aspecto FORMAL da expressao "causa
+decidida" prevista no art. 105, III, CF. O prequestionamento e o aspecto
+MATERIAL: alem de o acordao ter sido proferido por colegiado, a materia
+objeto do REsp deve ter sido efetivamente debatida no acordao recorrido.
+
+TRES FACETAS DO PREQUESTIONAMENTO:
+
+FACETA 1 - AUSENCIA DE EXAME PELO TRIBUNAL DE ORIGEM:
+A Corte de origem nao examinou a questao suscitada no REsp, apesar de
+pedido. Surgem duas hipoteses:
+
+HIPOTESE A - EDcl FORAM OPOSTOS NA ORIGEM E REJEITADOS:
+Incide a SUMULA 211/STJ: "Inadmissivel recurso especial quanto a questao
+que, a despeito da oposicao de embargos declaratorios, nao foi apreciada
+pelo tribunal a quo".
+
+Para o advogado: alegar violacao do art. 1.022 CPC no proprio REsp e, com
+base no art. 1.025 CPC, pedir o PREQUESTIONAMENTO FICTO.
+
+ART. 1.025 CPC: "Consideram-se incluidos no acordao os elementos que o
+embargante suscitou, para fins de pre-questionamento, ainda que os embargos
+de declaracao sejam inadmitidos ou rejeitados, caso o tribunal superior
+considere existentes erro, omissao, contradicao ou obscuridade."
+
+REQUISITO OPERACIONAL CRITICO - STJ:
+Para que o STJ aplique o PREQUESTIONAMENTO FICTO do art. 1.025 CPC, e
+IMPRESCINDIVEL que no PROPRIO REsp haja ALEGACAO EXPRESSA de VIOLACAO AO
+ART. 1.022 CPC. Sem essa alegacao, o STJ NAO pode aplicar a supressao de
+grau facultada pelo dispositivo.
+
+"A admissao de prequestionamento ficto (art. 1.025 do CPC/2015), em recurso
+especial, exige que no mesmo recurso seja indicada violacao ao art. 1.022
+do CPC/2015, para que se possibilite ao Orgao julgador verificar a existencia
+do vicio inquinado ao acordao, que uma vez constatado, podera dar ensejo a
+supressao de grau facultada pelo dispositivo de lei" (REsp 1.639.314/MG,
+3a Turma, Rel. Min. Nancy Andrighi, DJe 10/04/2017).
+
+CONSEQUENCIAS:
+- Alegando apenas violacao de dispositivo material (ex: art. 186 CC), SEM
+  alegar violacao do art. 1.022 CPC: o STJ NAO aplica o prequestionamento
+  ficto; se a tese nao foi enfrentada, incide Sumula 211/STJ (omissao nao
+  suprida).
+- Alegando violacao do art. 1.022 CPC + dispositivo material violado: o STJ
+  pode (i) reconhecer a violacao e aplicar art. 1.025 CPC (suprimindo grau e
+  julgando o merito); ou (ii) reconhecer a violacao e determinar retorno a
+  origem para rejulgamento (se a omissao versa sobre materia factica).
+
+REGRA PRATICA INAFASTAVEL: todo REsp fundado em omissao nao sanada pelo
+tribunal a quo DEVE conter, como primeira tese, a violacao do art. 1.022
+CPC (especificando os incisos e os vicios conforme Parte III.4 deste
+manual), e SOMENTE ENTAO as violacoes de dispositivos materiais subsequentes.
+
+PREQUESTIONAMENTO DE MATERIA DE ORDEM PUBLICA:
+Atencao critica: o STJ exige prequestionamento MESMO para materias de ordem
+publica (nulidades absolutas, prescricao, decadencia, condicoes da acao,
+pressupostos processuais). "Mesmo as materias supostamente de ordem publica
+ou as alegadas nulidades absolutas nao prescindem do devido prequestionamento
+e da correta observancia ao regramento legal para serem conhecidas" (AgRg na
+PET no REsp 1.678.519/SP, 5a Turma, DJe 28/02/2020).
+
+REGRA PRATICA: nao se pode suscitar pela primeira vez no REsp qualquer
+materia de ordem publica que nao tenha sido objeto de debate no acordao
+recorrido. Se o tribunal de origem nao se manifestou sobre prescricao,
+decadencia ou nulidade, e imperativo opor EDcl suscitando expressamente a
+questao, sob pena de nao conhecimento por falta de prequestionamento.
+
+HIPOTESE B - EDcl NAO FORAM OPOSTOS NA ORIGEM:
+Incidem as SUMULAS 282/STF e 356/STF:
+- SUMULA 282/STF: "E inadmissivel o recurso extraordinario, quando nao
+  ventilada na decisao recorrida, a questao federal suscitada".
+- SUMULA 356/STF: "O ponto omisso da decisao, sobre o qual nao foram
+  opostos embargos declaratorios, nao pode ser objeto de recurso
+  extraordinario, por faltar o requisito do prequestionamento".
+
+REGRA PRATICA INAFASTAVEL: para QUALQUER tese que pretenda levar ao STJ, e
+imperativo opor EDcl na origem quando o acordao nao se manifestou sobre o
+ponto. Sem EDcl, a tese esta PERDIDA para o REsp.
+
+FACETA 2 - AUSENCIA DE PREQUESTIONAMENTO DA TESE RECURSAL:
+O acordao recorrido julgou a questao (mesmo dispositivo de lei e mesmo
+instituto juridico), mas o recorrente apresenta no REsp uma TESE com um
+VIES NOVO, nao analisado pelo tribunal a quo.
+
+Nao basta o prequestionamento NUMERICO (debate do dispositivo), e preciso o
+prequestionamento da TESE RECURSAL no seu enfoque especifico (AgInt no REsp
+1.627.269/PE, 2a Turma, DJe 27/09/2017).
+
+REGRA PRATICA: o REsp nao pode trazer enfoque inovador. A tese do REsp deve
+corresponder a tese que foi efetivamente debatida e decidida (mesmo que
+implicitamente) no acordao recorrido.
+
+FACETA 3 - AUSENCIA DE PREQUESTIONAMENTO DO DISPOSITIVO DE LEI FEDERAL:
+O acordao julgou a questao sob o enfoque de um determinado dispositivo de
+lei, e o recorrente pretende que a mesma questao seja analisada sob outro
+dispositivo nao analisado na origem.
+
+PREQUESTIONAMENTO IMPLICITO: o STJ admite que, ainda que o tribunal nao fale
+expressamente sobre determinado dispositivo, se emitiu juizo de valor sobre
+o seu CONTEUDO, ha prequestionamento implicito.
+
+PROTOCOLO OPERACIONAL DE PREQUESTIONAMENTO (para o advogado):
+
+1. APOS A SENTENCA/ACORDAO DESFAVORAVEL, opor SEMPRE embargos de declaracao
+   para ventilar expressamente cada dispositivo federal que se pretende
+   levar ao REsp e cada tese especifica.
+
+2. NO PROPRIO CORPO DOS EDcl, pedir "prequestionamento explicito dos arts.
+   X, Y e Z".
+
+3. SE OS EDcl forem REJEITADOS sem enfrentamento das questoes, alegar no
+   REsp violacao do art. 1.022 CPC e requerer aplicacao do art. 1.025 CPC
+   (prequestionamento ficto).
+
+4. RESERVAR UM CAPITULO FINAL NO REsp denominado "DO PREQUESTIONAMENTO",
+   com transcricao dos trechos do acordao em que cada dispositivo foi
+   debatido (ainda que implicitamente).
+
+5. PARA RE: paralelamente, prequestionar dispositivos CONSTITUCIONAIS com a
+   mesma tecnica.
+
+===============================================================================
+III.8 OUTRAS RESTRICOES CONSOLIDADAS
+===============================================================================
+
+III.8.1 PARADIGMAS NAO ADMITIDOS PARA DISSIDIO (alinea "c"):
+- Acordaos proferidos em habeas corpus.
+- Acordaos em mandado de seguranca.
+- Acordaos em recurso ordinario em habeas corpus.
+- Acordaos em recurso ordinario em mandado de seguranca.
+- Acordaos em conflito de competencia.
+- Acordaos em acao rescisoria.
+- DECISAO MONOCRATICA de relator (nao caracteriza "tribunal").
+- SUMULAS de tribunais (somente os julgados que lhes deram origem).
+- Julgados de TURMA RECURSAL de Juizado Especial ou da TNU - Turma Nacional
+  de Uniformizacao.
+- Paradigmas do MESMO ORGAO prolator do acordao recorrido (STJ nao admite
+  paradigma da mesma Turma).
+- ACORDAOS DO STF fundados em interpretacao CONSTITUCIONAL (somente acordaos
+  do STF fundados em norma INFRACONSTITUCIONAL podem servir como paradigma
+  para alinea "c" - REsp 1.502.678/PR, 2a Turma, DJe 18/12/2015; AREsp
+  1.164.184/SP, 2a Turma, DJe 30/10/2017).
+- JULGADOS DO TST OU TRT (divergencia deve ser demonstrada com julgados do
+  proprio STJ ou tribunais a si vinculados - AgInt no AREsp 1.566.529/SP,
+  1a Turma, DJe 31/08/2023; AREsp 824.667/PR; AgRg no AREsp 143.763/RJ,
+  4a Turma, DJe 30/10/2013).
+- DECISOES DE NATUREZA ADMINISTRATIVA (TCU, processamento de precatorios em
+  Tribunais locais): questoes administrativas nao configuram "causa" para
+  fins de REsp (AgInt no AREsp 1.171.814/SP, 2a Turma, DJe 15/05/2018;
+  AgRg no AREsp 423.811/DF, 2a Turma, DJe 10/12/2013).
+
+Fontes: REsp 2.147.290/PR, 5a Turma, DJEN 20/12/2024; AgInt nos EDcl no REsp
+1.375.836/SP, 4a Turma, 14/03/2018; AgInt no REsp 1.765.964/RJ, 2a Turma,
+14/12/2018; AgInt no AREsp 1.653.835/MG, 3a Turma, DJe 25/06/2020.
+
+III.8.2 DOCUMENTACAO DO PARADIGMA (art. 1.029, paragrafo 1o, CPC; art. 255,
+paragrafo 1o, RISTJ):
+- Certidao ou copia autenticada do acordao paradigma;
+- OU citacao de repositorio oficial ou credenciado;
+- OU reproducao de julgado disponivel na internet com indicacao da fonte.
+
+A ausencia desses requisitos formais leva ao nao conhecimento do REsp por
+alinea "c" (AgInt no AREsp 1.244.772/SP, 4a Turma, DJe 13/11/2018).
+
+===============================================================================
+===============================================================================
+PARTE IV - COTEJO ANALITICO - ALINEA "c"
+===============================================================================
+===============================================================================
+
+Quando o REsp e interposto pela alinea "c" (dissidio jurisprudencial), a
+comprovacao da divergencia NAO se faz pela mera transcricao de ementas: e
+indispensavel o COTEJO ANALITICO RIGOROSO.
+
+CONCEITO:
+- COMPROVACAO da divergencia: demonstracao grafica, na peticao do REsp, em
+  que aspectos faticos e juridicos os acordaos (paradigma e paragonado) se
+  assemelham, por meio de tabela ou paragrafos comparativos.
+- DEMONSTRACAO da divergencia: efetiva existencia da IDENTIDADE JURIDICA e
+  da SIMILITUDE FATICA entre o acordao recorrido e o paradigma.
+
+EXIGENCIAS CUMULATIVAS DO STJ:
+1. Transcricao de trechos dos julgados confrontados (nao so das ementas).
+2. Indicacao das circunstancias identificadoras da divergencia.
+3. Similitude fatica entre o acordao recorrido e o paradigma.
+4. Identidade juridica (mesma questao federal, mesmo instituto juridico).
+5. Indicacao de documentacao idonea (art. 1.029, paragrafo 1o, CPC; art.
+   255, paragrafo 1o, RISTJ).
+
+"Nos termos dos arts. 1.029, paragrafo 1o, do CPC, e 255, paragrafo 1o, do
+RISTJ, a divergencia jurisprudencial, com fundamento na alinea c do
+permissivo constitucional, exige comprovacao e demonstracao, em qualquer
+caso, por meio de transcricao dos trechos dos acordaos que configurem o
+dissidio. Devem ser mencionadas as circunstancias que identifiquem ou
+assemelhem os casos confrontados, a evidenciar a similitude fatica entre os
+casos apontados e a divergencia de interpretacoes" (AgInt no AREsp
+2.275.996/BA, 2a Turma, DJEN 20/03/2025).
+
+"A simples transcricao de ementas e de trechos de julgados nao e suficiente
+para caracterizar o cotejo analitico, uma vez que requer a demonstracao das
+circunstancias identificadoras da divergencia entre o caso confrontado e o
+aresto paradigma, mesmo no caso de dissidio notorio" (AgInt no AREsp
+1.242.167/MA, 2a Turma, DJe 05/04/2019).
+
+ESTRUTURA DE COTEJO RECOMENDADA PARA O ADVOGADO:
+
+1. IDENTIFICACAO DO ACORDAO RECORRIDO:
+   Transcrever o trecho exato da ratio decidendi do acordao recorrido.
+
+2. IDENTIFICACAO DO ACORDAO PARADIGMA:
+   Numero, orgao julgador (que NAO pode ser o mesmo do recorrido),
+   relator, data de julgamento, data de publicacao, fonte oficial
+   verificada via web_search.
+
+3. TRANSCRICAO DO TRECHO DA RATIO DECIDENDI DO PARADIGMA.
+
+4. DEMONSTRACAO DA SIMILITUDE FATICA:
+   Tabela ou paragrafos comparativos indicando que em ambos os julgados
+   discutiu-se: [exposicao das premissas faticas comuns].
+
+5. DEMONSTRACAO DA IDENTIDADE JURIDICA:
+   Ambos os acordaos examinaram o(s) mesmo(s) dispositivo(s) legal(is) e o
+   mesmo instituto juridico.
+
+6. EVIDENCIACAO DA DIVERGENCIA INTERPRETATIVA:
+   Nao obstante a identidade de premissas, os julgados chegaram a solucoes
+   juridicas DIAMETRALMENTE OPOSTAS.
+
+7. CONCLUSAO:
+   "Resta configurado o dissidio jurisprudencial a autorizar o conhecimento
+   do presente recurso, nos termos do art. 105, III, c, da Constituicao
+   Federal."
+
+===============================================================================
+===============================================================================
+PARTE V - TECNICA REDACIONAL CONSOLIDADA - CHECKLIST DO ADVOGADO
+===============================================================================
+===============================================================================
+
+ANTES DE PROTOCOLAR O RESP, VERIFICAR:
+
+CABIMENTO
+[ ] A controversia e de NATUREZA INFRACONSTITUCIONAL (afasta RE e Sumula
+    126/STJ)?
+[ ] O dispositivo invocado e TRATADO INTERNACIONAL NAO DE DIREITOS HUMANOS
+    ou LEI FEDERAL (no sentido do art. 59 CF)?
+[ ] O dispositivo invocado esta em VIGENCIA (nao revogado, nao em vacatio
+    legis, recepcionado pela CF/88)?
+[ ] A violacao alegada e DIRETA a lei federal (nao reflexa)?
+[ ] A tese nao e eminentemente CONSTITUCIONAL (disfarcada de violacao a lei
+    federal)?
+[ ] A tese nao demanda REEXAME DE PROVA (Sumula 7/STJ) nem INTERPRETACAO DE
+    CLAUSULA CONTRATUAL (Sumula 5/STJ)?
+[ ] A jurisprudencia DOMINANTE DO STJ nao esta consolidada em sentido
+    OPOSTO a tese (Sumula 83/STJ)? Se sim, construiu-se DISTINGUISHING ou
+    OVERRULING?
+
+PRESSUPOSTOS EXTRINSECOS
+[ ] PRAZO: 15 dias uteis (civel) ou 15 dias corridos (criminal)?
+[ ] INTIMACAO: conferida no DJEN (desde 16/05/2025 prevalece sobre outras)?
+[ ] PROCURACAO: juntada ou dispensada (MP, Defensoria, ente publico,
+    dativo, causa propria, sindico)?
+[ ] PREPARO: recolhido de forma adequada (codigo de barras, valor, rotulo
+    "comprovante de pagamento")?
+[ ] GRATUIDADE: se pedida, acompanhada de prova documental idonea?
+[ ] EXAURIMENTO: REsp e contra ACORDAO COLEGIADO (nao contra decisao
+    monocratica)?
+[ ] MULTAS pendentes (EDcl ou AgInt) foram recolhidas, se aplicavel?
+
+PRESSUPOSTOS INTRINSECOS
+[ ] PERMISSIVO CONSTITUCIONAL indicado expressamente (alinea "a", "b" ou
+    "c" do art. 105, III, CF)?
+[ ] DISPOSITIVOS VIOLADOS indicados com precisao (art./paragrafo/inciso/
+    alinea)?
+[ ] Cada dispositivo invocado tem COMANDO NORMATIVO suficiente para amparar
+    a tese (nao e generico, tem correlacao com a controversia, ou esta
+    combinado com outros dispositivos quando necessario)?
+[ ] Cada tese contem argumentacao PERTINENTE E INDIVIDUALIZADA, atacando o
+    trecho especifico do acordao recorrido?
+[ ] A argumentacao e DIRETA, CLARA E ESPECIFICA (sem prolixidade ou
+    genericidade)?
+[ ] Se invocado violacao do art. 1.022 CPC: (a) EDcl oposto antes?;
+    (b) incisos especificados?; (c) vicios do acordao demonstrados?;
+    (d) relevancia dos vicios para o deslinde da controversia demonstrada?;
+    (e) se combinado com art. 489, paragrafo 1o, indicada a hipotese
+    especifica?
+[ ] Se REsp criminal e invocado art. 619 CPP: mesma checagem de
+    especificidade?
+[ ] A tese nao contem INOVACAO RECURSAL (nao suscita materia que nao estava
+    no recurso ordinario anterior)?
+
+REBATIMENTO DE FUNDAMENTOS
+[ ] Todos os fundamentos INFRACONSTITUCIONAIS AUTONOMOS E SUFICIENTES do
+    acordao foram impugnados (Sumula 283/STF)?
+[ ] Ha fundamento CONSTITUCIONAL AUTONOMO E SUFICIENTE no acordao? Se sim,
+    foi interposto RE SIMULTANEO (Sumula 126/STJ)?
+
+PREQUESTIONAMENTO
+[ ] Cada dispositivo federal invocado foi DEBATIDO no acordao recorrido
+    (prequestionamento explicito ou implicito)?
+[ ] Se o acordao omitiu questao, foram opostos EDcl na origem?
+[ ] Se EDcl foram rejeitados sem enfrentamento, o REsp aponta violacao do
+    art. 1.022 CPC e invoca o art. 1.025 CPC (prequestionamento ficto)?
+[ ] A TESE RECURSAL (nao so o dispositivo) foi efetivamente debatida no
+    acordao, sob o mesmo vies?
+
+ALINEA "c" - DISSIDIO
+[ ] Indicados com precisao os DISPOSITIVOS LEGAIS objeto do dissidio?
+[ ] Paradigmas sao ACORDAOS COLEGIADOS (nao monocraticas, sumulas, HC, MS,
+    RO, CC, rescisoria, Turma Recursal, TNU)?
+[ ] Paradigmas sao de ORGAO DIVERSO do prolator do acordao recorrido?
+[ ] COTEJO ANALITICO completo: transcricao dos trechos, similitude fatica,
+    identidade juridica, evidenciacao da divergencia interpretativa?
+[ ] DOCUMENTACAO IDONEA do paradigma (certidao, copia autenticada,
+    reproducao de julgado em fonte oficial com indicacao)?
+
+REDACAO
+[ ] Nenhuma tese alegada genericamente - cada uma dispositiva e ancorada no
+    acordao?
+[ ] Fatos tomados como FIXADOS PELO ACORDAO RECORRIDO (nao se pede reexame
+    de prova)?
+[ ] Linguagem juridica padrao ROM (sem expressoes fracas, sem IA)?
+[ ] Capitulo final de PREQUESTIONAMENTO explicito incluido?
+
+OPORTUNIDADES ESTRATEGICAS
+[ ] Se ha valor de danos morais/honorarios/astreintes arbitrado de modo
+    manifestamente irrisorio ou excessivo: invocou-se excecao a Sumula 7/STJ
+    com ofensa a razoabilidade/proporcionalidade e precedentes parametro?
+[ ] Se a jurisprudencia do STJ esta consolidada em sentido oposto (Sumula
+    83/STJ): construiu-se DISTINGUISHING rigoroso ou tese de OVERRULING?
+
+===============================================================================
+===============================================================================
+PARTE VI - RECORRIBILIDADE E DECISOES MISTAS
+===============================================================================
+===============================================================================
+
+===============================================================================
+VI.1 RECURSO CABIVEL POR ATO IMPUGNADO
+===============================================================================
+
+DECISAO DO PRESIDENTE/VICE-PRESIDENTE DO TJ/TRF          RECURSO CABIVEL
+
+Negativa de seguimento (art. 1.030, I, CPC)              Agravo interno
+                                                          (art. 1.021 CPC)
+                                                          -> orgao especial
+                                                          do tribunal de
+                                                          origem
+
+Encaminhamento a retratacao                              Nao cabe recurso
+(nao ha conteudo decisorio)
+
+Sobrestamento                                            Requerimento de
+                                                          intempestividade
+                                                          (art. 1.036,
+                                                          paragrafos 2o e
+                                                          3o); requerimento
+                                                          de distincao
+                                                          (art. 1.037,
+                                                          paragrafos 9o e
+                                                          10, III);
+                                                          agravo interno
+                                                          (art. 1.021)
+
+Selecao e admissao de RRC                                Nao cabe recurso
+(ausencia de previsao legal)
+
+Inadmissao de REsp                                       Agravo em REsp
+(art. 1.030, V, CPC)                                      (AREsp - art.
+                                                          1.042 CPC) ->
+                                                          relator no STJ
+
+===============================================================================
+VI.2 DECISOES MISTAS OU HIBRIDAS - DUPLA IMPUGNACAO
+===============================================================================
+
+O REsp com MAIS DE UM CAPITULO pode gerar decisao mista: para um capitulo o
+acordao esta em conformidade com tema de repetitivo (negativa de seguimento
+- art. 1.030, I, CPC); para outro, ha inadmissao por falta de requisito
+recursal (art. 1.030, V, CPC).
+
+REGRA DE OURO: NUNCA SE DEVE APLICAR TEMA E OBICE AO MESMO CAPITULO.
+
+DUPLA IMPUGNACAO SIMULTANEA:
+Nos termos do Enunciado 77 da I Jornada de Processo Civil do CJF, a
+situacao comporta:
+- AGRAVO INTERNO (art. 1.021 CPC): contra a parcela de negativa de
+  seguimento. Julgado pelo orgao especial do tribunal de origem.
+- AGRAVO EM RESP (art. 1.042 CPC): contra a parcela de inadmissao. Julgado
+  pelo relator no STJ.
+
+Os dois recursos sao interpostos CONCOMITANTEMENTE. Exceciona-se
+implicitamente o principio da unirecorribilidade.
+
+PROCESSAMENTO: primeiro o agravo interno perante o orgao especial do tribunal
+de origem; apos exaurida a jurisdicao do tribunal, processa-se o AREsp.
+
+RECOMENDACAO PRATICA: na duvida sobre natureza mista, protocolar
+simultaneamente os dois recursos para nao perder nenhuma parcela por
+preclusao.
+
+===============================================================================
+VI.3 AREsp - AGRAVO EM RESP (art. 1.042 CPC)
+===============================================================================
+
+CABIMENTO: meio recursal adequado para impugnar DECISAO DO PRESIDENTE OU
+VICE-PRESIDENTE do tribunal recorrido que INADMITIR o REsp em razao da
+ausencia dos requisitos recursais.
+
+COMPETENCIA PARA JULGAMENTO: STJ. Nao ha afericao de requisitos de
+admissibilidade na origem (Sumula 727/STF).
+
+No AREsp, a atuacao da origem e MERAMENTE PROCESSUAL E PROCEDIMENTAL, sem
+qualquer incursao no juizo de admissibilidade propriamente dito.
+
+EXCECAO: AREsp interposto contra decisao que UNICAMENTE nega seguimento por
+aplicacao de rito dos repetitivos e ERRO GROSSEIRO - agravo nao conhecido.
+
+DECISAO MISTA + AREsp: se o AREsp engloba razoes contra obices E contra
+temas de repetitivo, deve-se fazer minuta de remessa ao STJ (impossibilidade
+de cindir julgamento, Sumula 727/STF).
+
+HONORARIOS NO JUIZO DE ADMISSIBILIDADE:
+A instancia extraordinaria no STJ so se inicia com a admissao do REsp.
+E INVIAVEL a majoracao de honorarios em sede de juizo de admissibilidade
+feito pelo tribunal de origem (AgInt nos EDcl no AREsp 2.143.772/PB, 3a
+Turma, DJe 24/08/2023). Se o tribunal de origem indefere o pedido de
+majoracao, o recurso adequado e o AGRAVO INTERNO (art. 1.021 CPC) dirigido
+ao tribunal de origem, e nao o agravo do art. 1.042.
+
+DEFENSOR DATIVO: a fixacao de honorarios ao defensor dativo e
+responsabilidade do Estado (art. 22, paragrafo 1o, Lei 8.906/94), devendo o
+pedido ser formulado perante o juizo de origem e nao no ambito do Tribunal
+Superior (EDcl no AgRg no AREsp 2.359.577/SC, 6a Turma, DJe 17/05/2024).
+
+===============================================================================
+VI.4 RECURSOS REPETITIVOS, RRC, IRDR E TEMA DE REPERCUSSAO GERAL
+===============================================================================
+
+VI.4.1 TEMA DE REPERCUSSAO GERAL DO STF APLICADO AO RESP
+
+Apesar de a literalidade dos incisos I a III do art. 1.030 CPC mencionar
+"recursos repetitivos" (mecanismo tipicamente do STJ) e "repercussao geral"
+(mecanismo tipicamente do STF), o STJ TEM CHANCELADO E ENCORAJADO a
+aplicacao de TEMAS DE MERITO DE REPERCUSSAO GERAL ao REsp pelo tribunal
+de origem.
+
+FUNDAMENTO: hierarquia das normas e papel do STF na interpretacao
+constitucional - base de qualquer lei infraconstitucional.
+
+CONSEQUENCIA PRATICA PARA O ADVOGADO:
+- O tribunal de origem pode NEGAR SEGUIMENTO ao REsp (art. 1.030, I, CPC)
+  tambem quando o acordao recorrido estiver em conformidade com TEMA DE
+  REPERCUSSAO GERAL do STF (nao so repetitivo do STJ);
+- O tribunal pode DEVOLVER para juizo de retratacao (art. 1.030, II, CPC)
+  se o acordao recorrido contrariar tese constitucional do STF;
+- O tribunal pode SOBRESTAR o REsp (art. 1.030, III, CPC) se a questao
+  estiver em repercussao geral nao julgada no STF.
+
+ESTRATEGIA DEFENSIVA: verificar ANTES de interpor REsp se ha TEMA DE
+REPERCUSSAO GERAL do STF ja julgado em sentido oposto a tese do cliente -
+se houver, o REsp tera seguimento negado na origem. Construir
+DISTINGUISHING (Secao 11.1 das Custom Instructions) ou tese de OVERRULING.
+
+VI.4.2 IRDR (INCIDENTE DE RESOLUCAO DE DEMANDAS REPETITIVAS)
+
+Se o acordao recorrido foi proferido em julgamento de IRDR (arts. 976-987
+CPC) e houver discussao sobre interpretacao de LEI FEDERAL
+INFRACONSTITUCIONAL, e possivel (e estrategicamente importante) a submissao
+da materia ao STJ na qualidade de RECURSO REPRESENTATIVO DE CONTROVERSIA
+(RRC).
+
+AREAS TIPICAS DE IRDR:
+- Questoes tributarias em massa (ex: inclusao ou exclusao de tributos na
+  base de calculo de outros);
+- Relacoes de consumo padronizadas (ex: clausulas abusivas em contratos de
+  adesao de mesma natureza);
+- Direito previdenciario (ex: revisao de beneficios, criterios de calculo);
+- Direito administrativo em massa (ex: servidor publico com demandas
+  identicas em determinada categoria).
+
+ESTRATEGIA: se o advogado atua em caso com acordao de IRDR, verificar
+viabilidade de REsp com pedido de submissao como RRC - multiplica o impacto
+da tese e fortalece a posicao do cliente.
+
+VI.4.3 RRC (RECURSO REPRESENTATIVO DE CONTROVERSIA)
+
+O encaminhamento ao STJ como RRC ocorre quando identificada multiplicidade
+de recursos com fundamento em IDENTICA QUESTAO DE DIREITO (art. 1.036 CPC).
+
+O advogado PODE QUERER que seu REsp seja selecionado como RRC. Beneficios
+estrategicos:
+- Oportunidade de fixar tese juridica em julgamento REPETITIVO (efeito
+  vinculante para o caso concreto e para milhares de outros);
+- Possibilidade de SUSTENTACAO ORAL em sessao de afetacao e no julgamento
+  do merito;
+- Prestigio tecnico do escritorio;
+- Tese redigida pelo advogado potencialmente se torna a PREMISSA DA
+  DECISAO VINCULANTE do STJ.
+
+CRITERIOS DE SELECAO PELO TRIBUNAL (art. 1.036, paragrafo 1o, CPC):
+a) Escolha de MAIS DE UM PROCESSO (pelo menos dois, para aumentar chances
+   de afetacao);
+b) Multiplicidade de recursos com identica questao de direito (lides de
+   massa);
+c) Preenchimento dos REQUISITOS DE ADMISSIBILIDADE (parte II e III deste
+   extrato);
+d) MAIOR QUANTIDADE DE ARGUMENTOS nas razoes e contrarrazoes - permite
+   amplo debate no STJ.
+
+COMO O ADVOGADO MAXIMIZA AS CHANCES DE SELECAO:
+1. REsp TECNICAMENTE IMPECAVEL: observar todos os requisitos da Parte II e
+   III deste extrato;
+2. RAZOES RICAS: desenvolver amplamente cada tese, com multiplos
+   fundamentos (constitucional + infraconstitucional + doutrinario);
+3. CONTRARRAZOES ROBUSTAS: se o cliente e recorrido, apresentar
+   contrarrazoes igualmente detalhadas - o STJ valoriza o debate amplo;
+4. DESTACAR A REPETITIVIDADE: demonstrar no proprio REsp que a questao
+   afeta multiplos casos (citar outros processos conhecidos com a mesma
+   controversia, dados estatisticos, noticias);
+5. PETICAO AVULSA ao presidente/vice-presidente do tribunal, apos o
+   protocolo do REsp, pedindo expressamente a selecao como RRC -
+   demonstrando relevancia sistemica da questao.
+
+RRC NAO-RECORRIVEL: a selecao (ou nao) de REsp como RRC e decisao POLITICA
+e BIFASICA (juizo de selecao no TJ/TRF + juizo definitivo no STJ) -
+ausencia de previsao legal de recurso contra a nao-selecao (REsp 1.576.919/
+SP, Primeira Turma, DJe 06/05/2020).
+
+VI.4.4 SOBRESTAMENTO - REGRAS ESPECIAIS
+
+IMPOSSIBILIDADE DE CISAO DO PROCESSAMENTO: se o REsp contem multiplos
+CAPITULOS e apenas UM deles versa sobre questao submetida ao rito dos
+repetitivos, TODO O PROCESSO DEVE SER SOBRESTADO (nao se pode cindir o
+processamento do recurso especial).
+
+SUCUMBENCIA RECIPROCA OU LITISCONSORCIO: se houver mais de um REsp ou RE
+interposto e ao menos um versa sobre materia afetada, RECOMENDA-SE o
+sobrestamento de TODO o processo. Logica: e requisito constitucional que
+a jurisdicao do STJ somente se inicie apos o exaurimento da jurisdicao do
+tribunal de origem. Como ha possibilidade de devolucao dos autos para
+retratacao apos o julgamento do tema afetado, abrir a instancia especial
+prematuramente para o recurso nao-afetado poderia gerar nulidade.
+
+REGRA PRATICA DE PETICIONAMENTO:
+- Se o REsp do cliente esta SOBRESTADO aguardando julgamento de tema
+  afetado: aguardar o julgamento OU peticionar DISTINCAO (art. 1.037,
+  paragrafos 9o e 10, III, CPC) se o caso concreto for materialmente
+  diverso do tema-mae;
+- Se a sobrestacao esta prejudicando tutela de urgencia: peticionar
+  diretamente ao relator no STJ apos publicacao da decisao de afetacao;
+  antes disso, ao presidente do tribunal de origem.
+
+VI.4.5 POS-JULGAMENTO DO ACORDAO PARADIGMA (art. 1.040 CPC)
+
+Publicado o acordao paradigma pelo STJ:
+
+INCISO I - ACORDAO RECORRIDO COINCIDE com a orientacao do STJ:
+Presidente/vice-presidente do tribunal de origem NEGA SEGUIMENTO ao REsp
+sobrestado. Recurso cabivel: AGRAVO INTERNO (art. 1.021 CPC) se o caso
+concreto for distinguivel ou se a tese comportar overruling.
+
+INCISO II - ACORDAO RECORRIDO CONTRARIA a orientacao do STJ:
+Orgao que proferiu o acordao recorrido REEXAMINA O PROCESSO (juizo de
+retratacao). Consequencias:
+a) Se o orgao SE RETRATA e adota a tese do STJ: novo acordao alinhado -
+   REsp original fica prejudicado por perda de objeto;
+b) Se o orgao NAO SE RETRATA e mantem entendimento contrario: o REsp
+   original deve ser julgado pelo STJ, agora sob a otica do acordao
+   paradigma. Estrategia do advogado: reforcar o REsp original com
+   distinguishing ou tese de superacao.
+
+VI.4.6 MODULACAO DE EFEITOS
+
+O magistrado do tribunal de origem, ao aplicar o precedente vinculante ao
+caso sobrestado, PODE PRUDENTEMENTE AGUARDAR eventual modulacao de efeitos
+pelo proprio STJ (quando ha antevisao de modulacao por razoes de
+seguranca juridica e politica judiciaria).
+
+ESTRATEGIA DO ADVOGADO: se o cliente seria prejudicado pela aplicacao
+retroativa do precedente (exemplo classico: tese tributaria modificada),
+peticionar ao presidente/vice-presidente do tribunal invocando a
+conveniencia de aguardar modulacao - especialmente apos Nota Tecnica
+08/2018 do Centro Nacional de Inteligencia da Justica Federal.
+
+===============================================================================
+===============================================================================
+PARTE VII - TUTELAS NO RESP
+===============================================================================
+===============================================================================
+
+EFEITO SUSPENSIVO (art. 995, paragrafo unico, CPC):
+Pode ser formulado na propria peticao recursal ou em peticao avulsa
+incidental.
+
+COMPETENCIA PARA APRECIAR:
+- Entre a interposicao do REsp e a publicacao da decisao de admissao:
+  tribunal de origem.
+- Apos publicacao da decisao de admissao: relator no STJ.
+
+NATUREZA: tutela provisoria com natureza cautelar. Requisitos:
+- FUMUS BONI IURIS: probabilidade de provimento do REsp;
+- PERICULUM IN MORA: risco ao resultado util do processo.
+
+A ausencia de qualquer um dos requisitos importa indeferimento. Presentes
+ambos, o pedido pode ser deferido, suspendendo-se a eficacia da decisao
+recorrida e impedindo o prosseguimento da execucao provisoria.
+
+REGRA GERAL: o REsp possui apenas efeito devolutivo. O efeito suspensivo e
+excecao.
+
+DECISAO DO TRIBUNAL DE ORIGEM sobre efeito suspensivo NAO e recorrivel: a
+competencia definitiva e do relator no STJ, a quem a parte podera reiterar ou
+solicitar revisao.
+
+===============================================================================
+===============================================================================
+PARTE VIII - SUMULAS CONSOLIDADAS DE ADMISSIBILIDADE
+===============================================================================
+===============================================================================
+
+REFERENCIA RAPIDA (verificar estado atual via web_search antes de citar):
+
+SUMULAS DO STJ APLICAVEIS AO REsp
+
+SUMULA 5/STJ - "A simples interpretacao de clausula contratual nao enseja
+Recurso Especial."
+
+SUMULA 7/STJ - "A pretensao de simples reexame de prova nao enseja recurso
+especial."
+
+SUMULA 83/STJ - "Nao se conhece do recurso especial pela divergencia,
+quando a orientacao do Tribunal se firmou no mesmo sentido da decisao
+recorrida."
+
+SUMULA 123/STJ - "A decisao que admite, ou nao, o recurso especial deve ser
+fundamentada, com o exame dos seus pressupostos gerais e constitucionais."
+
+SUMULA 126/STJ - "E inadmissivel recurso especial, quando o acordao
+recorrido assenta em fundamentos constitucional e infraconstitucional,
+qualquer deles suficiente, por si so, para mante-lo, e a parte vencida nao
+manifesta recurso extraordinario."
+
+SUMULA 187/STJ - "E deserto o recurso interposto para o Superior Tribunal de
+Justica, quando o recorrente nao recolhe, na origem, a importancia das
+despesas de remessa e retorno dos autos."
+
+SUMULA 203/STJ - "Nao cabe recurso especial contra decisao proferida por
+orgao de segundo grau dos Juizados Especiais." (extensao jurisprudencial:
+tambem nao cabe REsp contra decisoes da TNU).
+
+SUMULA 211/STJ - "Inadmissivel recurso especial quanto a questao que, a
+despeito da oposicao de embargos declaratorios, nao foi apreciada pelo
+tribunal a quo."
+
+SUMULA 518/STJ - "Para fins do art. 105, III, 'a', da Constituicao Federal,
+nao e cabivel recurso especial fundado em alegada violacao de enunciado de
+sumula." (abrange inclusive sumulas vinculantes do STF).
+
+SUMULAS DO STF APLICAVEIS AO REsp POR ANALOGIA
+
+SUMULA 280/STF - "Por ofensa a direito local nao cabe recurso extraordinario."
+(aplicada por analogia ao REsp: nao cabe REsp contra ofensa a lei estadual ou
+municipal).
+
+SUMULA 281/STF - "E inadmissivel o recurso extraordinario, quando couber, na
+Justica de origem, recurso ordinario da decisao impugnada."
+
+SUMULA 282/STF - "E inadmissivel o recurso extraordinario, quando nao
+ventilada, na decisao recorrida, a questao federal suscitada."
+
+SUMULA 283/STF - "E inadmissivel o recurso extraordinario, quando a decisao
+recorrida assenta em mais de um fundamento suficiente e o recurso nao
+abrange todos eles."
+
+SUMULA 284/STF - "E inadmissivel o recurso extraordinario, quando a
+deficiencia na sua fundamentacao nao permitir a exata compreensao da
+controversia."
+
+SUMULA 356/STF - "O ponto omisso da decisao, sobre o qual nao foram opostos
+embargos declaratorios, nao pode ser objeto de recurso extraordinario, por
+faltar o requisito do prequestionamento."
+
+SUMULA 727/STF - "Nao pode o magistrado deixar de encaminhar ao Supremo
+Tribunal Federal o agravo de instrumento que deve subir nos proprios autos
+do processo" (aplicada ao AREsp: o TJ/TRF nao afere admissibilidade).
+
+SUMULA 735/STF - "Nao cabe recurso extraordinario contra acordao que defere
+medida liminar" (aplicada por analogia ao REsp).
+
+DISPOSITIVOS LEGAIS PROCESSUAIS ESSENCIAIS
+
+- Art. 994, VI, CPC: REsp como recurso.
+- Art. 995, paragrafo unico, CPC: efeito suspensivo - fumus e periculum.
+- Art. 1.003, paragrafo 5o, CPC: prazo de 15 dias para REsp.
+- Art. 1.007, CPC: preparo.
+- Art. 1.021 CPC: agravo interno.
+- Art. 1.022 CPC: embargos de declaracao - hipoteses.
+- Art. 1.025 CPC: prequestionamento ficto.
+- Art. 1.026, paragrafo 3o, CPC: multa por EDcl protelatorios.
+- Art. 1.029 CPC: processamento do REsp.
+- Art. 1.029, paragrafo 1o, CPC: requisitos do dissidio (alinea "c").
+- Art. 1.029, paragrafo 3o, CPC: vicio formal sanavel (so no STJ).
+- Art. 1.030, I a V, CPC: atribuicoes do Presidente/Vice-Presidente do TJ/TRF.
+- Art. 1.036 CPC: recursos repetitivos e RRC.
+- Art. 1.042 CPC: agravo em REsp (AREsp).
+- Art. 255, paragrafo 1o, RISTJ: requisitos do paradigma na alinea "c".
+- Art. 798 CPP: prazos corridos no processo penal.
+
+===============================================================================
+===============================================================================
+PARTE IX - ENLACE COM CUSTOM INSTRUCTIONS ROM
+===============================================================================
+===============================================================================
+
+Este extrato operacional complementa as Secoes 11 e 12 das Custom
+Instructions ROM Civel (Versao 1.0.0 - Abril/2026):
+
+SECAO 11 CUSTOM INSTRUCTIONS:
+- 11.1 Distinguishing: rigor de ratio decidendi + material fact.
+- 11.2 COTEJAMENTO ANALITICO: complementado pela Parte IV deste extrato.
+- 11.3 Standard probatorio qualificado.
+- 11.4 Ponderacao alexyana.
+
+SECAO 12 CUSTOM INSTRUCTIONS (PREQUESTIONAMENTO ESTRATEGICO):
+Complementada pela Parte III.7 deste extrato, com as tres facetas do
+prequestionamento, o protocolo operacional em 5 passos e o detalhamento
+do art. 1.025 CPC (prequestionamento ficto).
+
+REGRA DE CONFERIBILIDADE (Principio 2 das Custom Instructions):
+Toda sumula, tese, precedente ou enunciado indicado neste extrato devera
+ser CONFERIDO via web_search na fonte oficial (stj.jus.br, stf.jus.br)
+ANTES de constar de peca formal. Este extrato e orientacao metodologica,
+nao dispensa a verificacao concreta no caso.
+
+===============================================================================
+===============================================================================
+PARTE X - BANCO DE MODELOS DE DECISAO DO STJ
+           (PARA CONFRONTACAO, CRITICA E REBATIMENTO)
+===============================================================================
+===============================================================================
+
+FINALIDADE: este catalogo apresenta os modelos-padrao de decisao adotados
+pelo STJ e reproduzidos pelos TJs/TRFs na inadmissao de REsp. Conhecer o
+texto-padrao que o magistrado usa para inadmitir permite ao advogado:
+
+a) ANTECIPACAO: na redacao do REsp, blindar preventivamente cada ponto que
+   aparece na decisao-padrao negativa.
+b) CONFRONTACAO: quando a decisao do presidente/vice-presidente do tribunal
+   de origem inadmite o REsp usando um desses modelos, o advogado identifica
+   qual modelo foi aplicado e rebate cada elemento especifico no AGRAVO
+   INTERNO (art. 1.021 CPC - se foi negativa de seguimento por juizo de
+   conformidade) ou no AGRAVO EM RECURSO ESPECIAL (art. 1.042 CPC - se foi
+   inadmissao por juizo de admissibilidade).
+c) ESTRATEGIA: alguns modelos indicam o comportamento esperado do advogado
+   para escapar do obice.
+
+ESTRUTURA: cada modelo e apresentado em tres blocos:
+[MODELO-PADRAO STJ] - texto-padrao utilizado na decisao negativa.
+[LEITURA TATICA] - o que o modelo revela sobre a pretensao do tribunal.
+[REBATIMENTO] - linha de contra-argumentacao tecnica a ser desenvolvida em
+agravo interno, AREsp ou ja blindada no REsp original.
+
+===============================================================================
+X.1 TEMPESTIVIDADE
+===============================================================================
+
+[MODELO-PADRAO STJ - REsp INTEMPESTIVO CIVEL]
+"Verifica-se que a parte recorrente foi intimada do acordao recorrido em
+[DATA DE PUBLICACAO], sendo o Recurso Especial interposto somente em
+[DATA DE PROTOCOLO]. O recurso e, pois, manifestamente intempestivo,
+porquanto interposto fora do prazo de 15 (quinze) dias uteis, nos termos
+do art. 994, VI, c/c os arts. 1.003, paragrafo 5o, 1.029, e 219, caput,
+todos do Codigo de Processo Civil."
+
+[MODELO-PADRAO STJ - REsp INTEMPESTIVO CRIMINAL]
+"Verifica-se que a parte recorrente foi intimada do acordao recorrido em
+[DATA], sendo o Recurso Especial interposto somente em [DATA]. O recurso
+e, pois, manifestamente intempestivo, porquanto interposto fora do prazo
+de 15 (quinze) dias CORRIDOS, nos termos do art. 994, VI, c/c os arts.
+1.003, paragrafo 5o, e 1.029, todos do Codigo de Processo Civil, bem como
+do art. 798 do Codigo de Processo Penal."
+
+[LEITURA TATICA] O tribunal aplica contagem diferente conforme a esfera
+(uteis no civel, corridos no criminal). Em matéria mista (REsp com
+fundamentos civeis e criminais - ex: acao civil publica e acao penal
+conjuntas), prevalece a contagem mais estrita.
+
+[REBATIMENTO]
+1. Atacar as PREMISSAS FATICAS (datas):
+   a) A data de INTIMACAO considerada esta correta? Verificar a data efetiva
+      (intimacao eletronica via sistema do tribunal tem precedencia sobre
+      DJE/DJEN - EAREsp 1.663.952/RJ, Corte Especial, DJe 09/06/2021).
+   b) A data de PROTOCOLO considerada esta correta? Verificar se nao houve
+      erro de lancamento no sistema.
+   c) Houve FERIADO LOCAL ou SUSPENSAO DE EXPEDIENTE nos dias considerados?
+      Anexar copia do ato normativo + certidao do tribunal.
+   d) O DJEN e vinculante no caso concreto (para publicacoes posteriores a
+      16/05/2025)?
+2. Atacar o calculo:
+   a) Contagem comecou no primeiro dia UTIL APOS a publicacao (art. 224
+      CPC)?
+   b) Se a parte e Fazenda Publica, MP ou Defensoria: prazo em dobro
+      (arts. 180, 183, 186 CPC)?
+   c) Tempestividade e VICIO SANAVEL apos QO no AREsp 2.638.376/MG, Corte
+      Especial, julgado em 05/02/2025, DJEN 27/03/2025 - nao ha mais a
+      severidade de antes.
+3. Se houve falha de informacao do sistema eletronico do tribunal, invocar
+   EAREsp 1.759.860/PI (boa-fe e confianca nos sistemas).
+
+===============================================================================
+X.2 REPRESENTACAO PROCESSUAL (SUMULA 115/STJ)
+===============================================================================
+
+[MODELO-PADRAO STJ - SUBSCRITOR SEM PODERES]
+"Mediante analise dos autos, percebeu-se, no STJ, haver irregularidade na
+representacao processual do recurso. A parte, embora regularmente intimada
+para sanar referido vicio, deixou o prazo transcorrer in albis. Dessa forma,
+a parte recorrente nao procedeu a juntada da procuracao e/ou cadeia completa
+de substabelecimento conferindo poderes ao(a) subscritor(a) do recurso
+especial, Dr(a). [NOME]. E firme o entendimento do STJ de que a ausencia da
+cadeia completa de procuracoes impossibilita o conhecimento do recurso
+(Sumula 115/STJ)."
+
+[LEITURA TATICA] O tribunal exige prova da cadeia COMPLETA de poderes:
+procuracao original -> todos os substabelecimentos intermediarios ->
+substabelecimento ao subscritor. Qualquer elo faltante configura Sumula 115.
+
+[REBATIMENTO]
+1. Comprovar a CADEIA COMPLETA via juntada de todos os atos:
+   - Procuracao original outorgada pela parte;
+   - Cada substabelecimento intermediario, com data, nome do substabelecente
+     e do substabelecido, poderes especificos;
+   - Substabelecimento final ao subscritor do REsp.
+2. Se houver LACUNA por falta fisica de ato intermediario, requerer prazo
+   para regularizacao (vicio sanavel conforme AgInt no AREsp 2.347.107/SC).
+3. Se o subscritor e dispensado de procuracao, comprovar:
+   - MP, Defensoria Publica ou Procurador de ente publico: dispensa legal;
+   - Causa propria: comprovar inscricao e titularidade;
+   - Sindico da massa falida: comprovar termo de nomeacao;
+   - Advogado dativo: comprovar nomeacao no processo.
+4. Se a procuracao foi juntada com data POSTERIOR ao protocolo:
+   - Tendencia recente de mitigacao - invocar art. 662 CC (ratificacao
+     tacita - AgInt no AREsp 2.713.514/SP, 4a Turma, DJEN 10/07/2025).
+
+===============================================================================
+X.3 PREPARO - SUMULA 187/STJ
+===============================================================================
+
+X.3.1 CODIGO DE BARRAS DIVERGENTE ENTRE GUIA E COMPROVANTE
+
+[MODELO-PADRAO STJ]
+"Verifica-se que ha divergencia entre o numero constante no codigo de barras
+da guia de preparo e seu respectivo comprovante de pagamento. Veja-se que
+este STJ consolidou o entendimento de que 'a falta de correspondencia entre
+o codigo de barras da guia de recolhimento e o comprovante de pagamento
+enseja irregularidade no preparo do recurso especial, e, portanto, sua
+desercao' (AgInt no AREsp 1.449.432/SP, 4a Turma, DJe 12/05/2020). [...]
+Incide a Sumula 187/STJ, o que leva a desercao do recurso."
+
+[LEITURA TATICA] Falha tipica: a parte emite nova guia, paga, mas junta aos
+autos a guia antiga e o comprovante da nova (ou vice-versa). Ou o banco
+quita com codigo diferente.
+
+[REBATIMENTO]
+1. Demonstrar que o codigo de barras da guia juntada COINCIDE com o do
+   comprovante juntado.
+2. Se houver divergencia real: juntar o PAR CORRETO (guia e comprovante com
+   mesmo codigo) no prazo de intimacao.
+3. Se a divergencia e aparente (codigo truncado, ilegibilidade em uma das
+   pecas): anexar nova cópia legivel.
+4. Se o recolhimento efetivo ocorreu, mas por lapso foi juntada guia
+   diferente: juntar a guia correspondente ao comprovante.
+
+X.3.2 COMPROVANTE DE AGENDAMENTO (NAO EFETIVO PAGAMENTO)
+
+[MODELO-PADRAO STJ]
+"Verifica-se que foi colacionado aos autos apenas o comprovante de
+agendamento do preparo, nao tendo sido juntado o comprovante do efetivo
+pagamento. Portanto, nao se pode considerar efetuado o pagamento se o
+proprio documento 'traz em si a advertencia de que nao representa a efetiva
+quitacao da transacao' (AgInt no AREsp 1.143.559/SP, 1a Turma, DJe
+07/03/2018). [...] Incide a Sumula 187/STJ, o que leva a desercao do recurso."
+
+[LEITURA TATICA] Comprovante de agendamento (transacao programada para
+debito futuro) NAO EQUIVALE a pagamento efetivo. Este e um erro comum de
+advogados que usam internet banking.
+
+[REBATIMENTO]
+1. Juntar o COMPROVANTE DE PAGAMENTO EFETIVO (extrato pos-debito, ou novo
+   comprovante apos liquidacao bancaria).
+2. Verificar a data do pagamento efetivo - se anterior a interposicao do
+   REsp, esta regular.
+3. Se o agendamento foi efetivado DEPOIS do prazo de interposicao: preparo
+   intempestivo - aplicar paragrafo 4o do art. 1.007 CPC (intimacao para
+   recolher em dobro).
+
+X.3.3 DIFERIMENTO DE CUSTAS NA ORIGEM
+
+[MODELO-PADRAO STJ]
+"Verifica-se que o REsp nao foi instruido com a guia de custas do STJ e o
+respectivo comprovante. Mesmo havendo diferimento na origem, as custas do
+STJ sao taxa federal (Lei 11.636/2007). Ato local nao pode postergar
+pagamento de taxa federal (CF, art. 151, III). [...] Incide a Sumula 187/STJ,
+o que leva a desercao do recurso."
+
+[LEITURA TATICA] O tribunal distingue as tres verbas do preparo: (a) custas
+locais (sob regime do tribunal estadual ou TRF), (b) porte de remessa e
+retorno, (c) custas do STJ (taxa federal). Diferimento autorizado pela
+legislacao local ATINGE APENAS as custas locais, nao as custas do STJ.
+
+[REBATIMENTO]
+1. Juntar guia de custas do STJ + comprovante de pagamento (mesmo com
+   diferimento na origem).
+2. Se parte goza de isencao legal SUBJETIVA (p.ex., Massa Falida - art. 5o,
+   II, Lei 11.101/05), comprovar a natureza juridica (certidao de decretacao
+   da falencia; certidao de deferimento da recuperacao judicial).
+3. Requerer gratuidade de justica se for o caso - pedido pode ser formulado
+   no proprio REsp (EREsp 1.222.355/MG, Corte Especial, DJe 25/11/2015).
+
+X.3.4 GRATUIDADE DE JUSTICA SEM COMPROVACAO
+
+[MODELO-PADRAO STJ]
+"Apesar de a parte recorrente asseverar que litiga sob o palio da gratuidade,
+a mera alegacao, na peticao recursal, de que e beneficiaria da assistencia
+judiciaria, nao e suficiente para o afastamento da desercao, ou seja, deve
+haver a comprovacao dessa condicao. [...] E insuficiente, portanto, a
+alegacao de que a gratuidade foi deferida expressa ou tacitamente nos autos
+principais e/ou apensados, devendo a parte trazer certidao comprobatoria do
+Tribunal de origem desse deferimento ou copia integral dos respectivos
+autos, o que nao ocorreu no caso concreto. [...] Incide a Sumula 187/STJ."
+
+[LEITURA TATICA] A mera ALEGACAO de gratuidade nao basta. O STJ exige
+COMPROVACAO DOCUMENTAL: (a) certidao do tribunal de origem atestando o
+deferimento; ou (b) copia integral dos autos em que ja foi deferida.
+
+[REBATIMENTO]
+1. Juntar certidao do tribunal de origem comprovando o deferimento.
+2. Juntar decisao judicial (mesmo se tacita - Sumula 123/STJ) que deferiu o
+   beneficio.
+3. Se o pedido for novo (nao houve deferimento anterior), formular
+   EXPRESSAMENTE no proprio REsp com documentacao idonea de
+   hipossuficiencia: contracheques, declaracao de IR, balancetes, extratos
+   bancarios (AgInt no AREsp 1.160.301/SP, 2a Turma, DJe 30/05/2018).
+4. Pessoa Juridica: presuncao de capacidade financeira - deve comprovar
+   concretamente a hipossuficiencia (empresa em recuperacao, sindicato,
+   associacao sem fins lucrativos).
+
+===============================================================================
+X.4 EXAURIMENTO DE INSTANCIA - SUMULA 281/STF (APLICADA POR ANALOGIA)
+===============================================================================
+
+[MODELO-PADRAO STJ - ACORDAO + EDcl MONOCRATICO]
+"Verifica-se que o Recurso Especial foi interposto contra decisao monocratica
+proferida pelo Tribunal a quo. Consoante entendimento firmado pelo Supremo
+Tribunal Federal, e necessario que a parte interponha todos os recursos
+ordinarios na justica de origem antes de buscar a instancia especial
+(Sumula 281/STF). Tal entendimento tambem e aplicado em hipoteses como a
+dos presentes autos, em que, a decisao singular exarada pelo relator, foram
+opostos Embargos de Declaracao, julgados por meio de acordao, contra o qual
+foi diretamente interposto Recurso Especial, sem que houvesse, portanto, o
+necessario exaurimento das instancias ordinarias. [...] E pacifico o
+entendimento do STJ de que a interposicao do Recurso Especial pressupoe o
+julgamento da questao controvertida pelo orgao colegiado do Tribunal de
+origem."
+
+[LEITURA TATICA] Classica armadilha. A parte opoe EDcl contra decisao
+monocratica, o relator julga os EDcl tambem monocraticamente OU em acordao,
+e a parte protocola REsp. O STJ entende que a MATERIA ORIGINAL nao passou
+pelo colegiado, nao havendo exaurimento.
+
+[REBATIMENTO]
+1. Antes de interpor REsp, SEMPRE verificar se a decisao impugnada eh
+   ACORDAO de colegiado ou DECISAO MONOCRATICA.
+2. Contra decisao monocratica: opoe-se AGRAVO INTERNO (art. 1.021 CPC).
+3. Contra acordao colegiado: REsp.
+4. Contra EDcl julgados monocraticamente em face de acordao: opoe-se
+   AGRAVO INTERNO, nao REsp (AgInt no AREsp 1.073.717/ES, 2a Turma, DJe
+   11/09/2017).
+5. Excecao: se EDcl foram julgados monocraticamente APENAS para sanar ERRO
+   MATERIAL (sem mudar a conclusao), considera-se republicacao do acordao
+   original - cabe REsp.
+6. EVITAR A QUALQUER CUSTO interposicao SIMULTANEA de agravo interno e
+   REsp contra a mesma decisao monocratica (principio da unicidade
+   recursal - AgRg nos EDcl no AREsp 708.576/RS, 1a Turma, DJe 28/11/2019).
+
+===============================================================================
+X.5 PERMISSIVO CONSTITUCIONAL - SUMULA 284/STF
+===============================================================================
+
+[MODELO-PADRAO STJ]
+"Incide a Sumula 284/STF, porquanto nao houve a indicacao do permissivo
+constitucional autorizador do Recurso Especial: 'E inadmissivel o recurso
+extraordinario, quando a deficiencia na sua fundamentacao nao permitir a
+exata compreensao da controversia'. Conforme art. 1.029, II, CPC/2015, a
+peticao do recurso especial deve conter a 'demonstracao do cabimento do
+recurso interposto'. A parte deve indicar explicitamente o fundamento no
+art. 105, III, CF e respectivas alineas."
+
+[LEITURA TATICA] O advogado nao indicou expressamente em qual alinea do
+art. 105, III, CF esta fundado o REsp ("a" contrariedade a lei federal,
+"b" validade de ato de governo local, "c" dissidio jurisprudencial).
+
+[REBATIMENTO]
+1. Se o REsp original continha a indicacao expressa: demonstrar o ponto
+   textual onde consta (indicar folha/linha) - falha do tribunal de origem.
+2. Se a indicacao foi IMPLICITA mas INEQUIVOCA: invocar a MITIGACAO do
+   EAREsp 1.672.966/MG, Corte Especial, DJe 11/05/2022 - a falta de
+   indicacao expressa pode ser superada se as razoes conseguem demonstrar
+   de forma inequivoca a hipotese de cabimento.
+3. Demonstrar que o conteudo do REsp torna EVIDENTE a hipotese de
+   cabimento (alegacao de violacao a dispositivo federal = alinea "a";
+   confronto com paradigmas = alinea "c").
+
+===============================================================================
+X.6 DISPOSITIVO LEGAL VIOLADO - SUMULA 284/STF (ALINEA "a")
+===============================================================================
+
+[MODELO-PADRAO STJ]
+"Incide a Sumula 284/STF, tendo em vista que a parte recorrente deixou de
+indicar precisamente os dispositivos legais supostamente violados, ressaltando
+que a mera citacao de artigo de lei na peca recursal nao supre a exigencia
+constitucional. Aplicavel o enunciado: 'E inadmissivel o recurso
+extraordinario, quando a deficiencia na sua fundamentacao nao permitir a
+exata compreensao da controversia'."
+
+[LEITURA TATICA] A mera referencia a dispositivos no corpo do REsp nao e
+suficiente - e preciso INDICAR EXPRESSAMENTE "dispositivo violado: art. X,
+paragrafo Y, inciso Z, do [Codigo/Lei]". A mera citacao argumentativa e
+insuficiente.
+
+[REBATIMENTO]
+1. Demonstrar que o REsp contem capitulo proprio "DOS DISPOSITIVOS LEGAIS
+   VIOLADOS" ou similar com listagem precisa.
+2. Se a listagem estava em paragrafo conclusivo: apontar o local e
+   reproduzir o trecho.
+3. Se a tese foi estruturada por topico (uma tese por dispositivo):
+   demonstrar que cada topico abre com o dispositivo violado.
+4. NUNCA pedir interpretacao "extensiva" - reconhecer a falha eh mais
+   estrategico que insistir em algo que nao esta na peca.
+
+===============================================================================
+X.7 VIOLACAO GENERICA DO ART. 1.022 CPC - SUMULA 284/STF
+===============================================================================
+
+[MODELO-PADRAO STJ]
+"Incide a Sumula 284/STF, tendo em vista que a parte recorrente, alem de
+ter apontado violacao generica do art. 1.022 CPC/2015 (art. 535 CPC/1973),
+sem especificar quais os incisos foram contrariados, nao demonstrou
+especificamente quais os vicios do aresto vergastado e/ou a sua relevancia
+para a solucao da controversia. Nesse sentido, este Superior Tribunal de
+Justica ja decidiu que: 'E deficiente a fundamentacao do recurso especial
+em que a alegada ofensa aos arts. 489, paragrafo 1o, e 1.022 do CPC/2015
+se faz sem a demonstracao objetiva dos pontos omitidos pelo acordao
+recorrido, individualizando o erro, a obscuridade, a contradicao ou a
+omissao supostamente ocorridos, bem como sua relevancia para a solucao da
+controversia apresentada nos autos. Incidencia da Sumula 284/STF' (REsp
+1.653.926/PR, 2a Turma, DJe 26/09/2018)."
+
+[LEITURA TATICA] Este e o modelo mais comum de inadmissao. O STJ exige
+QUATRO ELEMENTOS CUMULATIVOS: (1) especificacao do inciso; (2) descricao
+do vicio concreto; (3) individualizacao do erro/omissao/contradicao/
+obscuridade; (4) demonstracao da RELEVANCIA para a controversia.
+
+[REBATIMENTO]
+1. Na redacao do REsp, ESTRUTURAR O CAPITULO sobre art. 1.022 com:
+   a) Sub-tese: "Omissao" -> apontar inciso II;
+   b) Trecho do acordao recorrido onde a omissao ocorre;
+   c) Qual ponto foi suscitado e nao enfrentado (especificidade);
+   d) Qual a relevancia da questao para a controversia;
+   e) Qual seria o resultado se enfrentada (utilidade).
+2. Se violacao conjunta com art. 489, paragrafo 1o, CPC: indicar
+   EXPRESSAMENTE em qual das hipoteses do art. 489, paragrafo 1o, o
+   acordao incorreu (inciso I, II, III, IV, V ou VI).
+3. Modelo analogo no CRIMINAL: mesma exigencia para art. 619 CPP
+   (AgRg no AREsp 1.828.858/MG, 5a Turma, DJe 10/06/2020).
+
+===============================================================================
+X.8 AUSENCIA DE COMANDO NORMATIVO - SUMULA 284/STF
+===============================================================================
+
+[MODELO-PADRAO STJ]
+"Incide a Sumula 284/STF devido a ausencia de comando normativo do(s)
+dispositivo(s) apontado(s) como violado(s) para sustentar a tese recursal.
+Segundo a jurisprudencia do STJ, o obice de ausencia de comando normativo
+do artigo de lei federal apontado como violado ou como objeto de divergencia
+jurisprudencial incide nas seguintes situacoes: quando nao tem correlacao
+com a controversia recursal, por versar sobre tema diverso; e quando sua
+indicacao nao e apta, por si so, para sustentar a tese recursal, seja porque
+o dispositivo legal tem carater generico, seja porque, embora consigne em
+seu texto comando especifico, exigiria a combinacao com outros dispositivos
+legais. Ressalte-se que a indicacao generica do artigo de lei que teria
+sido contrariado induz a compreensao de que a violacao alegada e somente
+de seu caput, pois a ofensa aos seus desdobramentos tambem deve ser
+indicada expressamente."
+
+[LEITURA TATICA] O tribunal identifica que o dispositivo invocado nao tem
+forca normativa suficiente para amparar a tese. E um vicio SUBSTANCIAL, nao
+apenas formal.
+
+[REBATIMENTO]
+1. Reformular a tese para CORRELACIONAR o dispositivo com a controversia:
+   "O art. X dispoe que [teor], o que foi contrariado pelo acordao ao
+   decidir [trecho]".
+2. Indicar combinacao com OUTROS DISPOSITIVOS quando necessario: "arts. X,
+   Y e Z, que, conjugados, estabelecem [comando]".
+3. Indicar expressamente os DESDOBRAMENTOS: nao basta citar "art. 186 CC";
+   e preciso "art. 186 CC, caput" ou "art. 186 CC, c/c art. 927 CC".
+
+===============================================================================
+X.9 SUMULA 7/STJ - REEXAME FATICO-PROBATORIO
+===============================================================================
+
+[MODELO-PADRAO STJ - GENERICO]
+"O Tribunal a quo se manifestou nos seguintes termos: [TRANSCRICAO DO TRECHO
+RELEVANTE] (fl.). Assim, incide a Sumula 7/STJ ('A pretensao de simples
+reexame de prova nao enseja recurso especial'), porquanto o acolhimento da
+pretensao recursal demandaria o reexame do acervo fatico-probatorio juntado
+aos autos."
+
+[MODELO-PADRAO STJ - DANOS MORAIS]
+"Incide a Sumula 7/STJ, tendo em vista que, muito embora possa o STJ atuar
+na revisao das verbas fixadas a titulo de danos morais, esta restringe-se
+aos casos em que arbitrados na origem em valores IRRISORIOS ou EXCESSIVOS,
+o que nao se verifica no caso concreto."
+
+[MODELO-PADRAO STJ - HONORARIOS]
+"Incide a Sumula 7/STJ, tendo em vista que, muito embora possa o STJ atuar
+na revisao das verbas honorarias, esta restringe-se aos casos em que
+fixadas na origem em valores IRRISORIOS ou EXCESSIVOS, o que nao se verifica
+no caso concreto."
+
+[MODELO-PADRAO STJ - CRIMINAL (TRAFICO, PRISAO, CERCEAMENTO)]
+"Incide a Sumula 7/STJ, porquanto para dissentir da conclusao do acordao
+recorrido, quanto aos requisitos da prisao preventiva [ou: aos elementos
+do crime de trafico / a necessidade de dilacao probatoria], seria necessaria
+a incursao no conjunto fatico-probatorio carreado aos autos."
+
+[LEITURA TATICA] A Sumula 7/STJ e a causa mais frequente de inadmissao de
+REsp. O tribunal identifica que a tese exige revisao de provas. No criminal,
+aplicada em teses sobre autoria, materialidade, dosimetria, dolo, traficar x
+usar, requisitos da prisao preventiva. No civel, em dano moral, honorarios,
+cerceamento de defesa, onus da prova, configuracao de responsabilidade.
+
+[REBATIMENTO]
+1. IDENTIFICAR SE O CASO PERMITE NOVA VALORACAO (nao reexame):
+   - Descricao fatica BEM DELINEADA no acordao;
+   - Fatos EXPLICITAMENTE ADMITIDOS pelas instancias ordinarias;
+   - Ilegalidade perceptivel pela MERA LEITURA do acordao.
+2. RECLASSIFICAR COMO QUESTAO DE DIREITO (6 hipoteses de nao-aplicacao):
+   - NATUREZA JURIDICA (prescricao fundo x quinquenal; verba remuneratoria
+     x indenizatoria; tipo de contrato);
+   - INICIO DE PROVA MATERIAL (previdenciario: determinado documento
+     CONSTITUI ou nao inicio de prova?);
+   - PRESUNCAO (dano in re ipsa - aplicacao da tese, nao reexame);
+   - DIREITO A PROVA malferido (cerceamento de defesa - questao juridica
+     constitucional, art. 5o, LV, CF);
+   - LIVRE CONVENCIMENTO ARBITRARIO (decisao imotivada ou contraria a
+     regras de experiencia - questao juridica, art. 93, IX, CF);
+   - SUBSUNCAO (lei errada aplicada a fatos incontroversos).
+3. EXCECAO DE VALORES IRRISORIOS/EXCESSIVOS (danos morais, honorarios,
+   astreintes):
+   - Demonstrar o valor fixado;
+   - Comparar com parametros do proprio STJ em casos analogos;
+   - Demonstrar OFENSA a razoabilidade/proporcionalidade;
+   - Formular pedido alternativo com valor adequado segundo jurisprudencia.
+4. REDACAO: iniciar cada tese TRANSCREVENDO o trecho factico do acordao
+   recorrido, aceitando como INCONTROVERSO. A partir dai, sustentar a
+   INCORRECAO DA SUBSUNCAO, nunca reexame.
+
+===============================================================================
+X.10 SUMULA 5/STJ - INTERPRETACAO DE CLAUSULA CONTRATUAL
+===============================================================================
+
+[MODELO-PADRAO STJ]
+"Incidem as Sumulas 5 e 7 do STJ, porquanto a pretensao recursal demanda
+reexame de clausulas contratuais e reexame do acervo fatico-probatorio
+juntado aos autos. Nesse sentido: 'Nao cabe, em recurso especial, reexaminar
+materia fatico-probatoria e a interpretacao de clausulas contratuais
+(Sumulas 5 e 7 do Superior Tribunal de Justica)' (AgInt no AREsp 2.243.705/
+SP, 4a Turma, DJe 20/10/2023)."
+
+[LEITURA TATICA] O tribunal identifica que a tese depende de como uma
+clausula contratual deve ser interpretada (alcance, sentido, incidencia). A
+Sumula 5/STJ e frequentemente aplicada em combinacao com a Sumula 7/STJ.
+
+[REBATIMENTO]
+1. Reformular a tese como NULIDADE/ABUSIVIDADE DA CLAUSULA (questao
+   juridica), nao como interpretacao do alcance da clausula.
+2. Se o caso versa sobre CLAUSULA TIPICA de vasta utilizacao no trafego
+   juridico (contratos de adesao, clausulas padrao), invocar a excecao
+   jurisprudencial - cabe REsp para o STJ atuar como Corte de interpretacao
+   e precedentes.
+3. Reclassificar como CONTRARIEDADE A PRINCIPIO LEGAL (boa-fe objetiva -
+   art. 422 CC; funcao social do contrato - art. 421 CC; equilibrio -
+   art. 478 CC): a aplicacao do principio ao fato incontroverso e questao
+   juridica, nao interpretacao.
+
+===============================================================================
+X.11 DIVERGENCIA JURISPRUDENCIAL - ALINEA "c"
+===============================================================================
+
+X.11.1 AUSENCIA DE COTEJO ANALITICO
+
+[MODELO-PADRAO STJ]
+"Nao foi comprovado o dissidio jurisprudencial, tendo em vista que a parte
+recorrente nao realizou o indispensavel cotejo analitico, que exige, alem
+da transcricao de trechos dos julgados confrontados, a demonstracao das
+circunstancias identificadoras da divergencia, com a indicacao da existencia
+de similitude fatica e identidade juridica entre o acordao recorrido e o(s)
+paradigma(s) indicado(s), nao bastando, portanto, a mera transcricao de
+ementas ou votos."
+
+[LEITURA TATICA] Erro classico: advogado transcreve ementas achando que
+basta. Nao basta - e preciso cotejo DETALHADO paragrafo-a-paragrafo.
+
+[REBATIMENTO]
+1. Estruturar o cotejo em QUATRO PASSOS:
+   a) Trecho do acordao recorrido (com indicacao de folha) - tese juridica
+      adotada;
+   b) Trecho do acordao paradigma (identificacao completa: numero, relator,
+      orgao, data, fonte) - tese juridica divergente;
+   c) Demonstracao da IDENTIDADE JURIDICA: ambos discutiram o mesmo
+      instituto/dispositivo;
+   d) Demonstracao da SIMILITUDE FATICA: as bases faticas eram substancialmente
+      iguais;
+   e) Conclusao: diante de fatos similares, as duas Cortes decidiram de
+      modo oposto - divergencia configurada.
+2. Nao confiar em "dissidio notorio" - cotejo analitico e exigido mesmo
+   quando a divergencia e de conhecimento publico.
+
+X.11.2 PARADIGMA INADEQUADO (HC, MS, RO, CC, RESCISORIA, TURMA RECURSAL, TNU)
+
+[MODELO-PADRAO STJ]
+"Nao foi comprovada a divergencia jurisprudencial, pois nao podem ser
+apontados como paradigmas acordaos proferidos em sede de habeas corpus,
+mandado de seguranca, recurso ordinario, conflito de competencia ou acao
+rescisoria, por nao apresentarem o mesmo grau de cognicao do recurso
+especial."
+
+[COMPLEMENTAR - TURMA RECURSAL/TNU]
+"Nao foi comprovada a divergencia jurisprudencial, tendo em vista que nao
+cabe a alegacao de dissidio com julgados de Turma Recursal ou da Turma
+Nacional de Uniformizacao - TNU."
+
+[COMPLEMENTAR - SUMULA]
+"Nao foi comprovada a divergencia jurisprudencial, porquanto nao cabe
+alegacao de dissidio com sumula, ainda que vinculante, mas apenas com os
+julgados que lhe deram origem."
+
+[COMPLEMENTAR - DECISAO MONOCRATICA]
+"Nao foi comprovado o dissidio jurisprudencial, tendo em vista que somente
+julgados proferidos por orgaos colegiados sao aptos a comprovacao da
+divergencia, nao servindo como paradigma decisao monocratica de relator."
+
+[LEITURA TATICA] O tribunal identifica que os paradigmas invocados nao sao
+APTOS a comprovar divergencia. Cada tipo de erro exige substituicao:
+- HC/MS/RO/CC/Rescisoria: cognicao diversa;
+- Turma Recursal/TNU: nao sao "tribunal" para fins do art. 105, III, "c" CF;
+- Sumula: invocar os julgados que deram origem, nao a sumula;
+- Decisao monocratica: substituir por acordao colegiado.
+
+[REBATIMENTO]
+1. Identificar qual tipo de paradigma foi rechacado pelo tribunal.
+2. BUSCAR NOVOS PARADIGMAS que sejam ACORDAOS COLEGIADOS proferidos em REsp
+   ou AREsp, de orgao diverso ao do acordao recorrido.
+3. Se a unica fonte eh sumula: identificar os julgados que deram origem a
+   sumula e usa-los como paradigmas (demonstrar este nexo expressamente).
+4. No AREsp, no agravo interno ou em eventual complementacao, substituir
+   paradigmas inadequados por paradigmas APTOS.
+
+===============================================================================
+X.12 PREQUESTIONAMENTO - SUMULA 211/STJ
+===============================================================================
+
+[MODELO-PADRAO STJ]
+"Incide a Sumula 211/STJ, porquanto a questao nao foi examinada pela Corte
+de origem, a despeito da oposicao de Embargos de Declaracao."
+
+[MODELO-PADRAO STJ - AUSENCIA DE PREQUESTIONAMENTO DA TESE]
+"A questao postulada nao foi examinada pela Corte de origem SOB O VIES
+pretendido pela parte recorrente. Assim, mesmo havendo prequestionamento
+numerico do dispositivo, falta o prequestionamento da tese recursal no seu
+enfoque especifico."
+
+[LEITURA TATICA] Tres facetas distintas: (1) Sumula 211/STJ (EDcl opostos
+mas questao nao enfrentada); (2) Sumula 282/STF (questao nao ventilada,
+EDcl nao opostos); (3) tese nao prequestionada (dispositivo debatido, mas
+nao o vies).
+
+[REBATIMENTO]
+1. Se EDcl foram opostos e a questao nao foi enfrentada:
+   - Alegar VIOLACAO DO ART. 1.022 CPC no proprio REsp (indispensavel);
+   - Requerer aplicacao do art. 1.025 CPC (prequestionamento ficto);
+   - O STJ somente aplica o ficto se houver alegacao expressa do 1.022
+     (REsp 1.639.314/MG, 3a Turma, DJe 10/04/2017).
+2. Se EDcl nao foram opostos: Sumula 282/STF - nao ha salvacao, o REsp
+   estara prejudicado quanto a essa tese.
+3. Se o dispositivo foi debatido mas sob outro VIES: demonstrar que o vies
+   do REsp decorre do proprio debate no acordao recorrido (mesma essencia,
+   so com moldura conceitual mais refinada). Invocar PREQUESTIONAMENTO
+   IMPLICITO se o tribunal emitiu juizo de valor sobre o conteudo do
+   dispositivo.
+4. Materia de ordem publica: ATENCAO - mesmo nulidade absoluta e
+   prescricao EXIGEM prequestionamento (AgRg na PET no REsp 1.678.519/SP,
+   5a Turma, DJe 28/02/2020).
+
+===============================================================================
+X.13 SUMULA 283/STF e 126/STJ - FUNDAMENTOS AUTONOMOS NAO ATACADOS
+===============================================================================
+
+[MODELO-PADRAO STJ - SUMULA 283]
+"Incide a Sumula 283/STF, tendo em vista que o acordao recorrido assenta em
+mais de um fundamento suficiente para sua manutencao, e o Recurso Especial
+nao abrange todos eles."
+
+[MODELO-PADRAO STJ - SUMULA 126]
+"Incide a Sumula 126/STJ, tendo em vista que o acordao recorrido assenta em
+fundamentos constitucional e infraconstitucional, qualquer deles suficiente,
+por si so, para a manutencao do julgado, e a parte vencida nao manifestou
+recurso extraordinario."
+
+[LEITURA TATICA] Acordao complexo com mais de um fundamento. A parte so
+atacou um; o outro, intacto, sustenta sozinho o julgado. Resultado: REsp
+prejudicado.
+
+[REBATIMENTO]
+1. MAPEAR TODOS os fundamentos do acordao recorrido ANTES da redacao do
+   REsp.
+2. Classificar: (a) infraconstitucional autonomo? (b) constitucional
+   autonomo? (c) mero reforco?
+3. Interpor REsp atacando TODOS os fundamentos infraconstitucionais
+   autonomos.
+4. Interpor RE paralelo atacando TODOS os fundamentos constitucionais
+   autonomos.
+5. Se o fundamento nao-atacado for MERO REFORCO (nao autonomo):
+   demonstrar, em sede de confrontacao, que se trata de obiter dictum,
+   nao de ratio decidendi autonoma.
+
+===============================================================================
+X.14 AREsp - HIPOTESES DE ERRO GROSSEIRO
+===============================================================================
+
+[MODELO-PADRAO STJ]
+"Nao se conhece do AREsp, porquanto interposto contra decisao que
+UNICAMENTE nega seguimento a recurso especial em razao do rito dos recursos
+repetitivos, hipotese em que o recurso adequado seria o agravo interno do
+art. 1.021 CPC, configurando-se manifesto descabimento por erro grosseiro."
+
+[LEITURA TATICA] Confusao entre AREsp (art. 1.042 - contra inadmissao) e
+agravo interno (art. 1.021 - contra negativa de seguimento por repetitivo).
+Erro grosseiro = nao se aplica fungibilidade.
+
+[REBATIMENTO] Nao ha rebatimento possivel a erro grosseiro. Orientacao
+PREVENTIVA:
+1. Ler a decisao do presidente/vice-presidente atentamente.
+2. Verificar se a decisao e:
+   a) NEGATIVA DE SEGUIMENTO por aplicacao de repetitivo (art. 1.030, I CPC)
+      -> agravo interno para o orgao especial do TJ/TRF;
+   b) INADMISSAO por falta de requisito recursal (art. 1.030, V CPC) ->
+      AREsp para o STJ;
+   c) DECISAO MISTA (alguns capitulos por obice, outros por repetitivo) ->
+      DUPLA IMPUGNACAO: agravo interno + AREsp, interpostos concomitantemente
+      (Enunciado 77 da I Jornada de Processo Civil do CJF); processa-se
+      primeiro o agravo interno.
+
+===============================================================================
+X.15 ROTEIRO GERAL DE CONFRONTACAO DE DECISAO NEGATIVA DO TJ/TRF
+===============================================================================
+
+PASSO 1 - IDENTIFICAR o modelo aplicado pelo TJ/TRF (comparar o texto da
+decisao negativa com os modelos desta Parte X).
+
+PASSO 2 - CLASSIFICAR o tipo de decisao:
+a) Inadmissao por juizo de admissibilidade (obices formais/materiais) ->
+   AREsp (art. 1.042 CPC);
+b) Negativa de seguimento por juizo de conformidade (aplicacao de
+   repetitivo) -> agravo interno (art. 1.021 CPC);
+c) Sobrestamento -> agravo interno ou simples peticao (arts. 1.036 e 1.037
+   CPC);
+d) Decisao mista -> dupla impugnacao concomitante.
+
+PASSO 3 - REBATIR O NUCLEO DO MODELO:
+a) Identificar os elementos-chave do modelo-padrao;
+b) Construir contra-argumento para cada elemento;
+c) Usar o texto do proprio REsp original para demonstrar que o modelo nao
+   se aplica.
+
+PASSO 4 - REBATER TODOS OS FUNDAMENTOS da decisao (Sumula 283/STF):
+Se o tribunal usou DOIS obices (ex: Sumulas 7 e 5 do STJ conjugadas), ambos
+devem ser refutados. Se apenas um e refutado, o outro sustenta sozinho a
+inadmissao.
+
+PASSO 5 - USAR A MITIGACAO JURISPRUDENCIAL quando aplicavel:
+Muitos obices tem MITIGACOES (prequestionamento numerico ficto, permissivo
+constitucional por demonstracao inequivoca, valores irrisorios/excessivos,
+cerceamento de defesa como questao juridica). Invocar expressamente.
+
+PASSO 6 - ENQUADRAR EM OPORTUNIDADE ESTRATEGICA:
+Verificar se o caso permite:
+a) Distinguishing (Secao 11.1 Custom Instructions);
+b) Overruling (tese de superacao do entendimento anterior);
+c) Prevalencia constitucional (RE paralelo ao STF);
+d) Reclassificacao como questao de direito (Sumula 7 escapada via as 6
+   hipoteses).
+
+===============================================================================
+FIM - MANUAL STJ EXTRATO OPERACIONAL PARA O ADVOGADO V1.4
+===============================================================================
+
+METADADOS DE CONDENSACAO:
+- Arquivo criado em: 23/04/2026 (V1.0)
+- V1.1 (23/04/2026): 9 complementos pos primeira auditoria.
+- V1.2 (23/04/2026): 12 complementos adicionais (Sumulas 518, 280, 203, 115;
+  primazia do juizo de conformidade; lista dos 13 itens do preparo; logica
+  dos paragrafos do art. 1.007 CPC; etc.).
+- V1.3 (23/04/2026): REVISAO FUNDAMENTAL com (a) criacao da PARTE X - Banco
+  de Modelos de Decisao do STJ para confrontacao em AREsp e agravo interno
+  (15 modelos-padrao com leitura tatica e rebatimento); (b) explicitacao
+  da PLURIMATERIALIDADE do extrato.
+- V1.4 (23/04/2026): SEGUNDA REVISAO ESTRUTURAL com:
+  (a) Criacao da PARTE 0 - Metodologia e Roteiro de Analise do REsp em 8
+      passos (diagnostico, conformidade, admissibilidade, instrumentos
+      argumentativos, prequestionamento, blindagem, acompanhamento,
+      casos especiais por area do direito);
+  (b) Criacao da seção I.2 - Processamento inicial do REsp no tribunal de
+      origem (competencia, contrarrazoes com timing estrategico, EDcl da
+      parte contraria, pedido de efeito suspensivo incidental);
+  (c) Criacao da seção VI.4 - Recursos Repetitivos, RRC, IRDR e Tema de
+      Repercussao Geral (tema de repercussao geral aplicado ao REsp por
+      pratica consolidada do STJ; IRDR como oportunidade de RRC; como
+      maximizar chances de selecao como RRC; sobrestamento com
+      impossibilidade de cisao; pos-julgamento do acordao paradigma art.
+      1.040 CPC; modulacao de efeitos);
+  (d) Expansao da secao III.8.1 com paradigmas adicionais inadmitidos
+      (acordaos do STF em materia constitucional; julgados TST/TRT;
+      decisoes administrativas como TCU e processamento de precatorios).
+- Fonte primaria: Manual STJ/FONAVICE, Versao 1.0, Julho/2025, 122 paginas
+- Metodo: extracao do conteudo operacional para o advogado em TODAS as
+  areas do direito, incluindo obices de admissibilidade (blindagem
+  preventiva), modelos-padrao de decisao negativa (confrontacao reativa)
+  e metodologia completa de analise e redacao do REsp.
+- Reducao: de aproximadamente 585 KB (com duplicacao pdfplumber) para
+  aproximadamente 137 KB (V1.4 completa).
+- Principio: anti-supressao do que importa; eliminacao do que e
+  estritamente institucional/interno do juizo de origem.
+===============================================================================

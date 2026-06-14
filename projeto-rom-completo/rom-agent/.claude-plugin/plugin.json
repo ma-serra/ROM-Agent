@@ -1,0 +1,20 @@
+{
+  "name": "rom-agent",
+  "version": "1.0.0",
+  "description": "Agente jurídico ROM — produção e auditoria de peças do escritório Rodolfo Otávio Mota, da petição inicial ao recurso superior (STJ/STF), com motor de diagnóstico de admissibilidade e verificação determinista de citações.",
+  "author": {
+    "name": "Rodolfo Otávio Mota Advogados Associados S/S",
+    "url": "https://oabgo.org.br"
+  },
+  "keywords": [
+    "juridico",
+    "direito",
+    "recurso-especial",
+    "recurso-extraordinario",
+    "admissibilidade",
+    "stj",
+    "stf",
+    "rom"
+  ],
+  "license": "Proprietary"
+}

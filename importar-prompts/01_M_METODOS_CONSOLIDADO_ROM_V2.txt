@@ -1,0 +1,1287 @@
+METODOS OPERACIONAIS CONSOLIDADOS - SISTEMA ROM
+===============================================================================
+ARQUIVO:   01_M_METODOS_CONSOLIDADO_ROM.txt
+VERSAO:    2.0 (Consolidacao + Protocolo Universal de Jurisprudencia)
+DATA:      11/05/2026
+SISTEMA:   ROM - Rodolfo Otavio Mota Advogados Associados S/S
+ESCOPO:    Unificacao metodologica dos arquivos-metodo do KB +
+           Protocolo Universal de Jurisprudencia (Validador Automatico)
+
+ARQUIVOS ORIGINARIOS CONSOLIDADOS NESTE DOCUMENTO:
+- 02_M_PRAZOS_PRESCRICAO.txt                (V3.0)
+- 03_M_TECNICA_HIERARQUICA__1_.txt          (V3.0)
+- 04_M_FERIADOS_PRAZOS__1_.txt              (V3.0)
+- 05_M_PESQUISA_TRIBUNAIS.txt               (V3.0)
+- 06_M_ANALISE_PECAS_PARADIGMAS.txt         (V1.0)
+- Prompt Mestre Consolidado KB              (V1.0) - incorporado em PARTE VI
+
+ALTERACOES DA V2.0:
+- Incorporacao integral do Prompt Mestre Consolidado (Protocolo Universal +
+  Validador Automatico de Jurisprudencia) como PARTE VI.
+- Fusao com as regras ROM preexistentes em protocolo unico e harmonizado.
+- Resolucao das tensoes tecnicas (negrito acrescido, fail-safe versus
+  fundamentacao triplice).
+- Nenhuma supressao do conteudo anterior.
+
+PRINCIPIO DE CONSOLIDACAO:
+Todo conteudo substantivo dos cinco arquivos originarios foi integralmente
+preservado neste documento. A consolidacao eliminou apenas duplicacoes
+literais entre os arquivos (p.ex., referencia a prazo em dobro presente em
+02_M e em 04_M), organizando o material em cinco partes tematicas. Nenhuma
+regra, tabela, dispositivo, tecnica ou modelo foi suprimido. A V2.0 acrescenta
+a PARTE VI, sem qualquer alteracao das Partes I a V.
+
+===============================================================================
+                              SUMARIO
+===============================================================================
+
+PARTE I   - PRECLUSAO, PRESCRICAO E DECADENCIA
+            (origem: 02_M_PRAZOS_PRESCRICAO)
+
+PARTE II  - FERIADOS, CONTAGEM DE PRAZOS E PRAZO EM DOBRO
+            (origem: 04_M_FERIADOS_PRAZOS)
+
+PARTE III - TECNICA REDACIONAL HIERARQUICA
+            (origem: 03_M_TECNICA_HIERARQUICA)
+
+PARTE IV  - PESQUISA EM TRIBUNAIS REGIONAIS
+            (origem: 05_M_PESQUISA_TRIBUNAIS)
+
+PARTE V   - ANALISE DE PECAS PARADIGMAS PARA KB
+            (origem: 06_M_ANALISE_PECAS_PARADIGMAS)
+
+PARTE VI  - PROTOCOLO UNIVERSAL DE JURISPRUDENCIA E VALIDADOR AUTOMATICO
+            (origem: Prompt Mestre Consolidado KB - incorporado em 11/05/2026)
+
+===============================================================================
+===============================================================================
+PARTE I - PRECLUSAO, PRESCRICAO E DECADENCIA
+===============================================================================
+===============================================================================
+
+===============================================================================
+I.1 PRECLUSAO PROCESSUAL
+===============================================================================
+
+MODALIDADES:
+
+TEMPORAL: Perda pelo decurso do prazo
+- Data intimacao + prazo legal - feriados = data final
+- Ferias forenses: 20/12 a 20/01
+- Prazo dobro: litisconsortes, Fazenda, Defensoria
+
+LOGICA: Perda por ato incompativel
+- Recorrer impede alegar coisa julgada
+- Contestar impede alegar revelia
+- Produzir prova impede alegar cerceamento
+
+CONSUMATIVA: Perda pela pratica valida do ato
+- Recurso interposto nao pode repetir
+- Excecao: embargos declaracao, docs supervenientes
+
+===============================================================================
+I.2 DECADENCIA
+===============================================================================
+
+CARACTERISTICAS:
+- NAO interrompe nem suspende (regra)
+- Conhecida de oficio (art. 210 CC)
+- Atinge direito material
+- Conta da AQUISICAO do direito
+
+PRAZOS PRINCIPAIS:
+
+CIVIL:
+| DIREITO                    | PRAZO   | FUNDAMENTO      |
+|----------------------------|---------|-----------------|
+| Anulacao negocio juridico  | 4 anos  | Art. 178 CC     |
+| Anulacao casamento erro    | 4 anos  | Art. 1.559,I CC |
+| Revogacao doacao           | 1 ano   | Art. 559 CC     |
+
+CONSUMIDOR:
+| DIREITO                    | PRAZO    | FUNDAMENTO    |
+|----------------------------|----------|---------------|
+| Reclamar vicio aparente    | 30/90 d  | Art. 26 CDC   |
+| Reclamar vicio oculto      | 30/90 d  | Art. 26,par.3 |
+30 dias: nao duraveis / 90 dias: duraveis
+
+ADMINISTRATIVO:
+| DIREITO                    | PRAZO   | FUNDAMENTO        |
+|----------------------------|---------|-------------------|
+| Revisao ato admin          | 5 anos  | Art. 54 Lei 9.784 |
+
+===============================================================================
+I.3 PRESCRICAO CIVIL
+===============================================================================
+
+CARACTERISTICAS:
+- PODE interromper (art. 202 CC)
+- PODE suspender (arts. 197-199 CC)
+- NAO conhecida oficio (art. 219,par.5 CPC)
+  Excecao: Fazenda Publica (Sum. 409 STF)
+- PODE renunciar apos consumada (art. 191 CC)
+- Conta da VIOLACAO do direito
+
+PRAZO GERAL: 10 anos (art. 205 CC)
+
+PRAZOS ESPECIAIS (art. 206 CC):
+| PRETENSAO                  | PRAZO   | FUNDAMENTO    |
+|----------------------------|---------|---------------|
+| Reparacao civil            | 3 anos  | par.3, V      |
+| Cobranca dividas liquidas  | 5 anos  | par.5, I      |
+| Enriquecimento sem causa   | 3 anos  | par.3, IV     |
+| Aluguel/acessorios         | 3 anos  | par.3, I      |
+| Hospedagem/alimentacao     | 1 ano   | par.1, I      |
+| Profissionais liberais     | 5 anos  | par.5, II     |
+| Prestacao vencida          | 3 anos  | par.3, III    |
+| Seguro                     | 1 ano   | par.1, II     |
+
+CAUSAS INTERRUPTIVAS (art. 202 CC):
+- I: Despacho citatorio
+- II: Protesto judicial
+- III: Apresentacao titulo falencia
+- IV: Ato judicial inequivoco
+- V: Ato extrajudicial inequivoco
+- VI: Qualquer ato reconhecimento devedor
+
+CAUSAS SUSPENSIVAS (art. 197 CC):
+- Conjuges na constancia casamento
+- Ascendentes/descendentes durante poder familiar
+- Tutelados/curatelados durante tutela/curatela
+- Contra absolutamente incapazes
+
+===============================================================================
+I.4 PRESCRICAO PENAL
+===============================================================================
+
+TABELA PRAZOS (art. 109 CP):
+| PENA MAXIMA   | PRAZO    |
+|---------------|----------|
+| < 1 ano       | 3 anos   |
+| 1-2 anos      | 4 anos   |
+| 2-4 anos      | 8 anos   |
+| 4-8 anos      | 12 anos  |
+| 8-12 anos     | 16 anos  |
+| > 12 anos     | 20 anos  |
+
+REDUCAO METADE (art. 115 CP):
+- Menor 21 anos na data do FATO
+- Maior 70 anos na data da SENTENCA
+
+CAUSAS INTERRUPTIVAS (art. 117 CP):
+- Recebimento denuncia/queixa
+- Pronuncia
+- Decisao confirmatoria pronuncia
+- Publicacao sentenca/acordao condenatorio recorrivel
+
+MODALIDADES:
+ABSTRATA: Pena maxima em abstrato (antes sentenca)
+RETROATIVA: Pena concreta (entre marcos)
+INTERCORRENTE: Pena concreta (apos sentenca 1a instancia)
+EXECUTORIA: Pena concreta (apos transito julgado)
+
+===============================================================================
+I.5 PRESCRICAO TRABALHISTA
+===============================================================================
+
+CLT art. 7, XXIX CF:
+- Prazo: 5 anos (durante contrato)
+- Limite: 2 anos apos extincao contrato
+
+FGTS: 5 anos (ARE 709.212 STF)
+
+===============================================================================
+I.6 PRESCRICAO TRIBUTARIA
+===============================================================================
+
+CTN:
+| TIPO               | PRAZO   | FUNDAMENTO    |
+|--------------------|---------|---------------|
+| Constituicao       | 5 anos  | Art. 173 CTN  |
+| Cobranca           | 5 anos  | Art. 174 CTN  |
+| Repeticao indebito | 5 anos  | Art. 168 CTN  |
+
+===============================================================================
+I.7 PRESCRICAO ADMINISTRATIVA
+===============================================================================
+
+ACAO CONTRA FAZENDA:
+- Indenizatoria: 5 anos (Decreto 20.910/32)
+- Servidor publico: 5 anos
+
+FAZENDA CONTRA PARTICULAR:
+- Punitiva: 5 anos (Lei 9.873/99)
+- Ressarcimento erario: IMPRESCRITIVEL se ilicito doloso (RE 852.475 STF)
+
+===============================================================================
+I.8 CALCULO PRATICO
+===============================================================================
+
+MODELO:
+Data violacao/fato: [DD/MM/AAAA]
++ Prazo prescricional: [X anos]
+- Causas suspensao: [periodo]
+= Data limite: [DD/MM/AAAA]
+
+Interrupcao ocorreu em: [DD/MM/AAAA]
+Recomeca contagem: [DD/MM/AAAA]
+
+Acao ajuizada em: [DD/MM/AAAA]
+Status: [ ] Tempestivo [ ] Prescrito
+
+===============================================================================
+===============================================================================
+PARTE II - FERIADOS, CONTAGEM DE PRAZOS E PRAZO EM DOBRO
+===============================================================================
+===============================================================================
+
+===============================================================================
+II.1 FUNDAMENTO LEGAL
+===============================================================================
+
+Art. 219, CPC: "Na contagem de prazo em dias, estabelecido
+por lei ou pelo juiz, computar-se-ao somente os dias uteis."
+
+DIAS UTEIS = dias com expediente forense
+EXCLUEM-SE: sabados, domingos, feriados
+
+FERIADOS A CONSIDERAR:
+1. Nacionais (Lei 662/49, Lei 6.802/80)
+2. Estaduais (legislacao estadual)
+3. MUNICIPAIS (legislacao municipal) - CRITICO!
+
+===============================================================================
+II.2 METODOLOGIA DE VERIFICACAO
+===============================================================================
+
+PASSO 1: IDENTIFICAR COMARCA/MUNICIPIO
+- Cabecalho da peticao inicial
+- Numero do processo (segmento comarca)
+- Exemplo: 0000000-00.2024.8.09.0051
+  - 8.09 = Justica Estadual Goias
+  - 0051 = Comarca de Goiania
+
+PASSO 2: PESQUISAR FERIADOS MUNICIPAIS
+web_search:
+- "[Municipio] feriados municipais [ano]"
+- "Prefeitura [Municipio] decreto feriados [ano]"
+
+FONTES OFICIAIS (prioridade):
+1. Site oficial Prefeitura
+2. Diario Oficial do Municipio
+3. Camara Municipal
+
+PASSO 3: OBTER DECRETO MUNICIPAL
+web_search:
+- "Decreto Municipal [Municipio] n. [X]/[ano] feriados"
+
+Salvar como: Decreto_[Municipio]_[Numero]_[Ano]_Feriados.pdf
+
+PASSO 4: ANEXAR COMO PROVA
+Fundamentar na peticao e anexar decreto.
+
+===============================================================================
+II.3 FERIADOS MUNICIPAIS GOIAS (PRINCIPAIS)
+===============================================================================
+
+| MUNICIPIO    | DATA    | MOTIVO                    |
+|--------------|---------|---------------------------|
+| Goiania      | 24/out  | Dia do Comerciario        |
+| Goiania      | var.    | Aniversario cidade        |
+| Anapolis     | 31/jul  | Aniversario cidade        |
+| Aparecida GO | 08/set  | Padroeira N.Sra.Aparecida |
+
+ATENCAO: Feriados podem mudar por decreto anual!
+SEMPRE verificar decreto do ano corrente.
+
+===============================================================================
+II.4 FERIADOS NACIONAIS
+===============================================================================
+
+| DATA    | FERIADO                        |
+|---------|--------------------------------|
+| 01/jan  | Confraternizacao Universal     |
+| Var.    | Carnaval (nao oficial, pont.)  |
+| Var.    | Sexta-feira Santa              |
+| 21/abr  | Tiradentes                     |
+| 01/mai  | Dia do Trabalho                |
+| Var.    | Corpus Christi                 |
+| 07/set  | Independencia                  |
+| 12/out  | Nossa Senhora Aparecida        |
+| 02/nov  | Finados                        |
+| 15/nov  | Proclamacao Republica          |
+| 25/dez  | Natal                          |
+
+===============================================================================
+II.5 FERIAS FORENSES
+===============================================================================
+
+Art. 220, CPC: Suspensao prazos
+Periodo: 20 de dezembro a 20 de janeiro
+Nao correm prazos processuais.
+
+===============================================================================
+II.6 MODELO DE CALCULO
+===============================================================================
+
+Data intimacao: [DD/MM/AAAA]
+Dia inicial: [proximo dia util]
++ Prazo legal: [X dias uteis]
+- Sabados/domingos: [descontar]
+- Feriados nacionais: [listar]
+- Feriados estaduais: [listar]
+- Feriados municipais: [listar]
+- Ferias forenses: [se aplicavel]
+= Data final: [DD/MM/AAAA]
+
+===============================================================================
+II.7 FUNDAMENTACAO NA PETICAO
+===============================================================================
+
+"Considerando que o dia [DD/MM/AAAA] e feriado municipal
+em [Municipio/Comarca], conforme Decreto Municipal n.
+[XXX/AAAA] (Anexo [X]), o prazo de [Y] dias uteis iniciado
+em [DD/MM/AAAA] tem termino em [DD/MM/AAAA], nos termos
+do art. 219 do CPC.
+
+Anexa-se o Decreto Municipal n. [XXX/AAAA] como prova do
+feriado municipal (doc. [X])."
+
+===============================================================================
+II.8 PRAZO EM DOBRO
+===============================================================================
+
+QUEM TEM DIREITO:
+- Fazenda Publica (art. 183 CPC)
+- Ministerio Publico (art. 180 CPC)
+- Defensoria Publica (art. 186 CPC)
+- Litisconsortes com advogados diferentes (art. 229 CPC)
+  (apenas processo fisico)
+
+CALCULO:
+Prazo original x 2 = prazo em dobro
+Exemplo: 15 dias uteis x 2 = 30 dias uteis
+
+===============================================================================
+===============================================================================
+PARTE III - TECNICA REDACIONAL HIERARQUICA
+===============================================================================
+===============================================================================
+
+===============================================================================
+III.1 PRINCIPIO FUNDAMENTAL
+===============================================================================
+
+ORDEM DE ARGUMENTACAO (todas as pecas defensivas):
+Do processual ao material
+Do formal ao substancial
+Do mais grave ao menos grave
+
+LOGICA:
+1. PRELIMINARES (questoes processuais)
+   (rejeitadas)
+2. PREJUDICIAIS DE MERITO (prescricao, pagamento)
+   (rejeitadas)
+3. MERITO (direito material)
+
+===============================================================================
+III.2 ESTRUTURA PADRAO OBRIGATORIA
+===============================================================================
+
+I. FATOS ou SINTESE RECURSAL
+   - Narrativa cronologica objetiva
+
+II. PRELIMINARES
+   A. LATO SENSU (questoes processuais amplas)
+   B. STRICTO SENSU (questoes processuais especificas)
+
+III. PREJUDICIAIS DE MERITO
+   A. LATO SENSU (materia que obsta merito - ampla)
+   B. STRICTO SENSU (materia que obsta merito - especifica)
+
+IV. MERITO (subsidiariamente)
+   - Analise do direito material
+
+===============================================================================
+III.3 NOMENCLATURA POR TIPO DE PECA
+===============================================================================
+
+PECAS 1o GRAU: "I. DOS FATOS"
+- Narrativa cronologica
+- Sem valoracoes juridicas prematuras
+- Documentos referenciados
+
+PECAS RECURSAIS: "I. SINTESE DA CONTROVERSIA"
+- Historico processual
+- Decisao recorrida (transcrever dispositivo)
+- Fundamentos da decisao
+- Razoes do recurso
+
+RECURSOS SUPERIORES: "I. SINTESE DA CONTROVERSIA FEDERAL"
+- Processo originario
+- Sentenca 1o grau
+- Acordao recorrido
+- Questao federal/constitucional
+
+===============================================================================
+III.4 PRELIMINARES
+===============================================================================
+
+LATO SENSU:
+- Incompetencia absoluta (art. 64 CPC)
+- Ilegitimidade de parte (art. 337, XI CPC)
+- Falta interesse de agir (art. 337, XI CPC)
+- Coisa julgada (art. 337, VII CPC)
+- Litispendencia (art. 337, VI CPC)
+- Perempacao (art. 337, V CPC)
+- Conexao/continencia (art. 337, VIII CPC)
+- Incapacidade parte/defeito representacao (art. 337, IX CPC)
+- Convencao arbitragem (art. 337, X CPC)
+- Ausencia caucao (art. 337, XII CPC)
+- Indevida concessao gratuidade (art. 337, XIII CPC)
+
+STRICTO SENSU (Nulidades):
+- Citacao invalida
+- Cerceamento defesa
+- Fundamentacao deficiente
+- Prova ilicita
+
+===============================================================================
+III.5 PREJUDICIAIS DE MERITO
+===============================================================================
+
+LATO SENSU:
+- Prescricao (art. 487, II CPC)
+- Decadencia (art. 487, II CPC)
+- Pagamento
+- Novacao
+- Compensacao
+- Confusao
+- Remissao
+- Transacao
+- Acordo judicial
+
+STRICTO SENSU:
+- Quitacao especifica
+- Termo de acordo
+- Sentenca trabalhista
+
+===============================================================================
+III.6 MERITO
+===============================================================================
+
+ESTRUTURA INTERNA:
+IV. DO MERITO (subsidiariamente)
+   1. [Tema principal]
+      a) Fundamento fatico
+      b) Fundamento juridico
+      c) Jurisprudencia
+   2. [Tema secundario]
+   3. [Tema subsidiario]
+
+TECNICA: Cada argumento deve conter:
+- Premissa fatica (o que aconteceu)
+- Fundamento legal (qual norma)
+- Precedentes (web_search verificado)
+- Conclusao (qual consequencia)
+
+===============================================================================
+III.7 APLICACAO POR TIPO DE PECA
+===============================================================================
+
+CONTESTACAO:
+I. DOS FATOS
+II. DAS PRELIMINARES
+III. DAS PREJUDICIAIS DE MERITO
+IV. DO MERITO (subsidiariamente)
+V. DOS PEDIDOS
+
+IMPUGNACAO AO CUMPRIMENTO:
+I. DA SINTESE
+II. DAS PRELIMINARES
+III. DAS PREJUDICIAIS
+IV. DO MERITO
+V. DOS PEDIDOS
+
+APELACAO:
+I. SINTESE DA CONTROVERSIA
+II. DAS RAZOES DO INCONFORMISMO
+   A. Das Preliminares
+   B. Do Merito
+III. DO PREQUESTIONAMENTO
+IV. DOS PEDIDOS
+
+RECURSO ESPECIAL:
+I. SINTESE DA CONTROVERSIA FEDERAL
+II. DA ADMISSIBILIDADE
+III. DAS RAZOES DO RECURSO
+   A. Da violacao [art. X]
+   B. Do dissidio jurisprudencial
+IV. DO PREQUESTIONAMENTO
+V. DOS PEDIDOS
+
+===============================================================================
+III.8 DICAS PRATICAS
+===============================================================================
+
+LINGUAGEM:
+- "Em sede de preliminar..."
+- "Prejudicialmente ao merito..."
+- "Subsidiariamente, caso superadas..."
+- "Ad argumentandum tantum..."
+- "Por cautela processual..."
+
+TRANSICOES:
+- "Superadas as preliminares, passa-se ao merito."
+- "Caso nao acolhidas as prejudiciais..."
+- "Ainda que assim nao se entenda..."
+
+===============================================================================
+===============================================================================
+PARTE IV - PESQUISA EM TRIBUNAIS REGIONAIS
+===============================================================================
+===============================================================================
+
+===============================================================================
+IV.1 PRINCIPIO
+===============================================================================
+
+Pesquisar TODOS os tribunais competentes, nao apenas STJ/STF/TJGO.
+
+FINALIDADES:
+- Demonstrar uniformidade/divergencia
+- Fundamentar recursos
+- Fortalecer argumentacao
+- Evidenciar tendencias
+
+===============================================================================
+IV.2 FLUXOGRAMA DE COMPETENCIA
+===============================================================================
+
+MATERIA TRABALHISTA (CLT) -> TRT
+  Goias = TRT18
+
+MATERIA ELEITORAL -> TRE
+
+MATERIA MILITAR -> TJM/STM
+
+COMPETENCIA FEDERAL (art. 109 CF) -> TRF
+  - Uniao, autarquias, empresas publicas federais
+  - Tratados internacionais
+  - Crimes federais
+  - Previdenciario (INSS)
+  Goias = TRF1
+
+COMPETENCIA ESTADUAL (residual) -> TJ
+  Goias = TJGO (prioritario)
+
+===============================================================================
+IV.3 TRFs - DISTRIBUICAO GEOGRAFICA
+===============================================================================
+
+TRF1 (Brasilia) - 13 estados + DF
+Jurisdicao: AC, AP, AM, BA, DF, GO, MA, MT, MG, PA, PI, RO, RR, TO
+Site: https://portal.trf1.jus.br/
+Jurisprudencia: https://portal.trf1.jus.br/portaltrf1/jurisprudencia.htm
+*** PRIORITARIO PARA GOIAS ***
+
+TRF2 (Rio de Janeiro)
+Jurisdicao: RJ, ES
+Site: https://www10.trf2.jus.br/
+
+TRF3 (Sao Paulo)
+Jurisdicao: SP, MS
+Site: https://www.trf3.jus.br/
+*** Maior volume de processos federais ***
+
+TRF4 (Porto Alegre)
+Jurisdicao: RS, PR, SC
+Site: https://www.trf4.jus.br/
+*** Jurisprudencia inovadora ***
+
+TRF5 (Recife)
+Jurisdicao: AL, CE, PB, PE, RN, SE
+Site: https://www.trf5.jus.br/
+
+TRF6 (Belo Horizonte) - instalado 2022
+Jurisdicao: MG
+Site: https://portal.trf6.jus.br/
+
+===============================================================================
+IV.4 TRTs - JUSTICA DO TRABALHO
+===============================================================================
+
+TRT18 (Goiania) - PRIORITARIO GOIAS
+Site: https://www.trt18.jus.br/
+Jurisdicao: Goias
+
+TRT2 (Sao Paulo) - Maior volume
+TRT3 (Minas Gerais)
+TRT4 (Rio Grande do Sul)
+TRT5 (Bahia)
+
+===============================================================================
+IV.5 TJs - JUSTICA ESTADUAL
+===============================================================================
+
+PRIORITARIOS PARA GOIAS:
+TJGO: https://www.tjgo.jus.br/jurisprudencia/
+TJSP: https://esaj.tjsp.jus.br/cjsg/
+TJMG: https://www5.tjmg.jus.br/jurisprudencia/
+TJRS: https://www.tjrs.jus.br/site/jurisprudencia/
+
+===============================================================================
+IV.6 METODOLOGIA DE PESQUISA
+===============================================================================
+
+PASSO 1: IDENTIFICAR TRIBUNAL COMPETENTE
+- Materia (trabalhista, federal, estadual)
+- Localizacao geografica
+- Se Goias: TRF1, TRT18 ou TJGO
+
+PASSO 2: web_search
+Sintaxe:
+"[TRIBUNAL] [tema] [dispositivo legal]"
+"site:[tribunal].jus.br [assunto] jurisprudencia"
+
+Exemplos:
+"TRF1 aposentadoria especial EPI"
+"site:trt18.jus.br dano moral assedio"
+"TJGO indenizacao dano moral valor"
+
+PASSO 3: ACESSAR SITE DO TRIBUNAL
+Usar URLs acima para pesquisa direta.
+
+PASSO 4: VERIFICAR PRECEDENTE
+- Numero do processo
+- Data do julgamento
+- Relator
+- Orgao julgador
+- Ementa
+
+===============================================================================
+IV.7 FORMATO DE CITACAO
+===============================================================================
+
+TRF:
+(TRF1, AC 0000000-00.0000.4.01.0000, Rel. Des. Fed. NOME,
+Xa Turma, j. DD/MM/AAAA, e-DJF1 DD/MM/AAAA)
+
+TRT:
+(TRT18, RO 0000000-00.0000.5.18.0000, Rel. Des. NOME,
+Xa Turma, j. DD/MM/AAAA, DEJT DD/MM/AAAA)
+
+TJ:
+(TJGO, AC 0000000-00.0000.8.09.0000, Rel. Des. NOME,
+Xa Camara Civel, j. DD/MM/AAAA, DJe DD/MM/AAAA)
+
+===============================================================================
+IV.8 SITES UTEIS
+===============================================================================
+
+TRIBUNAIS SUPERIORES:
+STF: https://portal.stf.jus.br/jurisprudencia/
+STJ: https://scon.stj.jus.br/SCON/
+TST: https://jurisprudencia.tst.jus.br/
+
+PESQUISA UNIFICADA:
+JusBrasil: https://www.jusbrasil.com.br/jurisprudencia/
+Conjur: https://www.conjur.com.br/
+
+===============================================================================
+===============================================================================
+PARTE V - ANALISE DE PECAS PARADIGMAS PARA KB
+===============================================================================
+===============================================================================
+
+OBJETIVO: Documentar pecas paradigmas do escritorio de forma estruturada
+para que o Claude possa compreender e replicar o estilo redacional.
+
+===============================================================================
+V.1 ESTRUTURA DO ARQUIVO DE ANALISE
+===============================================================================
+
+Cada peca paradigma deve gerar um arquivo .txt no formato:
+
+PARADIGMA_ANALISE_[TIPO_PECA]_[AREA].txt
+
+Exemplo: PARADIGMA_ANALISE_APELACAO_CIVEL_DISTRIBUICAO.txt
+
+===============================================================================
+V.2 SECOES OBRIGATORIAS DA ANALISE
+===============================================================================
+
+-----------------------------------------------------------
+SECAO 1: METADADOS
+-----------------------------------------------------------
+TIPO_PECA: [Nome completo do tipo de peca]
+AREA_DIREITO: [Civil/Criminal/Empresarial/Trabalhista/etc]
+TRIBUNAL_DESTINO: [TJGO/STJ/STF/TRF/etc]
+COMPLEXIDADE: [Alta/Media/Baixa]
+TOTAL_PAGINAS: [numero]
+CASO_REFERENCIA: [descricao breve do caso]
+
+-----------------------------------------------------------
+SECAO 2: MAPA ESTRUTURAL
+-----------------------------------------------------------
+Documentar a estrutura hierarquica EXATA da peca:
+
+[PAGINA_INICIO-PAGINA_FIM] TITULO_SECAO
+  [PAGINA] SUBTITULO
+    [PAGINA] ITEM
+
+Exemplo:
+[1-1] PECA DE INTERPOSICAO
+[2-17] RAZOES DE APELACAO
+  [2-2] 1. PRESSUPOSTOS DE ADMISSIBILIDADE
+    [2] 1.1. DA TEMPESTIVIDADE
+    [3] 1.2. DO PREPARO
+  [3-4] 2. SINTESE DOS FATOS
+  [5-17] 3. FUNDAMENTACAO
+    [5-6] 3.1. Negativa Prestacao Jurisdicional 1
+    [6-8] 3.2. Resilicao Unilateral
+    [...]
+[17-18] 4. REQUERIMENTO FINAL
+
+-----------------------------------------------------------
+SECAO 3: PADROES DE ABERTURA
+-----------------------------------------------------------
+Documentar LITERALMENTE como cada secao inicia:
+
+ENDERECAMENTO:
+"EXCELENTISSIMA JUIZA DE DIREITO DA [VARA] DA COMARCA DE [CIDADE]"
+
+QUALIFICACAO:
+"[NOME], devidamente qualificada nos autos do processo em epigrafe,
+por intermedio de seus advogados infra-assinados, vem,
+respeitosamente, a presenca de Vossa Excelencia..."
+
+RAZOES (VOCATIVO):
+"Egregio Tribunal,
+Colenda Camara,
+Emeritos Desembargadores!"
+
+TRANSICOES ENTRE SECOES:
+- "Inicialmente, e de suma importancia destacar..."
+- "Sem embargo, a analise objetiva..."
+- "Neste sentido, por negar vigencia ao..."
+- "Por sua relevancia para o merito recursal..."
+
+-----------------------------------------------------------
+SECAO 4: PADROES DE ARGUMENTACAO
+-----------------------------------------------------------
+Documentar a TECNICA ARGUMENTATIVA utilizada:
+
+ESTRUTURA BASE DE ARGUMENTO:
+1. PREMISSA FATICA: [descricao do fato/prova]
+2. PREMISSA NORMATIVA: [dispositivo legal]
+3. SUBSUNCAO: [aplicacao da norma ao fato]
+4. CONCLUSAO: [consequencia juridica pretendida]
+
+MODELO DE PARAGRAFO ARGUMENTATIVO:
+"[Conectivo inicial], [fato/prova] [verbo de ligacao] [fundamento legal],
+[desenvolvimento]. [Citacao de precedente]. [Conclusao parcial]."
+
+PADRAO DE CITACAO DE PRECEDENTES:
+"[TRIBUNAL], [TIPO RECURSO] n. [NUMERO], rel. [RELATOR],
+[ORGAO JULGADOR], [DATA]."
+
+PADRAO DE CITACAO DE DISPOSITIVO LEGAL:
+"Art. [NUMERO], [INCISOS/PARAGRAFOS], do [DIPLOMA LEGAL]"
+
+-----------------------------------------------------------
+SECAO 5: VOCABULARIO CARACTERISTICO
+-----------------------------------------------------------
+Listar expressoes e vocabulario ESPECIFICO da peca:
+
+CONECTIVOS UTILIZADOS:
+- [lista de conectivos encontrados]
+
+EXPRESSOES JURIDICAS:
+- [lista de expressoes tecnicas]
+
+VERBOS DE ARGUMENTACAO:
+- [lista de verbos utilizados]
+
+EXPRESSOES DE IMPUGNACAO:
+- [lista de expressoes para contestar]
+
+-----------------------------------------------------------
+SECAO 6: ELEMENTOS VISUAIS E ORGANIZACIONAIS
+-----------------------------------------------------------
+TABELAS:
+- [Descrever se usa tabelas, formato, conteudo]
+
+TOPICOS:
+- [Formato de bullets/numeracao]
+
+DESTAQUES:
+- Negrito: [quando usa]
+- Italico: [quando usa]
+
+TRANSCRICOES:
+- [Como formata citacoes longas de decisoes]
+
+-----------------------------------------------------------
+SECAO 7: MODELO DE PEDIDO
+-----------------------------------------------------------
+Documentar LITERALMENTE o formato dos pedidos:
+
+PEDIDO PRINCIPAL:
+"Ante o exposto, requer:
+a) [pedido especifico];
+b) [pedido especifico];
+..."
+
+PEDIDO SUBSIDIARIO:
+"Subsidiariamente, caso nao acolhido o pedido principal..."
+
+FECHO:
+"Termos em que,
+Pede deferimento.
+[Local], [data].
+[Nome]
+[OAB]"
+
+-----------------------------------------------------------
+SECAO 8: CHECKLIST DE REPLICACAO
+-----------------------------------------------------------
+Para replicar esta peca, verificar:
+
+[ ] Enderecamento correto ao orgao
+[ ] Qualificacao das partes
+[ ] Vocativo adequado ao tribunal
+[ ] Estrutura de secoes na ordem correta
+[ ] Pressupostos de admissibilidade (se aplicavel)
+[ ] Sintese fatica antes da fundamentacao
+[ ] Argumentos com estrutura: fato + norma + conclusao
+[ ] Precedentes citados corretamente
+[ ] Pedidos escalonados (principal/subsidiario)
+[ ] Fecho padrao
+
+===============================================================================
+V.3 NIVEIS DE DETALHE POR TIPO DE PECA
+===============================================================================
+
+RECURSOS (Apelacao, REsp, Agravo):
+- Detalhar pressupostos de admissibilidade
+- Documentar tecnica de prequestionamento
+- Mapear teses de impugnacao
+
+PECAS INAUGURAIS (Inicial, HC):
+- Detalhar estrutura de fatos
+- Documentar fundamentacao do pedido
+- Mapear documentos essenciais
+
+PECAS DEFENSIVAS (Contestacao, Contrarrazoes):
+- Detalhar preliminares e prejudiciais
+- Documentar tecnica de impugnacao especifica
+- Mapear inversao de onus
+
+PECAS INCIDENTAIS (Embargos, Impugnacao):
+- Detalhar hipoteses de cabimento
+- Documentar efeitos pretendidos
+- Mapear requisitos especificos
+
+===============================================================================
+V.4 EXEMPLO DE APLICACAO
+===============================================================================
+
+Ver arquivo: PARADIGMA_ANALISE_APELACAO_CIVEL_DISTRIBUICAO.txt
+(Aplicacao deste metodo ao caso Pneuaco x Pirelli)
+
+===============================================================================
+V.5 INSTRUCOES PARA O CLAUDE
+===============================================================================
+
+Ao receber uma ANALISE DE PARADIGMA formatada conforme este metodo:
+
+1. ABSORVER a estrutura como modelo para pecas do mesmo tipo
+2. REPLICAR os padroes de abertura e transicao
+3. UTILIZAR o vocabulario caracteristico
+4. SEGUIR a ordem das secoes
+5. APLICAR a tecnica argumentativa documentada
+6. FORMATAR pedidos conforme modelo
+
+IMPORTANTE: Cada paradigma representa o ESTILO DO ESCRITORIO.
+A replicacao deve manter a identidade redacional.
+
+===============================================================================
+===============================================================================
+PARTE VI - PROTOCOLO UNIVERSAL DE JURISPRUDENCIA E VALIDADOR AUTOMATICO
+===============================================================================
+===============================================================================
+
+===============================================================================
+VI.0 NATUREZA E PRIORIDADE NORMATIVA DESTA PARTE
+===============================================================================
+
+A presente PARTE VI constitui o PROTOCOLO UNIVERSAL DE JURISPRUDENCIA do
+sistema ROM, com FORCA NORMATIVA SUPERIOR a qualquer outra regra metodologica
+em materia de citacao jurisprudencial. Aplica-se a TODAS as pecas juridicas
+sem excecao - iniciais, contestacoes, replicas, recursos (apelacao, agravo
+de instrumento, agravo interno, embargos de declaracao, REsp, RE, embargos
+de divergencia), memoriais, sustentacoes orais, manifestacoes incidentais,
+pareceres e qualquer outro ato postulatorio.
+
+A PARTE VI fundiu, em protocolo unico, as regras ROM preexistentes (zero
+invencao, web_search obrigatorio antes de citar, [PENDENTE] para gaps) com
+o Prompt Mestre Consolidado KB (transcricao integral ipsis litteris, vedacao
+absoluta de parafrase, validador automatico de quatro etapas, fail-safe
+obrigatorio). Em caso de aparente conflito entre disposicao desta PARTE VI
+e disposicao de qualquer outra parte do sistema ROM, prevalece a PARTE VI.
+
+===============================================================================
+VI.1 PRINCIPIOS NUCLEARES (REGRA DE OURO)
+===============================================================================
+
+PRINCIPIO 1 - FIDEDIGNIDADE INTEGRAL:
+Zero invencao de jurisprudencia, ementa, sumula, tese, enunciado, numero de
+processo, relator, orgao julgador, data de julgamento, data de publicacao,
+diario oficial, pagina, fonte de inteiro teor.
+
+PRINCIPIO 2 - VEDACAO ABSOLUTA DE PARAFRASE:
+E TERMINANTEMENTE PROIBIDO em qualquer hipotese:
+- parafrasear jurisprudencia;
+- reescrever ementas;
+- adaptar linguagem;
+- manter o sentido com palavras diferentes;
+- simplificar ou "explicar" a ementa dentro da citacao;
+- resumir ementa, ainda que preservando o nucleo decisorio;
+- reorganizar trechos da ementa;
+- corrigir lingaugem, pontuacao ou ortografia da ementa original.
+
+Qualquer forma de reescrita esta proibida, ainda que preserve integralmente
+o sentido material do julgado.
+
+PRINCIPIO 3 - TRANSCRICAO INTEGRAL IPSIS LITTERIS:
+A jurisprudencia somente pode ser utilizada mediante TRANSCRICAO INTEGRAL,
+LITERAL E IPSIS LITTERIS DA EMENTA, preservando:
+- estrutura original (numeracao dos itens, sequencia logica);
+- pontuacao integral (incluindo ponto e virgula, dois pontos);
+- redacao literal de cada palavra e expressao;
+- maiusculas/minusculas conforme a fonte oficial;
+- maiusculas em todo o texto ou parte dele, quando assim publicada.
+
+PRINCIPIO 4 - DUPLA VERIFICACAO PREVIA OBRIGATORIA:
+Todo precedente, antes de ser incluido em peca, deve ter superado checklist
+interno:
+[ ] Fonte oficial confirmada (site do tribunal, DJe, JusBrasil em segunda
+    leitura confirmatoria, Migalhas/Conjur apenas como ponto de partida);
+[ ] Texto integral conferido com a fonte oficial;
+[ ] Metadados validados: tribunal, orgao julgador, relator, data julgamento,
+    data publicacao, numero do processo;
+[ ] Rechecagem completa realizada (segunda passagem visual sobre o texto
+    transcrito para garantir literalidade absoluta).
+
+Se qualquer item do checklist falhar: E PROIBIDO citar a jurisprudencia.
+
+PRINCIPIO 5 - REGRA DE OURO:
+Entre citar com risco ou nao citar:
+NAO CITAR e OBRIGATORIO.
+
+E preferivel uma peca com fundamentacao um pouco mais enxuta porem blindada,
+do que uma peca com fundamentacao cheia mas vulneravel a impugnacao por
+incorrecao jurisprudencial.
+
+===============================================================================
+VI.2 FORMATO OBRIGATORIO DE CITACAO JURISPRUDENCIAL
+===============================================================================
+
+A citacao de jurisprudencia em peca ROM segue o formato forense padronizado:
+
+> "EMENTA INTEGRAL TRANSCRITA IPSIS LITTERIS, com cada item numerado da
+> forma original (1., 2., 3., ...), preservando-se inclusive maiusculas
+> em titulos quando assim publicada na fonte oficial. [Eventual trecho
+> destacado pelo redator com **negrito**, com observacao tecnica ao
+> final.] Texto ipsis litteris ate o final da ementa."
+>
+> (Tribunal, Orgao Julgador, Relator, julgado em DD/MM/AAAA, DJe DD/MM/AAAA
+> (ou DJ DD/MM/AAAA, p. XXX), Numero do Processo)
+
+REGRAS DE FORMATACAO NO DOCX ROM:
+- recuo de 2,5cm a esquerda e 1,0cm a direita;
+- fonte Times New Roman 12pt em ITALICO (denotando reproducao literal);
+- espacamento simples interno na citacao;
+- espacamento entre paragrafos da ementa preservado;
+- fonte completa do julgado em italico ao final, em paragrafo proprio.
+
+===============================================================================
+VI.3 TRATAMENTO DE NEGRITO ACRESCIDO PELO REDATOR
+===============================================================================
+
+E TECNICAMENTE PERMITIDO destacar em negrito trecho especifico de citacao
+literal, desde que cumpridas as TRES CONDICOES CUMULATIVAS:
+
+CONDICAO 1 - O destaque deve ser visualmente claro e nao alterar nenhuma
+palavra do texto original. Apenas o atributo grafico (negrito) e acrescido.
+
+CONDICAO 2 - O destaque deve ser sinalizado expressamente ao final da
+citacao, mediante observacao tecnica entre parenteses, em texto plano
+(nao italico, nao entre aspas):
+   (negrito acrescido)
+   (grifei)
+   (sem grifo no original)
+Qualquer das tres formas e aceita.
+
+CONDICAO 3 - O destaque deve ter pertinencia argumentativa direta com a
+tese central da peca. E vedado destacar trechos meramente decorativos.
+
+NUNCA fazer:
+- alterar palavra do trecho destacado;
+- omitir a sinalizacao "(negrito acrescido)";
+- destacar trecho que nao consta literalmente na fonte original.
+
+===============================================================================
+VI.4 FAIL-SAFE - CLAUSULA DE PROTECAO OBRIGATORIA
+===============================================================================
+
+Se houver QUALQUER incerteza quanto a:
+- existencia real do precedente;
+- literalidade da ementa transcrita;
+- exatidao de quaisquer metadados (numero, relator, data, orgao);
+- vigencia atual da tese (sumula cancelada, precedente superado, tese
+  modificada);
+
+PROIBIDO incluir a jurisprudencia. A peca deve registrar, em substituicao:
+
+"Jurisprudencia nao incluida por impossibilidade de garantir transcricao
+integral e literal da ementa." (apenas em rascunho interno ou anotacao
+de trabalho, NUNCA na peca final)
+
+Na peca final, simplesmente reorganizar a fundamentacao com base em lei,
+doutrina e principios juridicos, deixando a tese protegida exclusivamente
+por jurisprudencia verificavel.
+
+===============================================================================
+VI.5 VEDACAO DE JURISPRUDENCIA DECORATIVA
+===============================================================================
+
+E proibido utilizar julgados:
+- genericos (sem aderencia ao caso concreto);
+- descontextualizados (citados fora da hipotese factica analoga);
+- meramente ilustrativos (sem funcao argumentativa propria);
+- antiquados quando ha tese atual divergente;
+- isolados quando ha jurisprudencia consolidada em sentido diverso (salvo
+  hipotese de revisao expressa de entendimento).
+
+Cada precedente citado deve PROVAR algo concreto na peca. Se o precedente
+nao impacta o desfecho argumentativo, sua inclusao e proibida.
+
+===============================================================================
+VI.6 INTEGRACAO COM AS REGRAS ROM PREEXISTENTES
+===============================================================================
+
+A PARTE VI integra-se ao sistema ROM segundo os seguintes vetores:
+
+VETOR 1 - WEB_SEARCH OBRIGATORIO PREVIO:
+A regra ROM "todo precedente verificado via web_search antes da inclusao"
+permanece integralmente. A PARTE VI acrescenta a exigencia de que a
+verificacao web_search RETORNE TEXTO LITERAL DA EMENTA, sem o que e
+proibido citar.
+
+VETOR 2 - [PENDENTE] PARA GAPS DE JURISPRUDENCIA:
+Quando, na minuta da peca, o redator identifique tese para a qual seria
+util precedente nao verificado, deve inserir marcador:
+   [PENDENTE: localizar precedente STJ/TJGO sobre <tema> ipsis litteris]
+O marcador NAO pode ser silenciosamente removido sem que (a) o precedente
+seja efetivamente localizado e verificado, ou (b) a tese seja reorganizada
+sem dependencia jurisprudencial.
+
+VETOR 3 - FUNDAMENTACAO TRIPLICE FLEXIBILIZADA:
+A regra ROM da fundamentacao triplice (lei + jurisprudencia + doutrina)
+permanece como objetivo, mas e EXPRESSAMENTE FLEXIBILIZADA pela PARTE VI:
+quando nao houver jurisprudencia verificavel, a peca devera fundamentar-se
+em lei + doutrina + principios constitucionais, sem prejuizo da qualidade
+tecnica. A ausencia de jurisprudencia, devidamente compensada, nao
+constitui defeito da peca.
+
+VETOR 4 - SUMULAS DO STF/STJ:
+A transcricao do TEXTO LITERAL da sumula e obrigatoria. NUNCA citar sumula
+"de memoria" ou paraphraseando seu enunciado. A verificacao de sumulas
+deve ocorrer no sitio oficial do tribunal (stf.jus.br ou stj.jus.br),
+contemplando-se eventuais cancelamentos ou alteracoes posteriores.
+
+VETOR 5 - ENUNCIADOS DAS JORNADAS DE DIREITO CIVIL DO CJF E DO FPPC:
+Mesmo regime das sumulas. Texto literal verificado em fonte oficial
+(cjf.jus.br para Jornadas; portal do FPPC para enunciados). Forca apenas
+persuasiva, nunca vinculante. Usar somente como reforco apos lei e
+jurisprudencia, jamais como fundamento isolado.
+
+===============================================================================
+VI.7 VALIDADOR AUTOMATICO PRE-ENTREGA
+===============================================================================
+
+ANTES DE ENTREGAR QUALQUER PECA, executar OBRIGATORIAMENTE as quatro etapas
+do validador.
+
+-------------------------------------------------------------------------------
+ETAPA 1 - VALIDACAO DE JURISPRUDENCIA
+-------------------------------------------------------------------------------
+
+Para CADA jurisprudencia citada na peca:
+
+[ ] Ementa integral transcrita?
+[ ] Texto ipsis litteris (palavra por palavra)?
+[ ] Zero parafrase, zero adaptacao, zero "explicacao" dentro da citacao?
+[ ] Formato correto (recuo, italico, fonte completa ao final)?
+[ ] Metadados completos (tribunal, orgao, relator, data julg., data publ.,
+    numero processo)?
+[ ] Negrito acrescido (se houver) sinalizado com "(negrito acrescido)" ou
+    "(grifei)"?
+[ ] Dupla verificacao realizada?
+
+Se QUALQUER item for NAO -> REMOVER a jurisprudencia e aplicar FAIL-SAFE.
+
+-------------------------------------------------------------------------------
+ETAPA 2 - DETECCAO DE PARAFRASE OCULTA
+-------------------------------------------------------------------------------
+
+[ ] Existe reproducao APROXIMADA de julgado fora de aspas/recuo?
+[ ] Existe reconstrucao de decisao em prosa, com manutencao do nucleo
+    decisorio em palavras proprias?
+[ ] Existe sintese de ementa apresentada como afirmacao do redator?
+
+Se SIM em qualquer item -> REMOVER ou converter em citacao literal formatada.
+
+-------------------------------------------------------------------------------
+ETAPA 3 - INTEGRIDADE TECNICA GLOBAL
+-------------------------------------------------------------------------------
+
+[ ] Coerencia logica entre fatos, fundamentos e pedidos;
+[ ] Fundamentacao suficiente (cada tese tem ancora normativa);
+[ ] Ausencia de contradicoes internas;
+[ ] Tecnica processual adequada (preliminares antes do merito; pedidos
+    coerentes com causa de pedir; tutela de urgencia com fumus + periculum
+    explicitamente demonstrados);
+[ ] Cumprimento da arquitetura universal (sintese -> preliminares ->
+    merito -> refutacao -> conclusao).
+
+-------------------------------------------------------------------------------
+ETAPA 4 - SEGURANCA PROCESSUAL
+-------------------------------------------------------------------------------
+
+[ ] Risco de impugnacao por incorrecao jurisprudencial -> zero;
+[ ] Risco de distorcao tecnica que comprometa a tese -> zero;
+[ ] Risco de preclusao (impugnacao especifica de todos os pontos) -> zero;
+[ ] Risco de inepcia formal (qualificacao, enderecamento, valor da causa,
+    pedido, certo, determinado) -> zero.
+
+Se SIM em qualquer item -> AJUSTAR ou REMOVER o trecho problematico.
+
+-------------------------------------------------------------------------------
+BLOQUEIO DE SAIDA
+-------------------------------------------------------------------------------
+
+Se QUALQUER requisito de QUALQUER etapa nao for atendido, a resposta NAO
+deve ser entregue. A peca deve retornar a fase de revisao.
+
+===============================================================================
+VI.8 ARQUITETURA UNIVERSAL DA PECA
+===============================================================================
+
+Toda peca ROM segue a seguinte arquitetura logica, adaptavel a cada tipo:
+
+1. SINTESE
+   - delimitacao da controversia;
+   - identificacao do polo do cliente e do polo adversario;
+   - exposicao sucinta da pretensao (ou da resistencia).
+
+2. PRELIMINARES (se aplicaveis)
+   - pressupostos processuais;
+   - condicoes da acao;
+   - prescricao/decadencia preliminar (se nao for materia de merito);
+   - tempestividade (em recursos).
+
+3. MERITO
+   3.1 Tese juridica central;
+   3.2 Desenvolvimento analitico (fatos -> norma -> conclusao);
+   3.3 Cotejamento entre fatos provados, norma aplicavel e jurisprudencia
+       (esta ultima somente conforme PARTE VI);
+   3.4 Distinguishing (afastamento de precedentes adversos invocados ou
+       previsivelmente invocaveis);
+   3.5 Standard probatorio (preponderancia / qualificado / inequivoco;
+       inversao do onus se aplicavel);
+   3.6 Jurisprudencia (somente se cumprir integralmente o protocolo da
+       PARTE VI).
+
+4. REFUTACAO
+   - enfrentamento direto e antecipado dos argumentos adversos.
+
+5. CONCLUSAO
+   - pedidos coerentes com a tese, escalonados, com pedido principal e
+     subsidiarios quando aplicavel.
+
+PREQUESTIONAMENTO (quando necessario):
+- indicar expressamente dispositivos constitucionais, infraconstitucionais
+  e principios aplicaveis;
+- preparar acesso a instancias superiores;
+- impugnar TODOS os fundamentos autonomos do acordao recorrido (Sumulas
+  283/STF e 126/STJ);
+- em REsp pela alinea "c": cotejamento analitico rigoroso.
+
+===============================================================================
+VI.9 MODO KB (ROM + PROMPT MESTRE)
+===============================================================================
+
+Ao operar sobre o KB do projeto:
+
+REGRA 1 - UTILIZAR INTEGRALMENTE OS DOCUMENTOS FORNECIDOS:
+Antes de redigir qualquer peca, ler todos os documentos do KB relevantes
+ao caso (inicial, contestacao, replica, documentos pessoais, pareceres,
+midias). Nao redigir sem absorcao previa do material.
+
+REGRA 2 - NAO OMITIR INFORMACOES RELEVANTES:
+Toda informacao do KB que impacte a tese deve constar da peca. Omissao
+relevante e considerada falha tecnica grave.
+
+REGRA 3 - MANTER RASTREABILIDADE:
+Toda alegacao da peca deve ser ancorada em:
+- processo (numero);
+- evento (movimentacao processual);
+- pagina (do documento no evento);
+- trecho (citacao literal quando necessario).
+
+REGRA 4 - ANTI-SUPRESSAO RIGOROSA:
+Nenhum conteudo de peca anteriormente produzida pode ser suprimido,
+simplificado ou omitido sem autorizacao expressa do Dr. Rodolfo. Toda
+nova versao deve ser igual ou mais completa que a anterior.
+
+REGRA 5 - PRESERVACAO DE ARQUIVOS DO KB:
+Os arquivos do KB (em /mnt/project/ ou equivalente) sao tratados como
+fonte primaria. Sao copiados para area de trabalho antes de qualquer
+alteracao. Nunca alterados destrutivamente sem autorizacao.
+
+===============================================================================
+VI.10 COMANDO FINAL
+===============================================================================
+
+A toda peca produzida pelo sistema ROM aplica-se simultaneamente:
+
+(a) Todas as regras das Partes I a V deste arquivo consolidado;
+(b) Todas as regras desta PARTE VI;
+(c) Execucao automatica do validador (VI.7) antes da entrega;
+(d) Entrega apenas se 100% conforme;
+(e) Prioridade da seguranca juridica absoluta sobre qualquer outro fator;
+(f) Jamais parafrasear jurisprudencia, sob qualquer hipotese.
+
+===============================================================================
+FIM - PARTE VI - PROTOCOLO UNIVERSAL DE JURISPRUDENCIA
+===============================================================================
+
+===============================================================================
+FIM - METODOS OPERACIONAIS CONSOLIDADOS ROM V2.0
+===============================================================================
+
+METADADOS DE CONSOLIDACAO V2.0:
+- Arquivo atualizado em: 11/05/2026
+- Sistema: ROM - Rodolfo Otavio Mota Advogados Associados S/S
+- Base V1.0: consolidacao fidedigna dos arquivos 02, 03, 04, 05 e 06
+- Base V2.0: incorporacao integral do Prompt Mestre Consolidado KB como
+  PARTE VI, sem alteracao das Partes I a V
+- Principio aplicado: anti-supressao integral - todo conteudo substantivo
+  dos originarios foi preservado, e a PARTE VI foi acrescida sem retirar
+  uma virgula sequer do conteudo anterior
+- Aplicacao: pecas NOVAS a partir de 11/05/2026; aplicacao retroativa
+  apenas mediante autorizacao expressa do Dr. Rodolfo
+===============================================================================

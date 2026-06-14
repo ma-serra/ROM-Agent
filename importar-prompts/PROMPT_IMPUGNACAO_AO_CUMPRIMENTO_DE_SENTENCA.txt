@@ -1,0 +1,497 @@
+PROMPT IMPUGNACAO AO CUMPRIMENTO DE SENTENCA
+=====================================================================
+ARQUIVO: PROMPT_IMPUGNACAO_AO_CUMPRIMENTO_DE_SENTENCA.txt
+(antes: 18_P_IMPUGNACAO.txt / 18_P_IMPUGNACAO_V3_2.txt - renomeado
+ por determinacao do Dr. Rodolfo. O corpo V3.0 abaixo permanece
+ INTEGRAL e inalterado, salvo a correcao dos tres caracteres de
+ seta corrompidos; Principio 6 - nao regressao. A linha "USAR COM:
+ 00_MASTER_ROM_V3.txt" do corpo V3.0 fica superada pela GOVERNANCA
+ do Adendo V3.2, mais abaixo.)
+=====================================================================
+
+PROMPT: IMPUGNACAO AO CUMPRIMENTO/EXECUCAO
+==========================================
+VERSAO: 3.0 | SISTEMA ROM
+FUNDAMENTO: CPC arts. 525-527 (sentenca) / arts. 914-918 (extrajudicial)
+PRAZO: 15 dias uteis
+
+USAR COM: 00_MASTER_ROM_V3.txt
+
+==========================================
+TIPOS DE EXECUCAO
+==========================================
+
+CUMPRIMENTO DE SENTENCA (arts. 523-527 CPC):
+- Sentenca condenatoria transitada
+- Decisao interlocutoria de merito
+- Sentenca homologatoria acordo
+-> Defesa: IMPUGNACAO
+
+EXECUCAO TITULO EXTRAJUDICIAL (arts. 914-918 CPC):
+- Cambiais (letra, promissoria, cheque, duplicata)
+- Escritura publica, contrato executivo
+- CDA (exceto fiscal)
+-> Defesa: EMBARGOS A EXECUCAO
+
+EXECUCAO FISCAL (Lei 6.830/80):
+- CDA fiscal
+- Prazo: 30 dias corridos da penhora
+-> Defesa: EMBARGOS A EXECUCAO FISCAL
+
+==========================================
+PRAZOS
+==========================================
+
+CUMPRIMENTO SENTENCA:
+- 15 dias UTEIS da intimacao (art. 525)
+
+EXECUCAO EXTRAJUDICIAL:
+- 15 dias UTEIS da juntada mandado citacao (art. 914)
+
+ATENCAO: Verificar feriados municipais!
+
+==========================================
+GARANTIA DO JUIZO
+==========================================
+
+REGRA: Necessaria para EFEITO SUSPENSIVO
+
+FORMAS:
+- Penhora ja realizada
+- Deposito em dinheiro
+- Caucao/fianca idonea
+- Seguro garantia judicial
+
+SEM GARANTIA: Impugnacao admitida, mas SEM efeito suspensivo
+
+==========================================
+MATERIAS ARGUIVEIS
+==========================================
+
+CUMPRIMENTO SENTENCA (art. 525, par.1):
+I - Falta/nulidade citacao conhecimento
+II - Ilegitimidade de parte
+III - Inexequibilidade/inexigibilidade titulo
+IV - Penhora incorreta/avaliacao erronea
+V - Excesso execucao/cumulacao indevida
+VI - Incompetencia absoluta/relativa
+VII - Causa modificativa/extintiva (superveniente)
+
+Rol EXEMPLIFICATIVO (Enunciado 29 FPPC)
+
+EXECUCAO EXTRAJUDICIAL (art. 917):
+I - Inexequibilidade/inexigibilidade titulo
+II - Penhora incorreta/avaliacao erronea
+III - Excesso execucao
+IV - Retencao benfeitorias
+V - Incompetencia
+VI - Causa modificativa/extintiva
+VII - QUALQUER materia de defesa (vicios titulo)
+
+==========================================
+ESTRUTURA
+==========================================
+
+I. DA TEMPESTIVIDADE
+- Intimacao/citacao: DD/MM/AAAA
+- Prazo final: DD/MM/AAAA
+- Protocolo: DD/MM/AAAA
+
+II. DA GARANTIA DO JUIZO (se aplicavel)
+- Forma de garantia
+- Valor garantido
+
+III. DAS PRELIMINARES
+A) Incompetencia
+B) Ilegitimidade
+C) Nulidade citacao
+
+IV. DAS PREJUDICIAIS
+A) Prescricao intercorrente
+B) Decadencia
+
+V. DO MERITO
+A) Inexistencia/invalidade titulo
+B) Inexigibilidade obrigacao
+C) Excesso de execucao
+D) Pagamento/compensacao/novacao
+E) Impenhorabilidade
+
+VI. DO EFEITO SUSPENSIVO
+- Juizo garantido
+- Fumus boni iuris
+- Periculum in mora
+
+VII. DOS PEDIDOS
+a) Recebimento no efeito suspensivo
+b) Extincao execucao
+c) Subsidiario: Reducao excesso
+d) Desbloqueio valores/bens
+
+==========================================
+TESES PRINCIPAIS
+==========================================
+
+EXCESSO DE EXECUCAO (art. 917, par.2):
+- Calculos do exequente errados
+- Juros/correcao indevidos
+- Honorarios excessivos
+OBRIGACAO: Apresentar planilha discriminada
+
+INEXIGIBILIDADE:
+- Obrigacao nao vencida
+- Condicao nao implementada
+- Termo nao advindo
+
+PAGAMENTO:
+- Quitacao posterior
+- Compensacao legal
+- Novacao
+
+IMPENHORABILIDADE (art. 833 CPC):
+I - Moveis que guarnecem residencia
+II - Vestuarios e pertences pessoais
+III - Vencimentos/salarios/proventos
+IV - Bem de familia (Lei 8.009/90)
+V - Seguro de vida
+VI - Materiais para exercicio profissao
+X - Poupanca ate 40 SM
+
+COISA JULGADA INCONSTITUCIONAL (art. 525, par.12-15):
+- Fundada em lei/ato normativo inconstitucional
+- Contraria precedente vinculante
+
+==========================================
+TECNICAS
+==========================================
+
+EXCESSO:
+"O exequente cobra a MAIOR. O valor correto e R$ [X],
+conforme planilha discriminada anexa (doc. Y), havendo
+excesso de R$ [Z], nos termos do art. 917, par.2, CPC."
+
+PAGAMENTO:
+"A obrigacao foi INTEGRALMENTE QUITADA em DD/MM/AAAA,
+conforme comprovante anexo (doc. X), impondo-se extincao
+da execucao por satisfacao (art. 924, II, CPC)."
+
+IMPENHORABILIDADE:
+"O bem penhorado e ABSOLUTAMENTE IMPENHORAVEL, nos
+termos do art. 833, [inciso], CPC, devendo ser
+desconstituida a penhora."
+
+==========================================
+EXTENSAO RECOMENDADA
+==========================================
+Minimo: 10 paginas
+Ideal: 15-20 paginas
+Maximo: 30 paginas
+
+==========================================
+FIM - IMPUGNACAO V3.0
+==========================================
+
+
+===================================================================
+===================================================================
+ADENDO V3.2 - PROMPT-PECA ENXUTO DA IMPUGNACAO
+(transversal remetido as CI / Adendo Normativo V2.6.0;
+ retido apenas o ESPECIFICO da impugnacao)
+===================================================================
+===================================================================
+
+NATUREZA E DESENHO
+------------------
+O conteudo V3.0 acima permanece integral, sem supressao,
+simplificacao ou omissao (Principio 6 - nao regressao; preferencia
+expressa do Dr. Rodolfo). A unica alteracao no corpo V3.0 e a
+correcao dos tres caracteres de seta corrompidos (linhas 17, 23, 28),
+sem qualquer outra modificacao.
+
+Por decisao de arquitetura: toda regra TRANSVERSAL (direito
+intertemporal, verificacao de citacoes, blindagem de autoria, padrao
+linguistico, admissibilidade universal, prequestionamento, rito)
+NAO e reproduzida aqui. Ela vige por forca das Custom Instructions e
+do ADENDO NORMATIVO V2.6.0 (Dispositivos 6-A a 15-A), que se aplicam
+a esta peca automaticamente, sem necessidade de transcricao. Este
+Adendo V3.2 retem somente o que e ESPECIFICO da impugnacao e dos
+embargos, eliminando a redundancia apontada pelo Dr. Rodolfo.
+
+GOVERNANCA (remissao, nao reproducao):
+Aplicam-se a esta peca, como condicao de validade e por vigencia
+automatica, a SECAO 0 da CI, o ADENDO NORMATIVO V2.6.0 integral
+(Dispositivos 6-A a 15-A, com destaque para o 13-A - verificacao de
+citacoes; 14-A - padrao linguistico; 15-A - direito intertemporal e
+regras de transicao), a PARTE VI do 01_M_METODOS_CONSOLIDADO_ROM_V2
+e as 05_M_DIRETRIZES_REDACIONAIS_UNIVERSAIS. Ordem de prevalencia:
+Dispositivo 8-A.2. Antes de redigir: project_knowledge_search para
+confirmar a versao mais recente deste arquivo e dos metodos
+(Dispositivo 8-A.3 - vedado redigir com estrutura presumida). A
+remissao do cabecalho V3.0 a "00_MASTER_ROM_V3.txt" (arquivo
+inexistente) fica superada por esta clausula de governanca.
+
+-------------------------------------------------------------------
+E.1 - DISTINCAO DOS INSTITUTOS (especifico; condicao de validade -
+      Dispositivo 14-A.1)
+-------------------------------------------------------------------
+"Impugnacao" designa institutos distintos. Identificar o objeto
+antes de redigir e declara-lo no Resumo Executivo pre-redacao
+(polo do cliente, base legal nuclear):
+
+(a) IMPUGNACAO AO CUMPRIMENTO DE SENTENCA (CPC arts. 525 e 535) -
+    OBJETO NUCLEAR DESTE PROMPT. Incidente de defesa do executado;
+    nao e acao autonoma. Prazo: 15 dias uteis apos o prazo do art.
+    523, independentemente de penhora ou nova intimacao (art. 525,
+    caput). Cognicao limitada ao art. 525, par. 1o (Fazenda
+    Publica: art. 535). Decisao em regra interlocutoria, agravavel
+    por instrumento (art. 1.015, parag. unico); se extinguir a
+    execucao, sentenca apelavel.
+
+(b) EMBARGOS A EXECUCAO (CPC arts. 914-920) e EMBARGOS A EXECUCAO
+    FISCAL (Lei 6.830/1980, art. 16) - ACAO AUTONOMA, autuada em
+    apartado, sentenca propria apelavel. Quando o titulo for
+    extrajudicial ou a execucao fiscal, a peca correta e EMBARGOS,
+    nao impugnacao: aproveita-se a estrutura do V3.0 (itens I a
+    VII), mas mudam o enderecamento, a autuacao em apartado, o
+    regime de efeito suspensivo (art. 919; par. 1o) e o cabimento
+    de apelacao - ajustar.
+
+(c) IMPUGNACAO A CONTESTACAO / REPLICA (CPC arts. 350-351) - peca
+    do AUTOR; NAO e objeto deste prompt. Usar o prompt-peca proprio
+    de Replica do KB (versao mais recente). Vedado redigir replica
+    sob a estrutura de impugnacao ao cumprimento.
+
+(d) Variacoes (impugnacao ao valor da causa; a gratuidade; ao
+    cumprimento provisorio - art. 520; ao cumprimento de obrigacao
+    de fazer/nao fazer ou de entrega) tomam a estrutura aplicavel
+    respectiva.
+
+-------------------------------------------------------------------
+E.2 - MULTA E HONORARIOS DA FASE DE CUMPRIMENTO (especifico;
+      lacuna do V3.0)
+-------------------------------------------------------------------
+E.2.1 - Nao havendo pagamento voluntario em 15 dias uteis, incidem
+multa de 10% e honorarios de 10% (CPC art. 523, par. 1o). Verificar
+sempre: (a) intimacao valida na forma do art. 513, par. 2o; (b)
+prazo em dias uteis com feriados da comarca conferidos; (c)
+cumprimento definitivo ou provisorio (art. 520); (d) pagamento
+parcial tempestivo - multa e honorarios incidem so sobre o restante
+(art. 523, par. 2o). Cada vicio gera tese de exclusao ou reducao,
+articulada como pedido sucessivo (CPC art. 326).
+
+E.2.2 - EXCESSO DE EXECUCAO - ONUS DE APONTAR O VALOR DEVIDO. Ao
+alegar excesso, o impugnante DEVE declarar de imediato o valor que
+entende correto e apresentar memoria discriminada; a omissao
+acarreta rejeicao liminar dessa alegacao (CPC art. 525, par. 4o e
+par. 5o, no cumprimento; art. 917, par. 3o e par. 4o, nos embargos).
+Reverificar a redacao vigente desses paragrafos no momento de
+redigir (Dispositivo 13-A do Adendo - aplica-se por remissao).
+
+-------------------------------------------------------------------
+E.3 - JUROS, CORRECAO E EXCESSO: APLICACAO DO DIREITO INTERTEMPORAL
+      A ESTE INSTITUTO (especifico - especializa o Dispositivo 15-A,
+      sem reproduzir sua teoria geral)
+-------------------------------------------------------------------
+O Dispositivo 15-A (direito intertemporal e regras de transicao)
+vige sobre esta peca por forca do Adendo / CI. Sua aplicacao
+ESPECIFICA a impugnacao, na tese de excesso de execucao, observa:
+
+E.3.1 - SEGMENTACAO TEMPORAL DO CALCULO. Para divida cujo periodo
+de mora atravesse o marco de vigencia da Lei 14.905/2024, o calculo
+deve ser SEGMENTADO em periodos, com a metodologia propria de cada
+um (criterio anterior ate o marco; IPCA como correcao e taxa legal
+de juros - SELIC deduzido o IPCA, art. 406, par. 1o, do CC,
+metodologia da Resolucao CMN 5.171/2024 - a partir do marco).
+Cobranca que aplica criterio unico a todo o periodo, ou que cumula
+SELIC com correcao monetaria autonoma, configura excesso. As datas
+exatas de vigencia e a redacao dos dispositivos sao reverificadas no
+Planalto / Banco Central no momento de redigir (Dispositivo 13-A;
+6-A - vedado afirmar de memoria).
+
+E.3.2 - LIMITE DA COISA JULGADA. Quando o titulo judicial ja fixou
+indice e termo, a discussao encontra o limite da coisa julgada (CPC
+art. 525, par. 1o, III, c/c par. 12 a 15). Quando o titulo NAO
+fixou criterio, a sua definicao nao ofende coisa julgada nem gera
+preclusao temporal - juros e correcao sao materia de ordem publica,
+conhecivel ate de oficio, sujeita a coisa julgada e sua eficacia
+preclusiva, nao a preclusao temporal (reverificar precedente atual
+do STJ; se transcrita ementa, regime dos Dispositivos 9-A e 13-A).
+
+E.3.3 - EIXO PROCESSUAL. O prazo, a forma e o regime da
+impugnacao/embargos seguem a lei vigente na data do ato processual
+de referencia (intimacao para cumprimento; juntada do mandado na
+execucao), pela teoria do isolamento dos atos processuais
+(remissao ao Dispositivo 15-A.5; nao reproduzido aqui).
+
+-------------------------------------------------------------------
+E.4 - IMPENHORABILIDADE: ESTADO DA QUESTAO (especifico;
+      atualiza o rol do V3.0 sem suprimi-lo)
+-------------------------------------------------------------------
+O rol do V3.0 (art. 833) permanece valido como referencia. Acrescer,
+na redacao da peca, a verificacao obrigatoria:
+E.4.1 - art. 833, par. 1o a 3o (excecoes: divida do proprio bem;
+prestacao alimenticia e importancias excedentes a 50 SM - art. 833,
+par. 2o; bens agricolas - par. 3o).
+E.4.2 - Temas Repetitivos do STJ que afetam o art. 833
+(impenhorabilidade salarial em divida nao alimentar; poupanca e
+aplicacoes ate 40 SM): VEDADO afirmar de memoria o resultado ou o
+estado do tema (Dispositivo 6-A). Reverificar o estado processual e
+a tese no portal do STJ no momento de redigir; jamais afirmar
+resultado de tema nao julgado.
+E.4.3 - Onus do executado de alegar oportunamente a
+impenhorabilidade; carater relativizavel reconhecido pela
+jurisprudencia (reverificar; regime de citacao dos Dispositivos
+9-A e 13-A).
+
+-------------------------------------------------------------------
+E.4-A - CUMPRIMENTO DE OBRIGACAO DE FAZER, NAO FAZER E DE ENTREGA
+        DE COISA; ASTREINTES (especifico; lacuna do V3.0)
+-------------------------------------------------------------------
+O V3.0 e os modulos E.1 a E.4 tratam nuclearmente da obrigacao de
+PAGAR QUANTIA (CPC arts. 523-525). Quando o titulo impuser obrigacao
+de FAZER, NAO FAZER ou ENTREGAR COISA, o regime e proprio e a
+impugnacao adapta-se a ele:
+
+E.4-A.1 - FAZER / NAO FAZER (CPC arts. 536 e 537). Verificar: (a)
+adequacao da medida de apoio determinada (multa, busca e apreensao,
+remocao, desfazimento, intervencao); (b) regime da MULTA PERIODICA
+(astreintes) - cabimento, valor, periodicidade, termo inicial,
+proporcionalidade e compatibilidade com a obrigacao (art. 537,
+caput); (c) possibilidade de revisao do valor das astreintes,
+inclusive retroativa, quando excessivo ou insuficiente, ou se a
+obrigacao foi cumprida em parte ou tornou-se desnecessaria (art.
+537, par. 1o, I e II - reverificar redacao vigente, Dispositivo
+13-A); (d) destinacao e exigibilidade da multa (art. 537, par. 3o e
+4o); (e) impossibilidade material ou juridica superveniente da
+prestacao (conversao em perdas e danos - art. 499; art. 536, par.
+1o). Tese tipica: astreinte fixada sem teto, desproporcional ou
+incidente sobre periodo de impossibilidade configura excesso e
+comporta reducao/decote, com pedido sucessivo (CPC art. 326).
+
+E.4-A.2 - ENTREGA DE COISA (CPC arts. 538). Verificar: (a)
+individualizacao da coisa; (b) prazo para entrega; (c) regime de
+busca e apreensao (movel) ou imissao na posse (imovel); (d)
+benfeitorias e direito de retencao, se alegavel; (e) conversao em
+perdas e danos na hipotese de perecimento ou nao localizacao.
+
+E.4-A.3 - ARTICULACAO INTERTEMPORAL. Alteracoes legislativas sobre
+astreintes e meios executivos seguem o Dispositivo 15-A (eixo
+processual - lei vigente no momento do ato; isolamento dos atos
+processuais), aplicado por remissao.
+
+-------------------------------------------------------------------
+E.4-B - CUMPRIMENTO PROVISORIO DE SENTENCA (CPC art. 520 a 522)
+        (especifico; aprofunda a mencao do V3.0)
+-------------------------------------------------------------------
+Quando o cumprimento for PROVISORIO (titulo impugnado por recurso
+sem efeito suspensivo), a impugnacao explora regime proprio:
+
+E.4-B.1 - RESPONSABILIDADE OBJETIVA DO EXEQUENTE (art. 520, I) -
+quem promove o cumprimento provisorio responde, independentemente
+de culpa, pelos danos causados ao executado se a decisao for
+reformada; registrar a reserva.
+E.4-B.2 - CAUCAO PARA ATOS DE EXPROPRIACAO E LEVANTAMENTO (art.
+520, IV, e art. 521) - levantamento de deposito, alienacao de bem
+ou ato que importe transferencia de posse/propriedade exige caucao
+suficiente e idonea, salvo as dispensas do art. 521 (credito
+alimentar; estado de necessidade; pendencia de agravo do art.
+1.042; sentenca em conformidade com sumula/repetitivo - reverificar
+redacao vigente, Dispositivo 13-A); impugnar a ausencia ou
+insuficiencia de caucao.
+E.4-B.3 - RETORNO AO ESTADO ANTERIOR (art. 520, II) - sobrevindo
+reforma, a fase volta ao estado anterior, com liquidacao de danos
+nos mesmos autos (art. 520, par. 4o).
+E.4-B.4 - MULTA E HONORARIOS NO PROVISORIO - incidem (Sumula
+517/STJ e art. 520, par. 2o - reverificar estado e teor via
+web_search, Dispositivo 6-A; nao afirmar de memoria).
+
+-------------------------------------------------------------------
+E.4-C - INEXIGIBILIDADE POR INCONSTITUCIONALIDADE: TITULO FUNDADO
+        EM NORMA/INTERPRETACAO DECLARADA INCONSTITUCIONAL PELO STF
+        (especifico; aprofunda "COISA JULGADA INCONSTITUCIONAL"
+         do V3.0)
+-------------------------------------------------------------------
+E.4-C.1 - Considera-se inexigivel a obrigacao reconhecida em titulo
+fundado em lei ou ato normativo declarado inconstitucional pelo STF,
+ou em aplicacao/interpretacao tidas por incompativeis com a
+Constituicao, em controle concentrado ou difuso (CPC art. 525, par.
+12; e par. 1o, III). Verificar tambem o art. 525, par. 13 a 15
+(efeitos, modulacao e o marco temporal: decisao do STF anterior ou
+posterior ao transito em julgado - acao rescisoria no segundo caso).
+E.4-C.2 - Esta materia exige reverificar, via web_search, a
+existencia, o numero e o estado atual do precedente do STF
+(Dispositivos 6-A e 13-A); vedado afirmar de memoria que tema
+de repercussao geral esta julgado ou modulado. Se transcrita
+ementa: regime integral dos Dispositivos 9-A e 13-A (inteiro teor e
+certidao anexados).
+E.4-C.3 - Distinguir, com rigor tecnico (Dispositivo 14-A.1),
+inexigibilidade do titulo (art. 525, par. 12) de coisa julgada
+inconstitucional e de rescisoria - institutos diversos, efeitos
+diversos.
+
+-------------------------------------------------------------------
+E.5 - ADMISSIBILIDADE E EFEITO SUSPENSIVO (especifico)
+-------------------------------------------------------------------
+Em topico proprio, ainda que objetivo, antes do merito: na
+impugnacao ao cumprimento, o conhecimento INDEPENDE de garantia
+(art. 525, caput); a garantia condiciona apenas o EFEITO SUSPENSIVO
+(art. 525, par. 6o). Nos embargos, regime proprio de efeito
+suspensivo (art. 919; par. 1o). Demais requisitos
+intrinsecos/extrinsecos: aplicam-se por remissao ao Dispositivo
+11-A (nao reproduzidos).
+
+-------------------------------------------------------------------
+E.6 - PEDIDOS SUCESSIVOS E PREVENCAO DE PRECLUSAO (especifico)
+-------------------------------------------------------------------
+Impugnar especificamente todo fato, documento, fundamento e pedido,
+inclusive os implicitos (CPC art. 322, par. 1o - juros, correcao,
+honorarios de sucumbencia). Pedidos sucessivos eventuais com tecnica
+(CPC art. 326): principal (extincao/inexigibilidade); sucessivos
+(reducao do excesso com indicacao do valor correto; desconstituicao
+da penhora por impenhorabilidade; exclusao/reducao da multa e
+honorarios do art. 523, par. 1o).
+
+-------------------------------------------------------------------
+E.7 - VALIDADOR
+-------------------------------------------------------------------
+Antes da entrega, executar o Validador de cinco etapas da SECAO 0.10
+(ETAPA 5 = padrao linguistico - Dispositivo 14-A). Regime integral
+do Validador: por remissao as CI / Adendo V2.6.0, nao reproduzido.
+Entrega somente se 100% conforme. Nao-regressao: nenhuma versao
+futura suprime conteudo anterior sem autorizacao expressa do Dr.
+Rodolfo.
+
+-------------------------------------------------------------------
+LISTA DE REVERIFICACAO ESPECIFICA DA IMPUGNACAO (no momento de
+redigir; web_search em fonte oficial - Dispositivo 13-A)
+-------------------------------------------------------------------
+1. CPC arts. 326, 499, 513, 520, 521, 522, 523, 525, 536, 537,
+   538, 833 (e par. 1o-3o), 914-920, 924, 1.015 (parag. unico),
+   1.042 - Planalto.
+2. Lei 14.905/2024 e Resolucao CMN 5.171/2024: datas de vigencia e
+   redacao dos dispositivos do CC - Planalto / Banco Central.
+3. Estado processual dos Temas Repetitivos do STJ sobre o art. 833 -
+   portal do STJ.
+4. Enunciado 29 do FPPC (carater exemplificativo do art. 525, par.
+   1o) - fonte oficial FPPC.
+5. Lei 8.009/1990 (bem de familia) - redacao vigente.
+6. Sumula 517/STJ (multa/honorarios no cumprimento provisorio) -
+   estado e teor, portal do STJ.
+7. Precedente(s) do STF sobre inconstitucionalidade da norma/
+   interpretacao que funda o titulo (art. 525, par. 12-15) -
+   existencia, numero, estado e modulacao, portal do STF.
+8. Feriados nacionais, estaduais (GO) e da comarca - tempestividade.
+NOTA: a impugnacao ao cumprimento contra a FAZENDA PUBLICA (CPC
+arts. 534-535: precatorio/RPV, prazo proprio, par. 5o) NAO e
+tratada neste prompt por decisao do Dr. Rodolfo - materia do
+projeto tributario especifico do escritorio; usar o prompt proprio
+daquele projeto.
+(O direito intertemporal geral, a verificacao de citacoes, o padrao
+linguistico e a admissibilidade universal aplicam-se por remissao ao
+Adendo V2.6.0 / CI - nao reproduzidos por decisao de arquitetura.)
+
+===================================================================
+FIM - IMPUGNACAO (V3.0 preservado + Adendo V3.2 enxuto)
+ARQUIVO: 18_P_IMPUGNACAO_V3_2.txt
+SISTEMA ROM - Rodolfo Otavio Mota Advogados Associados S/S
+===================================================================

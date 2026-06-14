@@ -1,0 +1,1011 @@
+═══════════════════════════════════════════════════════════════════════════════════
+SUPLEMENTO: PREQUESTIONAMENTO AVANCADO + ANALISE DO MANUAL STJ
+PARA USO COM: PROMPT_AGRAVO_INSTRUMENTO_CRIMINAL_V5.0.txt
+═══════════════════════════════════════════════════════════════════════════════════
+
+ARQUIVO: SUPLEMENTO_PREQUESTR_MANUAL_STJ_CRIMINAL_V5.0.txt
+VERSAO: 5.0
+DATA: 30/03/2026
+AUTOR: Dr. Rodolfo Otavio Mota - OAB/GO 21.841
+STATUS: COMPLETO - Integrado ao sistema ROM V3.0 Fase 1.5
+
+INSTRUCAO DE USO:
+Este suplemento EXPANDE e DETALHA a Parte XVI do PROMPT_AGRAVO_INSTRUMENTO_
+CRIMINAL_V5.0.txt. Usar em conjunto com aquele prompt para casos em que a
+fase seguinte ao RESE/AIC criminal for o RHC, REsp ou RE nos tribunais
+superiores. A Parte XVI do prompt principal e substituida pelo conteudo
+deste suplemento quando se tratar de caso com perspectiva de tribunais
+superiores.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+INDICE DO SUPLEMENTO (8 PARTES)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE A - MAPA RECURSAL CRIMINAL NOS TRIBUNAIS SUPERIORES
+PARTE B - RECURSO ORDINARIO EM HABEAS CORPUS (RHC) - ART. 105, II, A, CF
+PARTE C - RECURSO ESPECIAL CRIMINAL (REsp) - ART. 105, III, CF
+PARTE D - RECURSO EXTRAORDINARIO CRIMINAL (RE) - ART. 102, III, CF
+PARTE E - HABEAS CORPUS DIRETO NO STJ (ART. 105, I, C, CF)
+PARTE F - OBICES SUMULARES E ESTRATEGIA DE CONTORNO
+PARTE G - CONTROLE DE CONVENCIONALIDADE (CADH COMO BASE DE REsp)
+PARTE H - TECNICA DE PREQUESTIONAMENTO EM TRES CAMADAS
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE A: MAPA RECURSAL CRIMINAL NOS TRIBUNAIS SUPERIORES
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+1. ESTRUTURA HIERARQUICA COMPLETA - MATERIA CRIMINAL
+
+NIVEL 1 - JUIZO DE ORIGEM (VARA CRIMINAL):
+- Decisao interlocutoria → RESE (art. 581 CPP) ou AIC (art. 3 CPP)
+- Sentenca definitiva → APELACAO (art. 593 CPP)
+
+NIVEL 2 - TRIBUNAL DE JUSTICA / TRF:
+- Acordao julgando RESE ou apelacao
+- Decisao monocratica de relator → AGRAVO REGIMENTAL (art. 1021 CPC subsidiario)
+- Recurso em Habeas Corpus denegado → RHC ao STJ (art. 105, II, a, CF) OU ao STF
+
+NIVEL 3 - STJ (SUPERIOR TRIBUNAL DE JUSTICA):
+Competencia criminal:
+a) RHC: Art. 105, II, a, CF (HC denegado em TJ/TRF em unica instancia)
+b) HC originario: Art. 105, I, c, CF (coacao imputada a desembargador)
+c) REsp: Art. 105, III, CF (violacao de lei federal ou tratado)
+d) Recurso no agravo: Art. 105, III c/c art. 1042 CPC (inadmissao REsp)
+
+NIVEL 4 - STF (SUPREMO TRIBUNAL FEDERAL):
+Competencia criminal:
+a) RHC: Art. 102, II, a, CF (HC denegado em STJ em unica instancia)
+b) HC originario: Art. 102, I, i e j, CF (coacao atribuida a Ministro de Estado, etc.)
+c) RE: Art. 102, III, CF (violacao da Constituicao Federal)
+d) ARE (Agravo em RE): Art. 102, III c/c art. 1042 CPC
+
+2. ESCOLHA DO INSTRUMENTO CORRETO PARA OS TRIBUNAIS SUPERIORES
+
+Pergunta 1: A questao envolve LIBERDADE DE LOCOMOCAO?
+→ SIM: HC ou RHC (conforme a autoridade coatora)
+→ NAO: ir para Pergunta 2
+
+Pergunta 2: A decisao agravada foi proferida por desembargador do TJ/TRF?
+→ SIM: HC originario no STJ (art. 105, I, c, CF) - coacao atribuida ao relator
+→ NAO: ir para Pergunta 3
+
+Pergunta 3: A questao e de VIOLACAO DE LEI FEDERAL OU TRATADO?
+→ SIM: REsp ao STJ (art. 105, III, a, CF)
+→ NAO: ir para Pergunta 4
+
+Pergunta 4: A questao e de VIOLACAO DA CONSTITUICAO FEDERAL?
+→ SIM: RE ao STF (art. 102, III, CF) com repercussao geral
+→ NAO: Verificar se ha algum instrumento cabivel; caso contrario, a decisao
+        do TJ/TRF pode ser final
+
+Pergunta 5: O TJ/TRF DENEGOU Habeas Corpus?
+→ SIM: RHC ao STJ (art. 105, II, a, CF) se o HC foi julgado em unica instancia
+→ Verificar: o HC foi julgado por TJ estadual ou TRF? Se SIM → RHC no STJ
+→ Se o HC foi denegado pelo STJ em unica instancia → RHC no STF (art. 102, II, a, CF)
+
+3. TABELA SINTETICA
+
+Decisao recorrida | Instrumento | Tribunal | Base legal
+TJ/TRF - acordao RESE/Apelacao (lei federal) | REsp | STJ | Art. 105, III, CF
+TJ/TRF - acordao RESE/Apelacao (CF) | RE | STF | Art. 102, III, CF
+TJ/TRF - acordao denegando HC | RHC | STJ | Art. 105, II, a, CF
+STJ - acordao denegando HC | RHC | STF | Art. 102, II, a, CF
+Coacao atribuida a Desembargador do TJ/TRF | HC originario | STJ | Art. 105, I, c, CF
+Coacao atribuida a Ministro de Estado | HC originario | STF | Art. 102, I, i, CF
+REsp inadmitido no STJ | Agravo | STJ | Art. 1042 CPC
+RE inadmitido no STF | ARE | STF | Art. 1042 CPC
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE B: RECURSO ORDINARIO EM HABEAS CORPUS (RHC)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+1. FUNDAMENTO CONSTITUCIONAL
+
+Art. 105, II, a, CF/88: "Compete ao Superior Tribunal de Justica julgar, em
+recurso ordinario: as decisoes denegatórias de habeas corpus decididas em unica
+instancia pelos Tribunais Regionais Federais ou pelos Tribunais dos Estados, do
+Distrito Federal e dos Territorios."
+
+Art. 102, II, a, CF/88 (RHC ao STF): "Compete ao Supremo Tribunal Federal julgar,
+em recurso ordinario: o habeas corpus, o mandado de seguranca, o habeas data e
+o mandado de injuncao decididos em unica instancia pelos Tribunais Superiores, se
+denegada a ordem."
+
+2. NATUREZA JURIDICA DO RHC
+
+O RHC tem natureza de RECURSO ORDINARIO, o que implica:
+a) Devolve amplamente a materia ao tribunal superior (devolutividade ampla)
+b) NAO exige prequestionamento no sentido tecnico - a questao pode ser
+   suscitada diretamente no RHC
+c) NAO exige repercussao geral (diferencia fundamental do RE)
+d) Permite reexame amplo de fatos e provas relacionados a liberdade
+   (diferencia fundamental do REsp, limitado pela Sumula 7 STJ)
+e) O tribunal superior age como segunda instancia plena para a questao
+   da liberdade
+
+CONSEQUENCIA PRATICA: O RHC e o instrumento MAIS AMPLO disponivel para
+a defesa criminal nos tribunais superiores, pois permite reexame integral
+da questao de liberdade sem as restricoes dos recursos excepcionais.
+
+3. CABIMENTO ESPECIFICO
+
+CABIMENTO NO STJ:
+- HC julgado (denegado) em unica instancia pelo TJ (estadual)
+- HC julgado (denegado) em unica instancia pelo TRF (federal)
+- A expressao "unica instancia" significa: nao ha outro recurso ordinario
+  entre o TJ/TRF e o STJ para essa questao
+
+NAO CABE RHC NO STJ:
+- HC denegado pelo proprio STJ em unica instancia → cabe RHC no STF
+- HC denegado monocráticamente por relator do TJ → antes deve-se tentar
+  agravo regimental para a turma/camara; esgotado esse, RHC no STJ
+
+4. PRAZO DO RHC
+
+Art. 30 Lei 8.038/1990: 5 (cinco) dias corridos a contar da publicacao
+do acordao denegatório.
+
+IMPORTANTE: Prazo em dias CORRIDOS, nao em dias uteis.
+
+5. PREPARO NO RHC
+
+NAO HA PREPARO em RHC, assim como no HC originario, por forca do art. 5,
+LXXVII, CF/88 ("sao gratuitas as acoes de habeas corpus e habeas data").
+
+6. PETICAO DE RHC - ESTRUTURA
+
+ENDERECAMENTO:
+EXCELENTISSIMO SENHOR DOUTOR MINISTRO RELATOR DA [NUMERO]A TURMA
+DO SUPERIOR TRIBUNAL DE JUSTICA
+
+INTRODUCAO (modelo):
+[NOME DO RECORRENTE], ja qualificado, por seu advogado infra-assinado,
+vem, respeitosamente, a presenca de Vossa Excelencia, com fundamento no
+art. 105, II, "a", da Constituicao Federal e arts. 30-32 da Lei 8.038/1990,
+interpor o presente
+
+RECURSO ORDINARIO EM HABEAS CORPUS
+
+contra o v. acordao de fls. [NUMERO] dos autos do Habeas Corpus n.
+[NUMERO], proferido pela [NUMERO]a Camara Criminal do Tribunal de Justica
+do Estado de [UF], que denegou a ordem, pelos fundamentos a seguir.
+
+ESTRUTURA MINIMA DO RHC:
+I - Tempestividade
+II - Cabimento (acordao denegatorio do HC em unica instancia)
+III - Da questao de liberdade (coacao ilegal)
+IV - Das razoes do recurso (critica ao acordao denegatório)
+V - Dos precedentes do STJ (verificados via web_search)
+VI - Dos pedidos (reforma do acordao + concessao da ordem)
+
+7. LIMINAR NO RHC
+
+E possivel requerer LIMINAR em RHC para suspender os efeitos do acordao
+denegatório enquanto o recurso nao e julgado. Fundamentos:
+
+Fumus boni iuris: demonstracao de flagrante ilegalidade na prisao.
+Periculum in mora: prejuizo irreparavel da liberdade enquanto se aguarda
+o julgamento.
+
+MODELO DE PEDIDO DE LIMINAR NO RHC:
+"Requer-se, em carater de URGENCIA, a concessao de MEDIDA LIMINAR para
+suspender os efeitos do acordao recorrido e determinar a imediata expedicao
+de alvara de soltura em favor do recorrente, ante a presenca de:
+
+FUMUS BONI IURIS: [demonstracao da ilegalidade flagrante da prisao, com
+referencia a precedentes do STJ verificados via web_search]
+
+PERICULUM IN MORA: O recorrente encontra-se preso desde [DATA], submetido
+a constrangimento ilegal que se perpetua a cada dia, e o aguardo do
+julgamento final causaria dano irreparavel a sua liberdade.
+
+O entendimento reiterado desta Egre'gia Corte e no sentido de que [CITAR
+ORIENTACAO DO STJ SOBRE LIMINAR EM RHC, verificada via web_search]."
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE C: RECURSO ESPECIAL CRIMINAL (REsp)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+1. FUNDAMENTO CONSTITUCIONAL
+
+Art. 105, III, CF/88: "Compete ao Superior Tribunal de Justica julgar, em
+recurso especial, as causas decididas, em unica ou ultima instancia, pelos
+Tribunais Regionais Federais ou pelos Tribunais dos Estados, do Distrito
+Federal e dos Territorios, quando a decisao recorrida:
+
+a) contrariar tratado ou lei federal, ou negar-lhes vigencia;
+b) julgar valido ato de governo local contestado em face de lei federal;
+c) der a lei federal interpretacao divergente da que lhe haja atribuido outro
+   tribunal."
+
+2. HIPOTESES DE CABIMENTO EM MATERIA CRIMINAL
+
+2.1 ALINEA A - CONTRARIAR TRATADO OU LEI FEDERAL
+
+TRATADOS APLICAVEIS EM MATERIA CRIMINAL (base do REsp por alinea a):
+- CADH (Decreto 678/1992): Art. 7 (liberdade); Art. 8 (garantias judiciais);
+  Art. 9 (legalidade e retroatividade); Art. 25 (protecao judicial)
+- PIDCP (Decreto 592/1992): Art. 9 (liberdade); Art. 14 (processo justo);
+  Art. 15 (retroatividade benefica)
+
+LEIS FEDERAIS TIPICAMENTE VIOLADAS EM MATERIA CRIMINAL:
+- CPP: arts. 312, 313, 315 (prisao preventiva); arts. 41, 395 (denuncia);
+  arts. 158-F (cadeia de custodia); art. 197 (execucao penal)
+- CP: arts. 59-68 (dosimetria); art. 109 (prescricao); art. 2 (retroatividade)
+- LEP: arts. 112, 122, 131 (progressao, saida temporaria, livramento)
+- Lei 11.343/2006 (drogas): arts. 33, 35, 40, 41, 42, 46
+- Lei 8.072/1990 (hediondos): arts. 1, 2, 9
+- Lei 9.296/1996 (interceptacao): arts. 1, 2, 4
+- Lei 12.403/2011: arts. 282-350 CPP (medidas cautelares)
+- Lei 13.964/2019 (Pacote Anticrime): art. 315 CPP, ANPP
+
+MODELO DE FUNDAMENTACAO NA ALINEA A:
+"A decisao recorrida CONTRARIOU o art. [NUMERO] do [CPP/CP/Lei], que
+estabelece [TRANSCRICAO DO DISPOSITIVO]. Com efeito, o Egre'gio Tribunal a
+quo decidiu que [REPRODUCAO DO ENTENDIMENTO CONTRARIO], em flagrante
+desrespeito ao comando normativo, que e claro ao dispor que [INTERPRETACAO
+CORRETA].
+
+Alem disso, a decisao recorrida contrariou o art. [NUMERO] da Convencao
+Americana de Direitos Humanos (CADH), promulgada pelo Decreto 678/1992, que
+possui status supralegal (STF, RE 466.343-SP) e e lei federal para os fins do
+art. 105, III, 'a', da CF/88."
+
+2.2 ALINEA C - INTERPRETACAO DIVERGENTE DE OUTRO TRIBUNAL
+
+O REsp pela alinea c exige a demonstracao de DISSENSO PRETORIAL: o tribunal
+a quo interpretou lei federal de forma diferente de outro tribunal.
+
+TECNICA DO COTEJAMENTO ANALI'TICO (obrigatoria):
+a) Identificar o ACORDAO RECORRIDO (decisao do TJ/TRF)
+b) Identificar o ACORDAO PARADIGMA (decisao de outro TJ/TRF ou do STJ)
+c) Demonstrar que AMBOS OS ACORDAOS enfrentaram a MESMA QUESTAO JURIDICA
+d) Demonstrar que chegaram a CONCLUSOES OPOSTAS sobre a mesma norma federal
+e) Concluir que ha divergencia e que o entendimento do paradigma deve prevalecer
+
+MODELO DE COTEJAMENTO ANALI'TICO:
+"Demonstra-se o dissenso pretorial mediante o seguinte cotejamento analitico:
+
+ACORDAO RECORRIDO:
+Tribunal: Tribunal de Justica do Estado de [UF]
+Recurso: [TIPO/NUMERO]
+Data: [DATA]
+Tese adotada: '[PARAFRASEAR A TESE DO TJ/TRF RECORRIDO]'
+
+ACORDAO PARADIGMA:
+Tribunal: [OUTRO TJ/TRF ou STJ]
+Recurso: [TIPO/NUMERO] - verificado via web_search
+Data: [DATA]
+Tese adotada: '[PARAFRASEAR A TESE CONTRARIA DO ACORDAO PARADIGMA]'
+
+IDENTIDADE JURIDICA:
+Ambos os acordaos enfrentaram a mesma questao juridica: a interpretacao do
+art. [NUMERO] do [CPP/CP/Lei], especificamente quanto a [QUESTAO ESPECIFICA].
+
+DIVERGENCIA:
+O acordao recorrido concluiu que [TESE A]. O acordao paradigma concluiu que
+[TESE B]. As conclusoes sao diametralmente opostas sobre o mesmo dispositivo
+federal, configurando o dissenso pretorial exigido pelo art. 105, III, 'c', CF.
+
+PREVALENCIA DO PARADIGMA:
+A tese do acordao paradigma e a correta, pois [FUNDAMENTACAO JURIDICA].
+Requer-se a uniformizacao da interpretacao em favor do entendimento correto."
+
+3. REQUISITOS DE ADMISSIBILIDADE DO REsp CRIMINAL
+
+3.1. PREQUESTIONAMENTO (Sumulas 282 e 356 STF)
+O dispositivo federal violado DEVE ter sido debatido e decidido pelo tribunal
+a quo. Se o acordao do TJ/TRF for omisso sobre algum dispositivo invocado:
+→ Opor embargos de declaracao para forcar o prequestionamento (Sumula 356 STF)
+→ Se mesmo apos ED o tribunal nao se manifestar: prequestionamento implicito
+   (alguns precedentes do STJ admitem - verificar via web_search)
+
+3.2. AUSENCIA DO OBICE DA SUMULA 7 STJ
+"A pretensao de simples reexame de prova nao enseja recurso especial."
+
+ESTRATEGIA ANTI-SUMULA 7:
+A tese recursal deve ser formulada como questao de DIREITO (interpretacao
+ou aplicacao de norma federal), nao de FATO.
+
+Tecnica: Registrar expressamente no RESE/AIC os FATOS INCONTROVERSOS como
+premissas juridicas consolidadas, de forma que o REsp apenas aplique o
+direito a esses fatos ja fixados.
+
+MODELO:
+"A questao nao envolve reexame de prova (Sumula 7/STJ), mas sim a CORRETA
+INTERPRETACAO E APLICACAO do art. [NUMERO] do [CPP/CP/Lei] aos fatos
+incontroversos registrados pelo acordao recorrido. Com efeito, o proprio
+Tribunal a quo reconheceu que [FATOS INCONTROVERSOS EXTRAIDOS DO ACORDAO].
+A questao e, portanto, exclusivamente de DIREITO: a partir desses fatos
+incontroversos, o direito a ser aplicado e [TESE JURIDICA], nao o que
+decidiu o Tribunal."
+
+3.3. AUSENCIA DO OBICE DA SUMULA 83 STJ
+"Nao se conhece do recurso especial pela divergencia, quando a orientacao
+do Tribunal se firmou no mesmo sentido da decisao recorrida."
+
+ESTRATEGIA ANTI-SUMULA 83:
+Demonstrar que a orientacao atual do STJ e DIFERENTE da decisao recorrida,
+ou seja, que o STJ mais recentemente firmou entendimento FAVORAVEL ao
+recorrente. Verificar via web_search a jurisprudencia atual do STJ.
+
+MODELO:
+"Nao incide a Sumula 83 do Superior Tribunal de Justica, pois a jurisprudencia
+desta Egre'gia Corte, em seus julgados mais recentes [CITAR VIA WEB_SEARCH],
+firmou-se no sentido de [TESE FAVORAVEL AO RECORRENTE], posicao diametralmente
+oposta ao decidido pelo Tribunal a quo."
+
+3.4. CAUSAS DECIDIDAS EM UNICA OU ULTIMA INSTANCIA
+O REsp so cabe contra decisoes de TJ ou TRF. NAO cabe contra decisoes
+de juizos de primeiro grau. Em materia criminal, o acordao do TJ/TRF
+que julga o RESE ou a apelacao e o ato impugnavel.
+
+4. PRAZO DO REsp
+
+Art. 508 CPC c/c art. 3 CPP (subsidiario): 15 (quinze) DIAS UTEIS.
+
+ATENCAO: Ao contrario do prazo do RESE (5 dias CORRIDOS), o REsp segue o
+CPC/2015 (aplicacao subsidiaria) e e contado em DIAS UTEIS.
+
+INICIO: Publicacao no DJe do acordao do TJ/TRF (ou do acordao dos ED se
+opostos para prequestionamento).
+
+5. PREPARO NO REsp CRIMINAL
+
+Regra geral: Ha preparo no REsp (art. 1007 CPC).
+Excecoes: O reu beneficiario de assistencia judiciaria gratuita e isento.
+O MP e isento.
+
+Verificar a tabela de custas do STJ via web_search.
+
+6. HIPOTESES ESPECIFICAS DE REsp CRIMINAL ADMISSIVEL
+
+6.1. REsp SOBRE PRISAO PREVENTIVA:
+Questao de direito: a aplicacao dos requisitos do art. 312 CPP aos fatos
+incontroversos do caso.
+Sumula a afastar: Sumula 7 (os fatos sao incontroversos; so se discute o direito)
+Precedentes a citar: Verificar via web_search os precedentes do STJ sobre
+fundamentacao concreta da preventiva.
+
+6.2. REsp SOBRE DOSIMETRIA:
+Questao de direito: aplicacao correta dos criterios do art. 59 CP; vedacao
+de bis in idem; calculo das tres fases; regime inicial.
+Sumulas relevantes: 231, 241, 269, 444, 545 STJ.
+Estrategia: Demonstrar que a questao e de DIREITO (calculo matematico ou
+aplicacao de criterio legal), nao de reexame da valoracao das provas.
+
+6.3. REsp SOBRE PRESCRICAO:
+Questao de direito: calculo dos prazos do art. 109 CP; causas interruptivas
+(art. 117 CP); prescricao retroativa; prescricao da execucao.
+Estrategia: Demonstrar os fatos incontroversos (datas) e o erro juridico
+no calculo.
+
+6.4. REsp SOBRE NULIDADES:
+Questao de direito: aplicacao dos arts. 563-573 CPP; prova ilicita (art. 157
+CPP); cadeia de custodia (arts. 158-A a 158-F CPP).
+Estrategia: Demonstrar que a nulidade decorre da aplicacao da lei (questao
+de direito), nao de reapreciacao da prova.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE D: RECURSO EXTRAORDINARIO CRIMINAL (RE)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+1. FUNDAMENTO CONSTITUCIONAL
+
+Art. 102, III, CF/88: "Compete ao Supremo Tribunal Federal julgar, em recurso
+extraordinario, as causas decididas em unica ou ultima instancia, quando a
+decisao recorrida:
+
+a) contrariar dispositivo desta Constituicao;
+b) declarar a inconstitucionalidade de tratado ou lei federal;
+c) julgar valida lei ou ato de governo local contestado em face desta
+   Constituicao;
+d) julgar valida lei local contestada em face de lei federal."
+
+2. REQUISITO DE REPERCUSSAO GERAL (ART. 102, §3, CF)
+
+O RE em materia criminal exige a demonstracao de REPERCUSSAO GERAL:
+a questao constitucional deve transcender o interesse subjetivo das partes
+e ter relevancia para a ordem juridica, politica, social ou economica.
+
+COMO DEMONSTRAR REPERCUSSAO GERAL EM MATERIA CRIMINAL:
+- A questao afeta um numero indeterminado de acusados em situacao analoga
+- A questao envolve garantia constitucional fundamental (presuncao de
+  inocencia, devido processo legal, ampla defesa)
+- A questao diverge de precedente do proprio STF
+- Ha tema de repercussao geral ja reconhecido que enquadra o caso
+
+VERIFICAR VIA WEB_SEARCH: www.stf.jus.br → pesquisar temas de repercussao
+geral em materia criminal para enquadrar o caso.
+
+3. HIPOTESES MAIS FREQUENTES DE RE CRIMINAL
+
+3.1. EXECUCAO PROVISORIA DA PENA:
+Tema 925 STF (ADC 43, 44 e 54, j. 07/11/2019): O STF decidiu que a execucao
+provisoria da pena antes do transito em julgado VIOLA o art. 5, LVII, CF/88.
+Verificar status atual via web_search.
+
+3.2. PRESUNCAO DE INOCENCIA (ART. 5, LVII, CF):
+Qualquer decisao que imponga antecipacao de pena ou tratamento de culpado
+a quem nao tem condenacao transitada em julgado.
+
+3.3. DEVIDO PROCESSO LEGAL (ART. 5, LIV, CF):
+Violacao de regras processuais com assento constitucional.
+
+3.4. AMPLA DEFESA E CONTRADITORIO (ART. 5, LV, CF):
+Cerceamento de defesa; negativa de producao de prova essencial; falta de
+intimacao para ato relevante.
+
+3.5. MOTIVACAO DAS DECISOES (ART. 93, IX, CF):
+Decisao sem fundamentacao adequada; fundamentacao por padroes abstratos.
+
+3.6. VEDACAO DA PROVA ILICITA (ART. 5, LVI, CF):
+Admissao de prova obtida por meio ilicito.
+
+3.7. INVIOLABILIDADE DO DOMICILIO (ART. 5, XI, CF):
+Busca e apreensao sem mandado judicial e sem situacao de flagrante.
+
+3.8. INVIOLABILIDADE DAS COMUNICACOES (ART. 5, XII, CF):
+Interceptacao telefonica sem autorizacao judicial adequada.
+
+4. PRAZO DO RE
+
+Art. 1003, §5, CPC c/c repercussao geral: 15 (quinze) DIAS UTEIS.
+
+5. PREQUESTIONAMENTO NO RE
+
+Sumulas 282 e 356 STF:
+"282: E inadmissivel o recurso extraordinario, quando nao ventilada, na
+decisao recorrida, a questao federal suscitada."
+"356: O ponto omisso da decisao, sobre o qual nao foram opostos embargos
+declaratorios, nao pode ser objeto de recurso extraordinario, por faltar
+o requisito do prequestionamento."
+
+ESTRATEGIA: Todo dispositivo constitucional deve ter sido expressamente
+debatido no RESE/AIC e no acordao do TJ/TRF. Se o acordao for omisso,
+opor embargos de declaracao (art. 619 CPP, prazo 2 dias) para forcar
+o pronunciamento.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE E: HABEAS CORPUS DIRETO NO STJ (ART. 105, I, C, CF)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+1. FUNDAMENTO CONSTITUCIONAL
+
+Art. 105, I, c, CF: "Compete ao Superior Tribunal de Justica processar e
+julgar originariamente: os habeas corpus, quando o coator ou paciente for
+tribunal sujeito a sua jurisdicao ou quando o coator for ministro de Estado
+ou comandante das Forcas Armadas, ressalvada a competencia da Justica
+Eleitoral."
+
+2. CABIMENTO ESPECIFICO EM MATERIA CRIMINAL
+
+O HC ORIGINARIO NO STJ e cabivel quando:
+
+a) A AUTORIDADE COATORA for um DESEMBARGADOR do TJ ou TRF:
+   Ex.: O Relator do RESE no TJ decretou a prisao do reu ao julgar
+   o recurso. A coacao e do desembargador, entao o HC e no STJ.
+
+b) O ATO COATOR for do PROPRIO TRIBUNAL (TJ ou TRF):
+   Ex.: A Camara Criminal do TJ, ao julgar o RESE, determinou o
+   cumprimento imediato da medida restritiva de liberdade. A coacao
+   e do tribunal, entao o HC e no STJ.
+
+c) O PACIENTE for detento sob ordem de tribunal sujeito a jurisdicao
+   do STJ.
+
+3. DISTINCAO COM O RHC
+
+HC ORIGINARIO NO STJ: Quando a coacao E DO PROPRIO TJ/TRF (desembargador
+ou colegiado do TJ/TRF e a autoridade coatora).
+
+RHC NO STJ: Quando o TJ/TRF DENEGOU o HC que fora impetrado contra decisao
+de juiz de primeiro grau.
+
+Exemplo pratico:
+- Juiz de 1 grau decreta prisao preventiva → HC no TJ/TRF → TJ/TRF denega → RHC no STJ
+- Desembargador relator do RESE profere decisao restritiva de liberdade → HC originario no STJ
+
+4. NAO CABE HC SUBSTITUTIVO DE RECURSO
+
+O STJ e o STF consolidaram que NAO CABE HC como substitutivo de recurso
+proprio quando ha recurso adequado disponivel (ex.: agravo regimental,
+RHC, REsp). O HC so e admitido quando:
+
+a) Nao existe recurso adequado;
+b) O recurso adequado nao tem efeito suspensivo e o dano a liberdade
+   e irreparavel se se aguardar o julgamento;
+c) Ha flagrante ilegalidade ou teratologia manifesta.
+
+Sumula 691 STF (com mitigacoes): "Nao compete ao Supremo Tribunal Federal
+conhecer de habeas corpus impetrado contra decisao do Relator que, em habeas
+corpus requerido a tribunal superior, indefere a liminar."
+
+Mitigacao da Sumula 691 STF: Admite-se o HC no STF contra liminar
+indeferida em tribunal superior quando ha:
+a) Flagrante ilegalidade;
+b) Teratologia;
+c) Abuso de poder manifesto;
+d) Situacao em que o recurso proprio e insuficiente para evitar dano
+   irreparavel.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE F: OBICES SUMULARES E ESTRATEGIA DE CONTORNO
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+1. SUMULA 7 STJ - REEXAME DE PROVA
+
+TEXTO: "A pretensao de simples reexame de prova nao enseja recurso especial."
+
+INCIDE QUANDO: O recorrente pede, na essencia, que o STJ reavalie a
+prova dos autos (valoracao de testemunha, laudo pericial, reconhecimento
+pessoal).
+
+NAO INCIDE QUANDO:
+- A questao e de DIREITO: interpretacao ou aplicacao de norma federal
+  a fatos incontroversos
+- Se discute a ADMISSIBILIDADE da prova (prova ilicita, cadeia de
+  custodia), nao o seu valor
+- Se discute a ESTRUTURA LOGICA da motivacao (art. 93, IX, CF), nao
+  o resultado da avaliacao probatoria
+- Fatos sao INCONTROVERSOS (estabelecidos pelo acordao) e a questao
+  e apenas juridica
+
+ESTRATEGIA DEFINITIVA - "BLINDAGEM DA SUMULA 7":
+
+PASSO 1 (no RESE/AIC): Registrar expressamente os fatos incontroversos
+dos autos como premissas estabelecidas, sem controvertê-los.
+
+PASSO 2 (no RESE/AIC e no acordao): Enquadrar a tese como QUESTAO DE
+DIREITO que decorre necessariamente daqueles fatos incontroversos.
+
+PASSO 3 (no REsp): Citar expressamente o excerto do acordao do TJ/TRF
+que reconhece os fatos, e demonstrar que a questao e so de direito.
+
+MODELO DE ARGUMENTACAO ANTI-SUMULA 7:
+"Nao ha pretensao de reexame de prova (Sumula 7/STJ). Os fatos incontroversos
+foram assim fixados pelo Egre'gio Tribunal a quo no acordao recorrido:
+'[TRANSCRICAO DO TRECHO DO ACORDAO QUE RECONHECE OS FATOS]'.
+
+A partir desses fatos, a unica questao que se coloca e de DIREITO: se tais
+fatos, tal como reconhecidos pelo Tribunal a quo, configuram [A] os requisitos
+do art. 312 do CPP para a preventiva / [B] a tipicidade do art. [N] do CP /
+[C] outro enquadramento. A questao e de SUBSUNCAO, nao de revaloracacao de prova."
+
+2. SUMULA 83 STJ - DIVERGENCIA COM JURISPRUDENCIA DO PROPRIO STJ
+
+TEXTO: "Nao se conhece do recurso especial pela divergencia, quando a
+orientacao do Tribunal se firmou no mesmo sentido da decisao recorrida."
+
+INCIDE QUANDO: O recorrente invoca dissenso pretorial (alinea c do art. 105,
+III, CF), mas o proprio STJ ja firmou jurisprudencia no mesmo sentido
+do acordao recorrido.
+
+ESTRATEGIA DE CONTORNO:
+a) Verificar via web_search se ha PRECEDENTE MAIS RECENTE do STJ em sentido
+   CONTRARIO ao acordao recorrido, e basear o REsp nesse precedente mais
+   recente (demonstrando que a orientacao mudou).
+b) Fundamente o REsp na ALINEA A (contrariedade a lei federal), nao apenas
+   na alinea c (divergencia pretorial). A Sumula 83 so afasta a alinea c;
+   nao incide sobre a alinea a.
+c) Se a jurisprudencia do STJ for desfavoravel, avaliar se ha tema de
+   repercussao geral no STF que supere o entendimento do STJ.
+
+3. SUMULA 211 STJ - PREQUESTIONAMENTO AUSENTE
+
+TEXTO: "Inadmissivel recurso especial quanto a questao que, a despeito da
+oposicao de embargos declaratorios, nao foi apreciada pelo tribunal a quo."
+
+PREVENCAO: Ao redigir o RESE/AIC, prequestionar TODOS os dispositivos
+federais e constitucionais que podem ser relevantes no futuro REsp.
+
+CURATIVA: Se o acordao do TJ/TRF for omisso, opor embargos de declaracao
+(art. 619 CPP) ANTES do REsp, exigindo pronunciamento expresso.
+
+4. SUMULA 280 STF - DIREITO LOCAL NAO ENSEJA RE
+
+TEXTO: "Por ofensa a direito local, nao cabe recurso extraordinario."
+
+ESTRATEGIA: Sempre enquadrar a questao em norma federal ou constitucional,
+nao em lei estadual ou municipal.
+
+5. SUMULA 282 STF - AUSENCIA DE PREQUESTIONAMENTO NO RE
+
+TEXTO: "E inadmissivel o recurso extraordinario, quando nao ventilada, na
+decisao recorrida, a questao federal suscitada."
+
+PREVENCAO: Todo dispositivo constitucional invocado no RE deve ter sido
+prequestionado no RESE/AIC e deve constar expressamente do acordao do TJ/TRF.
+
+6. SUMULA 356 STF - OMISSAO NAO SANADA POR ED
+
+TEXTO: "O ponto omisso da decisao, sobre o qual nao foram opostos embargos
+declaratorios, nao pode ser objeto de recurso extraordinario, por faltar
+o requisito do prequestionamento."
+
+ESTRATEGIA: Sempre opor embargos de declaracao se o acordao do TJ/TRF for
+omisso sobre algum ponto constitucional relevante.
+
+7. SUMULA 691 STF (COM MITIGACOES) - HC CONTRA LIMINAR INDEFERIDA
+
+Texto e mitigacoes ja expostos na Parte E, item 4, acima.
+
+8. SUMULA 109 STJ - ACAO PENAL PRIVADA E ACAO PENAL PUBLICA
+
+TEXTO: "No crime de contrabando ou descaminho, nao se aplica a escusa
+absolutoria do art. 181 do Codigo Penal."
+
+(Sumula criminal relevante em materia especifica - verificar aplicabilidade)
+
+9. CHECKLIST DE OBICES SUMULARES - VERIFICAR ANTES DE PROTOCOLAR REsp
+
+[ ] Sumula 7 STJ: A tese e de DIREITO, nao de reexame de prova? Blindagem
+    realizada (fatos incontroversos registrados)?
+[ ] Sumula 83 STJ: Ha precedente RECENTE do STJ em sentido CONTRARIO ao
+    acordao recorrido (verificado via web_search)?
+[ ] Sumula 211 STJ: Todos os dispositivos federais foram PREQUESTIONADOS
+    no RESE/AIC e no acordao?
+[ ] Sumula 280 STF: A questao e de norma FEDERAL ou CONSTITUCIONAL, nao
+    de direito local?
+[ ] Sumula 282 STF: Todos os dispositivos constitucionais foram ventilados
+    no acordao do TJ/TRF?
+[ ] Sumula 356 STF: Se o acordao foi omisso, foram opostos ED antes do RE?
+[ ] Sumula 691 STF: Se ha HC substitutivo, ha flagrante ilegalidade ou
+    teratologia para superar a sumula?
+[ ] Sumula 568 STJ: O relator tem poder de decidir monocráticamente? Sera
+    necessario agravo regimental?
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE G: CONTROLE DE CONVENCIONALIDADE - CADH COMO BASE DE REsp
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+1. FUNDAMENTO JURIDICO DO CONTROLE DE CONVENCIONALIDADE
+
+O controle de convencionalidade e a verificacao de compatibilidade entre
+o direito interno (leis ordinarias, decisoes judiciais) e os tratados
+internacionais de direitos humanos.
+
+FUNDAMENTO CONSTITUCIONAL:
+Art. 5, §2, CF/88: "Os direitos e garantias expressos nesta Constituicao
+nao excluem outros decorrentes do regime e dos principios por ela adotados,
+ou dos tratados internacionais em que a Republica Federativa do Brasil seja parte."
+
+Art. 5, §3, CF/88 (EC 45/2004): Tratados aprovados com quorum qualificado
+tem status CONSTITUCIONAL.
+
+DECISAO PARADIGMA DO STF (RE 466.343-SP, rel. Min. Cezar Peluso, 2008):
+Tratados de direitos humanos NAO aprovados com quorum qualificado tem
+STATUS SUPRALEGAL: estao acima das leis ordinarias, mas abaixo da CF.
+
+2. A CADH COMO BASE PARA O REsp (VIOLACAO A TRATADO - ART. 105, III, A, CF)
+
+Como a CADH e tratado de direitos humanos com status supralegal, ela
+constitui "lei federal" para os fins do art. 105, III, a, CF.
+
+Portanto: A violacao de dispositivo da CADH por decisao de TJ ou TRF
+ADMITE REsp ao STJ com fundamento no art. 105, III, a, CF
+(a decisao recorrida "contrariou tratado").
+
+ARTIGOS DA CADH MAIS UTILIZADOS COMO BASE DE REsp CRIMINAL:
+
+Art. 7 CADH - Direito a Liberdade Pessoal:
+§§ 1-7 (transcricao ja na Parte XIX do prompt principal).
+REsp cabivel quando: decisao do TJ/TRF manteve prisao cautelar sem
+fundamento concreto, em violacao ao art. 7, §3, CADH ("ninguem pode ser
+submetido a detencao ou encarceramento arbitrarios").
+
+Art. 8 CADH - Garantias Judiciais:
+§1: Prazo razoavel; tribunal competente.
+§2: Presuncao de inocencia.
+§2, g: Direito de nao se auto-incriminar.
+§2, h: Direito de recorrer.
+REsp cabivel quando: viola presuncao de inocencia, excesso de prazo na
+instrucao, cerceamento do direito de defesa.
+
+Art. 9 CADH - Principio da Legalidade e Retroatividade:
+"Se com posterioridade a comissao do delito a lei dispoe a imposicao de
+pena mais leve, o delinquente se beneficiara disso."
+REsp cabivel quando: TJ/TRF nega retroatividade benefica de lei posterior
+mais favoravel.
+
+Art. 25 CADH - Protecao Judicial:
+Direito a recurso simples e rapido; direito ao acesso ao Judiciario.
+REsp cabivel quando: TJ/TRF nega acesso a instancia recursal ou obstrui
+o direito de impugnar decisao.
+
+3. MODELO DE ARGUMENTACAO DE CONTROLE DE CONVENCIONALIDADE
+
+"Para fins de prequestionamento e com fundamento no art. 105, III, 'a', da
+Constituicao Federal (que autoriza REsp por violacao a TRATADO), invoca-se
+expressamente a violacao ao art. [NUMERO] da Convencao Americana de Direitos
+Humanos (CADH), promulgada pelo Decreto 678, de 06 de novembro de 1992.
+
+A CADH possui STATUS SUPRALEGAL no ordenamento juridico brasileiro, consoante
+entendimento firmado pelo Supremo Tribunal Federal no julgamento do RE
+466.343-SP, e constitui 'tratado' para os fins do art. 105, III, 'a', da CF/88
+(violacao de tratado como hipotese de REsp).
+
+No caso concreto, a decisao recorrida CONTRARIOU o art. [NUMERO] da CADH ao
+[DESCRICAO DA VIOLACAO CONCRETA], em manifesta incompatibilidade com o comando
+normativo convencional que dispoe: '[TRANSCRICAO DO DISPOSITIVO CONVENCIONAL]'.
+
+O Egre'gio Superior Tribunal de Justica, realizando o controle de
+convencionalidade, deve REFORMAR o v. acordao recorrido para adequa-lo ao
+padrao normativo da CADH, recepcionado pelo ordenamento juridico brasileiro
+com status supralegal (acima das leis ordinarias, inclusive do CPP)."
+
+4. CONTROLE DE CONVENCIONALIDADE DIFUSO
+
+Alem do REsp, o controle de convencionalidade pode ser exercido DIFUSAMENTE:
+qualquer juiz ou tribunal pode deixar de aplicar norma interna incompativel
+com tratado de direitos humanos.
+
+APLICACAO NO RESE/AIC:
+Ao redigir o RESE ou AIC, arguir que o juiz a quo DEVERIA TER realizado
+o controle de convencionalidade e deixado de aplicar a norma interna
+incompativel com a CADH. Isso cria base para o prequestionamento e para
+o futuro REsp.
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+PARTE H: TECNICA DE PREQUESTIONAMENTO EM TRES CAMADAS
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+1. CONCEITO DAS TRES CAMADAS
+
+O prequestionamento em tres camadas e a tecnica de estruturar o recurso
+(RESE/AIC) de forma que:
+
+CAMADA 1 - BASE CONSTITUCIONAL:
+Invoca as garantias da CF/88 (presuncao de inocencia, ampla defesa,
+devido processo, motivacao) para criar base de RE no STF.
+
+CAMADA 2 - BASE LEGAL FEDERAL:
+Invoca os dispositivos do CPP, CP e leis especiais (Lei de Drogas, LEP,
+Pacote Anticrime) para criar base de REsp no STJ.
+
+CAMADA 3 - BASE CONVENCIONAL (TRATADOS):
+Invoca os artigos da CADH e do PIDCP para criar base de REsp por
+violacao a tratado (art. 105, III, a, CF) e tambem de RE (status
+quase-constitucional dos tratados pelo art. 5, §§ 2 e 3, CF).
+
+2. COMO APLICAR AS TRES CAMADAS NO RESE/AIC
+
+Para CADA TESE DEFENSIVA, estruturar assim:
+
+"[TESE X: EX.: NULIDADE DA PRISAO PREVENTIVA POR FUNDAMENTACAO ABSTRATA]
+
+CAMADA 1 - CONSTITUCIONAL:
+A decisao recorrida violou o art. 93, IX, da Constituicao Federal, que
+exige motivacao CONCRETA de todas as decisoes judiciais, e o art. 5, LXI,
+da CF, que exige ordem escrita e fundamentada para a prisao.
+
+Requer-se o PREQUESTIONAMENTO EXPRESSO do art. 93, IX, e do art. 5, LXI,
+LXVI, LXVIII, da CF/88, para fins de eventual Recurso Extraordinario ao
+Supremo Tribunal Federal.
+
+CAMADA 2 - LEGAL FEDERAL:
+A decisao recorrida violou o art. 315, §2, incisos I a VI, do Codigo de
+Processo Penal, na redacao da Lei 13.964/2019, que proibe a fundamentacao
+abstrata da prisao preventiva, e o art. 312 do CPP, que exige demonstracao
+concreta dos requisitos da cautelar.
+
+Requer-se o PREQUESTIONAMENTO EXPRESSO dos arts. 312, 313 e 315, §2, do
+Codigo de Processo Penal, para fins de eventual Recurso Especial ao Superior
+Tribunal de Justica.
+
+CAMADA 3 - CONVENCIONAL:
+A decisao recorrida violou o art. 7, §§ 2 e 3, da Convencao Americana de
+Direitos Humanos (CADH), promulgada pelo Decreto 678/1992, que veda a
+detencao arbitraria, e o art. 9, §3, do Pacto Internacional de Direitos
+Civis e Politicos (PIDCP), promulgado pelo Decreto 592/1992, que exige
+que toda pessoa presa seja conduzida sem demora a presenca de juiz.
+
+Requer-se o PREQUESTIONAMENTO EXPRESSO dos arts. 7, §§ 2 e 3, e 8, §1,
+da CADH, e do art. 9, §§ 1 e 3, do PIDCP, para fins de eventual Recurso
+Especial ao STJ por violacao a tratado (art. 105, III, 'a', CF)."
+
+3. MAPEAMENTO DE CAMADAS POR TESE DEFENSIVA
+
+TESE: NULIDADE DA PRISAO PREVENTIVA
+
+Camada 1 - CF:
+- Art. 5, LXI (prisao com ordem escrita e fundamentada)
+- Art. 5, LXVI (liberdade provisoria)
+- Art. 5, LXVIII (habeas corpus)
+- Art. 93, IX (motivacao das decisoes)
+
+Camada 2 - Lei Federal:
+- Art. 312 CPP (requisitos da preventiva)
+- Art. 313 CPP (hipoteses de admissibilidade)
+- Art. 315, §2, CPP (vedacao de fundamentacao abstrata)
+- Art. 319 CPP (medidas alternativas)
+
+Camada 3 - Tratados:
+- Art. 7, §§ 2, 3 e 5, CADH
+- Art. 9, §§ 1 e 3, PIDCP
+
+TESE: NULIDADE POR PROVA ILICITA
+
+Camada 1 - CF:
+- Art. 5, LVI (vedacao da prova ilicita)
+- Art. 5, XI (inviolabilidade do domicilio)
+- Art. 5, XII (inviolabilidade das comunicacoes)
+
+Camada 2 - Lei Federal:
+- Art. 157 CPP (prova ilicita)
+- Art. 157, §1, CPP (frutos da arvore envenenada)
+- Arts. 158-A a 158-F CPP (cadeia de custodia)
+- Lei 9.296/1996 (interceptacao telefonica)
+
+Camada 3 - Tratados:
+- Art. 11 CADH (protecao da honra e da dignidade)
+- Art. 17 PIDCP (protecao da privacidade)
+
+TESE: PRESCRICAO
+
+Camada 1 - CF:
+- Art. 5, XXXIX (legalidade penal - nenhuma pena sem lei anterior)
+- Art. 5, XLVI (individualizacao da pena)
+
+Camada 2 - Lei Federal:
+- Art. 109 CP (prazos prescricionais)
+- Art. 110 CP (prescricao da execucao)
+- Art. 117 CP (causas interruptivas)
+- Art. 116 CP (causas suspensivas)
+
+Camada 3 - Tratados:
+- Art. 9 CADH (principio da legalidade)
+- Art. 15 PIDCP (retroatividade benefica)
+
+TESE: ATIPICIDADE / INSIGNIFICANCIA
+
+Camada 1 - CF:
+- Art. 5, XXXIX (legalidade - nao ha crime sem lei)
+- Art. 5, XLVI (proporcionalidade da pena)
+
+Camada 2 - Lei Federal:
+- Art. 1 CP (principio da legalidade)
+- Art. 20 CP (erro de tipo)
+- Art. 23 CP (excludentes de ilicitude)
+
+Camada 3 - Tratados:
+- Art. 9 CADH (principio da legalidade)
+
+TESE: NULIDADE POR FUNDAMENTACAO INADEQUADA
+
+Camada 1 - CF:
+- Art. 93, IX (motivacao obrigatoria de todas as decisoes)
+- Art. 5, LIV (devido processo legal)
+- Art. 5, LV (contraditorio e ampla defesa)
+
+Camada 2 - Lei Federal:
+- Art. 315, §2, I a VI, CPP (fundamentos inadmissiveis)
+- Art. 489, §1, I a VI, CPC (aplicacao subsidiaria)
+- Art. 381 CPP (requisitos da sentenca)
+
+Camada 3 - Tratados:
+- Art. 8, §1, CADH (dever de fundamentacao das decisoes judiciais)
+- Art. 14, §1, PIDCP (julgamento por tribunal competente e imparcial)
+
+4. MODELO DE SECAO DE PREQUESTIONAMENTO COMPLETA (TRES CAMADAS)
+
+SECAO [NUMERO]: DO PREQUESTIONAMENTO EM TRES CAMADAS PARA FINS DE ADMISSIBILIDADE
+DO RECURSO AO SUPERIOR TRIBUNAL DE JUSTICA E AO SUPREMO TRIBUNAL FEDERAL
+
+Para os fins de viabilizar a interposicao de:
+(a) Recurso Especial ao Egre'gio Superior Tribunal de Justica, com fundamento
+    no art. 105, III, 'a' e 'c', da Constituicao Federal (violacao de lei
+    federal e de tratado internacional);
+(b) Recurso Extraordinario ao Egre'gio Supremo Tribunal Federal, com fundamento
+    no art. 102, III, 'a', da Constituicao Federal (violacao de dispositivo
+    constitucional);
+
+o(a) recorrente prequestiona, na forma das Sumulas 282 e 356 do Supremo Tribunal
+Federal, os seguintes dispositivos, requerendo que o Egre'gio Tribunal se manifeste
+EXPRESSAMENTE sobre cada um deles ao proferir o acordao:
+
+CAMADA 1 - DISPOSITIVOS CONSTITUCIONAIS (BASE DO RE AO STF):
+
+- Art. 5, LVII, CF/88 (presuncao de inocencia): [descrever violacao concreta]
+- Art. 5, LIV, CF/88 (devido processo legal): [descrever violacao concreta]
+- Art. 5, LV, CF/88 (contraditorio e ampla defesa): [descrever violacao concreta]
+- Art. 5, LVI, CF/88 (vedacao da prova ilicita): [se aplicavel]
+- Art. 5, LXI, LXVI, LXVIII, CF/88 (liberdade e habeas corpus): [se aplicavel]
+- Art. 5, XL, CF/88 (retroatividade benefica): [se aplicavel]
+- Art. 93, IX, CF/88 (motivacao das decisoes): [descrever violacao concreta]
+
+CAMADA 2 - DISPOSITIVOS DE LEI FEDERAL (BASE DO REsp AO STJ):
+
+- Art. 312 do CPP (requisitos da prisao preventiva): [descrever violacao]
+- Art. 315, §2, do CPP, na redacao da Lei 13.964/2019 (vedacao de fundamentacao
+  abstrata): [descrever violacao]
+- Art. 319 do CPP (medidas cautelares alternativas): [descrever]
+- Art. 157 do CPP (inadmissibilidade da prova ilicita): [se aplicavel]
+- Art. 109 do CP (prescricao): [se aplicavel]
+[Acrescentar todos os demais dispositivos relevantes]
+
+CAMADA 3 - DISPOSITIVOS DE TRATADOS INTERNACIONAIS (BASE DE REsp POR TRATADO):
+
+- Art. 7, §§ 2, 3 e 5, da Convencao Americana de Direitos Humanos (CADH),
+  promulgada pelo Decreto 678/1992 (direito a liberdade; vedacao de detencao
+  arbitraria): [descrever violacao concreta]
+- Art. 8, §§ 1 e 2, da CADH (garantias judiciais; presuncao de inocencia):
+  [descrever violacao concreta]
+- Art. 9, §§ 1 e 3, do Pacto Internacional de Direitos Civis e Politicos (PIDCP),
+  promulgado pelo Decreto 592/1992 (liberdade e seguranca pessoal): [descrever]
+- Art. 14, §§ 1 e 2, do PIDCP (garantias do processo justo; presuncao de
+  inocencia): [descrever violacao concreta]
+
+A CADH possui status supralegal no ordenamento juridico brasileiro, configurando
+"tratado" para os fins do art. 105, III, "a", da Constituicao Federal, razao
+pela qual sua violacao fundamenta o Recurso Especial ao Superior Tribunal de Justica.
+
+Requer-se, por fim, que o Egre'gio Tribunal profira acordao que se manifeste
+EXPRESSAMENTE sobre cada um dos dispositivos acima prequestionados, a fim de
+viabilizar os recursos aos tribunais superiores, sob pena de violacao ao art. 5,
+XXXV, da Constituicao Federal (acesso a Justica) e ao art. 8, §2, "h", da CADH
+(direito de recorrer da sentenca para tribunal superior).
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+CHECKLIST FINAL DO SUPLEMENTO (20 ITENS)
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+[ ] 01. Instrumento correto para tribunais superiores identificado (RHC, REsp ou RE)?
+[ ] 02. Se HC denegado pelo TJ/TRF: RHC ao STJ cogitado?
+[ ] 03. Se coacao atribuida a desembargador: HC originario no STJ cogitado?
+[ ] 04. Se questao e de lei federal: REsp pela alinea a cogitado?
+[ ] 05. Se questao e de tratado (CADH/PIDCP): REsp por violacao a tratado cogitado?
+[ ] 06. Se ha dissenso entre TJ/TRF e outro tribunal: REsp pela alinea c cogitado?
+[ ] 07. Se questao e constitucional: RE com repercussao geral cogitado?
+[ ] 08. Cotejamento analitico para REsp-alinea c elaborado?
+[ ] 09. Prequestionamento em tres camadas realizado (CF + lei federal + tratados)?
+[ ] 10. Todos os dispositivos prequestionados com numero, inciso, paragrafo e alinea?
+[ ] 11. Todos os dispositivos da CADH e PIDCP relevantes invocados?
+[ ] 12. Controle de convencionalidade arguido (se aplicavel)?
+[ ] 13. Sumula 7 STJ: tese blindada com fatos incontroversos registrados?
+[ ] 14. Sumula 83 STJ: jurisprudencia atual do STJ verificada via web_search?
+[ ] 15. Sumula 211 STJ: todos os dispositivos prequestionados?
+[ ] 16. Sumulas 282 e 356 STF: prequestionamento expresso realizado?
+[ ] 17. Embargos de declaracao planejados se o acordao for omisso?
+[ ] 18. Pedido expresso ao tribunal para se manifestar sobre cada dispositivo?
+[ ] 19. Liminar no RHC cogitada (se urgencia de liberdade)?
+[ ] 20. Estrategia de controle de convencionalidade construida para o caso?
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+FIM DO SUPLEMENTO - PREQUESTIONAMENTO AVANCADO + MANUAL STJ
+═══════════════════════════════════════════════════════════════════════════════════
+
+ARQUIVO: SUPLEMENTO_PREQUESTR_MANUAL_STJ_CRIMINAL_V5.0.txt
+VERSAO: 5.0
+DATA: 30/03/2026
+AUTOR: Dr. Rodolfo Otavio Mota - OAB/GO 21.841
+STATUS: COMPLETO - Sistema ROM V3.0 Fase 1.5
+
+USAR EM CONJUNTO COM:
+- PROMPT_AGRAVO_INSTRUMENTO_CRIMINAL_V5.0.txt (substitui Parte XVI)
+- PROMPT_HABEAS_CORPUS_V5.0.txt
+- PROMPT_APELACAO_CRIMINAL_COMPLETA_V5.0.txt
+- 01_MASTER_ROM_V3.txt
+
+═══════════════════════════════════════════════════════════════════════════════════

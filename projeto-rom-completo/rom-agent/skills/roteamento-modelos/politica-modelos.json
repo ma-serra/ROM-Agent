@@ -1,0 +1,26 @@
+{
+  "_nota": "Preços por milhão de tokens (USD), conferir no console/Bedrock. Escalonamento por custo: operacional->barato, julgamento jurídico->premium. Tarefas críticas NUNCA caem abaixo da barra de qualidade.",
+  "modelos": {
+    "haiku":  {"id": "claude-haiku-4-5",  "in": 1.0, "out": 5.0,  "uso": "operacional/alto volume: inventário, roteamento, triagem, formatação, anotação"},
+    "sonnet": {"id": "claude-sonnet-4-6", "in": 3.0, "out": 15.0, "uso": "intermediário: leitura estruturada, análise, jurimetria (interpretação), redação de apoio, RAG"},
+    "opus":   {"id": "claude-opus-4-8",   "in": 5.0, "out": 25.0, "uso": "crítico: diagnóstico de admissibilidade, redação final de recurso, auditoria adversarial"},
+    "aberto_bedrock": {"id": "<modelo-aberto-no-Bedrock>", "in": 0.0, "out": 0.0, "uso": "mais barato/local para tarefas puramente mecânicas; confirmar disponibilidade e qualidade"}
+  },
+  "tarefas": {
+    "inventario_autos": "haiku",
+    "formatacao": "haiku",
+    "triagem": "haiku",
+    "extracao_estruturada": "sonnet",
+    "leitura_jurisprudencia": "sonnet",
+    "jurimetria_interpretacao": "sonnet",
+    "verificacao_citacoes": "sonnet",
+    "redacao_apoio": "sonnet",
+    "diagnostico_admissibilidade": "opus",
+    "redacao_final_recurso": "opus",
+    "auditoria_admissibilidade": "opus",
+    "pre_protocolo": "opus"
+  },
+  "criticas_nunca_rebaixar": ["diagnostico_admissibilidade", "redacao_final_recurso", "auditoria_admissibilidade", "verificacao_citacoes", "pre_protocolo"],
+  "alavancas_custo": ["batch_50pct_para_nao_urgente", "cache_90pct_contexto_repetido(constituicao,sumulas,jurisprudencia)", "tier_haiku_operacional", "modelo_aberto_bedrock_para_mecanico"],
+  "orcamento": {"cap_sessao_usd": 5.0, "alerta_pct": 80}
+}
