@@ -100,43 +100,139 @@ router.get('/extraction-jobs/active', requireAuth, async (req, res) => {
 /**
  * GET /api/extraction-jobs/:id
  * Get specific extraction job details
+ *
+ * HOTFIX v3.4.1: Adiciona timeout, logging detalhado, tratamento defensivo
  */
 router.get('/extraction-jobs/:id', requireAuth, async (req, res) => {
-  try {
-    const job = await ExtractionJob.findOne({
-      where: {
-        id: req.params.id,
-        userId: req.session.user.id
-      }
-    });
+  const startTime = Date.now();
 
-    if (!job) {
-      return res.status(404).json({
+  // Garantir que sempre retorna JSON mesmo em caso de erro catastrófico
+  const sendError = (statusCode, errorMessage, extraData = {}) => {
+    if (!res.headersSent) {
+      logger.error('[ExtractionJobs] Error getting job', {
+        error: errorMessage,
+        jobId: req.params.id,
+        userId: req.session?.user?.id,
+        duration: Date.now() - startTime,
+        ...extraData
+      });
+
+      res.status(statusCode).json({
         success: false,
-        error: 'Extraction job not found'
+        error: errorMessage,
+        ...extraData
+      });
+    }
+  };
+
+  try {
+    // Validar parâmetros
+    if (!req.params.id) {
+      return sendError(400, 'Job ID is required');
+    }
+
+    if (!req.session?.user?.id) {
+      return sendError(401, 'User not authenticated', {
+        hint: 'req.session.user.id is missing'
       });
     }
 
-    logger.debug('Retrieved extraction job', {
+    logger.debug('[ExtractionJobs] Fetching job', {
       jobId: req.params.id,
       userId: req.session.user.id
     });
+
+    // Query com timeout de 5 segundos
+    const queryPromise = ExtractionJob.findOne({
+      where: {
+        id: req.params.id,
+        userId: req.session.user.id
+      },
+      // Não carregar campos pesados desnecessariamente
+      attributes: { exclude: [] }
+    });
+
+    const timeoutPromise = new Promise((_, reject) =>
+      setTimeout(() => reject(new Error('Query timeout after 5 seconds')), 5000)
+    );
+
+    const job = await Promise.race([queryPromise, timeoutPromise]);
+
+    const queryDuration = Date.now() - startTime;
+
+    if (!job) {
+      logger.debug('[ExtractionJobs] Job not found', {
+        jobId: req.params.id,
+        userId: req.session.user.id,
+        duration: queryDuration
+      });
+
+      return res.status(404).json({
+        success: false,
+        error: 'Extraction job not found',
+        message: 'Job não encontrado ou não pertence ao usuário atual'
+      });
+    }
+
+    logger.debug('[ExtractionJobs] Retrieved extraction job', {
+      jobId: req.params.id,
+      userId: req.session.user.id,
+      status: job.status,
+      duration: queryDuration
+    });
+
+    // Garantir que o job tem a estrutura esperada pelo frontend
+    const jobData = {
+      id: job.id,
+      documentId: job.documentId,
+      documentName: job.documentName,
+      status: job.status,
+      progress: job.progress || { current: 0, total: 1, percentage: 0 },
+      method: job.method || 'single-pass',
+      chunksTotal: job.chunksTotal || 1,
+      chunksCompleted: job.chunksCompleted || 0,
+      createdAt: job.createdAt,
+      startedAt: job.startedAt,
+      completedAt: job.completedAt,
+      resultDocumentId: job.resultDocumentId,
+      errorMessage: job.errorMessage,
+      metadata: job.metadata || {}
+    };
 
     res.json({
       success: true,
-      job
+      job: jobData,
+      _meta: {
+        queryDuration: queryDuration
+      }
     });
 
   } catch (error) {
-    logger.error('[ExtractionJobs] Error getting job', {
-      error: error.message,
-      jobId: req.params.id,
-      userId: req.session.user.id
-    });
+    // Tratamento específico para diferentes tipos de erro
+    if (error.message.includes('timeout')) {
+      return sendError(504, 'Database query timeout', {
+        hint: 'Query demorou mais de 5 segundos',
+        duration: Date.now() - startTime
+      });
+    }
 
-    res.status(500).json({
-      success: false,
-      error: 'Failed to get extraction job'
+    if (error.name === 'SequelizeDatabaseError') {
+      return sendError(503, 'Database connection error', {
+        hint: 'Verificar conexão com PostgreSQL',
+        dbError: error.message
+      });
+    }
+
+    if (error.name === 'SequelizeConnectionError') {
+      return sendError(503, 'Cannot connect to database', {
+        hint: 'PostgreSQL pode estar offline ou inacessível'
+      });
+    }
+
+    // Erro genérico
+    sendError(500, 'Failed to get extraction job', {
+      errorType: error.name,
+      stack: process.env.NODE_ENV === 'development' ? error.stack : undefined
     });
   }
 });
