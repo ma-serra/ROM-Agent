@@ -90,6 +90,37 @@ import authRoutes from './routes/auth.js';
 import conversationsRoutes from './routes/conversations.js';
 import usersRoutes from './routes/users.js';
 import { requireAuth } from './middleware/auth.js';
+
+/**
+ * Controle de concorrência para processamento paralelo
+ * Evita OOM ao limitar número de operações simultâneas
+ *
+ * @param {Array} items - Items to process
+ * @param {Function} fn - Async function to apply to each item
+ * @param {number} concurrency - Max concurrent operations (default: 2)
+ * @returns {Promise<Array>} Results
+ */
+async function processConcurrent(items, fn, concurrency = 2) {
+  const results = [];
+  const executing = [];
+
+  for (const item of items) {
+    const promise = Promise.resolve().then(() => fn(item));
+    results.push(promise);
+
+    if (concurrency <= items.length) {
+      const e = promise.then(() => executing.splice(executing.indexOf(e), 1));
+      executing.push(e);
+
+      if (executing.length >= concurrency) {
+        await Promise.race(executing);
+      }
+    }
+  }
+
+  return Promise.allSettled(results);
+}
+
 import { generateUploadToken, requireUploadToken } from './middleware/upload-token.js';
 import { ACTIVE_PATHS, STORAGE_INFO, ensureStorageStructure } from '../lib/storage-config.js';
 import extractionService from './services/extraction-service.js';
@@ -3724,10 +3755,14 @@ app.post('/api/upload-documents', requireAuth, upload.array('files', 20), async 
     console.log(`📤 Upload de ${req.files.length} arquivo(s) para extração automática...`);
     console.log(`🚀 PARALELO: Processando ${req.files.length} arquivos simultaneamente`);
 
-    // 🔥 FIX CRÍTICO #1: PARALELIZAÇÃO REAL com Promise.all()
-    // Antes: loop sequencial (10 arquivos = 10x tempo)
-    // Agora: processamento paralelo (10 arquivos = 1x tempo + overhead)
-    const processingPromises = req.files.map(async (file) => {
+    // 🔥 FIX CRÍTICO #1: PARALELIZAÇÃO CONTROLADA com processConcurrent()
+    // Antes v3.3: Promise.all() descontrolado (causava OOM no Render)
+    // Agora v3.4: Máximo 2 arquivos simultâneos (evita OOM, mantém performance)
+    const CONCURRENCY_LIMIT = 2; // Máximo 2 arquivos processando simultaneamente
+
+    console.log(`🔧 CONCORRÊNCIA CONTROLADA: Máximo ${CONCURRENCY_LIMIT} arquivos simultâneos`);
+
+    const processFile_withErrorHandling = async (file) => {
       try {
         console.log(`🔍 Processando: ${file.originalname} com 91 ferramentas + documentos estruturados...`);
 
@@ -4008,10 +4043,14 @@ app.post('/api/upload-documents', requireAuth, upload.array('files', 20), async 
           }
         };
       }
-    });
+    }; // Fim de processFile_withErrorHandling
 
-    // Aguardar TODOS os arquivos em paralelo (Promise.allSettled não falha se um falhar)
-    const results = await Promise.allSettled(processingPromises);
+    // Processar arquivos com controle de concorrência
+    const results = await processConcurrent(
+      req.files,
+      processFile_withErrorHandling,
+      CONCURRENCY_LIMIT
+    );
 
     // Extrair resultados
     const extractions = results.map((result, index) => {
