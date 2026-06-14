@@ -532,18 +532,188 @@ router.get('/audit/stats', verificarDependencias, async (req, res) => {
  */
 router.get('/mcp/status', verificarDependencias, async (req, res) => {
   try {
-    const { stateManager } = req.app.locals;
+    const { mcpService, stateManager } = req.app.locals;
 
-    const result = await stateManager.db.query(
-      'SELECT * FROM mcp_server_status ORDER BY updated_at DESC'
-    );
+    // Obter status em tempo real do MCPIntegrationService
+    let liveStatus = [];
+    let metrics = null;
+
+    if (mcpService) {
+      liveStatus = mcpService.getServersStatus();
+      metrics = mcpService.getMetrics();
+    }
+
+    // Tentar buscar dados persistidos do banco também
+    let dbStatus = [];
+    if (stateManager?.db) {
+      try {
+        const result = await stateManager.db.query(
+          'SELECT * FROM mcp_server_status ORDER BY updated_at DESC'
+        );
+
+        dbStatus = result.rows.map(row => ({
+          ...row,
+          metadata: JSON.parse(row.metadata || '{}')
+        }));
+      } catch (error) {
+        console.error('Erro ao buscar status MCP do DB:', error);
+      }
+    }
+
+    // Merge de dados: priorizar liveStatus, complementar com dbStatus
+    const serversMap = new Map();
+
+    // Adicionar dados do banco primeiro
+    dbStatus.forEach(server => {
+      serversMap.set(server.server_name, {
+        name: server.server_name,
+        displayName: server.metadata.displayName || server.server_name,
+        description: server.metadata.description || '',
+        status: server.status,
+        lastHealthCheck: server.last_health_check,
+        errorCount: server.error_count,
+        source: 'database'
+      });
+    });
+
+    // Sobrescrever com dados em tempo real (mais atuais)
+    liveStatus.forEach(server => {
+      serversMap.set(server.name, {
+        ...server,
+        source: 'live'
+      });
+    });
 
     res.json({
-      total: result.rows.length,
-      servers: result.rows.map(row => ({
-        ...row,
-        metadata: JSON.parse(row.metadata || '{}')
-      }))
+      total: serversMap.size,
+      servers: Array.from(serversMap.values()),
+      metrics,
+      timestamp: new Date().toISOString()
+    });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+/**
+ * POST /api/orchestrator/mcp/:serverName/invoke
+ * Invoca uma ferramenta MCP
+ */
+router.post('/mcp/:serverName/invoke', verificarDependencias, async (req, res) => {
+  try {
+    const { mcpService } = req.app.locals;
+    const { serverName } = req.params;
+    const { toolName, args = {} } = req.body;
+
+    if (!mcpService) {
+      return res.status(503).json({
+        error: 'MCP Integration Service não está disponível'
+      });
+    }
+
+    if (!toolName) {
+      return res.status(400).json({
+        error: 'toolName é obrigatório'
+      });
+    }
+
+    const result = await mcpService.invokeTool(serverName, toolName, args);
+
+    res.json({
+      serverName,
+      toolName,
+      result,
+      timestamp: new Date().toISOString()
+    });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+/**
+ * POST /api/orchestrator/mcp/:serverName/start
+ * Inicia um servidor MCP
+ */
+router.post('/mcp/:serverName/start', verificarDependencias, async (req, res) => {
+  try {
+    const { mcpService } = req.app.locals;
+    const { serverName } = req.params;
+
+    if (!mcpService) {
+      return res.status(503).json({
+        error: 'MCP Integration Service não está disponível'
+      });
+    }
+
+    // Importar configuração
+    const { MCP_SERVERS_CONFIG } = await import('../services/mcp-integration.js');
+    const config = MCP_SERVERS_CONFIG[serverName];
+
+    if (!config) {
+      return res.status(404).json({
+        error: `Servidor ${serverName} não encontrado`
+      });
+    }
+
+    const result = await mcpService.startServer(serverName, config);
+
+    res.json({
+      serverName,
+      message: 'Servidor iniciado com sucesso',
+      result,
+      timestamp: new Date().toISOString()
+    });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+/**
+ * POST /api/orchestrator/mcp/:serverName/stop
+ * Para um servidor MCP
+ */
+router.post('/mcp/:serverName/stop', verificarDependencias, async (req, res) => {
+  try {
+    const { mcpService } = req.app.locals;
+    const { serverName } = req.params;
+
+    if (!mcpService) {
+      return res.status(503).json({
+        error: 'MCP Integration Service não está disponível'
+      });
+    }
+
+    await mcpService.stopServer(serverName);
+
+    res.json({
+      serverName,
+      message: 'Servidor parado com sucesso',
+      timestamp: new Date().toISOString()
+    });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+/**
+ * GET /api/orchestrator/mcp/metrics
+ * Métricas dos servidores MCP
+ */
+router.get('/mcp/metrics', verificarDependencias, (req, res) => {
+  try {
+    const { mcpService } = req.app.locals;
+
+    if (!mcpService) {
+      return res.status(503).json({
+        error: 'MCP Integration Service não está disponível'
+      });
+    }
+
+    const metrics = mcpService.getMetrics();
+
+    res.json({
+      metrics,
+      timestamp: new Date().toISOString()
     });
   } catch (error) {
     res.status(500).json({ error: error.message });

@@ -139,6 +139,16 @@
       </div>
     </section>
 
+    <!-- MCP Servers Status -->
+    <section class="mb-6">
+      <h2 class="text-2xl font-bold mb-4">🔌 Servidores MCP (Model Context Protocol)</h2>
+      <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+        <div id="mcp-servers" class="divide-y divide-gray-700">
+          <!-- Servidores MCP serão injetados via JavaScript -->
+        </div>
+      </div>
+    </section>
+
     <!-- Event Stream -->
     <section class="mb-6">
       <h2 class="text-2xl font-bold mb-4">📡 Stream de Eventos (Tempo Real)</h2>
@@ -354,6 +364,113 @@
       }).join('');
     }
 
+    function renderMCPServers(data) {
+      const container = document.getElementById('mcp-servers');
+      if (!data || data.total === 0) {
+        container.innerHTML = `
+          <div class="p-6 text-center text-gray-400">
+            Nenhum servidor MCP configurado
+          </div>
+        `;
+        return;
+      }
+
+      const statusColors = {
+        'running': 'bg-green-500',
+        'starting': 'bg-yellow-500',
+        'stopped': 'bg-gray-500',
+        'error': 'bg-red-500'
+      };
+
+      const statusIcons = {
+        'running': '✅',
+        'starting': '🔄',
+        'stopped': '⏸️',
+        'error': '❌'
+      };
+
+      container.innerHTML = data.servers.map(server => {
+        const statusColor = statusColors[server.status] || 'bg-gray-500';
+        const statusIcon = statusIcons[server.status] || '❓';
+
+        return `
+          <div class="p-4 hover:bg-gray-700 transition">
+            <div class="flex items-center justify-between">
+              <div class="flex-1">
+                <div class="flex items-center space-x-3 mb-2">
+                  <div class="px-3 py-1 ${statusColor} rounded-full text-xs font-semibold">
+                    ${statusIcon} ${server.status}
+                  </div>
+                  <h3 class="text-lg font-semibold">${server.displayName || server.name}</h3>
+                  ${server.source === 'live' ? '<span class="px-2 py-1 bg-blue-500 rounded text-xs">LIVE</span>' : ''}
+                </div>
+                <p class="text-sm text-gray-400 mb-2">${server.description || 'Servidor MCP'}</p>
+                <div class="text-xs text-gray-500 space-x-4">
+                  ${server.pid ? `<span>PID: ${server.pid}</span>` : ''}
+                  ${server.errorCount !== undefined ? `<span>Erros: ${server.errorCount}</span>` : ''}
+                  ${server.lastHealthCheck ? `<span>Último check: ${new Date(server.lastHealthCheck).toLocaleTimeString('pt-BR')}</span>` : ''}
+                  ${server.startedAt ? `<span>Iniciado: ${new Date(server.startedAt).toLocaleString('pt-BR')}</span>` : ''}
+                </div>
+              </div>
+              <div class="flex space-x-2">
+                ${server.status !== 'running' ? `
+                  <button onclick="startMCPServer('${server.name}')" class="px-3 py-1 bg-green-600 hover:bg-green-700 rounded text-sm font-medium transition">
+                    ▶️ Start
+                  </button>
+                ` : `
+                  <button onclick="stopMCPServer('${server.name}')" class="px-3 py-1 bg-red-600 hover:bg-red-700 rounded text-sm font-medium transition">
+                    ⏹️ Stop
+                  </button>
+                `}
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    async function startMCPServer(serverName) {
+      if (!confirm(`Iniciar servidor ${serverName}?`)) return;
+
+      try {
+        const response = await fetch(`${API_BASE}/api/orchestrator/mcp/${serverName}/start`, {
+          method: 'POST'
+        });
+
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+        const result = await response.json();
+        console.log(`Servidor ${serverName} iniciado:`, result);
+
+        // Atualizar dashboard
+        await refreshData();
+      } catch (error) {
+        console.error(`Erro ao iniciar ${serverName}:`, error);
+        alert(`Erro ao iniciar servidor: ${error.message}`);
+      }
+    }
+
+    async function stopMCPServer(serverName) {
+      if (!confirm(`Parar servidor ${serverName}?`)) return;
+
+      try {
+        const response = await fetch(`${API_BASE}/api/orchestrator/mcp/${serverName}/stop`, {
+          method: 'POST'
+        });
+
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+        const result = await response.json();
+        console.log(`Servidor ${serverName} parado:`, result);
+
+        // Atualizar dashboard
+        await refreshData();
+      } catch (error) {
+        console.error(`Erro ao parar ${serverName}:`, error);
+        alert(`Erro ao parar servidor: ${error.message}`);
+      }
+    }
+
     function addEventToStream(event) {
       const container = document.getElementById('event-stream');
 
@@ -508,17 +625,19 @@
     // ============================================================================
 
     async function refreshData() {
-      const [health, stats, activeWorkflows, auditLogs] = await Promise.all([
+      const [health, stats, activeWorkflows, auditLogs, mcpServers] = await Promise.all([
         fetchAPI('/api/orchestrator/health'),
         fetchAPI('/api/orchestrator/stats'),
         fetchAPI('/api/orchestrator/workflows/active'),
-        fetchAPI('/api/orchestrator/audit/rom?limit=20')
+        fetchAPI('/api/orchestrator/audit/rom?limit=20'),
+        fetchAPI('/api/orchestrator/mcp/status')
       ]);
 
       renderHealthCards(health);
       renderStatsCards(stats);
       renderActiveWorkflows(activeWorkflows);
       renderAuditLogs(auditLogs);
+      renderMCPServers(mcpServers);
     }
 
     // ============================================================================

@@ -8,6 +8,7 @@
 import { MasterOrchestrator } from '../services/master-orchestrator.js';
 import { StateManager } from '../services/state-manager.js';
 import { EventBus } from '../services/event-bus.js';
+import { MCPIntegrationService } from '../services/mcp-integration.js';
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -15,6 +16,7 @@ dotenv.config();
 let orchestratorInstance = null;
 let stateManagerInstance = null;
 let eventBusInstance = null;
+let mcpServiceInstance = null;
 
 /**
  * Inicializa o sistema de orquestração
@@ -53,12 +55,26 @@ export async function initializeOrchestrator(options = {}) {
     // Inicializar MasterOrchestrator
     orchestratorInstance = new MasterOrchestrator(apiKey, db, redisConf);
 
+    // Inicializar MCP Integration Service
+    mcpServiceInstance = new MCPIntegrationService(eventBusInstance, stateManagerInstance);
+
+    // Iniciar servidores MCP em background (não bloquear)
+    mcpServiceInstance.initializeAll()
+      .then(results => {
+        const successCount = results.filter(r => r.success).length;
+        console.log(`✅ MCP Servers inicializados: ${successCount}/${results.length}`);
+      })
+      .catch(error => {
+        console.warn('⚠️ Erro ao inicializar MCP Servers:', error.message);
+      });
+
     console.log('✅ MasterOrchestrator inicializado com sucesso');
 
     return {
       masterOrchestrator: orchestratorInstance,
       stateManager: stateManagerInstance,
-      eventBus: eventBusInstance
+      eventBus: eventBusInstance,
+      mcpService: mcpServiceInstance
     };
   } catch (error) {
     console.error('❌ Erro ao inicializar MasterOrchestrator:', error.message);
@@ -80,7 +96,8 @@ export function getOrchestratorInstances() {
   return {
     masterOrchestrator: orchestratorInstance,
     stateManager: stateManagerInstance,
-    eventBus: eventBusInstance
+    eventBus: eventBusInstance,
+    mcpService: mcpServiceInstance
   };
 }
 
@@ -89,6 +106,9 @@ export function getOrchestratorInstances() {
  */
 export async function closeOrchestrator() {
   try {
+    if (mcpServiceInstance) {
+      await mcpServiceInstance.closeAll();
+    }
     if (eventBusInstance) {
       await eventBusInstance.close();
     }

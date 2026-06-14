@@ -1715,9 +1715,14 @@ app.listen(PORT, () => {
         app.locals.masterOrchestrator = instances.masterOrchestrator;
         app.locals.stateManager = instances.stateManager;
         app.locals.eventBus = instances.eventBus;
+        app.locals.mcpService = instances.mcpService;
 
         logger.info('✅ MasterOrchestrator inicializado com sucesso');
         logger.info(`📊 Dashboard disponível em: http://localhost:${PORT}/dashboard-orchestrator.html`);
+
+        if (instances.mcpService) {
+          logger.info('🔌 MCP Integration Service inicializado (servidores inicializando em background)');
+        }
       } else {
         logger.warn('⚠️ MasterOrchestrator não foi inicializado (DB não configurado). Dashboard indisponível.');
       }
