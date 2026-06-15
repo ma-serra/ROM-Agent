@@ -129,6 +129,9 @@ import customInstructionsRoutes from './routes/custom-instructions.js';
 import multiStepGenerationRoutes from './routes/multi-step-generation.js';
 import { startCustomInstructionsCron } from './services/custom-instructions-cron.js';
 import { loadStructuredFilesFromKB } from './middleware/kb-loader.js';
+import { MasterOrchestrator } from './services/master-orchestrator.js';
+import { EventBus } from './services/event-bus.js';
+import { StateManager } from './services/state-manager.js';
 import kbAnalyzeV2Routes from './routes/kb-analyze-v2.js';
 import kbMergeVolumesRoutes from './routes/kb-merge-volumes.js';
 // TEMPORARIAMENTE DESABILITADO - Sequelize não inicializado
@@ -136,6 +139,7 @@ import kbMergeVolumesRoutes from './routes/kb-merge-volumes.js';
 import kbEmergencyRoutes from './routes/kb-emergency.js';
 import healthRoutes from './routes/health.js';
 import analyticsRoutes from './routes/analytics.js'; // Analytics de usabilidade
+import orchestratorRoutes from './routes/orchestrator.js'; // Pipeline ROM de 5 etapas
 
 // ═══════════════════════════════════════════════════════════════════════
 // PROMPT OPTIMIZATION v3.0 - Modular prompt builder with 79% token reduction
@@ -359,6 +363,60 @@ checkDatabaseHealth().then(dbHealth => {
 console.log('━'.repeat(70));
 
 const app = express();
+
+// ════════════════════════════════════════════════════════════════════════
+// INICIALIZAÇÃO DO MASTER ORCHESTRATOR
+// ════════════════════════════════════════════════════════════════════════
+// Orquestrador Mestre para pipeline ROM de 5 etapas
+// Inicializado aqui para estar disponível em app.locals para todas as rotas
+
+let masterOrchestrator = null;
+
+async function initializeMasterOrchestrator() {
+  try {
+    console.log('🎯 [Orchestrator] Inicializando MasterOrchestrator...');
+
+    const apiKey = process.env.ANTHROPIC_API_KEY;
+
+    if (!apiKey) {
+      console.warn('⚠️  [Orchestrator] ANTHROPIC_API_KEY não configurada');
+      return null;
+    }
+
+    // Aguardar pool do PostgreSQL estar disponível
+    const pool = getPostgresPool();
+
+    if (!pool) {
+      console.warn('⚠️  [Orchestrator] PostgreSQL pool não disponível');
+    }
+
+    // Redis é opcional
+    const redis = null; // TODO: Implementar Redis se necessário
+
+    masterOrchestrator = new MasterOrchestrator(apiKey, pool, redis);
+
+    console.log('✅ [Orchestrator] MasterOrchestrator inicializado com sucesso');
+
+    return masterOrchestrator;
+
+  } catch (error) {
+    console.error('❌ [Orchestrator] Erro ao inicializar:', error.message);
+    return null;
+  }
+}
+
+// Inicializar em background (não bloqueia startup)
+initializeMasterOrchestrator().then(orchestrator => {
+  if (orchestrator) {
+    app.locals.masterOrchestrator = orchestrator;
+    console.log('✅ [Orchestrator] Disponível em app.locals.masterOrchestrator');
+  }
+}).catch(error => {
+  console.error('❌ [Orchestrator] Falha na inicialização:', error.message);
+});
+
+// ════════════════════════════════════════════════════════════════════════
+
 
 // Trust proxy para Render (necessário para rate limiting e X-Forwarded-For)
 app.set('trust proxy', true);
@@ -615,6 +673,8 @@ app.use('/api', documentsRoutes);
 app.use('/api', pipelineRoutes);
 app.use('/api', healthRoutes); // Health check endpoint
 app.use('/api/analytics', analyticsRoutes); // Analytics de usabilidade
+app.use('/api', orchestratorRoutes); // Pipeline ROM de 5 etapas
+logger.info('✅ [ROUTES] /api/orchestrator registrado');
 app.use('/api/datajud', datajudRoutes);
 app.use('/api/rom-project', romProjectRouter);
 app.use('/api/system-prompts', requireAuth, systemPromptsRouter); // ✅ Adicionar auth
