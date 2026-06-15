@@ -73,6 +73,12 @@ router.get('/:uploadId/status', (req, res) => {
 
   console.log(`📊 [POLLING] Status solicitado: ${uploadId}`);
 
+  // 🔧 v3.6: Headers de cache RÍGIDOS para forçar HTTP 200 sempre (evitar 304 Not Modified)
+  res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
+  res.setHeader('Pragma', 'no-cache');
+  res.setHeader('Expires', '0');
+  res.setHeader('Last-Modified', new Date().toUTCString());
+
   // Obter updates da sessão
   const updates = progressEmitter.getSessionUpdates(uploadId);
   const sessionStatus = progressEmitter.getSessionStatus(uploadId);
@@ -86,7 +92,8 @@ router.get('/:uploadId/status', (req, res) => {
       totalFiles: 0,
       fileName: '',
       completed: false,
-      result: null
+      result: null,
+      timestamp: Date.now() // ✨ Timestamp para forçar mudança
     });
   }
 
@@ -107,7 +114,8 @@ router.get('/:uploadId/status', (req, res) => {
     fileName: progressData.fileName || '',
     completed,
     result: completed ? progressData : null,
-    status: sessionStatus.status
+    status: sessionStatus.status,
+    timestamp: Date.now() // ✨ Timestamp para forçar mudança
   });
 });
 

@@ -763,6 +763,12 @@ app.get('/api/extraction-jobs/:id', requireAuth, async (req, res) => {
 
   logger.debug('[ExtractionJobs MOCK] Request recebido', { jobId, userId });
 
+  // 🔧 v3.6: Headers anti-cache RÍGIDOS para evitar HTTP 304
+  res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
+  res.setHeader('Pragma', 'no-cache');
+  res.setHeader('Expires', '0');
+  res.setHeader('Last-Modified', new Date().toUTCString());
+
   try {
     // MOCK: Retornar job simulado em estado "completed"
     // Isso evita que o frontend fique travado esperando status
@@ -787,7 +793,8 @@ app.get('/api/extraction-jobs/:id', requireAuth, async (req, res) => {
       metadata: {
         mock: true,
         reason: 'Sequelize not initialized - using mock data'
-      }
+      },
+      timestamp: Date.now() // ✨ Forçar mudança no response
     };
 
     logger.info('[ExtractionJobs MOCK] Retornando job simulado', {
@@ -801,7 +808,8 @@ app.get('/api/extraction-jobs/:id', requireAuth, async (req, res) => {
       _meta: {
         isMock: true,
         message: 'Este é um mock temporário. Modelo real usa Sequelize (não inicializado)'
-      }
+      },
+      timestamp: Date.now() // ✨ Forçar mudança no response
     });
 
   } catch (error) {
