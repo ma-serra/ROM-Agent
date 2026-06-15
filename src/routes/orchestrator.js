@@ -470,4 +470,91 @@ router.get('/orchestrator/workflows', requireAuth, async (req, res) => {
   }
 });
 
+/**
+ * GET /api/orchestrator/events/stream
+ * Server-Sent Events (SSE) para progresso em tempo real do pipeline
+ */
+router.get('/orchestrator/events/stream', requireAuth, async (req, res) => {
+  const { workflowId } = req.query;
+
+  // Configurar headers SSE
+  res.setHeader('Content-Type', 'text/event-stream');
+  res.setHeader('Cache-Control', 'no-cache');
+  res.setHeader('Connection', 'keep-alive');
+  res.setHeader('X-Accel-Buffering', 'no'); // Desabilitar buffering nginx
+
+  logger.info('[Orchestrator SSE] Cliente conectado', {
+    workflowId,
+    userId: req.session.user.id
+  });
+
+  const masterOrchestrator = req.app.locals.masterOrchestrator;
+
+  if (!masterOrchestrator || !masterOrchestrator.eventBus) {
+    res.write(`data: ${JSON.stringify({ error: 'EventBus não disponível' })}\n\n`);
+    res.end();
+    return;
+  }
+
+  // Enviar ping inicial
+  res.write(`data: ${JSON.stringify({ type: 'connected', workflowId })}\n\n`);
+
+  // Handler para eventos do EventBus
+  const eventHandler = (event) => {
+    // Filtrar apenas eventos do workflow específico (se especificado)
+    if (workflowId && event.payload?.workflowId !== workflowId) {
+      return;
+    }
+
+    // Filtrar apenas eventos do usuário atual
+    if (event.payload?.userId && event.payload.userId !== req.session.user.id) {
+      return;
+    }
+
+    try {
+      res.write(`event: ${event.topic}\n`);
+      res.write(`data: ${JSON.stringify(event)}\n\n`);
+    } catch (err) {
+      logger.error('[Orchestrator SSE] Erro ao enviar evento', { error: err.message });
+    }
+  };
+
+  // Subscrever aos eventos relevantes
+  const topics = [
+    'workflow.started',
+    'workflow.stage.started',
+    'workflow.stage.completed',
+    'workflow.completed',
+    'workflow.failed',
+    'agent.started',
+    'agent.completed',
+    'agent.failed'
+  ];
+
+  topics.forEach(topic => {
+    masterOrchestrator.eventBus.subscribe(topic, eventHandler);
+  });
+
+  // Enviar ping a cada 30 segundos para manter conexão viva
+  const pingInterval = setInterval(() => {
+    try {
+      res.write(`: ping\n\n`);
+    } catch (err) {
+      clearInterval(pingInterval);
+    }
+  }, 30000);
+
+  // Cleanup quando cliente desconectar
+  req.on('close', () => {
+    logger.info('[Orchestrator SSE] Cliente desconectado', { workflowId });
+
+    clearInterval(pingInterval);
+
+    // Remover subscriptions
+    topics.forEach(topic => {
+      masterOrchestrator.eventBus.removeListener(topic, eventHandler);
+    });
+  });
+});
+
 export default router;

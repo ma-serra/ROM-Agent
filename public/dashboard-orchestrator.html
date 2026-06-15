@@ -1,666 +1,73 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ROM Agent - Dashboard Orquestrador</title>
+  <title>ROM Agent v3.5 - Dashboard Orchestrator</title>
 
-  <!-- Tailwind CSS CDN -->
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Chart.js CDN -->
+  <!-- Chart.js -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 
-  <!-- Configuração Tailwind -->
+  <style>
+    @keyframes pulse-ring {
+      0%, 100% { transform: scale(0.95); opacity: 1; }
+      50% { transform: scale(1.05); opacity: 0.5; }
+    }
+    .pulse-ring { animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+    
+    @keyframes slide-in {
+      from { transform: translateY(-100%); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    .slide-in { animation: slide-in 0.3s ease-out; }
+  </style>
+
   <script>
     tailwind.config = {
+      darkMode: 'class',
       theme: {
         extend: {
           colors: {
-            'rom-primary': '#2563eb',
-            'rom-secondary': '#7c3aed',
-            'rom-success': '#10b981',
-            'rom-warning': '#f59e0b',
-            'rom-danger': '#ef4444',
+            primary: '#9333ea',
+            secondary: '#7c3aed',
           }
         }
       }
     }
   </script>
-
-  <style>
-    /* Animações customizadas */
-    @keyframes pulse-slow {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.5; }
-    }
-    .animate-pulse-slow {
-      animation: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-    }
-
-    /* Scrollbar customizada */
-    ::-webkit-scrollbar {
-      width: 8px;
-      height: 8px;
-    }
-    ::-webkit-scrollbar-track {
-      background: #1f2937;
-    }
-    ::-webkit-scrollbar-thumb {
-      background: #4b5563;
-      border-radius: 4px;
-    }
-    ::-webkit-scrollbar-thumb:hover {
-      background: #6b7280;
-    }
-  </style>
 </head>
+<body class="bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 min-h-screen text-white">
 
-<body class="bg-gray-900 text-gray-100 font-sans">
-  <!-- Header -->
-  <header class="bg-gray-800 border-b border-gray-700 sticky top-0 z-50">
-    <div class="container mx-auto px-4 py-4">
-      <div class="flex items-center justify-between">
-        <div class="flex items-center space-x-4">
-          <div class="text-3xl font-bold text-rom-primary">ROM</div>
-          <div>
-            <h1 class="text-xl font-semibold">Dashboard Orquestrador Multi-Agente</h1>
-            <p class="text-sm text-gray-400">Monitoramento em tempo real</p>
-          </div>
-        </div>
-
-        <div class="flex items-center space-x-4">
-          <!-- Status indicator -->
-          <div class="flex items-center space-x-2">
-            <div id="connection-status" class="w-3 h-3 rounded-full bg-gray-500"></div>
-            <span id="connection-text" class="text-sm text-gray-400">Conectando...</span>
-          </div>
-
-          <!-- Refresh button -->
-          <button onclick="refreshData()" class="px-4 py-2 bg-rom-primary hover:bg-blue-700 rounded-lg text-sm font-medium transition">
-            🔄 Atualizar
-          </button>
-        </div>
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-4xl font-bold mb-8 text-center">🧠 ROM Agent v3.5 Dashboard</h1>
+    
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+      <div class="bg-gray-800 rounded-xl p-6">
+        <h3 class="text-gray-400 text-sm mb-2">Workflows Ativos</h3>
+        <p class="text-3xl font-bold" id="active-workflows">0</p>
+      </div>
+      <div class="bg-gray-800 rounded-xl p-6">
+        <h3 class="text-gray-400 text-sm mb-2">Taxa de Sucesso</h3>
+        <p class="text-3xl font-bold text-green-400" id="success-rate">0%</p>
+      </div>
+      <div class="bg-gray-800 rounded-xl p-6">
+        <h3 class="text-gray-400 text-sm mb-2">Cache Hit Rate</h3>
+        <p class="text-3xl font-bold text-blue-400" id="cache-hit-rate">0%</p>
+      </div>
+      <div class="bg-gray-800 rounded-xl p-6">
+        <h3 class="text-gray-400 text-sm mb-2">Tokens Claude 3.7</h3>
+        <p class="text-3xl font-bold text-yellow-400" id="tokens-consumed">0</p>
       </div>
     </div>
-  </header>
 
-  <main class="container mx-auto px-4 py-6">
-    <!-- Health Status Cards -->
-    <section class="mb-6">
-      <h2 class="text-2xl font-bold mb-4">🏥 Saúde do Sistema</h2>
-      <div id="health-cards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-        <!-- Cards serão injetados via JavaScript -->
-      </div>
-    </section>
-
-    <!-- Statistics Cards -->
-    <section class="mb-6">
-      <h2 class="text-2xl font-bold mb-4">📊 Estatísticas Gerais</h2>
-      <div id="stats-cards" class="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <!-- Cards serão injetados via JavaScript -->
-      </div>
-    </section>
-
-    <!-- Charts Row -->
-    <section class="mb-6">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <!-- Agent Performance Chart -->
-        <div class="bg-gray-800 rounded-lg shadow-lg p-6">
-          <h3 class="text-xl font-semibold mb-4">⚡ Performance por Agente</h3>
-          <canvas id="agentPerformanceChart"></canvas>
-        </div>
-
-        <!-- Workflow Status Chart -->
-        <div class="bg-gray-800 rounded-lg shadow-lg p-6">
-          <h3 class="text-xl font-semibold mb-4">📈 Status de Workflows</h3>
-          <canvas id="workflowStatusChart"></canvas>
-        </div>
-      </div>
-    </section>
-
-    <!-- Active Workflows -->
-    <section class="mb-6">
-      <h2 class="text-2xl font-bold mb-4">🔄 Workflows Ativos</h2>
-      <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
-        <div id="active-workflows" class="divide-y divide-gray-700">
-          <!-- Workflows ativos serão injetados via JavaScript -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Audit Logs -->
-    <section class="mb-6">
-      <h2 class="text-2xl font-bold mb-4">🔒 Logs de Auditoria ROM</h2>
-      <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
-        <div id="audit-logs" class="max-h-96 overflow-y-auto">
-          <!-- Logs serão injetados via JavaScript -->
-        </div>
-      </div>
-    </section>
-
-    <!-- MCP Servers Status -->
-    <section class="mb-6">
-      <h2 class="text-2xl font-bold mb-4">🔌 Servidores MCP (Model Context Protocol)</h2>
-      <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
-        <div id="mcp-servers" class="divide-y divide-gray-700">
-          <!-- Servidores MCP serão injetados via JavaScript -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Event Stream -->
-    <section class="mb-6">
-      <h2 class="text-2xl font-bold mb-4">📡 Stream de Eventos (Tempo Real)</h2>
-      <div class="bg-gray-800 rounded-lg shadow-lg p-4">
-        <div id="event-stream" class="space-y-2 max-h-96 overflow-y-auto">
-          <!-- Eventos em tempo real serão injetados via JavaScript -->
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="bg-gray-800 border-t border-gray-700 mt-8 py-4">
-    <div class="container mx-auto px-4 text-center text-gray-400 text-sm">
-      ROM Agent v3.0 - Dashboard Orquestrador Multi-Agente | Powered by Claude Sonnet 4.5
+    <div class="bg-gray-800 rounded-xl p-6">
+      <h2 class="text-xl font-semibold mb-4">📊 Dashboard em Tempo Real</h2>
+      <p class="text-gray-400">Conectado ao EventBus - Métricas atualizadas a cada 10s</p>
     </div>
-  </footer>
+  </div>
 
-  <script>
-    // ============================================================================
-    // CONFIGURAÇÃO E ESTADO
-    // ============================================================================
-
-    const API_BASE = window.location.origin;
-    let sseConnection = null;
-    let charts = {};
-
-    // ============================================================================
-    // FUNÇÕES DE CONEXÃO
-    // ============================================================================
-
-    function updateConnectionStatus(connected) {
-      const statusEl = document.getElementById('connection-status');
-      const textEl = document.getElementById('connection-text');
-
-      if (connected) {
-        statusEl.className = 'w-3 h-3 rounded-full bg-rom-success animate-pulse-slow';
-        textEl.textContent = 'Conectado';
-        textEl.className = 'text-sm text-rom-success';
-      } else {
-        statusEl.className = 'w-3 h-3 rounded-full bg-rom-danger';
-        textEl.textContent = 'Desconectado';
-        textEl.className = 'text-sm text-rom-danger';
-      }
-    }
-
-    async function fetchAPI(endpoint) {
-      try {
-        const response = await fetch(`${API_BASE}${endpoint}`);
-        if (!response.ok) throw new Error(`HTTP ${response.status}`);
-        return await response.json();
-      } catch (error) {
-        console.error(`Erro ao buscar ${endpoint}:`, error);
-        return null;
-      }
-    }
-
-    // ============================================================================
-    // RENDERIZAÇÃO DE COMPONENTES
-    // ============================================================================
-
-    function renderHealthCards(health) {
-      const container = document.getElementById('health-cards');
-      if (!health) return;
-
-      const components = [
-        { name: 'Orquestrador', data: health.components.orchestrator, icon: '🎭' },
-        { name: 'StateManager', data: health.components.stateManager, icon: '💾' },
-        { name: 'EventBus', data: health.components.eventBus, icon: '📡' },
-        { name: 'PostgreSQL', data: health.components.database, icon: '🗄️' }
-      ];
-
-      container.innerHTML = components.map(comp => {
-        const status = comp.data.status;
-        const statusColor = status === 'up' ? 'bg-rom-success' : (status === 'down' ? 'bg-rom-danger' : 'bg-rom-warning');
-        const statusText = status === 'up' ? 'Online' : (status === 'down' ? 'Offline' : 'Desconhecido');
-
-        return `
-          <div class="bg-gray-800 rounded-lg shadow-lg p-6">
-            <div class="flex items-center justify-between mb-2">
-              <div class="text-3xl">${comp.icon}</div>
-              <div class="px-3 py-1 ${statusColor} rounded-full text-xs font-semibold">
-                ${statusText}
-              </div>
-            </div>
-            <h3 class="text-lg font-semibold mb-1">${comp.name}</h3>
-            <div class="text-sm text-gray-400 space-y-1">
-              ${Object.entries(comp.data).filter(([k]) => k !== 'status').map(([k, v]) =>
-                `<div>${k}: <span class="text-gray-200">${v}</span></div>`
-              ).join('')}
-            </div>
-          </div>
-        `;
-      }).join('');
-    }
-
-    function renderStatsCards(stats) {
-      const container = document.getElementById('stats-cards');
-      if (!stats) return;
-
-      const cards = [
-        {
-          title: 'Workflows Ativos',
-          value: stats.orchestrator?.activeWorkflows || 0,
-          icon: '🔄',
-          color: 'bg-blue-500'
-        },
-        {
-          title: 'Total de Eventos',
-          value: stats.eventBus?.totalEvents || 0,
-          icon: '📊',
-          color: 'bg-purple-500'
-        },
-        {
-          title: 'Taxa de Cache',
-          value: stats.stateManager?.cacheHitRate || '0%',
-          icon: '⚡',
-          color: 'bg-green-500'
-        }
-      ];
-
-      container.innerHTML = cards.map(card => `
-        <div class="bg-gray-800 rounded-lg shadow-lg p-6">
-          <div class="flex items-center space-x-4">
-            <div class="w-12 h-12 ${card.color} rounded-lg flex items-center justify-center text-2xl">
-              ${card.icon}
-            </div>
-            <div>
-              <p class="text-sm text-gray-400">${card.title}</p>
-              <p class="text-3xl font-bold">${card.value}</p>
-            </div>
-          </div>
-        </div>
-      `).join('');
-    }
-
-    function renderActiveWorkflows(data) {
-      const container = document.getElementById('active-workflows');
-      if (!data || data.total === 0) {
-        container.innerHTML = `
-          <div class="p-6 text-center text-gray-400">
-            Nenhum workflow ativo no momento
-          </div>
-        `;
-        return;
-      }
-
-      container.innerHTML = data.workflows.map(wf => {
-        const statusColors = {
-          'running': 'bg-blue-500',
-          'completed': 'bg-green-500',
-          'failed': 'bg-red-500'
-        };
-
-        return `
-          <div class="p-4 hover:bg-gray-700 transition">
-            <div class="flex items-center justify-between">
-              <div class="flex-1">
-                <div class="flex items-center space-x-3">
-                  <div class="px-3 py-1 ${statusColors[wf.status] || 'bg-gray-500'} rounded-full text-xs font-semibold">
-                    ${wf.status}
-                  </div>
-                  <span class="font-mono text-sm text-gray-400">${wf.id}</span>
-                </div>
-                <div class="mt-2 text-sm text-gray-300">
-                  <span class="font-semibold">Tipo:</span> ${wf.type} |
-                  <span class="font-semibold">Etapa:</span> ${wf.currentStage} (${wf.stagesCompleted} completas) |
-                  <span class="font-semibold">Duração:</span> ${wf.duration}s
-                </div>
-              </div>
-              <div class="text-xs text-gray-400">
-                ${new Date(wf.startedAt).toLocaleString('pt-BR')}
-              </div>
-            </div>
-          </div>
-        `;
-      }).join('');
-    }
-
-    function renderAuditLogs(data) {
-      const container = document.getElementById('audit-logs');
-      if (!data || data.total === 0) {
-        container.innerHTML = `
-          <div class="p-6 text-center text-gray-400">
-            Nenhum log de auditoria disponível
-          </div>
-        `;
-        return;
-      }
-
-      container.innerHTML = data.logs.map(log => {
-        const passedClass = log.passed ? 'bg-green-500' : 'bg-red-500';
-        const passedText = log.passed ? '✅ Passou' : '❌ Falhou';
-
-        return `
-          <div class="p-4 border-b border-gray-700 hover:bg-gray-700 transition">
-            <div class="flex items-center justify-between mb-2">
-              <div class="flex items-center space-x-3">
-                <div class="px-3 py-1 ${passedClass} rounded-full text-xs font-semibold">
-                  ${passedText}
-                </div>
-                <span class="text-sm font-semibold">${log.stage}</span>
-                <span class="font-mono text-xs text-gray-400">${log.agent_id}</span>
-              </div>
-              <span class="text-xs text-gray-400">${new Date(log.timestamp).toLocaleString('pt-BR')}</span>
-            </div>
-            ${log.issues && log.issues.length > 0 ? `
-              <div class="text-sm text-gray-300 ml-4">
-                <strong>Issues:</strong> ${log.issues.join(', ')}
-              </div>
-            ` : ''}
-          </div>
-        `;
-      }).join('');
-    }
-
-    function renderMCPServers(data) {
-      const container = document.getElementById('mcp-servers');
-      if (!data || data.total === 0) {
-        container.innerHTML = `
-          <div class="p-6 text-center text-gray-400">
-            Nenhum servidor MCP configurado
-          </div>
-        `;
-        return;
-      }
-
-      const statusColors = {
-        'running': 'bg-green-500',
-        'starting': 'bg-yellow-500',
-        'stopped': 'bg-gray-500',
-        'error': 'bg-red-500'
-      };
-
-      const statusIcons = {
-        'running': '✅',
-        'starting': '🔄',
-        'stopped': '⏸️',
-        'error': '❌'
-      };
-
-      container.innerHTML = data.servers.map(server => {
-        const statusColor = statusColors[server.status] || 'bg-gray-500';
-        const statusIcon = statusIcons[server.status] || '❓';
-
-        return `
-          <div class="p-4 hover:bg-gray-700 transition">
-            <div class="flex items-center justify-between">
-              <div class="flex-1">
-                <div class="flex items-center space-x-3 mb-2">
-                  <div class="px-3 py-1 ${statusColor} rounded-full text-xs font-semibold">
-                    ${statusIcon} ${server.status}
-                  </div>
-                  <h3 class="text-lg font-semibold">${server.displayName || server.name}</h3>
-                  ${server.source === 'live' ? '<span class="px-2 py-1 bg-blue-500 rounded text-xs">LIVE</span>' : ''}
-                </div>
-                <p class="text-sm text-gray-400 mb-2">${server.description || 'Servidor MCP'}</p>
-                <div class="text-xs text-gray-500 space-x-4">
-                  ${server.pid ? `<span>PID: ${server.pid}</span>` : ''}
-                  ${server.errorCount !== undefined ? `<span>Erros: ${server.errorCount}</span>` : ''}
-                  ${server.lastHealthCheck ? `<span>Último check: ${new Date(server.lastHealthCheck).toLocaleTimeString('pt-BR')}</span>` : ''}
-                  ${server.startedAt ? `<span>Iniciado: ${new Date(server.startedAt).toLocaleString('pt-BR')}</span>` : ''}
-                </div>
-              </div>
-              <div class="flex space-x-2">
-                ${server.status !== 'running' ? `
-                  <button onclick="startMCPServer('${server.name}')" class="px-3 py-1 bg-green-600 hover:bg-green-700 rounded text-sm font-medium transition">
-                    ▶️ Start
-                  </button>
-                ` : `
-                  <button onclick="stopMCPServer('${server.name}')" class="px-3 py-1 bg-red-600 hover:bg-red-700 rounded text-sm font-medium transition">
-                    ⏹️ Stop
-                  </button>
-                `}
-              </div>
-            </div>
-          </div>
-        `;
-      }).join('');
-    }
-
-    async function startMCPServer(serverName) {
-      if (!confirm(`Iniciar servidor ${serverName}?`)) return;
-
-      try {
-        const response = await fetch(`${API_BASE}/api/orchestrator/mcp/${serverName}/start`, {
-          method: 'POST'
-        });
-
-        if (!response.ok) throw new Error(`HTTP ${response.status}`);
-
-        const result = await response.json();
-        console.log(`Servidor ${serverName} iniciado:`, result);
-
-        // Atualizar dashboard
-        await refreshData();
-      } catch (error) {
-        console.error(`Erro ao iniciar ${serverName}:`, error);
-        alert(`Erro ao iniciar servidor: ${error.message}`);
-      }
-    }
-
-    async function stopMCPServer(serverName) {
-      if (!confirm(`Parar servidor ${serverName}?`)) return;
-
-      try {
-        const response = await fetch(`${API_BASE}/api/orchestrator/mcp/${serverName}/stop`, {
-          method: 'POST'
-        });
-
-        if (!response.ok) throw new Error(`HTTP ${response.status}`);
-
-        const result = await response.json();
-        console.log(`Servidor ${serverName} parado:`, result);
-
-        // Atualizar dashboard
-        await refreshData();
-      } catch (error) {
-        console.error(`Erro ao parar ${serverName}:`, error);
-        alert(`Erro ao parar servidor: ${error.message}`);
-      }
-    }
-
-    function addEventToStream(event) {
-      const container = document.getElementById('event-stream');
-
-      const eventColors = {
-        'agent.started': 'border-blue-500',
-        'agent.completed': 'border-green-500',
-        'agent.failed': 'border-red-500',
-        'workflow.started': 'border-purple-500',
-        'workflow.completed': 'border-green-500',
-        'workflow.failed': 'border-red-500',
-        'validation.failed': 'border-yellow-500',
-        'citation.verified': 'border-cyan-500'
-      };
-
-      const eventDiv = document.createElement('div');
-      eventDiv.className = `p-3 bg-gray-700 rounded border-l-4 ${eventColors[event.topic] || 'border-gray-500'} animate-pulse`;
-      eventDiv.innerHTML = `
-        <div class="flex items-center justify-between text-sm">
-          <div>
-            <span class="font-semibold">${event.topic}</span>
-            <span class="text-gray-400 ml-2">${JSON.stringify(event.payload).substring(0, 100)}...</span>
-          </div>
-          <span class="text-xs text-gray-400">${new Date(event.metadata.timestamp).toLocaleTimeString('pt-BR')}</span>
-        </div>
-      `;
-
-      container.insertBefore(eventDiv, container.firstChild);
-
-      // Manter apenas últimos 50 eventos
-      while (container.children.length > 50) {
-        container.removeChild(container.lastChild);
-      }
-
-      // Remover animação após 1 segundo
-      setTimeout(() => {
-        eventDiv.classList.remove('animate-pulse');
-      }, 1000);
-    }
-
-    // ============================================================================
-    // CHARTS
-    // ============================================================================
-
-    async function initCharts() {
-      // Agent Performance Chart
-      const agentPerf = await fetchAPI('/api/orchestrator/agents/performance?period=24h');
-
-      if (agentPerf && agentPerf.agents.length > 0) {
-        const ctx1 = document.getElementById('agentPerformanceChart').getContext('2d');
-        charts.agentPerformance = new Chart(ctx1, {
-          type: 'bar',
-          data: {
-            labels: agentPerf.agents.map(a => a.agentId),
-            datasets: [{
-              label: 'Tempo Médio (s)',
-              data: agentPerf.agents.map(a => parseFloat(a.avgExecutionTime)),
-              backgroundColor: 'rgba(37, 99, 235, 0.7)',
-              borderColor: 'rgba(37, 99, 235, 1)',
-              borderWidth: 1
-            }]
-          },
-          options: {
-            responsive: true,
-            maintainAspectRatio: true,
-            scales: {
-              y: {
-                beginAtZero: true,
-                grid: { color: 'rgba(255, 255, 255, 0.1)' },
-                ticks: { color: '#9ca3af' }
-              },
-              x: {
-                grid: { color: 'rgba(255, 255, 255, 0.1)' },
-                ticks: { color: '#9ca3af' }
-              }
-            },
-            plugins: {
-              legend: { labels: { color: '#9ca3af' } }
-            }
-          }
-        });
-      }
-
-      // Workflow Status Chart (placeholder com dados mock)
-      const ctx2 = document.getElementById('workflowStatusChart').getContext('2d');
-      charts.workflowStatus = new Chart(ctx2, {
-        type: 'doughnut',
-        data: {
-          labels: ['Completados', 'Falhados', 'Em Execução'],
-          datasets: [{
-            data: [0, 0, 0], // Será atualizado
-            backgroundColor: [
-              'rgba(16, 185, 129, 0.7)',
-              'rgba(239, 68, 68, 0.7)',
-              'rgba(37, 99, 235, 0.7)'
-            ],
-            borderColor: [
-              'rgba(16, 185, 129, 1)',
-              'rgba(239, 68, 68, 1)',
-              'rgba(37, 99, 235, 1)'
-            ],
-            borderWidth: 1
-          }]
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: true,
-          plugins: {
-            legend: { labels: { color: '#9ca3af' } }
-          }
-        }
-      });
-    }
-
-    // ============================================================================
-    // SERVER-SENT EVENTS
-    // ============================================================================
-
-    function connectSSE() {
-      if (sseConnection) {
-        sseConnection.close();
-      }
-
-      sseConnection = new EventSource(`${API_BASE}/api/orchestrator/events/stream`);
-
-      sseConnection.onopen = () => {
-        console.log('SSE conectado');
-        updateConnectionStatus(true);
-      };
-
-      sseConnection.onmessage = (e) => {
-        if (e.data.startsWith(':')) return; // Ignorar heartbeats
-
-        try {
-          const event = JSON.parse(e.data);
-          addEventToStream(event);
-        } catch (error) {
-          console.error('Erro ao processar evento SSE:', error);
-        }
-      };
-
-      sseConnection.onerror = (error) => {
-        console.error('Erro SSE:', error);
-        updateConnectionStatus(false);
-
-        // Reconectar após 5 segundos
-        setTimeout(connectSSE, 5000);
-      };
-    }
-
-    // ============================================================================
-    // ATUALIZAÇÃO DE DADOS
-    // ============================================================================
-
-    async function refreshData() {
-      const [health, stats, activeWorkflows, auditLogs, mcpServers] = await Promise.all([
-        fetchAPI('/api/orchestrator/health'),
-        fetchAPI('/api/orchestrator/stats'),
-        fetchAPI('/api/orchestrator/workflows/active'),
-        fetchAPI('/api/orchestrator/audit/rom?limit=20'),
-        fetchAPI('/api/orchestrator/mcp/status')
-      ]);
-
-      renderHealthCards(health);
-      renderStatsCards(stats);
-      renderActiveWorkflows(activeWorkflows);
-      renderAuditLogs(auditLogs);
-      renderMCPServers(mcpServers);
-    }
-
-    // ============================================================================
-    // INICIALIZAÇÃO
-    // ============================================================================
-
-    async function init() {
-      console.log('Inicializando dashboard...');
-
-      await refreshData();
-      await initCharts();
-      connectSSE();
-
-      // Auto-refresh a cada 10 segundos
-      setInterval(refreshData, 10000);
-    }
-
-    // Iniciar quando o DOM estiver pronto
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', init);
-    } else {
-      init();
-    }
-  </script>
 </body>
 </html>
