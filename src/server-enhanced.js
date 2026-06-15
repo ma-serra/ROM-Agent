@@ -6509,13 +6509,36 @@ function getMimeType(filename) {
  * @param {string} userName - Nome do usuário
  */
 async function processUploadInBackground(uploadId, files, userId, userName) {
-  // Sessão já iniciada - apenas processar arquivos
+  // 🔧 v3.6.2: LOG IMEDIATO para detectar falhas silenciosas
+  console.log(`🚀 [${uploadId}] INÍCIO do processamento em background`);
+  console.log(`   📦 Arquivos: ${files.length}`);
+  console.log(`   👤 Usuário: ${userName} (${userId})`);
+  console.log(`   ⏰ Horário: ${new Date().toISOString()}`);
 
   const uploadedDocs = [];
 
   // ⏱️ TIMEOUT: 2 horas máximo para upload completo
   const UPLOAD_TIMEOUT = 2 * 60 * 60 * 1000; // 2 horas
   const uploadStartTime = Date.now();
+
+  // 🔧 v3.6.2: HEARTBEAT ativo - emitir update a cada 30s mesmo sem progresso
+  let lastProgressPercent = 0;
+  const heartbeatInterval = setInterval(() => {
+    const elapsed = Date.now() - uploadStartTime;
+    const elapsedMinutes = Math.floor(elapsed / 60000);
+
+    progressEmitter.addUpdate(uploadId, 'info', `Processando... (${elapsedMinutes}min decorridos)`, {
+      percent: lastProgressPercent,
+      currentFile: 0,
+      totalFiles: files.length,
+      fileName: '',
+      stage: 'Heartbeat ativo',
+      heartbeat: true,
+      elapsed: elapsedMinutes
+    });
+
+    console.log(`💓 [${uploadId}] Heartbeat: ${elapsedMinutes}min, ${lastProgressPercent}%`);
+  }, 30000); // 30 segundos
 
   try {
     // Processar cada arquivo COM DOCUMENTOS ESTRUTURADOS
@@ -6530,9 +6553,12 @@ async function processUploadInBackground(uploadId, files, userId, userName) {
       }
 
       try {
+        // 🔧 v3.6.2: Atualizar lastProgressPercent para heartbeat
+        lastProgressPercent = Math.round(filePercent);
+
         // Emitir progresso: iniciando arquivo
         progressEmitter.addUpdate(uploadId, 'info', `Processando ${file.originalname}...`, {
-          percent: Math.round(filePercent),
+          percent: lastProgressPercent,
           currentFile: i + 1,
           totalFiles: files.length,
           fileName: file.originalname,
@@ -6550,8 +6576,11 @@ async function processUploadInBackground(uploadId, files, userId, userName) {
               // Calcular percentual total: progresso do arquivo atual + progresso interno
               const totalPercent = filePercent + (stagePercent / files.length);
 
+              // 🔧 v3.6.2: Atualizar lastProgressPercent para heartbeat
+              lastProgressPercent = Math.round(totalPercent);
+
               progressEmitter.addUpdate(uploadId, 'info', stage, {
-                percent: Math.round(totalPercent),
+                percent: lastProgressPercent,
                 currentFile: i + 1,
                 totalFiles: files.length,
                 fileName: file.originalname,
@@ -6716,6 +6745,12 @@ async function processUploadInBackground(uploadId, files, userId, userName) {
     console.error(`❌ Erro crítico no upload ${uploadId}:`, error);
     progressEmitter.failSession(uploadId, error);
     throw error;
+  } finally {
+    // 🔧 v3.6.2: SEMPRE limpar heartbeat (evitar memory leak)
+    if (heartbeatInterval) {
+      clearInterval(heartbeatInterval);
+      console.log(`💓 [${uploadId}] Heartbeat finalizado`);
+    }
   }
 }
 

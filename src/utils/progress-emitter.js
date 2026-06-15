@@ -56,12 +56,38 @@ class ProgressEmitter extends EventEmitter {
   _cleanupStaleSessions() {
     const now = Date.now();
     let cleaned = 0;
+    let recovered = 0;
 
     for (const [casoId, session] of this.sessions.entries()) {
       const lastActivity = session.lastActivity || session.startTime;
       const age = now - lastActivity;
 
-      // Remover se TTL expirou
+      // 🔧 v3.6.2: RECOVERY AUTOMÁTICO - marcar sessões travadas como failed
+      // Se sessão está em "processing" há mais de 30 minutos → provável crash/timeout
+      const STUCK_TIMEOUT = 30 * 60 * 1000; // 30 minutos
+      if (session.status === 'processing' && age > STUCK_TIMEOUT) {
+        console.warn(`⚠️ [ProgressEmitter] Recovery: Sessão travada detectada: ${casoId} (${Math.round(age / 60000)}min)`);
+
+        // Marcar como failed com mensagem de timeout
+        session.status = 'failed';
+        session.error = new Error(`Timeout de processamento excedido (${Math.round(age / 60000)}min sem atividade)`);
+
+        this.addUpdate(casoId, 'error', '❌ Upload travado - sessão marcada como falha após 30min sem progresso', {
+          recovered: true,
+          stuckMinutes: Math.round(age / 60000)
+        });
+
+        this.emit('session-failed', {
+          casoId,
+          error: session.error.message,
+          recovered: true
+        });
+
+        recovered++;
+        continue; // Não deletar, apenas marcar como failed
+      }
+
+      // Remover se TTL expirou (apenas sessões completed/failed antigas)
       if (age > SESSION_TTL) {
         this.sessions.delete(casoId);
         cleaned++;
@@ -74,9 +100,9 @@ class ProgressEmitter extends EventEmitter {
       }
     }
 
-    if (cleaned > 0) {
+    if (cleaned > 0 || recovered > 0) {
       this.metrics.sessionsCleanedUp += cleaned;
-      console.log(`[ProgressEmitter] Cleanup: ${cleaned} sessions removidas (TTL ${SESSION_TTL / 60000}min)`);
+      console.log(`[ProgressEmitter] Cleanup: ${cleaned} expiradas, ${recovered} travadas recuperadas (TTL ${SESSION_TTL / 60000}min)`);
     }
   }
 

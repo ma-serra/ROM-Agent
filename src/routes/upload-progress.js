@@ -146,14 +146,57 @@ router.post('/:uploadId/cancel', (req, res) => {
     });
   }
 
-  // Marcar sessão como falhada (cancelada)
+  // 🔧 v3.6.2: Marcar sessão como falhada (cancelada)
   progressEmitter.failSession(uploadId, new Error('Cancelado pelo usuário'));
+
+  console.log(`✅ [CANCEL] Upload ${uploadId} cancelado`);
 
   res.json({
     success: true,
     message: 'Upload cancelado com sucesso',
-    uploadId
+    uploadId,
+    status: 'cancelled'
   });
+});
+
+/**
+ * DELETE /api/upload-progress/:uploadId
+ *
+ * 🔧 v3.6.2: NOVO - Limpeza forçada de sessão órfã (admin)
+ * Remove completamente uma sessão travada do ProgressEmitter
+ */
+router.delete('/:uploadId', (req, res) => {
+  const { uploadId } = req.params;
+
+  console.log(`🗑️ [DELETE] Limpeza forçada de sessão: ${uploadId}`);
+
+  const session = progressEmitter.getSessionStatus(uploadId);
+
+  if (!session) {
+    return res.status(404).json({
+      success: false,
+      error: 'Sessão não encontrada'
+    });
+  }
+
+  // Remover sessão completamente do emitter
+  const deleted = progressEmitter.sessions.delete(uploadId);
+
+  if (deleted) {
+    console.log(`✅ [DELETE] Sessão ${uploadId} removida do ProgressEmitter`);
+
+    res.json({
+      success: true,
+      message: 'Sessão órfã removida com sucesso',
+      uploadId,
+      previousStatus: session.status
+    });
+  } else {
+    res.status(500).json({
+      success: false,
+      error: 'Falha ao remover sessão'
+    });
+  }
 });
 
 export default router;

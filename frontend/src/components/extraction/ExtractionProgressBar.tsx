@@ -37,6 +37,11 @@ export function ExtractionProgressBar({
   const [error, setError] = useState<string | null>(null)
   const [deleting, setDeleting] = useState(false)
 
+  // 🔧 v3.6.2: Timeout de polling - 3 min sem progresso = erro
+  const [lastProgressChange, setLastProgressChange] = useState<number>(Date.now())
+  const [lastProgress, setLastProgress] = useState<number>(0)
+  const [timeoutWarning, setTimeoutWarning] = useState<boolean>(false)
+
   const fetchJobStatus = useCallback(async () => {
     try {
       const response = await fetch(`/api/extraction-jobs/${jobId}`, {
@@ -66,6 +71,14 @@ export function ExtractionProgressBar({
       if (data.success && data.job) {
         setJob(data.job)
 
+        // 🔧 v3.6.2: Detectar mudança de progresso
+        const currentProgress = data.job.progress || 0
+        if (currentProgress !== lastProgress) {
+          setLastProgress(currentProgress)
+          setLastProgressChange(Date.now())
+          setTimeoutWarning(false)
+        }
+
         if (data.job.status === 'completed') {
           onComplete?.(data.job)
         }
@@ -90,6 +103,26 @@ export function ExtractionProgressBar({
 
     return () => clearInterval(pollInterval)
   }, [fetchJobStatus])
+
+  // 🔧 v3.6.2: Verificar timeout de progresso (3 minutos sem mudança)
+  useEffect(() => {
+    if (!job || job.status !== 'processing') return
+
+    const timeoutCheckInterval = setInterval(() => {
+      const elapsed = Date.now() - lastProgressChange
+      const timeoutMs = 3 * 60 * 1000 // 3 minutos
+
+      if (elapsed > timeoutMs && !timeoutWarning) {
+        setTimeoutWarning(true)
+        const errorMsg = 'Upload travado - sem progresso há 3 minutos. Recarregue a página e tente novamente.'
+        setError(errorMsg)
+        onError?.(errorMsg)
+        console.warn(`⚠️ Timeout de progresso detectado: ${jobId}`)
+      }
+    }, 10000) // Verificar a cada 10 segundos
+
+    return () => clearInterval(timeoutCheckInterval)
+  }, [job, lastProgressChange, timeoutWarning, jobId, onError])
 
   if (!job) {
     return null
@@ -138,9 +171,9 @@ export function ExtractionProgressBar({
               {job.documentName}
             </p>
             <p className={`text-xs mt-1 ${
-              isFailed ? 'text-red-600' : 'text-stone-600'
+              isFailed || timeoutWarning ? 'text-red-600' : 'text-stone-600'
             }`}>
-              {isFailed && error ? error : statusLabel}
+              {(isFailed || timeoutWarning) && error ? error : statusLabel}
             </p>
           </div>
         </div>
@@ -238,7 +271,9 @@ export function ExtractionProgressBar({
           <div className="w-full bg-stone-200 rounded-full h-2 overflow-hidden">
             <div
               className={`h-2 rounded-full transition-all duration-300 ${
-                job.status === 'processing'
+                timeoutWarning
+                  ? 'bg-red-500'
+                  : job.status === 'processing'
                   ? 'bg-blue-500'
                   : 'bg-stone-400'
               }`}
@@ -254,6 +289,14 @@ export function ExtractionProgressBar({
             </span>
             <span className="font-medium">{Math.round(progress)}%</span>
           </div>
+
+          {/* 🔧 v3.6.2: Aviso de timeout */}
+          {timeoutWarning && (
+            <div className="text-xs text-red-600 bg-red-50 p-2 rounded border border-red-200">
+              <p className="font-medium">⚠️ Upload travado detectado</p>
+              <p className="mt-1">Sem progresso há mais de 3 minutos. Recarregue a página e tente novamente.</p>
+            </div>
+          )}
         </div>
       )}
 
