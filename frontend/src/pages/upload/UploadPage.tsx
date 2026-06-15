@@ -35,6 +35,7 @@ import { useFileUpload, type FileInfo } from '@/hooks'
 import { useUploadProgress } from '@/hooks/useUploadProgress'
 import { ExtractionProgressBar } from '@/components/extraction'
 import { VolumeUploader } from '@/components/kb/VolumeUploader'
+import { RunPipelineButton } from '@/components/orchestrator/RunPipelineButton'
 
 // ============================================================
 // TYPES
@@ -953,6 +954,15 @@ export function UploadPage() {
                         >
                           <Brain className="w-4 h-4" />
                         </Button>
+
+                        {/* v3.6: Executar pipeline ROM de 5 etapas */}
+                        <RunPipelineButton
+                          documentId={doc.id}
+                          documentName={doc.name}
+                          variant="ghost"
+                          size="sm"
+                        />
+
                         <Button
                           variant="ghost"
                           size="sm"

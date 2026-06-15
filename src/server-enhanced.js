@@ -557,6 +557,16 @@ app.use(express.static(staticPath, {
   }
 }));
 
+// 🔧 v3.6: Servir TAMBÉM arquivos de public/ (dashboards, assets estáticos)
+// Permite acesso a /dashboard-orchestrator.html mesmo quando frontend/dist existe
+app.use(express.static(publicPath, {
+  setHeaders: (res, path) => {
+    if (path.endsWith('.html')) {
+      res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate');
+    }
+  }
+}));
+
 // Compression (Gzip/Brotli) - comprimir responses > 1KB
 app.use(compression({
   filter: (req, res) => {

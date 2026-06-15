@@ -65,9 +65,64 @@
 
     <div class="bg-gray-800 rounded-xl p-6">
       <h2 class="text-xl font-semibold mb-4">📊 Dashboard em Tempo Real</h2>
-      <p class="text-gray-400">Conectado ao EventBus - Métricas atualizadas a cada 10s</p>
+      <p class="text-gray-400" id="status-message">Carregando métricas...</p>
+      <p class="text-sm text-gray-500 mt-2" id="last-update"></p>
     </div>
   </div>
+
+  <script>
+    // Função para formatar números
+    function formatNumber(num) {
+      if (num >= 1000000) {
+        return (num / 1000000).toFixed(1) + 'M';
+      } else if (num >= 1000) {
+        return (num / 1000).toFixed(1) + 'K';
+      }
+      return num.toLocaleString('pt-BR');
+    }
+
+    // Função para buscar métricas
+    async function fetchMetrics() {
+      try {
+        const response = await fetch('/api/orchestrator/metrics', {
+          credentials: 'include'
+        });
+
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}`);
+        }
+
+        const data = await response.json();
+
+        if (data.success && data.metrics) {
+          const m = data.metrics;
+
+          // Atualizar cards
+          document.getElementById('active-workflows').textContent = m.activeWorkflows || 0;
+          document.getElementById('success-rate').textContent = (m.successRate || 0) + '%';
+          document.getElementById('cache-hit-rate').textContent = (m.cacheHitRate || 0) + '%';
+          document.getElementById('tokens-consumed').textContent = formatNumber(m.tokensConsumed || 0);
+
+          // Atualizar status
+          document.getElementById('status-message').textContent =
+            `✅ Conectado | ${m.totalExecutions || 0} execuções | Custo estimado: $${m.estimatedCost || '0.00'}`;
+
+          document.getElementById('last-update').textContent =
+            `Última atualização: ${new Date(m.timestamp).toLocaleTimeString('pt-BR')}`;
+        }
+      } catch (error) {
+        console.error('Erro ao buscar métricas:', error);
+        document.getElementById('status-message').textContent =
+          '⚠️ Erro ao conectar ao servidor - Tentando reconectar...';
+      }
+    }
+
+    // Buscar métricas imediatamente
+    fetchMetrics();
+
+    // Atualizar a cada 10 segundos
+    setInterval(fetchMetrics, 10000);
+  </script>
 
 </body>
 </html>

@@ -557,4 +557,120 @@ router.get('/orchestrator/events/stream', requireAuth, async (req, res) => {
   });
 });
 
+/**
+ * GET /api/orchestrator/metrics
+ * Métricas em tempo real para dashboard de telemetria
+ */
+router.get('/orchestrator/metrics', requireAuth, async (req, res) => {
+  try {
+    const masterOrchestrator = req.app.locals.masterOrchestrator;
+
+    if (!masterOrchestrator) {
+      return res.status(503).json({
+        success: false,
+        error: 'Orquestrador não disponível'
+      });
+    }
+
+    // 1. Workflows ativos
+    const activeWorkflows = masterOrchestrator.activeWorkflows
+      ? masterOrchestrator.activeWorkflows.size
+      : 0;
+
+    // 2. Taxa de sucesso (baseado em métricas do orquestrador)
+    const metrics = masterOrchestrator.metrics || {
+      totalExecutions: 0,
+      successfulExecutions: 0,
+      failedExecutions: 0
+    };
+
+    const successRate = metrics.totalExecutions > 0
+      ? ((metrics.successfulExecutions / metrics.totalExecutions) * 100).toFixed(1)
+      : '0.0';
+
+    // 3. Cache Hit Rate (Redis)
+    let cacheHitRate = '0.0';
+    try {
+      const redis = req.app.locals.redis;
+      if (redis) {
+        const info = await redis.info('stats');
+        const lines = info.split('\r\n');
+
+        let hits = 0;
+        let misses = 0;
+
+        for (const line of lines) {
+          if (line.startsWith('keyspace_hits:')) {
+            hits = parseInt(line.split(':')[1]);
+          } else if (line.startsWith('keyspace_misses:')) {
+            misses = parseInt(line.split(':')[1]);
+          }
+        }
+
+        const total = hits + misses;
+        if (total > 0) {
+          cacheHitRate = ((hits / total) * 100).toFixed(1);
+        }
+      }
+    } catch (error) {
+      logger.warn('[Orchestrator Metrics] Erro ao obter stats do Redis:', error.message);
+    }
+
+    // 4. Tokens consumidos (Claude 3.7 Sonnet)
+    let tokensConsumed = 0;
+    try {
+      const pool = req.app.locals.db;
+      if (pool) {
+        // Query para somar tokens das últimas 24h de execuções
+        const result = await pool.query(`
+          SELECT
+            COALESCE(SUM((execution_data->'tokens'->>'total_tokens')::integer), 0) as total_tokens
+          FROM workflow_executions
+          WHERE created_at >= NOW() - INTERVAL '24 hours'
+            AND execution_data->'tokens'->>'total_tokens' IS NOT NULL
+        `);
+
+        if (result.rows && result.rows.length > 0) {
+          tokensConsumed = result.rows[0].total_tokens || 0;
+        }
+      }
+    } catch (error) {
+      // Se tabela workflow_executions não existe ainda, retornar 0
+      logger.warn('[Orchestrator Metrics] Erro ao obter tokens do DB:', error.message);
+    }
+
+    // 5. Custo estimado (baseado em tokens e pricing do Sonnet 4.5)
+    // Pricing: $3 / 1M input tokens, $15 / 1M output tokens
+    // Simplificado: média de $9 / 1M tokens total
+    const estimatedCost = (tokensConsumed / 1000000) * 9;
+
+    res.json({
+      success: true,
+      metrics: {
+        activeWorkflows,
+        successRate: parseFloat(successRate),
+        cacheHitRate: parseFloat(cacheHitRate),
+        tokensConsumed,
+        estimatedCost: estimatedCost.toFixed(2),
+        totalExecutions: metrics.totalExecutions,
+        successfulExecutions: metrics.successfulExecutions,
+        failedExecutions: metrics.failedExecutions,
+        timestamp: new Date().toISOString()
+      }
+    });
+
+  } catch (error) {
+    logger.error('[Orchestrator Metrics] Erro ao gerar métricas:', {
+      error: error.message,
+      stack: error.stack
+    });
+
+    res.status(500).json({
+      success: false,
+      error: 'Erro ao gerar métricas',
+      message: error.message
+    });
+  }
+});
+
 export default router;
