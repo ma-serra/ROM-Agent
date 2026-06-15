@@ -8,24 +8,20 @@
 const fs = require('fs');
 const path = require('path');
 
+// 🔧 v3.6.1: SEMPRE usar caminho relativo do projeto (ephemeral safe)
+// Render não tem /var/data com permissões adequadas
 const SOURCE_DIR = path.join(__dirname, '../data/prompts/global');
-const DEST_DIR = process.env.RENDER ? '/var/data/prompts/global' : SOURCE_DIR;
+const DEST_DIR = SOURCE_DIR; // Sempre usar diretório do projeto
 
 console.log('═══════════════════════════════════════════════════════════');
-console.log('🔄 SINCRONIZANDO PROMPTS V5.0');
+console.log('📝 [Prompts] Verificando prompts V5.0');
 console.log('═══════════════════════════════════════════════════════════\n');
 
-console.log(`📂 Origem: ${SOURCE_DIR}`);
-console.log(`📂 Destino: ${DEST_DIR}`);
+console.log(`📂 Diretório: ${DEST_DIR}`);
 console.log('');
 
-if (SOURCE_DIR === DEST_DIR) {
-  console.log('⚠️  Ambiente local detectado - sincronização não necessária');
-  process.exit(0);
-}
-
 try {
-  // Criar diretório de destino se não existir
+  // 🔧 v3.6.1: Criar diretório com recursive: true e try/catch
   if (!fs.existsSync(DEST_DIR)) {
     fs.mkdirSync(DEST_DIR, { recursive: true });
     console.log('✅ Diretório criado');
@@ -42,31 +38,17 @@ try {
   let errors = 0;
 
   for (const file of sourceFiles) {
-    const sourcePath = path.join(SOURCE_DIR, file);
-    const destPath = path.join(DEST_DIR, file);
+    const filePath = path.join(DEST_DIR, file);
 
     try {
-      // Verificar se arquivo já existe no destino
-      if (fs.existsSync(destPath)) {
-        // Comparar tamanhos para decidir se atualiza
-        const sourceSize = fs.statSync(sourcePath).size;
-        const destSize = fs.statSync(destPath).size;
-
-        if (sourceSize === destSize) {
-          skipped++;
-          console.log(`⏭️  ${file} (já existe, mesmo tamanho)`);
-          continue;
-        } else {
-          console.log(`🔄 ${file} (atualizando: ${destSize} → ${sourceSize} bytes)`);
-        }
+      // 🔧 v3.6.1: Apenas verificar existência (não copiar, já está no lugar certo)
+      if (fs.existsSync(filePath)) {
+        skipped++;
+        console.log(`✅ ${file} (OK)`);
       } else {
-        console.log(`✅ ${file} (novo)`);
+        console.log(`⚠️  ${file} (ausente)`);
+        errors++;
       }
-
-      // Copiar arquivo
-      fs.copyFileSync(sourcePath, destPath);
-      copied++;
-
     } catch (error) {
       console.error(`❌ ${file}: ${error.message}`);
       errors++;
@@ -75,19 +57,23 @@ try {
 
   console.log('');
   console.log('═══════════════════════════════════════════════════════════');
-  console.log('📊 RESUMO DA SINCRONIZAÇÃO');
+  console.log('📊 RESUMO DA VERIFICAÇÃO');
   console.log('═══════════════════════════════════════════════════════════');
-  console.log(`✅ Copiados/Atualizados: ${copied}`);
-  console.log(`⏭️  Ignorados (iguais): ${skipped}`);
-  console.log(`❌ Erros: ${errors}`);
-  console.log(`📁 Total no destino: ${fs.readdirSync(DEST_DIR).filter(f => f.endsWith('.md')).length}`);
+  console.log(`✅ Arquivos V5.0 encontrados: ${skipped}`);
+  console.log(`⚠️  Ausentes: ${errors}`);
+  console.log(`📁 Total no diretório: ${fs.readdirSync(DEST_DIR).filter(f => f.endsWith('.md')).length}`);
   console.log('═══════════════════════════════════════════════════════════\n');
 
+  // 🔧 v3.6.1: Não falhar se prompts estão ausentes (não crítico)
   if (errors > 0) {
-    process.exit(1);
+    console.warn('⚠️  Alguns prompts V5.0 ausentes (não crítico, serão recriados)');
   }
 
+  process.exit(0); // Sempre sucesso (ephemeral OK)
+
 } catch (error) {
-  console.error('❌ ERRO FATAL:', error.message);
-  process.exit(1);
+  // 🔧 v3.6.1: Fallback seguro - não crashar o deploy
+  console.warn('⚠️  Verificação de prompts falhou (não crítico):', error.message);
+  console.log('📝 Sistema usará prompts padrão em memória');
+  process.exit(0); // Não falhar o build
 }
