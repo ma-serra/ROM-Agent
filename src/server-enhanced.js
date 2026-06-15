@@ -6760,8 +6760,27 @@ async function processUploadInBackground(uploadId, files, userId, userName) {
  * @param {Function} onProgress - Callback (stage, percent)
  */
 async function processFileWithProgress(filePath, onProgress = null) {
-  // Passar callback diretamente para processFile (suporta 7 etapas de progresso)
-  return await processFile(filePath, onProgress);
+  // 🔧 v3.6.2.1: LOGGING DEFENSIVO para identificar travamentos
+  console.log(`📥 [processFileWithProgress] ENTRADA: ${filePath}`);
+  console.log(`   Arquivo existe: ${fs.existsSync(filePath)}`);
+
+  if (!fs.existsSync(filePath)) {
+    throw new Error(`Arquivo não encontrado: ${filePath}`);
+  }
+
+  const stats = fs.statSync(filePath);
+  console.log(`   Tamanho: ${(stats.size / 1024).toFixed(2)} KB`);
+  console.log(`   Chamando processFile()...`);
+
+  try {
+    // Passar callback diretamente para processFile (suporta 7 etapas de progresso)
+    const result = await processFile(filePath, onProgress);
+    console.log(`✅ [processFileWithProgress] SUCESSO: ${filePath}`);
+    return result;
+  } catch (error) {
+    console.error(`❌ [processFileWithProgress] ERRO: ${filePath}`, error);
+    throw error;
+  }
 }
 
 // Listar documentos do KB do usuário (requer autenticação)
